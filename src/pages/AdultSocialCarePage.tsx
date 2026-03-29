@@ -73,22 +73,12 @@ export default function AdultSocialCarePage() {
                 to={card.link}
                 className="block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline group"
               >
-                <div className="aspect-[4/3] bg-[#e0e0e0] relative overflow-hidden">
+                <div className="aspect-[4/3] bg-[#e0e0e0] overflow-hidden">
                   <img
                     src={card.image}
                     alt={card.alt}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.style.display = "none";
-                    }}
                   />
-                  {/* Placeholder overlay when no image */}
-                  <div className="absolute inset-0 bg-[#00635C]/10 flex items-center justify-center">
-                    <span className="text-[#00635C] text-sm font-medium bg-white/80 px-3 py-1 rounded">
-                      [Image to be sourced]
-                    </span>
-                  </div>
                 </div>
                 <div className="p-3 bg-white">
                   <p className="text-sm font-semibold text-[#0b0c0c] group-hover:text-[#00635C] transition-colors">
