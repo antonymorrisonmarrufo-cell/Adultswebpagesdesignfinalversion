@@ -86,7 +86,7 @@ export default function FinancialSupportPage() {
 
           {/* Benefits advice */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Get benefits advice</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Get benefits advice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           It can be difficult to know what you are entitled to. Free, confidential benefits advice is available from:
           </p>

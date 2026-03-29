@@ -152,7 +152,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
           {/* Daytime contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Contact Adult Social Care</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Contact Adult Social Care</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           To ask about adult social care or request an assessment, contact us during
           office hours.

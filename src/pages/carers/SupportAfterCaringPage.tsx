@@ -81,7 +81,7 @@ export default function SupportAfterCaringPage() {
 
           {/* Contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">We are here to help</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">We are here to help</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           If your caring role has recently ended and you need support, please contact us on{" "}
           <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.

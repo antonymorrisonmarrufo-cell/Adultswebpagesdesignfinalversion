@@ -80,7 +80,7 @@ export default function HealthWellbeingPage() {
 
           {/* Looking after yourself */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Tips for looking after yourself</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Tips for looking after yourself</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
           <li>Try to get enough sleep and eat well</li>
           <li>Accept help when it is offered</li>

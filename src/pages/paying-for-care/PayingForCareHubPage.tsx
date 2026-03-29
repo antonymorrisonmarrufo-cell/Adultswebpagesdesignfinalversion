@@ -107,7 +107,7 @@ export default function PayingForCareHubPage() {
 
           {/* Contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Need help understanding your care costs?</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Need help understanding your care costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Our team can talk you through how paying for care works and answer any questions you have.
           </p>

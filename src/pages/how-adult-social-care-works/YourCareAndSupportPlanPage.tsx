@@ -143,7 +143,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Need help with your care plan?</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Need help with your care plan?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have questions about your care and support plan, want to request a
           review, or need help understanding what is in your plan, contact us.

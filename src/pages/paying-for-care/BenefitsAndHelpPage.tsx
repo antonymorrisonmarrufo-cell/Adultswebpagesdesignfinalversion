@@ -126,7 +126,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Help claiming */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Get help with your benefits</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Get help with your benefits</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you need help understanding which benefits you may be entitled to or
           making a claim, contact us or visit your local Citizens Advice.

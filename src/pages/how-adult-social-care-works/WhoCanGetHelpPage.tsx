@@ -146,7 +146,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Not sure if you are eligible?</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Not sure if you are eligible?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you are unsure whether you or someone you know would be eligible for
           support, contact us. We can talk through your situation and explain the

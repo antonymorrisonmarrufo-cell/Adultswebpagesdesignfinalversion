@@ -70,7 +70,7 @@ export default function BreaksRespitePage() {
 
           {/* Emergency breaks */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Emergency breaks</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Emergency breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           If you need an urgent break because you are at risk of burnout or your health is suffering,
           contact us as soon as possible on{" "}

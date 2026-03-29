@@ -103,7 +103,7 @@ export default function GeorgeMasonLodgePage() {
 
           {/* Contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Contact George Mason Lodge</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Contact George Mason Lodge</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
           <p>
           <strong>Telephone:</strong>{" "}

@@ -87,7 +87,7 @@ export default function EmergencyHelpPage() {
 
           {/* Key contacts */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Key emergency contacts</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Key emergency contacts</h2>
           <ul className="mt-3 space-y-2 text-wf-dark">
           <li><strong>Emergency services:</strong> 999</li>
           <li><strong>NHS non-emergency:</strong> 111</li>

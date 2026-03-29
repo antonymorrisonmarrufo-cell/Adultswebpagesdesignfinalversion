@@ -149,7 +149,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Talk to us about your options</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Talk to us about your options</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Our team can help point you in the right direction for financial advice
           and answer general questions about paying for care.

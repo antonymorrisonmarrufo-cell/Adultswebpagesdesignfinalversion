@@ -81,7 +81,7 @@ export default function StrategyCouncilDutiesPage() {
 
           {/* Have your say */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Have your say</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Have your say</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           We welcome feedback from carers about our strategy and services. If you would like to get involved
           in shaping carer services, contact us on{" "}

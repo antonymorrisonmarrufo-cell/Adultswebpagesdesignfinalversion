@@ -130,7 +130,7 @@ export default function FinancialAssessmentPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Contact the financial assessment team</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Contact the financial assessment team</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have questions about your financial assessment or need help gathering
           the documents you need, please get in touch.

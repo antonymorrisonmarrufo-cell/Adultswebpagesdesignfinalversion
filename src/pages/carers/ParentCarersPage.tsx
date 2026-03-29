@@ -96,7 +96,7 @@ export default function ParentCarersPage() {
 
           {/* Contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Get in touch</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Get in touch</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           To find out more about support for parent carers, contact our Adult Social Care team on{" "}
           <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}

@@ -73,7 +73,7 @@ export default function CarerEmergencyPlanPage() {
 
           {/* Carer emergency card */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Carer emergency card</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">Carer emergency card</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           We can provide you with a carer emergency card to carry in your wallet or purse. This card lets
           emergency services know that you are a carer and that someone depends on you. It includes a

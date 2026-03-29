@@ -78,7 +78,7 @@ export default function TrainingWorkshopsPage() {
 
           {/* How to book */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to book</h2>
+          <h2 className="text-2xl font-bold text-[#003078]">How to book</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           All training is free for carers in Waltham Forest. Courses are held at the Carers Hub and other
           community venues, with some available online. To find out about upcoming courses or to book a place,

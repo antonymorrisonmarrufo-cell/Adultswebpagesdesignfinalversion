@@ -158,7 +158,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Questions about your assessment?</h2>
+          <h2 className="text-xl font-bold text-[#003078]">Questions about your assessment?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have been told you are going to have an assessment and want to know
           more about what to expect, contact us.
