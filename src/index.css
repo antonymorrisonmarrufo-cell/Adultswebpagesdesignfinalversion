@@ -38,6 +38,10 @@ a:hover {
   color: #004E3E;
 }
 
+/* Ensure no-underline class works and text-white on links isn't overridden */
+a.no-underline { text-decoration: none; }
+a.text-white, a.text-white:hover { color: #ffffff; }
+
 /* Ensure custom colors work as Tailwind utilities */
 .text-wf-green { color: #004E3E; }
 .text-wf-pink { color: #bf3688; }
