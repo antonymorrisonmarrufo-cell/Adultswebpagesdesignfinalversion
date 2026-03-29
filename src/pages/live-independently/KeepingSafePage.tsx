@@ -93,14 +93,19 @@ export default function KeepingSafePage() {
           <Link
           key={page.href}
           to={page.href}
-          className="group rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-sm transition-shadow hover:shadow-md hover:border-wf-green/40"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">
           {page.title}
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          </h3>
+          <p className="text-sm text-[#231F20] flex-1">
           {page.description}
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
           ))}
           </div>

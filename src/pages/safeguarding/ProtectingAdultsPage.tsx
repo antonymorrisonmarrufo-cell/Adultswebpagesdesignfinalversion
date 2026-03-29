@@ -55,92 +55,137 @@ export default function ProtectingAdultsPage() {
           <div className="grid gap-4 md:grid-cols-2">
           <Link
           to="/safeguarding/report-abuse"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Report abuse or neglect</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Report abuse or neglect</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           How to raise a safeguarding concern, who to contact, and what information you will need.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/abuse-and-neglect"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Types of abuse and neglect</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Types of abuse and neglect</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Understand the different forms of abuse and neglect, including physical, emotional, financial, and more.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/what-happens-after"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">What happens after a concern is raised</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">What happens after a concern is raised</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Learn about the safeguarding process, from screening through to enquiry and outcomes.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/professionals"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Information for professionals</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Information for professionals</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Duty to report, making a safeguarding referral, and professional responsibilities.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/professional-guidance"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Professional guidance and resources</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Professional guidance and resources</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Practice standards, training opportunities, and toolkits for practitioners.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/safeguarding-board"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Safeguarding Adults Board</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Safeguarding Adults Board</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           The role and work of the Waltham Forest Safeguarding Adults Board, including the strategic plan.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/marac"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">MARAC</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">MARAC</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Multi-Agency Risk Assessment Conference for high-risk domestic abuse cases.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/resources-improve-practice"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Resources to improve practice</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Resources to improve practice</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Research, case studies, and learning from safeguarding adult reviews.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/safeguarding/report-child-concern"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Reporting concerns about a child</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Reporting concerns about a child</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           If you are worried about a child, there is a separate process. Find out how to report.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
           </div>
           </section>
