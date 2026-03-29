@@ -123,7 +123,7 @@ export default function SharedLivesPage() {
         </section>
 
         {/* Become a carer */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-[#d7f8ff] p-6">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Become a Shared Lives carer</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             If you have a spare room and would like to make a real difference to someone's

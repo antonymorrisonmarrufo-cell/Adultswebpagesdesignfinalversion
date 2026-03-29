@@ -45,7 +45,7 @@ export default function BeingCarerPage() {
         </section>
 
         {/* Prevention callout banner */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-[#d7f8ff] p-6">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <p className="text-base leading-relaxed text-wf-dark">
             You do not need an assessment to get support as a carer. Visit the{" "}
             <Link to="/carers/hub" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">
@@ -166,7 +166,7 @@ export default function BeingCarerPage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Contact us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you need help or want to talk to someone about your caring role, contact our Adult Social Care team.

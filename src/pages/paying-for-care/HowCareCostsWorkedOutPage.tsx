@@ -62,7 +62,7 @@ export default function HowCareCostsWorkedOutPage() {
               The government sets two capital limits that affect how much you pay:
             </p>
             <div className="mt-4 space-y-4">
-              <div className="rounded-md border-l-4 border-wf-green bg-[#d7f8ff] p-4">
+              <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-4">
                 <p className="font-semibold text-wf-dark">Upper capital limit: &#163;23,250</p>
                 <p className="mt-1 text-sm text-wf-dark leading-relaxed">
                   If your capital (savings, investments and certain assets) is above &#163;23,250,
@@ -70,7 +70,7 @@ export default function HowCareCostsWorkedOutPage() {
                   called being a self-funder.
                 </p>
               </div>
-              <div className="rounded-md border-l-4 border-wf-green bg-[#d7f8ff] p-4">
+              <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-4">
                 <p className="font-semibold text-wf-dark">Lower capital limit: &#163;14,250</p>
                 <p className="mt-1 text-sm text-wf-dark leading-relaxed">
                   If your capital is below &#163;14,250, it is not counted in the financial
@@ -124,7 +124,7 @@ export default function HowCareCostsWorkedOutPage() {
           </section>
 
           {/* Important note */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">Important</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you deliberately reduce your capital to avoid paying for care (sometimes

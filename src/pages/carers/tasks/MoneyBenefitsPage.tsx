@@ -83,7 +83,7 @@ export default function MoneyBenefitsPage() {
         </section>
 
         {/* Get advice */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Get free benefits advice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Many carers miss out on benefits they are entitled to. Get free, confidential advice from:

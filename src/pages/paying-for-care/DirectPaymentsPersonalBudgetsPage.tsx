@@ -115,7 +115,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">Find out more about direct payments</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you would like to discuss whether a direct payment is right for you, or

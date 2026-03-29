@@ -83,7 +83,7 @@ export default function StrategyCouncilDutiesPage() {
         </section>
 
         {/* Have your say */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Have your say</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We welcome feedback from carers about our strategy and services. If you would like to get involved

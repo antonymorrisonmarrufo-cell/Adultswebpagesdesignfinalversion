@@ -111,7 +111,7 @@ export default function WhatIsAdultSocialCarePage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">Want to find out more?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you have questions about adult social care or think you or someone you

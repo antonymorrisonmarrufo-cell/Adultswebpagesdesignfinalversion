@@ -55,7 +55,7 @@ export default function HowAdultSocialCareWorksHubPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Key things to know */}
-        <div className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+        <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
             <li>Anyone can contact us to ask for help, not just the person who needs support</li>
@@ -149,7 +149,7 @@ export default function HowAdultSocialCareWorksHubPage() {
         </section>
 
         {/* Daytime contact */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Contact Adult Social Care</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             To ask about adult social care or request an assessment, contact us during

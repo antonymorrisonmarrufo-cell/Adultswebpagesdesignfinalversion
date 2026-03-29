@@ -87,7 +87,7 @@ export default function TakingBreakPage() {
         </section>
 
         {/* How to arrange */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">How to arrange a break</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Speak to us about what kind of break would help you. We can discuss options following a carers assessment.

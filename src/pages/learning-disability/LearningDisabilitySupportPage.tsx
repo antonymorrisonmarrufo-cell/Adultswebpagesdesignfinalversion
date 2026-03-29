@@ -108,7 +108,7 @@ export default function LearningDisabilitySupportPage() {
 
       {/* Contact banner */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <div className="rounded-lg border-l-4 border-wf-green bg-[#d7f8ff] p-6">
+        <div className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-wf-pink">Need help?</h2>
           <p className="mt-2 text-sm text-wf-dark leading-relaxed">
             If you or someone you know has a learning disability and needs support,

@@ -94,7 +94,7 @@ export default function WorkEducationPage() {
         </section>
 
         {/* Talk to us */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Talk to us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If your caring role is affecting your ability to work or study, a carers assessment can help

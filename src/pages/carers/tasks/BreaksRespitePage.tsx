@@ -72,7 +72,7 @@ export default function BreaksRespitePage() {
         </section>
 
         {/* Emergency breaks */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Emergency breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you need an urgent break because you are at risk of burnout or your health is suffering,

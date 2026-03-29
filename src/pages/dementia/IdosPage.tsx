@@ -179,7 +179,7 @@ export default function IdosPage() {
           </section>
 
           {/* Contact */}
-          <section className="rounded-lg border-l-4 border-wf-green bg-[#d7f8ff] p-6">
+          <section className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
             <h2 className="text-xl font-bold text-wf-pink">Need help?</h2>
             <p className="mt-2 text-sm text-wf-dark leading-relaxed">
               If you would like help finding the right digital tools or accessing online

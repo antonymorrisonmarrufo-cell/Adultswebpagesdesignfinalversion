@@ -41,7 +41,7 @@ export default function WhoCanGetHelpPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         <div className="max-w-3xl space-y-8">
           {/* Callout */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">You do not need a GP referral</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Anyone can contact us to ask for an assessment. You do not need a referral
@@ -148,7 +148,7 @@ export default function WhoCanGetHelpPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">Not sure if you are eligible?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you are unsure whether you or someone you know would be eligible for

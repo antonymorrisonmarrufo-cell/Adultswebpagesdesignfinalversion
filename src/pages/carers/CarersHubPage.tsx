@@ -33,7 +33,7 @@ export default function CarersHubPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Location */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Where to find us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Carers Hub is located in the heart of Waltham Forest and is easily accessible by public transport.

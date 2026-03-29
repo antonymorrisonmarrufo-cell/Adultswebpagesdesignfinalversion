@@ -75,7 +75,7 @@ export default function PayingForCareHubPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Important information */}
-        <div className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+        <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
             <li>You will not be asked to pay more than you can afford</li>
@@ -104,7 +104,7 @@ export default function PayingForCareHubPage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Need help understanding your care costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             Our team can talk you through how paying for care works and answer any questions you have.

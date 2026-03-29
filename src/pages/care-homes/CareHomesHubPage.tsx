@@ -121,7 +121,7 @@ export default function CareHomesHubPage() {
 
       {/* Contact banner */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <div className="rounded-lg border-l-4 border-[#004E3E] bg-[#d7f8ff] p-6">
+        <div className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Need advice?</h2>
           <p className="mt-2 text-sm text-wf-dark leading-relaxed">
             If you are unsure which housing or care option is right for you or someone you

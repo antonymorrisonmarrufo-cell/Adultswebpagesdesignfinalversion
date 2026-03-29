@@ -128,7 +128,7 @@ export default function BenefitsAndHelpPage() {
           </section>
 
           {/* Help claiming */}
-          <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
             <h2 className="text-xl font-bold text-[#bf3688]">Get help with your benefits</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you need help understanding which benefits you may be entitled to or
