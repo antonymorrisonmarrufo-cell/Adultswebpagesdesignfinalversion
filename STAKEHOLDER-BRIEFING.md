@@ -145,16 +145,18 @@ Every design decision was guided by these principles:
 
 ### Copy Approval Process
 
+The following steps outline the recommended approval process. **Timelines should be agreed in discussion with the digital team** based on capacity, dependencies, and the broader programme timeline.
+
 | Step | Activity | Timeline | Owner |
 |------|----------|----------|-------|
-| 1 | **Identify section stakeholders** | Week 1 | Programme Director |
-| 2 | **Stakeholder workshop** — walk through design principles, research, and full site | Week 2 | Programme Director + Design Lead |
-| 3 | **Structured feedback period** — stakeholders review assigned sections using feedback template | Weeks 3–4 | Section Stakeholders |
-| 4 | **Consolidate and apply feedback** | Week 5 | Design Team |
-| 5 | **Final review round** — stakeholders verify changes | Week 6 | Section Stakeholders |
-| 6 | **Formal sign-off** — each section approved | Week 7 | Section Stakeholders + Head of ASC |
-| 7 | **Copy lockdown** — content frozen, change requests only | Week 7 | Programme Director |
-| 8 | **Go live** — deploy to production | Week 8 | Web Team |
+| 1 | **Identify section stakeholders** | TBC — agree with digital team | Programme Director |
+| 2 | **Stakeholder workshop** — walk through design principles, research, and full site | TBC — agree with digital team | Programme Director + Design Lead |
+| 3 | **Structured feedback period** — stakeholders review assigned sections using feedback template | TBC — agree with digital team | Section Stakeholders |
+| 4 | **Consolidate and apply feedback** | TBC — agree with digital team | Design Team |
+| 5 | **Final review round** — stakeholders verify changes | TBC — agree with digital team | Section Stakeholders |
+| 6 | **Formal sign-off** — each section approved | TBC — agree with digital team | Section Stakeholders + Head of ASC |
+| 7 | **Copy lockdown** — content frozen, change requests only | TBC — agree with digital team | Programme Director |
+| 8 | **Go live** — deploy to production | TBC — agree with digital team | Web Team |
 
 ### Suggested Stakeholder Mapping
 
