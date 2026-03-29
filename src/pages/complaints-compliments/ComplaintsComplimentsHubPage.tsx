@@ -1,0 +1,127 @@
+import { Link } from "react-router-dom";
+
+const cards = [
+  {
+    title: "Make a complaint",
+    description: "Tell us if something has gone wrong so we can put it right.",
+    to: "/adult-social-care/complaints-compliments/make-complaint",
+  },
+  {
+    title: "Send a compliment",
+    description: "Share positive feedback about a service or member of staff.",
+    to: "/adult-social-care/complaints-compliments/send-compliment",
+  },
+  {
+    title: "Help shape our services",
+    description: "Get involved in improving adult social care through co-production, surveys and focus groups.",
+    to: "/adult-social-care/complaints-compliments/help-shape-services",
+  },
+  {
+    title: "Independent help and advocacy",
+    description: "Find out how an independent advocate can support you.",
+    to: "/adult-social-care/complaints-compliments/independent-help-advocacy",
+  },
+];
+
+const relatedPages = [
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+];
+
+export default function ComplaintsComplimentsHubPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumbs */}
+      <div className="mx-auto max-w-5xl px-4 pt-6 pb-2">
+        <nav aria-label="Breadcrumb">
+          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
+            <li className="flex items-center gap-1">
+              <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
+              <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
+            </li>
+            <li className="flex items-center gap-1">
+              <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
+              <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
+            </li>
+            <li>
+              <span className="font-medium text-wf-dark">Complaints and compliments</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      {/* Header */}
+      <div className="mx-auto max-w-5xl px-4 pb-8">
+        <h1 className="text-5xl font-bold text-wf-green leading-tight">
+          Complaints and compliments
+        </h1>
+      </div>
+
+      {/* Content */}
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <div className="max-w-3xl space-y-10">
+          <section>
+            <p className="text-wf-dark leading-relaxed">
+              Your feedback helps us improve our services. Whether you want to tell us
+              about something that went wrong, share a positive experience or help shape
+              future services, we want to hear from you.
+            </p>
+          </section>
+
+          {/* Cards */}
+          <div className="grid gap-6 sm:grid-cols-2">
+            {cards.map((card) => (
+              <Link
+                key={card.to}
+                to={card.to}
+                className="block rounded-lg border border-gray-200 p-6 shadow-sm transition hover:shadow-md hover:border-wf-green"
+              >
+                <h3 className="text-lg font-bold text-wf-green">{card.title}</h3>
+                <p className="mt-2 text-sm text-wf-dark leading-relaxed">{card.description}</p>
+              </Link>
+            ))}
+          </div>
+
+          <section className="rounded-lg border-l-4 border-wf-green bg-wf-green-light p-6">
+            <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
+            <p className="mt-2 text-sm text-wf-dark leading-relaxed">
+              If you need help making a complaint or want to share feedback, our team
+              can assist you.
+            </p>
+            <p className="mt-3 text-sm font-semibold text-wf-dark">
+              Telephone:{" "}
+              <a href="tel:02084963130" className="text-wf-blue underline">
+                020 8496 3130
+              </a>
+            </p>
+            <p className="mt-1 text-sm text-wf-gray">
+              Monday to Friday, 9am to 5pm (excluding bank holidays)
+            </p>
+          </section>
+        </div>
+      </div>
+
+      {/* Related pages */}
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <div className="border-t border-gray-200 pt-8">
+          <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
+          <ul className="mt-4 space-y-2">
+            {relatedPages.map((page) => (
+              <li key={page.to}>
+                <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
+                  {page.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Last updated */}
+      <div className="mx-auto max-w-5xl px-4 pb-12">
+        <p className="text-xs text-wf-gray">Last updated: March 2026</p>
+      </div>
+    </div>
+  );
+}
