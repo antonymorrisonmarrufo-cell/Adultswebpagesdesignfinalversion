@@ -50,6 +50,91 @@ export default function ContactUsPage() {
             </p>
           </section>
 
+          {/* Green callout - before you call */}
+          <section className="rounded-lg border-l-4 border-wf-green bg-wf-green-light p-6">
+            <h2 className="text-xl font-bold text-wf-green">Before you call</h2>
+            <p className="mt-2 text-sm text-wf-dark leading-relaxed">
+              Before you call, you might find what you need through our online
+              self-assessment tool or community support. Many people get the help they
+              need without contacting us directly.
+            </p>
+            <p className="mt-3 text-sm text-wf-dark leading-relaxed">
+              <Link
+                to="/how-to-get-support/check-situation-online"
+                className="text-wf-blue underline hover:text-wf-green font-semibold"
+              >
+                Check your situation online
+              </Link>
+            </p>
+          </section>
+
+          {/* Community and voluntary support */}
+          <section>
+            <h2 className="text-2xl font-bold text-wf-pink">Community and voluntary support</h2>
+            <p className="mt-3 text-wf-dark leading-relaxed">
+              Many people find the right support through community services and local
+              organisations without needing a formal assessment. Explore what is available:
+            </p>
+            <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
+              <li>
+                <Link
+                  to="/live-independently/social-prescribing"
+                  className="text-wf-blue underline hover:text-wf-green"
+                >
+                  Social prescribing and local groups
+                </Link>{" "}
+                — activities, groups, and voluntary sector support
+              </li>
+              <li>
+                <Link
+                  to="/carers/hubs/universal-offer"
+                  className="text-wf-blue underline hover:text-wf-green"
+                >
+                  Universal offer for carers
+                </Link>{" "}
+                — support available to all carers without an assessment
+              </li>
+              <li>
+                <Link
+                  to="/live-independently"
+                  className="text-wf-blue underline hover:text-wf-green"
+                >
+                  Living independently
+                </Link>{" "}
+                — equipment, home adaptations, and practical help
+              </li>
+            </ul>
+          </section>
+
+          {/* Other ways to get help - moved above phone */}
+          <section>
+            <h2 className="text-2xl font-bold text-wf-pink">Other ways to get help</h2>
+            <p className="mt-3 text-wf-dark leading-relaxed">
+              You can also use our online tools to get started:
+            </p>
+            <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
+              <li>
+                <Link
+                  to="/how-to-get-support/check-situation-online"
+                  className="text-wf-blue underline hover:text-wf-green"
+                >
+                  Check your situation online
+                </Link>{" "}
+                using our self-assessment tool
+              </li>
+              <li>
+                <Link
+                  to="/how-to-get-support/request-assessment"
+                  className="text-wf-blue underline hover:text-wf-green"
+                >
+                  Request an assessment
+                </Link>{" "}
+                using our online form
+              </li>
+            </ul>
+          </section>
+
+          {/* Phone */}
           <section className="rounded-lg border-l-4 border-wf-green bg-wf-green-light p-6">
             <h2 className="text-xl font-bold text-wf-pink">Phone</h2>
             <p className="mt-2 text-sm text-wf-dark leading-relaxed">
@@ -117,33 +202,6 @@ export default function ContactUsPage() {
               This service is available evenings, weekends and bank holidays. If someone
               is in immediate danger, call 999.
             </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-wf-pink">Other ways to get help</h2>
-            <p className="mt-3 text-wf-dark leading-relaxed">
-              You can also use our online tools to get started:
-            </p>
-            <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-              <li>
-                <Link
-                  to="/how-to-get-support/check-situation-online"
-                  className="text-wf-blue underline hover:text-wf-green"
-                >
-                  Check your situation online
-                </Link>{" "}
-                using our self-assessment tool
-              </li>
-              <li>
-                <Link
-                  to="/how-to-get-support/request-assessment"
-                  className="text-wf-blue underline hover:text-wf-green"
-                >
-                  Request an assessment
-                </Link>{" "}
-                using our online form
-              </li>
-            </ul>
           </section>
         </div>
       </div>

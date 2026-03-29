@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Who can get help", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
-  { title: "What happens during an assessment", to: "/adult-social-care/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "Your care and support plan", to: "/adult-social-care/how-adult-social-care-works/your-care-and-support-plan" },
-  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
+  { title: "Who can get help", to: "/how-adult-social-care-works/who-can-get-help" },
+  { title: "What happens during an assessment", to: "/how-adult-social-care-works/what-happens-during-assessment" },
+  { title: "Your care and support plan", to: "/how-adult-social-care-works/your-care-and-support-plan" },
+  { title: "Paying for your care", to: "/paying-for-care" },
 ];
 
 export default function HowToAskForHelpPage() {
@@ -16,9 +16,9 @@ export default function HowToAskForHelpPage() {
           <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
             <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
+            <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
+            <li><Link to="/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><span className="font-medium text-wf-dark">How to ask for help</span></li>
           </ol>
