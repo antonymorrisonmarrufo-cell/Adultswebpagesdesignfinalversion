@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
 
+const quickActions = [
+  { label: "Check your situation online", link: "/how-to-get-support/check-situation-online", primary: true },
+  { label: "Find local support", link: "/live-independently/social-prescribing", primary: false },
+  { label: "Report a concern", link: "/report-abuse", primary: false },
+];
+
 const sections = [
   { title: "Live independently", desc: "Equipment, home adaptations, telecare, and other help to stay in your home.", link: "/live-independently" },
   { title: "Being a carer", desc: "Support, assessments, and services for unpaid carers in Waltham Forest.", link: "/carers" },
@@ -20,65 +26,72 @@ const sections = [
 
 export default function AdultSocialCarePage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <nav className="text-sm mb-6">
-          <Link to="/" className="text-wf-blue hover:text-wf-green">Home</Link>
-          <span className="mx-2 text-gray-400">/</span>
-          <span className="text-gray-600">Adult Social Care</span>
-        </nav>
-
-        <h1 className="text-5xl font-bold text-wf-green mb-6">Adult Social Care</h1>
-        <p className="text-lg text-gray-700 mb-8">
-          Find information and support for adults who need help with daily living, their carers, and families in Waltham Forest.
-        </p>
-
-        <div className="bg-green-50 border-l-4 border-wf-green p-5 rounded mb-4">
-          <p className="font-semibold text-wf-dark mb-2">You might not need a formal assessment</p>
-          <p className="text-gray-700 mb-3">
-            Many people find the right support through community services, local groups, equipment, and practical help. Use our online self-assessment tool or browse the options below.
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <div className="bg-[#00635C] text-white">
+        <div className="max-w-5xl mx-auto px-4 py-12 md:py-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Adult Social Care</h1>
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+            Find information and support for adults who need help with daily living, their carers, and families in Waltham Forest.
           </p>
-          <Link
-            to="/how-to-get-support/check-situation-online"
-            className="inline-block bg-wf-green text-white font-semibold px-5 py-2.5 rounded hover:bg-wf-green/90 transition no-underline"
-          >
-            Check your situation online
-          </Link>
-        </div>
-
-        <div className="bg-gray-100 border border-gray-200 p-4 rounded mb-8 text-sm text-gray-700">
-          <p>
-            <strong>Need to speak to someone?</strong> Call our Adult Social Care team on{" "}
-            <strong>020 8496 3130</strong> (Monday to Friday, 9am to 5pm). For emergencies outside these hours, call{" "}
-            <strong>020 8496 3000</strong>.
+          <p className="text-white/80 mb-6 text-sm">
+            Many people find the right support through community services and local groups — without needing a formal assessment.
           </p>
+          <div className="flex flex-wrap gap-3">
+            {quickActions.map((action) => (
+              <Link
+                key={action.link}
+                to={action.link}
+                className={`inline-block font-semibold px-5 py-3 rounded-lg transition no-underline text-sm md:text-base ${
+                  action.primary
+                    ? "bg-[#D61F69] text-white hover:bg-[#b81a5a]"
+                    : "bg-white/15 text-white border border-white/30 hover:bg-white/25"
+                }`}
+              >
+                {action.label}
+              </Link>
+            ))}
+          </div>
         </div>
+      </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
-          {sections.map((section) => (
-            <Link
-              key={section.link}
-              to={section.link}
-              className="block bg-white border border-gray-200 rounded-lg p-5 hover:border-wf-green hover:shadow-md transition-all no-underline"
-            >
-              <h2 className="text-lg font-semibold text-wf-pink mb-2">{section.title}</h2>
-              <p className="text-sm text-gray-600">{section.desc}</p>
-            </Link>
-          ))}
+      {/* Main Content */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
+          <h2 className="text-2xl font-bold text-[#00635C] mb-6">Browse by topic</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {sections.map((section) => (
+              <Link
+                key={section.link}
+                to={section.link}
+                className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md border-l-4 border-[#D61F69] transition-all no-underline group"
+              >
+                <h3 className="text-base font-semibold text-[#0b0c0c] mb-2 group-hover:text-[#00635C] transition-colors">
+                  {section.title}
+                </h3>
+                <p className="text-sm text-[#505a5f]">{section.desc}</p>
+              </Link>
+            ))}
+          </div>
+
+          {/* Safeguarding Banner */}
+          <div className="mt-8 bg-[#D61F69] rounded-lg p-6 text-white">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <h2 className="text-xl font-bold mb-1">Worried about an adult?</h2>
+                <p className="text-white/90">If you think someone is being abused or neglected, report it now.</p>
+              </div>
+              <Link
+                to="/report-abuse"
+                className="inline-block bg-white text-[#D61F69] font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition no-underline text-center"
+              >
+                Report a concern
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-sm text-[#505a5f] mt-8">Last updated: March 2026</p>
         </div>
-
-        <div className="mt-10 bg-white border border-gray-200 rounded-lg p-6">
-          <h2 className="text-xl font-semibold text-wf-pink mb-3">Report a safeguarding concern</h2>
-          <p className="text-gray-700 mb-4">If you think an adult is being abused or neglected, or is at risk of abuse, report it immediately.</p>
-          <Link
-            to="/report-abuse"
-            className="inline-block bg-wf-pink text-white font-semibold px-6 py-3 rounded hover:bg-wf-pink/90 transition no-underline"
-          >
-            Report a concern
-          </Link>
-        </div>
-
-        <p className="text-sm text-gray-500 mt-8">Last updated: March 2026</p>
       </div>
     </div>
   );

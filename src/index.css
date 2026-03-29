@@ -16,19 +16,42 @@
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
-  color: var(--color-wf-dark);
+  color: #0b0c0c;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: var(--color-wf-blue);
+  color: #1d70b8;
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--color-wf-green);
+  color: #00635C;
 }
+
+/* Ensure custom colors work as Tailwind utilities */
+.text-wf-green { color: #00635C; }
+.text-wf-pink { color: #D61F69; }
+.text-wf-blue { color: #1d70b8; }
+.text-wf-dark { color: #0b0c0c; }
+.text-wf-gray { color: #505a5f; }
+
+.bg-wf-green { background-color: #00635C; }
+.bg-wf-pink { background-color: #D61F69; }
+.bg-wf-green-light { background-color: #e6f2f1; }
+.bg-wf-pink-light { background-color: #fce8f0; }
+.bg-wf-gray-light { background-color: #f3f2f1; }
+
+.border-wf-green { border-color: #00635C; }
+.border-wf-pink { border-color: #D61F69; }
+
+.hover\:text-wf-green:hover { color: #00635C; }
+.hover\:bg-wf-green:hover { background-color: #00635C; }
