@@ -111,6 +111,14 @@ export default function HowToGetSupportHubPage() {
               If you need to speak to someone about care and support, contact our
               Adult Social Care team.
             </p>
+            <p className="mt-3 text-sm text-wf-dark leading-relaxed">
+              <Link
+                to="/how-to-get-support/check-situation-online"
+                className="text-wf-blue underline hover:text-wf-green font-semibold"
+              >
+                Check your situation online first
+              </Link>
+            </p>
             <p className="mt-3 text-sm font-semibold text-wf-dark">
               Telephone:{" "}
               <a href="tel:02084963130" className="text-wf-blue underline">

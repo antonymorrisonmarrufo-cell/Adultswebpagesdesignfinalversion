@@ -4,50 +4,50 @@ const cards = [
   {
     title: "Getting help and support",
     description:
-      "Find out when to seek help, how to get a GP referral, and what local support services are available.",
-    to: "/adult-social-care/dementia-support/get-help",
+      "Find out what local support services are available, including the Dementia Hub, adviser service, and when to see your GP.",
+    to: "/dementia/get-help",
   },
   {
     title: "Hornbeam Dementia Hub",
     description:
       "A welcoming centre offering information, activities and support for people living with dementia and their carers.",
-    to: "/adult-social-care/dementia-support/hub",
-  },
-  {
-    title: "Memory assessment service",
-    description:
-      "Learn what to expect from a memory assessment, how to get referred and what happens during the process.",
-    to: "/adult-social-care/dementia-support/memory-service",
+    to: "/dementia/hub",
   },
   {
     title: "Activities and social groups",
     description:
       "Singing for the Brain, art therapy, exercise classes, lunch clubs and other activities in Waltham Forest.",
-    to: "/adult-social-care/dementia-support/activities",
+    to: "/dementia/activities",
+  },
+  {
+    title: "Memory assessment service",
+    description:
+      "Learn what to expect from a memory assessment, how to get referred and what happens during the process.",
+    to: "/dementia/memory-service",
   },
   {
     title: "Dementia adviser service",
     description:
       "One-to-one support from a dedicated adviser who can help you navigate life after a dementia diagnosis.",
-    to: "/adult-social-care/dementia-support/adviser",
+    to: "/dementia/adviser",
   },
   {
     title: "iDOS - online dementia resources",
     description:
       "Digital tools, apps and online support to help people with dementia and their carers.",
-    to: "/adult-social-care/dementia-support/idos",
+    to: "/dementia/idos",
   },
   {
     title: "Support for carers",
     description:
-      "Respite care, support groups, carers assessments and practical help for those caring for someone with dementia.",
-    to: "/adult-social-care/dementia-support/carers",
+      "Respite care, support groups, and practical help for those caring for someone with dementia, including carers assessments.",
+    to: "/dementia/carers",
   },
   {
     title: "Planning for the future",
     description:
       "Guidance on lasting power of attorney, advance care planning, wills and other important decisions.",
-    to: "/adult-social-care/dementia-support/planning",
+    to: "/dementia/planning",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function DementiaSupportPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care"
+                to="/"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Adult Social Care

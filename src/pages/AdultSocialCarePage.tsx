@@ -71,7 +71,7 @@ export default function AdultSocialCarePage() {
           <h2 className="text-xl font-semibold text-wf-pink mb-3">Report a safeguarding concern</h2>
           <p className="text-gray-700 mb-4">If you think an adult is being abused or neglected, or is at risk of abuse, report it immediately.</p>
           <Link
-            to="/safeguarding/report-abuse"
+            to="/report-abuse"
             className="inline-block bg-wf-pink text-white font-semibold px-6 py-3 rounded hover:bg-wf-pink/90 transition no-underline"
           >
             Report a concern

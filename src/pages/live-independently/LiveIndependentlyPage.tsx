@@ -93,6 +93,21 @@ export default function LiveIndependentlyPage() {
         safely and independently in Waltham Forest.
       </p>
 
+      {/* Prevention callout banner */}
+      <div className="mt-6 rounded-lg border-l-4 border-wf-green bg-green-50 p-5">
+        <p className="text-sm leading-relaxed text-wf-dark">
+          You do not need a formal assessment to access many of these services.
+          Browse the options below or use our{" "}
+          <Link
+            to="/how-to-get-support/check-situation-online"
+            className="font-semibold text-wf-green underline hover:text-wf-green/80"
+          >
+            self-assessment tool
+          </Link>{" "}
+          to find what is right for you.
+        </p>
+      </div>
+
       {/* Cards grid */}
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {cards.map((card) => (
@@ -117,6 +132,15 @@ export default function LiveIndependentlyPage() {
         <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           If you or someone you know needs support to live independently,
           contact our Adult Social Care team.
+        </p>
+        <p className="mt-3 text-sm text-wf-dark">
+          <Link
+            to="/how-to-get-support/check-situation-online"
+            className="font-semibold text-wf-green underline hover:text-wf-green/80"
+          >
+            Try our self-assessment tool
+          </Link>{" "}
+          to check what support you may be eligible for.
         </p>
         <p className="mt-3 text-sm text-wf-dark">
           <span className="font-semibold">Phone:</span>{" "}

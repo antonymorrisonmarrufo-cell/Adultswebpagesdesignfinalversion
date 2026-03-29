@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-assessment" },
-  { title: "Check your situation online", to: "/adult-social-care/how-to-get-support/check-situation-online" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Request an assessment", to: "/how-to-get-support/request-assessment" },
+  { title: "Check your situation online", to: "/how-to-get-support/check-situation-online" },
 ];
 
 export default function ContactUsPage() {
