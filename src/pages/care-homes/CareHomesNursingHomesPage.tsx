@@ -179,7 +179,7 @@ export default function CareHomesNursingHomesPage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Get help choosing a care home</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             Our Adult Social Care team can help you understand your options and find a

@@ -105,7 +105,7 @@ export default function GeorgeMasonLodgePage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Contact George Mason Lodge</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
             <p>

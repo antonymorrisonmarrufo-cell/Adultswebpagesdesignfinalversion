@@ -94,7 +94,7 @@ export default function LiveIndependentlyPage() {
       </p>
 
       {/* Prevention callout banner */}
-      <div className="mt-6 rounded-lg border-l-4 border-wf-green bg-green-50 p-5">
+      <div className="mt-6 rounded-lg border-l-4 border-wf-green bg-[#d7f8ff] p-5">
         <p className="text-sm leading-relaxed text-wf-dark">
           You do not need a formal assessment to access many of these services.
           Browse the options below or use our{" "}
@@ -127,7 +127,7 @@ export default function LiveIndependentlyPage() {
       </div>
 
       {/* Contact block */}
-      <div className="mt-10 rounded-lg bg-wf-green-light p-6">
+      <div className="mt-10 rounded-lg bg-[#d7f8ff] p-6">
         <h2 className="text-xl font-bold text-wf-pink">Need help?</h2>
         <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           If you or someone you know needs support to live independently,

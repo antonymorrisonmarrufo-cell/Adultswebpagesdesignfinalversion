@@ -141,7 +141,7 @@ export default function HomesharePage() {
       </section>
 
       {/* CTA block */}
-      <section className="mt-8 rounded-lg bg-wf-green-light p-6">
+      <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
         <h2 className="text-xl font-bold text-wf-pink">
           Find out more about Homeshare
         </h2>

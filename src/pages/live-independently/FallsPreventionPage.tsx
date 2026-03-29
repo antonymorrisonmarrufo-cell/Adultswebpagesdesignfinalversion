@@ -124,7 +124,7 @@ export default function FallsPreventionPage() {
       </section>
 
       {/* CTA block */}
-      <section className="mt-8 rounded-lg bg-wf-green-light p-6">
+      <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
         <h2 className="text-xl font-bold text-wf-pink">
           Worried about falls?
         </h2>
@@ -141,7 +141,7 @@ export default function FallsPreventionPage() {
           </Link>
           <a
             href="tel:02084963130"
-            className="inline-block rounded-md border border-wf-green px-5 py-2.5 text-center text-sm font-semibold text-wf-green no-underline hover:bg-wf-green-light"
+            className="inline-block rounded-md border border-wf-green px-5 py-2.5 text-center text-sm font-semibold text-wf-green no-underline hover:bg-[#d7f8ff]"
           >
             Call 020 8496 3130
           </a>

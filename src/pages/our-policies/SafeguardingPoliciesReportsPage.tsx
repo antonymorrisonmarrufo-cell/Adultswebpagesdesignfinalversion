@@ -101,7 +101,7 @@ export default function SafeguardingPoliciesReportsPage() {
             </ul>
           </section>
 
-          <section className="rounded-lg border-l-4 border-wf-green bg-wf-green-light p-6">
+          <section className="rounded-lg border-l-4 border-wf-green bg-[#d7f8ff] p-6">
             <h2 className="text-xl font-bold text-wf-pink">Report a safeguarding concern</h2>
             <p className="mt-2 text-sm text-wf-dark leading-relaxed">
               If you are worried that an adult is being abused or neglected, contact our

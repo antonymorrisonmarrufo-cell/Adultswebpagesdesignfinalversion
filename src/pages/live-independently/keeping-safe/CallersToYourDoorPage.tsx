@@ -147,7 +147,7 @@ export default function CallersToYourDoorPage() {
       </section>
 
       {/* CTA block */}
-      <section className="mt-8 rounded-lg bg-wf-green-light p-6">
+      <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
         <h2 className="text-xl font-bold text-wf-pink">Need advice?</h2>
         <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           If you are concerned about doorstep callers or would like advice on

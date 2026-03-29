@@ -199,7 +199,7 @@ export default function PlanningPage() {
           </section>
 
           {/* Contact */}
-          <section className="rounded-lg border-l-4 border-wf-green bg-wf-green-light p-6">
+          <section className="rounded-lg border-l-4 border-wf-green bg-[#d7f8ff] p-6">
             <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
             <p className="mt-2 text-sm text-wf-dark leading-relaxed">
               For advice on planning for the future or to be connected with local

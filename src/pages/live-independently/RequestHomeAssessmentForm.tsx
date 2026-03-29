@@ -57,7 +57,7 @@ export default function RequestHomeAssessmentForm() {
       </p>
 
       {submitted ? (
-        <div className="mt-8 rounded-lg border border-wf-green bg-wf-green-light p-6">
+        <div className="mt-8 rounded-lg border border-wf-green bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-wf-green">
             Thank you for your request
           </h2>
@@ -183,7 +183,7 @@ export default function RequestHomeAssessmentForm() {
       )}
 
       {/* Alternative contact */}
-      <section className="mt-10 rounded-lg bg-wf-green-light p-6">
+      <section className="mt-10 rounded-lg bg-[#d7f8ff] p-6">
         <h2 className="text-xl font-bold text-wf-pink">Prefer to call?</h2>
         <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           You can also request a home assessment by calling our Adult Social Care

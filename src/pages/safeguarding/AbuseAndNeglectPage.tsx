@@ -155,7 +155,7 @@ export default function AbuseAndNeglectPage() {
         </section>
 
         {/* Reporting concerns */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-wf-green-light p-6">
+        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Worried about someone?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you recognise any of these types of abuse or neglect in someone you know, please do not
