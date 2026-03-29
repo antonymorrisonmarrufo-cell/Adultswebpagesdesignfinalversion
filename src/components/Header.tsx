@@ -1,122 +1,30 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Search, Phone } from "lucide-react";
-import { cn } from "@/components/ui/utils";
-
-const navLinks = [
-  { label: "Adult Social Care", href: "/adult-social-care" },
-  { label: "How to get support", href: "/how-to-get-support" },
-  { label: "Being a carer", href: "/carers" },
-  { label: "Live independently", href: "/live-independently" },
-  { label: "Paying for care", href: "/paying-for-care" },
-  { label: "Safeguarding", href: "/safeguarding" },
-];
+import { Menu, Search } from 'lucide-react';
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
-
   return (
-    <header className="border-b border-gray-200 bg-white">
-      {/* Top bar */}
-      <div className="bg-wf-green text-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm">
-          <Link to="/" className="font-bold text-white no-underline hover:text-white">
-            London Borough of Waltham Forest
-          </Link>
-          <div className="flex items-center gap-4">
-            <a
-              href="tel:02084963130"
-              className="flex items-center gap-1 text-white no-underline hover:text-wf-yellow"
-            >
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">020 8496 3130</span>
-            </a>
+    <header className="bg-white border-b border-gray-200">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+        <div className="flex items-center gap-3">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8C24 8 18 12 18 17C18 20 20 21.5 21.5 22.5C18.5 22.5 16 24 16 27C16 29.5 17.5 31 19 32C16.5 32 14 33.5 14 36C14 38.5 16 40 17.5 41C15 41 12.5 42.5 12.5 45C12.5 47.5 15 49 18 49H30C33 49 35.5 47.5 35.5 45C35.5 42.5 33 41 30.5 41C32 40 33.5 38.5 33.5 36C33.5 33.5 31 32 28.5 32C30 31 31.5 29.5 31.5 27C31.5 24 29 22.5 26 22.5C27.5 21.5 29 20 29 17C29 12 24 8 24 8Z" fill="#00635C"/>
+          </svg>
+          <div>
+            <div className="text-base font-bold text-gray-900 leading-tight">Waltham Forest</div>
+            <div className="text-xs text-gray-600">London Borough Council</div>
           </div>
         </div>
-      </div>
-
-      {/* Main nav */}
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="flex h-14 items-center justify-between">
-          <Link
-            to="/"
-            className="text-lg font-bold text-wf-green no-underline hover:text-wf-green"
-          >
-            Adult Social Care
-          </Link>
-
-          {/* Desktop nav */}
-          <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
-            {navLinks.map((link) => {
-              const isActive = location.pathname.startsWith(link.href);
-              return (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  className={cn(
-                    "rounded-md px-3 py-2 text-sm font-medium no-underline transition-colors",
-                    isActive
-                      ? "bg-wf-green-light text-wf-green"
-                      : "text-wf-dark hover:bg-wf-gray-light hover:text-wf-green",
-                  )}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Search + mobile menu button */}
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-md p-2 text-wf-gray hover:bg-wf-gray-light hover:text-wf-green"
-              aria-label="Search"
-            >
-              <Search className="h-5 w-5" />
-            </button>
-            <button
-              type="button"
-              className="rounded-md p-2 text-wf-gray hover:bg-wf-gray-light lg:hidden"
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile nav */}
-        {mobileMenuOpen && (
-          <nav
-            className="border-t border-gray-200 pb-4 lg:hidden"
-            aria-label="Mobile navigation"
-          >
-            {navLinks.map((link) => {
-              const isActive = location.pathname.startsWith(link.href);
-              return (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={cn(
-                    "block rounded-md px-3 py-2.5 text-sm font-medium no-underline",
-                    isActive
-                      ? "bg-wf-green-light text-wf-green"
-                      : "text-wf-dark hover:bg-wf-gray-light hover:text-wf-green",
-                  )}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
-          </nav>
-        )}
+        
+        <nav className="flex items-center gap-6">
+          <button className="text-sm text-gray-700 hover:text-gray-900">English [EN]</button>
+          <button className="text-sm text-gray-700 hover:text-gray-900">My Account</button>
+          <button className="text-sm flex items-center gap-1 text-gray-700 hover:text-gray-900">
+            <Search className="w-4 h-4" />
+            Search
+          </button>
+          <button className="text-sm flex items-center gap-1 text-gray-700 hover:text-gray-900">
+            Menu <Menu className="w-4 h-4" />
+          </button>
+        </nav>
       </div>
     </header>
   );

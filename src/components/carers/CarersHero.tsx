@@ -1,57 +1,43 @@
-import React from "react";
-import { cn } from "@/components/ui/utils";
+import { AlertCircle } from 'lucide-react';
+import Chip from './Chip';
 
 interface CarersHeroProps {
   title: string;
   description: string;
-  ctaLabel?: string;
-  ctaHref?: string;
-  onCtaClick?: () => void;
-  className?: string;
+  breadcrumb?: string;
+  chips?: string[];
+  urgentLink?: { text: string; href: string };
 }
 
-export default function CarersHero({
-  title,
-  description,
-  ctaLabel,
-  ctaHref,
-  onCtaClick,
-  className,
-}: CarersHeroProps) {
+export default function CarersHero({ title, description, breadcrumb = "Support for carers", chips, urgentLink }: CarersHeroProps) {
   return (
-    <section
-      className={cn(
-        "bg-wf-green text-white py-10 md:py-16",
-        className,
-      )}
-    >
-      <div className="mx-auto max-w-5xl px-4">
-        <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
-          {title}
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/90">
+    <section className="bg-gradient-to-br from-[#FFF0F7] to-white border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="text-sm text-gray-600 mb-4">
+          Part of: <a href="#/carers" className="text-[#EF3688] hover:underline">{breadcrumb}</a>
+        </div>
+        
+        <h1 className="text-[#EF3688] mb-6">{title}</h1>
+        
+        <p className="text-gray-700 max-w-4xl mb-6 text-lg">
           {description}
         </p>
-        {ctaLabel && (
-          <div className="mt-6">
-            {ctaHref ? (
-              <a
-                href={ctaHref}
-                className="inline-block rounded bg-wf-pink px-6 py-3 text-base font-semibold text-white no-underline shadow hover:bg-wf-pink/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-wf-green"
-              >
-                {ctaLabel}
-              </a>
-            ) : (
-              <button
-                type="button"
-                onClick={onCtaClick}
-                className="inline-block rounded bg-wf-pink px-6 py-3 text-base font-semibold text-white shadow hover:bg-wf-pink/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-wf-green"
-              >
-                {ctaLabel}
-              </button>
-            )}
-          </div>
-        )}
+        
+        <div className="flex flex-wrap items-center gap-3">
+          {chips && chips.map((chip, index) => (
+            <Chip key={index} variant="primary">{chip}</Chip>
+          ))}
+          
+          {urgentLink && (
+            <a 
+              href={urgentLink.href}
+              className="flex items-center gap-2 text-[#EF3688] hover:underline ml-auto"
+            >
+              <AlertCircle className="w-5 h-5" />
+              <span>{urgentLink.text}</span>
+            </a>
+          )}
+        </div>
       </div>
     </section>
   );

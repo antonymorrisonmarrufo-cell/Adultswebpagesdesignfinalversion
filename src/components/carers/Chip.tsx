@@ -1,41 +1,33 @@
-import React from "react";
-import { cn } from "@/components/ui/utils";
-
 interface ChipProps {
-  label: string;
-  icon?: React.ReactNode;
-  variant?: "green" | "pink" | "gray";
-  className?: string;
+  children: React.ReactNode;
+  variant?: 'primary' | 'secondary' | 'tag';
+  size?: 'sm' | 'md';
   onClick?: () => void;
+  active?: boolean;
 }
 
-const variantStyles: Record<string, string> = {
-  green: "bg-wf-green-light text-wf-green border-wf-green/20",
-  pink: "bg-wf-pink-light text-wf-pink border-wf-pink/20",
-  gray: "bg-wf-gray-light text-wf-gray border-wf-gray/20",
-};
-
-export default function Chip({
-  label,
-  icon,
-  variant = "green",
-  className,
-  onClick,
-}: ChipProps) {
-  const Component = onClick ? "button" : "span";
+export default function Chip({ children, variant = 'primary', size = 'md', onClick, active = false }: ChipProps) {
+  const baseClasses = "inline-flex items-center justify-center rounded-full transition-colors";
+  
+  const sizeClasses = {
+    sm: "px-3 py-1 text-xs",
+    md: "px-4 py-2 text-sm"
+  };
+  
+  const variantClasses = {
+    primary: active 
+      ? "bg-[#EF3688] text-white" 
+      : "bg-white border-2 border-[#EF3688] text-[#EF3688] hover:bg-[#EF3688] hover:text-white",
+    secondary: "bg-gray-100 text-gray-700 hover:bg-gray-200",
+    tag: "bg-[#FFF0F7] text-[#EF3688] border border-[#EF3688]"
+  };
 
   return (
-    <Component
-      className={cn(
-        "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-sm font-medium leading-tight",
-        variantStyles[variant],
-        onClick && "cursor-pointer hover:opacity-80 transition-opacity",
-        className,
-      )}
-      {...(onClick ? { onClick, type: "button" as const } : {})}
+    <button 
+      className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${onClick ? 'cursor-pointer' : ''}`}
+      onClick={onClick}
     >
-      {icon && <span className="flex-shrink-0 [&>svg]:h-4 [&>svg]:w-4">{icon}</span>}
-      {label}
-    </Component>
+      {children}
+    </button>
   );
 }

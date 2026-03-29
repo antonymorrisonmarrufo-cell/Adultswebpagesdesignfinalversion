@@ -1,53 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { cn } from "@/components/ui/utils";
+import { ArrowRight } from 'lucide-react';
 
-export interface RelatedPageItem {
+interface RelatedPage {
   title: string;
-  href: string;
-  description?: string;
 }
 
-interface RelatedPagesProps {
-  title?: string;
-  pages: RelatedPageItem[];
-  className?: string;
-}
+const pages: RelatedPage[] = [
+  { title: 'Support for carers' },
+  { title: 'How to get support( request an assessment )' },
+  { title: 'Travel and transport' }
+];
 
-export default function RelatedPages({
-  title = "Related pages",
-  pages,
-  className,
-}: RelatedPagesProps) {
-  if (pages.length === 0) return null;
-
+export default function RelatedPages() {
   return (
-    <section className={cn("py-10 md:py-14 bg-wf-gray-light", className)}>
-      <div className="mx-auto max-w-5xl px-4">
-        <h2 className="text-2xl font-bold text-wf-green">{title}</h2>
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-          {pages.map((page) => (
-            <li key={page.href}>
-              <Link
-                to={page.href}
-                className="group flex items-start gap-3 rounded-lg border border-gray-200 bg-white p-4 no-underline transition-shadow hover:shadow-md hover:border-wf-green"
-              >
-                <ArrowRight className="mt-0.5 h-5 w-5 flex-shrink-0 text-wf-pink transition-transform group-hover:translate-x-0.5" />
-                <div>
-                  <span className="text-base font-semibold text-wf-green group-hover:underline">
-                    {page.title}
-                  </span>
-                  {page.description && (
-                    <p className="mt-1 text-sm text-wf-gray">
-                      {page.description}
-                    </p>
-                  )}
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <section className="max-w-7xl mx-auto px-6 py-12">
+      <h2 className="text-[#D61F69] mb-8 font-bold">Related pages</h2>
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {pages.map((page, index) => (
+          <button
+            key={index}
+            className="bg-[#D61F69] text-white p-6 flex items-center justify-between hover:bg-[#B51A5A] transition-colors text-left"
+          >
+            <span className="pr-4 font-semibold">{page.title}</span>
+            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#D61F69] flex-shrink-0">
+              <ArrowRight className="w-5 h-5" />
+            </div>
+          </button>
+        ))}
       </div>
     </section>
   );
