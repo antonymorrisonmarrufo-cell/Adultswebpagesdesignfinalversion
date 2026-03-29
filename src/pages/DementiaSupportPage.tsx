@@ -118,18 +118,67 @@ export default function DementiaSupportPage() {
           <h2 className="text-xl font-bold text-wf-pink">Need help now?</h2>
           <p className="mt-2 text-sm text-wf-dark leading-relaxed">
             If you are worried about your memory or the memory of someone you know,
-            speak to your GP. You can also contact our Adult Social Care team for advice
+            speak to your GP. You can also contact the services below for advice
             and support.
           </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-            Telephone:{" "}
-            <a href="tel:02084963130" className="text-wf-blue underline">
-              020 8496 3130
-            </a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">
-            Monday to Friday, 9am to 5pm (excluding bank holidays)
-          </p>
+
+          <div className="mt-4 space-y-3">
+            <div>
+              <p className="text-sm font-semibold text-wf-dark">
+                Hornbeam Dementia Hub
+              </p>
+              <p className="text-sm text-wf-dark">
+                Drop in for information, activities and support at the{" "}
+                <Link to="/dementia/hub" className="text-wf-blue underline">
+                  Dementia Hub
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-wf-dark">
+                Dementia adviser service
+              </p>
+              <p className="text-sm text-wf-dark">
+                Get one-to-one support from a dedicated{" "}
+                <Link to="/dementia/adviser" className="text-wf-blue underline">
+                  dementia adviser
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-wf-dark">
+                Adult Social Care team
+              </p>
+              <p className="text-sm text-wf-dark">
+                Telephone:{" "}
+                <a href="tel:02084963130" className="text-wf-blue underline">
+                  020 8496 3130
+                </a>
+              </p>
+              <p className="text-sm text-wf-gray">
+                Monday to Friday, 9am to 5pm (excluding bank holidays)
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold text-wf-dark">
+                Alzheimer's Society national helpline
+              </p>
+              <p className="text-sm text-wf-dark">
+                Telephone:{" "}
+                <a href="tel:03331503456" className="text-wf-blue underline">
+                  0333 150 3456
+                </a>
+              </p>
+              <p className="text-sm text-wf-gray">
+                Open every day, including weekends and bank holidays
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

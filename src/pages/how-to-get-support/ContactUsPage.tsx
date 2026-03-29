@@ -22,7 +22,7 @@ export default function ContactUsPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
+              <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -127,7 +127,7 @@ export default function ContactUsPage() {
             <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
               <li>
                 <Link
-                  to="/adult-social-care/how-to-get-support/check-situation-online"
+                  to="/how-to-get-support/check-situation-online"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   Check your situation online
@@ -136,7 +136,7 @@ export default function ContactUsPage() {
               </li>
               <li>
                 <Link
-                  to="/adult-social-care/how-to-get-support/request-assessment"
+                  to="/how-to-get-support/request-assessment"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   Request an assessment
