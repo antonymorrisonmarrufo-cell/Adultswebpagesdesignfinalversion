@@ -17,7 +17,7 @@ export default function AllistonHousePage() {
           <li><span className="font-medium text-wf-dark">Alliston House</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Alliston House</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Alliston House</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Alliston House is a care facility in Waltham Forest providing residential
           support and services for adults who need care and accommodation.
@@ -142,7 +142,7 @@ export default function AllistonHousePage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

@@ -40,7 +40,7 @@ export default function FallsPreventionPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Falls prevention</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Falls prevention</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Falls are one of the most common causes of injury among older people, but

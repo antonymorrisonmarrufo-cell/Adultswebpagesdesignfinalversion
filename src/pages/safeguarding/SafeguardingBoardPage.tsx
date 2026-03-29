@@ -17,7 +17,7 @@ export default function SafeguardingBoardPage() {
           <li><span className="font-medium text-wf-dark">Safeguarding Adults Board</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Waltham Forest Safeguarding Adults Board</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Waltham Forest Safeguarding Adults Board</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           The Safeguarding Adults Board (SAB) brings together key organisations to ensure that local
           safeguarding arrangements work effectively to protect adults at risk.
@@ -153,7 +153,7 @@ export default function SafeguardingBoardPage() {
           </p>
           <p className="mt-2 text-wf-dark">
           <strong>Phone:</strong>{" "}
-          <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
+          <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
           </p>
           </section>
 

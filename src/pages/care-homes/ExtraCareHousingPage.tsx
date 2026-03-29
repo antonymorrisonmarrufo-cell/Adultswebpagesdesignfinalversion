@@ -17,7 +17,7 @@ export default function ExtraCareHousingPage() {
           <li><span className="font-medium text-wf-dark">Extra care housing</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Extra care housing</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Extra care housing</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Extra care housing offers self-contained flats or apartments with on-site care
           staff available around the clock, designed for older people and adults who need
@@ -125,7 +125,7 @@ export default function ExtraCareHousingPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

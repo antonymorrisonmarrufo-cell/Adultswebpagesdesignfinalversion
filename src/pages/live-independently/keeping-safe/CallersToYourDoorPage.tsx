@@ -46,7 +46,7 @@ export default function CallersToYourDoorPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">
+          <h1 className="text-5xl font-bold text-[#231F20]">
           Dealing with callers at your door
           </h1>
           
@@ -163,7 +163,7 @@ export default function CallersToYourDoorPage() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

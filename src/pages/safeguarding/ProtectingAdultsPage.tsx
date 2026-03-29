@@ -15,7 +15,7 @@ export default function ProtectingAdultsPage() {
           <li><span className="font-medium text-wf-dark">Safeguarding adults</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Safeguarding adults</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Safeguarding adults</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Safeguarding means protecting an adult's right to live in safety, free from abuse and neglect.
           If you are worried about yourself or someone else, we can help.
@@ -27,7 +27,7 @@ export default function ProtectingAdultsPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Emergency banner */}
-          <div className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
+          <div className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
           Call <strong>999</strong> immediately. Do not wait to contact social services if someone is at risk of harm right now.
@@ -55,9 +55,9 @@ export default function ProtectingAdultsPage() {
           <div className="grid gap-4 md:grid-cols-2">
           <Link
           to="/safeguarding/report-abuse"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Report abuse or neglect</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Report abuse or neglect</h3>
           <p className="mt-2 text-sm text-wf-gray">
           How to raise a safeguarding concern, who to contact, and what information you will need.
           </p>
@@ -65,9 +65,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/abuse-and-neglect"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Types of abuse and neglect</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Types of abuse and neglect</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Understand the different forms of abuse and neglect, including physical, emotional, financial, and more.
           </p>
@@ -75,9 +75,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/what-happens-after"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">What happens after a concern is raised</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">What happens after a concern is raised</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Learn about the safeguarding process, from screening through to enquiry and outcomes.
           </p>
@@ -85,9 +85,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/professionals"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Information for professionals</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Information for professionals</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Duty to report, making a safeguarding referral, and professional responsibilities.
           </p>
@@ -95,9 +95,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/professional-guidance"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Professional guidance and resources</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Professional guidance and resources</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Practice standards, training opportunities, and toolkits for practitioners.
           </p>
@@ -105,9 +105,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/safeguarding-board"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Safeguarding Adults Board</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Safeguarding Adults Board</h3>
           <p className="mt-2 text-sm text-wf-gray">
           The role and work of the Waltham Forest Safeguarding Adults Board, including the strategic plan.
           </p>
@@ -115,9 +115,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/marac"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">MARAC</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">MARAC</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Multi-Agency Risk Assessment Conference for high-risk domestic abuse cases.
           </p>
@@ -125,9 +125,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/resources-improve-practice"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Resources to improve practice</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Resources to improve practice</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Research, case studies, and learning from safeguarding adult reviews.
           </p>
@@ -135,9 +135,9 @@ export default function ProtectingAdultsPage() {
 
           <Link
           to="/safeguarding/report-child-concern"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Reporting concerns about a child</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Reporting concerns about a child</h3>
           <p className="mt-2 text-sm text-wf-gray">
           If you are worried about a child, there is a separate process. Find out how to report.
           </p>
@@ -146,7 +146,7 @@ export default function ProtectingAdultsPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

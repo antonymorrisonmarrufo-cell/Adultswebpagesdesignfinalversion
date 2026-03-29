@@ -39,7 +39,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           <li><span className="font-medium text-wf-dark">How adult social care works</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">How adult social care works</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">How adult social care works</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Adult social care helps people who need extra support to live their daily
           lives. This section explains how the process works, from your first contact
@@ -52,7 +52,7 @@ export default function HowAdultSocialCareWorksHubPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Key things to know */}
-          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
           <li>Anyone can contact us to ask for help, not just the person who needs support</li>
@@ -71,13 +71,13 @@ export default function HowAdultSocialCareWorksHubPage() {
           <Link
           key={step.number}
           to={step.to}
-          className="flex items-start gap-4 rounded-md bg-white p-5 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex items-start gap-4 rounded-md bg-[#d7f8ff] p-5 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#004E3E] text-lg font-bold text-white">
           {step.number}
           </span>
           <div>
-          <h3 className="text-lg font-bold text-[#004E3E]">{step.title}</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">{step.title}</h3>
           <p className="mt-1 text-sm text-wf-gray">{step.description}</p>
           </div>
           </Link>
@@ -93,9 +93,9 @@ export default function HowAdultSocialCareWorksHubPage() {
           <Link
           key={card.to}
           to={card.to}
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">{card.title}</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">{card.title}</h3>
           <p className="mt-2 text-sm text-wf-gray">{card.description}</p>
           </Link>
           ))}
@@ -129,7 +129,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           </section>
 
           {/* Emergency contact */}
-          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Emergency contact</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you or someone you know is in immediate danger, call <strong>999</strong>.
@@ -146,7 +146,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           </section>
 
           {/* Daytime contact */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Contact Adult Social Care</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           To ask about adult social care or request an assessment, contact us during
@@ -160,7 +160,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

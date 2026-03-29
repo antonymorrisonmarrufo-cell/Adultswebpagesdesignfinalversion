@@ -17,7 +17,7 @@ export default function ResourcesImprovePracticePage() {
           <li><span className="font-medium text-wf-dark">Resources to improve practice</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Resources to improve practice</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Resources to improve practice</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Research, case studies, and learning from safeguarding reviews to help professionals improve
           their safeguarding practice.
@@ -95,7 +95,7 @@ export default function ResourcesImprovePracticePage() {
 
           <div className="mt-6 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Self-neglect: working with reluctant engagement</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Self-neglect: working with reluctant engagement</h3>
           <p className="mt-2 text-wf-dark">
           An older adult living alone was reported by neighbours due to concerns about hoarding and
           self-neglect. The case study explores how a multi-agency approach, using relationship-based
@@ -105,7 +105,7 @@ export default function ResourcesImprovePracticePage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Financial abuse: recognising the signs</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Financial abuse: recognising the signs</h3>
           <p className="mt-2 text-wf-dark">
           A person with learning disabilities was found to have been financially exploited by a family
           member over several years. This case study highlights the importance of professional
@@ -114,7 +114,7 @@ export default function ResourcesImprovePracticePage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Organisational abuse: responding to systemic concerns</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Organisational abuse: responding to systemic concerns</h3>
           <p className="mt-2 text-wf-dark">
           Concerns were raised about the standard of care in a residential setting. This case study
           demonstrates how a coordinated multi-agency response, including quality monitoring and

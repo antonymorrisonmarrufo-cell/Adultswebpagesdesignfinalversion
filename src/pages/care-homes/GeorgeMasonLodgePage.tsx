@@ -17,7 +17,7 @@ export default function GeorgeMasonLodgePage() {
           <li><span className="font-medium text-wf-dark">George Mason Lodge</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">George Mason Lodge</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">George Mason Lodge</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           George Mason Lodge is a council-run residential care home in Waltham Forest,
           providing personal care and support for older people in a welcoming and
@@ -129,7 +129,7 @@ export default function GeorgeMasonLodgePage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

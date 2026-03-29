@@ -24,7 +24,7 @@ export default function GetFinancialAdvicePage() {
           <li><span className="font-medium text-wf-dark">Get financial advice</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Get financial advice</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Get financial advice</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Getting professional financial advice can help you understand your options
           and make the best decisions about paying for care. Some advice is free.
@@ -148,7 +148,7 @@ export default function GetFinancialAdvicePage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Talk to us about your options</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Our team can help point you in the right direction for financial advice
@@ -164,7 +164,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

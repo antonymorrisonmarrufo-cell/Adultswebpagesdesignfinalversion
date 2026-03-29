@@ -19,7 +19,7 @@ export default function CarerEmergencyPlanPage() {
           <li><span className="font-medium text-wf-dark">Carer emergency plan</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Carer emergency plan</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Carer emergency plan</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If something unexpected happens to you, having an emergency plan in place means the person you
           care for will still be looked after. Planning ahead gives you peace of mind.
@@ -72,7 +72,7 @@ export default function CarerEmergencyPlanPage() {
           </section>
 
           {/* Carer emergency card */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Carer emergency card</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           We can provide you with a carer emergency card to carry in your wallet or purse. This card lets
@@ -86,7 +86,7 @@ export default function CarerEmergencyPlanPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

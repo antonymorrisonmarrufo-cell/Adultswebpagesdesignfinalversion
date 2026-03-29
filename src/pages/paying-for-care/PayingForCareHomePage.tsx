@@ -24,7 +24,7 @@ export default function PayingForCareHomePage() {
           <li><span className="font-medium text-wf-dark">Paying for a care home</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Paying for a care home</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Paying for a care home</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Moving into a care home is a big decision and understanding how costs work
           is important. How you pay depends on your financial situation.
@@ -123,7 +123,7 @@ export default function PayingForCareHomePage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Need advice about care home costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Understanding care home funding can be complicated. Our team can help

@@ -59,7 +59,7 @@ export default function AdultSocialCarePage() {
       {/* Hero Section - White background */}
       <div className="bg-white">
         <div className="max-w-5xl mx-auto px-4 py-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#004E3E] mb-4">Adult Social Care</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#231F20] mb-4">Adult Social Care</h1>
           <p className="text-base text-[#231F20] mb-8 max-w-3xl">
             Find information and advice about adult social care, request support, report a concern, and discover services
             available to you or someone you care for in Waltham Forest.

@@ -40,7 +40,7 @@ export default function EquipmentPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Equipment and aids</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Equipment and aids</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Equipment and daily living aids can help you carry out everyday tasks
@@ -96,7 +96,7 @@ export default function EquipmentPage() {
           </li>
           <li>
           Call our Adult Social Care team on{" "}
-          <a href="tel:02084963130" className="font-bold text-wf-green">
+          <a href="tel:02084963130" className="font-bold text-[#231F20]">
           020 8496 3130
           </a>
           </li>

@@ -17,7 +17,7 @@ export default function AssessmentPage() {
           <li><span className="font-medium text-wf-dark">Request a carers assessment</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Request a carers assessment</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Request a carers assessment</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           How to request a carers assessment in Waltham Forest, what you will need, and what to expect.
           </p>
@@ -62,20 +62,20 @@ export default function AssessmentPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">How to request an assessment</h2>
           <div className="mt-4 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">By phone</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">By phone</h3>
           <p className="mt-2 text-wf-dark">
           Call Adult Social Care on <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
           Lines are open Monday to Friday, 9am to 5pm.
           </p>
           </div>
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">In person</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">In person</h3>
           <p className="mt-2 text-wf-dark">
           Visit the Carers Hub during opening hours. You do not need an appointment.
           </p>
           </div>
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">Through a professional</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Through a professional</h3>
           <p className="mt-2 text-wf-dark">
           Ask your GP, social worker, hospital discharge team, or any health professional to refer you.
           </p>
@@ -97,7 +97,7 @@ export default function AssessmentPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

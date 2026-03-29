@@ -60,7 +60,7 @@ export default function PayingForCareHubPage() {
           <li><span className="font-medium text-wf-dark">Paying for your care</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Paying for your care</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Paying for your care</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Most people need to pay something towards the cost of their care. Find out how
           costs are worked out, what financial help is available and how to plan ahead.
@@ -72,7 +72,7 @@ export default function PayingForCareHubPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Important information */}
-          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
           <li>You will not be asked to pay more than you can afford</li>
@@ -91,9 +91,9 @@ export default function PayingForCareHubPage() {
           <Link
           key={topic.to}
           to={topic.to}
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">{topic.title}</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">{topic.title}</h3>
           <p className="mt-2 text-sm text-wf-gray">{topic.description}</p>
           </Link>
           ))}
@@ -101,7 +101,7 @@ export default function PayingForCareHubPage() {
           </section>
 
           {/* Contact */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Need help understanding your care costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Our team can talk you through how paying for care works and answer any questions you have.
@@ -114,7 +114,7 @@ export default function PayingForCareHubPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

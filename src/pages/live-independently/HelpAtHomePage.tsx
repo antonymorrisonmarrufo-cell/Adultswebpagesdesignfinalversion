@@ -40,7 +40,7 @@ export default function HelpAtHomePage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Help at home</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Help at home</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           If you are finding it difficult to manage everyday tasks at home, we can

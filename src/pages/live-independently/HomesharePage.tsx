@@ -40,7 +40,7 @@ export default function HomesharePage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Homeshare</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Homeshare</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Homeshare brings together people who have a spare room with people who
@@ -88,7 +88,7 @@ export default function HomesharePage() {
           </h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-gray-200 bg-white p-5">
-          <h3 className="text-base font-bold text-wf-green">
+          <h3 className="text-base font-bold text-[#231F20]">
           For householders
           </h3>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-wf-gray">
@@ -100,7 +100,7 @@ export default function HomesharePage() {
           </ul>
           </div>
           <div className="rounded-lg border border-gray-200 bg-white p-5">
-          <h3 className="text-base font-bold text-wf-green">
+          <h3 className="text-base font-bold text-[#231F20]">
           For homesharers
           </h3>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-wf-gray">
@@ -159,7 +159,7 @@ export default function HomesharePage() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

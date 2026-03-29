@@ -17,7 +17,7 @@ export default function MaracPage() {
           <li><span className="font-medium text-wf-dark">MARAC</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">MARAC</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">MARAC</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           The Multi-Agency Risk Assessment Conference (MARAC) is a meeting where information is shared
           about the highest-risk domestic abuse cases to develop a coordinated safety plan.
@@ -119,7 +119,7 @@ export default function MaracPage() {
           </p>
           <p className="mt-2 text-wf-dark">
           <strong>Phone:</strong>{" "}
-          <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
+          <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
           </p>
           </section>
 
@@ -146,13 +146,13 @@ export default function MaracPage() {
           <ul className="mt-4 space-y-4 text-wf-dark">
           <li>
           <strong>National Domestic Abuse Helpline:</strong>{" "}
-          <a href="tel:08082000247" className="font-bold text-[#004E3E] no-underline">0808 200 0247</a>
+          <a href="tel:08082000247" className="font-bold text-[#231F20] no-underline">0808 200 0247</a>
           <br />
           <span className="text-sm text-wf-gray">Free, 24-hour helpline run by Refuge</span>
           </li>
           <li>
           <strong>Waltham Forest Domestic Abuse services:</strong>{" "}
-          <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
+          <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
           <br />
           <span className="text-sm text-wf-gray">Local support and advice</span>
           </li>

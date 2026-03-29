@@ -73,7 +73,7 @@ export default function KeepingSafePage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Keeping safe at home</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Keeping safe at home</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Staying safe at home is about more than locks and alarms. Fraud, scams
@@ -119,7 +119,7 @@ export default function KeepingSafePage() {
           <span className="font-semibold">Adult Social Care:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

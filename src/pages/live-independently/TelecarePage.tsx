@@ -40,7 +40,7 @@ export default function TelecarePage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Telecare</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Telecare</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Telecare uses simple technology to help you feel safe and supported at

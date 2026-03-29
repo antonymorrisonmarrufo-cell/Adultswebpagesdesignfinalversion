@@ -24,7 +24,7 @@ export default function WhoCanGetHelpPage() {
           <li><span className="font-medium text-wf-dark">Who can get help</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Who can get help</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Who can get help</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Not everyone who contacts adult social care will be eligible for
           council-funded support, but anyone can ask for an assessment. Here is how
@@ -38,7 +38,7 @@ export default function WhoCanGetHelpPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="max-w-3xl space-y-8">
           {/* Callout */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">You do not need a GP referral</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Anyone can contact us to ask for an assessment. You do not need a referral
@@ -145,7 +145,7 @@ export default function WhoCanGetHelpPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Not sure if you are eligible?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you are unsure whether you or someone you know would be eligible for
@@ -162,7 +162,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

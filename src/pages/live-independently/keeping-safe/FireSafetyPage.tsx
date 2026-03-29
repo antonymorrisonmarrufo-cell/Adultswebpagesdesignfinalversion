@@ -46,7 +46,7 @@ export default function FireSafetyPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">
+          <h1 className="text-5xl font-bold text-[#231F20]">
           Fire safety at home
           </h1>
           
@@ -159,7 +159,7 @@ export default function FireSafetyPage() {
           Call the London Fire Brigade on{" "}
           <a
           href="tel:08000284428"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           0800 028 4428
           </a>{" "}
@@ -169,7 +169,7 @@ export default function FireSafetyPage() {
           <span className="font-semibold">Adult Social Care:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

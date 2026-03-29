@@ -24,7 +24,7 @@ export default function WhatHappensDuringAssessmentPage() {
           <li><span className="font-medium text-wf-dark">What happens during an assessment</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">What happens during an assessment</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">What happens during an assessment</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           An assessment is a conversation about your life, your needs and what matters
           to you. It is not a test, and there are no wrong answers.
@@ -37,7 +37,7 @@ export default function WhatHappensDuringAssessmentPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="max-w-3xl space-y-8">
           {/* Callout: always free */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Assessments are always free</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           A needs assessment is free for everyone, regardless of your income, savings
@@ -157,7 +157,7 @@ export default function WhatHappensDuringAssessmentPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Questions about your assessment?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have been told you are going to have an assessment and want to know
@@ -173,7 +173,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

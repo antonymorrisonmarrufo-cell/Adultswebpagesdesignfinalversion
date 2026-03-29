@@ -17,7 +17,7 @@ export default function ReportChildConcernPage() {
           <li><span className="font-medium text-wf-dark">Reporting concerns about a child</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Reporting concerns about a child</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Reporting concerns about a child</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If you are worried about a child or young person under 18, there is a separate process from
           adult safeguarding. Find out how to report your concerns.
@@ -58,24 +58,24 @@ export default function ReportChildConcernPage() {
 
           <div className="mt-6 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Contact the MASH team</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Contact the MASH team</h3>
           <p className="mt-2 text-wf-dark">
           If you are worried about a child, contact the Waltham Forest MASH:
           </p>
-          <p className="mt-3 text-2xl font-bold text-[#004E3E]">
+          <p className="mt-3 text-2xl font-bold text-[#231F20]">
           <a href="tel:02084962310" className="no-underline text-[#004E3E]">020 8496 2310</a>
           </p>
           <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>
           <p className="mt-3 text-wf-dark">
           Outside office hours, contact the Emergency Duty Team:
           </p>
-          <p className="mt-1 font-bold text-[#004E3E]">
+          <p className="mt-1 font-bold text-[#231F20]">
           <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
           </p>
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Online referral</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Online referral</h3>
           <p className="mt-2 text-wf-dark">
           You can also make a referral to children's social care online. Professionals should use the
           Multi-Agency Referral Form (MARF).
@@ -117,19 +117,19 @@ export default function ReportChildConcernPage() {
           <ul className="mt-4 space-y-4 text-wf-dark">
           <li>
           <strong>NSPCC Helpline:</strong>{" "}
-          <a href="tel:08088005000" className="font-bold text-[#004E3E] no-underline">0808 800 5000</a>
+          <a href="tel:08088005000" className="font-bold text-[#231F20] no-underline">0808 800 5000</a>
           <br />
           <span className="text-sm text-wf-gray">For adults concerned about a child. Available 24/7.</span>
           </li>
           <li>
           <strong>Childline:</strong>{" "}
-          <a href="tel:08001111" className="font-bold text-[#004E3E] no-underline">0800 1111</a>
+          <a href="tel:08001111" className="font-bold text-[#231F20] no-underline">0800 1111</a>
           <br />
           <span className="text-sm text-wf-gray">For children and young people who need support. Available 24/7.</span>
           </li>
           <li>
           <strong>Police (non-emergency):</strong>{" "}
-          <a href="tel:101" className="font-bold text-[#004E3E] no-underline">101</a>
+          <a href="tel:101" className="font-bold text-[#231F20] no-underline">101</a>
           <br />
           <span className="text-sm text-wf-gray">For non-urgent police concerns about a child.</span>
           </li>

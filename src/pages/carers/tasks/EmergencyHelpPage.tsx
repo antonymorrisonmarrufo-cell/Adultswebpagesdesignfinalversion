@@ -17,7 +17,7 @@ export default function EmergencyHelpPage() {
           <li><span className="font-medium text-wf-dark">Getting emergency help</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Getting emergency help as a carer</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Getting emergency help as a carer</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           What to do if you have an emergency and cannot provide care, and how to get urgent help.
           </p>
@@ -28,7 +28,7 @@ export default function EmergencyHelpPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Immediate danger */}
-          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
           Call <strong>999</strong> immediately. This includes medical emergencies, fires, or if someone is at risk of harm.
@@ -86,7 +86,7 @@ export default function EmergencyHelpPage() {
           </section>
 
           {/* Key contacts */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Key emergency contacts</h2>
           <ul className="mt-3 space-y-2 text-wf-dark">
           <li><strong>Emergency services:</strong> 999</li>
@@ -98,7 +98,7 @@ export default function EmergencyHelpPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

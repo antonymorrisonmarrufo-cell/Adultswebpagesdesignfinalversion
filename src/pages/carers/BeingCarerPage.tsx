@@ -15,7 +15,7 @@ export default function BeingCarerPage() {
           <li><span className="font-medium text-wf-dark">Being a carer</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Being a carer</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Being a carer</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           A carer is anyone who looks after a family member, partner, or friend who needs help because
           of their illness, frailty, disability, a mental health problem, or an addiction. Find out what
@@ -62,9 +62,9 @@ export default function BeingCarerPage() {
           <div className="grid gap-4 md:grid-cols-2">
           <Link
           to="/carers/carers-hub"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Carers Hub</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Carers Hub</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Visit the Waltham Forest Carers Hub for drop-in advice, activities, and peer support.
           </p>
@@ -72,9 +72,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/support"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Support for carers</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Support for carers</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Financial help, respite breaks, health and wellbeing support, local groups, training, and more.
           </p>
@@ -82,9 +82,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/hubs/universal-offer"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Universal Offer Hub</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Universal Offer Hub</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Support available to all carers — no assessment needed.
           </p>
@@ -92,9 +92,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/assessment-rights"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Carers assessment and rights</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Carers assessment and rights</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Your rights under the Care Act 2014, how to request a carers assessment, and what happens during one.
           </p>
@@ -102,9 +102,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/young-carers"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Young carers</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Young carers</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Support for children and young people under 18 who help look after someone in their family.
           </p>
@@ -112,9 +112,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/parent-carers"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Parent carers</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Parent carers</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Support for parents and guardians of disabled children or children with additional needs.
           </p>
@@ -122,9 +122,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/work-education"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Work and education</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Work and education</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Balancing caring with work or study, flexible working rights, and education support.
           </p>
@@ -132,9 +132,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/support-after-caring"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Support after caring ends</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Support after caring ends</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Bereavement support, returning to work, and continued help when your caring role changes.
           </p>
@@ -142,9 +142,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/strategy-council-duties"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Carers strategy and council duties</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Carers strategy and council duties</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Our local carers strategy and the council's legal duties to support carers.
           </p>
@@ -152,9 +152,9 @@ export default function BeingCarerPage() {
 
           <Link
           to="/carers/ia-flow"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Information and advice flow</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Information and advice flow</h3>
           <p className="mt-2 text-sm text-wf-gray">
           A step-by-step guide to finding and accessing the right carer support for your situation.
           </p>
@@ -163,7 +163,7 @@ export default function BeingCarerPage() {
           </section>
 
           {/* Contact */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Contact us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           If you need help or want to talk to someone about your caring role, contact our Adult Social Care team.
@@ -177,7 +177,7 @@ export default function BeingCarerPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

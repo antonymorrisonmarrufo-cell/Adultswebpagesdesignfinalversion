@@ -17,7 +17,7 @@ export default function ProfessionalsPage() {
           <li><span className="font-medium text-wf-dark">Information for professionals</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Information for professionals</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Information for professionals</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Guidance for professionals working with adults at risk of abuse or neglect in Waltham Forest.
           </p>
@@ -57,7 +57,7 @@ export default function ProfessionalsPage() {
 
           <div className="mt-6 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Professional referral form</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Professional referral form</h3>
           <p className="mt-2 text-wf-dark">
           Complete the online professional safeguarding referral form. This provides a structured format
           to ensure all relevant information is captured.
@@ -71,11 +71,11 @@ export default function ProfessionalsPage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">By phone</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">By phone</h3>
           <p className="mt-2 text-wf-dark">
           Contact the Adult Social Care safeguarding team directly:
           </p>
-          <p className="mt-2 text-xl font-bold text-[#004E3E]">
+          <p className="mt-2 text-xl font-bold text-[#231F20]">
           <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
           </p>
           <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>

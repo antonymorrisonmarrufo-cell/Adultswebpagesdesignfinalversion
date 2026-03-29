@@ -100,7 +100,7 @@ export default function KeyTeamsContactDetailsPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Key teams and contact details
       </h1>
         </div>
@@ -132,7 +132,7 @@ export default function KeyTeamsContactDetailsPage() {
       key={team.name}
       className="rounded-lg border border-gray-200 p-5"
       >
-      <h3 className="text-lg font-bold text-wf-green">{team.name}</h3>
+      <h3 className="text-lg font-bold text-[#231F20]">{team.name}</h3>
       <p className="mt-1 text-sm text-wf-dark leading-relaxed">
       {team.description}
       </p>
@@ -192,7 +192,7 @@ export default function KeyTeamsContactDetailsPage() {
 
       {/* Related pages */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="border-t border-gray-200 pt-8">
+      <div className="pt-8">
       <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
       <ul className="mt-4 space-y-2">
       {relatedPages.map((page) => (

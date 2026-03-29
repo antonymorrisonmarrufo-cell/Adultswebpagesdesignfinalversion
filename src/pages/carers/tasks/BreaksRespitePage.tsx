@@ -17,7 +17,7 @@ export default function BreaksRespitePage() {
           <li><span className="font-medium text-wf-dark">Arranging breaks and respite</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Arranging breaks and respite</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Arranging breaks and respite</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           How to arrange a break from caring, the types of respite available, and how to access them.
           </p>
@@ -69,7 +69,7 @@ export default function BreaksRespitePage() {
           </section>
 
           {/* Emergency breaks */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Emergency breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           If you need an urgent break because you are at risk of burnout or your health is suffering,
@@ -80,7 +80,7 @@ export default function BreaksRespitePage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

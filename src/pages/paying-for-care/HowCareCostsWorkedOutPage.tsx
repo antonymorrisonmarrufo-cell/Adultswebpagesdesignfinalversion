@@ -24,7 +24,7 @@ export default function HowCareCostsWorkedOutPage() {
           <li><span className="font-medium text-wf-dark">How care costs are worked out</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">How care costs are worked out</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">How care costs are worked out</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           The council uses a means test to work out how much you may need to pay towards
           your care and support. This page explains how the process works.
@@ -121,7 +121,7 @@ export default function HowCareCostsWorkedOutPage() {
           </section>
 
           {/* Important note */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Important</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you deliberately reduce your capital to avoid paying for care (sometimes
@@ -134,7 +134,7 @@ export default function HowCareCostsWorkedOutPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

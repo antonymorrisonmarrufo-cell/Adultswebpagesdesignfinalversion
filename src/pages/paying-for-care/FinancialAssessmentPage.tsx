@@ -24,7 +24,7 @@ export default function FinancialAssessmentPage() {
           <li><span className="font-medium text-wf-dark">Financial assessment</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Financial assessment</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Financial assessment</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           A financial assessment helps us work out how much you can afford to pay
           towards the cost of your care and support. It is free and confidential.
@@ -129,7 +129,7 @@ export default function FinancialAssessmentPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Contact the financial assessment team</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have questions about your financial assessment or need help gathering
@@ -144,7 +144,7 @@ export default function FinancialAssessmentPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

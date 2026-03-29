@@ -35,7 +35,7 @@ export default function BlueBadgePage() {
           <li className="text-gray-900 font-medium">Blue Badge</li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E] mb-6">Blue Badge</h1>
+          <h1 className="text-5xl font-bold text-[#231F20] mb-6">Blue Badge</h1>
           
           <p className="text-lg text-gray-700 mb-8">
           The Blue Badge scheme helps people with disabilities or health

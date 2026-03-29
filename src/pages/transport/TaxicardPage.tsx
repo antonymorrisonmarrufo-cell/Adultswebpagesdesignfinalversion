@@ -35,7 +35,7 @@ export default function TaxicardPage() {
           <li className="text-gray-900 font-medium">Taxicard</li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E] mb-6">Taxicard</h1>
+          <h1 className="text-5xl font-bold text-[#231F20] mb-6">Taxicard</h1>
           
           <p className="text-lg text-gray-700 mb-8">
           The Taxicard scheme provides subsidised door-to-door taxi and private

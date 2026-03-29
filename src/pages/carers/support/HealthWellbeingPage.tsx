@@ -19,7 +19,7 @@ export default function HealthWellbeingPage() {
           <li><span className="font-medium text-wf-dark">Health and wellbeing</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Health and wellbeing for carers</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Health and wellbeing for carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Looking after your own health is just as important as looking after the person you care for. There are
           services and programmes in Waltham Forest to support your physical and mental wellbeing.
@@ -79,7 +79,7 @@ export default function HealthWellbeingPage() {
           </section>
 
           {/* Looking after yourself */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Tips for looking after yourself</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
           <li>Try to get enough sleep and eat well</li>
@@ -93,7 +93,7 @@ export default function HealthWellbeingPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

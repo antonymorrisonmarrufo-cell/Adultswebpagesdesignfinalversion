@@ -85,7 +85,7 @@ export default function CareHomesHubPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-[#004E3E] leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Housing and care homes
       </h1>
       <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">

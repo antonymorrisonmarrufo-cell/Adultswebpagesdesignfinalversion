@@ -17,7 +17,7 @@ export default function WorkEducationPage() {
           <li><span className="font-medium text-wf-dark">Work and education</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Work and education</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Work and education</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Balancing a caring role with work or education can be challenging. You have legal rights as a
           working carer, and there is support available to help you continue with work or study.
@@ -91,7 +91,7 @@ export default function WorkEducationPage() {
           </section>
 
           {/* Talk to us */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Talk to us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           If your caring role is affecting your ability to work or study, a carers assessment can help
@@ -101,7 +101,7 @@ export default function WorkEducationPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

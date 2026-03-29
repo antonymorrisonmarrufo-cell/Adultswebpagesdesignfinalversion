@@ -24,7 +24,7 @@ export default function WhatIsAdultSocialCarePage() {
           <li><span className="font-medium text-wf-dark">What is adult social care?</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">What is adult social care?</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">What is adult social care?</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Adult social care is the support provided to adults who need extra help to
           manage their daily lives, stay safe and live as independently as possible.
@@ -108,7 +108,7 @@ export default function WhatIsAdultSocialCarePage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Want to find out more?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have questions about adult social care or think you or someone you

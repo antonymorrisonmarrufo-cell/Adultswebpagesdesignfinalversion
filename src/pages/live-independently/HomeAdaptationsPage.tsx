@@ -40,7 +40,7 @@ export default function HomeAdaptationsPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">
+          <h1 className="text-5xl font-bold text-[#231F20]">
           Home adaptations and modifications
           </h1>
           

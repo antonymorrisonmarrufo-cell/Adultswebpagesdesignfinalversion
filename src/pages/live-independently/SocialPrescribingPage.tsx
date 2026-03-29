@@ -40,7 +40,7 @@ export default function SocialPrescribingPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Social prescribing</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Social prescribing</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           Social prescribing connects you with activities, groups and services in
@@ -143,7 +143,7 @@ export default function SocialPrescribingPage() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

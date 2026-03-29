@@ -17,7 +17,7 @@ export default function WhatHappensAfterPage() {
           <li><span className="font-medium text-wf-dark">What happens after a concern is raised</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">What happens after a safeguarding concern is raised</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">What happens after a safeguarding concern is raised</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           When a safeguarding concern is reported to us, we follow a clear process to make sure the adult
           is safe and their wishes are at the centre of everything we do.

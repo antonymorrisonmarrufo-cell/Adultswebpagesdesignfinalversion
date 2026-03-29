@@ -85,7 +85,7 @@ export default function LiveIndependentlyPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">Live independently</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Live independently</h1>
           
           <p className="mt-4 text-lg leading-relaxed text-wf-gray">
           We want to help you stay in your own home for as long as possible. Find
@@ -152,7 +152,7 @@ export default function LiveIndependentlyPage() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

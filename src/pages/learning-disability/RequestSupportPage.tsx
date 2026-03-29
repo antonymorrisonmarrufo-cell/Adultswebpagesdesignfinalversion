@@ -45,7 +45,7 @@ export default function RequestSupportPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Request support
       </h1>
       <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">

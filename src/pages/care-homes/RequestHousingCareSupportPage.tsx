@@ -17,7 +17,7 @@ export default function RequestHousingCareSupportPage() {
           <li><span className="font-medium text-wf-dark">Request housing and care support</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Request housing and care support</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Request housing and care support</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If you or someone you care about needs help with housing and care, you can request
           an assessment from Waltham Forest Council. We will work with you to understand your
@@ -78,7 +78,7 @@ export default function RequestHousingCareSupportPage() {
           </p>
           <div className="mt-4 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">By telephone</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">By telephone</h3>
           <p className="mt-2 text-wf-dark">
           Call our Adult Social Care team on{" "}
           <a href="tel:02084963130" className="text-wf-blue underline font-semibold">
@@ -90,7 +90,7 @@ export default function RequestHousingCareSupportPage() {
           </p>
           </div>
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">Online</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Online</h3>
           <p className="mt-2 text-wf-dark">
           Complete our{" "}
           <a
@@ -105,7 +105,7 @@ export default function RequestHousingCareSupportPage() {
           </p>
           </div>
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">By email</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">By email</h3>
           <p className="mt-2 text-wf-dark">
           Email us at{" "}
           <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-wf-blue underline">
@@ -114,7 +114,7 @@ export default function RequestHousingCareSupportPage() {
           </p>
           </div>
           <div className="rounded-md border border-wf-gray-light p-4">
-          <h3 className="text-lg font-bold text-[#004E3E]">In person</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">In person</h3>
           <p className="mt-2 text-wf-dark">
           Visit Waltham Forest Town Hall, Forest Road, Walthamstow, London E17 4JF.
           </p>
@@ -144,7 +144,7 @@ export default function RequestHousingCareSupportPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

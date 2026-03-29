@@ -91,7 +91,7 @@ export default function FurtherInfoSafetyPage() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">
+          <h1 className="text-5xl font-bold text-[#231F20]">
           Further information on staying safe
           </h1>
           
@@ -115,7 +115,7 @@ export default function FurtherInfoSafetyPage() {
           key={contact.name}
           className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm"
           >
-          <h3 className="text-lg font-bold text-wf-green">
+          <h3 className="text-lg font-bold text-[#231F20]">
           {contact.name}
           </h3>
           <p className="mt-1 text-sm text-wf-gray">
@@ -202,7 +202,7 @@ export default function FurtherInfoSafetyPage() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

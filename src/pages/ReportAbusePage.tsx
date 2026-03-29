@@ -15,7 +15,7 @@ export default function ReportAbusePage() {
           <li><span className="font-medium text-wf-dark">Report abuse</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Report abuse</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Report abuse</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If you are worried that an adult is being abused or neglected, or if you are being abused
           yourself, help is available. You can report your concerns quickly using the options below.
@@ -44,11 +44,11 @@ export default function ReportAbusePage() {
           <div className="mt-6 grid gap-6 md:grid-cols-2">
           {/* Phone */}
           <div className="rounded-md border-2 border-[#004E3E] p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Call us</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Call us</h3>
           <p className="mt-2 text-wf-dark">
           Speak to our Adult Social Care team about your concern:
           </p>
-          <p className="mt-3 text-3xl font-bold text-[#004E3E]">
+          <p className="mt-3 text-3xl font-bold text-[#231F20]">
           <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
           </p>
           <p className="mt-2 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>
@@ -56,7 +56,7 @@ export default function ReportAbusePage() {
           <p className="text-wf-dark text-sm">
           <strong>Outside office hours:</strong>
           </p>
-          <p className="text-lg font-bold text-[#004E3E] mt-1">
+          <p className="text-lg font-bold text-[#231F20] mt-1">
           <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
           </p>
           <p className="text-sm text-wf-gray">Emergency Duty Team</p>
@@ -65,7 +65,7 @@ export default function ReportAbusePage() {
 
           {/* Online form */}
           <div className="rounded-md border-2 border-[#004E3E] p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Report online</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Report online</h3>
           <p className="mt-2 text-wf-dark">
           Use our online referral form to report your concerns. Available 24 hours a day, 7 days a week.
           </p>

@@ -19,7 +19,7 @@ export default function TakingBreakPage() {
           <li><span className="font-medium text-wf-dark">Taking a break from caring</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Taking a break from caring</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Taking a break from caring</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Taking regular breaks is important for your health and wellbeing. There are different types of
           respite and replacement care available to give you time to rest and recharge.
@@ -84,7 +84,7 @@ export default function TakingBreakPage() {
           </section>
 
           {/* How to arrange */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">How to arrange a break</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           Speak to us about what kind of break would help you. We can discuss options following a carers assessment.
@@ -94,7 +94,7 @@ export default function TakingBreakPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

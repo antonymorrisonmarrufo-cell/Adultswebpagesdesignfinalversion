@@ -17,7 +17,7 @@ export default function ProfessionalGuidancePage() {
           <li><span className="font-medium text-wf-dark">Professional guidance and resources</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Professional guidance and resources</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Professional guidance and resources</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Practice standards, training opportunities, and toolkits to support professionals working in
           adult safeguarding in Waltham Forest.
@@ -75,7 +75,7 @@ export default function ProfessionalGuidancePage() {
 
           <div className="mt-6 space-y-4">
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Level 1: Basic awareness</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Level 1: Basic awareness</h3>
           <p className="mt-2 text-wf-dark">
           For all staff and volunteers. Covers what safeguarding is, how to recognise abuse and
           neglect, and how to report concerns. Available as an e-learning module.
@@ -83,7 +83,7 @@ export default function ProfessionalGuidancePage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Level 2: Responding to concerns</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Level 2: Responding to concerns</h3>
           <p className="mt-2 text-wf-dark">
           For staff who may need to respond to safeguarding concerns as part of their role. Covers
           the referral process, information sharing, and Making Safeguarding Personal.
@@ -91,7 +91,7 @@ export default function ProfessionalGuidancePage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Level 3: Enquiry managers</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Level 3: Enquiry managers</h3>
           <p className="mt-2 text-wf-dark">
           For professionals who lead or manage safeguarding enquiries. Covers the Section 42 enquiry
           process, risk assessment, safeguarding planning, and complex case management.
@@ -99,7 +99,7 @@ export default function ProfessionalGuidancePage() {
           </div>
 
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Specialist topics</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Specialist topics</h3>
           <p className="mt-2 text-wf-dark">
           Workshops and seminars on specific topics such as self-neglect, modern slavery, domestic
           abuse, financial abuse, mental capacity, and organisational abuse.

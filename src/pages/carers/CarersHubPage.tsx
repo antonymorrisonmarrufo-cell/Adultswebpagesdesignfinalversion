@@ -17,7 +17,7 @@ export default function CarersHubPage() {
           <li><span className="font-medium text-wf-dark">Carers Hub</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Carers Hub</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Carers Hub</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           The Waltham Forest Carers Hub is a welcoming space where carers can get information, advice,
           and support. Whether you need practical help or just want to meet other carers, you are welcome
@@ -30,7 +30,7 @@ export default function CarersHubPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Location */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Where to find us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           The Carers Hub is located in the heart of Waltham Forest and is easily accessible by public transport.
@@ -82,9 +82,9 @@ export default function CarersHubPage() {
           <div className="grid gap-4 md:grid-cols-2">
           <Link
           to="/carers/hubs/adult-carers"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Adult carers hub</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Adult carers hub</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Dedicated support, activities, and resources for adult carers.
           </p>
@@ -92,9 +92,9 @@ export default function CarersHubPage() {
 
           <Link
           to="/carers/hubs/parent-carers"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Parent carers hub</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Parent carers hub</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Support and resources specifically for parents of disabled children.
           </p>
@@ -102,9 +102,9 @@ export default function CarersHubPage() {
 
           <Link
           to="/carers/hubs/young-carers"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Young carers hub</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Young carers hub</h3>
           <p className="mt-2 text-sm text-wf-gray">
           A dedicated space for young carers with activities and peer support.
           </p>
@@ -112,9 +112,9 @@ export default function CarersHubPage() {
 
           <Link
           to="/carers/hubs/universal-offer"
-          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
           >
-          <h3 className="text-lg font-bold text-[#004E3E]">Universal offer</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Universal offer</h3>
           <p className="mt-2 text-sm text-wf-gray">
           Support available to all carers without the need for an assessment.
           </p>
@@ -123,7 +123,7 @@ export default function CarersHubPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

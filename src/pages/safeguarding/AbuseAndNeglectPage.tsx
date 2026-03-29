@@ -17,7 +17,7 @@ export default function AbuseAndNeglectPage() {
           <li><span className="font-medium text-wf-dark">Types of abuse and neglect</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Types of abuse and neglect</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Types of abuse and neglect</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Abuse and neglect can take many forms. Understanding the different types can help you to
           recognise when someone may be at risk and needs help.
@@ -160,7 +160,7 @@ export default function AbuseAndNeglectPage() {
           </p>
           <p className="mt-3 text-wf-dark">
           <strong>Phone:</strong>{" "}
-          <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
+          <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
           </p>
           <p className="mt-2">
           <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green font-medium">

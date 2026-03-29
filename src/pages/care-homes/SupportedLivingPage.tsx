@@ -17,7 +17,7 @@ export default function SupportedLivingPage() {
           <li><span className="font-medium text-wf-dark">Supported living</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Supported living</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Supported living</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Supported living helps you live as independently as possible in your own home or
           shared accommodation, with care and support tailored to your individual needs.
@@ -120,7 +120,7 @@ export default function SupportedLivingPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

@@ -17,7 +17,7 @@ export default function SharedLivesPage() {
           <li><span className="font-medium text-wf-dark">Shared Lives</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Shared Lives</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Shared Lives</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Shared Lives is a scheme where adults who need support are matched with an
           approved carer and live as part of that carer's family in their home.
@@ -132,7 +132,7 @@ export default function SharedLivesPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

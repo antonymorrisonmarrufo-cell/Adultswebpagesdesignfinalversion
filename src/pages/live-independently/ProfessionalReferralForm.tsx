@@ -47,7 +47,7 @@ export default function ProfessionalReferralForm() {
           </BreadcrumbItem>
           </BreadcrumbList>
           </Breadcrumb>
-          <h1 className="text-5xl font-bold text-wf-green">
+          <h1 className="text-5xl font-bold text-[#231F20]">
           Professional referral for live independently services
           </h1>
           
@@ -66,7 +66,7 @@ export default function ProfessionalReferralForm() {
 
           {submitted ? (
           <div className="mt-8 rounded-lg border border-wf-green bg-[#d7f8ff] p-6">
-          <h2 className="text-2xl font-bold text-wf-green">
+          <h2 className="text-2xl font-bold text-[#231F20]">
           Referral submitted
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-wf-gray">
@@ -76,7 +76,7 @@ export default function ProfessionalReferralForm() {
           </p>
           <p className="mt-3 text-sm text-wf-gray">
           For urgent referrals, please call{" "}
-          <a href="tel:02084963130" className="font-bold text-wf-green">
+          <a href="tel:02084963130" className="font-bold text-[#231F20]">
           020 8496 3130
           </a>
           .
@@ -362,7 +362,7 @@ export default function ProfessionalReferralForm() {
           <span className="font-semibold">Phone:</span>{" "}
           <a
           href="tel:02084963130"
-          className="font-bold text-wf-green no-underline hover:underline"
+          className="font-bold text-[#231F20] no-underline hover:underline"
           >
           020 8496 3130
           </a>

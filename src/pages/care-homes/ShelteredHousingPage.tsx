@@ -17,7 +17,7 @@ export default function ShelteredHousingPage() {
           <li><span className="font-medium text-wf-dark">Sheltered housing</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Sheltered housing</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Sheltered housing</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Sheltered housing provides independent living for older people with the
           reassurance of a scheme manager (warden) and an emergency alarm system.
@@ -134,7 +134,7 @@ export default function ShelteredHousingPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

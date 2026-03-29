@@ -17,7 +17,7 @@ export default function IAFlowPage() {
           <li><span className="font-medium text-wf-dark">Information and advice flow</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Information and advice flow</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Information and advice flow</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           A step-by-step guide to understanding how to access carer support in Waltham Forest, from first
           contact through to ongoing help.
@@ -99,7 +99,7 @@ export default function IAFlowPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

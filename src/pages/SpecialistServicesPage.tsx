@@ -22,7 +22,7 @@ export default function SpecialistServicesPage() {
           <span className="mx-2 text-gray-400">/</span>
           <span className="text-gray-600">Specialist services and conditions</span>
           </nav>
-          <h1 className="text-5xl font-bold text-wf-green mb-6">Specialist services and conditions</h1>
+          <h1 className="text-5xl font-bold text-[#231F20] mb-6">Specialist services and conditions</h1>
           <p className="text-lg text-gray-700 mb-8">
           Find information and support for specific conditions and specialist services available in Waltham Forest.
           </p>

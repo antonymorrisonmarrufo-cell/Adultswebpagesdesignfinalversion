@@ -24,7 +24,7 @@ export default function YourCareAndSupportPlanPage() {
           <li><span className="font-medium text-wf-dark">Your care and support plan</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Your care and support plan</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Your care and support plan</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If you are eligible for council-funded support, you will receive a care and
           support plan. This is a written document that sets out your needs and how
@@ -142,7 +142,7 @@ export default function YourCareAndSupportPlanPage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Need help with your care plan?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you have questions about your care and support plan, want to request a
@@ -158,7 +158,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

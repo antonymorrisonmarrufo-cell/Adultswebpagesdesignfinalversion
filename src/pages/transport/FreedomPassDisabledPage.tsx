@@ -37,7 +37,7 @@ export default function FreedomPassDisabledPage() {
           </li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
+          <h1 className="text-5xl font-bold text-[#231F20] mb-6">
           Freedom Pass for disabled people
           </h1>
           

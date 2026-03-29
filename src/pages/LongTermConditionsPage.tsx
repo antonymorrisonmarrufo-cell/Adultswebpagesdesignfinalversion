@@ -29,7 +29,7 @@ export default function LongTermConditionsPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Long-term conditions
       </h1>
         </div>
@@ -293,7 +293,7 @@ export default function LongTermConditionsPage() {
 
       {/* Related pages */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="border-t border-gray-200 pt-8">
+      <div className="pt-8">
       <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
       <ul className="mt-4 space-y-2">
       {relatedPages.map((page) => (

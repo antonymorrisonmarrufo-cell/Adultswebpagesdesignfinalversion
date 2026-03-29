@@ -31,7 +31,7 @@ export default function ContactUsPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Contact us
       </h1>
         </div>
@@ -54,7 +54,7 @@ export default function ContactUsPage() {
 
       {/* Green callout - before you call */}
       <section className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-green">Before you call</h2>
+      <h2 className="text-xl font-bold text-[#231F20]">Before you call</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
       Before you call, you might find what you need through our online
       self-assessment tool or community support. Many people get the help they
@@ -210,7 +210,7 @@ export default function ContactUsPage() {
 
       {/* Related pages */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="border-t border-gray-200 pt-8">
+      <div className="pt-8">
       <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
       <ul className="mt-4 space-y-2">
       {relatedPages.map((page) => (

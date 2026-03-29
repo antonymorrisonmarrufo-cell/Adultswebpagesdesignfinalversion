@@ -17,7 +17,7 @@ export default function UsefulContactsPage() {
           <li><span className="font-medium text-wf-dark">Useful contacts</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Useful contacts quick reference</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Useful contacts quick reference</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           Key phone numbers and contacts for carers in Waltham Forest - save this page for quick access
           when you need help.
@@ -29,7 +29,7 @@ export default function UsefulContactsPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Emergency contacts */}
-          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Emergency contacts</h2>
           <div className="mt-4 space-y-3">
           <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
@@ -125,7 +125,7 @@ export default function UsefulContactsPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

@@ -19,7 +19,7 @@ export default function YoungCarersHub() {
           <li><span className="font-medium text-wf-dark">Young carers hub</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Young carers hub</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Young carers hub</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           A dedicated space for young carers in Waltham Forest. A place where you can have fun, make friends,
           get support, and just be yourself.
@@ -80,7 +80,7 @@ export default function YoungCarersHub() {
           </section>
 
           {/* Young carers rights */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Your rights as a young carer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           As a young carer, you have the right to a young carers assessment. This looks at how caring affects
@@ -90,7 +90,7 @@ export default function YoungCarersHub() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

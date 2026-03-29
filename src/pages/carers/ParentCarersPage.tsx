@@ -17,7 +17,7 @@ export default function ParentCarersPage() {
           <li><span className="font-medium text-wf-dark">Parent carers</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Parent carers</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Parent carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           A parent carer is a parent or guardian who provides additional care for a child or young person
           with a disability, long-term illness, or additional needs. Find out about the support available
@@ -95,7 +95,7 @@ export default function ParentCarersPage() {
           </section>
 
           {/* Contact */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Get in touch</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           To find out more about support for parent carers, contact our Adult Social Care team on{" "}
@@ -105,7 +105,7 @@ export default function ParentCarersPage() {
           </section>
 
           {/* Related links */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>

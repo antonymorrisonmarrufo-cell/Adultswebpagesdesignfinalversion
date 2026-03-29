@@ -50,7 +50,7 @@ export default function ComplaintsComplimentsHubPage() {
       </li>
       </ol>
       </nav>
-      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
       Complaints and compliments
       </h1>
         </div>
@@ -79,7 +79,7 @@ export default function ComplaintsComplimentsHubPage() {
       to={card.to}
       className="block rounded-lg border border-gray-200 p-6 shadow-sm transition hover:shadow-md hover:border-wf-green"
       >
-      <h3 className="text-lg font-bold text-wf-green">{card.title}</h3>
+      <h3 className="text-lg font-bold text-[#231F20]">{card.title}</h3>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">{card.description}</p>
       </Link>
       ))}
@@ -106,7 +106,7 @@ export default function ComplaintsComplimentsHubPage() {
 
       {/* Related pages */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="border-t border-gray-200 pt-8">
+      <div className="pt-8">
       <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
       <ul className="mt-4 space-y-2">
       {relatedPages.map((page) => (

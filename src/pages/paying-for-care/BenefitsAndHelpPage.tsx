@@ -24,7 +24,7 @@ export default function BenefitsAndHelpPage() {
           <li><span className="font-medium text-wf-dark">Benefits and help with costs</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Benefits and help with costs</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Benefits and help with costs</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           You may be entitled to benefits and other financial support that can help
           with the cost of care. Many people do not claim everything they are entitled to.
@@ -125,7 +125,7 @@ export default function BenefitsAndHelpPage() {
           </section>
 
           {/* Help claiming */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Get help with your benefits</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           If you need help understanding which benefits you may be entitled to or
@@ -141,7 +141,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Related links */}
           <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
+          <section className="mb-8 p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           {relatedPages.map((page) => (

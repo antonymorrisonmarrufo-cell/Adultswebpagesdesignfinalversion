@@ -17,7 +17,7 @@ export default function ReportAbusePage() {
           <li><span className="font-medium text-wf-dark">Report abuse or neglect</span></li>
           </ol>
           </nav>
-          <h1 className="text-5xl font-bold text-[#004E3E]">Report abuse or neglect</h1>
+          <h1 className="text-5xl font-bold text-[#231F20]">Report abuse or neglect</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
           If you think an adult with care and support needs is being abused or neglected, it is important to
           act quickly. You do not need to be certain that abuse is happening to raise a concern.
@@ -48,11 +48,11 @@ export default function ReportAbusePage() {
           <div className="mt-6 grid gap-4 md:grid-cols-2">
           {/* Phone */}
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">By phone</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">By phone</h3>
           <p className="mt-2 text-wf-dark">
           Call the Adult Social Care team:
           </p>
-          <p className="mt-2 text-2xl font-bold text-[#004E3E]">
+          <p className="mt-2 text-2xl font-bold text-[#231F20]">
           <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
           </p>
           <p className="mt-2 text-sm text-wf-gray">
@@ -61,14 +61,14 @@ export default function ReportAbusePage() {
           <p className="mt-3 text-wf-dark">
           Outside office hours, call the Emergency Duty Team:
           </p>
-          <p className="mt-1 font-bold text-[#004E3E]">
+          <p className="mt-1 font-bold text-[#231F20]">
           <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
           </p>
           </div>
 
           {/* Online */}
           <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#004E3E]">Online referral form</h3>
+          <h3 className="text-lg font-bold text-[#231F20]">Online referral form</h3>
           <p className="mt-2 text-wf-dark">
           Complete our online safeguarding referral form. This is available 24 hours a day.
           </p>
