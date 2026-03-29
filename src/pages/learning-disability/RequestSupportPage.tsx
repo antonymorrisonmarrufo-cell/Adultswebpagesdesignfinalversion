@@ -62,7 +62,7 @@ export default function RequestSupportPage() {
       {/* Form or confirmation */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
       {submitted ? (
-      <div className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+      <div className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
       <h2 className="text-xl font-bold text-wf-pink">
       Thank you for your request
       </h2>

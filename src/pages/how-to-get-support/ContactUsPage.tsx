@@ -137,7 +137,7 @@ export default function ContactUsPage() {
       </section>
 
       {/* Phone */}
-      <section className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
       <h2 className="text-xl font-bold text-wf-pink">Phone</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
       Call our Adult Social Care team to discuss your needs or make a referral.

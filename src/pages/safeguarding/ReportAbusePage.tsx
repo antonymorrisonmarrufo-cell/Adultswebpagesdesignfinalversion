@@ -45,7 +45,7 @@ export default function ReportAbusePage() {
           although it is helpful if you can. You can report in the following ways:
           </p>
 
-          <div className="mt-6 rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="mt-6 rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
           <div className="mb-3">
             <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
           </div>

@@ -114,7 +114,7 @@ export default function CheckSituationOnlinePage() {
       </div>
       </section>
 
-      <section className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
       <h2 className="text-xl font-bold text-wf-pink">Prefer to speak to someone?</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
       If you would rather talk through your situation with a person, call our

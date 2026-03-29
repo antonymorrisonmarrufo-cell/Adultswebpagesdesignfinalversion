@@ -136,14 +136,14 @@ export default function HowToAskForHelpPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Ways to contact us</h2>
 
           <div className="mt-4 space-y-4">
-          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-4">
+          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-4">
           <p className="font-semibold text-wf-dark">Online</p>
           <p className="mt-1 text-sm text-wf-dark">
           Complete the online self-assessment form on the Waltham Forest Council website. This is available 24 hours a day.
           </p>
           </div>
 
-          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-4">
+          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-4">
           <p className="font-semibold text-wf-dark">By telephone</p>
           <p className="mt-1 text-sm text-wf-dark">
           Call us on{" "}

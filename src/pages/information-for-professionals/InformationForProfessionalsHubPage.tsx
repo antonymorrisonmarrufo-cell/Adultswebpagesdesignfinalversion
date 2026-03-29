@@ -96,7 +96,7 @@ export default function InformationForProfessionalsHubPage() {
       ))}
       </div>
 
-      <section className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
       <h2 className="text-xl font-bold text-wf-pink">Professional enquiries</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
       For professional enquiries about adult social care services in Waltham
