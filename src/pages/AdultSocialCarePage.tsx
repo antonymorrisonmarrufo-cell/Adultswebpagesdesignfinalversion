@@ -80,7 +80,7 @@ export default function AdultSocialCarePage() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-3 bg-white">
+                <div className="p-3 bg-white text-center">
                   <p className="text-sm font-semibold text-[#231F20] group-hover:text-[#004E3E] transition-colors">
                     {card.title}
                   </p>
