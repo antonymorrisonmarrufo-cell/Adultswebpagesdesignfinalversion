@@ -77,7 +77,7 @@ export default function RequestHousingCareSupportPage() {
           You can request a housing and care assessment in the following ways:
           </p>
           <div className="mt-4 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">By telephone</h3>
           <p className="mt-2 text-wf-dark">
           Call our Adult Social Care team on{" "}
@@ -89,7 +89,7 @@ export default function RequestHousingCareSupportPage() {
           Monday to Friday, 9am to 5pm (excluding bank holidays)
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Online</h3>
           <p className="mt-2 text-wf-dark">
           Complete our{" "}
@@ -104,7 +104,7 @@ export default function RequestHousingCareSupportPage() {
           on the Waltham Forest Council website.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">By email</h3>
           <p className="mt-2 text-wf-dark">
           Email us at{" "}
@@ -113,7 +113,7 @@ export default function RequestHousingCareSupportPage() {
           </a>
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">In person</h3>
           <p className="mt-2 text-wf-dark">
           Visit Waltham Forest Town Hall, Forest Road, Walthamstow, London E17 4JF.

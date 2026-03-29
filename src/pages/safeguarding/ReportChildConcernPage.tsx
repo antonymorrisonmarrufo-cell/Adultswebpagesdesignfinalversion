@@ -57,7 +57,7 @@ export default function ReportChildConcernPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">How to report concerns about a child</h2>
 
           <div className="mt-6 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Contact the MASH team</h3>
           <p className="mt-2 text-wf-dark">
           If you are worried about a child, contact the Waltham Forest MASH:
@@ -74,7 +74,7 @@ export default function ReportChildConcernPage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Online referral</h3>
           <p className="mt-2 text-wf-dark">
           You can also make a referral to children's social care online. Professionals should use the
@@ -112,7 +112,7 @@ export default function ReportChildConcernPage() {
           </section>
 
           {/* Other contacts */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8 mb-0">
           <h2 className="text-2xl font-bold text-[#bf3688]">Other useful contacts</h2>
           <ul className="mt-4 space-y-4 text-wf-dark">
           <li>

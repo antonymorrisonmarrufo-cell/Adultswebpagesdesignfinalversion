@@ -33,7 +33,7 @@ export default function CareHomesNursingHomesPage() {
           <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">The difference between care homes and nursing homes</h2>
           <div className="mt-4 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Care homes (residential care)</h3>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Care homes provide accommodation, meals, and personal care such as help
@@ -42,7 +42,7 @@ export default function CareHomesNursingHomesPage() {
           help with daily living but do not have complex medical needs.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Nursing homes</h3>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Nursing homes provide everything a care home does, plus 24-hour nursing

@@ -31,7 +31,7 @@ export default function MoneyBenefitsPage() {
           <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Benefits you may be entitled to</h2>
           <div className="mt-4 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Carer's Allowance</h3>
           <p className="mt-2 text-wf-dark">
           A weekly payment if you care for someone at least 35 hours a week and they receive a qualifying
@@ -39,27 +39,27 @@ export default function MoneyBenefitsPage() {
           <a href="https://www.gov.uk/carers-allowance" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">GOV.UK</a>.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Carer's Credit</h3>
           <p className="mt-2 text-wf-dark">
           National Insurance credits to protect your State Pension if you care for someone at least
           20 hours a week but do not qualify for Carer's Allowance.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Universal Credit carer element</h3>
           <p className="mt-2 text-wf-dark">
           An additional amount in your Universal Credit if you care for a severely disabled person for
           at least 35 hours a week.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Council tax reduction</h3>
           <p className="mt-2 text-wf-dark">
           You may be entitled to a discount or exemption from council tax, depending on your circumstances.
           </p>
           </div>
-          <div className="rounded-md border border-wf-gray-light p-4">
+          <div className="rounded-md bg-white p-4 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Direct payments</h3>
           <p className="mt-2 text-wf-dark">
           If you have eligible needs following a carers assessment, you may receive a direct payment

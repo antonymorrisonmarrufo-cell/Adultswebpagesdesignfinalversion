@@ -124,7 +124,7 @@ export default function SafeguardingBoardPage() {
           </section>
 
           {/* Safeguarding Adults Reviews */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8 mb-0">
           <h2 className="text-2xl font-bold text-[#bf3688]">Safeguarding Adults Reviews</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           A Safeguarding Adults Review (SAR) is carried out when an adult with care and support needs has

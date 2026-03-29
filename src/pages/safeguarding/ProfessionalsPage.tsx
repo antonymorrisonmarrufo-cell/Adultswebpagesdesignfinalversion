@@ -56,7 +56,7 @@ export default function ProfessionalsPage() {
           </p>
 
           <div className="mt-6 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Professional referral form</h3>
           <p className="mt-2 text-wf-dark">
           Complete the online professional safeguarding referral form. This provides a structured format
@@ -70,7 +70,7 @@ export default function ProfessionalsPage() {
           </a>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">By phone</h3>
           <p className="mt-2 text-wf-dark">
           Contact the Adult Social Care safeguarding team directly:
@@ -122,7 +122,7 @@ export default function ProfessionalsPage() {
           </section>
 
           {/* Making safeguarding personal */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8 mb-0">
           <h2 className="text-2xl font-bold text-[#bf3688]">Making Safeguarding Personal</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           Making Safeguarding Personal (MSP) is a person-centred approach that puts the adult at the

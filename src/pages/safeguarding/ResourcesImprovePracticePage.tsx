@@ -94,7 +94,7 @@ export default function ResourcesImprovePracticePage() {
           </p>
 
           <div className="mt-6 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Self-neglect: working with reluctant engagement</h3>
           <p className="mt-2 text-wf-dark">
           An older adult living alone was reported by neighbours due to concerns about hoarding and
@@ -104,7 +104,7 @@ export default function ResourcesImprovePracticePage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Financial abuse: recognising the signs</h3>
           <p className="mt-2 text-wf-dark">
           A person with learning disabilities was found to have been financially exploited by a family
@@ -113,7 +113,7 @@ export default function ResourcesImprovePracticePage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Organisational abuse: responding to systemic concerns</h3>
           <p className="mt-2 text-wf-dark">
           Concerns were raised about the standard of care in a residential setting. This case study
@@ -125,7 +125,7 @@ export default function ResourcesImprovePracticePage() {
           </section>
 
           {/* Reflective practice */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8 mb-0">
           <h2 className="text-2xl font-bold text-[#bf3688]">Reflective practice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           Reflective practice is a key component of effective safeguarding work. Professionals are

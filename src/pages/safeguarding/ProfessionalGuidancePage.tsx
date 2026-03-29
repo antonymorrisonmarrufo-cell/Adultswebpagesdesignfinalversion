@@ -74,7 +74,7 @@ export default function ProfessionalGuidancePage() {
           </p>
 
           <div className="mt-6 space-y-4">
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Level 1: Basic awareness</h3>
           <p className="mt-2 text-wf-dark">
           For all staff and volunteers. Covers what safeguarding is, how to recognise abuse and
@@ -82,7 +82,7 @@ export default function ProfessionalGuidancePage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Level 2: Responding to concerns</h3>
           <p className="mt-2 text-wf-dark">
           For staff who may need to respond to safeguarding concerns as part of their role. Covers
@@ -90,7 +90,7 @@ export default function ProfessionalGuidancePage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Level 3: Enquiry managers</h3>
           <p className="mt-2 text-wf-dark">
           For professionals who lead or manage safeguarding enquiries. Covers the Section 42 enquiry
@@ -98,7 +98,7 @@ export default function ProfessionalGuidancePage() {
           </p>
           </div>
 
-          <div className="rounded-md border border-wf-gray-light p-6">
+          <div className="rounded-md bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-[#231F20]">Specialist topics</h3>
           <p className="mt-2 text-wf-dark">
           Workshops and seminars on specific topics such as self-neglect, modern slavery, domestic
@@ -145,7 +145,7 @@ export default function ProfessionalGuidancePage() {
           </section>
 
           {/* Policies and procedures */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8 mb-0">
           <h2 className="text-2xl font-bold text-[#bf3688]">Key policies and procedures</h2>
           <ul className="mt-4 space-y-3">
           <li>
