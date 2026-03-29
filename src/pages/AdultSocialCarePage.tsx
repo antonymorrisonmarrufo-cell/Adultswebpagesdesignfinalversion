@@ -119,11 +119,11 @@ export default function AdultSocialCarePage() {
               <Link
                 key={topic.link}
                 to={topic.link}
-                className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group"
+                className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[200px]"
               >
                 <h3 className="text-base font-bold text-[#bf3688] mb-2">{topic.title}</h3>
-                <p className="text-sm text-[#231F20] mb-4">{topic.desc}</p>
-                <div className="flex justify-end">
+                <p className="text-sm text-[#231F20] flex-1">{topic.desc}</p>
+                <div className="flex justify-end mt-4">
                   <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>
@@ -138,7 +138,7 @@ export default function AdultSocialCarePage() {
               <Link
                 key={item.link}
                 to={item.link}
-                className="block bg-[#bf3688] text-white font-semibold text-center px-5 py-4 rounded-lg hover:bg-[#a02d73] transition-colors no-underline text-sm"
+                className="flex items-center justify-center bg-[#bf3688] text-white font-semibold text-center px-5 py-5 rounded-lg hover:bg-[#a02d73] transition-colors no-underline text-sm min-h-[72px]"
               >
                 {item.title}
               </Link>
