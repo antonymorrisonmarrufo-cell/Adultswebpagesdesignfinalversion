@@ -123,7 +123,7 @@ export default function PayingForCareHomePage() {
           </section>
 
           {/* Contact */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Need advice about care home costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Understanding care home funding can be complicated. Our team can help

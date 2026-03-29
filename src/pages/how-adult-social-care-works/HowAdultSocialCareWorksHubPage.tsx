@@ -52,7 +52,7 @@ export default function HowAdultSocialCareWorksHubPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Key things to know */}
-          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
           <li>Anyone can contact us to ask for help, not just the person who needs support</li>

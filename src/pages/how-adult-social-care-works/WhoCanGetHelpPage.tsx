@@ -38,7 +38,7 @@ export default function WhoCanGetHelpPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="max-w-3xl space-y-8">
           {/* Callout */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">You do not need a GP referral</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           Anyone can contact us to ask for an assessment. You do not need a referral
