@@ -37,7 +37,7 @@ export default function HowToAskForHelpPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="max-w-3xl space-y-8">
           {/* Callout: get help early */}
-          <div className="rounded-md border-l-4 border-[#003078] bg-white p-6">
+          <div className="rounded-md bg-white p-6">
           <h2 className="text-xl font-bold text-[#bf3688]">Get help early</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
           You do not have to wait until things become a crisis before asking for help.

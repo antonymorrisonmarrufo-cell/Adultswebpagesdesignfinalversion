@@ -42,7 +42,7 @@ export default function BeingCarerPage() {
           </section>
 
           {/* Prevention callout banner */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6">
+          <section className="mb-8 rounded-md bg-white p-6">
           <p className="text-base leading-relaxed text-wf-dark">
           You do not need an assessment to get support as a carer. Visit the{" "}
           <Link to="/carers/hub" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">

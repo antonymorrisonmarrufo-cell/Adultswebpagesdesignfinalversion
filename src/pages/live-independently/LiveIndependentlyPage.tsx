@@ -100,7 +100,7 @@ export default function LiveIndependentlyPage() {
         <div className="max-w-5xl mx-auto px-4 py-10">
 
           {/* Prevention callout banner */}
-          <div className="mt-6 rounded-lg border-l-4 border-[#003078] bg-white p-5">
+          <div className="mt-6 rounded-lg bg-white p-5">
           <p className="text-sm leading-relaxed text-wf-dark">
           You do not need a formal assessment to access many of these services.
           Browse the options below or use our{" "}

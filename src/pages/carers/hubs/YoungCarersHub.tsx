@@ -80,7 +80,7 @@ export default function YoungCarersHub() {
           </section>
 
           {/* Young carers rights */}
-          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6">
+          <section className="mb-8 rounded-md bg-white p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Your rights as a young carer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           As a young carer, you have the right to a young carers assessment. This looks at how caring affects
