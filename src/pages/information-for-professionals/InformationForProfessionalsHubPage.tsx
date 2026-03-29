@@ -4,34 +4,34 @@ const cards = [
   {
     title: "How to make a referral",
     description: "Online referral form, what to include and consent requirements.",
-    to: "/adult-social-care/information-for-professionals/how-to-make-referral",
+    to: "/information-for-professionals/how-to-make-referral",
   },
   {
     title: "Safeguarding adults for professionals",
     description: "Reporting concerns, Section 42 enquiries and safeguarding thresholds.",
-    to: "/adult-social-care/information-for-professionals/safeguarding-adults-professionals",
+    to: "/information-for-professionals/safeguarding-adults-professionals",
   },
   {
     title: "Practice guidance and resources",
     description: "Strengths-based approach, Making Safeguarding Personal and other practice guidance.",
-    to: "/adult-social-care/information-for-professionals/practice-guidance-resources",
+    to: "/information-for-professionals/practice-guidance-resources",
   },
   {
     title: "Commissioning and provider information",
     description: "Contracts, quality standards and market position statement.",
-    to: "/adult-social-care/information-for-professionals/commissioning-provider-information",
+    to: "/information-for-professionals/commissioning-provider-information",
   },
   {
     title: "Key teams and contact details",
     description: "Phone numbers and emails for all Adult Social Care teams.",
-    to: "/adult-social-care/information-for-professionals/key-teams-contact-details",
+    to: "/information-for-professionals/key-teams-contact-details",
   },
 ];
 
 const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Safeguarding adults", to: "/adult-social-care/safeguarding" },
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Safeguarding adults", to: "/safeguarding" },
+  { title: "Our policies", to: "/our-policies" },
 ];
 
 export default function InformationForProfessionalsHubPage() {

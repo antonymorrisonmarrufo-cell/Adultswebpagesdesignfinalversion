@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "What happens during an assessment", to: "/adult-social-care/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "Direct payments and personal budgets", to: "/adult-social-care/paying-for-care/direct-payments-personal-budgets" },
-  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "What happens during an assessment", to: "/how-adult-social-care-works/what-happens-during-assessment" },
+  { title: "Direct payments and personal budgets", to: "/paying-for-care/direct-payments-personal-budgets" },
+  { title: "Paying for your care", to: "/paying-for-care" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
 ];
 
 export default function YourCareAndSupportPlanPage() {
@@ -18,7 +18,7 @@ export default function YourCareAndSupportPlanPage() {
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
+            <li><Link to="/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><span className="font-medium text-wf-dark">Your care and support plan</span></li>
           </ol>

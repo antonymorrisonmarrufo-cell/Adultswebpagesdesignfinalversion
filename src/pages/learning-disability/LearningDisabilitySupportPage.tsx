@@ -5,43 +5,43 @@ const cards = [
     title: "Ask for support",
     description:
       "Find out how to ask for learning disability support, including self-referral, what happens next and the assessment process.",
-    to: "/adult-social-care/learning-disability-support/ask-for-support",
+    to: "/learning-disability-support/ask-for-support",
   },
   {
     title: "Support for carers",
     description:
       "Information about carers assessments, respite care, support groups and practical help for those caring for someone with a learning disability.",
-    to: "/adult-social-care/learning-disability-support/support-for-carers",
+    to: "/learning-disability-support/support-for-carers",
   },
   {
     title: "Preparing for adulthood",
     description:
       "Support for young people moving from children's to adult services, including education, employment and independent living.",
-    to: "/adult-social-care/learning-disability-support/preparing-for-adulthood",
+    to: "/learning-disability-support/preparing-for-adulthood",
   },
   {
     title: "Easy read resources",
     description:
       "Accessible information and documents in easy read format to help you understand our services and your rights.",
-    to: "/adult-social-care/learning-disability-support/easy-read-resources",
+    to: "/learning-disability-support/easy-read-resources",
   },
   {
     title: "Professional referral",
     description:
       "Information for professionals on how to refer someone for learning disability support, including what information to include.",
-    to: "/adult-social-care/learning-disability-support/professional-referral",
+    to: "/learning-disability-support/professional-referral",
   },
   {
     title: "Request support",
     description:
       "Complete our online form to request learning disability support for yourself or someone you care for.",
-    to: "/adult-social-care/learning-disability-support/request-support",
+    to: "/learning-disability-support/request-support",
   },
   {
     title: "Housing options",
     description:
       "Explore housing and support options including supported living, residential care, Shared Lives and independent living.",
-    to: "/adult-social-care/learning-disability-support/housing-options",
+    to: "/learning-disability-support/housing-options",
   },
 ];
 

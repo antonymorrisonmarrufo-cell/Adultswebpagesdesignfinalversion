@@ -24,7 +24,7 @@ export default function SharedLivesPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support"
+                to="/learning-disability-support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Learning disability support
@@ -33,7 +33,7 @@ export default function SharedLivesPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Housing options
@@ -133,7 +133,7 @@ export default function SharedLivesPage() {
           <ul className="mt-4 space-y-2">
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options/supported-living"
+                to="/learning-disability-support/housing-options/supported-living"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Supported living
@@ -141,7 +141,7 @@ export default function SharedLivesPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options/living-with-family"
+                to="/learning-disability-support/housing-options/living-with-family"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Living with family
@@ -149,7 +149,7 @@ export default function SharedLivesPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Housing options

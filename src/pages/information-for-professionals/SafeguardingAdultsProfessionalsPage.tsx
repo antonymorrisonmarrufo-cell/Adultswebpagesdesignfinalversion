@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
-  { title: "Safeguarding policies and reports", to: "/adult-social-care/our-policies/safeguarding-policies-reports" },
-  { title: "How to make a referral", to: "/adult-social-care/information-for-professionals/how-to-make-referral" },
+  { title: "Information for professionals", to: "/information-for-professionals" },
+  { title: "Safeguarding policies and reports", to: "/our-policies/safeguarding-policies-reports" },
+  { title: "How to make a referral", to: "/information-for-professionals/how-to-make-referral" },
 ];
 
 export default function SafeguardingAdultsProfessionalsPage() {
@@ -22,7 +22,7 @@ export default function SafeguardingAdultsProfessionalsPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
+              <Link to="/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

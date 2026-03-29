@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Getting help and support", to: "/adult-social-care/dementia-support/get-help" },
-  { title: "Dementia adviser service", to: "/adult-social-care/dementia-support/adviser" },
-  { title: "Support for carers", to: "/adult-social-care/dementia-support/carers" },
-  { title: "Memory assessment service", to: "/adult-social-care/dementia-support/memory-service" },
+  { title: "Getting help and support", to: "/dementia/get-help" },
+  { title: "Dementia adviser service", to: "/dementia/adviser" },
+  { title: "Support for carers", to: "/dementia/carers" },
+  { title: "Memory assessment service", to: "/dementia/memory-service" },
 ];
 
 export default function PlanningPage() {
@@ -23,7 +23,7 @@ export default function PlanningPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+              <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -179,7 +179,7 @@ export default function PlanningPage() {
               <li>
                 Your{" "}
                 <Link
-                  to="/adult-social-care/dementia-support/adviser"
+                  to="/dementia/adviser"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   dementia adviser

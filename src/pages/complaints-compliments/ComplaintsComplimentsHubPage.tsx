@@ -4,29 +4,29 @@ const cards = [
   {
     title: "Make a complaint",
     description: "Tell us if something has gone wrong so we can put it right.",
-    to: "/adult-social-care/complaints-compliments/make-complaint",
+    to: "/complaints-compliments/make-complaint",
   },
   {
     title: "Send a compliment",
     description: "Share positive feedback about a service or member of staff.",
-    to: "/adult-social-care/complaints-compliments/send-compliment",
+    to: "/complaints-compliments/send-compliment",
   },
   {
     title: "Help shape our services",
     description: "Get involved in improving adult social care through co-production, surveys and focus groups.",
-    to: "/adult-social-care/complaints-compliments/help-shape-services",
+    to: "/complaints-compliments/help-shape-services",
   },
   {
     title: "Independent help and advocacy",
     description: "Find out how an independent advocate can support you.",
-    to: "/adult-social-care/complaints-compliments/independent-help-advocacy",
+    to: "/complaints-compliments/independent-help-advocacy",
   },
 ];
 
 const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "Our policies", to: "/our-policies" },
 ];
 
 export default function ComplaintsComplimentsHubPage() {

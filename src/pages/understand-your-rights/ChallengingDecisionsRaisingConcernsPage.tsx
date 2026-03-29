@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-  { title: "Make a complaint", to: "/adult-social-care/complaints-compliments/make-complaint" },
-  { title: "Independent advocacy", to: "/adult-social-care/understand-your-rights/independent-advocacy" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "Make a complaint", to: "/complaints-compliments/make-complaint" },
+  { title: "Independent advocacy", to: "/understand-your-rights/independent-advocacy" },
 ];
 
 export default function ChallengingDecisionsRaisingConcernsPage() {
@@ -22,7 +22,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
+              <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -87,7 +87,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
               The council has a statutory complaints procedure for adult social care.
               Visit our{" "}
               <Link
-                to="/adult-social-care/complaints-compliments/make-complaint"
+                to="/complaints-compliments/make-complaint"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 make a complaint
@@ -133,7 +133,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
               An independent advocate can help you challenge a decision. Contact our
               team or visit our{" "}
               <Link
-                to="/adult-social-care/understand-your-rights/independent-advocacy"
+                to="/understand-your-rights/independent-advocacy"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 independent advocacy

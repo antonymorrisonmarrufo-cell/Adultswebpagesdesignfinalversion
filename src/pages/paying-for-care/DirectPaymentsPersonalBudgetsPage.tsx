@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How care costs are worked out", to: "/adult-social-care/paying-for-care/how-care-costs-worked-out" },
-  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
-  { title: "Your care and support plan", to: "/adult-social-care/how-adult-social-care-works/your-care-and-support-plan" },
-  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
+  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
+  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
+  { title: "Your care and support plan", to: "/how-adult-social-care-works/your-care-and-support-plan" },
+  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
 ];
 
 export default function DirectPaymentsPersonalBudgetsPage() {
@@ -18,7 +18,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
+            <li><Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><span className="font-medium text-wf-dark">Direct payments and personal budgets</span></li>
           </ol>

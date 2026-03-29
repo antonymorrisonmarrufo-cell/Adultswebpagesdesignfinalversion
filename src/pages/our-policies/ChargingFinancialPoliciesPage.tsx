@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
-  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
-  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-care-and-support-plan" },
+  { title: "Our policies", to: "/our-policies" },
+  { title: "Paying for care", to: "/paying-for-care" },
+  { title: "Getting a care and support plan", to: "/how-to-get-support/getting-care-and-support-plan" },
 ];
 
 export default function ChargingFinancialPoliciesPage() {
@@ -22,7 +22,7 @@ export default function ChargingFinancialPoliciesPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+              <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

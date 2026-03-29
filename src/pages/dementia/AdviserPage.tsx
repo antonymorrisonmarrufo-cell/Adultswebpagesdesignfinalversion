@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Getting help and support", to: "/adult-social-care/dementia-support/get-help" },
-  { title: "Hornbeam Dementia Hub", to: "/adult-social-care/dementia-support/hub" },
-  { title: "Support for carers", to: "/adult-social-care/dementia-support/carers" },
-  { title: "Planning for the future", to: "/adult-social-care/dementia-support/planning" },
+  { title: "Getting help and support", to: "/dementia/get-help" },
+  { title: "Hornbeam Dementia Hub", to: "/dementia/hub" },
+  { title: "Support for carers", to: "/dementia/carers" },
+  { title: "Planning for the future", to: "/dementia/planning" },
 ];
 
 export default function AdviserPage() {
@@ -23,7 +23,7 @@ export default function AdviserPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+              <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

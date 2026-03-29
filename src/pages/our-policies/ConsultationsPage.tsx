@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
-  { title: "Help shape our services", to: "/adult-social-care/complaints-compliments/help-shape-services" },
-  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
+  { title: "Our policies", to: "/our-policies" },
+  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
+  { title: "Complaints and compliments", to: "/complaints-compliments" },
 ];
 
 export default function ConsultationsPage() {
@@ -22,7 +22,7 @@ export default function ConsultationsPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+              <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

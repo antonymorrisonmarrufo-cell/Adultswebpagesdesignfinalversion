@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
-  { title: "Commissioning and provider information", to: "/adult-social-care/information-for-professionals/commissioning-provider-information" },
-  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
+  { title: "Our policies", to: "/our-policies" },
+  { title: "Commissioning and provider information", to: "/information-for-professionals/commissioning-provider-information" },
+  { title: "Information for professionals", to: "/information-for-professionals" },
 ];
 
 export default function MarketSustainabilityCommissioningPage() {
@@ -22,7 +22,7 @@ export default function MarketSustainabilityCommissioningPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+              <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -84,7 +84,7 @@ export default function MarketSustainabilityCommissioningPage() {
             <p className="mt-3 text-wf-dark leading-relaxed">
               For detailed provider guidance, visit our{" "}
               <Link
-                to="/adult-social-care/information-for-professionals/commissioning-provider-information"
+                to="/information-for-professionals/commissioning-provider-information"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 commissioning and provider information

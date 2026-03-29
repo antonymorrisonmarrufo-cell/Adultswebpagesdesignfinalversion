@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health" },
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Local mental health support services", to: "/adult-social-care/mental-health/local-support-services" },
+  { title: "Mental health and wellbeing", to: "/mental-health" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Local mental health support services", to: "/mental-health/local-support-services" },
 ];
 
 export default function AdultSocialCareMentalHealthPage() {
@@ -22,7 +22,7 @@ export default function AdultSocialCareMentalHealthPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
+              <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -113,7 +113,7 @@ export default function AdultSocialCareMentalHealthPage() {
               A care needs assessment will help determine the level of support you need.
               Visit our{" "}
               <Link
-                to="/adult-social-care/how-to-get-support/request-assessment"
+                to="/how-to-get-support/request-assessment"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 request an assessment

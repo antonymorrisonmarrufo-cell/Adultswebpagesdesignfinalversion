@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Equipment and assistive technology", to: "/adult-social-care/live-independently/equipment" },
-  { title: "Home adaptations", to: "/adult-social-care/live-independently/home-adaptations" },
-  { title: "Work and disability", to: "/adult-social-care/work-and-disability" },
-  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
-  { title: "Blue Badge", to: "/adult-social-care/transport/blue-badge" },
+  { title: "Equipment and assistive technology", to: "/live-independently/equipment" },
+  { title: "Home adaptations", to: "/live-independently/home-adaptations" },
+  { title: "Work and disability", to: "/work-disability" },
+  { title: "Paying for care", to: "/paying-for-care" },
+  { title: "Blue Badge", to: "/transport/blue-badge" },
 ];
 
 export default function PhysicalDisabilitiesPage() {
@@ -102,7 +102,7 @@ export default function PhysicalDisabilitiesPage() {
               <strong>Disabled Facilities Grant</strong> of up to &pound;30,000.
               Visit our{" "}
               <Link
-                to="/adult-social-care/live-independently/home-adaptations"
+                to="/live-independently/home-adaptations"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 home adaptations

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Live independently", to: "/adult-social-care/live-independently" },
-  { title: "Equipment and assistive technology", to: "/adult-social-care/live-independently/equipment" },
-  { title: "Support for carers", to: "/adult-social-care/carers/support-for-carers" },
-  { title: "Physical disabilities support", to: "/adult-social-care/physical-disabilities" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Live independently", to: "/live-independently" },
+  { title: "Equipment and assistive technology", to: "/live-independently/equipment" },
+  { title: "Support for carers", to: "/carers/support" },
+  { title: "Physical disabilities support", to: "/physical-disabilities" },
 ];
 
 export default function LongTermConditionsPage() {

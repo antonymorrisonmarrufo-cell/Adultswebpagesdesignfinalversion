@@ -24,7 +24,7 @@ export default function FreedomPassOlderPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline text-[#00635C]"
               >
                 Travel and transport
@@ -199,7 +199,7 @@ export default function FreedomPassOlderPage() {
           <ul className="space-y-2 text-[#00635C]">
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline"
               >
                 Travel and transport
@@ -207,7 +207,7 @@ export default function FreedomPassOlderPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/freedom-pass-disabled"
+                to="/transport/freedom-pass-disabled"
                 className="hover:underline"
               >
                 Freedom Pass for disabled people
@@ -215,7 +215,7 @@ export default function FreedomPassOlderPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/taxicard"
+                to="/transport/taxicard"
                 className="hover:underline"
               >
                 Taxicard
@@ -223,7 +223,7 @@ export default function FreedomPassOlderPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/transport-mobility"
+                to="/transport/transport-mobility"
                 className="hover:underline"
               >
                 Transport and mobility support

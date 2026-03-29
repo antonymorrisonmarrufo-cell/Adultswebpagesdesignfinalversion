@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Physical disabilities support", to: "/adult-social-care/physical-disabilities" },
-  { title: "Learning disability support", to: "/adult-social-care/learning-disability" },
-  { title: "Autism support", to: "/adult-social-care/autism-support" },
-  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
-  { title: "Live independently", to: "/adult-social-care/live-independently" },
+  { title: "Physical disabilities support", to: "/physical-disabilities" },
+  { title: "Learning disability support", to: "/learning-disability" },
+  { title: "Autism support", to: "/autism" },
+  { title: "Paying for care", to: "/paying-for-care" },
+  { title: "Live independently", to: "/live-independently" },
 ];
 
 export default function WorkDisabilityPage() {

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Learning disability support", to: "/adult-social-care/learning-disability" },
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Work and disability", to: "/adult-social-care/work-and-disability" },
-  { title: "Support for carers", to: "/adult-social-care/carers/support-for-carers" },
-  { title: "Live independently", to: "/adult-social-care/live-independently" },
+  { title: "Learning disability support", to: "/learning-disability" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Work and disability", to: "/work-disability" },
+  { title: "Support for carers", to: "/carers/support" },
+  { title: "Live independently", to: "/live-independently" },
 ];
 
 export default function AutismSupportPage() {
@@ -243,7 +243,7 @@ export default function AutismSupportPage() {
             <p className="mt-3 text-wf-dark leading-relaxed">
               Visit our{" "}
               <Link
-                to="/adult-social-care/carers/support-for-carers"
+                to="/carers/support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 support for carers

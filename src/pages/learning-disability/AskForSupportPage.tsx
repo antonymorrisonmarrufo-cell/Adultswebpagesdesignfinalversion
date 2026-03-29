@@ -24,7 +24,7 @@ export default function AskForSupportPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support"
+                to="/learning-disability-support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Learning disability support
@@ -74,7 +74,7 @@ export default function AskForSupportPage() {
               <li>
                 Complete our{" "}
                 <Link
-                  to="/adult-social-care/learning-disability-support/request-support"
+                  to="/learning-disability-support/request-support"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   online request form
@@ -140,7 +140,7 @@ export default function AskForSupportPage() {
           <ul className="mt-4 space-y-2">
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/request-support"
+                to="/learning-disability-support/request-support"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Request support online
@@ -148,7 +148,7 @@ export default function AskForSupportPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/support-for-carers"
+                to="/learning-disability-support/support-for-carers"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Support for carers
@@ -156,7 +156,7 @@ export default function AskForSupportPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/easy-read-resources"
+                to="/learning-disability-support/easy-read-resources"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Easy read resources

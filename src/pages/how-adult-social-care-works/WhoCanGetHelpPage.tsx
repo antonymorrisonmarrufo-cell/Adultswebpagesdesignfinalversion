@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How to ask for help", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
-  { title: "What happens during an assessment", to: "/adult-social-care/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "What is adult social care?", to: "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" },
-  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
+  { title: "How to ask for help", to: "/how-adult-social-care-works/how-to-ask-for-help" },
+  { title: "What happens during an assessment", to: "/how-adult-social-care-works/what-happens-during-assessment" },
+  { title: "What is adult social care?", to: "/how-adult-social-care-works/what-is-adult-social-care" },
+  { title: "Paying for your care", to: "/paying-for-care" },
 ];
 
 export default function WhoCanGetHelpPage() {
@@ -18,7 +18,7 @@ export default function WhoCanGetHelpPage() {
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
+            <li><Link to="/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><span className="font-medium text-wf-dark">Who can get help</span></li>
           </ol>

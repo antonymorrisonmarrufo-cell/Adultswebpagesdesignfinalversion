@@ -1,27 +1,27 @@
 import { Link } from "react-router-dom";
 
 const steps = [
-  { number: 1, title: "Learn what adult social care is", description: "Understand the types of help available and who provides it.", to: "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" },
-  { number: 2, title: "Find out if you can get help", description: "Check who is eligible and what the criteria are.", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
-  { number: 3, title: "Ask for help", description: "Contact us to request an assessment for yourself or someone else.", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
-  { number: 4, title: "Have an assessment", description: "A social worker will discuss your needs with you.", to: "/adult-social-care/how-adult-social-care-works/what-happens-during-assessment" },
-  { number: 5, title: "Get a care and support plan", description: "If eligible, you will receive a plan setting out how your needs will be met.", to: "/adult-social-care/how-adult-social-care-works/your-care-and-support-plan" },
-  { number: 6, title: "Understand paying for care", description: "Find out how care costs work and what financial help is available.", to: "/adult-social-care/paying-for-care" },
+  { number: 1, title: "Learn what adult social care is", description: "Understand the types of help available and who provides it.", to: "/how-adult-social-care-works/what-is-adult-social-care" },
+  { number: 2, title: "Find out if you can get help", description: "Check who is eligible and what the criteria are.", to: "/how-adult-social-care-works/who-can-get-help" },
+  { number: 3, title: "Ask for help", description: "Contact us to request an assessment for yourself or someone else.", to: "/how-adult-social-care-works/how-to-ask-for-help" },
+  { number: 4, title: "Have an assessment", description: "A social worker will discuss your needs with you.", to: "/how-adult-social-care-works/what-happens-during-assessment" },
+  { number: 5, title: "Get a care and support plan", description: "If eligible, you will receive a plan setting out how your needs will be met.", to: "/how-adult-social-care-works/your-care-and-support-plan" },
+  { number: 6, title: "Understand paying for care", description: "Find out how care costs work and what financial help is available.", to: "/paying-for-care" },
 ];
 
 const topicCards = [
-  { title: "What is adult social care?", description: "The types of help available, who provides it and your rights under the Care Act 2014.", to: "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" },
-  { title: "Who can get help?", description: "Eligibility criteria, what is assessed and what happens if you are or are not eligible.", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
-  { title: "How to ask for help", description: "How to request an assessment, who can ask and different ways to get in touch.", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
-  { title: "What happens during an assessment", description: "What to expect, what is discussed and what happens afterwards.", to: "/adult-social-care/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "Your care and support plan", description: "What a care plan includes, who creates it and how it is reviewed.", to: "/adult-social-care/how-adult-social-care-works/your-care-and-support-plan" },
+  { title: "What is adult social care?", description: "The types of help available, who provides it and your rights under the Care Act 2014.", to: "/how-adult-social-care-works/what-is-adult-social-care" },
+  { title: "Who can get help?", description: "Eligibility criteria, what is assessed and what happens if you are or are not eligible.", to: "/how-adult-social-care-works/who-can-get-help" },
+  { title: "How to ask for help", description: "How to request an assessment, who can ask and different ways to get in touch.", to: "/how-adult-social-care-works/how-to-ask-for-help" },
+  { title: "What happens during an assessment", description: "What to expect, what is discussed and what happens afterwards.", to: "/how-adult-social-care-works/what-happens-during-assessment" },
+  { title: "Your care and support plan", description: "What a care plan includes, who creates it and how it is reviewed.", to: "/how-adult-social-care-works/your-care-and-support-plan" },
 ];
 
 const relatedPages = [
-  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
-  { title: "Support for carers", to: "/adult-social-care/carers" },
-  { title: "Safeguarding adults", to: "/adult-social-care/safeguarding" },
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Paying for your care", to: "/paying-for-care" },
+  { title: "Support for carers", to: "/carers" },
+  { title: "Safeguarding adults", to: "/safeguarding" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
 ];
 
 export default function HowAdultSocialCareWorksHubPage() {
@@ -110,7 +110,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Quick actions</h2>
           <div className="grid gap-4 md:grid-cols-3">
             <Link
-              to="/adult-social-care/how-adult-social-care-works/how-to-ask-for-help"
+              to="/how-adult-social-care-works/how-to-ask-for-help"
               className="block rounded-md bg-[#00635C] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
             >
               <span className="text-lg font-bold">Request an assessment</span>
@@ -123,7 +123,7 @@ export default function HowAdultSocialCareWorksHubPage() {
               <span className="block mt-1 text-sm text-white/80">020 8496 3130</span>
             </a>
             <Link
-              to="/adult-social-care/paying-for-care"
+              to="/paying-for-care"
               className="block rounded-md bg-[#00635C] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
             >
               <span className="text-lg font-bold">Paying for care</span>

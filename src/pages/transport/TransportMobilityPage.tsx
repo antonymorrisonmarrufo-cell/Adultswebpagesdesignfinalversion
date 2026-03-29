@@ -24,7 +24,7 @@ export default function TransportMobilityPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline text-[#00635C]"
               >
                 Travel and transport
@@ -255,7 +255,7 @@ export default function TransportMobilityPage() {
           <ul className="space-y-2 text-[#00635C]">
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline"
               >
                 Travel and transport
@@ -263,7 +263,7 @@ export default function TransportMobilityPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/blue-badge"
+                to="/transport/blue-badge"
                 className="hover:underline"
               >
                 Blue Badge
@@ -271,7 +271,7 @@ export default function TransportMobilityPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/taxicard"
+                to="/transport/taxicard"
                 className="hover:underline"
               >
                 Taxicard
@@ -279,7 +279,7 @@ export default function TransportMobilityPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/freedom-pass-disabled"
+                to="/transport/freedom-pass-disabled"
                 className="hover:underline"
               >
                 Freedom Pass for disabled people
@@ -287,7 +287,7 @@ export default function TransportMobilityPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/live-independently"
+                to="/live-independently"
                 className="hover:underline"
               >
                 Living independently

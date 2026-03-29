@@ -24,7 +24,7 @@ export default function LivingWithFamilyPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support"
+                to="/learning-disability-support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Learning disability support
@@ -33,7 +33,7 @@ export default function LivingWithFamilyPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Housing options
@@ -135,7 +135,7 @@ export default function LivingWithFamilyPage() {
           <ul className="mt-4 space-y-2">
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/support-for-carers"
+                to="/learning-disability-support/support-for-carers"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Support for carers
@@ -143,7 +143,7 @@ export default function LivingWithFamilyPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options/shared-lives"
+                to="/learning-disability-support/housing-options/shared-lives"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Shared Lives
@@ -151,7 +151,7 @@ export default function LivingWithFamilyPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Housing options

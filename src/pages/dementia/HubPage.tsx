@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Getting help and support", to: "/adult-social-care/dementia-support/get-help" },
-  { title: "Activities and social groups", to: "/adult-social-care/dementia-support/activities" },
-  { title: "Dementia adviser service", to: "/adult-social-care/dementia-support/adviser" },
-  { title: "Support for carers", to: "/adult-social-care/dementia-support/carers" },
+  { title: "Getting help and support", to: "/dementia/get-help" },
+  { title: "Activities and social groups", to: "/dementia/activities" },
+  { title: "Dementia adviser service", to: "/dementia/adviser" },
+  { title: "Support for carers", to: "/dementia/carers" },
 ];
 
 export default function HubPage() {
@@ -23,7 +23,7 @@ export default function HubPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+              <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -94,7 +94,7 @@ export default function HubPage() {
             <p className="mt-3 text-wf-dark leading-relaxed">
               For a full list of current activities, visit our{" "}
               <Link
-                to="/adult-social-care/dementia-support/activities"
+                to="/dementia/activities"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 activities and social groups

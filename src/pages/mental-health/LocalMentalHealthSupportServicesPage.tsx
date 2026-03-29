@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health" },
-  { title: "Talking therapies and professional support", to: "/adult-social-care/mental-health/talking-therapies-professional-support" },
-  { title: "Urgent mental health support", to: "/adult-social-care/mental-health/urgent-support" },
+  { title: "Mental health and wellbeing", to: "/mental-health" },
+  { title: "Talking therapies and professional support", to: "/mental-health/talking-therapies-professional-support" },
+  { title: "Urgent mental health support", to: "/mental-health/urgent-support" },
 ];
 
 export default function LocalMentalHealthSupportServicesPage() {
@@ -22,7 +22,7 @@ export default function LocalMentalHealthSupportServicesPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
+              <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

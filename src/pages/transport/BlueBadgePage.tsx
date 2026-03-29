@@ -24,7 +24,7 @@ export default function BlueBadgePage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline text-[#00635C]"
               >
                 Travel and transport
@@ -215,7 +215,7 @@ export default function BlueBadgePage() {
           <ul className="space-y-2 text-[#00635C]">
             <li>
               <Link
-                to="/adult-social-care/transport"
+                to="/transport"
                 className="hover:underline"
               >
                 Travel and transport
@@ -223,7 +223,7 @@ export default function BlueBadgePage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/blue-badge-organisations"
+                to="/transport/blue-badge-organisations"
                 className="hover:underline"
               >
                 Blue Badge for organisations
@@ -231,7 +231,7 @@ export default function BlueBadgePage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/transport/taxicard"
+                to="/transport/taxicard"
                 className="hover:underline"
               >
                 Taxicard

@@ -11,7 +11,7 @@ export default function MapletonRoadPage() {
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care/housing-and-care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
+            <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
             <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
             <li><span className="font-medium text-wf-dark">Mapleton Road</span></li>
           </ol>
@@ -95,7 +95,7 @@ export default function MapletonRoadPage() {
             The cost of a placement at Mapleton Road depends on your assessed needs and
             financial situation. A financial assessment will determine how much you need to
             contribute. For details, see our{" "}
-            <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
+            <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
               paying for care
             </Link>{" "}
             page.
@@ -134,27 +134,27 @@ export default function MapletonRoadPage() {
           <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
-              <Link to="/adult-social-care/housing-and-care-homes/care-homes-and-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
+              <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
                 Care homes and nursing homes
               </Link>
             </li>
             <li>
-              <Link to="/adult-social-care/housing-and-care-homes/george-mason-lodge" className="text-wf-blue underline hover:text-wf-green">
+              <Link to="/care-homes/george-mason-lodge" className="text-wf-blue underline hover:text-wf-green">
                 George Mason Lodge
               </Link>
             </li>
             <li>
-              <Link to="/adult-social-care/housing-and-care-homes/alliston-house" className="text-wf-blue underline hover:text-wf-green">
+              <Link to="/care-homes/alliston-house" className="text-wf-blue underline hover:text-wf-green">
                 Alliston House
               </Link>
             </li>
             <li>
-              <Link to="/adult-social-care/housing-and-care-homes/request-support" className="text-wf-blue underline hover:text-wf-green">
+              <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
                 Request housing and care support
               </Link>
             </li>
             <li>
-              <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
+              <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
                 Paying for care
               </Link>
             </li>

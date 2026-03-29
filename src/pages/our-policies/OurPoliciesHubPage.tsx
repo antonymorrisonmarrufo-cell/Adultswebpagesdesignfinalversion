@@ -4,34 +4,34 @@ const cards = [
   {
     title: "Charging and financial policies",
     description: "How we charge for care services and our fairer contributions policy.",
-    to: "/adult-social-care/our-policies/charging-financial-policies",
+    to: "/our-policies/charging-financial-policies",
   },
   {
     title: "Safeguarding policies and reports",
     description: "Safeguarding Adults Board annual reports and multi-agency procedures.",
-    to: "/adult-social-care/our-policies/safeguarding-policies-reports",
+    to: "/our-policies/safeguarding-policies-reports",
   },
   {
     title: "Market sustainability and commissioning",
     description: "Market position statement and information for care providers.",
-    to: "/adult-social-care/our-policies/market-sustainability-commissioning",
+    to: "/our-policies/market-sustainability-commissioning",
   },
   {
     title: "Privacy and data",
     description: "How we handle your personal information and your data protection rights.",
-    to: "/adult-social-care/our-policies/privacy-and-data",
+    to: "/our-policies/privacy-and-data",
   },
   {
     title: "Consultations",
     description: "Current and past consultations on adult social care services.",
-    to: "/adult-social-care/our-policies/consultations",
+    to: "/our-policies/consultations",
   },
 ];
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
-  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "Complaints and compliments", to: "/complaints-compliments" },
+  { title: "Paying for care", to: "/paying-for-care" },
 ];
 
 export default function OurPoliciesHubPage() {

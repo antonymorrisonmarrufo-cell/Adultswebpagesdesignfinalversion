@@ -5,31 +5,31 @@ const cards = [
     title: "Living with family",
     description:
       "Support available for people with learning disabilities who live with their family, including respite care and family support services.",
-    to: "/adult-social-care/learning-disability-support/housing-options/living-with-family",
+    to: "/learning-disability-support/housing-options/living-with-family",
   },
   {
     title: "Supported living",
     description:
       "Living in your own home or a shared house with the support you need to be as independent as possible.",
-    to: "/adult-social-care/learning-disability-support/housing-options/supported-living",
+    to: "/learning-disability-support/housing-options/supported-living",
   },
   {
     title: "Residential care",
     description:
       "Care homes that provide around-the-clock support for people with learning disabilities who have higher levels of need.",
-    to: "/adult-social-care/learning-disability-support/housing-options/residential-care",
+    to: "/learning-disability-support/housing-options/residential-care",
   },
   {
     title: "Shared Lives",
     description:
       "Living with an approved Shared Lives carer in their family home, with support tailored to your needs.",
-    to: "/adult-social-care/learning-disability-support/housing-options/shared-lives",
+    to: "/learning-disability-support/housing-options/shared-lives",
   },
   {
     title: "Independent living",
     description:
       "Support and services to help you live independently in your own home, including tenancy support and life skills training.",
-    to: "/adult-social-care/learning-disability-support/housing-options/independent-living",
+    to: "/learning-disability-support/housing-options/independent-living",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function HousingAndSupportOptionsPage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support"
+                to="/learning-disability-support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Learning disability support

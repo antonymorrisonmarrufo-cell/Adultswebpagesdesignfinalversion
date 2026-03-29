@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Hornbeam Dementia Hub", to: "/adult-social-care/dementia-support/hub" },
-  { title: "Getting help and support", to: "/adult-social-care/dementia-support/get-help" },
-  { title: "Support for carers", to: "/adult-social-care/dementia-support/carers" },
-  { title: "iDOS - online dementia resources", to: "/adult-social-care/dementia-support/idos" },
+  { title: "Hornbeam Dementia Hub", to: "/dementia/hub" },
+  { title: "Getting help and support", to: "/dementia/get-help" },
+  { title: "Support for carers", to: "/dementia/carers" },
+  { title: "iDOS - online dementia resources", to: "/dementia/idos" },
 ];
 
 export default function ActivitiesPage() {
@@ -23,7 +23,7 @@ export default function ActivitiesPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+              <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
@@ -128,7 +128,7 @@ export default function ActivitiesPage() {
               <li>
                 Visit the{" "}
                 <Link
-                  to="/adult-social-care/dementia-support/hub"
+                  to="/dementia/hub"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   Hornbeam Dementia Hub
@@ -137,7 +137,7 @@ export default function ActivitiesPage() {
               <li>
                 Speak to your{" "}
                 <Link
-                  to="/adult-social-care/dementia-support/adviser"
+                  to="/dementia/adviser"
                   className="text-wf-blue underline hover:text-wf-green"
                 >
                   dementia adviser

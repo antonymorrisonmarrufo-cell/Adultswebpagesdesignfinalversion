@@ -5,37 +5,37 @@ const transportCards = [
     title: "Blue Badge",
     description:
       "Apply for a Blue Badge to park closer to your destination if you have a disability or health condition that affects your mobility.",
-    link: "/adult-social-care/transport/blue-badge",
+    link: "/transport/blue-badge",
   },
   {
     title: "Freedom Pass (disabled people)",
     description:
       "Free travel on buses, tubes and trains in London for people with an eligible disability.",
-    link: "/adult-social-care/transport/freedom-pass-disabled",
+    link: "/transport/freedom-pass-disabled",
   },
   {
     title: "Freedom Pass (older people)",
     description:
       "Free travel on buses, tubes and trains in London for residents aged 60 and over.",
-    link: "/adult-social-care/transport/freedom-pass-older",
+    link: "/transport/freedom-pass-older",
   },
   {
     title: "Taxicard",
     description:
       "Subsidised door-to-door taxi and private hire vehicle journeys for residents with serious mobility or visual impairments.",
-    link: "/adult-social-care/transport/taxicard",
+    link: "/transport/taxicard",
   },
   {
     title: "Transport and mobility support",
     description:
       "Dial-a-Ride, community transport, mobility aids and other accessible transport options available in Waltham Forest.",
-    link: "/adult-social-care/transport/transport-mobility",
+    link: "/transport/transport-mobility",
   },
   {
     title: "Blue Badge for organisations",
     description:
       "How organisations that transport disabled people can apply for Blue Badges for their vehicles.",
-    link: "/adult-social-care/transport/blue-badge-organisations",
+    link: "/transport/blue-badge-organisations",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function TravelTransportPage() {
           <ul className="space-y-2 text-[#00635C]">
             <li>
               <Link
-                to="/adult-social-care/live-independently"
+                to="/live-independently"
                 className="hover:underline"
               >
                 Living independently
@@ -111,7 +111,7 @@ export default function TravelTransportPage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/how-to-get-support"
+                to="/how-to-get-support"
                 className="hover:underline"
               >
                 How to get support

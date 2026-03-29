@@ -24,7 +24,7 @@ export default function ResidentialCarePage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support"
+                to="/learning-disability-support"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Learning disability support
@@ -33,7 +33,7 @@ export default function ResidentialCarePage() {
             </li>
             <li className="flex items-center gap-1">
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-wf-blue underline hover:text-wf-green"
               >
                 Housing options
@@ -134,7 +134,7 @@ export default function ResidentialCarePage() {
           <ul className="mt-4 space-y-2">
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options/supported-living"
+                to="/learning-disability-support/housing-options/supported-living"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Supported living
@@ -142,7 +142,7 @@ export default function ResidentialCarePage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/ask-for-support"
+                to="/learning-disability-support/ask-for-support"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Ask for support
@@ -150,7 +150,7 @@ export default function ResidentialCarePage() {
             </li>
             <li>
               <Link
-                to="/adult-social-care/learning-disability-support/housing-options"
+                to="/learning-disability-support/housing-options"
                 className="text-sm text-wf-blue underline hover:text-wf-green"
               >
                 Housing options

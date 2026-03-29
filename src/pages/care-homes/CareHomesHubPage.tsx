@@ -5,55 +5,55 @@ const cards = [
     title: "Request housing and care support",
     description:
       "Find out how to request an assessment for housing with care, and how to contact our team for advice.",
-    to: "/adult-social-care/housing-and-care-homes/request-support",
+    to: "/care-homes/request-housing-care-support",
   },
   {
     title: "Supported living",
     description:
       "Living in your own home or shared accommodation with support tailored to your needs.",
-    to: "/adult-social-care/housing-and-care-homes/supported-living",
+    to: "/care-homes/supported-living",
   },
   {
     title: "Shared Lives",
     description:
       "Living with an approved carer in their family home, with matching and ongoing support.",
-    to: "/adult-social-care/housing-and-care-homes/shared-lives",
+    to: "/care-homes/shared-lives",
   },
   {
     title: "Extra care housing",
     description:
       "Self-contained flats with on-site care staff, designed for older people who need some support.",
-    to: "/adult-social-care/housing-and-care-homes/extra-care-housing",
+    to: "/care-homes/extra-care-housing",
   },
   {
     title: "Sheltered housing",
     description:
       "Independent living with the reassurance of a warden or scheme manager on hand to help.",
-    to: "/adult-social-care/housing-and-care-homes/sheltered-housing",
+    to: "/care-homes/sheltered-housing",
   },
   {
     title: "Care homes and nursing homes",
     description:
       "Residential care for people who need round-the-clock support, including how to choose a home and funding.",
-    to: "/adult-social-care/housing-and-care-homes/care-homes-and-nursing-homes",
+    to: "/care-homes/care-homes-nursing-homes",
   },
   {
     title: "George Mason Lodge",
     description:
       "A council-run residential care home in Waltham Forest providing personal care and support.",
-    to: "/adult-social-care/housing-and-care-homes/george-mason-lodge",
+    to: "/care-homes/george-mason-lodge",
   },
   {
     title: "Mapleton Road",
     description:
       "A care facility in Waltham Forest offering specialist support and accommodation.",
-    to: "/adult-social-care/housing-and-care-homes/mapleton-road",
+    to: "/care-homes/mapleton-road",
   },
   {
     title: "Alliston House",
     description:
       "A care facility providing residential support and services for adults in Waltham Forest.",
-    to: "/adult-social-care/housing-and-care-homes/alliston-house",
+    to: "/care-homes/alliston-house",
   },
 ];
 

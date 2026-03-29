@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-  { title: "Independent advocacy", to: "/adult-social-care/understand-your-rights/independent-advocacy" },
-  { title: "Safeguarding adults", to: "/adult-social-care/safeguarding" },
+  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "Independent advocacy", to: "/understand-your-rights/independent-advocacy" },
+  { title: "Safeguarding adults", to: "/safeguarding" },
 ];
 
 export default function MentalCapacityDecisionMakingPage() {
@@ -22,7 +22,7 @@ export default function MentalCapacityDecisionMakingPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
+              <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>

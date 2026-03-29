@@ -4,34 +4,34 @@ const cards = [
   {
     title: "Urgent mental health support",
     description: "If you or someone you know is in mental health crisis, find out where to get immediate help.",
-    to: "/adult-social-care/mental-health/urgent-support",
+    to: "/mental-health/urgent-support",
   },
   {
     title: "Looking after your mental wellbeing",
     description: "Self-help tips, online resources and apps to support your mental health.",
-    to: "/adult-social-care/mental-health/looking-after-mental-wellbeing",
+    to: "/mental-health/looking-after-mental-wellbeing",
   },
   {
     title: "Talking therapies and professional support",
     description: "Access counselling, IAPT services and other professional mental health support.",
-    to: "/adult-social-care/mental-health/talking-therapies-professional-support",
+    to: "/mental-health/talking-therapies-professional-support",
   },
   {
     title: "Adult Social Care mental health support",
     description: "Specialist mental health support through Adult Social Care, including Section 117 aftercare.",
-    to: "/adult-social-care/mental-health/adult-social-care-mental-health",
+    to: "/mental-health/adult-social-care-mental-health",
   },
   {
     title: "Local mental health support services",
     description: "Community organisations, peer support and recovery services in Waltham Forest.",
-    to: "/adult-social-care/mental-health/local-support-services",
+    to: "/mental-health/local-support-services",
   },
 ];
 
 const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Support for carers", to: "/adult-social-care/carers" },
-  { title: "Living independently", to: "/adult-social-care/live-independently" },
+  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Support for carers", to: "/carers" },
+  { title: "Living independently", to: "/live-independently" },
 ];
 
 export default function MentalHealthWellbeingHubPage() {
@@ -85,7 +85,7 @@ export default function MentalHealthWellbeingHubPage() {
             </p>
             <p className="mt-2">
               <Link
-                to="/adult-social-care/mental-health/urgent-support"
+                to="/mental-health/urgent-support"
                 className="text-sm font-semibold text-red-700 underline hover:text-red-900"
               >
                 See all urgent mental health support options

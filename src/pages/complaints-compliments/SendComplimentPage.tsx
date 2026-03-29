@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
-  { title: "Help shape our services", to: "/adult-social-care/complaints-compliments/help-shape-services" },
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Complaints and compliments", to: "/complaints-compliments" },
+  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
+  { title: "How to get support", to: "/how-to-get-support" },
 ];
 
 export default function SendComplimentPage() {
@@ -22,7 +22,7 @@ export default function SendComplimentPage() {
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li className="flex items-center gap-1">
-              <Link to="/adult-social-care/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
+              <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
               <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
             </li>
             <li>
