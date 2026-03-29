@@ -27,8 +27,8 @@ export default function ReportAbusePage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Emergency */}
-          <div className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
+          <div className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6">
+          <h2 className="text-2xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark text-lg">
           Call <strong className="text-3xl">999</strong> now.
           </p>

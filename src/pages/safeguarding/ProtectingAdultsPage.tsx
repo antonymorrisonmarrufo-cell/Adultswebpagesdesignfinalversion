@@ -27,8 +27,8 @@ export default function ProtectingAdultsPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Emergency banner */}
-          <div className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
+          <div className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
+          <h2 className="text-xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
           Call <strong>999</strong> immediately. Do not wait to contact social services if someone is at risk of harm right now.
           </p>

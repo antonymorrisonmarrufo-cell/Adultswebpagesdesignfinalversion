@@ -29,8 +29,8 @@ export default function UsefulContactsPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Emergency contacts */}
-          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Emergency contacts</h2>
+          <section className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#d4351c]">Emergency contacts</h2>
           <div className="mt-4 space-y-3">
           <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
           <span className="font-medium text-wf-dark">Emergency services</span>

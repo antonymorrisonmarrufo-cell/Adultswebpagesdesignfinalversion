@@ -28,8 +28,8 @@ export default function EmergencyHelpPage() {
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Immediate danger */}
-          <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
+          <section className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
+          <h2 className="text-xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
           Call <strong>999</strong> immediately. This includes medical emergencies, fires, or if someone is at risk of harm.
           </p>

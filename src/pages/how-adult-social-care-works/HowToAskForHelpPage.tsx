@@ -152,7 +152,7 @@ export default function HowToAskForHelpPage() {
           <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
           </div>
 
-          <div className="rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-4">
+          <div className="rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-4">
           <p className="font-semibold text-wf-dark">In an emergency</p>
           <p className="mt-1 text-sm text-wf-dark">
           If someone is in immediate danger, call <strong>999</strong>.
