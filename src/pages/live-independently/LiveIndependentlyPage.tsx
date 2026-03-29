@@ -11,10 +11,16 @@ import {
 
 const cards = [
   {
-    title: "Home adaptations",
+    title: "Falls prevention",
     description:
-      "Find out about grab rails, ramps, stairlifts, bathroom adaptations and Disabled Facilities Grants.",
-    href: "/live-independently/home-adaptations",
+      "Risk factors, staying active, home safety checks and strength and balance classes.",
+    href: "/live-independently/falls-prevention",
+  },
+  {
+    title: "Social prescribing",
+    description:
+      "Connect with local activities, groups and services to improve your health and wellbeing.",
+    href: "/live-independently/social-prescribing",
   },
   {
     title: "Equipment and aids",
@@ -23,22 +29,22 @@ const cards = [
     href: "/live-independently/equipment-and-aids",
   },
   {
-    title: "Help at home",
-    description:
-      "Home care services including personal care, domestic support and reablement.",
-    href: "/live-independently/help-at-home",
-  },
-  {
-    title: "Falls prevention",
-    description:
-      "Risk factors, staying active, home safety checks and strength and balance classes.",
-    href: "/live-independently/falls-prevention",
-  },
-  {
     title: "Telecare",
     description:
       "Personal alarms, sensors and monitoring technology to help you stay safe at home.",
     href: "/live-independently/telecare",
+  },
+  {
+    title: "Home adaptations",
+    description:
+      "Find out about grab rails, ramps, stairlifts, bathroom adaptations and Disabled Facilities Grants.",
+    href: "/live-independently/home-adaptations",
+  },
+  {
+    title: "Help at home",
+    description:
+      "Home care services including personal care, domestic support and reablement.",
+    href: "/live-independently/help-at-home",
   },
   {
     title: "Keeping safe",
@@ -51,12 +57,6 @@ const cards = [
     description:
       "Share your home with someone who can help, or become a homesharer yourself.",
     href: "/live-independently/homeshare",
-  },
-  {
-    title: "Social prescribing",
-    description:
-      "Connect with local activities, groups and services to improve your health and wellbeing.",
-    href: "/live-independently/social-prescribing",
   },
 ];
 

@@ -4,34 +4,39 @@ const cards = [
   {
     title: "Check your situation online",
     description: "Use our self-assessment tool to understand your care and support needs.",
-    to: "/adult-social-care/how-to-get-support/check-situation-online",
+    to: "/how-to-get-support/check-situation-online",
+  },
+  {
+    title: "Explore community and local support",
+    description: "Browse local groups, activities, social prescribing, and voluntary sector support that you can access without an assessment.",
+    to: "/live-independently/social-prescribing",
   },
   {
     title: "Contact us",
     description: "Speak to our Adult Social Care team by phone, email or in person.",
-    to: "/adult-social-care/how-to-get-support/contact-us",
+    to: "/how-to-get-support/contact-us",
   },
   {
     title: "Request an assessment",
     description: "Ask for a care needs assessment for yourself or someone else.",
-    to: "/adult-social-care/how-to-get-support/request-assessment",
+    to: "/how-to-get-support/request-assessment",
   },
   {
     title: "What happens during your assessment",
     description: "Find out how the assessment works and how to prepare.",
-    to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment",
+    to: "/how-to-get-support/what-happens-during-your-assessment",
   },
   {
     title: "Getting a care and support plan",
     description: "Learn what a care plan includes and how your personal budget works.",
-    to: "/adult-social-care/how-to-get-support/getting-care-and-support-plan",
+    to: "/how-to-get-support/getting-care-and-support-plan",
   },
 ];
 
 const relatedPages = [
-  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
-  { title: "Living independently", to: "/adult-social-care/live-independently" },
-  { title: "Support for carers", to: "/adult-social-care/carers" },
+  { title: "Paying for care", to: "/paying-for-care" },
+  { title: "Living independently", to: "/live-independently" },
+  { title: "Support for carers", to: "/carers" },
 ];
 
 export default function HowToGetSupportHubPage() {
@@ -68,9 +73,9 @@ export default function HowToGetSupportHubPage() {
         <div className="max-w-3xl space-y-10">
           <section>
             <p className="text-wf-dark leading-relaxed">
-              If you or someone you know needs help with everyday tasks because of age,
-              illness or disability, adult social care may be able to help. Follow the
-              steps below to find out what support is available and how to access it.
+              Many people find the right support through community services, local groups,
+              and practical help — without needing a formal assessment. If you do need
+              more help, follow the steps below.
             </p>
           </section>
 
