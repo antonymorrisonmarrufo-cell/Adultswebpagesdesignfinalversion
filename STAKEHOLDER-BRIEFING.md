@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-We have completed a full redesign of Waltham Forest Council's Adult Social Care web pages. The new design comprises **100+ pages across 14 sections**, rebuilt from the ground up to deliver three strategic outcomes:
+We have completed a full redesign of Waltham Forest Council's Adult Social Care web pages. The new design comprises **152 pages across 17 sections** (219 source files), rebuilt from the ground up to deliver three strategic outcomes:
 
 1. **Early intervention and prevention** — directing residents to community support before they reach formal services
 2. **Promoting independence** — helping people stay in their own homes longer
@@ -57,7 +57,7 @@ Every design decision was guided by these principles:
 | **Accessibility** | WCAG-aligned, clear visual hierarchy, high contrast, mobile-responsive |
 | **GOV.UK alignment** | Consistent with UK government web design standards |
 
-### Site Structure (14 Sections)
+### Site Structure (17 Sections)
 
 | Section | Pages | Strategic Purpose |
 |---------|-------|-------------------|
@@ -77,6 +77,39 @@ Every design decision was guided by these principles:
 | **Our policies** | 6 | Transparency — charging, safeguarding reports, privacy, consultations |
 | **Information for professionals** | 6 | Streamlined referrals — clearer guidance means better quality referrals |
 | **Specialist services** | 6 | Condition-specific — autism, sensory, physical disabilities, long-term conditions |
+
+---
+
+## Brand Colour Palette
+
+The final colour palette aligns with Waltham Forest Council's brand identity and GOV.UK accessibility standards:
+
+| Colour | Hex | Usage |
+|--------|-----|-------|
+| **Moss** | `#004E3E` | Page titles on banner images, header logo |
+| **Digital Rose** | `#bf3688` | H2 headings, CTA buttons, card titles, arrow icons |
+| **Black** | `#231F20` | H1 page titles, body text, card headers |
+| **Grass** | `#8DC640` | Feedback banner in footer |
+| **Navy** | `#003078` | Contact box borders, contact box headings |
+| **Light blue** | `#d7f8ff` | Contact/info box backgrounds |
+| **Light red** | `#fcedf3` | Emergency/warning box backgrounds |
+| **Red** | `#d4351c` | Emergency borders and headings |
+| **Gray** | `#f3f2f1` | Section backgrounds |
+
+---
+
+## Design System: Box Types
+
+The site uses four standardised box types across all pages:
+
+| Box Type | Background | Border | Heading Colour | Icon |
+|----------|------------|--------|----------------|------|
+| **Navigation cards** | White | None | Digital Rose `#bf3688` | Pink circle arrow icon |
+| **Contact/info boxes** | Light blue `#d7f8ff` | Full Navy `#003078` border | Navy `#003078` | Info icon |
+| **Info/bullet list boxes** | White | None | Inherits page style | None |
+| **Emergency/warning boxes** | Light red `#fcedf3` | Full Red `#d4351c` border | Red `#d4351c` | None |
+
+These four patterns cover every content block in the site and ensure visual consistency across all 152 pages.
 
 ---
 
@@ -132,6 +165,20 @@ Every design decision was guided by these principles:
 | **Improved accessibility** | Plain English, mobile-responsive, WCAG-aligned | Yes — accessibility audit scores |
 | **Reduced complaints** | Transparent information on costs, rights, and processes | Yes — track complaint volumes |
 | **Professional referral quality** | Dedicated section with clear guidance and forms | Yes — track referral completion rates |
+
+---
+
+## Key Actions for Follow-Up
+
+The following items require attention before or shortly after go-live:
+
+| Action | Status | Owner |
+|--------|--------|-------|
+| Financial Assessment team phone number | **TBC** — needs confirming | Finance Lead |
+| Debt Recovery team phone number | **TBC** — needs confirming | Finance Lead |
+| Transport contacts (TfL, London Councils) | Verified as external links — no council number needed | N/A |
+| Favicon | Needs replacing with council logo | Web Team |
+| Hero images for section landing pages | Needed — placeholder or stock currently | Comms Team |
 
 ---
 
@@ -193,6 +240,15 @@ The following steps outline the recommended approval process. **Timelines should
 - **Hosting:** Ready for Vercel deployment (one-click)
 - **Repository:** GitHub — `antonymorrisonmarrufo-cell/Adultswebpagesdesignfinalversion`
 - **Branch:** `claude/access-design-files-BgGul`
+- **Total source files:** 219
+- **Total pages:** 152 across 17 sections
+
+### Live Preview URLs
+
+| Platform | URL |
+|----------|-----|
+| **Vercel** | [adultswebpagesdesignfinalversion.vercel.app](https://adultswebpagesdesignfinalversion.vercel.app) |
+| **Figma Make preview** | [spend-chew-46422648.figma.site](https://spend-chew-46422648.figma.site) |
 
 The full technical handover is available in `HANDOVER.md`.
 
