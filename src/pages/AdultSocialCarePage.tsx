@@ -4,19 +4,19 @@ import { ArrowRight } from "lucide-react";
 const heroCards = [
   {
     title: "Get a care assessment",
-    image: "/images/care-assessment.jpg",
+    image: "/Images/care-assessment.jpg",
     link: "/how-to-get-support/request-assessment",
     alt: "Carer supporting an elderly person",
   },
   {
     title: "Report abuse or neglect of an adult",
-    image: "/images/report-abuse.jpg",
+    image: "/Images/report-abuse.jpg",
     link: "/report-abuse",
     alt: "Concerned elderly person",
   },
   {
     title: "Apply for a blue badge",
-    image: "/images/blue-badge.jpg",
+    image: "/Images/blue-badge.jpg",
     link: "/transport/blue-badge",
     alt: "Blue badge holders only sign",
   },
