@@ -41,113 +41,114 @@ const transportCards = [
 
 export default function TravelTransportPage() {
   return (
-    <div className="min-h-screen bg-[#f3f2f1]">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Breadcrumbs */}
-        <nav aria-label="Breadcrumb" className="mb-6">
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
-            <li>
-              <Link to="/" className="hover:underline text-[#004E3E]">
-                Home
-              </Link>
-              <span className="mx-1">&gt;</span>
-            </li>
-            <li>
-              <Link
-                to="/adult-social-care"
-                className="hover:underline text-[#004E3E]"
-              >
-                Adult Social Care
-              </Link>
-              <span className="mx-1">&gt;</span>
-            </li>
-            <li className="text-gray-900 font-medium">
-              Travel and transport
-            </li>
-          </ol>
-        </nav>
-
-        {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
+          <li>
+          <Link to="/" className="hover:underline text-[#004E3E]">
+          Home
+          </Link>
+          <span className="mx-1">&gt;</span>
+          </li>
+          <li>
+          <Link
+          to="/adult-social-care"
+          className="hover:underline text-[#004E3E]"
+          >
+          Adult Social Care
+          </Link>
+          <span className="mx-1">&gt;</span>
+          </li>
+          <li className="text-gray-900 font-medium">
           Travel and transport
-        </h1>
-
-        <p className="text-lg text-gray-700 mb-8">
+          </li>
+          </ol>
+          </nav>
+          <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
+          Travel and transport
+          </h1>
+          
+          <p className="text-lg text-gray-700 mb-8">
           We offer a range of travel and transport services to help you get
           around if you have a disability, mobility difficulty or are an older
           resident. Find out about Blue Badges, Freedom Passes, Taxicards and
           other transport support available in Waltham Forest.
-        </p>
-
-        {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {transportCards.map((card) => (
-            <Link
-              key={card.title}
-              to={card.link}
-              className="block bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#004E3E] transition-all"
-            >
-              <h2 className="text-xl font-semibold text-[#bf3688] mb-2">
-                {card.title}
-              </h2>
-              <p className="text-gray-700 text-sm">{card.description}</p>
-            </Link>
-          ))}
+          </p>
         </div>
+      </div>
 
-        {/* Related links */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
+
+          {/* Cards grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          {transportCards.map((card) => (
+          <Link
+          key={card.title}
+          to={card.link}
+          className="block bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#004E3E] transition-all"
+          >
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-2">
+          {card.title}
+          </h2>
+          <p className="text-gray-700 text-sm">{card.description}</p>
+          </Link>
+          ))}
+          </div>
+
+          {/* Related links */}
+          <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
           <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
-            Related links
+          Related links
           </h2>
           <ul className="space-y-2 text-[#004E3E]">
-            <li>
-              <Link
-                to="/live-independently"
-                className="hover:underline"
-              >
-                Living independently
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/how-to-get-support"
-                className="hover:underline"
-              >
-                How to get support
-              </Link>
-            </li>
-            <li>
-              <a
-                href="https://tfl.gov.uk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                Transport for London (TfL)
-              </a>
-            </li>
+          <li>
+          <Link
+          to="/live-independently"
+          className="hover:underline"
+          >
+          Living independently
+          </Link>
+          </li>
+          <li>
+          <Link
+          to="/how-to-get-support"
+          className="hover:underline"
+          >
+          How to get support
+          </Link>
+          </li>
+          <li>
+          <a
+          href="https://tfl.gov.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+          >
+          Transport for London (TfL)
+          </a>
+          </li>
           </ul>
-        </div>
+          </div>
 
-        {/* Contact */}
-        <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
+          {/* Contact */}
+          <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
           <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
-            Contact us
+          Contact information
           </h2>
           <p className="text-gray-700">
-            If you need help with any travel or transport services, contact
-            Waltham Forest Adult Social Care:
+          Most transport services are managed by Transport for London (TfL) or
+          London Councils. Visit their websites or contact them directly using
+          the links on each page.
           </p>
-          <p className="mt-2 text-gray-900 font-medium">
-            Telephone:{" "}
-            <a href="tel:02084963130" className="text-[#004E3E] hover:underline">
-              020 8496 3130
-            </a>
-          </p>
-        </div>
+          </div>
 
-        <p className="text-sm text-gray-500">Last updated: March 2026</p>
+          <p className="text-sm text-gray-500">Last updated: March 2026</p>
+        </div>
       </div>
     </div>
   );

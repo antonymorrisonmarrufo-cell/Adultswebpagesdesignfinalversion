@@ -53,138 +53,142 @@ const cards = [
 
 export default function DementiaSupportPage() {
   return (
-    <div className="min-h-screen bg-[#f3f2f1]">
-      {/* Breadcrumbs */}
-      <div className="mx-auto max-w-5xl px-4 pt-6 pb-2">
-        <nav aria-label="Breadcrumb">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-            <li className="flex items-center gap-1">
-              <Link to="/" className="text-wf-blue underline hover:text-wf-green">
-                Home
-              </Link>
-              <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-            </li>
-            <li className="flex items-center gap-1">
-              <Link
-                to="/"
-                className="text-wf-blue underline hover:text-wf-green"
-              >
-                Adult Social Care
-              </Link>
-              <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-            </li>
-            <li>
-              <span className="font-medium text-wf-dark">Dementia support</span>
-            </li>
-          </ol>
-        </nav>
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+      <nav aria-label="Breadcrumb">
+      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
+      <li className="flex items-center gap-1">
+      <Link to="/" className="text-wf-blue underline hover:text-wf-green">
+      Home
+      </Link>
+      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
+      </li>
+      <li className="flex items-center gap-1">
+      <Link
+      to="/"
+      className="text-wf-blue underline hover:text-wf-green"
+      >
+      Adult Social Care
+      </Link>
+      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
+      </li>
+      <li>
+      <span className="font-medium text-wf-dark">Dementia support</span>
+      </li>
+      </ol>
+      </nav>
+      <h1 className="text-5xl font-bold text-wf-green leading-tight">
+      Dementia support
+      </h1>
+      <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
+      Waltham Forest Council provides a range of services and support for people
+      living with dementia and their families. Whether you have recently received a
+      diagnosis or have been living with dementia for some time, we are here to help.
+      </p>
+        </div>
       </div>
 
-      {/* Header */}
-      <div className="mx-auto max-w-5xl px-4 pb-8">
-        <h1 className="text-5xl font-bold text-wf-green leading-tight">
-          Dementia support
-        </h1>
-        <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
-          Waltham Forest Council provides a range of services and support for people
-          living with dementia and their families. Whether you have recently received a
-          diagnosis or have been living with dementia for some time, we are here to help.
-        </p>
-      </div>
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
 
       {/* Cards grid */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <div className="grid gap-6 sm:grid-cols-2">
-          {cards.map((card) => (
-            <Link
-              key={card.to}
-              to={card.to}
-              className="group block rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-wf-pink"
-            >
-              <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
-                {card.title}
-              </h2>
-              <p className="mt-2 text-sm text-wf-gray leading-relaxed">
-                {card.description}
-              </p>
-            </Link>
-          ))}
-        </div>
+      <div className="grid gap-6 sm:grid-cols-2">
+      {cards.map((card) => (
+      <Link
+      key={card.to}
+      to={card.to}
+      className="group block rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-wf-pink"
+      >
+      <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
+      {card.title}
+      </h2>
+      <p className="mt-2 text-sm text-wf-gray leading-relaxed">
+      {card.description}
+      </p>
+      </Link>
+      ))}
+      </div>
       </div>
 
       {/* Contact banner */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <div className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">Need help now?</h2>
-          <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-            If you are worried about your memory or the memory of someone you know,
-            speak to your GP. You can also contact the services below for advice
-            and support.
-          </p>
+      <div className="rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+      <h2 className="text-xl font-bold text-wf-pink">Need help now?</h2>
+      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
+      If you are worried about your memory or the memory of someone you know,
+      speak to your GP. You can also contact the services below for advice
+      and support.
+      </p>
 
-          <div className="mt-4 space-y-3">
-            <div>
-              <p className="text-sm font-semibold text-wf-dark">
-                Hornbeam Dementia Hub
-              </p>
-              <p className="text-sm text-wf-dark">
-                Drop in for information, activities and support at the{" "}
-                <Link to="/dementia/hub" className="text-wf-blue underline">
-                  Dementia Hub
-                </Link>
-                .
-              </p>
-            </div>
+      <div className="mt-4 space-y-3">
+      <div>
+      <p className="text-sm font-semibold text-wf-dark">
+      Hornbeam Dementia Hub
+      </p>
+      <p className="text-sm text-wf-dark">
+      Drop in for information, activities and support at the{" "}
+      <Link to="/dementia/hub" className="text-wf-blue underline">
+      Dementia Hub
+      </Link>
+      .
+      </p>
+      </div>
 
-            <div>
-              <p className="text-sm font-semibold text-wf-dark">
-                Dementia adviser service
-              </p>
-              <p className="text-sm text-wf-dark">
-                Get one-to-one support from a dedicated{" "}
-                <Link to="/dementia/adviser" className="text-wf-blue underline">
-                  dementia adviser
-                </Link>
-                .
-              </p>
-            </div>
+      <div>
+      <p className="text-sm font-semibold text-wf-dark">
+      Dementia adviser service
+      </p>
+      <p className="text-sm text-wf-dark">
+      Get one-to-one support from a dedicated{" "}
+      <Link to="/dementia/adviser" className="text-wf-blue underline">
+      dementia adviser
+      </Link>
+      .
+      </p>
+      </div>
 
-            <div>
-              <p className="text-sm font-semibold text-wf-dark">
-                Adult Social Care team
-              </p>
-              <p className="text-sm text-wf-dark">
-                Telephone:{" "}
-                <a href="tel:02084963130" className="text-wf-blue underline">
-                  020 8496 3130
-                </a>
-              </p>
-              <p className="text-sm text-wf-gray">
-                Monday to Friday, 9am to 5pm (excluding bank holidays)
-              </p>
-            </div>
+      <div>
+      <p className="text-sm font-semibold text-wf-dark">
+      Adult Social Care team
+      </p>
+      <p className="text-sm text-wf-dark">
+      Telephone:{" "}
+      <a href="tel:02084963130" className="text-wf-blue underline">
+      020 8496 3130
+      </a>
+      </p>
+      <p className="text-sm text-wf-gray">
+      Monday to Friday, 9am to 5pm (excluding bank holidays)
+      </p>
+      </div>
 
-            <div>
-              <p className="text-sm font-semibold text-wf-dark">
-                Alzheimer's Society national helpline
-              </p>
-              <p className="text-sm text-wf-dark">
-                Telephone:{" "}
-                <a href="tel:03331503456" className="text-wf-blue underline">
-                  0333 150 3456
-                </a>
-              </p>
-              <p className="text-sm text-wf-gray">
-                Open every day, including weekends and bank holidays
-              </p>
-            </div>
-          </div>
-        </div>
+      <div>
+      <p className="text-sm font-semibold text-wf-dark">
+      Alzheimer's Society national helpline
+      </p>
+      <p className="text-sm text-wf-dark">
+      Telephone:{" "}
+      <a href="tel:03331503456" className="text-wf-blue underline">
+      0333 150 3456
+      </a>
+      </p>
+      <p className="text-sm text-wf-gray">
+      Open every day, including weekends and bank holidays
+      </p>
+      </div>
+      </div>
+      </div>
       </div>
 
       {/* Last updated */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <p className="text-xs text-wf-gray">Last updated: March 2026</p>
+      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
+      </div>
+        </div>
       </div>
     </div>
   );

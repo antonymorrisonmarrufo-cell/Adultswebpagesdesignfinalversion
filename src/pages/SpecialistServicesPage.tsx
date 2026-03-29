@@ -11,35 +11,43 @@ const services = [
 
 export default function SpecialistServicesPage() {
   return (
-    <div className="bg-[#f3f2f1] min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <nav className="text-sm mb-6">
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <nav className="text-sm mb-6">
           <Link to="/" className="text-wf-blue hover:text-wf-green">Home</Link>
           <span className="mx-2 text-gray-400">/</span>
           <Link to="/adult-social-care" className="text-wf-blue hover:text-wf-green">Adult Social Care</Link>
           <span className="mx-2 text-gray-400">/</span>
           <span className="text-gray-600">Specialist services and conditions</span>
-        </nav>
-
-        <h1 className="text-5xl font-bold text-wf-green mb-6">Specialist services and conditions</h1>
-        <p className="text-lg text-gray-700 mb-8">
+          </nav>
+          <h1 className="text-5xl font-bold text-wf-green mb-6">Specialist services and conditions</h1>
+          <p className="text-lg text-gray-700 mb-8">
           Find information and support for specific conditions and specialist services available in Waltham Forest.
-        </p>
-
-        <div className="grid gap-4 md:grid-cols-2">
-          {services.map((service) => (
-            <Link
-              key={service.link}
-              to={service.link}
-              className="block bg-white border border-gray-200 rounded-lg p-5 hover:border-wf-green hover:shadow-md transition-all no-underline"
-            >
-              <h2 className="text-lg font-semibold text-wf-pink mb-2">{service.title}</h2>
-              <p className="text-sm text-gray-600">{service.desc}</p>
-            </Link>
-          ))}
+          </p>
         </div>
+      </div>
 
-        <p className="text-sm text-gray-500 mt-8">Last updated: March 2026</p>
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
+
+          <div className="grid gap-4 md:grid-cols-2">
+          {services.map((service) => (
+          <Link
+          key={service.link}
+          to={service.link}
+          className="block bg-white border border-gray-200 rounded-lg p-5 hover:border-wf-green hover:shadow-md transition-all no-underline"
+          >
+          <h2 className="text-lg font-semibold text-wf-pink mb-2">{service.title}</h2>
+          <p className="text-sm text-gray-600">{service.desc}</p>
+          </Link>
+          ))}
+          </div>
+
+          <p className="text-sm text-gray-500 mt-8">Last updated: March 2026</p>
+        </div>
       </div>
     </div>
   );

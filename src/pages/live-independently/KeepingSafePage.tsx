@@ -44,107 +44,115 @@ const subPages = [
 
 export default function KeepingSafePage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      {/* Breadcrumbs */}
-      <Breadcrumb className="mb-6">
-        <BreadcrumbList>
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <Breadcrumb className="mb-6">
+          <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Home</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/">Home</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/adult-social-care">Adult Social Care</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/adult-social-care">Adult Social Care</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/live-independently">Live independently</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/live-independently">Live independently</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Keeping safe</BreadcrumbPage>
+          <BreadcrumbPage>Keeping safe</BreadcrumbPage>
           </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-
-      {/* Page heading */}
-      <h1 className="text-5xl font-bold text-wf-green">Keeping safe at home</h1>
-
-      <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-        Staying safe at home is about more than locks and alarms. Fraud, scams
-        and bogus callers target vulnerable people every day. Find out how to
-        protect yourself and where to get help.
-      </p>
-
-      {/* Sub-page cards */}
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        {subPages.map((page) => (
-          <Link
-            key={page.href}
-            to={page.href}
-            className="group rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-sm transition-shadow hover:shadow-md hover:border-wf-green/40"
-          >
-            <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
-              {page.title}
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-              {page.description}
-            </p>
-          </Link>
-        ))}
+          </BreadcrumbList>
+          </Breadcrumb>
+          <h1 className="text-5xl font-bold text-wf-green">Keeping safe at home</h1>
+          
+          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
+          Staying safe at home is about more than locks and alarms. Fraud, scams
+          and bogus callers target vulnerable people every day. Find out how to
+          protect yourself and where to get help.
+          </p>
+        </div>
       </div>
 
-      {/* Emergency info */}
-      <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-        <h2 className="text-xl font-bold text-wf-pink">
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
+
+          {/* Sub-page cards */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {subPages.map((page) => (
+          <Link
+          key={page.href}
+          to={page.href}
+          className="group rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-sm transition-shadow hover:shadow-md hover:border-wf-green/40"
+          >
+          <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
+          {page.title}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          {page.description}
+          </p>
+          </Link>
+          ))}
+          </div>
+
+          {/* Emergency info */}
+          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
+          <h2 className="text-xl font-bold text-wf-pink">
           In an emergency
-        </h2>
-        <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           If you feel threatened or are in immediate danger, call{" "}
           <strong>999</strong>. To report a non-emergency crime, call the police
           on <strong>101</strong>.
-        </p>
-        <p className="mt-3 text-sm text-wf-dark">
+          </p>
+          <p className="mt-3 text-sm text-wf-dark">
           <span className="font-semibold">Adult Social Care:</span>{" "}
           <a
-            href="tel:02084963130"
-            className="font-bold text-wf-green no-underline hover:underline"
+          href="tel:02084963130"
+          className="font-bold text-wf-green no-underline hover:underline"
           >
-            020 8496 3130
+          020 8496 3130
           </a>
-        </p>
-      </section>
+          </p>
+          </section>
 
-      {/* Related links */}
-      <div className="mt-10">
-        <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
+          {/* Related links */}
+          <div className="mt-10">
+          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-            <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/live-independently/telecare">Telecare</Link>
           </li>
           <li>
-            <Link to="/safeguarding">Safeguarding</Link>
+          <Link to="/safeguarding">Safeguarding</Link>
           </li>
           <li>
-            <Link to="/live-independently/falls-prevention">
-              Falls prevention
-            </Link>
+          <Link to="/live-independently/falls-prevention">
+          Falls prevention
+          </Link>
           </li>
           <li>
-            <Link to="/live-independently/home-adaptations">
-              Home adaptations
-            </Link>
+          <Link to="/live-independently/home-adaptations">
+          Home adaptations
+          </Link>
           </li>
-        </ul>
+          </ul>
+          </div>
+
+          {/* Last updated */}
+          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+        </div>
       </div>
-
-      {/* Last updated */}
-      <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
     </div>
   );
 }

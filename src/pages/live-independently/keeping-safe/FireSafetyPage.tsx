@@ -11,129 +11,135 @@ import {
 
 export default function FireSafetyPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      {/* Breadcrumbs */}
-      <Breadcrumb className="mb-6">
-        <BreadcrumbList>
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <Breadcrumb className="mb-6">
+          <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Home</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/">Home</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/adult-social-care">Adult Social Care</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/adult-social-care">Adult Social Care</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/live-independently">Live independently</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/live-independently">Live independently</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Fire safety at home</BreadcrumbPage>
+          <BreadcrumbPage>Fire safety at home</BreadcrumbPage>
           </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+          </BreadcrumbList>
+          </Breadcrumb>
+          <h1 className="text-5xl font-bold text-wf-green">
+          Fire safety at home
+          </h1>
+          
+          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
+          Fires in the home can be devastating, but most are preventable. Find out
+          how to protect yourself and your household with free fire safety visits,
+          smoke alarms and a fire escape plan.
+          </p>
+        </div>
+      </div>
 
-      {/* Page heading */}
-      <h1 className="text-5xl font-bold text-wf-green">
-        Fire safety at home
-      </h1>
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
 
-      <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-        Fires in the home can be devastating, but most are preventable. Find out
-        how to protect yourself and your household with free fire safety visits,
-        smoke alarms and a fire escape plan.
-      </p>
-
-      {/* Free fire safety visits */}
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold text-wf-pink">
+          {/* Free fire safety visits */}
+          <section className="mt-8">
+          <h2 className="text-2xl font-bold text-wf-pink">
           Free fire safety visits
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-wf-gray">
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
           The London Fire Brigade offers free home fire safety visits to all
           Waltham Forest residents. During a visit, a firefighter will:
-        </p>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
+          </p>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
           <li>Check your smoke alarms and fit free ones if needed</li>
           <li>Identify fire risks in your home</li>
           <li>Help you create a fire escape plan</li>
           <li>Give advice on cooking safely and electrical safety</li>
           <li>
-            Provide specialist advice if you have mobility issues or other
-            needs
+          Provide specialist advice if you have mobility issues or other
+          needs
           </li>
-        </ul>
-        <p className="mt-3 text-sm leading-relaxed text-wf-gray">
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
           To book a free visit, call the London Fire Brigade on{" "}
           <strong>0800 028 4428</strong> or visit{" "}
           <a
-            href="https://www.london-fire.gov.uk/safety/the-home"
-            target="_blank"
-            rel="noopener noreferrer"
+          href="https://www.london-fire.gov.uk/safety/the-home"
+          target="_blank"
+          rel="noopener noreferrer"
           >
-            london-fire.gov.uk
+          london-fire.gov.uk
           </a>
           .
-        </p>
-      </section>
+          </p>
+          </section>
 
-      {/* Smoke alarms */}
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold text-wf-pink">Smoke alarms</h2>
-        <p className="mt-3 text-sm leading-relaxed text-wf-gray">
+          {/* Smoke alarms */}
+          <section className="mt-8">
+          <h2 className="text-2xl font-bold text-wf-pink">Smoke alarms</h2>
+          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
           Working smoke alarms save lives. Make sure you have at least one on
           every level of your home. Follow these guidelines:
-        </p>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
+          </p>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
           <li>Test your smoke alarms at least once a month by pressing the test button</li>
           <li>Replace batteries every year, or when the alarm chirps</li>
           <li>Replace the entire alarm unit every 10 years</li>
           <li>Never remove batteries or disconnect a smoke alarm because of false alarms from cooking - move it further from the kitchen instead</li>
           <li>If you are deaf or hard of hearing, ask about specialist alarms with flashing lights or vibrating pads</li>
-        </ul>
-      </section>
+          </ul>
+          </section>
 
-      {/* Fire escape plans */}
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold text-wf-pink">
+          {/* Fire escape plans */}
+          <section className="mt-8">
+          <h2 className="text-2xl font-bold text-wf-pink">
           Fire escape plans
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-wf-gray">
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
           Having a plan means everyone in your household knows what to do if
           there is a fire. Your plan should include:
-        </p>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
+          </p>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
           <li>The best escape route from each room</li>
           <li>A second route in case the first is blocked</li>
           <li>Where to keep door and window keys so they are easy to find in the dark</li>
           <li>A meeting point outside where everyone gathers</li>
           <li>How to call 999 once you are safely outside</li>
-        </ul>
-        <p className="mt-3 text-sm leading-relaxed text-wf-gray">
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
           If you have mobility difficulties and cannot escape quickly, close the
           door of the room you are in, go to the window and call 999. The fire
           service will prioritise reaching you.
-        </p>
-      </section>
+          </p>
+          </section>
 
-      {/* Prevention tips */}
-      <section className="mt-8">
-        <h2 className="text-2xl font-bold text-wf-pink">
+          {/* Prevention tips */}
+          <section className="mt-8">
+          <h2 className="text-2xl font-bold text-wf-pink">
           Fire prevention tips
-        </h2>
-        <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
+          </h2>
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
           <li>Never leave cooking unattended</li>
           <li>Keep tea towels, cloths and clothing away from the cooker</li>
           <li>Do not overload electrical sockets</li>
@@ -141,62 +147,64 @@ export default function FireSafetyPage() {
           <li>Do not smoke in bed</li>
           <li>Close internal doors at night to slow the spread of fire</li>
           <li>Keep escape routes clear of clutter</li>
-        </ul>
-      </section>
+          </ul>
+          </section>
 
-      {/* CTA block */}
-      <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-        <h2 className="text-xl font-bold text-wf-pink">
+          {/* CTA block */}
+          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
+          <h2 className="text-xl font-bold text-wf-pink">
           Book a free fire safety visit
-        </h2>
-        <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           Call the London Fire Brigade on{" "}
           <a
-            href="tel:08000284428"
-            className="font-bold text-wf-green no-underline hover:underline"
+          href="tel:08000284428"
+          className="font-bold text-wf-green no-underline hover:underline"
           >
-            0800 028 4428
+          0800 028 4428
           </a>{" "}
           to arrange a free home fire safety visit.
-        </p>
-        <p className="mt-2 text-sm text-wf-dark">
+          </p>
+          <p className="mt-2 text-sm text-wf-dark">
           <span className="font-semibold">Adult Social Care:</span>{" "}
           <a
-            href="tel:02084963130"
-            className="font-bold text-wf-green no-underline hover:underline"
+          href="tel:02084963130"
+          className="font-bold text-wf-green no-underline hover:underline"
           >
-            020 8496 3130
+          020 8496 3130
           </a>
-        </p>
-      </section>
+          </p>
+          </section>
 
-      {/* Related links */}
-      <div className="mt-10">
-        <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
+          {/* Related links */}
+          <div className="mt-10">
+          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-            <Link to="/live-independently/keeping-safe/callers-to-your-door">
-              Callers to your door
-            </Link>
+          <Link to="/live-independently/keeping-safe/callers-to-your-door">
+          Callers to your door
+          </Link>
           </li>
           <li>
-            <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/live-independently/telecare">Telecare</Link>
           </li>
           <li>
-            <Link to="/live-independently/home-adaptations">
-              Home adaptations
-            </Link>
+          <Link to="/live-independently/home-adaptations">
+          Home adaptations
+          </Link>
           </li>
           <li>
-            <Link to="/live-independently/keeping-safe/further-information">
-              Further information on staying safe
-            </Link>
+          <Link to="/live-independently/keeping-safe/further-information">
+          Further information on staying safe
+          </Link>
           </li>
-        </ul>
+          </ul>
+          </div>
+
+          {/* Last updated */}
+          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+        </div>
       </div>
-
-      {/* Last updated */}
-      <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
     </div>
   );
 }

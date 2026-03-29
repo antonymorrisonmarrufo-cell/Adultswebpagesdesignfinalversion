@@ -62,118 +62,126 @@ const cards = [
 
 export default function LiveIndependentlyPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      {/* Breadcrumbs */}
-      <Breadcrumb className="mb-6">
-        <BreadcrumbList>
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <Breadcrumb className="mb-6">
+          <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/">Home</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/">Home</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link to="/adult-social-care">Adult Social Care</Link>
-            </BreadcrumbLink>
+          <BreadcrumbLink asChild>
+          <Link to="/adult-social-care">Adult Social Care</Link>
+          </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Live independently</BreadcrumbPage>
+          <BreadcrumbPage>Live independently</BreadcrumbPage>
           </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+          </BreadcrumbList>
+          </Breadcrumb>
+          <h1 className="text-5xl font-bold text-wf-green">Live independently</h1>
+          
+          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
+          We want to help you stay in your own home for as long as possible. Find
+          out about the services, equipment and support available to help you live
+          safely and independently in Waltham Forest.
+          </p>
+        </div>
+      </div>
 
-      {/* Page heading */}
-      <h1 className="text-5xl font-bold text-wf-green">Live independently</h1>
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
 
-      <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-        We want to help you stay in your own home for as long as possible. Find
-        out about the services, equipment and support available to help you live
-        safely and independently in Waltham Forest.
-      </p>
-
-      {/* Prevention callout banner */}
-      <div className="mt-6 rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-5">
-        <p className="text-sm leading-relaxed text-wf-dark">
+          {/* Prevention callout banner */}
+          <div className="mt-6 rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-5">
+          <p className="text-sm leading-relaxed text-wf-dark">
           You do not need a formal assessment to access many of these services.
           Browse the options below or use our{" "}
           <Link
-            to="/how-to-get-support/check-situation-online"
-            className="font-semibold text-wf-green underline hover:text-wf-green/80"
+          to="/how-to-get-support/check-situation-online"
+          className="font-semibold text-wf-green underline hover:text-wf-green/80"
           >
-            self-assessment tool
+          self-assessment tool
           </Link>{" "}
           to find what is right for you.
-        </p>
-      </div>
+          </p>
+          </div>
 
-      {/* Cards grid */}
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        {cards.map((card) => (
+          {/* Cards grid */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {cards.map((card) => (
           <Link
-            key={card.href}
-            to={card.href}
-            className="group rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-sm transition-shadow hover:shadow-md hover:border-wf-green/40"
+          key={card.href}
+          to={card.href}
+          className="group rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-sm transition-shadow hover:shadow-md hover:border-wf-green/40"
           >
-            <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
-              {card.title}
-            </h2>
-            <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-              {card.description}
-            </p>
+          <h2 className="text-xl font-bold text-wf-pink group-hover:underline">
+          {card.title}
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          {card.description}
+          </p>
           </Link>
-        ))}
-      </div>
+          ))}
+          </div>
 
-      {/* Contact block */}
-      <div className="mt-10 rounded-lg bg-[#d7f8ff] p-6">
-        <h2 className="text-xl font-bold text-wf-pink">Need help?</h2>
-        <p className="mt-2 text-sm leading-relaxed text-wf-gray">
+          {/* Contact block */}
+          <div className="mt-10 rounded-lg bg-[#d7f8ff] p-6">
+          <h2 className="text-xl font-bold text-wf-pink">Need help?</h2>
+          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
           If you or someone you know needs support to live independently,
           contact our Adult Social Care team.
-        </p>
-        <p className="mt-3 text-sm text-wf-dark">
+          </p>
+          <p className="mt-3 text-sm text-wf-dark">
           <Link
-            to="/how-to-get-support/check-situation-online"
-            className="font-semibold text-wf-green underline hover:text-wf-green/80"
+          to="/how-to-get-support/check-situation-online"
+          className="font-semibold text-wf-green underline hover:text-wf-green/80"
           >
-            Try our self-assessment tool
+          Try our self-assessment tool
           </Link>{" "}
           to check what support you may be eligible for.
-        </p>
-        <p className="mt-3 text-sm text-wf-dark">
+          </p>
+          <p className="mt-3 text-sm text-wf-dark">
           <span className="font-semibold">Phone:</span>{" "}
           <a
-            href="tel:02084963130"
-            className="font-bold text-wf-green no-underline hover:underline"
+          href="tel:02084963130"
+          className="font-bold text-wf-green no-underline hover:underline"
           >
-            020 8496 3130
+          020 8496 3130
           </a>
-        </p>
-      </div>
+          </p>
+          </div>
 
-      {/* Related links */}
-      <div className="mt-10">
-        <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
+          {/* Related links */}
+          <div className="mt-10">
+          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-            <Link to="/how-to-get-support">How to get support</Link>
+          <Link to="/how-to-get-support">How to get support</Link>
           </li>
           <li>
-            <Link to="/paying-for-care">Paying for care</Link>
+          <Link to="/paying-for-care">Paying for care</Link>
           </li>
           <li>
-            <Link to="/carers">Being a carer</Link>
+          <Link to="/carers">Being a carer</Link>
           </li>
           <li>
-            <Link to="/safeguarding">Safeguarding</Link>
+          <Link to="/safeguarding">Safeguarding</Link>
           </li>
-        </ul>
-      </div>
+          </ul>
+          </div>
 
-      {/* Last updated */}
-      <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          {/* Last updated */}
+          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+        </div>
+      </div>
     </div>
   );
 }

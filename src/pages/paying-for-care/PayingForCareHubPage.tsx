@@ -47,92 +47,90 @@ const relatedPages = [
 
 export default function PayingForCareHubPage() {
   return (
-    <div className="min-h-screen bg-[#f3f2f1]">
-      {/* Breadcrumbs */}
-      <div className="border-b border-wf-gray-light bg-white">
-        <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
+    <div className="min-h-screen">
+      {/* White section: breadcrumbs + H1 + description */}
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
+          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-            <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-            <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-            <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-            <li><span className="font-medium text-wf-dark">Paying for your care</span></li>
+          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
+          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
+          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
+          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
+          <li><span className="font-medium text-wf-dark">Paying for your care</span></li>
           </ol>
-        </nav>
-      </div>
-
-      {/* Header */}
-      <div className="bg-white border-b border-wf-gray-light">
-        <div className="mx-auto max-w-5xl px-4 py-8">
+          </nav>
           <h1 className="text-5xl font-bold text-[#004E3E]">Paying for your care</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-            Most people need to pay something towards the cost of their care. Find out how
-            costs are worked out, what financial help is available and how to plan ahead.
+          Most people need to pay something towards the cost of their care. Find out how
+          costs are worked out, what financial help is available and how to plan ahead.
           </p>
         </div>
       </div>
 
-      {/* Main content */}
-      <main className="mx-auto max-w-5xl px-4 py-8">
-        {/* Important information */}
-        <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+      {/* Gray section: all content below */}
+      <div className="bg-[#f3f2f1]">
+        <div className="max-w-5xl mx-auto px-4 py-10">
+          {/* Important information */}
+          <div className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-            <li>You will not be asked to pay more than you can afford</li>
-            <li>Your home is not automatically included when working out how much you pay</li>
-            <li>Financial assessments are free and confidential</li>
-            <li>You may be entitled to benefits that can help cover costs</li>
-            <li>Free financial advice is available to help you understand your options</li>
+          <li>You will not be asked to pay more than you can afford</li>
+          <li>Your home is not automatically included when working out how much you pay</li>
+          <li>Financial assessments are free and confidential</li>
+          <li>You may be entitled to benefits that can help cover costs</li>
+          <li>Free financial advice is available to help you understand your options</li>
           </ul>
-        </div>
+          </div>
 
-        {/* Topic cards */}
-        <section className="mb-8">
+          {/* Topic cards */}
+          <section className="mb-8">
           <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Explore this section</h2>
           <div className="grid gap-4 md:grid-cols-2">
-            {topics.map((topic) => (
-              <Link
-                key={topic.to}
-                to={topic.to}
-                className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
-              >
-                <h3 className="text-lg font-bold text-[#004E3E]">{topic.title}</h3>
-                <p className="mt-2 text-sm text-wf-gray">{topic.description}</p>
-              </Link>
-            ))}
+          {topics.map((topic) => (
+          <Link
+          key={topic.to}
+          to={topic.to}
+          className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+          >
+          <h3 className="text-lg font-bold text-[#004E3E]">{topic.title}</h3>
+          <p className="mt-2 text-sm text-wf-gray">{topic.description}</p>
+          </Link>
+          ))}
           </div>
-        </section>
+          </section>
 
-        {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
+          {/* Contact */}
+          <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Need help understanding your care costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
-            Our team can talk you through how paying for care works and answer any questions you have.
+          Our team can talk you through how paying for care works and answer any questions you have.
           </p>
           <p className="mt-3 text-sm font-semibold text-wf-dark">
-            Telephone:{" "}
-            <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
+          Telephone:{" "}
+          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
           </p>
           <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-        </section>
+          </section>
 
-        {/* Related links */}
-        <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
+          {/* Related links */}
+          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
-            {relatedPages.map((page) => (
-              <li key={page.to}>
-                <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-                  {page.title}
-                </Link>
-              </li>
-            ))}
+          {relatedPages.map((page) => (
+          <li key={page.to}>
+          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
+          {page.title}
+          </Link>
+          </li>
+          ))}
           </ul>
-        </section>
+          </section>
 
-        {/* Last updated */}
-        <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-      </main>
+          {/* Last updated */}
+          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        </div>
+      </div>
     </div>
   );
 }
