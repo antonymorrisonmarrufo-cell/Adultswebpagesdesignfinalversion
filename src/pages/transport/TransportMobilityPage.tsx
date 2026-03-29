@@ -8,7 +8,7 @@ export default function TransportMobilityPage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -16,7 +16,7 @@ export default function TransportMobilityPage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -25,7 +25,7 @@ export default function TransportMobilityPage() {
             <li>
               <Link
                 to="/transport"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Travel and transport
               </Link>
@@ -38,7 +38,7 @@ export default function TransportMobilityPage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
           Transport and mobility support
         </h1>
 
@@ -51,7 +51,7 @@ export default function TransportMobilityPage() {
 
         {/* Dial-a-Ride */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Dial-a-Ride
           </h2>
           <p className="text-gray-700 mb-4">
@@ -82,7 +82,7 @@ export default function TransportMobilityPage() {
             To register or book a trip, call Dial-a-Ride on{" "}
             <a
               href="tel:03431221234"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               0343 122 1234
             </a>{" "}
@@ -91,7 +91,7 @@ export default function TransportMobilityPage() {
               href="https://tfl.gov.uk/modes/dial-a-ride/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               TfL Dial-a-Ride page
             </a>
@@ -101,7 +101,7 @@ export default function TransportMobilityPage() {
 
         {/* Community transport */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Community transport
           </h2>
           <p className="text-gray-700 mb-4">
@@ -130,7 +130,7 @@ export default function TransportMobilityPage() {
             Contact Waltham Forest Adult Social Care on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>{" "}
@@ -140,7 +140,7 @@ export default function TransportMobilityPage() {
 
         {/* Mobility aids */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Mobility aids and equipment
           </h2>
           <p className="text-gray-700 mb-4">
@@ -167,7 +167,7 @@ export default function TransportMobilityPage() {
                 href="https://www.motability.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#00635C] font-medium hover:underline"
+                className="text-[#004E3E] font-medium hover:underline"
               >
                 Motability scheme
               </a>
@@ -183,7 +183,7 @@ export default function TransportMobilityPage() {
 
         {/* Accessible transport options */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Accessible transport options
           </h2>
           <p className="text-gray-700 mb-4">
@@ -221,7 +221,7 @@ export default function TransportMobilityPage() {
               href="https://tfl.gov.uk/transport-accessibility/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               TfL accessibility pages
             </a>
@@ -231,7 +231,7 @@ export default function TransportMobilityPage() {
 
         {/* Contact */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Contact us
           </h2>
           <p className="text-gray-700">
@@ -239,7 +239,7 @@ export default function TransportMobilityPage() {
             Waltham Forest Adult Social Care on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>
@@ -249,10 +249,10 @@ export default function TransportMobilityPage() {
 
         {/* Related links */}
         <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/transport"

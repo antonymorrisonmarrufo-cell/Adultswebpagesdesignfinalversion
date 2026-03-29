@@ -43,7 +43,7 @@ export default function HowAdultSocialCareWorksHubPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">How adult social care works</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">How adult social care works</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Adult social care helps people who need extra support to live their daily
             lives. This section explains how the process works, from your first contact
@@ -56,7 +56,7 @@ export default function HowAdultSocialCareWorksHubPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Key things to know */}
         <div className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">Key things to know</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
             <li>Anyone can contact us to ask for help, not just the person who needs support</li>
             <li>You do not need a referral from your GP</li>
@@ -68,7 +68,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* 6-step journey */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Your journey in 6 steps</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Your journey in 6 steps</h2>
           <div className="space-y-4">
             {steps.map((step) => (
               <Link
@@ -76,11 +76,11 @@ export default function HowAdultSocialCareWorksHubPage() {
                 to={step.to}
                 className="flex items-start gap-4 rounded-md bg-white p-5 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#00635C] text-lg font-bold text-white">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#004E3E] text-lg font-bold text-white">
                   {step.number}
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold text-[#00635C]">{step.title}</h3>
+                  <h3 className="text-lg font-bold text-[#004E3E]">{step.title}</h3>
                   <p className="mt-1 text-sm text-wf-gray">{step.description}</p>
                 </div>
               </Link>
@@ -90,7 +90,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* Topic cards */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Explore this section</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Explore this section</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {topicCards.map((card) => (
               <Link
@@ -98,7 +98,7 @@ export default function HowAdultSocialCareWorksHubPage() {
                 to={card.to}
                 className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
               >
-                <h3 className="text-lg font-bold text-[#00635C]">{card.title}</h3>
+                <h3 className="text-lg font-bold text-[#004E3E]">{card.title}</h3>
                 <p className="mt-2 text-sm text-wf-gray">{card.description}</p>
               </Link>
             ))}
@@ -107,24 +107,24 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* Quick actions */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Quick actions</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Quick actions</h2>
           <div className="grid gap-4 md:grid-cols-3">
             <Link
               to="/how-adult-social-care-works/how-to-ask-for-help"
-              className="block rounded-md bg-[#00635C] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
+              className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
             >
               <span className="text-lg font-bold">Request an assessment</span>
             </Link>
             <a
               href="tel:02084963130"
-              className="block rounded-md bg-[#00635C] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
+              className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
             >
               <span className="text-lg font-bold">Call us now</span>
               <span className="block mt-1 text-sm text-white/80">020 8496 3130</span>
             </a>
             <Link
               to="/paying-for-care"
-              className="block rounded-md bg-[#00635C] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
+              className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
             >
               <span className="text-lg font-bold">Paying for care</span>
             </Link>
@@ -133,7 +133,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* Emergency contact */}
         <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">Emergency contact</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">Emergency contact</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             If you or someone you know is in immediate danger, call <strong>999</strong>.
           </p>
@@ -150,7 +150,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* Daytime contact */}
         <section className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">Contact Adult Social Care</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">Contact Adult Social Care</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             To ask about adult social care or request an assessment, contact us during
             office hours.
@@ -164,7 +164,7 @@ export default function HowAdultSocialCareWorksHubPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             {relatedPages.map((page) => (
               <li key={page.to}>

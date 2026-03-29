@@ -28,7 +28,7 @@ export default function YourCareAndSupportPlanPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Your care and support plan</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Your care and support plan</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             If you are eligible for council-funded support, you will receive a care and
             support plan. This is a written document that sets out your needs and how
@@ -42,7 +42,7 @@ export default function YourCareAndSupportPlanPage() {
         <div className="max-w-3xl space-y-8">
           {/* What it is */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What a care and support plan is</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What a care and support plan is</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               A care and support plan is a document that records your assessed needs, the
               outcomes you want to achieve, and the services and support that will be
@@ -57,7 +57,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* 7 elements */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What your plan includes</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What your plan includes</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Your care and support plan will set out:
             </p>
@@ -74,7 +74,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* Who creates it */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Who creates your plan</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Who creates your plan</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Your care and support plan is created by you and your social worker (or
               other professional) working together. You should be fully involved in
@@ -93,7 +93,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* Reviews */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Reviews of your plan</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Reviews of your plan</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Your care and support plan is a living document. It should change as your
               needs and circumstances change. Reviews happen at key checkpoints:
@@ -126,7 +126,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* If unhappy */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">If you are unhappy with your plan</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">If you are unhappy with your plan</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you are not happy with your care and support plan, or you feel it does
               not meet your needs, you can:
@@ -146,7 +146,7 @@ export default function YourCareAndSupportPlanPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Need help with your care plan?</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Need help with your care plan?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you have questions about your care and support plan, want to request a
               review, or need help understanding what is in your plan, contact us.
@@ -162,7 +162,7 @@ export default function YourCareAndSupportPlanPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

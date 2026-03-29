@@ -21,7 +21,7 @@ export default function CarersAssessmentRightsPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Carers assessment and rights</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Carers assessment and rights</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             As a carer, you have legal rights under the Care Act 2014. You are entitled to a carers assessment
             to look at how caring affects your life and what support you may need.
@@ -33,7 +33,7 @@ export default function CarersAssessmentRightsPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Your rights */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Your rights under the Care Act 2014</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights under the Care Act 2014</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Care Act 2014 gives carers important legal rights. For the first time, carers were given the same
             recognition in law as the people they care for. Your key rights include:
@@ -49,7 +49,7 @@ export default function CarersAssessmentRightsPage() {
 
         {/* What is a carers assessment */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is a carers assessment?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is a carers assessment?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             A carers assessment is a conversation between you and a trained professional. It looks at how your
             caring role affects your daily life, your health, your work, and your relationships. It is not a
@@ -70,7 +70,7 @@ export default function CarersAssessmentRightsPage() {
 
         {/* How to request */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to request a carers assessment</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to request a carers assessment</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             You can request a carers assessment at any time, even if the person you care for does not receive
             any services or has not had their own assessment. You do not need to be registered as a carer.
@@ -88,7 +88,7 @@ export default function CarersAssessmentRightsPage() {
 
         {/* What happens after */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What happens after the assessment</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What happens after the assessment</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             After your assessment, we will determine whether you have eligible needs. If you do, we will work
             with you to create a support plan that sets out how your needs will be met. This could include:
@@ -108,7 +108,7 @@ export default function CarersAssessmentRightsPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

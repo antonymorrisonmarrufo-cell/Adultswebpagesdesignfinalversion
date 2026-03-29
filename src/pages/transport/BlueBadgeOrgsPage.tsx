@@ -8,7 +8,7 @@ export default function BlueBadgeOrgsPage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -16,7 +16,7 @@ export default function BlueBadgeOrgsPage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -25,7 +25,7 @@ export default function BlueBadgeOrgsPage() {
             <li>
               <Link
                 to="/transport"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Travel and transport
               </Link>
@@ -38,7 +38,7 @@ export default function BlueBadgeOrgsPage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
           Blue Badge for organisations
         </h1>
 
@@ -52,7 +52,7 @@ export default function BlueBadgeOrgsPage() {
 
         {/* Eligibility */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Who is eligible
           </h2>
           <p className="text-gray-700 mb-4">
@@ -87,7 +87,7 @@ export default function BlueBadgeOrgsPage() {
 
         {/* How to apply */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How to apply
           </h2>
           <p className="text-gray-700 mb-4">
@@ -121,7 +121,7 @@ export default function BlueBadgeOrgsPage() {
               href="https://www.gov.uk/apply-blue-badge"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#00635C] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
+              className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
             >
               Apply on GOV.UK
             </a>
@@ -130,7 +130,7 @@ export default function BlueBadgeOrgsPage() {
 
         {/* How organisations can use the badge */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How to use an organisational Blue Badge
           </h2>
           <p className="text-gray-700 mb-4">
@@ -163,7 +163,7 @@ export default function BlueBadgeOrgsPage() {
 
         {/* Renewal */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Renewal and changes
           </h2>
           <p className="text-gray-700 mb-4">
@@ -180,7 +180,7 @@ export default function BlueBadgeOrgsPage() {
 
         {/* Contact */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Contact us
           </h2>
           <p className="text-gray-700">
@@ -188,7 +188,7 @@ export default function BlueBadgeOrgsPage() {
             your eligibility, contact Waltham Forest Council on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>
@@ -198,10 +198,10 @@ export default function BlueBadgeOrgsPage() {
 
         {/* Related links */}
         <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/transport"

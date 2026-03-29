@@ -28,7 +28,7 @@ export default function WhatIsAdultSocialCarePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">What is adult social care?</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">What is adult social care?</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Adult social care is the support provided to adults who need extra help to
             manage their daily lives, stay safe and live as independently as possible.
@@ -41,7 +41,7 @@ export default function WhatIsAdultSocialCarePage() {
         <div className="max-w-3xl space-y-8">
           {/* Definition */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What adult social care means</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What adult social care means</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Adult social care is a wide range of services and support for adults aged
               18 and over who have care and support needs because of illness, disability,
@@ -56,7 +56,7 @@ export default function WhatIsAdultSocialCarePage() {
 
           {/* Types of help */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Types of help available</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Types of help available</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Adult social care can include many different types of support:
             </p>
@@ -74,7 +74,7 @@ export default function WhatIsAdultSocialCarePage() {
 
           {/* Who provides it */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Who provides adult social care?</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Who provides adult social care?</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Adult social care is organised by your local council. Waltham Forest Council
               is responsible for assessing your needs and arranging support. However, the
@@ -95,7 +95,7 @@ export default function WhatIsAdultSocialCarePage() {
 
           {/* Care Act 2014 */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Your rights under the Care Act 2014</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Your rights under the Care Act 2014</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The Care Act 2014 is the law that sets out how adult social care works in
               England. It gives you important rights:
@@ -112,7 +112,7 @@ export default function WhatIsAdultSocialCarePage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Want to find out more?</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Want to find out more?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you have questions about adult social care or think you or someone you
               know may need support, contact us.
@@ -128,7 +128,7 @@ export default function WhatIsAdultSocialCarePage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

@@ -8,7 +8,7 @@ export default function TaxicardPage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -16,7 +16,7 @@ export default function TaxicardPage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -25,7 +25,7 @@ export default function TaxicardPage() {
             <li>
               <Link
                 to="/transport"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Travel and transport
               </Link>
@@ -36,7 +36,7 @@ export default function TaxicardPage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">Taxicard</h1>
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">Taxicard</h1>
 
         <p className="text-lg text-gray-700 mb-8">
           The Taxicard scheme provides subsidised door-to-door taxi and private
@@ -48,7 +48,7 @@ export default function TaxicardPage() {
 
         {/* How it works */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How the Taxicard scheme works
           </h2>
           <p className="text-gray-700 mb-4">
@@ -83,7 +83,7 @@ export default function TaxicardPage() {
 
         {/* Eligibility */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Who is eligible
           </h2>
           <p className="text-gray-700 mb-4">
@@ -120,7 +120,7 @@ export default function TaxicardPage() {
 
         {/* How to apply */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How to apply
           </h2>
           <p className="text-gray-700 mb-4">
@@ -147,7 +147,7 @@ export default function TaxicardPage() {
               href="https://www.londoncouncils.gov.uk/services/taxicard"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#00635C] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
+              className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
             >
               Apply on the London Councils website
             </a>
@@ -156,7 +156,7 @@ export default function TaxicardPage() {
 
         {/* Booking trips */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Booking trips
           </h2>
           <p className="text-gray-700 mb-4">
@@ -167,7 +167,7 @@ export default function TaxicardPage() {
               Calling the Taxicard booking line on{" "}
               <a
                 href="tel:08003601111"
-                className="text-[#00635C] font-medium hover:underline"
+                className="text-[#004E3E] font-medium hover:underline"
               >
                 0800 360 1111
               </a>
@@ -184,7 +184,7 @@ export default function TaxicardPage() {
 
         {/* Contact */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Contact us
           </h2>
           <p className="text-gray-700">
@@ -192,7 +192,7 @@ export default function TaxicardPage() {
             Forest Adult Social Care on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>
@@ -202,10 +202,10 @@ export default function TaxicardPage() {
 
         {/* Related links */}
         <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/transport"

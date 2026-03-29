@@ -21,7 +21,7 @@ export default function MapletonRoadPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Mapleton Road</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Mapleton Road</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Mapleton Road is a care facility in Waltham Forest offering specialist support
             and accommodation for adults with care needs.
@@ -33,7 +33,7 @@ export default function MapletonRoadPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* About */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">About Mapleton Road</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">About Mapleton Road</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Mapleton Road is a care facility operated by the London Borough of Waltham
             Forest. It provides accommodation and specialist support for adults who need
@@ -48,7 +48,7 @@ export default function MapletonRoadPage() {
 
         {/* Services */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Services provided</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Services provided</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li>24-hour care and support from trained staff</li>
             <li>Personal care including help with washing, dressing, and mobility</li>
@@ -63,7 +63,7 @@ export default function MapletonRoadPage() {
 
         {/* Accommodation */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Accommodation</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Accommodation</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Mapleton Road provides comfortable single bedrooms. Residents are welcome to
             bring personal belongings, photographs, and small pieces of furniture to make
@@ -78,7 +78,7 @@ export default function MapletonRoadPage() {
 
         {/* Referrals */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to be referred</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to be referred</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Placements at Mapleton Road are arranged through a care and support assessment
             by Waltham Forest Council. If you or someone you know may benefit from a
@@ -90,7 +90,7 @@ export default function MapletonRoadPage() {
 
         {/* Fees */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Fees and funding</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Fees and funding</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The cost of a placement at Mapleton Road depends on your assessed needs and
             financial situation. A financial assessment will determine how much you need to
@@ -103,8 +103,8 @@ export default function MapletonRoadPage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Contact Mapleton Road</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Contact Mapleton Road</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
             <p>
               <strong>Telephone:</strong>{" "}
@@ -131,7 +131,7 @@ export default function MapletonRoadPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">

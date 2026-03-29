@@ -47,7 +47,7 @@ export default function TravelTransportPage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -55,7 +55,7 @@ export default function TravelTransportPage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -68,7 +68,7 @@ export default function TravelTransportPage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
           Travel and transport
         </h1>
 
@@ -85,9 +85,9 @@ export default function TravelTransportPage() {
             <Link
               key={card.title}
               to={card.link}
-              className="block bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#00635C] transition-all"
+              className="block bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md hover:border-[#004E3E] transition-all"
             >
-              <h2 className="text-xl font-semibold text-[#D61F69] mb-2">
+              <h2 className="text-xl font-semibold text-[#bf3688] mb-2">
                 {card.title}
               </h2>
               <p className="text-gray-700 text-sm">{card.description}</p>
@@ -97,10 +97,10 @@ export default function TravelTransportPage() {
 
         {/* Related links */}
         <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/live-independently"
@@ -132,7 +132,7 @@ export default function TravelTransportPage() {
 
         {/* Contact */}
         <div className="bg-white rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Contact us
           </h2>
           <p className="text-gray-700">
@@ -141,7 +141,7 @@ export default function TravelTransportPage() {
           </p>
           <p className="mt-2 text-gray-900 font-medium">
             Telephone:{" "}
-            <a href="tel:02084963130" className="text-[#00635C] hover:underline">
+            <a href="tel:02084963130" className="text-[#004E3E] hover:underline">
               020 8496 3130
             </a>
           </p>

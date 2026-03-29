@@ -23,7 +23,7 @@ export default function CarerEmergencyPlanPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Carer emergency plan</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Carer emergency plan</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             If something unexpected happens to you, having an emergency plan in place means the person you
             care for will still be looked after. Planning ahead gives you peace of mind.
@@ -35,7 +35,7 @@ export default function CarerEmergencyPlanPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Why plan */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Why you need an emergency plan</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Why you need an emergency plan</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Emergencies can happen at any time. You might have an accident, become unwell, or be unable to
             get home. An emergency plan ensures that the person you care for will receive the support they
@@ -46,7 +46,7 @@ export default function CarerEmergencyPlanPage() {
 
         {/* What to include */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What to include in your plan</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What to include in your plan</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             A good emergency plan should include:
           </p>
@@ -61,7 +61,7 @@ export default function CarerEmergencyPlanPage() {
 
         {/* Backup care */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Backup care arrangements</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Backup care arrangements</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Think about who could provide care in an emergency. Ideally, you should have at least two people
             who could step in. Talk to them in advance and make sure they:
@@ -75,8 +75,8 @@ export default function CarerEmergencyPlanPage() {
         </section>
 
         {/* Carer emergency card */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer emergency card</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer emergency card</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We can provide you with a carer emergency card to carry in your wallet or purse. This card lets
             emergency services know that you are a carer and that someone depends on you. It includes a
@@ -90,7 +90,7 @@ export default function CarerEmergencyPlanPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

@@ -8,7 +8,7 @@ export default function FreedomPassOlderPage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -16,7 +16,7 @@ export default function FreedomPassOlderPage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -25,7 +25,7 @@ export default function FreedomPassOlderPage() {
             <li>
               <Link
                 to="/transport"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Travel and transport
               </Link>
@@ -38,7 +38,7 @@ export default function FreedomPassOlderPage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">
           Freedom Pass for older people
         </h1>
 
@@ -50,7 +50,7 @@ export default function FreedomPassOlderPage() {
 
         {/* Eligibility */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Who is eligible
           </h2>
           <p className="text-gray-700 mb-4">
@@ -68,7 +68,7 @@ export default function FreedomPassOlderPage() {
 
         {/* How to apply */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How to apply
           </h2>
           <p className="text-gray-700 mb-4">
@@ -95,7 +95,7 @@ export default function FreedomPassOlderPage() {
               href="https://www.londoncouncils.gov.uk/services/freedom-pass"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#00635C] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
+              className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
             >
               Apply on the London Councils website
             </a>
@@ -104,7 +104,7 @@ export default function FreedomPassOlderPage() {
 
         {/* What it covers */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             What the Freedom Pass covers
           </h2>
           <p className="text-gray-700 mb-4">
@@ -131,7 +131,7 @@ export default function FreedomPassOlderPage() {
 
         {/* Renewal */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Renewing your Freedom Pass
           </h2>
           <p className="text-gray-700 mb-4">
@@ -148,7 +148,7 @@ export default function FreedomPassOlderPage() {
 
         {/* Lost or stolen */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Lost, stolen or damaged passes
           </h2>
           <p className="text-gray-700">
@@ -158,14 +158,14 @@ export default function FreedomPassOlderPage() {
               href="https://www.londoncouncils.gov.uk/services/freedom-pass"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               London Councils website
             </a>{" "}
             or by calling{" "}
             <a
               href="tel:03001234444"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               0300 123 4444
             </a>
@@ -175,7 +175,7 @@ export default function FreedomPassOlderPage() {
 
         {/* Help */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Need help?
           </h2>
           <p className="text-gray-700">
@@ -183,7 +183,7 @@ export default function FreedomPassOlderPage() {
             Adult Social Care on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>
@@ -193,10 +193,10 @@ export default function FreedomPassOlderPage() {
 
         {/* Related links */}
         <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/transport"

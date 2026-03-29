@@ -23,7 +23,7 @@ export default function CarersFeedbackPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Carers feedback</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Carers feedback</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Your feedback helps us to improve services for carers in Waltham Forest. Whether you want to share
             a positive experience, raise a concern, or make a complaint, we want to hear from you.
@@ -35,7 +35,7 @@ export default function CarersFeedbackPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* How to share feedback */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to share your feedback</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to share your feedback</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             There are several ways you can share your views about carer services:
           </p>
@@ -51,7 +51,7 @@ export default function CarersFeedbackPage() {
 
         {/* Complaints */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Making a complaint</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Making a complaint</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you are unhappy with a service you have received, you have the right to complain. We take all
             complaints seriously and will investigate your concerns. Our complaints process:
@@ -69,7 +69,7 @@ export default function CarersFeedbackPage() {
 
         {/* Compliments */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Sending a compliment</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Sending a compliment</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If a member of staff or a service has made a positive difference to you, we would love to hear about
             it. Compliments help us understand what is working well and motivate our teams. You can send a
@@ -78,8 +78,8 @@ export default function CarersFeedbackPage() {
         </section>
 
         {/* Annual survey */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Annual carers survey</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Annual carers survey</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Each year, we carry out a survey of carers to understand your experiences and identify areas for
             improvement. If you are invited to take part, please do complete the survey - your responses are
@@ -89,7 +89,7 @@ export default function CarersFeedbackPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

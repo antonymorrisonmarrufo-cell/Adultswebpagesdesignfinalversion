@@ -21,7 +21,7 @@ export default function ProfessionalGuidancePage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Professional guidance and resources</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Professional guidance and resources</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Practice standards, training opportunities, and toolkits to support professionals working in
             adult safeguarding in Waltham Forest.
@@ -33,7 +33,7 @@ export default function ProfessionalGuidancePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Practice standards */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Practice standards</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Practice standards</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             All professionals working with adults at risk in Waltham Forest are expected to follow the
             London Multi-Agency Adult Safeguarding Policy and Procedures. In addition, the Waltham Forest
@@ -69,7 +69,7 @@ export default function ProfessionalGuidancePage() {
 
         {/* Training */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Training</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Training</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Waltham Forest Safeguarding Adults Board provides a range of training opportunities for
             professionals across all partner agencies. Training is available at different levels depending
@@ -78,7 +78,7 @@ export default function ProfessionalGuidancePage() {
 
           <div className="mt-6 space-y-4">
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Level 1: Basic awareness</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Level 1: Basic awareness</h3>
               <p className="mt-2 text-wf-dark">
                 For all staff and volunteers. Covers what safeguarding is, how to recognise abuse and
                 neglect, and how to report concerns. Available as an e-learning module.
@@ -86,7 +86,7 @@ export default function ProfessionalGuidancePage() {
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Level 2: Responding to concerns</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Level 2: Responding to concerns</h3>
               <p className="mt-2 text-wf-dark">
                 For staff who may need to respond to safeguarding concerns as part of their role. Covers
                 the referral process, information sharing, and Making Safeguarding Personal.
@@ -94,7 +94,7 @@ export default function ProfessionalGuidancePage() {
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Level 3: Enquiry managers</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Level 3: Enquiry managers</h3>
               <p className="mt-2 text-wf-dark">
                 For professionals who lead or manage safeguarding enquiries. Covers the Section 42 enquiry
                 process, risk assessment, safeguarding planning, and complex case management.
@@ -102,7 +102,7 @@ export default function ProfessionalGuidancePage() {
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Specialist topics</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Specialist topics</h3>
               <p className="mt-2 text-wf-dark">
                 Workshops and seminars on specific topics such as self-neglect, modern slavery, domestic
                 abuse, financial abuse, mental capacity, and organisational abuse.
@@ -118,7 +118,7 @@ export default function ProfessionalGuidancePage() {
 
         {/* Toolkits */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Toolkits and frameworks</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Toolkits and frameworks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The following toolkits and frameworks are available to support professionals in their
             safeguarding practice:
@@ -149,7 +149,7 @@ export default function ProfessionalGuidancePage() {
 
         {/* Policies and procedures */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Key policies and procedures</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Key policies and procedures</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <a href="https://londonadass.org.uk/safeguarding/policy-and-procedures/" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
@@ -176,7 +176,7 @@ export default function ProfessionalGuidancePage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">

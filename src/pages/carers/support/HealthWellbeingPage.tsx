@@ -23,7 +23,7 @@ export default function HealthWellbeingPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Health and wellbeing for carers</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Health and wellbeing for carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Looking after your own health is just as important as looking after the person you care for. There are
             services and programmes in Waltham Forest to support your physical and mental wellbeing.
@@ -35,7 +35,7 @@ export default function HealthWellbeingPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Free health checks */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Free health checks for carers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Free health checks for carers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             As a carer, you are entitled to a free annual health check with your GP. This is an opportunity to
             discuss any health concerns, review medications, and check things like blood pressure, weight, and
@@ -53,7 +53,7 @@ export default function HealthWellbeingPage() {
 
         {/* Mental health */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Mental health support</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Mental health support</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Caring can take a toll on your mental health. It is common for carers to experience stress, anxiety,
             depression, or feelings of isolation. Support is available:
@@ -68,7 +68,7 @@ export default function HealthWellbeingPage() {
 
         {/* Exercise and activities */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Exercise and activities</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Exercise and activities</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Staying active helps manage stress and improves your physical and mental health. Opportunities in
             Waltham Forest include:
@@ -82,8 +82,8 @@ export default function HealthWellbeingPage() {
         </section>
 
         {/* Looking after yourself */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Tips for looking after yourself</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Tips for looking after yourself</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li>Try to get enough sleep and eat well</li>
             <li>Accept help when it is offered</li>
@@ -97,7 +97,7 @@ export default function HealthWellbeingPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

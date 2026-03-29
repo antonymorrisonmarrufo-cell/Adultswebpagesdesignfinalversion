@@ -21,7 +21,7 @@ export default function AllistonHousePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Alliston House</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Alliston House</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Alliston House is a care facility in Waltham Forest providing residential
             support and services for adults who need care and accommodation.
@@ -33,7 +33,7 @@ export default function AllistonHousePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* About */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">About Alliston House</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">About Alliston House</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Alliston House is a residential care facility run by the London Borough of
             Waltham Forest. It provides care and support for adults who are unable to live
@@ -50,7 +50,7 @@ export default function AllistonHousePage() {
 
         {/* Services */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Services provided</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Services provided</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li>24-hour care and support from experienced, trained staff</li>
             <li>Personal care including help with washing, dressing, eating, and mobility</li>
@@ -66,7 +66,7 @@ export default function AllistonHousePage() {
 
         {/* Accommodation */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Accommodation</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Accommodation</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Alliston House offers comfortable single bedrooms. Residents are encouraged to
             personalise their rooms with their own belongings, photographs, and furnishings
@@ -82,7 +82,7 @@ export default function AllistonHousePage() {
 
         {/* Visiting */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Visiting</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Visiting</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Visitors are welcome at Alliston House. We understand how important it is for
             residents to maintain relationships with their family and friends. There are
@@ -93,7 +93,7 @@ export default function AllistonHousePage() {
 
         {/* Referrals */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to be referred</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to be referred</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Placements at Alliston House are arranged through a care and support assessment
             carried out by Waltham Forest Council. If you think a residential placement
@@ -105,7 +105,7 @@ export default function AllistonHousePage() {
 
         {/* Fees */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Fees and funding</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Fees and funding</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The cost of a placement at Alliston House depends on your assessed care needs
             and your financial situation. The council will carry out a financial assessment
@@ -118,8 +118,8 @@ export default function AllistonHousePage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Contact Alliston House</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Contact Alliston House</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
             <p>
               <strong>Telephone:</strong>{" "}
@@ -146,7 +146,7 @@ export default function AllistonHousePage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">

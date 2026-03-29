@@ -23,7 +23,7 @@ export default function LocalGroupsServicesPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Local groups and services</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Local groups and services</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             There are many local organisations and support groups in Waltham Forest that can help you in your
             caring role. Connecting with other carers can reduce isolation and provide practical advice.
@@ -35,7 +35,7 @@ export default function LocalGroupsServicesPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Carers First */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carers First</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carers First</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Carers First is a charity that provides dedicated support to carers in Waltham Forest. They offer:
           </p>
@@ -54,7 +54,7 @@ export default function LocalGroupsServicesPage() {
 
         {/* Carer support groups */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer support groups</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer support groups</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Support groups are a chance to meet other carers, share experiences, and learn from each other.
             Groups available in Waltham Forest include:
@@ -71,7 +71,7 @@ export default function LocalGroupsServicesPage() {
 
         {/* Other local organisations */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Other local organisations</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Other local organisations</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li><strong>Age UK Waltham Forest</strong> - support for older carers and those caring for older people</li>
             <li><strong>Mind in Waltham Forest</strong> - mental health support for carers and the people they care for</li>
@@ -82,8 +82,8 @@ export default function LocalGroupsServicesPage() {
         </section>
 
         {/* Get connected */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get connected</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get connected</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To find out about groups and services near you, contact our Adult Social Care team on{" "}
             <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
@@ -93,7 +93,7 @@ export default function LocalGroupsServicesPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

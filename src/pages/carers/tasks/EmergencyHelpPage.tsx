@@ -21,7 +21,7 @@ export default function EmergencyHelpPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Getting emergency help as a carer</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Getting emergency help as a carer</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             What to do if you have an emergency and cannot provide care, and how to get urgent help.
           </p>
@@ -32,7 +32,7 @@ export default function EmergencyHelpPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Immediate danger */}
         <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">If someone is in immediate danger</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
             Call <strong>999</strong> immediately. This includes medical emergencies, fires, or if someone is at risk of harm.
           </p>
@@ -40,7 +40,7 @@ export default function EmergencyHelpPage() {
 
         {/* If you cannot provide care */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">If you suddenly cannot provide care</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">If you suddenly cannot provide care</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If something happens to you and you are unable to care for the person who depends on you, take
             these steps:
@@ -55,7 +55,7 @@ export default function EmergencyHelpPage() {
 
         {/* Carer emergency card */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer emergency card</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer emergency card</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             A carer emergency card is a small card you can carry in your wallet or purse. It lets people know
             that you are a carer and that someone depends on you. If you are involved in an accident or become
@@ -70,7 +70,7 @@ export default function EmergencyHelpPage() {
 
         {/* Planning ahead */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Planning ahead for emergencies</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Planning ahead for emergencies</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The best way to handle emergencies is to plan for them in advance:
           </p>
@@ -89,8 +89,8 @@ export default function EmergencyHelpPage() {
         </section>
 
         {/* Key contacts */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Key emergency contacts</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Key emergency contacts</h2>
           <ul className="mt-3 space-y-2 text-wf-dark">
             <li><strong>Emergency services:</strong> 999</li>
             <li><strong>NHS non-emergency:</strong> 111</li>
@@ -102,7 +102,7 @@ export default function EmergencyHelpPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support/emergency-plan" className="text-wf-blue underline hover:text-wf-green">

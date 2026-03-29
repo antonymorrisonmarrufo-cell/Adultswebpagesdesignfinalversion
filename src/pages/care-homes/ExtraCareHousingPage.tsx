@@ -21,7 +21,7 @@ export default function ExtraCareHousingPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Extra care housing</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Extra care housing</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Extra care housing offers self-contained flats or apartments with on-site care
             staff available around the clock, designed for older people and adults who need
@@ -34,7 +34,7 @@ export default function ExtraCareHousingPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is extra care housing */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is extra care housing?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is extra care housing?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Extra care housing (sometimes called housing with care) provides
             self-contained flats where you have your own front door, kitchen, and
@@ -51,7 +51,7 @@ export default function ExtraCareHousingPage() {
 
         {/* Who is it for */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who is extra care housing for?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who is extra care housing for?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Extra care housing may be suitable for you if you:
           </p>
@@ -67,7 +67,7 @@ export default function ExtraCareHousingPage() {
 
         {/* What is included */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is included?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is included?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Extra care housing typically includes:
           </p>
@@ -84,7 +84,7 @@ export default function ExtraCareHousingPage() {
 
         {/* How to apply */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to apply</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to apply</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To apply for extra care housing in Waltham Forest, you will need:
           </p>
@@ -111,7 +111,7 @@ export default function ExtraCareHousingPage() {
 
         {/* Costs */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Costs</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Costs</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             In extra care housing you will pay rent and a service charge for your flat. You
             may be eligible for housing benefit to help with these costs. The care and
@@ -129,7 +129,7 @@ export default function ExtraCareHousingPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">

@@ -64,7 +64,7 @@ export default function PayingForCareHubPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Paying for your care</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Paying for your care</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Most people need to pay something towards the cost of their care. Find out how
             costs are worked out, what financial help is available and how to plan ahead.
@@ -76,7 +76,7 @@ export default function PayingForCareHubPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Important information */}
         <div className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">Key things to know</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
             <li>You will not be asked to pay more than you can afford</li>
             <li>Your home is not automatically included when working out how much you pay</li>
@@ -88,7 +88,7 @@ export default function PayingForCareHubPage() {
 
         {/* Topic cards */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Explore this section</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Explore this section</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {topics.map((topic) => (
               <Link
@@ -96,7 +96,7 @@ export default function PayingForCareHubPage() {
                 to={topic.to}
                 className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
               >
-                <h3 className="text-lg font-bold text-[#00635C]">{topic.title}</h3>
+                <h3 className="text-lg font-bold text-[#004E3E]">{topic.title}</h3>
                 <p className="mt-2 text-sm text-wf-gray">{topic.description}</p>
               </Link>
             ))}
@@ -105,7 +105,7 @@ export default function PayingForCareHubPage() {
 
         {/* Contact */}
         <section className="mb-8 rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#D61F69]">Need help understanding your care costs?</h2>
+          <h2 className="text-xl font-bold text-[#bf3688]">Need help understanding your care costs?</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             Our team can talk you through how paying for care works and answer any questions you have.
           </p>
@@ -118,7 +118,7 @@ export default function PayingForCareHubPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             {relatedPages.map((page) => (
               <li key={page.to}>

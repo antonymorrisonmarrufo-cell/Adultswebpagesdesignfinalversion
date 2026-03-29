@@ -21,7 +21,7 @@ export default function StrategyCouncilDutiesPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Carers strategy and council duties</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Carers strategy and council duties</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Waltham Forest Council has a clear strategy for supporting carers and legal duties under the
             Care Act 2014. Find out about our commitments and how we work to improve services for carers.
@@ -33,7 +33,7 @@ export default function StrategyCouncilDutiesPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Local carers strategy */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Local carers strategy</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Local carers strategy</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Waltham Forest Carers Strategy sets out our vision for supporting carers in the borough. The
             strategy was developed in partnership with carers, carer organisations, health partners, and
@@ -52,7 +52,7 @@ export default function StrategyCouncilDutiesPage() {
 
         {/* Legal duties */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Legal duties under the Care Act 2014</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Legal duties under the Care Act 2014</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Care Act 2014 places specific duties on local authorities in relation to carers. These include:
           </p>
@@ -68,7 +68,7 @@ export default function StrategyCouncilDutiesPage() {
 
         {/* How we deliver */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How we deliver on our commitments</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How we deliver on our commitments</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We deliver our carers strategy through:
           </p>
@@ -83,8 +83,8 @@ export default function StrategyCouncilDutiesPage() {
         </section>
 
         {/* Have your say */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Have your say</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Have your say</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We welcome feedback from carers about our strategy and services. If you would like to get involved
             in shaping carer services, contact us on{" "}
@@ -95,7 +95,7 @@ export default function StrategyCouncilDutiesPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

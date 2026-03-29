@@ -21,7 +21,7 @@ export default function SupportedLivingPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Supported living</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Supported living</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Supported living helps you live as independently as possible in your own home or
             shared accommodation, with care and support tailored to your individual needs.
@@ -33,7 +33,7 @@ export default function SupportedLivingPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is supported living */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is supported living?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is supported living?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Supported living is an arrangement where you live in your own home -- either alone
             or with other people -- and receive support from trained care workers. Unlike a
@@ -49,7 +49,7 @@ export default function SupportedLivingPage() {
 
         {/* Who is it for */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who is supported living for?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who is supported living for?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Supported living may be suitable for you if you:
           </p>
@@ -64,7 +64,7 @@ export default function SupportedLivingPage() {
 
         {/* What support is available */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What support is available?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What support is available?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The support you receive will depend on your assessed needs. It might include:
           </p>
@@ -81,7 +81,7 @@ export default function SupportedLivingPage() {
 
         {/* Providers in Waltham Forest */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Supported living providers in Waltham Forest</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Supported living providers in Waltham Forest</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Waltham Forest Council works with a number of approved supported living
             providers. These organisations are regularly monitored to ensure they deliver
@@ -105,7 +105,7 @@ export default function SupportedLivingPage() {
 
         {/* How to access */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to access supported living</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to access supported living</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To access supported living, you will need a care and support assessment from
             Waltham Forest Council. Contact our Adult Social Care team to request an
@@ -124,7 +124,7 @@ export default function SupportedLivingPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">

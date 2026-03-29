@@ -21,7 +21,7 @@ export default function UsefulContactsPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Useful contacts quick reference</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Useful contacts quick reference</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Key phone numbers and contacts for carers in Waltham Forest - save this page for quick access
             when you need help.
@@ -33,7 +33,7 @@ export default function UsefulContactsPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Emergency contacts */}
         <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Emergency contacts</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Emergency contacts</h2>
           <div className="mt-4 space-y-3">
             <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
               <span className="font-medium text-wf-dark">Emergency services</span>
@@ -56,7 +56,7 @@ export default function UsefulContactsPage() {
 
         {/* Council services */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Council services</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Council services</h2>
           <div className="mt-4 space-y-3">
             <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
               <span className="font-medium text-wf-dark">Adult Social Care</span>
@@ -75,7 +75,7 @@ export default function UsefulContactsPage() {
 
         {/* Carer support */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer support organisations</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer support organisations</h2>
           <div className="mt-4 space-y-3">
             <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
               <span className="font-medium text-wf-dark">Carers First (Waltham Forest)</span>
@@ -106,7 +106,7 @@ export default function UsefulContactsPage() {
 
         {/* National helplines */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">National helplines</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">National helplines</h2>
           <div className="mt-4 space-y-3">
             <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">
               <span className="font-medium text-wf-dark">ACAS (workplace rights)</span>
@@ -129,7 +129,7 @@ export default function UsefulContactsPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support/useful-contacts" className="text-wf-blue underline hover:text-wf-green">

@@ -28,7 +28,7 @@ export default function WhoCanGetHelpPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Who can get help</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Who can get help</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Not everyone who contacts adult social care will be eligible for
             council-funded support, but anyone can ask for an assessment. Here is how
@@ -42,7 +42,7 @@ export default function WhoCanGetHelpPage() {
         <div className="max-w-3xl space-y-8">
           {/* Callout */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">You do not need a GP referral</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">You do not need a GP referral</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Anyone can contact us to ask for an assessment. You do not need a referral
               from your GP or any other professional. You can refer yourself, or a family
@@ -52,7 +52,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* Eligibility criteria */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Eligibility criteria</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Eligibility criteria</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               To be eligible for council-funded care and support, you must meet
               criteria set out in the Care Act 2014. The council uses a three-part
@@ -62,7 +62,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* 3-part framework */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">The three-part assessment framework</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">The three-part assessment framework</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               To be eligible, all three of the following must apply:
             </p>
@@ -96,7 +96,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* 10 activities */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">The 10 activities assessed</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">The 10 activities assessed</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               During your assessment, we look at whether you can achieve the following
               outcomes:
@@ -117,7 +117,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* If eligible */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What happens if you are eligible</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What happens if you are eligible</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you meet the eligibility criteria, the council has a legal duty to meet
               your needs. We will:
@@ -132,7 +132,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* If not eligible */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What happens if you are not eligible</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What happens if you are not eligible</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you do not meet the eligibility criteria, you are still entitled to:
             </p>
@@ -149,7 +149,7 @@ export default function WhoCanGetHelpPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Not sure if you are eligible?</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Not sure if you are eligible?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you are unsure whether you or someone you know would be eligible for
               support, contact us. We can talk through your situation and explain the
@@ -166,7 +166,7 @@ export default function WhoCanGetHelpPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

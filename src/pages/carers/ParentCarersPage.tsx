@@ -21,7 +21,7 @@ export default function ParentCarersPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Parent carers</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Parent carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A parent carer is a parent or guardian who provides additional care for a child or young person
             with a disability, long-term illness, or additional needs. Find out about the support available
@@ -34,7 +34,7 @@ export default function ParentCarersPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Support for parent carers */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Support for parent carers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Support for parent carers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             As a parent carer, you face unique challenges. The care you provide goes beyond what is expected
             of a parent and can affect your health, finances, work, and family life. You are entitled to:
@@ -49,7 +49,7 @@ export default function ParentCarersPage() {
 
         {/* Short breaks */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Short breaks for disabled children</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks for disabled children</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Short breaks give your child positive experiences and opportunities while giving you time to rest.
             These can include:
@@ -69,7 +69,7 @@ export default function ParentCarersPage() {
 
         {/* Parent carer forum */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Parent carer forum</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Parent carer forum</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Waltham Forest Parent Carer Forum is a group of parents and carers of children and young
             people with disabilities or additional needs. The forum:
@@ -88,7 +88,7 @@ export default function ParentCarersPage() {
 
         {/* EHC plans */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Education, Health and Care plans</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Education, Health and Care plans</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If your child has special educational needs or a disability, they may be entitled to an Education,
             Health and Care (EHC) plan. This plan sets out the support your child needs across education,
@@ -98,8 +98,8 @@ export default function ParentCarersPage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get in touch</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get in touch</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To find out more about support for parent carers, contact our Adult Social Care team on{" "}
             <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
@@ -109,7 +109,7 @@ export default function ParentCarersPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

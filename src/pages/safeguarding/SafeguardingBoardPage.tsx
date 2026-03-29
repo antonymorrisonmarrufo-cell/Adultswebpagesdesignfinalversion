@@ -21,7 +21,7 @@ export default function SafeguardingBoardPage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Waltham Forest Safeguarding Adults Board</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Waltham Forest Safeguarding Adults Board</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             The Safeguarding Adults Board (SAB) brings together key organisations to ensure that local
             safeguarding arrangements work effectively to protect adults at risk.
@@ -33,7 +33,7 @@ export default function SafeguardingBoardPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Role of the SAB */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Role of the Safeguarding Adults Board</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Role of the Safeguarding Adults Board</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Under the Care Act 2014, every local authority must establish a Safeguarding Adults Board. The
             Waltham Forest SAB has three core duties:
@@ -62,7 +62,7 @@ export default function SafeguardingBoardPage() {
 
         {/* Membership */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Membership</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Membership</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The SAB is chaired by an independent chair and includes statutory partners and other key
             organisations. The three statutory partners are:
@@ -88,7 +88,7 @@ export default function SafeguardingBoardPage() {
 
         {/* Strategic plan */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Strategic plan</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Strategic plan</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The SAB's strategic plan sets out the Board's priorities for safeguarding adults in Waltham
             Forest. The current strategic priorities include:
@@ -108,7 +108,7 @@ export default function SafeguardingBoardPage() {
 
         {/* Annual reports */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Annual reports</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Annual reports</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The SAB publishes an annual report that provides an overview of safeguarding activity and
             performance in Waltham Forest. The report includes:
@@ -128,7 +128,7 @@ export default function SafeguardingBoardPage() {
 
         {/* Safeguarding Adults Reviews */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Safeguarding Adults Reviews</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Safeguarding Adults Reviews</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             A Safeguarding Adults Review (SAR) is carried out when an adult with care and support needs has
             died or experienced serious harm as a result of abuse or neglect, and there is concern that
@@ -143,7 +143,7 @@ export default function SafeguardingBoardPage() {
 
         {/* Contact */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Contact the SAB</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Contact the SAB</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             For enquiries about the Safeguarding Adults Board, including its work, publications, or how to
             get involved, please contact the SAB business unit:
@@ -156,13 +156,13 @@ export default function SafeguardingBoardPage() {
           </p>
           <p className="mt-2 text-wf-dark">
             <strong>Phone:</strong>{" "}
-            <a href="tel:02084963130" className="font-bold text-[#00635C] no-underline">020 8496 3130</a>
+            <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
           </p>
         </section>
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">

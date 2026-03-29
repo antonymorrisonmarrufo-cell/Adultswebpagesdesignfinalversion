@@ -28,7 +28,7 @@ export default function HowToAskForHelpPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">How to ask for help</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">How to ask for help</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             If you think you or someone you know needs adult social care, getting in
             touch is straightforward. You do not need a referral from a GP or anyone else.
@@ -41,7 +41,7 @@ export default function HowToAskForHelpPage() {
         <div className="max-w-3xl space-y-8">
           {/* Callout: get help early */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Get help early</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Get help early</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               You do not have to wait until things become a crisis before asking for help.
               Getting in touch early means we can provide advice, information and support
@@ -65,7 +65,7 @@ export default function HowToAskForHelpPage() {
 
           {/* Support without assessment */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Support you can access without an assessment</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Support you can access without an assessment</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Many services are available without a formal care assessment. You can access
               these directly:
@@ -105,7 +105,7 @@ export default function HowToAskForHelpPage() {
           </section>
 
           {/* Primary CTA */}
-          <section className="rounded-md bg-[#00635C] p-6 shadow-sm text-white">
+          <section className="rounded-md bg-[#004E3E] p-6 shadow-sm text-white">
             <h2 className="text-2xl font-bold">Start a self-assessment online</h2>
             <p className="mt-3 leading-relaxed text-white/90">
               You can complete a short online self-assessment to help us understand your
@@ -114,7 +114,7 @@ export default function HowToAskForHelpPage() {
             </p>
             <a
               href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
-              className="mt-4 inline-block rounded-md bg-white px-6 py-3 font-bold text-[#00635C] hover:bg-gray-100 transition-colors no-underline"
+              className="mt-4 inline-block rounded-md bg-white px-6 py-3 font-bold text-[#004E3E] hover:bg-gray-100 transition-colors no-underline"
             >
               Start self-assessment
             </a>
@@ -122,7 +122,7 @@ export default function HowToAskForHelpPage() {
 
           {/* Who can ask */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Who can ask for help</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Who can ask for help</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               You do not have to ask for yourself. The following people can contact us:
             </p>
@@ -136,7 +136,7 @@ export default function HowToAskForHelpPage() {
 
           {/* Contact methods */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Ways to contact us</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Ways to contact us</h2>
 
             <div className="mt-4 space-y-4">
               <div className="rounded-md border-l-4 border-wf-green bg-wf-green-light p-4">
@@ -172,7 +172,7 @@ export default function HowToAskForHelpPage() {
 
           {/* Professional referral */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Professional referrals</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Professional referrals</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you are a health or social care professional and want to refer someone
               for an assessment, you can:
@@ -190,7 +190,7 @@ export default function HowToAskForHelpPage() {
 
           {/* What happens next */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What happens after you contact us</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What happens after you contact us</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               When you get in touch, we will:
             </p>
@@ -206,7 +206,7 @@ export default function HowToAskForHelpPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

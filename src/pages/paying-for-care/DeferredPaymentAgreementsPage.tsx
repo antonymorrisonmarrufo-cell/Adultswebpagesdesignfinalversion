@@ -28,7 +28,7 @@ export default function DeferredPaymentAgreementsPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Deferred payment agreements</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Deferred payment agreements</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A deferred payment agreement means you do not have to sell your home in your
             lifetime to pay for residential care. The council effectively lends you the
@@ -42,7 +42,7 @@ export default function DeferredPaymentAgreementsPage() {
         <div className="max-w-3xl space-y-8">
           {/* Using your home to pay */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Using your home to pay for care</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Using your home to pay for care</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you move into a care home permanently, the value of your property may
               be taken into account when working out how much you pay. This could mean
@@ -62,7 +62,7 @@ export default function DeferredPaymentAgreementsPage() {
 
           {/* Eligibility */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Who is eligible</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Who is eligible</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               You may be eligible for a deferred payment agreement if:
             </p>
@@ -81,7 +81,7 @@ export default function DeferredPaymentAgreementsPage() {
 
           {/* How it works */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">How a deferred payment agreement works</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">How a deferred payment agreement works</h2>
             <ol className="mt-3 list-decimal pl-6 space-y-2 text-wf-dark leading-relaxed">
               <li>You apply for a deferred payment agreement through the council</li>
               <li>We carry out a financial assessment and value your property</li>
@@ -99,7 +99,7 @@ export default function DeferredPaymentAgreementsPage() {
 
           {/* Costs and charges */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Costs and charges</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Costs and charges</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               There are costs associated with a deferred payment agreement:
             </p>
@@ -113,7 +113,7 @@ export default function DeferredPaymentAgreementsPage() {
 
           {/* Ending the agreement */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Ending the agreement</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Ending the agreement</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               A deferred payment agreement can end in several ways:
             </p>
@@ -132,7 +132,7 @@ export default function DeferredPaymentAgreementsPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Find out if a deferred payment is right for you</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Find out if a deferred payment is right for you</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Contact us to discuss whether a deferred payment agreement could work for
               your situation. We strongly recommend getting independent financial advice
@@ -149,7 +149,7 @@ export default function DeferredPaymentAgreementsPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

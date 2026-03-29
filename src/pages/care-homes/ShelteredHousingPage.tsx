@@ -21,7 +21,7 @@ export default function ShelteredHousingPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Sheltered housing</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Sheltered housing</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Sheltered housing provides independent living for older people with the
             reassurance of a scheme manager (warden) and an emergency alarm system.
@@ -33,7 +33,7 @@ export default function ShelteredHousingPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is sheltered housing */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is sheltered housing?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is sheltered housing?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Sheltered housing (also known as retirement housing) is purpose-built
             accommodation designed for older people who can live independently but want the
@@ -49,7 +49,7 @@ export default function ShelteredHousingPage() {
 
         {/* What is included */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is included?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is included?</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li>A self-contained flat or bungalow (usually one or two bedrooms)</li>
             <li>A scheme manager or warden available during working hours</li>
@@ -70,7 +70,7 @@ export default function ShelteredHousingPage() {
 
         {/* Eligibility */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Eligibility</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Eligibility</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To be eligible for sheltered housing in Waltham Forest, you will usually need
             to meet the following criteria:
@@ -89,7 +89,7 @@ export default function ShelteredHousingPage() {
 
         {/* How to apply */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to apply</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to apply</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To apply for sheltered housing, you need to register on the Waltham Forest
             housing waiting list. You can do this by:
@@ -125,7 +125,7 @@ export default function ShelteredHousingPage() {
 
         {/* Costs */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Costs</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Costs</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             In sheltered housing, you will pay rent and a service charge. The service
             charge covers the cost of the scheme manager, alarm system, and communal
@@ -138,7 +138,7 @@ export default function ShelteredHousingPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">

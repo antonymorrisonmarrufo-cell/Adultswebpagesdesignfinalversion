@@ -21,7 +21,7 @@ export default function CareHomesNursingHomesPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Care homes and nursing homes</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Care homes and nursing homes</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Care homes and nursing homes provide round-the-clock residential care for
             people who can no longer be supported to live in their own home. Understanding
@@ -34,10 +34,10 @@ export default function CareHomesNursingHomesPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Differences */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">The difference between care homes and nursing homes</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">The difference between care homes and nursing homes</h2>
           <div className="mt-4 space-y-4">
             <div className="rounded-md border border-wf-gray-light p-4">
-              <h3 className="text-lg font-bold text-[#00635C]">Care homes (residential care)</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Care homes (residential care)</h3>
               <p className="mt-2 text-wf-dark leading-relaxed">
                 Care homes provide accommodation, meals, and personal care such as help
                 with washing, dressing, eating, and going to the toilet. Staff are trained
@@ -46,7 +46,7 @@ export default function CareHomesNursingHomesPage() {
               </p>
             </div>
             <div className="rounded-md border border-wf-gray-light p-4">
-              <h3 className="text-lg font-bold text-[#00635C]">Nursing homes</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Nursing homes</h3>
               <p className="mt-2 text-wf-dark leading-relaxed">
                 Nursing homes provide everything a care home does, plus 24-hour nursing
                 care from registered nurses. Nursing homes are suitable for people who have
@@ -59,7 +59,7 @@ export default function CareHomesNursingHomesPage() {
 
         {/* Choosing a home */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Choosing a care home</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Choosing a care home</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Choosing a care home is an important decision. Here are some things to consider:
           </p>
@@ -83,7 +83,7 @@ export default function CareHomesNursingHomesPage() {
 
         {/* CQC ratings */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">CQC ratings and inspections</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">CQC ratings and inspections</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             All care homes and nursing homes in England are inspected and rated by the Care
             Quality Commission (CQC). Ratings range from Outstanding to Inadequate:
@@ -109,7 +109,7 @@ export default function CareHomesNursingHomesPage() {
 
         {/* Funding */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Funding care home fees</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Funding care home fees</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             How your care home placement is funded depends on your financial situation. The
             council will carry out a financial assessment to determine what you can afford
@@ -149,38 +149,38 @@ export default function CareHomesNursingHomesPage() {
 
         {/* Council-run homes */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Council-run care homes in Waltham Forest</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Council-run care homes in Waltham Forest</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Waltham Forest Council operates several care facilities:
           </p>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
             <Link
               to="/care-homes/george-mason-lodge"
-              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#00635C] hover:shadow-md transition-all no-underline"
+              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
             >
-              <h3 className="text-lg font-bold text-[#00635C]">George Mason Lodge</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">George Mason Lodge</h3>
               <p className="mt-2 text-sm text-wf-gray">Council-run residential care home</p>
             </Link>
             <Link
               to="/care-homes/mapleton-road"
-              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#00635C] hover:shadow-md transition-all no-underline"
+              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
             >
-              <h3 className="text-lg font-bold text-[#00635C]">Mapleton Road</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Mapleton Road</h3>
               <p className="mt-2 text-sm text-wf-gray">Care facility and services</p>
             </Link>
             <Link
               to="/care-homes/alliston-house"
-              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#00635C] hover:shadow-md transition-all no-underline"
+              className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
             >
-              <h3 className="text-lg font-bold text-[#00635C]">Alliston House</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Alliston House</h3>
               <p className="mt-2 text-sm text-wf-gray">Residential support and services</p>
             </Link>
           </div>
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Get help choosing a care home</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Get help choosing a care home</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             Our Adult Social Care team can help you understand your options and find a
             suitable care home. Contact us:
@@ -198,7 +198,7 @@ export default function CareHomesNursingHomesPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">

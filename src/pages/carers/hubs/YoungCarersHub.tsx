@@ -23,7 +23,7 @@ export default function YoungCarersHub() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Young carers hub</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Young carers hub</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A dedicated space for young carers in Waltham Forest. A place where you can have fun, make friends,
             get support, and just be yourself.
@@ -35,7 +35,7 @@ export default function YoungCarersHub() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What we offer */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What the young carers hub offers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What the young carers hub offers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The young carers hub is a safe and fun space for children and young people who care for someone
             in their family. Here you can:
@@ -52,7 +52,7 @@ export default function YoungCarersHub() {
 
         {/* Regular sessions */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Regular sessions</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Regular sessions</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We run regular sessions for different age groups:
           </p>
@@ -66,7 +66,7 @@ export default function YoungCarersHub() {
 
         {/* How to join */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to join</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to join</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you are a young carer, or you know a young person who cares for someone, you can join the
             young carers hub by:
@@ -83,8 +83,8 @@ export default function YoungCarersHub() {
         </section>
 
         {/* Young carers rights */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Your rights as a young carer</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights as a young carer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             As a young carer, you have the right to a young carers assessment. This looks at how caring affects
             your life, your education, and your wellbeing. It can lead to support for you and your family to
@@ -94,7 +94,7 @@ export default function YoungCarersHub() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">

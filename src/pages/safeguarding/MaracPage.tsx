@@ -21,7 +21,7 @@ export default function MaracPage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">MARAC</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">MARAC</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             The Multi-Agency Risk Assessment Conference (MARAC) is a meeting where information is shared
             about the highest-risk domestic abuse cases to develop a coordinated safety plan.
@@ -33,7 +33,7 @@ export default function MaracPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is MARAC */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is MARAC?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is MARAC?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             MARAC stands for Multi-Agency Risk Assessment Conference. It is a regular local meeting to
             discuss how to help victims at high risk of murder or serious harm from domestic abuse.
@@ -48,7 +48,7 @@ export default function MaracPage() {
 
         {/* How it works */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How does MARAC work?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How does MARAC work?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The MARAC process follows these key steps:
           </p>
@@ -79,7 +79,7 @@ export default function MaracPage() {
 
         {/* Who can refer */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who can refer to MARAC?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who can refer to MARAC?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Any professional can refer a case to MARAC if they believe the victim is at high risk of
             serious harm or murder. Common referring agencies include:
@@ -102,7 +102,7 @@ export default function MaracPage() {
 
         {/* Referral process */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Making a MARAC referral</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Making a MARAC referral</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To make a MARAC referral in Waltham Forest:
           </p>
@@ -122,13 +122,13 @@ export default function MaracPage() {
           </p>
           <p className="mt-2 text-wf-dark">
             <strong>Phone:</strong>{" "}
-            <a href="tel:02084963130" className="font-bold text-[#00635C] no-underline">020 8496 3130</a>
+            <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
           </p>
         </section>
 
         {/* Confidentiality */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Confidentiality</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Confidentiality</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Information shared at MARAC is confidential and must only be used for the purpose of reducing
             risk to the victim. All agencies attending MARAC sign an information sharing protocol.
@@ -142,20 +142,20 @@ export default function MaracPage() {
 
         {/* Domestic abuse support */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Domestic abuse support services</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Domestic abuse support services</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you or someone you know is affected by domestic abuse, the following services can help:
           </p>
           <ul className="mt-4 space-y-4 text-wf-dark">
             <li>
               <strong>National Domestic Abuse Helpline:</strong>{" "}
-              <a href="tel:08082000247" className="font-bold text-[#00635C] no-underline">0808 200 0247</a>
+              <a href="tel:08082000247" className="font-bold text-[#004E3E] no-underline">0808 200 0247</a>
               <br />
               <span className="text-sm text-wf-gray">Free, 24-hour helpline run by Refuge</span>
             </li>
             <li>
               <strong>Waltham Forest Domestic Abuse services:</strong>{" "}
-              <a href="tel:02084963130" className="font-bold text-[#00635C] no-underline">020 8496 3130</a>
+              <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
               <br />
               <span className="text-sm text-wf-gray">Local support and advice</span>
             </li>
@@ -164,7 +164,7 @@ export default function MaracPage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green">

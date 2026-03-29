@@ -23,7 +23,7 @@ export default function TrainingWorkshopsPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Training and workshops</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Training and workshops</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Free training courses and workshops are available to help you develop the skills and confidence
             you need in your caring role.
@@ -35,7 +35,7 @@ export default function TrainingWorkshopsPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Moving and handling */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Moving and handling</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Moving and handling</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you help the person you care for to move, transfer, or reposition, it is important to know
             how to do this safely. Moving and handling training teaches you:
@@ -50,7 +50,7 @@ export default function TrainingWorkshopsPage() {
 
         {/* First aid */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">First aid</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">First aid</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Basic first aid skills can give you confidence to handle medical situations at home. Training covers:
           </p>
@@ -65,7 +65,7 @@ export default function TrainingWorkshopsPage() {
 
         {/* Condition-specific */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Condition-specific training</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Condition-specific training</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We offer workshops tailored to the specific conditions or needs of the person you care for. These include:
           </p>
@@ -80,8 +80,8 @@ export default function TrainingWorkshopsPage() {
         </section>
 
         {/* How to book */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to book</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to book</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             All training is free for carers in Waltham Forest. Courses are held at the Carers Hub and other
             community venues, with some available online. To find out about upcoming courses or to book a place,
@@ -93,7 +93,7 @@ export default function TrainingWorkshopsPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

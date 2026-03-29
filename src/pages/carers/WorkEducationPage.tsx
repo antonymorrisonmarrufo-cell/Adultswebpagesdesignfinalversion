@@ -21,7 +21,7 @@ export default function WorkEducationPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Work and education</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Work and education</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Balancing a caring role with work or education can be challenging. You have legal rights as a
             working carer, and there is support available to help you continue with work or study.
@@ -33,7 +33,7 @@ export default function WorkEducationPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Flexible working */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Flexible working rights</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Flexible working rights</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             As a carer, you have important rights at work. Since April 2024, all employees have the right
             to request flexible working from day one of employment. This means you can ask your employer for:
@@ -53,7 +53,7 @@ export default function WorkEducationPage() {
 
         {/* Carer's leave */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer's leave</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer's leave</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Since April 2024, employees who are carers have the right to one week of unpaid carer's leave
             per year. This can be taken flexibly, in individual or half days. You do not need to provide
@@ -66,7 +66,7 @@ export default function WorkEducationPage() {
 
         {/* Education support */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Education and training support</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Education and training support</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you want to continue your education or take up new training, support is available:
           </p>
@@ -81,7 +81,7 @@ export default function WorkEducationPage() {
 
         {/* Employment advice */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Employment advice</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Employment advice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you need help with work-related issues, the following services can provide advice:
           </p>
@@ -94,8 +94,8 @@ export default function WorkEducationPage() {
         </section>
 
         {/* Talk to us */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Talk to us</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Talk to us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If your caring role is affecting your ability to work or study, a carers assessment can help
             identify support. Contact us on{" "}
@@ -105,7 +105,7 @@ export default function WorkEducationPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

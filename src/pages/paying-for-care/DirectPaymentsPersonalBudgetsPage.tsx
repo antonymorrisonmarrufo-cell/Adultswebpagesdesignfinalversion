@@ -28,7 +28,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Direct payments and personal budgets</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Direct payments and personal budgets</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A personal budget gives you more choice and control over how your care and
             support needs are met. A direct payment lets you manage that budget yourself.
@@ -41,7 +41,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
         <div className="max-w-3xl space-y-8">
           {/* What is a personal budget */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What is a personal budget?</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What is a personal budget?</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you are eligible for support from the council, you will be given a
               personal budget. This is the amount of money the council allocates to meet
@@ -60,7 +60,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
 
           {/* What is a direct payment */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What is a direct payment?</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What is a direct payment?</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               A direct payment is money from the council paid into a dedicated account
               so you can buy your own care and support. It gives you the freedom to
@@ -79,7 +79,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
 
           {/* How direct payments work */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">How direct payments work</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">How direct payments work</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you choose a direct payment:
             </p>
@@ -95,7 +95,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
 
           {/* Managing your budget */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Managing your budget</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Managing your budget</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you receive a direct payment, you are responsible for managing the money
               properly. This means:
@@ -116,7 +116,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Find out more about direct payments</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Find out more about direct payments</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you would like to discuss whether a direct payment is right for you, or
               need help getting started, contact us.
@@ -132,7 +132,7 @@ export default function DirectPaymentsPersonalBudgetsPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

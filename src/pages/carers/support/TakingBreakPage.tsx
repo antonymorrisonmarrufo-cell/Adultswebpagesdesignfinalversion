@@ -23,7 +23,7 @@ export default function TakingBreakPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Taking a break from caring</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Taking a break from caring</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Taking regular breaks is important for your health and wellbeing. There are different types of
             respite and replacement care available to give you time to rest and recharge.
@@ -35,7 +35,7 @@ export default function TakingBreakPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Why breaks matter */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Why taking a break matters</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Why taking a break matters</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Caring for someone can be physically and emotionally demanding. Without regular breaks, carers
             are at risk of burnout, poor health, and social isolation. Taking time away from caring is not
@@ -45,7 +45,7 @@ export default function TakingBreakPage() {
 
         {/* Respite care */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Respite care</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Respite care</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Respite care provides temporary care for the person you look after, allowing you to have a break.
             This can include:
@@ -59,7 +59,7 @@ export default function TakingBreakPage() {
 
         {/* Replacement care */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Replacement care</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Replacement care</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Replacement care (sometimes called substitute care) is when someone else takes over your caring
             responsibilities for a period of time. This could be arranged through:
@@ -73,7 +73,7 @@ export default function TakingBreakPage() {
 
         {/* Short breaks */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Short breaks</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Short breaks can range from a few hours to a few weeks. They give you time to do things like:
           </p>
@@ -87,8 +87,8 @@ export default function TakingBreakPage() {
         </section>
 
         {/* How to arrange */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to arrange a break</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to arrange a break</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Speak to us about what kind of break would help you. We can discuss options following a carers assessment.
             Contact our Adult Social Care team on{" "}
@@ -98,7 +98,7 @@ export default function TakingBreakPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

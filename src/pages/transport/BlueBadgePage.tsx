@@ -8,7 +8,7 @@ export default function BlueBadgePage() {
         <nav aria-label="Breadcrumb" className="mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
             <li>
-              <Link to="/" className="hover:underline text-[#00635C]">
+              <Link to="/" className="hover:underline text-[#004E3E]">
                 Home
               </Link>
               <span className="mx-1">&gt;</span>
@@ -16,7 +16,7 @@ export default function BlueBadgePage() {
             <li>
               <Link
                 to="/adult-social-care"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Adult Social Care
               </Link>
@@ -25,7 +25,7 @@ export default function BlueBadgePage() {
             <li>
               <Link
                 to="/transport"
-                className="hover:underline text-[#00635C]"
+                className="hover:underline text-[#004E3E]"
               >
                 Travel and transport
               </Link>
@@ -36,7 +36,7 @@ export default function BlueBadgePage() {
         </nav>
 
         {/* Page heading */}
-        <h1 className="text-5xl font-bold text-[#00635C] mb-6">Blue Badge</h1>
+        <h1 className="text-5xl font-bold text-[#004E3E] mb-6">Blue Badge</h1>
 
         <p className="text-lg text-gray-700 mb-8">
           The Blue Badge scheme helps people with disabilities or health
@@ -47,7 +47,7 @@ export default function BlueBadgePage() {
 
         {/* Eligibility */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Who is eligible
           </h2>
           <p className="text-gray-700 mb-4">
@@ -90,7 +90,7 @@ export default function BlueBadgePage() {
 
         {/* How to apply */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             How to apply
           </h2>
           <p className="text-gray-700 mb-4">
@@ -120,7 +120,7 @@ export default function BlueBadgePage() {
               href="https://www.gov.uk/apply-blue-badge"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#00635C] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
+              className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
             >
               Apply for a Blue Badge on GOV.UK
             </a>
@@ -129,7 +129,7 @@ export default function BlueBadgePage() {
 
         {/* Renewal */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Renewing your Blue Badge
           </h2>
           <p className="text-gray-700 mb-4">
@@ -146,7 +146,7 @@ export default function BlueBadgePage() {
 
         {/* Using your badge */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Using your Blue Badge
           </h2>
           <p className="text-gray-700 mb-4">
@@ -182,7 +182,7 @@ export default function BlueBadgePage() {
 
         {/* Lost or stolen */}
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
             Lost or stolen Blue Badges
           </h2>
           <p className="text-gray-700 mb-4">
@@ -199,7 +199,7 @@ export default function BlueBadgePage() {
             To request a replacement, contact Waltham Forest Council on{" "}
             <a
               href="tel:02084963130"
-              className="text-[#00635C] font-medium hover:underline"
+              className="text-[#004E3E] font-medium hover:underline"
             >
               020 8496 3130
             </a>
@@ -209,10 +209,10 @@ export default function BlueBadgePage() {
 
         {/* Related links */}
         <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#D61F69] mb-4">
+          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>
-          <ul className="space-y-2 text-[#00635C]">
+          <ul className="space-y-2 text-[#004E3E]">
             <li>
               <Link
                 to="/transport"

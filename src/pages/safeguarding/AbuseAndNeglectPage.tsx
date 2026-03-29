@@ -21,7 +21,7 @@ export default function AbuseAndNeglectPage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Types of abuse and neglect</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Types of abuse and neglect</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Abuse and neglect can take many forms. Understanding the different types can help you to
             recognise when someone may be at risk and needs help.
@@ -39,7 +39,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Physical abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Physical abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Physical abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Physical abuse includes hitting, slapping, pushing, kicking, misuse of medication, restraint,
             or inappropriate physical sanctions. Signs may include unexplained bruises, burns, fractures,
@@ -49,7 +49,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Emotional / psychological abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Emotional or psychological abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Emotional or psychological abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             This includes threats of harm or abandonment, deprivation of contact, humiliation, blaming,
             controlling, intimidation, coercion, harassment, verbal abuse, cyber-bullying, isolation, or
@@ -60,7 +60,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Sexual abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Sexual abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Sexual abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Sexual abuse involves forcing or enticing an adult to take part in sexual activities, whether or
             not the person is aware of what is happening. It includes rape, indecent exposure, sexual
@@ -71,7 +71,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Financial or material abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Financial or material abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Financial or material abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Financial abuse includes theft, fraud, internet scamming, coercion in relation to financial
             affairs or arrangements including wills, property, inheritance or financial transactions. It also
@@ -83,7 +83,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Neglect and acts of omission */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Neglect and acts of omission</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Neglect and acts of omission</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Neglect includes ignoring medical, emotional, or physical care needs, failure to provide access
             to appropriate health, care, and support or educational services, the withholding of the
@@ -95,7 +95,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Discriminatory abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Discriminatory abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Discriminatory abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Discriminatory abuse includes forms of harassment, slurs, or similar treatment based on a
             person's race, gender or gender identity, age, disability, sexual orientation, or religion.
@@ -106,7 +106,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Organisational abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Organisational abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Organisational abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Organisational abuse includes neglect and poor care practice within an institution or specific
             care setting such as a hospital or care home. It can take the form of one-off incidents,
@@ -117,7 +117,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Domestic abuse */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Domestic abuse</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Domestic abuse</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Domestic abuse is any incident or pattern of incidents of controlling, coercive, threatening
             behaviour, violence or abuse between those aged 16 or over who are, or have been, intimate
@@ -133,7 +133,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Modern slavery */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Modern slavery</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Modern slavery</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Modern slavery encompasses slavery, human trafficking, forced and compulsory labour, and
             domestic servitude. Traffickers and slave masters use whatever means they have at their disposal
@@ -145,7 +145,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Self-neglect */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Self-neglect</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Self-neglect</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Self-neglect covers a wide range of behaviour including neglecting to care for one's personal
             hygiene, health or surroundings. It includes hoarding. Self-neglect does not necessarily involve
@@ -156,14 +156,14 @@ export default function AbuseAndNeglectPage() {
 
         {/* Reporting concerns */}
         <section className="mb-8 rounded-md border-l-4 border-wf-green bg-wf-green-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Worried about someone?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Worried about someone?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you recognise any of these types of abuse or neglect in someone you know, please do not
             ignore it. You can report your concerns at any time.
           </p>
           <p className="mt-3 text-wf-dark">
             <strong>Phone:</strong>{" "}
-            <a href="tel:02084963130" className="font-bold text-[#00635C] no-underline">020 8496 3130</a>
+            <a href="tel:02084963130" className="font-bold text-[#004E3E] no-underline">020 8496 3130</a>
           </p>
           <p className="mt-2">
             <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green font-medium">
@@ -174,7 +174,7 @@ export default function AbuseAndNeglectPage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green">

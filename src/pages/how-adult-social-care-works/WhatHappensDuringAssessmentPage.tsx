@@ -28,7 +28,7 @@ export default function WhatHappensDuringAssessmentPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">What happens during an assessment</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">What happens during an assessment</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             An assessment is a conversation about your life, your needs and what matters
             to you. It is not a test, and there are no wrong answers.
@@ -41,7 +41,7 @@ export default function WhatHappensDuringAssessmentPage() {
         <div className="max-w-3xl space-y-8">
           {/* Callout: always free */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Assessments are always free</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Assessments are always free</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               A needs assessment is free for everyone, regardless of your income, savings
               or how much care you need. You will never be charged for an assessment.
@@ -50,7 +50,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* What an assessment is */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What an assessment is</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What an assessment is</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               A needs assessment is a conversation between you and a trained assessor
               (usually a social worker or occupational therapist). Its purpose is to
@@ -70,7 +70,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* 6 areas discussed */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What the assessor will discuss with you</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What the assessor will discuss with you</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The assessment covers six broad areas:
             </p>
@@ -108,7 +108,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* Who will be there */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Who will be there</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Who will be there</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The assessment will be carried out by a qualified assessor, usually a
               social worker or an occupational therapist. You are welcome to have someone
@@ -127,7 +127,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* What happens afterwards */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What happens afterwards</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What happens afterwards</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               After the assessment, the assessor will:
             </p>
@@ -147,7 +147,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* How long it takes */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">How long it takes</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">How long it takes</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The assessment itself usually takes between one and two hours, depending on
               your situation. The whole process, from first contact to receiving the
@@ -161,7 +161,7 @@ export default function WhatHappensDuringAssessmentPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Questions about your assessment?</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Questions about your assessment?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you have been told you are going to have an assessment and want to know
               more about what to expect, contact us.
@@ -177,7 +177,7 @@ export default function WhatHappensDuringAssessmentPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

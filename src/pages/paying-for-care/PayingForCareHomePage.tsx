@@ -28,7 +28,7 @@ export default function PayingForCareHomePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Paying for a care home</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Paying for a care home</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Moving into a care home is a big decision and understanding how costs work
             is important. How you pay depends on your financial situation.
@@ -41,7 +41,7 @@ export default function PayingForCareHomePage() {
         <div className="max-w-3xl space-y-8">
           {/* Self-funding */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Self-funding your care home place</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Self-funding your care home place</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If your capital (including savings, investments and in some cases your
               property) is above &#163;23,250, you will be expected to pay for your care
@@ -62,7 +62,7 @@ export default function PayingForCareHomePage() {
 
           {/* Council-funded */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Council-funded care home places</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Council-funded care home places</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If your capital is below &#163;23,250 and your income is not enough to cover
               the full cost, the council may help pay for your care home. You will still
@@ -78,7 +78,7 @@ export default function PayingForCareHomePage() {
 
           {/* 12-week property disregard */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">12-week property disregard</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">12-week property disregard</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               When you first move into a care home on a permanent basis, the value of
               your home is not counted for the first 12 weeks. This is known as the
@@ -103,7 +103,7 @@ export default function PayingForCareHomePage() {
 
           {/* Top-up fees */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Top-up fees</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Top-up fees</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you choose a care home that costs more than the amount the council
               would normally pay, someone will need to pay the difference. This is
@@ -127,7 +127,7 @@ export default function PayingForCareHomePage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Need advice about care home costs?</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Need advice about care home costs?</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Understanding care home funding can be complicated. Our team can help
               explain your options and guide you through the process.
@@ -143,7 +143,7 @@ export default function PayingForCareHomePage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

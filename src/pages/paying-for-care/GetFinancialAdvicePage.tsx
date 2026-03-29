@@ -28,7 +28,7 @@ export default function GetFinancialAdvicePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Get financial advice</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Get financial advice</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Getting professional financial advice can help you understand your options
             and make the best decisions about paying for care. Some advice is free.
@@ -41,7 +41,7 @@ export default function GetFinancialAdvicePage() {
         <div className="max-w-3xl space-y-8">
           {/* Why get advice */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Why get financial advice?</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Why get financial advice?</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Planning how to pay for care can be complex. A specialist financial adviser
               can help you:
@@ -58,7 +58,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* Independent financial advisers */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Independent financial advisers</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Independent financial advisers</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               An independent financial adviser (IFA) who specialises in care funding can
               give you personalised advice. Look for an adviser who is:
@@ -97,7 +97,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* Free advice services */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Free advice services</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Free advice services</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Several organisations offer free, impartial advice about paying for care:
             </p>
@@ -125,7 +125,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* SCIE resources */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">SCIE resources</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">SCIE resources</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The Social Care Institute for Excellence (SCIE) provides a range of
               independent resources to help you understand care funding:
@@ -152,7 +152,7 @@ export default function GetFinancialAdvicePage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Talk to us about your options</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Talk to us about your options</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Our team can help point you in the right direction for financial advice
               and answer general questions about paying for care.
@@ -168,7 +168,7 @@ export default function GetFinancialAdvicePage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

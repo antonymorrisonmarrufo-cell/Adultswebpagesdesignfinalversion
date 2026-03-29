@@ -21,7 +21,7 @@ export default function BreaksRespitePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Arranging breaks and respite</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Arranging breaks and respite</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             How to arrange a break from caring, the types of respite available, and how to access them.
           </p>
@@ -32,7 +32,7 @@ export default function BreaksRespitePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Types of breaks */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Types of breaks available</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Types of breaks available</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Breaks from caring can be arranged in different ways depending on your needs:
           </p>
@@ -47,7 +47,7 @@ export default function BreaksRespitePage() {
 
         {/* How to arrange */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to arrange a break</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to arrange a break</h2>
           <ol className="mt-3 ml-6 list-decimal space-y-2 text-wf-dark leading-relaxed">
             <li><strong>Contact us</strong> - call <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a> or visit the Carers Hub</li>
             <li><strong>Have an assessment</strong> - if you have not had a carers assessment, we will arrange one to understand your needs</li>
@@ -59,7 +59,7 @@ export default function BreaksRespitePage() {
 
         {/* Paying for breaks */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Paying for breaks</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Paying for breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The cost of respite care depends on your circumstances:
           </p>
@@ -72,8 +72,8 @@ export default function BreaksRespitePage() {
         </section>
 
         {/* Emergency breaks */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Emergency breaks</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Emergency breaks</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you need an urgent break because you are at risk of burnout or your health is suffering,
             contact us as soon as possible on{" "}
@@ -84,7 +84,7 @@ export default function BreaksRespitePage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support/taking-a-break" className="text-wf-blue underline hover:text-wf-green">

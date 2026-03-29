@@ -59,8 +59,8 @@ export default function AdultSocialCarePage() {
       {/* Hero Section - White background */}
       <div className="bg-white">
         <div className="max-w-5xl mx-auto px-4 py-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#00635C] mb-4">Adult Social Care</h1>
-          <p className="text-base text-[#505a5f] mb-8 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#004E3E] mb-4">Adult Social Care</h1>
+          <p className="text-base text-[#231F20] mb-8 max-w-3xl">
             Find information and advice about adult social care, request support, report a concern, and discover services
             available to you or someone you care for in Waltham Forest.
           </p>
@@ -81,7 +81,7 @@ export default function AdultSocialCarePage() {
                   />
                 </div>
                 <div className="p-3 bg-white">
-                  <p className="text-sm font-semibold text-[#0b0c0c] group-hover:text-[#00635C] transition-colors">
+                  <p className="text-sm font-semibold text-[#231F20] group-hover:text-[#004E3E] transition-colors">
                     {card.title}
                   </p>
                 </div>
@@ -95,13 +95,13 @@ export default function AdultSocialCarePage() {
               <Link
                 key={card.link}
                 to={card.link}
-                className="flex items-center justify-between border-2 border-[#D61F69] rounded-lg p-5 bg-white hover:bg-[#fce8f0] transition-colors no-underline group"
+                className="flex items-center justify-between border-2 border-[#bf3688] rounded-lg p-5 bg-white hover:bg-[#f5e0ee] transition-colors no-underline group"
               >
                 <div className="flex-1 pr-4">
-                  <h2 className="text-lg font-bold text-[#D61F69] mb-2">{card.title}</h2>
-                  <p className="text-sm text-[#505a5f]">{card.desc}</p>
+                  <h2 className="text-lg font-bold text-[#bf3688] mb-2">{card.title}</h2>
+                  <p className="text-sm text-[#231F20]">{card.desc}</p>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#D61F69] flex items-center justify-center group-hover:bg-[#b81a5a] transition-colors">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
                   <ArrowRight className="w-5 h-5 text-white" />
                 </div>
               </Link>
@@ -113,7 +113,7 @@ export default function AdultSocialCarePage() {
       {/* Topics Section - Gray background */}
       <div className="bg-[#f3f2f1]">
         <div className="max-w-5xl mx-auto px-4 py-10">
-          <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Topics in this section</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Topics in this section</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             {topics.map((topic) => (
               <Link
@@ -121,10 +121,10 @@ export default function AdultSocialCarePage() {
                 to={topic.link}
                 className="block bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group"
               >
-                <h3 className="text-base font-bold text-[#D61F69] mb-2">{topic.title}</h3>
-                <p className="text-sm text-[#505a5f] mb-4">{topic.desc}</p>
+                <h3 className="text-base font-bold text-[#bf3688] mb-2">{topic.title}</h3>
+                <p className="text-sm text-[#231F20] mb-4">{topic.desc}</p>
                 <div className="flex justify-end">
-                  <div className="w-8 h-8 rounded-full bg-[#D61F69] flex items-center justify-center group-hover:bg-[#b81a5a] transition-colors">
+                  <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>
                 </div>
@@ -138,33 +138,12 @@ export default function AdultSocialCarePage() {
               <Link
                 key={item.link}
                 to={item.link}
-                className="block bg-[#D61F69] text-white font-semibold text-center px-5 py-4 rounded-lg hover:bg-[#b81a5a] transition-colors no-underline text-sm"
+                className="block bg-[#bf3688] text-white font-semibold text-center px-5 py-4 rounded-lg hover:bg-[#a02d73] transition-colors no-underline text-sm"
               >
                 {item.title}
               </Link>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Feedback Banner */}
-      <div className="bg-[#00635C] text-white">
-        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-          <p className="text-sm">We are improving our website and value your feedback to better meet your needs</p>
-          <button className="text-sm text-white/80 hover:text-white flex items-center gap-1">
-            <span>Hide</span>
-          </button>
-        </div>
-      </div>
-
-      {/* Feedback Section */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <h2 className="text-3xl font-bold text-[#0b0c0c] mb-4">Feedback</h2>
-          <p className="text-[#505a5f]">
-            Send feedback directly to the content team using our website feedback form. You can also join our user
-            research group to receive invites to activities and surveys to help shape future improvements to the site.
-          </p>
         </div>
       </div>
 

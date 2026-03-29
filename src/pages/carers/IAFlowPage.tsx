@@ -21,7 +21,7 @@ export default function IAFlowPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Information and advice flow</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Information and advice flow</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A step-by-step guide to understanding how to access carer support in Waltham Forest, from first
             contact through to ongoing help.
@@ -33,7 +33,7 @@ export default function IAFlowPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Step 1 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 1: Recognise your role</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 1: Recognise your role</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The first step is recognising that you are a carer. If you regularly help someone who could not
             manage without your support - whether a partner, parent, child, sibling, or friend - you are a
@@ -43,7 +43,7 @@ export default function IAFlowPage() {
 
         {/* Step 2 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 2: Get in touch</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 2: Get in touch</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Contact us to let us know about your situation. You can:
           </p>
@@ -57,7 +57,7 @@ export default function IAFlowPage() {
 
         {/* Step 3 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 3: Initial conversation</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 3: Initial conversation</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When you first contact us, we will have an initial conversation to understand your situation.
             We will provide you with information and advice, and discuss whether a carers assessment would
@@ -67,7 +67,7 @@ export default function IAFlowPage() {
 
         {/* Step 4 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 4: Carers assessment</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 4: Carers assessment</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you would like a carers assessment, we will arrange one at a time and place that suits you.
             The assessment looks at how caring affects your life, your health, and your wellbeing. It
@@ -82,7 +82,7 @@ export default function IAFlowPage() {
 
         {/* Step 5 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 5: Support plan</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 5: Support plan</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you have eligible needs, we will work with you to create a support plan. This sets out what
             support you will receive and how it will be provided. Your support could include direct payments,
@@ -92,7 +92,7 @@ export default function IAFlowPage() {
 
         {/* Step 6 */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 6: Ongoing support and review</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 6: Ongoing support and review</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Your support does not end after the assessment. We will review your support plan regularly to
             make sure it is still meeting your needs. You can also contact us at any time if your situation
@@ -103,7 +103,7 @@ export default function IAFlowPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

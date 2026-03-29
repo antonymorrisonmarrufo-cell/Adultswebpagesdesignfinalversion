@@ -28,7 +28,7 @@ export default function BenefitsAndHelpPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Benefits and help with costs</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Benefits and help with costs</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             You may be entitled to benefits and other financial support that can help
             with the cost of care. Many people do not claim everything they are entitled to.
@@ -41,7 +41,7 @@ export default function BenefitsAndHelpPage() {
         <div className="max-w-3xl space-y-8">
           {/* Attendance Allowance */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Attendance Allowance</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Attendance Allowance</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Attendance Allowance is a tax-free benefit for people aged 65 or over who
               have a physical or mental disability and need help with personal care or
@@ -63,7 +63,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* PIP */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Personal Independence Payment (PIP)</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Personal Independence Payment (PIP)</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               PIP is for people aged 16 to State Pension age who have a long-term health
               condition or disability that affects their daily living or mobility. It has
@@ -81,7 +81,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Pension Credit */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Pension Credit</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Pension Credit</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Pension Credit tops up your weekly income if it is below a certain level.
               It is available to people who have reached State Pension age. There are
@@ -99,7 +99,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Council tax reduction */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Council tax reduction</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Council tax reduction</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you are on a low income or receive certain benefits, you may be able to
               get a reduction in your council tax. In some cases, you may not have to pay
@@ -117,7 +117,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Other help */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Other help available</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Other help available</h2>
             <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
               <li><strong>Carer's Allowance:</strong> a benefit for people who spend at least 35 hours a week caring for someone</li>
               <li><strong>NHS Continuing Healthcare:</strong> free care arranged and funded by the NHS for people with complex ongoing health needs</li>
@@ -129,7 +129,7 @@ export default function BenefitsAndHelpPage() {
 
           {/* Help claiming */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Get help with your benefits</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Get help with your benefits</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you need help understanding which benefits you may be entitled to or
               making a claim, contact us or visit your local Citizens Advice.
@@ -145,7 +145,7 @@ export default function BenefitsAndHelpPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

@@ -21,7 +21,7 @@ export default function YoungCarersPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Young carers</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Young carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A young carer is someone under 18 who helps look after a family member who is ill, disabled,
             has a mental health condition, or misuses drugs or alcohol. If you are a young carer, or know one,
@@ -34,7 +34,7 @@ export default function YoungCarersPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is a young carer */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is a young carer?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is a young carer?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Young carers are children and young people who take on caring responsibilities that would normally
             be expected of an adult. This might include:
@@ -51,7 +51,7 @@ export default function YoungCarersPage() {
 
         {/* Support available */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Support available for young carers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Support available for young carers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Young carers in Waltham Forest can access a range of support, including:
           </p>
@@ -67,7 +67,7 @@ export default function YoungCarersPage() {
 
         {/* School support */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Support at school</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Support at school</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Being a young carer should not hold you back at school. Many schools in Waltham Forest have a
             designated young carers lead who can help by:
@@ -86,7 +86,7 @@ export default function YoungCarersPage() {
 
         {/* Activities */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Activities and social opportunities</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Activities and social opportunities</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We run regular activities for young carers to have time away from their caring responsibilities
             and just be a young person. These include sports, arts and crafts, days out, residential trips,
@@ -95,8 +95,8 @@ export default function YoungCarersPage() {
         </section>
 
         {/* Get help */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get help as a young carer</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get help as a young carer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you are a young carer, or you know a young person who is caring for someone, please get in touch.
             You can contact our team on{" "}
@@ -107,7 +107,7 @@ export default function YoungCarersPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">

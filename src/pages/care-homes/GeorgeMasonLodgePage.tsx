@@ -21,7 +21,7 @@ export default function GeorgeMasonLodgePage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">George Mason Lodge</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">George Mason Lodge</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             George Mason Lodge is a council-run residential care home in Waltham Forest,
             providing personal care and support for older people in a welcoming and
@@ -34,7 +34,7 @@ export default function GeorgeMasonLodgePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* About */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">About George Mason Lodge</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">About George Mason Lodge</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             George Mason Lodge is operated by the London Borough of Waltham Forest and
             provides residential care for older adults who can no longer live independently
@@ -50,7 +50,7 @@ export default function GeorgeMasonLodgePage() {
 
         {/* Services */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Services provided</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Services provided</h2>
           <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
             <li>24-hour personal care including help with washing, dressing, and mobility</li>
             <li>Nutritious meals prepared on-site, catering for dietary requirements and cultural preferences</li>
@@ -65,7 +65,7 @@ export default function GeorgeMasonLodgePage() {
 
         {/* Accommodation */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Accommodation</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Accommodation</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             George Mason Lodge offers single bedrooms, many with en-suite facilities.
             Residents are encouraged to personalise their rooms with photographs, ornaments,
@@ -80,7 +80,7 @@ export default function GeorgeMasonLodgePage() {
 
         {/* Visiting */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Visiting</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Visiting</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Family and friends are welcome to visit at any time. We believe that
             maintaining relationships with loved ones is essential to residents' wellbeing.
@@ -91,7 +91,7 @@ export default function GeorgeMasonLodgePage() {
 
         {/* Fees */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Fees and funding</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Fees and funding</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The cost of a placement at George Mason Lodge depends on your assessed care
             needs and financial circumstances. Waltham Forest Council will carry out a
@@ -105,8 +105,8 @@ export default function GeorgeMasonLodgePage() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Contact George Mason Lodge</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Contact George Mason Lodge</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
             <p>
               <strong>Telephone:</strong>{" "}
@@ -133,7 +133,7 @@ export default function GeorgeMasonLodgePage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">

@@ -28,7 +28,7 @@ export default function FinancialAssessmentPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Financial assessment</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Financial assessment</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             A financial assessment helps us work out how much you can afford to pay
             towards the cost of your care and support. It is free and confidential.
@@ -41,7 +41,7 @@ export default function FinancialAssessmentPage() {
         <div className="max-w-3xl space-y-8">
           {/* What it involves */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What a financial assessment involves</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What a financial assessment involves</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               After your care needs have been assessed, a financial assessment officer
               will arrange to meet with you. This can take place at your home, at a
@@ -67,7 +67,7 @@ export default function FinancialAssessmentPage() {
 
           {/* What is included */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What is included in the assessment</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What is included in the assessment</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The following types of income are usually counted:
             </p>
@@ -84,7 +84,7 @@ export default function FinancialAssessmentPage() {
 
           {/* What is excluded */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What is excluded from the assessment</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What is excluded from the assessment</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The following are not counted:
             </p>
@@ -100,7 +100,7 @@ export default function FinancialAssessmentPage() {
 
           {/* After the assessment */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">After the assessment</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">After the assessment</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               After your financial assessment, we will write to you confirming your
               assessed weekly contribution. This letter will explain clearly how the
@@ -114,7 +114,7 @@ export default function FinancialAssessmentPage() {
 
           {/* Appealing */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Appealing your financial assessment</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Appealing your financial assessment</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you think your financial assessment is wrong, you have the right to ask
               for a review. You can do this by:
@@ -133,7 +133,7 @@ export default function FinancialAssessmentPage() {
 
           {/* Contact */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Contact the financial assessment team</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Contact the financial assessment team</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you have questions about your financial assessment or need help gathering
               the documents you need, please get in touch.
@@ -149,7 +149,7 @@ export default function FinancialAssessmentPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

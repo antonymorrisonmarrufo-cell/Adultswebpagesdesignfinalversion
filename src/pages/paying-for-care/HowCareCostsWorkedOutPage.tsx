@@ -28,7 +28,7 @@ export default function HowCareCostsWorkedOutPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">How care costs are worked out</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">How care costs are worked out</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             The council uses a means test to work out how much you may need to pay towards
             your care and support. This page explains how the process works.
@@ -41,7 +41,7 @@ export default function HowCareCostsWorkedOutPage() {
         <div className="max-w-3xl space-y-8">
           {/* The means test */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">The means test</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">The means test</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               When you are assessed as needing care and support, we carry out a financial
               assessment (sometimes called a means test) to work out how much you can
@@ -57,7 +57,7 @@ export default function HowCareCostsWorkedOutPage() {
 
           {/* Capital limits */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Capital limits</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Capital limits</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               The government sets two capital limits that affect how much you pay:
             </p>
@@ -88,7 +88,7 @@ export default function HowCareCostsWorkedOutPage() {
 
           {/* How your contribution is calculated */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">How your contribution is calculated</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">How your contribution is calculated</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               If you are eligible for council support, your weekly contribution is worked
               out as follows:
@@ -109,7 +109,7 @@ export default function HowCareCostsWorkedOutPage() {
 
           {/* What is not counted */}
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">What is not counted</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">What is not counted</h2>
             <p className="mt-3 text-wf-dark leading-relaxed">
               Certain types of income and capital are not included in the means test:
             </p>
@@ -125,7 +125,7 @@ export default function HowCareCostsWorkedOutPage() {
 
           {/* Important note */}
           <div className="rounded-md border-l-4 border-wf-green bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-[#D61F69]">Important</h2>
+            <h2 className="text-xl font-bold text-[#bf3688]">Important</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               If you deliberately reduce your capital to avoid paying for care (sometimes
               called deprivation of assets), the council may still treat you as if you
@@ -138,7 +138,7 @@ export default function HowCareCostsWorkedOutPage() {
         {/* Related links */}
         <div className="max-w-3xl mt-8">
           <section className="rounded-md bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+            <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
             <ul className="mt-4 space-y-3">
               {relatedPages.map((page) => (
                 <li key={page.to}>

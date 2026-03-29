@@ -21,7 +21,7 @@ export default function ProfessionalsPage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Information for professionals</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Information for professionals</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Guidance for professionals working with adults at risk of abuse or neglect in Waltham Forest.
           </p>
@@ -32,7 +32,7 @@ export default function ProfessionalsPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Duty to report */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Duty to report</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Duty to report</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             All professionals who work with adults with care and support needs have a responsibility to
             identify, respond to, and report suspected abuse or neglect. Under the Care Act 2014, the local
@@ -53,37 +53,37 @@ export default function ProfessionalsPage() {
 
         {/* Making a referral */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Making a safeguarding referral</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Making a safeguarding referral</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             As a professional, you can make a safeguarding referral using the following methods:
           </p>
 
           <div className="mt-6 space-y-4">
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Professional referral form</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Professional referral form</h3>
               <p className="mt-2 text-wf-dark">
                 Complete the online professional safeguarding referral form. This provides a structured format
                 to ensure all relevant information is captured.
               </p>
               <a
                 href="/safeguarding/professional-referral-form"
-                className="mt-4 inline-block rounded bg-[#00635C] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
+                className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
               >
                 Complete the professional referral form
               </a>
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">By phone</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">By phone</h3>
               <p className="mt-2 text-wf-dark">
                 Contact the Adult Social Care safeguarding team directly:
               </p>
-              <p className="mt-2 text-xl font-bold text-[#00635C]">
-                <a href="tel:02084963130" className="no-underline text-[#00635C]">020 8496 3130</a>
+              <p className="mt-2 text-xl font-bold text-[#004E3E]">
+                <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
               </p>
               <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>
               <p className="mt-3 text-wf-dark">
-                Outside office hours: <strong><a href="tel:02084966000" className="no-underline text-[#00635C]">020 8496 6000</a></strong> (Emergency Duty Team)
+                Outside office hours: <strong><a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a></strong> (Emergency Duty Team)
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function ProfessionalsPage() {
 
         {/* Professional responsibilities */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Professional responsibilities</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Professional responsibilities</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When you identify a safeguarding concern, you should:
           </p>
@@ -126,7 +126,7 @@ export default function ProfessionalsPage() {
 
         {/* Making safeguarding personal */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Making Safeguarding Personal</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Making Safeguarding Personal</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Making Safeguarding Personal (MSP) is a person-centred approach that puts the adult at the
             centre of safeguarding. It means working with the adult to find out what outcomes they want and
@@ -141,7 +141,7 @@ export default function ProfessionalsPage() {
 
         {/* Consent and information sharing */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Consent and information sharing</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Consent and information sharing</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             You should seek the consent of the adult before making a safeguarding referral where possible.
             However, there are circumstances where you can share information without consent, including:
@@ -158,7 +158,7 @@ export default function ProfessionalsPage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/professional-guidance" className="text-wf-blue underline hover:text-wf-green">

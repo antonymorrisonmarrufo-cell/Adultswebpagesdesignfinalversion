@@ -21,7 +21,7 @@ export default function ResourcesImprovePracticePage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Resources to improve practice</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Resources to improve practice</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Research, case studies, and learning from safeguarding reviews to help professionals improve
             their safeguarding practice.
@@ -33,7 +33,7 @@ export default function ResourcesImprovePracticePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Learning from SARs */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Learning from Safeguarding Adults Reviews</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Learning from Safeguarding Adults Reviews</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Safeguarding Adults Reviews (SARs) are conducted when an adult with care and support needs has
             died or experienced serious harm, and there is concern that agencies could have worked more
@@ -58,7 +58,7 @@ export default function ResourcesImprovePracticePage() {
 
         {/* Research and evidence */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Research and evidence base</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Research and evidence base</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Keeping up to date with research and evidence is essential for effective safeguarding practice.
             The following resources provide access to current research and thinking:
@@ -90,7 +90,7 @@ export default function ResourcesImprovePracticePage() {
 
         {/* Case studies */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Case studies</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Case studies</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Learning from real cases helps professionals to develop their skills and understanding. The
             following anonymised case studies illustrate common themes and challenges in safeguarding practice:
@@ -98,7 +98,7 @@ export default function ResourcesImprovePracticePage() {
 
           <div className="mt-6 space-y-4">
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Self-neglect: working with reluctant engagement</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Self-neglect: working with reluctant engagement</h3>
               <p className="mt-2 text-wf-dark">
                 An older adult living alone was reported by neighbours due to concerns about hoarding and
                 self-neglect. The case study explores how a multi-agency approach, using relationship-based
@@ -108,7 +108,7 @@ export default function ResourcesImprovePracticePage() {
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Financial abuse: recognising the signs</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Financial abuse: recognising the signs</h3>
               <p className="mt-2 text-wf-dark">
                 A person with learning disabilities was found to have been financially exploited by a family
                 member over several years. This case study highlights the importance of professional
@@ -117,7 +117,7 @@ export default function ResourcesImprovePracticePage() {
             </div>
 
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Organisational abuse: responding to systemic concerns</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Organisational abuse: responding to systemic concerns</h3>
               <p className="mt-2 text-wf-dark">
                 Concerns were raised about the standard of care in a residential setting. This case study
                 demonstrates how a coordinated multi-agency response, including quality monitoring and
@@ -129,7 +129,7 @@ export default function ResourcesImprovePracticePage() {
 
         {/* Reflective practice */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Reflective practice</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Reflective practice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Reflective practice is a key component of effective safeguarding work. Professionals are
             encouraged to:
@@ -145,7 +145,7 @@ export default function ResourcesImprovePracticePage() {
 
         {/* Useful frameworks */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Useful frameworks and models</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Useful frameworks and models</h2>
           <ul className="mt-4 space-y-3 text-wf-dark">
             <li>
               <strong>The six safeguarding principles</strong> - empowerment, prevention, proportionality,
@@ -167,7 +167,7 @@ export default function ResourcesImprovePracticePage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/professional-guidance" className="text-wf-blue underline hover:text-wf-green">

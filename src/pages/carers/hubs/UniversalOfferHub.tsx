@@ -23,7 +23,7 @@ export default function UniversalOfferHub() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Universal offer for carers</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Universal offer for carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             The universal offer is the support that is available to all carers in Waltham Forest, regardless
             of whether you have had a carers assessment. You do not need to meet any eligibility criteria.
@@ -35,7 +35,7 @@ export default function UniversalOfferHub() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is included */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is included in the universal offer</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is included in the universal offer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The following support is available to any carer in Waltham Forest, without the need for an assessment:
           </p>
@@ -53,7 +53,7 @@ export default function UniversalOfferHub() {
 
         {/* Who can access */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who can access the universal offer</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who can access the universal offer</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The universal offer is for everyone who cares for someone in Waltham Forest. This includes:
           </p>
@@ -72,7 +72,7 @@ export default function UniversalOfferHub() {
 
         {/* Beyond universal */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Need more support?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Need more support?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you need more support than the universal offer provides, you can request a carers assessment.
             This will look at your specific needs and may lead to additional support such as direct payments,
@@ -86,8 +86,8 @@ export default function UniversalOfferHub() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get started</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get started</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To find out more about the universal offer, visit the Carers Hub or call us on{" "}
             <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
@@ -96,7 +96,7 @@ export default function UniversalOfferHub() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">

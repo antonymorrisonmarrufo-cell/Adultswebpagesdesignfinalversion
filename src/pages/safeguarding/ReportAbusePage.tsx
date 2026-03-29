@@ -21,7 +21,7 @@ export default function ReportAbusePage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Report abuse or neglect</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Report abuse or neglect</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             If you think an adult with care and support needs is being abused or neglected, it is important to
             act quickly. You do not need to be certain that abuse is happening to raise a concern.
@@ -33,7 +33,7 @@ export default function ReportAbusePage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Emergency */}
         <div className="mb-8 rounded-md border-l-4 border-wf-red bg-red-50 p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">In an emergency</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">In an emergency</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             If someone is in <strong>immediate danger</strong>, call <strong>999</strong> for emergency services.
             Do not delay contacting the police or ambulance service if you believe someone is being harmed right now.
@@ -42,7 +42,7 @@ export default function ReportAbusePage() {
 
         {/* Contact methods */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to report a safeguarding concern</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to report a safeguarding concern</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Anyone can raise a safeguarding concern. You do not have to be a professional or give your name,
             although it is helpful if you can. You can report in the following ways:
@@ -51,12 +51,12 @@ export default function ReportAbusePage() {
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {/* Phone */}
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">By phone</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">By phone</h3>
               <p className="mt-2 text-wf-dark">
                 Call the Adult Social Care team:
               </p>
-              <p className="mt-2 text-2xl font-bold text-[#00635C]">
-                <a href="tel:02084963130" className="no-underline text-[#00635C]">020 8496 3130</a>
+              <p className="mt-2 text-2xl font-bold text-[#004E3E]">
+                <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
               </p>
               <p className="mt-2 text-sm text-wf-gray">
                 Monday to Friday, 9am to 5pm
@@ -64,20 +64,20 @@ export default function ReportAbusePage() {
               <p className="mt-3 text-wf-dark">
                 Outside office hours, call the Emergency Duty Team:
               </p>
-              <p className="mt-1 font-bold text-[#00635C]">
-                <a href="tel:02084966000" className="no-underline text-[#00635C]">020 8496 6000</a>
+              <p className="mt-1 font-bold text-[#004E3E]">
+                <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
               </p>
             </div>
 
             {/* Online */}
             <div className="rounded-md border border-wf-gray-light p-6">
-              <h3 className="text-lg font-bold text-[#00635C]">Online referral form</h3>
+              <h3 className="text-lg font-bold text-[#004E3E]">Online referral form</h3>
               <p className="mt-2 text-wf-dark">
                 Complete our online safeguarding referral form. This is available 24 hours a day.
               </p>
               <a
                 href="/safeguarding/referral-form"
-                className="mt-4 inline-block rounded bg-[#00635C] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
+                className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
               >
                 Complete the referral form
               </a>
@@ -90,7 +90,7 @@ export default function ReportAbusePage() {
 
         {/* What to include */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What to include in your report</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What to include in your report</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When reporting a concern, try to include as much detail as possible. This helps us to respond
             quickly and appropriately. Useful information includes:
@@ -109,7 +109,7 @@ export default function ReportAbusePage() {
 
         {/* Who can report */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who can raise a safeguarding concern?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who can raise a safeguarding concern?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Anyone can raise a safeguarding concern, including:
           </p>
@@ -128,7 +128,7 @@ export default function ReportAbusePage() {
 
         {/* What happens next */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What happens after you report</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What happens after you report</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When we receive a safeguarding concern, our team will review the information and decide on the
             appropriate next steps. This may include a safeguarding enquiry under Section 42 of the Care Act 2014.
@@ -142,7 +142,7 @@ export default function ReportAbusePage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">

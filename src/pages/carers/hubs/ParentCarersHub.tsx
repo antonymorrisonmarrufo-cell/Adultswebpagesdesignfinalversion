@@ -23,7 +23,7 @@ export default function ParentCarersHub() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Parent carers hub</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Parent carers hub</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Dedicated support and resources for parents and guardians of children and young people with
             disabilities or additional needs.
@@ -35,7 +35,7 @@ export default function ParentCarersHub() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What we offer */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What the parent carers hub offers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What the parent carers hub offers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The parent carers hub provides a welcoming space specifically for parents and guardians who care
             for a child or young person with additional needs. Services include:
@@ -52,7 +52,7 @@ export default function ParentCarersHub() {
 
         {/* Parent carer groups */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Parent carer groups</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Parent carer groups</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Regular groups are held at the Hub for parent carers:
           </p>
@@ -66,7 +66,7 @@ export default function ParentCarersHub() {
 
         {/* Short breaks info */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Short breaks and activities</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks and activities</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The Hub can help you find and access short breaks for your child, including after-school clubs,
             holiday schemes, and weekend activities. We can also help you apply for direct payments to arrange
@@ -75,8 +75,8 @@ export default function ParentCarersHub() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get in touch</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get in touch</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The parent carers hub is open Monday to Friday, 9am to 5pm. Phone:{" "}
             <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
@@ -86,7 +86,7 @@ export default function ParentCarersHub() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">

@@ -21,7 +21,7 @@ export default function SharedLivesPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Shared Lives</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Shared Lives</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Shared Lives is a scheme where adults who need support are matched with an
             approved carer and live as part of that carer's family in their home.
@@ -33,7 +33,7 @@ export default function SharedLivesPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What is Shared Lives */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What is Shared Lives?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What is Shared Lives?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Shared Lives (sometimes called adult placement) is a way of providing care and
             support in a family setting. You live with an approved Shared Lives carer in
@@ -49,7 +49,7 @@ export default function SharedLivesPage() {
 
         {/* Who is it for */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Who is Shared Lives for?</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Who is Shared Lives for?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Shared Lives may be suitable for adults who:
           </p>
@@ -64,7 +64,7 @@ export default function SharedLivesPage() {
 
         {/* How matching works */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How the matching process works</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How the matching process works</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Finding the right match is central to the success of a Shared Lives placement.
             The process includes:
@@ -84,7 +84,7 @@ export default function SharedLivesPage() {
 
         {/* Costs */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Costs</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Costs</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The cost of a Shared Lives placement depends on your assessed needs and
             financial situation. Waltham Forest Council will carry out a financial
@@ -106,7 +106,7 @@ export default function SharedLivesPage() {
 
         {/* How to access */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">How to access Shared Lives</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">How to access Shared Lives</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             To find out more about Shared Lives or to request a placement, contact our
             Adult Social Care team:
@@ -123,8 +123,8 @@ export default function SharedLivesPage() {
         </section>
 
         {/* Become a carer */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Become a Shared Lives carer</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Become a Shared Lives carer</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             If you have a spare room and would like to make a real difference to someone's
             life, we would love to hear from you. Shared Lives carers receive training,
@@ -136,7 +136,7 @@ export default function SharedLivesPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">

@@ -23,7 +23,7 @@ export default function FinancialSupportPage() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Financial support for carers</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Financial support for carers</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Being a carer can have a significant impact on your finances. There are benefits, discounts,
             and grants that may be available to help you.
@@ -35,7 +35,7 @@ export default function FinancialSupportPage() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Carer's Allowance */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Carer's Allowance</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Carer's Allowance</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Carer's Allowance is a weekly benefit you may be able to claim if you care for someone for at least
             35 hours a week. The person you care for must receive a qualifying disability benefit. You do not
@@ -58,7 +58,7 @@ export default function FinancialSupportPage() {
 
         {/* Council tax discount */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Council tax discount</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Council tax discount</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             You may be entitled to a council tax reduction or exemption if you are a carer. This includes:
           </p>
@@ -74,7 +74,7 @@ export default function FinancialSupportPage() {
 
         {/* Grants and other help */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Grants and other financial help</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Grants and other financial help</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             There are other sources of financial help that may be available to you:
           </p>
@@ -88,8 +88,8 @@ export default function FinancialSupportPage() {
         </section>
 
         {/* Benefits advice */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Get benefits advice</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Get benefits advice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             It can be difficult to know what you are entitled to. Free, confidential benefits advice is available from:
           </p>
@@ -106,7 +106,7 @@ export default function FinancialSupportPage() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">

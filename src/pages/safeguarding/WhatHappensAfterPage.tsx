@@ -21,7 +21,7 @@ export default function WhatHappensAfterPage() {
       {/* Header */}
       <div className="border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">What happens after a safeguarding concern is raised</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">What happens after a safeguarding concern is raised</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             When a safeguarding concern is reported to us, we follow a clear process to make sure the adult
             is safe and their wishes are at the centre of everything we do.
@@ -42,7 +42,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Step 1: Screening */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 1: Screening the concern</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 1: Screening the concern</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When we receive a safeguarding concern, a trained member of the Adult Social Care team will
             review the information provided. During screening, we will consider:
@@ -61,7 +61,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Step 2: Section 42 Enquiry */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 2: Section 42 enquiry</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 2: Section 42 enquiry</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If the concern meets the safeguarding threshold, a Section 42 enquiry will be carried out under
             the Care Act 2014. The purpose of the enquiry is to:
@@ -82,7 +82,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Step 3: Safeguarding plan */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 3: Developing a safeguarding plan</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 3: Developing a safeguarding plan</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Where ongoing risks are identified, a safeguarding plan may be put in place. This plan will set
             out the actions to be taken to protect the adult and reduce risk. The plan is developed with the
@@ -99,7 +99,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Step 4: Outcomes */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Step 4: Outcomes and closure</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Step 4: Outcomes and closure</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             At the end of the safeguarding process, we will review the outcomes with the adult to check
             whether the actions taken have achieved what they wanted. We will ask:
@@ -118,7 +118,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Ongoing support */}
         <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Ongoing support</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Ongoing support</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Even after the safeguarding process has ended, support remains available. The adult may be
             offered a care and support assessment, referred to community services, or supported through
@@ -129,7 +129,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Your rights */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Your rights during the process</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights during the process</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Throughout the safeguarding process, you have the right to:
           </p>
@@ -143,7 +143,7 @@ export default function WhatHappensAfterPage() {
 
         {/* Related links */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green">

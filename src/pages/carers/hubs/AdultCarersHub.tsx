@@ -23,7 +23,7 @@ export default function AdultCarersHub() {
       {/* Header */}
       <div className="bg-white border-b border-wf-gray-light">
         <div className="mx-auto max-w-5xl px-4 py-8">
-          <h1 className="text-5xl font-bold text-[#00635C]">Adult carers hub</h1>
+          <h1 className="text-5xl font-bold text-[#004E3E]">Adult carers hub</h1>
           <p className="mt-4 text-lg text-wf-gray max-w-3xl">
             Dedicated support, activities, and resources for adult carers aged 18 and over in Waltham Forest.
           </p>
@@ -34,7 +34,7 @@ export default function AdultCarersHub() {
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* What we offer */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">What the adult carers hub offers</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">What the adult carers hub offers</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The adult carers hub is a dedicated space within the Carers Hub for carers aged 18 and over. Whether
             you care for a partner, parent, adult child, or friend, you can access:
@@ -51,7 +51,7 @@ export default function AdultCarersHub() {
 
         {/* Regular activities */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Regular activities</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Regular activities</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The adult carers hub runs a programme of regular activities, including:
           </p>
@@ -70,7 +70,7 @@ export default function AdultCarersHub() {
 
         {/* Specialist support */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Specialist support</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Specialist support</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             We also offer specialist sessions for carers in particular situations:
           </p>
@@ -83,8 +83,8 @@ export default function AdultCarersHub() {
         </section>
 
         {/* Contact */}
-        <section className="mb-8 rounded-md border-l-4 border-[#00635C] bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Visit or contact us</h2>
+        <section className="mb-8 rounded-md border-l-4 border-[#004E3E] bg-white p-6 shadow-sm">
+          <h2 className="text-2xl font-bold text-[#bf3688]">Visit or contact us</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             The adult carers hub is open Monday to Friday, 9am to 5pm. No appointment is needed for drop-in
             sessions. Phone: <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
@@ -93,7 +93,7 @@ export default function AdultCarersHub() {
 
         {/* Related links */}
         <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#D61F69]">Related links</h2>
+          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
             <li>
               <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">

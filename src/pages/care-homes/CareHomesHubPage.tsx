@@ -88,7 +88,7 @@ export default function CareHomesHubPage() {
 
       {/* Header */}
       <div className="mx-auto max-w-5xl px-4 pb-8">
-        <h1 className="text-5xl font-bold text-[#00635C] leading-tight">
+        <h1 className="text-5xl font-bold text-[#004E3E] leading-tight">
           Housing and care homes
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
@@ -106,9 +106,9 @@ export default function CareHomesHubPage() {
             <Link
               key={card.to}
               to={card.to}
-              className="group block rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-[#D61F69]"
+              className="group block rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition hover:shadow-md hover:border-[#bf3688]"
             >
-              <h2 className="text-xl font-bold text-[#D61F69] group-hover:underline">
+              <h2 className="text-xl font-bold text-[#bf3688] group-hover:underline">
                 {card.title}
               </h2>
               <p className="mt-2 text-sm text-wf-gray leading-relaxed">
@@ -121,8 +121,8 @@ export default function CareHomesHubPage() {
 
       {/* Contact banner */}
       <div className="mx-auto max-w-5xl px-4 pb-12">
-        <div className="rounded-lg border-l-4 border-[#00635C] bg-wf-green-light p-6">
-          <h2 className="text-xl font-bold text-[#D61F69]">Need advice?</h2>
+        <div className="rounded-lg border-l-4 border-[#004E3E] bg-wf-green-light p-6">
+          <h2 className="text-xl font-bold text-[#bf3688]">Need advice?</h2>
           <p className="mt-2 text-sm text-wf-dark leading-relaxed">
             If you are unsure which housing or care option is right for you or someone you
             care about, our Adult Social Care team can help.
