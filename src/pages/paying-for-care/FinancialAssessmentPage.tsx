@@ -136,8 +136,7 @@ export default function FinancialAssessmentPage() {
           the documents you need, please get in touch.
           </p>
           <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
+          Telephone: <strong>[Financial Assessment team number — TBC]</strong>
           </p>
           <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
           </div>
