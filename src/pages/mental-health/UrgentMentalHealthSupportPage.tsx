@@ -43,7 +43,7 @@ export default function UrgentMentalHealthSupportPage() {
       <div className="mx-auto max-w-5xl px-4 pb-12">
         <div className="max-w-3xl space-y-10">
           {/* Emergency callout */}
-          <section className="rounded-lg border-l-4 border-red-600 bg-red-50 p-6">
+          <section className="rounded-lg border-l-4 border-[#d4351c] bg-[#fcedf3] p-6">
             <h2 className="text-xl font-bold text-red-700">If you are in immediate danger</h2>
             <p className="mt-2 text-wf-dark leading-relaxed">
               Call <strong>999</strong> or go to your nearest Accident and Emergency (A&amp;E)

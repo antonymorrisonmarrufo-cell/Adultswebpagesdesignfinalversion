@@ -32,7 +32,7 @@ export default function UsefulContactsPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Emergency contacts */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-bold text-[#bf3688]">Emergency contacts</h2>
           <div className="mt-4 space-y-3">
             <div className="flex justify-between items-center border-b border-wf-gray-light pb-3">

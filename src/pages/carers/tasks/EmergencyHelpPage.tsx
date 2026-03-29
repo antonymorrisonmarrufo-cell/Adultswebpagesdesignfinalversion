@@ -31,7 +31,7 @@ export default function EmergencyHelpPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Immediate danger */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">If someone is in immediate danger</h2>
           <p className="mt-2 text-wf-dark">
             Call <strong>999</strong> immediately. This includes medical emergencies, fires, or if someone is at risk of harm.

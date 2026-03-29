@@ -61,3 +61,4 @@ a.text-white, a.text-white:hover { color: #ffffff; }
 
 .hover\:text-wf-green:hover { color: #004E3E; }
 .hover\:bg-wf-green:hover { background-color: #004E3E; }
+.bg-wf-warning { background-color: #fcedf3; }

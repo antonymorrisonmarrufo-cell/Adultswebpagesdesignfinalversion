@@ -32,7 +32,7 @@ export default function ReportChildConcernPage() {
       {/* Main content */}
       <main className="mx-auto max-w-5xl px-4 py-8">
         {/* Important notice */}
-        <div className="mb-8 rounded-md border-l-4 border-wf-red bg-red-50 p-6">
+        <div className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-[#fcedf3] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">If a child is in immediate danger</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             Call <strong>999</strong> immediately. Do not wait to contact other services if a child is at

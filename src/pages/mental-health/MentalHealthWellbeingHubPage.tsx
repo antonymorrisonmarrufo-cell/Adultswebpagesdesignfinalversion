@@ -75,7 +75,7 @@ export default function MentalHealthWellbeingHubPage() {
           </section>
 
           {/* Urgent support callout */}
-          <section className="rounded-lg border-l-4 border-red-600 bg-red-50 p-6">
+          <section className="rounded-lg border-l-4 border-[#d4351c] bg-[#fcedf3] p-6">
             <h2 className="text-xl font-bold text-red-700">If you need urgent help</h2>
             <p className="mt-2 text-sm text-wf-dark leading-relaxed">
               If you or someone you know is in immediate danger, call <strong>999</strong>.

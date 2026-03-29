@@ -132,7 +132,7 @@ export default function HowAdultSocialCareWorksHubPage() {
         </section>
 
         {/* Emergency contact */}
-        <section className="mb-8 rounded-md border-l-4 border-wf-red bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-md border-l-[6px] border-[#d4351c] bg-white p-6 shadow-sm">
           <h2 className="text-xl font-bold text-[#bf3688]">Emergency contact</h2>
           <p className="mt-2 text-wf-dark leading-relaxed">
             If you or someone you know is in immediate danger, call <strong>999</strong>.
