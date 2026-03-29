@@ -45,43 +45,42 @@ export default function ReportAbusePage() {
           although it is helpful if you can. You can report in the following ways:
           </p>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {/* Phone */}
-          <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#231F20]">By phone</h3>
+          <div className="mt-6 rounded-lg border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="mb-3">
+            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+          </div>
+          <h3 className="text-lg font-bold text-[#003078]">By phone</h3>
           <p className="mt-2 text-wf-dark">
           Call the Adult Social Care team:
           </p>
           <p className="mt-2 text-2xl font-bold text-[#231F20]">
-          <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
+          <a href="tel:02084963130" className="no-underline text-[#231F20]">020 8496 3130</a>
           </p>
-          <p className="mt-2 text-sm text-wf-gray">
+          <p className="mt-1 text-sm text-wf-gray">
           Monday to Friday, 9am to 5pm
           </p>
-          <p className="mt-3 text-wf-dark">
+          <p className="mt-4 text-wf-dark">
           Outside office hours, call the Emergency Duty Team:
           </p>
-          <p className="mt-1 font-bold text-[#231F20]">
-          <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
+          <p className="mt-1 text-xl font-bold text-[#231F20]">
+          <a href="tel:02084966000" className="no-underline text-[#231F20]">020 8496 6000</a>
           </p>
-          </div>
 
-          {/* Online */}
-          <div className="rounded-md border border-wf-gray-light p-6">
-          <h3 className="text-lg font-bold text-[#231F20]">Online referral form</h3>
+          <hr className="my-6 border-[#003078]/20" />
+
+          <h3 className="text-lg font-bold text-[#003078]">Online referral form</h3>
           <p className="mt-2 text-wf-dark">
           Complete our online safeguarding referral form. This is available 24 hours a day.
           </p>
           <a
           href="/safeguarding/referral-form"
-          className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
+          className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
           >
           Complete the referral form
           </a>
           <p className="mt-3 text-sm text-wf-gray">
           Online referrals are reviewed during office hours. If the situation is urgent, please phone us.
           </p>
-          </div>
           </div>
           </section>
 
@@ -124,7 +123,7 @@ export default function ReportAbusePage() {
           </section>
 
           {/* What happens next */}
-          <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
+          <section className="mb-8">
           <h2 className="text-2xl font-bold text-[#bf3688]">What happens after you report</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
           When we receive a safeguarding concern, our team will review the information and decide on the
