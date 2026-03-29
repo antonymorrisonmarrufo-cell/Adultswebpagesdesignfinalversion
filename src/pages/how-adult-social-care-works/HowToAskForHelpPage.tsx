@@ -49,7 +49,60 @@ export default function HowToAskForHelpPage() {
               council-funded care, we can point you towards other services and community
               support.
             </p>
+            <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
+              <li>
+                <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+                  Browse community support and activities
+                </Link>
+              </li>
+              <li>
+                <Link to="/live-independently/equipment" className="text-wf-blue underline hover:text-wf-green">
+                  Equipment and aids to stay independent
+                </Link>
+              </li>
+            </ul>
           </div>
+
+          {/* Support without assessment */}
+          <section className="rounded-md bg-white p-6 shadow-sm">
+            <h2 className="text-2xl font-bold text-[#D61F69]">Support you can access without an assessment</h2>
+            <p className="mt-3 text-wf-dark leading-relaxed">
+              Many services are available without a formal care assessment. You can access
+              these directly:
+            </p>
+            <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
+              <li>
+                <Link to="/live-independently/equipment" className="text-wf-blue underline hover:text-wf-green">
+                  Equipment and aids
+                </Link>{" "}
+                to help you stay independent at home
+              </li>
+              <li>
+                <Link to="/live-independently/telecare" className="text-wf-blue underline hover:text-wf-green">
+                  Telecare
+                </Link>{" "}
+                personal alarms and monitoring for safety and peace of mind
+              </li>
+              <li>
+                <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+                  Community groups and social prescribing
+                </Link>{" "}
+                to stay active and connected
+              </li>
+              <li>
+                <Link to="/carers/hubs/universal-offer" className="text-wf-blue underline hover:text-wf-green">
+                  Carers Hub universal offer
+                </Link>{" "}
+                for anyone in a caring role
+              </li>
+              <li>
+                <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+                  Social prescribing
+                </Link>{" "}
+                connecting you to local activities, groups and services that support your wellbeing
+              </li>
+            </ul>
+          </section>
 
           {/* Primary CTA */}
           <section className="rounded-md bg-[#00635C] p-6 shadow-sm text-white">
@@ -87,19 +140,19 @@ export default function HowToAskForHelpPage() {
 
             <div className="mt-4 space-y-4">
               <div className="rounded-md border-l-4 border-wf-green bg-wf-green-light p-4">
+                <p className="font-semibold text-wf-dark">Online</p>
+                <p className="mt-1 text-sm text-wf-dark">
+                  Complete the online self-assessment form on the Waltham Forest Council website. This is available 24 hours a day.
+                </p>
+              </div>
+
+              <div className="rounded-md border-l-4 border-wf-green bg-wf-green-light p-4">
                 <p className="font-semibold text-wf-dark">By telephone</p>
                 <p className="mt-1 text-sm text-wf-dark">
                   Call us on{" "}
                   <a href="tel:02084963130" className="text-wf-blue underline font-semibold">020 8496 3130</a>
                 </p>
                 <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-              </div>
-
-              <div className="rounded-md border-l-4 border-wf-green bg-wf-green-light p-4">
-                <p className="font-semibold text-wf-dark">Online</p>
-                <p className="mt-1 text-sm text-wf-dark">
-                  Complete the online self-assessment form on the Waltham Forest Council website. This is available 24 hours a day.
-                </p>
               </div>
 
               <div className="rounded-md border-l-4 border-wf-red bg-red-50 p-4">

@@ -44,17 +44,32 @@ export default function BeingCarerPage() {
           </p>
         </section>
 
+        {/* Prevention callout banner */}
+        <section className="mb-8 rounded-md border-l-4 border-wf-green bg-green-50 p-6">
+          <p className="text-base leading-relaxed text-wf-dark">
+            You do not need an assessment to get support as a carer. Visit the{" "}
+            <Link to="/carers/hub" className="font-semibold text-[#00635C] underline hover:text-[#00635C]/80">
+              Carers Hub
+            </Link>{" "}
+            for free drop-in advice, peer support groups, and activities. See the{" "}
+            <Link to="/carers/hubs/universal-offer" className="font-semibold text-[#00635C] underline hover:text-[#00635C]/80">
+              Universal Offer
+            </Link>{" "}
+            for support available to all carers without an assessment.
+          </p>
+        </section>
+
         {/* Hub links grid */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-[#D61F69] mb-6">Information and support for carers</h2>
           <div className="grid gap-4 md:grid-cols-2">
             <Link
-              to="/carers/assessment-rights"
+              to="/carers/carers-hub"
               className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
             >
-              <h3 className="text-lg font-bold text-[#00635C]">Carers assessment and rights</h3>
+              <h3 className="text-lg font-bold text-[#00635C]">Carers Hub</h3>
               <p className="mt-2 text-sm text-wf-gray">
-                Your rights under the Care Act 2014, how to request a carers assessment, and what happens during one.
+                Visit the Waltham Forest Carers Hub for drop-in advice, activities, and peer support.
               </p>
             </Link>
 
@@ -65,6 +80,26 @@ export default function BeingCarerPage() {
               <h3 className="text-lg font-bold text-[#00635C]">Support for carers</h3>
               <p className="mt-2 text-sm text-wf-gray">
                 Financial help, respite breaks, health and wellbeing support, local groups, training, and more.
+              </p>
+            </Link>
+
+            <Link
+              to="/carers/hubs/universal-offer"
+              className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+            >
+              <h3 className="text-lg font-bold text-[#00635C]">Universal Offer Hub</h3>
+              <p className="mt-2 text-sm text-wf-gray">
+                Support available to all carers — no assessment needed.
+              </p>
+            </Link>
+
+            <Link
+              to="/carers/assessment-rights"
+              className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
+            >
+              <h3 className="text-lg font-bold text-[#00635C]">Carers assessment and rights</h3>
+              <p className="mt-2 text-sm text-wf-gray">
+                Your rights under the Care Act 2014, how to request a carers assessment, and what happens during one.
               </p>
             </Link>
 
@@ -105,16 +140,6 @@ export default function BeingCarerPage() {
               <h3 className="text-lg font-bold text-[#00635C]">Support after caring ends</h3>
               <p className="mt-2 text-sm text-wf-gray">
                 Bereavement support, returning to work, and continued help when your caring role changes.
-              </p>
-            </Link>
-
-            <Link
-              to="/carers/carers-hub"
-              className="block rounded-md bg-white p-6 shadow-sm border border-wf-gray-light hover:border-wf-green hover:shadow-md transition-all no-underline"
-            >
-              <h3 className="text-lg font-bold text-[#00635C]">Carers Hub</h3>
-              <p className="mt-2 text-sm text-wf-gray">
-                Visit the Waltham Forest Carers Hub for drop-in advice, activities, and peer support.
               </p>
             </Link>
 
