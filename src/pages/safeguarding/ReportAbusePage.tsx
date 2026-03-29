@@ -127,7 +127,7 @@ export default function ReportAbusePage() {
         </section>
 
         {/* What happens next */}
-        <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
+        <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">What happens after you report</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             When we receive a safeguarding concern, our team will review the information and decide on the

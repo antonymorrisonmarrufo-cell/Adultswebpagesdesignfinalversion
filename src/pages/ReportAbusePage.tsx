@@ -111,7 +111,7 @@ export default function ReportAbusePage() {
         </section>
 
         {/* Concerned about a child */}
-        <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
+        <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Concerned about a child?</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             If you are worried about a child or young person under 18, there is a separate reporting

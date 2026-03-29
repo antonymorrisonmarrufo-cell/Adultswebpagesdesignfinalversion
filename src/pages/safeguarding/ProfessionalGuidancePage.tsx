@@ -148,7 +148,7 @@ export default function ProfessionalGuidancePage() {
         </section>
 
         {/* Policies and procedures */}
-        <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
+        <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Key policies and procedures</h2>
           <ul className="mt-4 space-y-3">
             <li>

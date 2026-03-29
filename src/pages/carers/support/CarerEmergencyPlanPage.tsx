@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function CarerEmergencyPlanPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#f3f2f1]">
       {/* Breadcrumbs */}
       <div className="border-b border-wf-gray-light bg-white">
         <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">

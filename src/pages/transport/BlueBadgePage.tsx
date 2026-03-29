@@ -208,7 +208,7 @@ export default function BlueBadgePage() {
         </section>
 
         {/* Related links */}
-        <div className="bg-gray-50 rounded-lg border border-gray-200 p-6 mb-8">
+        <div className="bg-[#f3f2f1] rounded-lg border border-gray-200 p-6 mb-8">
           <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
             Related links
           </h2>

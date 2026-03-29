@@ -128,7 +128,7 @@ export default function ResourcesImprovePracticePage() {
         </section>
 
         {/* Reflective practice */}
-        <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
+        <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Reflective practice</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Reflective practice is a key component of effective safeguarding work. Professionals are

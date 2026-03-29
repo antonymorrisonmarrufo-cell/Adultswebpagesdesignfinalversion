@@ -11,7 +11,7 @@ const services = [
 
 export default function SpecialistServicesPage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-[#f3f2f1] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 py-8">
         <nav className="text-sm mb-6">
           <Link to="/" className="text-wf-blue hover:text-wf-green">Home</Link>

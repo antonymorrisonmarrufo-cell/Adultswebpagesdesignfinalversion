@@ -35,7 +35,7 @@ const cards = [
 
 export default function HousingAndSupportOptionsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#f3f2f1]">
       {/* Breadcrumbs */}
       <div className="mx-auto max-w-5xl px-4 pt-6 pb-2">
         <nav aria-label="Breadcrumb">

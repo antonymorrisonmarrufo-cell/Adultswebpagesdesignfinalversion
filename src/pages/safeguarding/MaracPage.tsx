@@ -127,7 +127,7 @@ export default function MaracPage() {
         </section>
 
         {/* Confidentiality */}
-        <section className="mb-8 rounded-md border border-wf-gray-light bg-wf-gray-light p-6">
+        <section className="mb-8 rounded-md border border-wf-gray-light bg-[#f3f2f1] p-6">
           <h2 className="text-2xl font-bold text-[#bf3688]">Confidentiality</h2>
           <p className="mt-3 text-wf-dark leading-relaxed">
             Information shared at MARAC is confidential and must only be used for the purpose of reducing
