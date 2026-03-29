@@ -31,15 +31,20 @@ body {
 
 a {
   color: #1d70b8;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: #004E3E;
 }
 
+/* Only underline inline text links inside content areas */
+p a, li a, td a, span a, dd a {
+  text-decoration: underline;
+}
+
 /* Ensure no-underline class works and text-white on links isn't overridden */
-a.no-underline { text-decoration: none; }
+a.no-underline, a.no-underline:hover { text-decoration: none; }
 a.text-white, a.text-white:hover { color: #ffffff; }
 
 /* Ensure custom colors work as Tailwind utilities */
