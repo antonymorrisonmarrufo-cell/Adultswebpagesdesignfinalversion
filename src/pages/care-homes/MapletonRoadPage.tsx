@@ -101,6 +101,9 @@ export default function MapletonRoadPage() {
 
           {/* Contact */}
           <section className="mb-8 rounded-md border-l-4 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="mb-3">
+            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+          </div>
           <h2 className="text-xl font-bold text-[#003078]">Contact Mapleton Road</h2>
           <div className="mt-3 space-y-2 text-wf-dark">
           <p>
