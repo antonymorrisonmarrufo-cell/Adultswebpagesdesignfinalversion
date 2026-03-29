@@ -82,42 +82,62 @@ export default function CarersHubPage() {
           <div className="grid gap-4 md:grid-cols-2">
           <Link
           to="/carers/hubs/adult-carers"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Adult carers hub</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Adult carers hub</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Dedicated support, activities, and resources for adult carers.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/carers/hubs/parent-carers"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Parent carers hub</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Parent carers hub</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Support and resources specifically for parents of disabled children.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/carers/hubs/young-carers"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Young carers hub</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Young carers hub</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           A dedicated space for young carers with activities and peer support.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
 
           <Link
           to="/carers/hubs/universal-offer"
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">Universal offer</h3>
-          <p className="mt-2 text-sm text-wf-gray">
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">Universal offer</h3>
+          <p className="text-sm text-[#231F20] flex-1">
           Support available to all carers without the need for an assessment.
           </p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
           </div>
           </section>

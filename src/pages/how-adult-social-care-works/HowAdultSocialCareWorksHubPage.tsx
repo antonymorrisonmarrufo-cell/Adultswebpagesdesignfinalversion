@@ -93,10 +93,15 @@ export default function HowAdultSocialCareWorksHubPage() {
           <Link
           key={card.to}
           to={card.to}
-          className="block rounded-md bg-[#d7f8ff] p-6 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
+          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
-          <h3 className="text-lg font-bold text-[#231F20]">{card.title}</h3>
-          <p className="mt-2 text-sm text-wf-gray">{card.description}</p>
+          <h3 className="text-base font-bold text-[#bf3688] mb-2">{card.title}</h3>
+          <p className="text-sm text-[#231F20] flex-1">{card.description}</p>
+          <div className="flex justify-end mt-4">
+            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+            </div>
+          </div>
           </Link>
           ))}
           </div>
