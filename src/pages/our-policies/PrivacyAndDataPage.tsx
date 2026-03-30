@@ -70,6 +70,27 @@ export default function PrivacyAndDataPage() {
       when we need to for the purposes of your care, or when we are required to
       by law.
       </p>
+      <div className="mt-4">
+      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Adult Social Care Privacy Notice [PDF — link to be added]
+      </a>
+      </div>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Client level data — NHS England</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      Since 2023, the council is required by the Secretary of State for Health to
+      submit detailed client-level adult social care data to NHS England. This is
+      a national requirement that applies to all councils in England.
+      </p>
+      <div className="mt-4">
+      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Client Level Data Privacy Notice [PDF — link to be added]
+      </a>
+      </div>
       </section>
 
       <section>
@@ -103,6 +124,10 @@ export default function PrivacyAndDataPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       We will respond to your request within one calendar month. There is no
       charge for making a subject access request in most cases.
+      </p>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      If you have questions about how your data is used in adult social care, contact:{" "}
+      <a href="mailto:mashrequests@walthamforest.gov.uk" className="text-wf-blue underline hover:text-wf-green font-semibold">mashrequests@walthamforest.gov.uk</a>
       </p>
       </section>
 

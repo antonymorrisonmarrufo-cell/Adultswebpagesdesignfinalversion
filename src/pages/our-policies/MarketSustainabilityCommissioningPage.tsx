@@ -103,6 +103,38 @@ export default function MarketSustainabilityCommissioningPage() {
       regular fee reviews and engagement to ensure rates are sustainable and
       support workforce recruitment and retention.
       </p>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      The council completed the fair cost of care exercise following guidance
+      from the Department of Health and Social Care. The reports below set out
+      the findings.
+      </p>
+      <div className="mt-4 space-y-3">
+      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Cost of Care Report — Residential and Nursing Care 65+ [PDF — link to be added]
+      </a>
+      <br />
+      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Cost of Care Report — Domiciliary Care 18+ [PDF — link to be added]
+      </a>
+      </div>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Market sustainability plan</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      Local authorities are required to publish a Market Sustainability Plan setting
+      out how they intend to move towards paying a fair cost of care. The plan
+      covers the current sustainability of local care markets, the impact of future
+      changes, and the council's approach to addressing sustainability issues.
+      </p>
+      <div className="mt-4">
+      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Market Sustainability Plan [PDF — link to be added]
+      </a>
+      </div>
       </section>
 
       <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">

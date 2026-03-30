@@ -125,7 +125,7 @@ export default function BlueBadgePage() {
           href="https://www.gov.uk/apply-blue-badge"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
+          className="inline-block bg-[#bf3688] text-white font-medium px-6 py-3 rounded hover:bg-[#a02d73] transition-colors"
           >
           Apply for a Blue Badge on GOV.UK
           </a>

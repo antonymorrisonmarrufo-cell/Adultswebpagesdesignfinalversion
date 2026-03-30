@@ -70,8 +70,10 @@ export default function ReportAbusePage() {
           Use our online referral form to report your concerns. Available 24 hours a day, 7 days a week.
           </p>
           <a
-          href="/safeguarding/referral-form"
-          className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
+          href="https://portal.walthamforest.gov.uk/service/Report_an_adult_safeguarding_concern"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
           >
           Complete the referral form
           </a>

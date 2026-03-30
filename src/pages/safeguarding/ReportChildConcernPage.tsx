@@ -81,8 +81,10 @@ export default function ReportChildConcernPage() {
           Multi-Agency Referral Form (MARF).
           </p>
           <a
-          href="/children/referral-form"
-          className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
+          href="https://www.walthamforest.gov.uk/children-and-families/report-concern-about-child"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
           >
           Make a children's safeguarding referral
           </a>
