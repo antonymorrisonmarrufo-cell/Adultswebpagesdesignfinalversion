@@ -5,19 +5,19 @@ const heroCards = [
   {
     title: "Get a care assessment",
     image: "/Images/care-assessment.jpg",
-    link: "/adult-social-care/how-to-get-support/request-an-assessment",
+    href: "https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b",
     alt: "Carer supporting an elderly person",
   },
   {
     title: "Report abuse or neglect of an adult",
     image: "/Images/report-abuse.jpg",
-    link: "/adult-social-care/report-abuse-or-neglect",
+    href: "https://www.walthamforest.gov.uk/adult-social-care/safeguarding/report-abuse",
     alt: "Concerned elderly person",
   },
   {
     title: "Apply for a blue badge",
     image: "/Images/blue-badge.jpg",
-    link: "/adult-social-care/travel-and-transport/blue-badge",
+    href: "https://www.gov.uk/apply-blue-badge",
     alt: "Blue badge holders only sign",
   },
 ];
@@ -68,9 +68,11 @@ export default function AdultSocialCarePage() {
           {/* Three Image Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             {heroCards.map((card) => (
-              <Link
-                key={card.link}
-                to={card.link}
+              <a
+                key={card.href}
+                href={card.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow no-underline group"
               >
                 <div className="aspect-[4/3] bg-[#e0e0e0] overflow-hidden">
@@ -85,7 +87,7 @@ export default function AdultSocialCarePage() {
                     {card.title}
                   </p>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
 
