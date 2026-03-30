@@ -1,4 +1,4 @@
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function SupportForCarersPage() {
   return (
@@ -28,24 +28,20 @@ export default function SupportForCarersPage() {
             Explore the practical, financial and emotional support available to help you in your caring role.
           </p>
 
-          {/* Primary and Secondary CTAs */}
-          <div className="flex flex-wrap gap-4 mb-12">
-            <a
-              href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
-            >
-              Request a carer's assessment
-            </a>
-            <a
-              href="https://www.carersfirst.org.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
-            >
-              Get help from Carers First
-            </a>
+          {/* Dual Contact Boxes */}
+          <div className="space-y-4 mb-12">
+            <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+              <h3 className="text-lg font-bold text-[#003078] mb-2">Carers First</h3>
+              <p className="text-sm text-gray-700 mb-2">For unpaid carers aged 18+ who want practical advice, emotional support, groups, training and help with their caring role.</p>
+              <p className="text-sm font-semibold text-gray-900">Call <a href="tel:03003031555" className="text-wf-blue underline">0300 303 1555</a></p>
+            </section>
+            <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+              <h3 className="text-lg font-bold text-[#003078] mb-2">Adult Social Care</h3>
+              <p className="text-sm text-gray-700 mb-2">Contact the council if you want a Carer's Assessment, or if the person you care for may need a care needs assessment or support arranged by the council.</p>
+              <p className="text-sm font-semibold text-gray-900">Call <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a></p>
+            </section>
           </div>
 
           {/* Intro */}

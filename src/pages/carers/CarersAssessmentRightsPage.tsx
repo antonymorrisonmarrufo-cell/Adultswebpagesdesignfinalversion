@@ -170,6 +170,22 @@ export default function CarersAssessmentRightsPage() {
 
         </div>
 
+        {/* Dual Contact Boxes */}
+        <div className="space-y-4 mt-12">
+          <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+            <h3 className="text-lg font-bold text-[#003078] mb-2">Adult Social Care</h3>
+            <p className="text-sm text-gray-700 mb-2">Contact the council if you want a Carer's Assessment, or if the person you care for may need a care needs assessment or support arranged by the council.</p>
+            <p className="text-sm font-semibold text-gray-900">Call <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a></p>
+          </section>
+          <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+            <h3 className="text-lg font-bold text-[#003078] mb-2">Carers First</h3>
+            <p className="text-sm text-gray-700 mb-2">For unpaid carers aged 18+ who want practical advice, emotional support, groups, training and help with their caring role.</p>
+            <p className="text-sm font-semibold text-gray-900">Call <a href="tel:03003031555" className="text-wf-blue underline">0300 303 1555</a></p>
+          </section>
+        </div>
+
         {/* Last Updated */}
         <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
           <p><strong>Last updated:</strong> 28 March 2026</p>
