@@ -9,7 +9,7 @@ export default function LivingWithFamilyPage() {
         <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
-            <a href="#" className="hover:underline">Home</a>
+            <a href="#/adult-social-care" className="hover:underline">Home</a>
             <span className="mx-1">&gt;</span>
             <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
             <span className="mx-1">&gt;</span>

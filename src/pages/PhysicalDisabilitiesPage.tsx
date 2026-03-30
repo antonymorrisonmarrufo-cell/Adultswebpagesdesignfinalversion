@@ -6,7 +6,7 @@ export default function PhysicalDisabilitiesPage() {
       <div className="max-w-7xl mx-auto px-6 py-12">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-600 mb-6">
-          <a href="#" className="hover:underline">Home</a> &gt; 
+          <a href="#/adult-social-care" className="hover:underline">Home</a> &gt; 
           <a href="#/adult-social-care" className="hover:underline"> Adult social care</a> &gt; 
           <a href="#/adult-social-care/specialist-services" className="hover:underline"> Dementia, disabilities and specialist support</a> &gt; 
           <span> Physical disabilities</span>

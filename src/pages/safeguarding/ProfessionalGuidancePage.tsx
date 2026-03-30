@@ -105,7 +105,7 @@ export default function ProfessionalGuidancePage() {
 
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-600 mb-6">
-          <a href="#" className="hover:underline">Home</a>
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
           <span className="mx-1">&gt;</span>
           <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
           <span className="mx-1">&gt;</span>

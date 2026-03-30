@@ -15,7 +15,7 @@ export default function ReportChildConcernPage() {
       <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
         <nav className="text-sm text-gray-600 mb-6">
-          <a href="#" className="hover:underline">Home</a>
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
           <span className="mx-1">&gt;</span>
           <a href="#" className="hover:underline">Children and families</a>
           <span className="mx-1">&gt;</span>

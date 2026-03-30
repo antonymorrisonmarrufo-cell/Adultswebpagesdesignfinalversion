@@ -32,7 +32,7 @@ export default function CommissioningProviderInformationPage() {
           <p className="text-gray-700 mb-6">
             The council publishes Market Position Statements to give care providers a clear picture of the local adult social care market. These cover demand, supply, quality, spend, and commissioning intentions across different service areas, including domiciliary care, residential care, supported living, and learning disability services.
           </p>
-          <a href="#" className="text-[#bf3688] hover:underline font-semibold">
+          <a href="https://www.walthamforest.gov.uk/adult-social-care/commissioning/market-position-statements" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline font-semibold">
             View Market Position Statements
           </a>
         </section>
@@ -48,9 +48,8 @@ export default function CommissioningProviderInformationPage() {
               <div className="flex items-start gap-3">
                 <FileText size={20} className="text-[#bf3688] mt-1" />
                 <div>
-                  <p className="font-bold text-gray-900 mb-1">Cost of Care Report — Residential and Nursing Care 65+</p>
-                  <p className="text-sm text-gray-600">PDF document</p>
-                  <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+                  <a href="https://www.walthamforest.gov.uk/sites/default/files/2023-02/Cost_of_care_report%2065_%20Care%20Homes_v1.pdf" target="_blank" rel="noopener noreferrer" className="font-bold text-[#bf3688] underline mb-1 block">Cost of Care Report — Residential and Nursing Care 65+ (PDF)</a>
+                  <p className="text-sm text-gray-600">Annex B report</p>
                 </div>
               </div>
             </div>
@@ -58,9 +57,8 @@ export default function CommissioningProviderInformationPage() {
               <div className="flex items-start gap-3">
                 <FileText size={20} className="text-[#bf3688] mt-1" />
                 <div>
-                  <p className="font-bold text-gray-900 mb-1">Cost of Care Report — Domiciliary Care 18+</p>
-                  <p className="text-sm text-gray-600">PDF document</p>
-                  <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+                  <a href="https://www.walthamforest.gov.uk/sites/default/files/2023-02/Cost_of_care_report18_%20Domiciliary%20Care_v1.pdf" target="_blank" rel="noopener noreferrer" className="font-bold text-[#bf3688] underline mb-1 block">Cost of Care Report — Domiciliary Care 18+ (PDF)</a>
+                  <p className="text-sm text-gray-600">Annex B report</p>
                 </div>
               </div>
             </div>
@@ -77,9 +75,8 @@ export default function CommissioningProviderInformationPage() {
             <div className="flex items-start gap-3">
               <FileText size={20} className="text-[#bf3688] mt-1" />
               <div>
-                <p className="font-bold text-gray-900 mb-1">Market Sustainability Plan</p>
-                <p className="text-sm text-gray-600">PDF document</p>
-                <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+                <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support/fair-cost-care" target="_blank" rel="noopener noreferrer" className="font-bold text-[#bf3688] underline mb-1 block">Market Sustainability Plan</a>
+                <p className="text-sm text-gray-600">Available on the Fair Cost of Care page</p>
               </div>
             </div>
           </div>
