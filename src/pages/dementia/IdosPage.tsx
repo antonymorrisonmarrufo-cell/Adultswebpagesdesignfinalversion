@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Getting help and support", to: "/dementia/get-help" },
-  { title: "Activities and social groups", to: "/dementia/activities" },
-  { title: "Dementia adviser service", to: "/dementia/adviser" },
-  { title: "Support for carers", to: "/dementia/carers" },
+  { title: "Getting help and support", to: "/adult-social-care/specialist-services/dementia/get-help" },
+  { title: "Activities and social groups", to: "/adult-social-care/specialist-services/dementia/activities" },
+  { title: "Dementia adviser service", to: "/adult-social-care/specialist-services/dementia/adviser" },
+  { title: "Support for carers", to: "/adult-social-care/specialist-services/dementia/carers" },
 ];
 
 export default function IdosPage() {

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
-  { title: "How to get support", to: "/how-to-get-support" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
+  { title: "Help shape our services", to: "/adult-social-care/complaints-compliments/help-shape-our-services" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
 ];
 
 export default function SendComplimentPage() {

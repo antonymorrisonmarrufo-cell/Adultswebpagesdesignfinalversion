@@ -70,9 +70,9 @@ const teams = [
 ];
 
 const relatedPages = [
-  { title: "Information for professionals", to: "/information-for-professionals" },
-  { title: "How to make a referral", to: "/information-for-professionals/how-to-make-referral" },
-  { title: "Contact us", to: "/how-to-get-support/contact-us" },
+  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
+  { title: "How to make a referral", to: "/adult-social-care/information-for-professionals/how-to-make-referral" },
+  { title: "Contact us", to: "/adult-social-care/how-to-get-support/contact-us" },
 ];
 
 export default function KeyTeamsContactDetailsPage() {

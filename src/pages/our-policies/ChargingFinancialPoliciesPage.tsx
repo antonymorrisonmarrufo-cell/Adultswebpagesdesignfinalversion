@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Paying for care", to: "/paying-for-care" },
-  { title: "Getting a care and support plan", to: "/how-to-get-support/getting-care-and-support-plan" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
 ];
 
 export default function ChargingFinancialPoliciesPage() {

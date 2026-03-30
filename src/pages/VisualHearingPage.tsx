@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Equipment and assistive technology", to: "/live-independently/equipment" },
-  { title: "Home adaptations", to: "/live-independently/home-adaptations" },
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Live independently", to: "/live-independently" },
-  { title: "Physical disabilities support", to: "/physical-disabilities" },
+  { title: "Equipment and assistive technology", to: "/adult-social-care/live-independently-at-home/equipment-and-assistive-technology" },
+  { title: "Home adaptations", to: "/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Live independently", to: "/adult-social-care/live-independently-at-home" },
+  { title: "Physical disabilities support", to: "/adult-social-care/specialist-services/physical-disabilities" },
 ];
 
 export default function VisualHearingPage() {

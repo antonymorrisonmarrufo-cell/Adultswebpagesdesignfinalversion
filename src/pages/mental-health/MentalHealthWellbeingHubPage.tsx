@@ -4,34 +4,34 @@ const cards = [
   {
     title: "Urgent mental health support",
     description: "If you or someone you know is in mental health crisis, find out where to get immediate help.",
-    to: "/mental-health/urgent-support",
+    to: "/adult-social-care/mental-health-wellbeing/urgent-mental-health-support",
   },
   {
     title: "Looking after your mental wellbeing",
     description: "Self-help tips, online resources and apps to support your mental health.",
-    to: "/mental-health/looking-after-mental-wellbeing",
+    to: "/adult-social-care/mental-health-wellbeing/looking-after-your-mental-wellbeing",
   },
   {
     title: "Talking therapies and professional support",
     description: "Access counselling, IAPT services and other professional mental health support.",
-    to: "/mental-health/talking-therapies-professional-support",
+    to: "/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support",
   },
   {
     title: "Adult Social Care mental health support",
     description: "Specialist mental health support through Adult Social Care, including Section 117 aftercare.",
-    to: "/mental-health/adult-social-care-mental-health",
+    to: "/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health",
   },
   {
     title: "Local mental health support services",
     description: "Community organisations, peer support and recovery services in Waltham Forest.",
-    to: "/mental-health/local-support-services",
+    to: "/adult-social-care/mental-health-wellbeing/local-mental-health-support-services",
   },
 ];
 
 const relatedPages = [
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Support for carers", to: "/carers" },
-  { title: "Living independently", to: "/live-independently" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Support for carers", to: "/adult-social-care/being-carer" },
+  { title: "Living independently", to: "/adult-social-care/live-independently-at-home" },
 ];
 
 export default function MentalHealthWellbeingHubPage() {

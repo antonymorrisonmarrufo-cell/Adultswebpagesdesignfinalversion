@@ -5,31 +5,31 @@ const cards = [
     title: "Living with family",
     description:
       "Support available for people with learning disabilities who live with their family, including respite care and family support services.",
-    to: "/learning-disability-support/housing-options/living-with-family",
+    to: "/adult-social-care/learning-disability-support/housing/living-with-family",
   },
   {
     title: "Supported living",
     description:
       "Living in your own home or a shared house with the support you need to be as independent as possible.",
-    to: "/learning-disability-support/housing-options/supported-living",
+    to: "/adult-social-care/learning-disability-support/housing/supported-living",
   },
   {
     title: "Residential care",
     description:
       "Care homes that provide around-the-clock support for people with learning disabilities who have higher levels of need.",
-    to: "/learning-disability-support/housing-options/residential-care",
+    to: "/adult-social-care/learning-disability-support/housing/residential-care",
   },
   {
     title: "Shared Lives",
     description:
       "Living with an approved Shared Lives carer in their family home, with support tailored to your needs.",
-    to: "/learning-disability-support/housing-options/shared-lives",
+    to: "/adult-social-care/learning-disability-support/housing/shared-lives",
   },
   {
     title: "Independent living",
     description:
       "Support and services to help you live independently in your own home, including tenancy support and life skills training.",
-    to: "/learning-disability-support/housing-options/independent-living",
+    to: "/adult-social-care/learning-disability-support/housing/independent-living",
   },
 ];
 

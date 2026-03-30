@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Equipment and assistive technology", to: "/live-independently/equipment" },
-  { title: "Home adaptations", to: "/live-independently/home-adaptations" },
-  { title: "Work and disability", to: "/work-disability" },
-  { title: "Paying for care", to: "/paying-for-care" },
-  { title: "Blue Badge", to: "/transport/blue-badge" },
+  { title: "Equipment and assistive technology", to: "/adult-social-care/live-independently-at-home/equipment-and-assistive-technology" },
+  { title: "Home adaptations", to: "/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy" },
+  { title: "Work and disability", to: "/adult-social-care/work-and-disability" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Blue Badge", to: "/adult-social-care/travel-and-transport/blue-badge" },
 ];
 
 export default function PhysicalDisabilitiesPage() {

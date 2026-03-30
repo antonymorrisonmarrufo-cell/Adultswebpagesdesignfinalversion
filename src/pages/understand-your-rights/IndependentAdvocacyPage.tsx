@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Mental capacity and decision making", to: "/understand-your-rights/mental-capacity-decision-making" },
-  { title: "Independent help and advocacy", to: "/complaints-compliments/independent-help-advocacy" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Mental capacity and decision making", to: "/adult-social-care/understand-your-rights/mental-capacity-and-decision-making" },
+  { title: "Independent help and advocacy", to: "/adult-social-care/complaints-compliments/independent-help-and-advocacy" },
 ];
 
 export default function IndependentAdvocacyPage() {

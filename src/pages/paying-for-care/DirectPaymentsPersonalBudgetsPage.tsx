@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
-  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
-  { title: "Your care and support plan", to: "/how-adult-social-care-works/your-care-and-support-plan" },
-  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
+  { title: "How care costs are worked out", to: "/adult-social-care/paying-for-care/how-care-costs-are-worked-out" },
+  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
+  { title: "Your care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
+  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
 ];
 
 export default function DirectPaymentsPersonalBudgetsPage() {

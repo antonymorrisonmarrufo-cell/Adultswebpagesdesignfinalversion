@@ -4,39 +4,39 @@ const cards = [
   {
     title: "Check your situation online",
     description: "Use our self-assessment tool to understand your care and support needs.",
-    to: "/how-to-get-support/check-situation-online",
+    to: "/adult-social-care/how-to-get-support/check-your-situation-online",
   },
   {
     title: "Explore community and local support",
     description: "Browse local groups, activities, social prescribing, and voluntary sector support that you can access without an assessment.",
-    to: "/live-independently/social-prescribing",
+    to: "/adult-social-care/live-independently-at-home/social-prescribing",
   },
   {
     title: "Contact us",
     description: "Speak to our Adult Social Care team by phone, email or in person.",
-    to: "/how-to-get-support/contact-us",
+    to: "/adult-social-care/how-to-get-support/contact-us",
   },
   {
     title: "Request an assessment",
     description: "Ask for a care needs assessment for yourself or someone else.",
-    to: "/how-to-get-support/request-assessment",
+    to: "/adult-social-care/how-to-get-support/request-an-assessment",
   },
   {
     title: "What happens during your assessment",
     description: "Find out how the assessment works and how to prepare.",
-    to: "/how-to-get-support/what-happens-during-your-assessment",
+    to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment",
   },
   {
     title: "Getting a care and support plan",
     description: "Learn what a care plan includes and how your personal budget works.",
-    to: "/how-to-get-support/getting-care-and-support-plan",
+    to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan",
   },
 ];
 
 const relatedPages = [
-  { title: "Paying for care", to: "/paying-for-care" },
-  { title: "Living independently", to: "/live-independently" },
-  { title: "Support for carers", to: "/carers" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Living independently", to: "/adult-social-care/live-independently-at-home" },
+  { title: "Support for carers", to: "/adult-social-care/being-carer" },
 ];
 
 export default function HowToGetSupportHubPage() {

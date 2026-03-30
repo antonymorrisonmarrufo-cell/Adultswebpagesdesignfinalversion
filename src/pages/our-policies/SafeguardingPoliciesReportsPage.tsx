@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Safeguarding adults", to: "/safeguarding" },
-  { title: "Safeguarding for professionals", to: "/information-for-professionals/safeguarding-adults-professionals" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Safeguarding adults", to: "/adult-social-care/protecting-adults-at-risk" },
+  { title: "Safeguarding for professionals", to: "/adult-social-care/information-for-professionals/safeguarding-adults" },
 ];
 
 export default function SafeguardingPoliciesReportsPage() {

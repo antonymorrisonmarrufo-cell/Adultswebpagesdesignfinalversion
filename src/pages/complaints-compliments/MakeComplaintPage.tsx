@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Independent help and advocacy", to: "/complaints-compliments/independent-help-advocacy" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
+  { title: "Independent help and advocacy", to: "/adult-social-care/complaints-compliments/independent-help-and-advocacy" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
 ];
 
 export default function MakeComplaintPage() {

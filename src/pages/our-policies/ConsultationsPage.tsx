@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Help shape our services", to: "/adult-social-care/complaints-compliments/help-shape-our-services" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
 ];
 
 export default function ConsultationsPage() {

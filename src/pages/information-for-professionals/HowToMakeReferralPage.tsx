@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Information for professionals", to: "/information-for-professionals" },
-  { title: "Key teams and contact details", to: "/information-for-professionals/key-teams-contact-details" },
-  { title: "Request an assessment", to: "/how-to-get-support/request-assessment" },
+  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
+  { title: "Key teams and contact details", to: "/adult-social-care/information-for-professionals/key-teams-contact-details" },
+  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
 ];
 
 export default function HowToMakeReferralPage() {

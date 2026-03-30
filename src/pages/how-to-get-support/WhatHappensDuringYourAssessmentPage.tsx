@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Request an assessment", to: "/how-to-get-support/request-assessment" },
-  { title: "Getting a care and support plan", to: "/how-to-get-support/getting-care-and-support-plan" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
+  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
 ];
 
 export default function WhatHappensDuringYourAssessmentPage() {

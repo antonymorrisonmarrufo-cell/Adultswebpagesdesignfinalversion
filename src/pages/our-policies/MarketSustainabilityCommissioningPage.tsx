@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Commissioning and provider information", to: "/information-for-professionals/commissioning-provider-information" },
-  { title: "Information for professionals", to: "/information-for-professionals" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Commissioning and provider information", to: "/adult-social-care/information-for-professionals/commissioning-provider-information" },
+  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
 ];
 
 export default function MarketSustainabilityCommissioningPage() {

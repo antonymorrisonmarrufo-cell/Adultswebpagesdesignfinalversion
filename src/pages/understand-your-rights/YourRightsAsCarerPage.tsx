@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Support for carers", to: "/carers" },
-  { title: "Challenging decisions and raising concerns", to: "/understand-your-rights/challenging-decisions-raising-concerns" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Support for carers", to: "/adult-social-care/being-carer" },
+  { title: "Challenging decisions and raising concerns", to: "/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns" },
 ];
 
 export default function YourRightsAsCarerPage() {

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Hornbeam Dementia Hub", to: "/dementia/hub" },
-  { title: "Memory assessment service", to: "/dementia/memory-service" },
-  { title: "Dementia adviser service", to: "/dementia/adviser" },
-  { title: "Support for carers", to: "/dementia/carers" },
+  { title: "Hornbeam Dementia Hub", to: "/adult-social-care/specialist-services/dementia/hub" },
+  { title: "Memory assessment service", to: "/adult-social-care/specialist-services/dementia/memory-service" },
+  { title: "Dementia adviser service", to: "/adult-social-care/specialist-services/dementia/adviser" },
+  { title: "Support for carers", to: "/adult-social-care/specialist-services/dementia/carers" },
 ];
 
 export default function GetHelpPage() {

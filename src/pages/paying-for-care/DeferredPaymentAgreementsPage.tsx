@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Paying for a care home", to: "/paying-for-care/paying-for-care-home" },
-  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
-  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
-  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
+  { title: "Paying for a care home", to: "/adult-social-care/paying-for-care/paying-for-a-care-home" },
+  { title: "How care costs are worked out", to: "/adult-social-care/paying-for-care/how-care-costs-are-worked-out" },
+  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
+  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
 ];
 
 export default function DeferredPaymentAgreementsPage() {

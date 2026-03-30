@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Make a complaint", to: "/complaints-compliments/make-complaint" },
-  { title: "Independent advocacy", to: "/understand-your-rights/independent-advocacy" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Make a complaint", to: "/adult-social-care/complaints-compliments/make-a-complaint" },
+  { title: "Independent advocacy", to: "/adult-social-care/understand-your-rights/independent-advocacy" },
 ];
 
 export default function ChallengingDecisionsRaisingConcernsPage() {

@@ -5,49 +5,49 @@ const cards = [
     title: "Getting help and support",
     description:
       "Find out what local support services are available, including the Dementia Hub, adviser service, and when to see your GP.",
-    to: "/dementia/get-help",
+    to: "/adult-social-care/specialist-services/dementia/get-help",
   },
   {
     title: "Hornbeam Dementia Hub",
     description:
       "A welcoming centre offering information, activities and support for people living with dementia and their carers.",
-    to: "/dementia/hub",
+    to: "/adult-social-care/specialist-services/dementia/hub",
   },
   {
     title: "Activities and social groups",
     description:
       "Singing for the Brain, art therapy, exercise classes, lunch clubs and other activities in Waltham Forest.",
-    to: "/dementia/activities",
+    to: "/adult-social-care/specialist-services/dementia/activities",
   },
   {
     title: "Memory assessment service",
     description:
       "Learn what to expect from a memory assessment, how to get referred and what happens during the process.",
-    to: "/dementia/memory-service",
+    to: "/adult-social-care/specialist-services/dementia/memory-service",
   },
   {
     title: "Dementia adviser service",
     description:
       "One-to-one support from a dedicated adviser who can help you navigate life after a dementia diagnosis.",
-    to: "/dementia/adviser",
+    to: "/adult-social-care/specialist-services/dementia/adviser",
   },
   {
     title: "iDOS - online dementia resources",
     description:
       "Digital tools, apps and online support to help people with dementia and their carers.",
-    to: "/dementia/idos",
+    to: "/adult-social-care/specialist-services/dementia/idos",
   },
   {
     title: "Support for carers",
     description:
       "Respite care, support groups, and practical help for those caring for someone with dementia, including carers assessments.",
-    to: "/dementia/carers",
+    to: "/adult-social-care/specialist-services/dementia/carers",
   },
   {
     title: "Planning for the future",
     description:
       "Guidance on lasting power of attorney, advance care planning, wills and other important decisions.",
-    to: "/dementia/planning",
+    to: "/adult-social-care/specialist-services/dementia/planning-ahead",
   },
 ];
 

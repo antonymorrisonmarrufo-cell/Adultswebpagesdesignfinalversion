@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Request an assessment", to: "/how-to-get-support/request-assessment" },
-  { title: "Getting a care and support plan", to: "/how-to-get-support/getting-care-and-support-plan" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
+  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
 ];
 
 export default function YourRightsUnderCareActPage() {

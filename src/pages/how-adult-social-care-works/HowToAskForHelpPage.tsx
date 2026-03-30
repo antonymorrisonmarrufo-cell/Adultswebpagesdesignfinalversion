@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Who can get help", to: "/how-adult-social-care-works/who-can-get-help" },
-  { title: "What happens during an assessment", to: "/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "Your care and support plan", to: "/how-adult-social-care-works/your-care-and-support-plan" },
-  { title: "Paying for your care", to: "/paying-for-care" },
+  { title: "Who can get help", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
+  { title: "What happens during an assessment", to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment" },
+  { title: "Your care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
+  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
 ];
 
 export default function HowToAskForHelpPage() {

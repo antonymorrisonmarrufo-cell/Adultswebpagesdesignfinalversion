@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "What happens during an assessment", to: "/how-adult-social-care-works/what-happens-during-assessment" },
-  { title: "Direct payments and personal budgets", to: "/paying-for-care/direct-payments-personal-budgets" },
-  { title: "Paying for your care", to: "/paying-for-care" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "What happens during an assessment", to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment" },
+  { title: "Direct payments and personal budgets", to: "/adult-social-care/paying-for-care/direct-payments-and-personal-budgets" },
+  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
 ];
 
 export default function YourCareAndSupportPlanPage() {

@@ -4,34 +4,34 @@ const cards = [
   {
     title: "Your rights under the Care Act",
     description: "Understand your legal rights to assessment, support and a personal budget under the Care Act 2014.",
-    to: "/understand-your-rights/your-rights-under-care-act",
+    to: "/adult-social-care/understand-your-rights/your-rights-under-the-care-act",
   },
   {
     title: "Independent advocacy",
     description: "How an independent advocate can help you be involved in decisions about your care.",
-    to: "/understand-your-rights/independent-advocacy",
+    to: "/adult-social-care/understand-your-rights/independent-advocacy",
   },
   {
     title: "Mental capacity and decision making",
     description: "The Mental Capacity Act 2005, its five principles and how decisions are made for people who lack capacity.",
-    to: "/understand-your-rights/mental-capacity-decision-making",
+    to: "/adult-social-care/understand-your-rights/mental-capacity-and-decision-making",
   },
   {
     title: "Your rights as a carer",
     description: "Assessment, support and rights for unpaid carers under the Care Act 2014.",
-    to: "/understand-your-rights/your-rights-as-carer",
+    to: "/adult-social-care/understand-your-rights/your-rights-as-a-carer",
   },
   {
     title: "Challenging decisions and raising concerns",
     description: "How to challenge a decision about your care, including complaints, reviews and the ombudsman.",
-    to: "/understand-your-rights/challenging-decisions-raising-concerns",
+    to: "/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns",
   },
 ];
 
 const relatedPages = [
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Our policies", to: "/our-policies" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
 ];
 
 export default function UnderstandYourRightsHubPage() {

@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/mental-health" },
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Local mental health support services", to: "/mental-health/local-support-services" },
+  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health-wellbeing" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Local mental health support services", to: "/adult-social-care/mental-health-wellbeing/local-mental-health-support-services" },
 ];
 
 export default function AdultSocialCareMentalHealthPage() {

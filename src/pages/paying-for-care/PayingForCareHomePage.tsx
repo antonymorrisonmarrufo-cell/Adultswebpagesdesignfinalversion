@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
-  { title: "Deferred payment agreements", to: "/paying-for-care/deferred-payment-agreements" },
-  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
-  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
+  { title: "How care costs are worked out", to: "/adult-social-care/paying-for-care/how-care-costs-are-worked-out" },
+  { title: "Deferred payment agreements", to: "/adult-social-care/paying-for-care/deferred-payment-agreements" },
+  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
+  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
 ];
 
 export default function PayingForCareHomePage() {

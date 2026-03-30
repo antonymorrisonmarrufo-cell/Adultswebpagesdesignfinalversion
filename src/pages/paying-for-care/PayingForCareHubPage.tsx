@@ -4,45 +4,45 @@ const topics = [
   {
     title: "How care costs are worked out",
     description: "Find out how the council calculates what you may need to pay, including means testing and capital limits.",
-    to: "/paying-for-care/how-care-costs-worked-out",
+    to: "/adult-social-care/paying-for-care/how-care-costs-are-worked-out",
   },
   {
     title: "Financial assessment",
     description: "What a financial assessment involves, what income and savings are included, and how to appeal.",
-    to: "/paying-for-care/financial-assessment",
+    to: "/adult-social-care/paying-for-care/financial-assessment",
   },
   {
     title: "Benefits and help with costs",
     description: "Benefits you may be entitled to, including Attendance Allowance, PIP, Pension Credit and council tax reduction.",
-    to: "/paying-for-care/benefits-and-help",
+    to: "/adult-social-care/paying-for-care/benefits-and-help-with-costs",
   },
   {
     title: "Direct payments and personal budgets",
     description: "How direct payments work, what a personal budget is and how to manage your own care funding.",
-    to: "/paying-for-care/direct-payments-personal-budgets",
+    to: "/adult-social-care/paying-for-care/direct-payments-and-personal-budgets",
   },
   {
     title: "Paying for a care home",
     description: "How care home fees are funded, self-funding, council-funded care, property disregard and top-up fees.",
-    to: "/paying-for-care/paying-for-care-home",
+    to: "/adult-social-care/paying-for-care/paying-for-a-care-home",
   },
   {
     title: "Get financial advice",
     description: "Where to find independent financial advisers and free advice services to help you plan for care costs.",
-    to: "/paying-for-care/get-financial-advice",
+    to: "/adult-social-care/paying-for-care/get-financial-advice",
   },
   {
     title: "Deferred payment agreements",
     description: "How you can use your home to pay for residential care costs and delay selling your property.",
-    to: "/paying-for-care/deferred-payment-agreements",
+    to: "/adult-social-care/paying-for-care/deferred-payment-agreements",
   },
 ];
 
 const relatedPages = [
-  { title: "How adult social care works", to: "/how-adult-social-care-works" },
-  { title: "How to ask for help", to: "/how-adult-social-care-works/how-to-ask-for-help" },
-  { title: "Support for carers", to: "/carers" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
+  { title: "How adult social care works", to: "/adult-social-care/how-adult-social-care-works" },
+  { title: "How to ask for help", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
+  { title: "Support for carers", to: "/adult-social-care/being-carer" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
 ];
 
 export default function PayingForCareHubPage() {

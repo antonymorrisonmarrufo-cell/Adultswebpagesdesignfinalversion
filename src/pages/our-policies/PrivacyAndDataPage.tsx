@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
 ];
 
 export default function PrivacyAndDataPage() {

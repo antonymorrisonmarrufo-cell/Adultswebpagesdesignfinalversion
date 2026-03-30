@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Safeguarding adults", to: "/safeguarding/protecting-adults" },
-  { title: "Paying for care", to: "/paying-for-care" },
-  { title: "Dementia support", to: "/dementia" },
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "Support for carers", to: "/carers/support" },
+  { title: "Safeguarding adults", to: "/adult-social-care/protecting-adults-at-risk" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Dementia support", to: "/adult-social-care/specialist-services/dementia-support" },
+  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
+  { title: "Support for carers", to: "/adult-social-care/being-carer/support-for-carers" },
 ];
 
 export default function PowerOfAttorneyPage() {

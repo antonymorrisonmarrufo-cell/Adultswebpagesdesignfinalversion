@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Independent advocacy", to: "/understand-your-rights/independent-advocacy" },
-  { title: "Safeguarding adults", to: "/safeguarding" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Independent advocacy", to: "/adult-social-care/understand-your-rights/independent-advocacy" },
+  { title: "Safeguarding adults", to: "/adult-social-care/protecting-adults-at-risk" },
 ];
 
 export default function MentalCapacityDecisionMakingPage() {

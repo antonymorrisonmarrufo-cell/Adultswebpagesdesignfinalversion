@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/mental-health" },
-  { title: "Talking therapies and professional support", to: "/mental-health/talking-therapies-professional-support" },
-  { title: "Local mental health support services", to: "/mental-health/local-support-services" },
+  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health-wellbeing" },
+  { title: "Talking therapies and professional support", to: "/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" },
+  { title: "Local mental health support services", to: "/adult-social-care/mental-health-wellbeing/local-mental-health-support-services" },
 ];
 
 export default function LookingAfterMentalWellbeingPage() {

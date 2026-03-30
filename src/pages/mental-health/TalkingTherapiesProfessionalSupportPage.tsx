@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/mental-health" },
-  { title: "Looking after your mental wellbeing", to: "/mental-health/looking-after-mental-wellbeing" },
-  { title: "Adult Social Care mental health support", to: "/mental-health/adult-social-care-mental-health" },
+  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health-wellbeing" },
+  { title: "Looking after your mental wellbeing", to: "/adult-social-care/mental-health-wellbeing/looking-after-your-mental-wellbeing" },
+  { title: "Adult Social Care mental health support", to: "/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health" },
 ];
 
 export default function TalkingTherapiesProfessionalSupportPage() {

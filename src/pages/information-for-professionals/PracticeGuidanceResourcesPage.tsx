@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Information for professionals", to: "/information-for-professionals" },
-  { title: "Safeguarding adults for professionals", to: "/information-for-professionals/safeguarding-adults-professionals" },
-  { title: "How to make a referral", to: "/information-for-professionals/how-to-make-referral" },
+  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
+  { title: "Safeguarding adults for professionals", to: "/adult-social-care/information-for-professionals/safeguarding-adults" },
+  { title: "How to make a referral", to: "/adult-social-care/information-for-professionals/how-to-make-referral" },
 ];
 
 export default function PracticeGuidanceResourcesPage() {
