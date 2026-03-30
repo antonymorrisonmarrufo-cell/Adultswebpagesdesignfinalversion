@@ -281,7 +281,7 @@ export default function BlueBadgePage() {
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-700">
                     <Phone className="text-[#bf3688] flex-shrink-0" size={18} />
-                    <span className="font-semibold text-gray-900">Telephone: <a href="tel:02084963130" className="text-[#bf3688] underline hover:no-underline font-bold">020 8496 3130</a></span>
+                    <span className="font-semibold text-gray-900">Apply online at <a href="https://www.gov.uk/apply-blue-badge" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-bold">GOV.UK</a></span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-gray-700">
                     <Mail className="text-[#bf3688] flex-shrink-0" size={18} />

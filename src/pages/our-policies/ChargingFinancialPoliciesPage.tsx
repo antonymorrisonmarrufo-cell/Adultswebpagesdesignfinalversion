@@ -118,7 +118,7 @@ export default function ChargingFinancialPoliciesPage() {
       dedicated page.
       </p>
       <div className="mt-4">
-      <Link to="/adult-social-care/paying-for-care/deferred-payments" className="text-wf-blue underline hover:text-wf-green font-semibold">
+      <Link to="/adult-social-care/paying-for-care/deferred-payment-agreements" className="text-wf-blue underline hover:text-wf-green font-semibold">
         Deferred payment agreements (under Paying for your care) &rarr;
       </Link>
       </div>
