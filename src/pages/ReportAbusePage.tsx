@@ -43,13 +43,13 @@ export default function ReportAbusePage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Report a safeguarding concern</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">
           {/* Phone */}
-          <div className="rounded-md border-2 border-[#004E3E] p-6">
+          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
           <h3 className="text-lg font-bold text-[#231F20]">Call us</h3>
           <p className="mt-2 text-wf-dark">
           Speak to our Adult Social Care team about your concern:
           </p>
           <p className="mt-3 text-3xl font-bold text-[#231F20]">
-          <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
+          <a href="tel:02084963130" className="no-underline text-[#003078]">020 8496 3130</a>
           </p>
           <p className="mt-2 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>
           <div className="mt-4 border-t border-wf-gray-light pt-4">
@@ -57,14 +57,14 @@ export default function ReportAbusePage() {
           <strong>Outside office hours:</strong>
           </p>
           <p className="text-lg font-bold text-[#231F20] mt-1">
-          <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
+          <a href="tel:02084966000" className="no-underline text-[#003078]">020 8496 6000</a>
           </p>
           <p className="text-sm text-wf-gray">Emergency Duty Team</p>
           </div>
           </div>
 
           {/* Online form */}
-          <div className="rounded-md border-2 border-[#004E3E] p-6">
+          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
           <h3 className="text-lg font-bold text-[#231F20]">Report online</h3>
           <p className="mt-2 text-wf-dark">
           Use our online referral form to report your concerns. Available 24 hours a day, 7 days a week.

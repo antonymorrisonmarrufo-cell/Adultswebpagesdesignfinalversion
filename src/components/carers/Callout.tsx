@@ -31,7 +31,7 @@ export default function Callout({ type, title, children }: CalloutProps) {
   const style = styles[type];
 
   return (
-    <div className={`${style.bg} ${style.border} border-l-4 p-6 my-6`}>
+    <div className={`${style.bg} ${style.border} border-2 rounded-lg p-6 my-6`}>
       <div className="flex gap-4">
         <div className="flex-shrink-0">{style.icon}</div>
         <div className="flex-1">
