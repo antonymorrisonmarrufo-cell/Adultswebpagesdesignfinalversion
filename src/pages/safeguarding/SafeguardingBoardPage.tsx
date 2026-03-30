@@ -128,7 +128,7 @@ export default function SafeguardingBoardPage() {
                 href={doc.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 border border-gray-300 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group"
+                className="flex items-center gap-3 border border-gray-300 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group"
               >
                 <FileText className="text-[#bf3688] flex-shrink-0" size={20} />
                 <span className="text-gray-900 font-semibold text-sm group-hover:text-[#bf3688] transition-colors flex-1">
@@ -186,7 +186,7 @@ export default function SafeguardingBoardPage() {
                   href={link.href}
                   target={link.external ? '_blank' : undefined}
                   rel={link.external ? 'noopener noreferrer' : undefined}
-                  className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                  className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
                 >
                   <div className="flex items-start gap-3 flex-1">
                     {link.isPdf && <FileText className="text-[#bf3688] flex-shrink-0 mt-0.5" size={16} />}

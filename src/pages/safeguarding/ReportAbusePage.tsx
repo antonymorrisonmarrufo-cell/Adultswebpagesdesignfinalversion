@@ -84,7 +84,7 @@ export default function ReportAbusePage() {
                 href="https://safeguardingapp.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
               >
                 Report a concern about a vulnerable adult
                 <ArrowRight size={18} />
@@ -132,7 +132,7 @@ export default function ReportAbusePage() {
               href="https://www.walthamforest.gov.uk/media/10188"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 border border-gray-400 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group"
+              className="inline-flex items-center gap-3 border border-gray-400 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group"
             >
               <FileText className="text-[#bf3688] flex-shrink-0" size={20} />
               <span className="text-gray-900 font-semibold text-sm group-hover:text-[#bf3688] transition-colors">

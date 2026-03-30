@@ -80,7 +80,7 @@ export default function ResourcesImprovePracticePage() {
                   href={resource.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                  className="inline-flex items-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
                 >
                   {resource.isPdf ? <FileText size={15} className="flex-shrink-0" /> : <ExternalLink size={15} className="flex-shrink-0" />}
                   {resource.label}
@@ -98,7 +98,7 @@ export default function ResourcesImprovePracticePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a
               href="#/adult-social-care/professional-guidance"
-              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               <span className="text-gray-900 text-sm font-semibold group-hover:text-[#bf3688] transition-colors">
                 Professional guidance
@@ -109,7 +109,7 @@ export default function ResourcesImprovePracticePage() {
             </a>
             <a
               href="#/adult-social-care/safeguarding-adults-board"
-              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               <span className="text-gray-900 text-sm font-semibold group-hover:text-[#bf3688] transition-colors">
                 Safeguarding Adults Board

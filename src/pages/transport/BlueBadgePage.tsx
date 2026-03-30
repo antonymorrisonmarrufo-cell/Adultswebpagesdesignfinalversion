@@ -44,7 +44,7 @@ function ApplyCTA() {
       href="https://www.gov.uk/apply-blue-badge"
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2"
+      className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
     >
       Start your application
       <ArrowRight size={18} />
@@ -97,7 +97,7 @@ export default function BlueBadgePage() {
               href="https://www.figma.com/make/HfSZHxAa97T4Ckss7gE5la/Disabilities-and-specialist-support?p=f&t=LflrHaLP8jjnmof1-0"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-bold hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2"
+              className="inline-flex items-center gap-2 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-bold hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
             >
               Apply or renew an organisation Blue Badge
               <ArrowRight size={16} />
@@ -116,7 +116,7 @@ export default function BlueBadgePage() {
                     <button
                       key={s.id}
                       onClick={() => scrollTo(s.id)}
-                      className={`w-full text-left px-4 py-2 text-sm border-l-4 transition-colors ${
+                      className={`w-full text-left px-4 py-2 text-sm border-2 transition-colors ${
                         activeSection === s.id
                           ? 'border-[#bf3688] text-[#bf3688] font-bold bg-[#fcedf3]'
                           : 'border-gray-200 text-gray-700 hover:border-[#bf3688] hover:text-[#bf3688]'
@@ -136,7 +136,7 @@ export default function BlueBadgePage() {
                     <button
                       key={s.id}
                       onClick={() => scrollTo(s.id)}
-                      className={`w-full text-left px-4 py-3 text-sm border-l-4 transition-colors ${
+                      className={`w-full text-left px-4 py-3 text-sm border-2 transition-colors ${
                         activeSection === s.id
                           ? 'border-[#bf3688] text-[#bf3688] font-bold bg-pink-50'
                           : 'border-gray-300 text-gray-700 hover:border-[#bf3688] hover:text-[#bf3688] hover:bg-gray-100'
@@ -224,7 +224,7 @@ export default function BlueBadgePage() {
                     href="https://www.walthamforest.gov.uk/parking-roads-and-travel/blue-badges-and-disabled-bays/apply-disabled-parking-bay"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+                    className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 shadow-sm"
                   >
                     Apply for a disabled parking bay
                     <ArrowRight size={18} />

@@ -63,7 +63,7 @@ export default function WhatHappensAfterPage() {
             <p className="text-gray-700 mb-6">If you are ready to tell us about a concern, use the reporting route.</p>
             <a
               href="#/adult-social-care/report-abuse-or-neglect"
-              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               Report a concern
               <ArrowRight size={18} />

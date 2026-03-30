@@ -68,7 +68,7 @@ export default function TravelTransportPage() {
               <a
                 key={i}
                 href={card.href}
-                className="group bg-white border border-gray-200 shadow-sm p-6 pb-16 hover:shadow-md transition-shadow relative block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                className="group bg-white border border-gray-200 shadow-sm p-6 pb-16 hover:shadow-md transition-shadow relative block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{card.title}</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">{card.summary}</p>

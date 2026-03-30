@@ -26,7 +26,7 @@ export default function MentalHealthWellbeingHubPage() {
 
         {/* If you need help now - URGENT CALLOUT */}
         <section className="mb-12">
-          <div className="bg-red-50 border-l-4 border-red-600 p-8">
+          <div className="bg-red-50 border-2 border-red-600 p-8">
             <h2 className="text-2xl font-bold text-red-900 mb-4 flex items-center gap-3">
               <AlertTriangle size={28} className="text-red-600" />
               If you need help now

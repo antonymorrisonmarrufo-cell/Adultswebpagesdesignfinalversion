@@ -73,7 +73,7 @@ export default function TaxicardPage() {
                 href="https://www.londoncouncils.gov.uk/services/taxicard/apply-taxicard"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 mb-6 shadow-sm"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 mb-6 shadow-sm"
               >
                 Apply for a Taxicard
                 <ArrowRight size={18} />
@@ -98,7 +98,7 @@ export default function TaxicardPage() {
                 href="https://www.walthamforest.gov.uk/sites/default/files/2021-11/lost_taxicard.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 border border-gray-400 bg-white px-5 py-4 hover:bg-gray-50 hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group shadow-sm"
+                className="inline-flex items-center gap-3 border border-gray-400 bg-white px-5 py-4 hover:bg-gray-50 hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group shadow-sm"
               >
                 <FileText className="text-[#bf3688] flex-shrink-0" size={24} />
                 <span className="text-gray-900 font-bold text-sm group-hover:text-[#bf3688] transition-colors">
@@ -164,7 +164,7 @@ export default function TaxicardPage() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center justify-between gap-4 border border-gray-300 bg-white p-4 hover:shadow-md hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] shadow-sm"
+                    className="group flex items-center justify-between gap-4 border border-gray-300 bg-white p-4 hover:shadow-md hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] shadow-sm"
                   >
                     <span className="text-gray-900 text-sm font-bold group-hover:text-[#bf3688] transition-colors">{link.title}</span>
                     <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors shadow-sm">

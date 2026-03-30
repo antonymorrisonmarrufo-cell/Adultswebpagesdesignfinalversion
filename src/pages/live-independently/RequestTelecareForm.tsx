@@ -76,7 +76,7 @@ export default function RequestTelecareForm() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://safeguardingapp.vercel.app/" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-[#bf3688] text-white px-8 py-4 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 text-lg"
+              className="inline-flex items-center justify-center gap-3 bg-[#bf3688] text-white px-8 py-4 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 text-lg"
             >
               Start form
               <ArrowRight size={20} />

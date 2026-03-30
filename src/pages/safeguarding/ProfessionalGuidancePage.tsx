@@ -139,7 +139,7 @@ export default function ProfessionalGuidancePage() {
                       href={cta.href}
                       target={cta.href.startsWith('http') ? '_blank' : undefined}
                       rel={cta.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] ${
+                      className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] ${
                         j === 0
                           ? 'bg-[#bf3688] text-white hover:bg-[#a02d73]'
                           : 'border border-[#bf3688] text-[#bf3688] hover:bg-[#bf3688] hover:text-white'

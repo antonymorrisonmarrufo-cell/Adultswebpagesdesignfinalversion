@@ -39,7 +39,7 @@ export default function YoungCarersHub() {
       <section className="bg-gray-200 py-12">
         <div className="max-w-7xl mx-auto px-6">
           <Callout type="warning" title="Your safety matters">
-            <p>If you feel unsafe or too much is being asked of you, tell a trusted adult straight away. You can also call Childline on <a href="tel:0800 1111" className="text-[#EF3688] font-bold hover:underline">0800 1111</a> any time, day or night.</p>
+            <p>If you feel unsafe or too much is being asked of you, tell a trusted adult straight away. You can also call Childline on <a href="tel:0800 1111" className="text-[#bf3688] font-bold hover:underline">0800 1111</a> any time, day or night.</p>
           </Callout>
 
           <Callout type="info" title="We keep things confidential">
@@ -47,27 +47,27 @@ export default function YoungCarersHub() {
           </Callout>
 
           <section className="my-12">
-            <h2 className="text-[#EF3688] mb-8 font-bold text-3xl">How we can help you (step by step)</h2>
+            <h2 className="text-[#bf3688] mb-8 font-bold text-3xl">How we can help you (step by step)</h2>
             <Stepper steps={steps} />
           </section>
 
-          <section className="my-12 bg-white border-2 border-[#EF3688] p-8 rounded-lg shadow-sm">
-            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">Get help now</h2>
+          <section className="my-12 bg-white border-2 border-[#bf3688] p-8 rounded-lg shadow-sm">
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">Get help now</h2>
             <p className="text-gray-700 mb-6">
               You don't need permission from your parent or guardian to talk to us. Call, email, or fill in our online form — whatever feels easiest.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#/carers/assessment" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+              <a href="#/carers/assessment" className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
                 Request a young carer's assessment
               </a>
-              <a href="#/carers/contacts" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+              <a href="#/carers/contacts" className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
                 Find local young carers groups
               </a>
             </div>
           </section>
 
           <section className="my-12">
-            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">What young carers tell us helps most</h2>
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">What young carers tell us helps most</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
                 <h3 className="text-gray-900 mb-3 font-bold">Time for me</h3>

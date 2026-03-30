@@ -44,15 +44,15 @@ export default function CarersHubPage() {
     <>
       <section className="bg-gradient-to-br from-[#FFF0F7] to-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-16">
-          <h1 className="text-[#EF3688] mb-6">Support for carers</h1>
+          <h1 className="text-[#bf3688] mb-6">Support for carers</h1>
           <p className="text-gray-700 max-w-4xl text-lg mb-8">
             Get help, advice and support if you care for someone. Whether you're a young carer, parent carer, or caring for an adult, we're here to help you live well alongside caring.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="#/carers/assessment" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+            <a href="#/carers/assessment" className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
               Get a carer&apos;s assessment
             </a>
-            <a href="#/carers/emergency-help" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors">
+            <a href="#/carers/emergency-help" className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors">
               Emergency help
             </a>
           </div>
@@ -61,17 +61,17 @@ export default function CarersHubPage() {
 
       <section className="bg-gray-200 py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[#EF3688] mb-8">Find support by carer type</h2>
+          <h2 className="text-[#bf3688] mb-8">Find support by carer type</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {carerTypes.map((type, index) => (
-              <a key={index} href={type.href} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#EF3688] hover:shadow-lg transition-all group">
+              <a key={index} href={type.href} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#bf3688] hover:shadow-lg transition-all group">
                 <div className="mb-3">
                   <Chip variant="tag" size="sm">{type.tag}</Chip>
                 </div>
                 <h3 className="text-gray-900 mb-3">{type.title}</h3>
                 <p className="text-gray-700 text-sm mb-4">{type.description}</p>
                 <div className="flex justify-end">
-                  <div className="w-10 h-10 rounded-full bg-[#EF3688] flex items-center justify-center text-white group-hover:bg-[#bf3688] transition-colors">
+                  <div className="w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center text-white group-hover:bg-[#bf3688] transition-colors">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function CarersHubPage() {
             ))}
           </div>
 
-          <h2 className="text-[#EF3688] mb-8">Find support by task</h2>
+          <h2 className="text-[#bf3688] mb-8">Find support by task</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {taskPages.map((task, index) => (
               <a key={index} href={task.href} className="bg-white border border-gray-200 p-6 rounded-lg hover:shadow-md transition-shadow group">
@@ -90,7 +90,7 @@ export default function CarersHubPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <h3 className="text-gray-900">{task.title}</h3>
-                  <ArrowRight className="w-5 h-5 text-[#EF3688] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 text-[#bf3688] group-hover:translate-x-1 transition-transform" />
                 </div>
               </a>
             ))}

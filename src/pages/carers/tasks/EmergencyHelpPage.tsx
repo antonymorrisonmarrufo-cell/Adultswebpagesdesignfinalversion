@@ -55,10 +55,10 @@ export default function EmergencyHelpPage() {
         </Callout>
 
         <section className="my-12">
-          <h2 className="text-[#EF3688] mb-6">24/7 emergency numbers</h2>
+          <h2 className="text-[#bf3688] mb-6">24/7 emergency numbers</h2>
           <div className="space-y-4">
             {emergencyNumbers.map((item, index) => (
-              <div key={index} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#EF3688] transition-colors">
+              <div key={index} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#bf3688] transition-colors">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="text-gray-900 mb-2">{item.service}</h3>
@@ -67,7 +67,7 @@ export default function EmergencyHelpPage() {
                   </div>
                   <a 
                     href={`tel:${item.phone.replace(/\s/g, '')}`}
-                    className="flex items-center gap-2 bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors whitespace-nowrap"
+                    className="flex items-center gap-2 bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors whitespace-nowrap"
                   >
                     <Phone className="w-4 h-4" />
                     {item.phone}
@@ -79,7 +79,7 @@ export default function EmergencyHelpPage() {
         </section>
 
         <section className="my-12">
-          <h2 className="text-[#EF3688] mb-6">Create your emergency plan</h2>
+          <h2 className="text-[#bf3688] mb-6">Create your emergency plan</h2>
           <p className="text-gray-700 mb-6 text-lg">
             Don't wait for a crisis. Download our template and write down what should happen if you suddenly can't care.
           </p>
@@ -96,14 +96,14 @@ export default function EmergencyHelpPage() {
               </ul>
             </div>
 
-            <div className="bg-white border-2 border-[#EF3688] p-6 rounded-lg flex flex-col justify-between">
+            <div className="bg-white border-2 border-[#bf3688] p-6 rounded-lg flex flex-col justify-between">
               <div>
                 <h3 className="text-gray-900 mb-3">Download templates</h3>
                 <p className="text-gray-700 text-sm mb-4">
                   Use our step-by-step template to create your plan. Keep copies at home, with family, and give one to your GP.
                 </p>
               </div>
-              <button className="flex items-center gap-2 bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors w-fit">
+              <button className="flex items-center gap-2 bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors w-fit">
                 <Download className="w-4 h-4" />
                 Download emergency plan template
               </button>
@@ -112,10 +112,10 @@ export default function EmergencyHelpPage() {
         </section>
 
         <section className="my-12">
-          <h2 className="text-[#EF3688] mb-6">What happens in an emergency?</h2>
+          <h2 className="text-[#bf3688] mb-6">What happens in an emergency?</h2>
           
           <div className="space-y-4">
-            <div className="bg-white border-l-4 border-[#EF3688] p-6">
+            <div className="bg-white border-2 border-[#bf3688] p-6">
               <h3 className="text-gray-900 mb-2">If you're suddenly ill or injured</h3>
               <p className="text-gray-700">
                 Call our Emergency Duty Team. We'll arrange urgent replacement care so the person you care for is safe. 
@@ -123,7 +123,7 @@ export default function EmergencyHelpPage() {
               </p>
             </div>
 
-            <div className="bg-white border-l-4 border-[#EF3688] p-6">
+            <div className="bg-white border-2 border-[#bf3688] p-6">
               <h3 className="text-gray-900 mb-2">If the person you care for is in crisis</h3>
               <p className="text-gray-700">
                 Call 999 if it's life-threatening. For urgent (but not life-threatening) help, call NHS 111. 
@@ -131,7 +131,7 @@ export default function EmergencyHelpPage() {
               </p>
             </div>
 
-            <div className="bg-white border-l-4 border-[#EF3688] p-6">
+            <div className="bg-white border-2 border-[#bf3688] p-6">
               <h3 className="text-gray-900 mb-2">If you're at breaking point emotionally</h3>
               <p className="text-gray-700">
                 Call Samaritans (116 123) any time for confidential support. During working hours, Carers First can help (0300 303 1555). 
@@ -149,7 +149,7 @@ export default function EmergencyHelpPage() {
         </Callout>
 
         <section className="mt-12 bg-[#FFF0F7] p-8 rounded-lg">
-          <h2 className="text-[#EF3688] mb-4">Register for priority support</h2>
+          <h2 className="text-[#bf3688] mb-4">Register for priority support</h2>
           <p className="text-gray-700 mb-6">
             If you or the person you care for rely on electricity for medical equipment, register with your energy supplier for priority support. 
             You'll get advance warning of power cuts and priority reconnection.

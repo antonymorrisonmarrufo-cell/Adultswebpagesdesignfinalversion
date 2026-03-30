@@ -31,19 +31,19 @@ export default function ParentCarersHub() {
           </Callout>
 
           <section className="my-12">
-            <h2 className="text-[#EF3688] mb-6 font-bold text-3xl">Who can help</h2>
+            <h2 className="text-[#bf3688] mb-6 font-bold text-3xl">Who can help</h2>
             <p className="text-gray-700 mb-8 max-w-4xl text-lg">
               Request a parent carer&apos;s assessment from Adult Social Care. If your child has complex needs, you may also work with 
               Children&apos;s Services, health teams, and the SEND team. We&apos;ll coordinate everything together.
             </p>
             
-            <div className="bg-white border-2 border-[#EF3688] p-8 rounded-lg mb-8 shadow-sm">
+            <div className="bg-white border-2 border-[#bf3688] p-8 rounded-lg mb-8 shadow-sm">
               <h3 className="text-gray-900 mb-4 font-bold text-2xl">Ready to get started?</h3>
               <div className="flex flex-wrap gap-4">
-                <a href="#/carers/assessment" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+                <a href="#/carers/assessment" className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
                   Request a parent carer&apos;s assessment
                 </a>
-                <a href="#/carers/assessment" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+                <a href="#/carers/assessment" className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
                   Professional referral form
                 </a>
               </div>
@@ -51,7 +51,7 @@ export default function ParentCarersHub() {
           </section>
 
           <section className="my-12">
-            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">Quick links for parent carers</h2>
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">Quick links for parent carers</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {quickLinks.map((link, index) => (
                 <a 
@@ -60,7 +60,7 @@ export default function ParentCarersHub() {
                   className="bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow flex items-center justify-between group shadow-sm"
                 >
                   <span className="text-gray-900 font-semibold">{link.title}</span>
-                  <ArrowRight className="w-5 h-5 text-[#EF3688] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 text-[#bf3688] group-hover:translate-x-1 transition-transform" />
                 </a>
               ))}
             </div>
@@ -69,9 +69,9 @@ export default function ParentCarersHub() {
           <Callout type="urgent" title="Crisis support available 24/7">
             <p className="mb-2">If you&apos;re at breaking point or your child is in crisis:</p>
             <ul className="list-disc list-inside space-y-1">
-              <li>Call our emergency duty team: <a href="tel:02084963130" className="text-[#EF3688] font-bold hover:underline">020 8496 3130</a> (out of hours)</li>
-              <li>Contact <a href="tel:999" className="text-[#EF3688] font-bold hover:underline">999</a> if there&apos;s immediate danger</li>
-              <li>See our <a href="#/carers/emergency-help" className="text-[#EF3688] font-bold hover:underline">full crisis plan guidance</a></li>
+              <li>Call our emergency duty team: <a href="tel:02084963130" className="text-[#bf3688] font-bold hover:underline">020 8496 3130</a> (out of hours)</li>
+              <li>Contact <a href="tel:999" className="text-[#bf3688] font-bold hover:underline">999</a> if there&apos;s immediate danger</li>
+              <li>See our <a href="#/carers/emergency-help" className="text-[#bf3688] font-bold hover:underline">full crisis plan guidance</a></li>
             </ul>
           </Callout>
         </div>

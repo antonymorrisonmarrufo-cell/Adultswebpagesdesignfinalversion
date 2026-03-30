@@ -77,7 +77,7 @@ export default function AbuseAndNeglectPage() {
           <div className="max-w-4xl mb-14">
             <a
               href="#/adult-social-care/report-abuse-or-neglect"
-              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-4 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-4 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               Report a concern
               <ArrowRight size={18} />
@@ -91,7 +91,7 @@ export default function AbuseAndNeglectPage() {
               <a
                 key={i}
                 href={link.href}
-                className="bg-[#bf3688] text-white p-6 flex items-center justify-between hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                className="bg-[#bf3688] text-white p-6 flex items-center justify-between hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
               >
                 <span className="pr-4 font-semibold">{link.title}</span>
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#bf3688] flex-shrink-0">

@@ -107,7 +107,7 @@ export default function TransportMobilityPage() {
                     <button
                       key={s.id}
                       onClick={() => scrollTo(s.id)}
-                      className={`w-full text-left px-4 py-2 text-sm border-l-4 transition-colors ${
+                      className={`w-full text-left px-4 py-2 text-sm border-2 transition-colors ${
                         activeSection === s.id
                           ? 'border-[#bf3688] text-[#bf3688] font-bold bg-[#fcedf3]'
                           : 'border-gray-200 text-gray-700 hover:border-[#bf3688] hover:text-[#bf3688]'
@@ -125,7 +125,7 @@ export default function TransportMobilityPage() {
                     <button
                       key={s.id}
                       onClick={() => scrollTo(s.id)}
-                      className={`w-full text-left px-4 py-3 text-sm border-l-4 transition-colors ${
+                      className={`w-full text-left px-4 py-3 text-sm border-2 transition-colors ${
                         activeSection === s.id
                           ? 'border-[#bf3688] text-[#bf3688] font-bold bg-pink-50'
                           : 'border-gray-300 text-gray-700 hover:border-[#bf3688] hover:text-[#bf3688] hover:bg-gray-100'
@@ -249,7 +249,7 @@ export default function TransportMobilityPage() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center justify-between gap-4 border border-gray-300 bg-white p-4 hover:shadow-md hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] shadow-sm"
+                      className="group flex items-center justify-between gap-4 border border-gray-300 bg-white p-4 hover:shadow-md hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] shadow-sm"
                     >
                       <span className="text-gray-900 text-sm font-bold group-hover:text-[#bf3688] transition-colors">{link.label}</span>
                       <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors shadow-sm">

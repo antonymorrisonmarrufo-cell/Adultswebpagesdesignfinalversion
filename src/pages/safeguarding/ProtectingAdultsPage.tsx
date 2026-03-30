@@ -61,7 +61,7 @@ export default function ProtectingAdultsPage() {
               href="https://safeguardingapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-[#bf3688] bg-[#fcedf3] hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-[#bf3688] bg-[#fcedf3] hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               <div>
                 <h3 className="mb-3 font-bold text-lg text-[#bf3688]">Report abuse or neglect</h3>
@@ -88,14 +88,14 @@ export default function ProtectingAdultsPage() {
                   href="https://safeguardingapp.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                  className="inline-flex items-center justify-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
                 >
                   Make a professional referral
                   <ArrowRight size={16} />
                 </a>
                 <a
                   href="#/adult-social-care/professionals-and-providers"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-[#bf3688] text-[#bf3688] px-5 py-2.5 text-sm font-semibold hover:bg-[#bf3688] hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-[#bf3688] text-[#bf3688] px-5 py-2.5 text-sm font-semibold hover:bg-[#bf3688] hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
                 >
                   Read professional guidance
                   <ArrowRight size={16} />
@@ -106,7 +106,7 @@ export default function ProtectingAdultsPage() {
             {/* Card 3 — Signs */}
             <a
               href="#/adult-social-care/abuse-and-neglect"
-              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               <div>
                 <h3 className="mb-3 font-bold text-lg text-gray-900">Learn the signs of abuse and neglect</h3>
@@ -123,7 +123,7 @@ export default function ProtectingAdultsPage() {
             {/* Card 4 — What happens after */}
             <a
               href="#/adult-social-care/what-happens-after-you-report"
-              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               <div>
                 <h3 className="mb-3 font-bold text-lg text-gray-900">What happens after you report</h3>
@@ -148,7 +148,7 @@ export default function ProtectingAdultsPage() {
                 href={link.href}
                 target={link.external ? '_blank' : undefined}
                 rel={link.external ? 'noopener noreferrer' : undefined}
-                className="bg-white border border-gray-200 p-4 flex items-center justify-between hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group"
+                className="bg-white border border-gray-200 p-4 flex items-center justify-between hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group"
               >
                 <span className="text-gray-900 text-sm font-semibold pr-4">{link.title}</span>
                 <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors">

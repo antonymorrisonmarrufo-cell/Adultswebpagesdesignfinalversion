@@ -32,7 +32,7 @@ export default function FireSafetyPage() {
 
         {/* Important alert box */}
         <div className="max-w-3xl mb-12">
-          <div className="bg-red-50 border-l-4 border-red-600 px-5 py-4 flex items-start gap-3">
+          <div className="bg-red-50 border-2 border-red-600 px-5 py-4 flex items-start gap-3">
             <AlertTriangle className="text-red-600 flex-shrink-0 mt-0.5" size={22} />
             <div>
               <p className="font-bold text-red-800 text-base">

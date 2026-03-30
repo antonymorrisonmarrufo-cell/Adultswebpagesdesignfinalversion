@@ -62,16 +62,16 @@ export default function CarersAssessmentPage() {
             </Callout>
 
             <section className="my-12">
-              <h2 className="text-[#EF3688] mb-6">For residents: How to apply</h2>
+              <h2 className="text-[#bf3688] mb-6">For residents: How to apply</h2>
               <Stepper steps={residentSteps} />
               
               <div className="mt-8 bg-gradient-to-br from-[#FFF0F7] to-white p-6 rounded-lg">
                 <h3 className="text-gray-900 mb-4">Ready to request your assessment?</h3>
                 <div className="flex flex-wrap gap-4">
-                  <button className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+                  <button className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
                     Start online form
                   </button>
-                  <button className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors">
+                  <button className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors">
                     Call us: 020 8496 3130
                   </button>
                 </div>
@@ -79,31 +79,31 @@ export default function CarersAssessmentPage() {
             </section>
 
             <section className="my-12">
-              <h2 className="text-[#EF3688] mb-6">For professionals: How to refer</h2>
+              <h2 className="text-[#bf3688] mb-6">For professionals: How to refer</h2>
               <p className="text-gray-700 mb-6">
                 If you're a health or social care professional and you're concerned about a carer, use our professional referral route.
               </p>
               <Stepper steps={professionalSteps} />
               
               <div className="mt-8">
-                <button className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+                <button className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
                   Professional referral form
                 </button>
               </div>
             </section>
 
             <section className="my-12">
-              <h2 className="text-[#EF3688] mb-6">What happens next?</h2>
+              <h2 className="text-[#bf3688] mb-6">What happens next?</h2>
               <div className="space-y-4 text-gray-700">
-                <div className="bg-white border-l-4 border-[#EF3688] p-4">
+                <div className="bg-white border-2 border-[#bf3688] p-4">
                   <h3 className="text-gray-900 mb-2">Within 3 working days</h3>
                   <p>We'll contact you to arrange your assessment. Urgent cases are prioritised.</p>
                 </div>
-                <div className="bg-white border-l-4 border-[#EF3688] p-4">
+                <div className="bg-white border-2 border-[#bf3688] p-4">
                   <h3 className="text-gray-900 mb-2">During assessment</h3>
                   <p>We talk about your caring role, your health, work, and what would help. It usually takes 30–60 minutes.</p>
                 </div>
-                <div className="bg-white border-l-4 border-[#EF3688] p-4">
+                <div className="bg-white border-2 border-[#bf3688] p-4">
                   <h3 className="text-gray-900 mb-2">After assessment</h3>
                   <p>We create a support plan and arrange services. You'll get a written copy and contact details for your social worker.</p>
                 </div>
@@ -114,19 +114,19 @@ export default function CarersAssessmentPage() {
           <aside className="lg:col-span-1">
             <div className="sticky top-6 space-y-6">
               <div className="bg-[#FFF0F7] p-6 rounded-lg">
-                <h3 className="text-[#EF3688] mb-4">Topics in this section</h3>
+                <h3 className="text-[#bf3688] mb-4">Topics in this section</h3>
                 <ul className="space-y-3 text-sm">
-                  <li><button onClick={() => { const el = document.getElementById('who'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#EF3688] text-left">Who can get an assessment?</button></li>
-                  <li><button onClick={() => { const el = document.getElementById('residents'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#EF3688] text-left">For residents</button></li>
-                  <li><button onClick={() => { const el = document.getElementById('professionals'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#EF3688] text-left">For professionals</button></li>
-                  <li><button onClick={() => { const el = document.getElementById('next'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#EF3688] text-left">What happens next?</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('who'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">Who can get an assessment?</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('residents'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">For residents</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('professionals'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">For professionals</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('next'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">What happens next?</button></li>
                 </ul>
               </div>
 
-              <div className="bg-white border-2 border-[#EF3688] p-6 rounded-lg">
+              <div className="bg-white border-2 border-[#bf3688] p-6 rounded-lg">
                 <h3 className="text-gray-900 mb-3">Need help now?</h3>
                 <p className="text-gray-700 text-sm mb-4">If you're in crisis or can't wait for an assessment:</p>
-                <a href="#/carers/emergency-help" className="text-[#EF3688] hover:underline text-sm">
+                <a href="#/carers/emergency-help" className="text-[#bf3688] hover:underline text-sm">
                   Emergency support →
                 </a>
               </div>

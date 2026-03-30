@@ -119,7 +119,7 @@ export default function MaracPage() {
               href="https://www.walthamforest.gov.uk/neighbourhoods/crime-and-community-safety/community-safety/multi-agency-risk-assessment-conference-marac"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-7 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-7 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
             >
               Make a MARAC referral
               <ArrowRight size={18} />

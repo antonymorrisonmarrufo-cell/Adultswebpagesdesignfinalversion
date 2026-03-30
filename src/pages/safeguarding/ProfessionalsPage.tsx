@@ -87,7 +87,7 @@ export default function ProfessionalsPage() {
               href={card.href}
               target={card.external ? '_blank' : undefined}
               rel={card.external ? 'noopener noreferrer' : undefined}
-              className={`group flex flex-col justify-between p-6 pb-20 relative border-2 hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] ${
+              className={`group flex flex-col justify-between p-6 pb-20 relative border-2 hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] ${
                 card.primary
                   ? 'border-[#bf3688] bg-[#fcedf3]'
                   : 'border-gray-200 bg-white'

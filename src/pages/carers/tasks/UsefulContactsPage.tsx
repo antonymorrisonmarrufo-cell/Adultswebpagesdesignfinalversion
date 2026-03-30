@@ -103,7 +103,7 @@ export default function UsefulContactsPage() {
 
       <div className="max-w-7xl mx-auto px-6 py-12">
         <section className="mb-12">
-          <h2 className="text-[#EF3688] mb-6">Filter contacts</h2>
+          <h2 className="text-[#bf3688] mb-6">Filter contacts</h2>
           <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
             <p className="text-gray-700 mb-4">Select one or more filters to find the right support:</p>
             <div className="flex flex-wrap gap-3">
@@ -131,7 +131,7 @@ export default function UsefulContactsPage() {
 
         <section>
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-[#EF3688]">
+            <h2 className="text-[#bf3688]">
               {selectedFilters.length > 0 ? 'Filtered results' : 'All contacts'}
             </h2>
             <span className="text-gray-600 text-sm">
@@ -158,7 +158,7 @@ export default function UsefulContactsPage() {
               <p className="text-gray-600 mb-4">No contacts match your filters.</p>
               <button
                 onClick={() => setSelectedFilters([])}
-                className="text-[#EF3688] hover:underline"
+                className="text-[#bf3688] hover:underline"
               >
                 Clear filters and show all contacts
               </button>
@@ -167,13 +167,13 @@ export default function UsefulContactsPage() {
         </section>
 
         <section className="mt-12 bg-[#FFF0F7] p-8 rounded-lg">
-          <h2 className="text-[#EF3688] mb-4">Can't find what you need?</h2>
+          <h2 className="text-[#bf3688] mb-4">Can't find what you need?</h2>
           <p className="text-gray-700 mb-6">
             If you need help but you're not sure who to contact, call Adult Social Care and we'll point you in the right direction.
           </p>
           <a 
             href="tel:02084963130"
-            className="inline-flex items-center gap-2 bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors"
+            className="inline-flex items-center gap-2 bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors"
           >
             <Phone className="w-4 h-4" />
             Call 020 8496 3130

@@ -60,7 +60,7 @@ export default function VisualHearingPage() {
               <li>information and advice about local and national services</li>
             </ul>
 
-            <div className="bg-white border-l-4 border-[#0066CC] p-4 mb-8 flex gap-3 shadow-sm">
+            <div className="bg-white border-2 border-[#0066CC] p-4 mb-8 flex gap-3 shadow-sm">
               <div className="text-[#0066CC] text-2xl">📹</div>
               <p className="text-gray-700">
                 <strong>We can also arrange a video assessment for BSL users</strong>

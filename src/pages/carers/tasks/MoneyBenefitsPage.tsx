@@ -36,7 +36,7 @@ function FAQ({ question, answer }: { question: string; answer: string }) {
         className="w-full text-left p-4 flex items-center justify-between hover:bg-gray-200 transition-colors"
       >
         <span className="text-gray-900">{question}</span>
-        <ChevronDown className={`w-5 h-5 text-[#EF3688] transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-5 h-5 text-[#bf3688] transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>
       {isOpen && (
         <div className="px-4 pb-4 text-gray-700">
@@ -61,7 +61,7 @@ export default function MoneyBenefitsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
             <section className="mb-12">
-              <h2 className="text-[#EF3688] mb-6">Check what you can claim</h2>
+              <h2 className="text-[#bf3688] mb-6">Check what you can claim</h2>
               <p className="text-gray-700 mb-6 text-lg">
                 Many carers don't claim benefits they're entitled to. Use our free benefits calculator to see what you could get.
               </p>
@@ -71,19 +71,19 @@ export default function MoneyBenefitsPage() {
                 <p className="text-gray-700 mb-4">
                   Answer a few questions online and find out which benefits you qualify for. Takes about 10 minutes.
                 </p>
-                <button className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+                <button className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
                   Start benefits calculator
                 </button>
               </div>
             </section>
 
             <section className="mb-12">
-              <h2 className="text-[#EF3688] mb-6">Main benefits for carers</h2>
+              <h2 className="text-[#bf3688] mb-6">Main benefits for carers</h2>
               
               <div className="space-y-6">
                 <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
                   <h3 className="text-gray-900 mb-2">Carer&apos;s Allowance</h3>
-                  <p className="text-[#EF3688] mb-3">£81.90 per week (2024/25)</p>
+                  <p className="text-[#bf3688] mb-3">£81.90 per week (2024/25)</p>
                   <p className="text-gray-700 mb-3">
                     The main benefit for carers. You must care for someone at least 35 hours a week, and they must get certain disability benefits.
                   </p>
@@ -99,7 +99,7 @@ export default function MoneyBenefitsPage() {
                   <p className="text-gray-700 mb-3">
                     You may get up to 100% off your Council Tax if you're on a low income or benefits. Carers sometimes qualify for extra discounts.
                   </p>
-                  <a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener noreferrer" className="text-[#EF3688] hover:underline text-sm">Apply for Council Tax Reduction →</a>
+                  <a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline text-sm">Apply for Council Tax Reduction →</a>
                 </div>
 
                 <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
@@ -107,7 +107,7 @@ export default function MoneyBenefitsPage() {
                   <p className="text-gray-700 mb-3">
                     If you've reached State Pension age and have a low income, Pension Credit tops up your money. Carers can get an extra amount.
                   </p>
-                  <a href="https://www.gov.uk/pension-credit" target="_blank" rel="noopener noreferrer" className="text-[#EF3688] hover:underline text-sm">Check Pension Credit eligibility →</a>
+                  <a href="https://www.gov.uk/pension-credit" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline text-sm">Check Pension Credit eligibility →</a>
                 </div>
               </div>
             </section>
@@ -122,7 +122,7 @@ export default function MoneyBenefitsPage() {
             </Callout>
 
             <section className="my-12">
-              <h2 className="text-[#EF3688] mb-6">Top questions about money and benefits</h2>
+              <h2 className="text-[#bf3688] mb-6">Top questions about money and benefits</h2>
               <div className="space-y-3">
                 {faqs.map((faq, index) => (
                   <FAQ key={index} question={faq.question} answer={faq.answer} />
@@ -134,19 +134,19 @@ export default function MoneyBenefitsPage() {
           <aside className="lg:col-span-1">
             <div className="sticky top-6 space-y-6">
               <div className="bg-[#FFF0F7] p-6 rounded-lg">
-                <h3 className="text-[#EF3688] mb-4">Quick links</h3>
+                <h3 className="text-[#bf3688] mb-4">Quick links</h3>
                 <ul className="space-y-3 text-sm">
-                  <li><a href="https://www.gov.uk/benefits-calculators" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#EF3688]">Benefits calculator</a></li>
-                  <li><a href="https://www.gov.uk/carers-allowance" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#EF3688]">Claim Carer&apos;s Allowance</a></li>
-                  <li><a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#EF3688]">Council Tax Reduction</a></li>
-                  <li><a href="https://www.gov.uk/benefits-advice" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#EF3688]">Book benefits advice appointment</a></li>
+                  <li><a href="https://www.gov.uk/benefits-calculators" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#bf3688]">Benefits calculator</a></li>
+                  <li><a href="https://www.gov.uk/carers-allowance" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#bf3688]">Claim Carer&apos;s Allowance</a></li>
+                  <li><a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#bf3688]">Council Tax Reduction</a></li>
+                  <li><a href="https://www.gov.uk/benefits-advice" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#bf3688]">Book benefits advice appointment</a></li>
                 </ul>
               </div>
 
-              <div className="bg-white border-2 border-[#EF3688] p-6 rounded-lg">
+              <div className="bg-white border-2 border-[#bf3688] p-6 rounded-lg">
                 <h3 className="text-gray-900 mb-3">Financial crisis?</h3>
                 <p className="text-gray-700 text-sm mb-4">If you can't afford food, heating, or essentials:</p>
-                <a href="#/carers/emergency-help" className="text-[#EF3688] hover:underline text-sm">
+                <a href="#/carers/emergency-help" className="text-[#bf3688] hover:underline text-sm">
                   Emergency financial help →
                 </a>
               </div>

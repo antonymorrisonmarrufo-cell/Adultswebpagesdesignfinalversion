@@ -29,7 +29,7 @@ export default function UrgentMentalHealthSupportPage() {
         {/* In an emergency */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-[#bf3688] mb-4">In an emergency</h2>
-          <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-4">
+          <div className="bg-red-50 border-2 border-red-600 p-6 mb-4">
             <p className="text-gray-900 font-bold flex items-center gap-2">
               <AlertTriangle size={20} className="text-red-600" />
               If you or someone else is in immediate danger, call 999.

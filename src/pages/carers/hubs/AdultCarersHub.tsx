@@ -48,7 +48,7 @@ export default function AdultCarersHub() {
       <section className="bg-gray-200 py-12">
         <div className="max-w-7xl mx-auto px-6">
           <section className="mb-12">
-            <h2 className="text-[#EF3688] mb-6 font-bold text-3xl">What support is available?</h2>
+            <h2 className="text-[#bf3688] mb-6 font-bold text-3xl">What support is available?</h2>
             <p className="text-gray-700 mb-8 max-w-4xl text-lg">
               Caring can affect your health, work, relationships, and finances. We offer practical help, emotional support, 
               and connections to local groups. Your assessment is the starting point.
@@ -63,8 +63,8 @@ export default function AdultCarersHub() {
                   href={area.href}
                   className={`p-6 rounded-lg transition-all block shadow-sm ${
                     area.primary 
-                      ? 'bg-[#EF3688] text-white hover:bg-[#bf3688]' 
-                      : 'bg-white border-2 border-gray-200 hover:border-[#EF3688] hover:shadow-lg'
+                      ? 'bg-[#bf3688] text-white hover:bg-[#bf3688]' 
+                      : 'bg-white border-2 border-gray-200 hover:border-[#bf3688] hover:shadow-lg'
                   }`}
                 >
                   <h3 className={`font-bold text-xl ${area.primary ? 'text-white mb-3' : 'text-gray-900 mb-3'}`}>{area.title}</h3>
@@ -72,15 +72,15 @@ export default function AdultCarersHub() {
                     {area.description}
                   </p>
                   <div className="flex justify-end">
-                    <ArrowRight className={`w-5 h-5 ${area.primary ? 'text-white' : 'text-[#EF3688]'}`} />
+                    <ArrowRight className={`w-5 h-5 ${area.primary ? 'text-white' : 'text-[#bf3688]'}`} />
                   </div>
                 </a>
               ))}
             </div>
           </section>
 
-          <section className="bg-white border-2 border-[#EF3688] p-8 rounded-lg mb-12 shadow-sm">
-            <h2 className="text-[#EF3688] mb-4 font-bold text-2xl">Am I eligible for support?</h2>
+          <section className="bg-white border-2 border-[#bf3688] p-8 rounded-lg mb-12 shadow-sm">
+            <h2 className="text-[#bf3688] mb-4 font-bold text-2xl">Am I eligible for support?</h2>
             <div className="space-y-4 text-gray-700 max-w-4xl">
               <p>You may be entitled to a carer&apos;s assessment if you:</p>
               <ul className="list-disc list-inside space-y-2 ml-4">
@@ -89,7 +89,7 @@ export default function AdultCarersHub() {
                 <li>Are over 18 (young carers and parent carers have separate routes)</li>
               </ul>
               <p className="mt-6">
-                <a href="#/carers/assessment" className="inline-flex items-center gap-2 text-[#EF3688] font-bold hover:underline">
+                <a href="#/carers/assessment" className="inline-flex items-center gap-2 text-[#bf3688] font-bold hover:underline">
                   Find out more and request an assessment <ArrowRight className="w-4 h-4" />
                 </a>
               </p>
@@ -97,7 +97,7 @@ export default function AdultCarersHub() {
           </section>
 
           <section>
-            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">Who it's for</h2>
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">Who it's for</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
                 <h3 className="text-gray-900 mb-3 font-bold">Family carers</h3>
