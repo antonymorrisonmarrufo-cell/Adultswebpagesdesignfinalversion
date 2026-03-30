@@ -56,39 +56,23 @@ export default function SafeguardingAdultsProfessionalsPage() {
       <section>
       <h2 className="text-2xl font-bold text-wf-pink">Reporting safeguarding concerns</h2>
       <p className="mt-3 text-wf-dark leading-relaxed">
-      If you believe an adult is at risk of abuse or neglect, you should raise a
-      safeguarding concern with Waltham Forest Council without delay. You can:
+      If you believe an adult is at risk of abuse or neglect, you must raise a
+      safeguarding concern with Waltham Forest Council without delay.
       </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Call:</strong>{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>{" "}
-      (Monday to Friday, 9am to 5pm)
-      </li>
-      <li>
-      <strong>Out of hours:</strong>{" "}
-      <a href="tel:02084963000" className="text-wf-blue underline">
-      020 8496 3000
-      </a>{" "}
-      (Emergency Duty Team)
-      </li>
-      <li>
-      <strong>Online:</strong> Complete the safeguarding concern form on the
-      council website
-      </li>
-      <li>
-      <strong>Email:</strong>{" "}
+      <p className="mt-3 text-wf-dark leading-relaxed font-semibold">
+      For adult safeguarding referrals, professionals must use the online referral form.
+      </p>
+      <div className="mt-4">
       <a
-      href="mailto:socialcaredirect@walthamforest.gov.uk"
-      className="text-wf-blue underline hover:text-wf-green"
+      href="https://safeguardingapp.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
       >
-      socialcaredirect@walthamforest.gov.uk
+      Start professional safeguarding referral
       </a>
-      </li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
+      </div>
+      <p className="mt-4 text-wf-dark leading-relaxed">
       If someone is in immediate danger, call the police on 999.
       </p>
       </section>
@@ -143,20 +127,21 @@ export default function SafeguardingAdultsProfessionalsPage() {
       </ul>
       </section>
 
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Report a concern now</h2>
+      <section className="rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-6">
+      <h2 className="text-xl font-bold text-[#d4351c]">Report a concern now</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      Do not delay reporting a safeguarding concern.
+      Do not delay reporting a safeguarding concern. Professionals must use the online form.
       </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
+      <div className="mt-4">
+      <a
+      href="https://safeguardingapp.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
+      >
+      Start professional safeguarding referral
       </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm. Out of hours: 020 8496 3000
-      </p>
+      </div>
       </section>
       </div>
       </div>
