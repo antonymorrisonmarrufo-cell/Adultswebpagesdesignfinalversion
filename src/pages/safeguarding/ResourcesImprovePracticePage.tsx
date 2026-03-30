@@ -1,198 +1,136 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, FileText, ExternalLink } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+const resources = [
+  {
+    title: 'VAWG training brochure',
+    desc: 'Training opportunities for professionals on violence against women and girls (VAWG), including domestic abuse, sexual violence and other forms of harm.',
+    href: 'https://www.walthamforest.gov.uk/sites/default/files/2024-09/VAWG%20Training%20Brochure%202024-25.pdf',
+    isPdf: true,
+    label: 'Download VAWG training brochure (PDF)',
+  },
+  {
+    title: 'Professional curiosity resource pack',
+    desc: 'A resource to help practitioners develop professional curiosity — looking beyond the obvious and probing further when working with adults at risk.',
+    href: 'https://www.walthamforest.gov.uk/sites/default/files/2022-02/2022%2001%2024%20professional%20curiosity%20resource%20pack%201.2.pdf',
+    isPdf: true,
+    label: 'Download professional curiosity resource pack (PDF)',
+  },
+  {
+    title: "Adults' Threshold Guidance",
+    desc: 'Guidance to help practitioners identify the right level of service or intervention when working with adults who have care and support needs.',
+    href: 'https://www.walthamforest.gov.uk/media/4019',
+    isPdf: true,
+    label: "Download Adults' Threshold Guidance (PDF)",
+  },
+  {
+    title: 'Multi-agency escalation and professional challenge guidance',
+    desc: 'Step-by-step guidance for practitioners on how to escalate concerns and raise professional challenges when they disagree with a decision about an adult.',
+    href: 'https://www.walthamforest.gov.uk/sites/default/files/2026-02/Escalation%20and%20professional%20challenge%20guidance%20-%202026.pdf',
+    isPdf: true,
+    label: 'Download escalation and professional challenge guidance (PDF)',
+  },
+  {
+    title: 'London Safeguarding Children Procedures',
+    desc: 'London-wide procedures for safeguarding children, including learning frameworks and resources for multi-agency practice.',
+    href: 'https://www.londonsafeguardingchildrenprocedures.co.uk/learn_improve_fw.html',
+    isPdf: false,
+    label: 'Visit London Safeguarding Children Procedures',
+  },
+];
 
 export default function ResourcesImprovePracticePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Resources to improve practice</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Resources to improve practice</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Research, case studies, and learning from safeguarding reviews to help professionals improve
-          their safeguarding practice.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/protecting-adults-at-risk" className="hover:underline">Protecting adults at risk of abuse</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/professionals-and-providers" className="hover:underline">Professionals and providers</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/safeguarding-adults-board" className="hover:underline">Safeguarding Adults Board</a>
+          <span className="mx-1">&gt;</span>
+          <span>Resources to improve practice</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+          Resources to improve practice
+        </h1>
+
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Training materials, guidance documents and safeguarding procedures to help practitioners working with adults at risk in Waltham Forest develop their skills and knowledge.
+        </p>
+
+        {/* Resources list */}
+        <div className="max-w-4xl space-y-0">
+          {resources.map((resource, i) => (
+            <div key={i}>
+              <div className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-xl mb-3">{resource.title}</h2>
+                <p className="text-gray-700 mb-6">{resource.desc}</p>
+                <a
+                  href={resource.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                >
+                  {resource.isPdf ? <FileText size={15} className="flex-shrink-0" /> : <ExternalLink size={15} className="flex-shrink-0" />}
+                  {resource.label}
+                  <ArrowRight size={15} />
+                </a>
+              </div>
+              {i < resources.length - 1 && <hr className="border-gray-200" />}
+            </div>
+          ))}
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Learning from SARs */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Learning from Safeguarding Adults Reviews</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Safeguarding Adults Reviews (SARs) are conducted when an adult with care and support needs has
-          died or experienced serious harm, and there is concern that agencies could have worked more
-          effectively together. The purpose is to learn lessons, not to apportion blame.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Key themes emerging from SARs nationally and locally include:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>The importance of professional curiosity - looking beyond the presenting issue and asking questions</li>
-          <li>Effective multi-agency communication and information sharing</li>
-          <li>Understanding and applying the Mental Capacity Act correctly</li>
-          <li>Recognising the impact of self-neglect and knowing when to escalate</li>
-          <li>Ensuring the voice of the adult is heard throughout the process</li>
-          <li>Managing transitions between services and avoiding cases falling through gaps</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          Published SARs from Waltham Forest and other areas are available from the Safeguarding Adults
-          Board. Learning briefings summarising key findings are also circulated to partner agencies.
-          </p>
-          </section>
-
-          {/* Research and evidence */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Research and evidence base</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Keeping up to date with research and evidence is essential for effective safeguarding practice.
-          The following resources provide access to current research and thinking:
-          </p>
-          <ul className="mt-4 space-y-3 text-wf-dark">
-          <li>
-          <a href="https://www.scie.org.uk/safeguarding/adults" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Social Care Institute for Excellence (SCIE) - Safeguarding adults
-          </a>
-          <br />
-          <span className="text-sm text-wf-gray">Research summaries, practice guides, and e-learning resources</span>
-          </li>
-          <li>
-          <a href="https://www.local.gov.uk/topics/social-care-health-and-integration/adult-social-care/adult-safeguarding" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Local Government Association - Adult safeguarding
-          </a>
-          <br />
-          <span className="text-sm text-wf-gray">National resources and case studies for local authorities</span>
-          </li>
-          <li>
-          <a href="https://www.researchinpractice.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Research in Practice for Adults (RiPfA)
-          </a>
-          <br />
-          <span className="text-sm text-wf-gray">Evidence-informed resources for adult social care practitioners</span>
-          </li>
-          </ul>
-          </section>
-
-          {/* Case studies */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Case studies</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Learning from real cases helps professionals to develop their skills and understanding. The
-          following anonymised case studies illustrate common themes and challenges in safeguarding practice:
-          </p>
-
-          <div className="mt-6 space-y-4">
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Self-neglect: working with reluctant engagement</h3>
-          <p className="mt-2 text-wf-dark">
-          An older adult living alone was reported by neighbours due to concerns about hoarding and
-          self-neglect. The case study explores how a multi-agency approach, using relationship-based
-          practice and persistent engagement, led to positive outcomes while respecting the person's
-          autonomy.
-          </p>
+        {/* Also useful */}
+        <div className="max-w-4xl mt-10 pt-10 border-t border-gray-200">
+          <h2 className="text-[#bf3688] font-bold text-xl mb-6">Also useful</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href="#/adult-social-care/professional-guidance"
+              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              <span className="text-gray-900 text-sm font-semibold group-hover:text-[#bf3688] transition-colors">
+                Professional guidance
+              </span>
+              <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors">
+                <ArrowRight className="text-white w-4 h-4" />
+              </div>
+            </a>
+            <a
+              href="#/adult-social-care/safeguarding-adults-board"
+              className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              <span className="text-gray-900 text-sm font-semibold group-hover:text-[#bf3688] transition-colors">
+                Safeguarding Adults Board
+              </span>
+              <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors">
+                <ArrowRight className="text-white w-4 h-4" />
+              </div>
+            </a>
           </div>
-
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Financial abuse: recognising the signs</h3>
-          <p className="mt-2 text-wf-dark">
-          A person with learning disabilities was found to have been financially exploited by a family
-          member over several years. This case study highlights the importance of professional
-          curiosity and how routine financial checks can help identify patterns of abuse.
-          </p>
-          </div>
-
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Organisational abuse: responding to systemic concerns</h3>
-          <p className="mt-2 text-wf-dark">
-          Concerns were raised about the standard of care in a residential setting. This case study
-          demonstrates how a coordinated multi-agency response, including quality monitoring and
-          provider engagement, can address systemic issues and improve outcomes for residents.
-          </p>
-          </div>
-          </div>
-          </section>
-
-          {/* Reflective practice */}
-          <section className="mb-8 mb-0">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Reflective practice</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Reflective practice is a key component of effective safeguarding work. Professionals are
-          encouraged to:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Regularly reflect on their safeguarding practice, both individually and with colleagues</li>
-          <li>Participate in supervision and use it to discuss complex safeguarding cases</li>
-          <li>Attend multi-agency learning events and workshops</li>
-          <li>Share good practice examples with colleagues and partner agencies</li>
-          <li>Consider what they would do differently if faced with a similar situation</li>
-          </ul>
-          </section>
-
-          {/* Useful frameworks */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Useful frameworks and models</h2>
-          <ul className="mt-4 space-y-3 text-wf-dark">
-          <li>
-          <strong>The six safeguarding principles</strong> - empowerment, prevention, proportionality,
-          protection, partnership, and accountability
-          </li>
-          <li>
-          <strong>Making Safeguarding Personal</strong> - a person-centred, outcome-focused approach
-          </li>
-          <li>
-          <strong>Professional curiosity</strong> - the capacity and communication skill to explore
-          and understand what is happening rather than making assumptions
-          </li>
-          <li>
-          <strong>Think Family approach</strong> - considering the needs of the whole family when
-          assessing risk and planning interventions
-          </li>
-          </ul>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/professional-guidance" className="text-wf-blue underline hover:text-wf-green">
-          Professional guidance and resources
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/safeguarding-adults-board" className="text-wf-blue underline hover:text-wf-green">
-          Waltham Forest Safeguarding Adults Board
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
-          Information for professionals
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
-          Safeguarding adults overview
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-4xl mt-10 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

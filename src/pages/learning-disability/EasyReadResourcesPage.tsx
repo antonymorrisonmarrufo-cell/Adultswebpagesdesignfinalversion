@@ -1,183 +1,234 @@
-import { Link } from "react-router-dom";
+import { FileText, ExternalLink } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
 
 export default function EasyReadResourcesPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">
-      Home
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/adult-social-care"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Adult Social Care
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/adult-social-care/learning-disability-support"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Learning disability support
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Easy read resources</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Easy read resources
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
-      Easy read documents use simple words and pictures to make information easier
-      to understand. We provide a range of documents in easy read format to help you
-      learn about our services and your rights.
-      </p>
-        </div>
+    <>
+      <div className="min-h-screen bg-white">
+        <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+            <a href="#" className="hover:underline">Home</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/specialist-services" className="hover:underline">Dementia, disabilities and specialist support</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/learning-disability-support" className="hover:underline">Learning disability support</a>
+            <span className="mx-1">&gt;</span>
+            <span>Easy-read information and resources</span>
+          </nav>
+
+          <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+            {/* H1 */}
+            <h1 className="text-[44px] text-[#231F20] mb-3 font-bold leading-tight">
+              Easy-read information and resources
+            </h1>
+
+            {/* Standfirst */}
+            <p className="text-gray-700 max-w-4xl mb-6 text-lg font-semibold">
+              Find easy-read health information, transition guides, safeguarding resources and other useful documents in one place.
+            </p>
+
+            {/* Primary CTA */}
+            <div className="mb-10">
+              <a
+                href="https://www.walthamforest.gov.uk/schools-education-and-learning/local-offer-special-educational-needs-and-disability-send/preparing-adulthood"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+              >
+                View all easy-read flyers
+              </a>
+            </div>
+
+            {/* Hero image */}
+            <div className="mb-12 max-w-2xl">
+              <img
+                src="/Images/placeholder.svg"
+                alt="An adult with a learning disability and support worker looking at easy-read information together in a library setting"
+                className="w-full h-auto rounded border border-gray-200"
+              />
+            </div>
+
+            <div className="max-w-3xl space-y-12">
+              {/* Health and GP information */}
+              <section>
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-6">Health and GP information</h2>
+                
+                <div className="space-y-6">
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2022-03/EASY%20READ%20Annual%20health%20checks.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Annual health checks (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Easy-read information about annual health checks and why they matter.
+                    </p>
+                  </div>
+
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2022-03/EASY%20READ%20GP%27s%20LD%20Register.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Checking you are on your GP's learning disability register (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Easy-read guide to the GP learning disability register and why being on it can help.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Transition and preparing for adulthood */}
+              <section>
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-6">Transition and preparing for adulthood</h2>
+                
+                <div className="space-y-6">
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2022-05/Waltham%20Forest%20Transition%20Guide%202022.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Waltham Forest Transition Guide 2022 (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Guide for young people, families and professionals about moving into adult life and adult services.
+                    </p>
+                  </div>
+
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/schools-education-and-learning/local-offer-special-educational-needs-and-disability-send/preparing-adulthood"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      Preparing for adulthood resource page
+                      <ExternalLink size={16} className="flex-shrink-0 mt-1" />
+                    </a>
+                    <p className="text-gray-700">
+                      Main page with the current easy-read flyer list and wider preparing-for-adulthood information.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Safety and safeguarding */}
+              <section>
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-6">Safety and safeguarding</h2>
+                
+                <div className="space-y-6">
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20SAFEGUARDING%20AA.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Safeguarding in Waltham Forest (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Easy-read safeguarding leaflet.
+                    </p>
+                  </div>
+
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20Financial%20Abuse%20AA.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Safeguarding adults: financial abuse (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Easy-read information about financial abuse and what the warning signs can look like.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* More specialist resources */}
+              <section>
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-6">More specialist resources</h2>
+                
+                <div className="space-y-6">
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.walthamforest.gov.uk/sites/default/files/2022-03/EASY%20READ%20ctr-at-risk-hospital-adms.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                      Information about joining the at risk of admission register (PDF)
+                    </a>
+                    <p className="text-gray-700">
+                      Easy-read information about the Dynamic Support Register / at risk of admission register.
+                    </p>
+                  </div>
+
+                  <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-6 py-2">
+                    <a
+                      href="https://www.nelft.nhs.uk/community-learning-disability-team-waltham-forest/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-3 text-[#bf3688] font-bold hover:underline text-lg mb-2"
+                    >
+                      Community Learning Disability Team (NELFT)
+                      <ExternalLink size={16} className="flex-shrink-0 mt-1" />
+                    </a>
+                    <p className="text-gray-700">
+                      Main NHS page for the Waltham Forest CLDT.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Need more resources? */}
+              <section>
+                <h2 className="text-gray-900 font-bold text-2xl mb-4">Need more resources?</h2>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  For the full current list of easy-read flyers and related documents, use the Preparing for adulthood resource page.
+                </p>
+                <a
+                  href="https://www.walthamforest.gov.uk/schools-education-and-learning/local-offer-special-educational-needs-and-disability-send/preparing-adulthood"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+                >
+                  View all easy-read flyers
+                </a>
+              </section>
+            </div>
+
+            {/* Metadata */}
+            <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+              <p>Last updated: 27 March 2026</p>
+              <p>Next review: 27 March 2027</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="space-y-10">
-      {/* What is easy read */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What is easy read?</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Easy read is a way of presenting information that makes it accessible to
-      people with learning disabilities and others who find written information
-      difficult to understand.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Easy read documents use:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>Short, simple sentences</li>
-      <li>Everyday words instead of jargon</li>
-      <li>Pictures or symbols alongside the text</li>
-      <li>Large, clear text with plenty of spacing</li>
-      <li>One idea per sentence</li>
-      </ul>
-      </section>
-
-      {/* Available documents */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Available documents</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      The following documents are available in easy read format. You can view them
-      online or download them as PDF files.
-      </p>
-      <div className="mt-4 space-y-4">
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">About our learning disability services</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      An overview of the support available for people with learning disabilities
-      in Waltham Forest.
-      </p>
-      </div>
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">Your assessment and support plan</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      What to expect during a needs assessment and how your support plan works.
-      </p>
-      </div>
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">Your rights and choices</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      Information about your rights under the Care Act 2014, including the right
-      to choose how your support is provided.
-      </p>
-      </div>
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">Housing options</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      The different types of housing and support available, explained in easy
-      read format.
-      </p>
-      </div>
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">Keeping safe from abuse</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      How to recognise abuse and what to do if you or someone you know is being
-      harmed.
-      </p>
-      </div>
-      <div className="rounded-lg border border-gray-200 bg-white p-4">
-      <h3 className="font-semibold text-wf-dark">Making a complaint</h3>
-      <p className="mt-1 text-sm text-wf-gray">
-      How to tell us if you are unhappy with the support you receive.
-      </p>
-      </div>
-      </div>
-      </section>
-
-      {/* Requesting accessible formats */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">
-      Requesting accessible formats
-      </h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      If you need information in a different format, such as large print, audio or
-      another language, please contact us. We will do our best to provide the
-      information in a way that works for you.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Call us on{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>{" "}
-      or ask your social worker or support worker for help.
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related links */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="rounded-lg border border-gray-200 bg-white p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      <li>
-      <Link
-      to="/adult-social-care/learning-disability-support/ask-for-support"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Ask for support
-      </Link>
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/learning-disability-support"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Learning disability support
-      </Link>
-      </li>
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
-      </div>
-    </div>
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

@@ -1,179 +1,303 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function AskForSupportPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">
-      Home
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/adult-social-care"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Adult Social Care
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/adult-social-care/learning-disability-support"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Learning disability support
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Ask for support</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Ask for support
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
-      If you have a learning disability and need support, or you are worried about
-      someone who does, there are several ways to ask for help. You do not need a
-      referral from a professional to contact us.
-      </p>
-        </div>
+    <>
+      <div className="min-h-screen bg-white">
+        <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+            <a href="#" className="hover:underline">Home</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/specialist-services" className="hover:underline">Dementia, disabilities and specialist support</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/learning-disability-support" className="hover:underline">Learning disability support</a>
+            <span className="mx-1">&gt;</span>
+            <span>Ask for support</span>
+          </nav>
+
+          <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+            {/* H1 */}
+            <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+              Ask for learning disability support
+            </h1>
+
+            {/* Standfirst */}
+            <p className="text-gray-700 max-w-4xl mb-6 text-lg font-semibold">
+              Use this page to find out who can get help, how to ask for an assessment, and what happens next.
+            </p>
+
+            {/* Primary CTAs */}
+            <div className="mb-10 flex flex-wrap gap-4">
+              <a
+                href="#/adult-social-care/learning-disability-support/request-support"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+              >
+                Start support request
+                <ArrowRight size={18} />
+              </a>
+              <a
+                href="tel:02089288300"
+                className="inline-flex items-center gap-3 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 font-bold hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+              >
+                <Phone size={18} />
+                Call 020 8928 8300
+              </a>
+            </div>
+
+            {/* Hero image */}
+            <div className="mb-12 max-w-xl">
+              <img
+                src="/Images/placeholder.svg"
+                alt="An adult with a learning disability and a family member sitting together at a kitchen table at home, reviewing simple paperwork"
+                className="w-full h-auto rounded border border-gray-200"
+              />
+            </div>
+
+            <div className="max-w-3xl space-y-0">
+              {/* Contents */}
+              <div className="bg-gray-100 border border-gray-300 p-6 mb-10 shadow-inner">
+                <h2 className="font-bold text-gray-900 mb-4 text-xl">Contents</h2>
+                <ul className="space-y-2">
+                  <li><button onClick={() => scrollTo('who-can-get-help')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Who can get help?</button></li>
+                  <li><button onClick={() => scrollTo('what-support')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">What support can the team provide?</button></li>
+                  <li><button onClick={() => scrollTo('how-to-ask')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">How to ask for support</button></li>
+                  <li><button onClick={() => scrollTo('what-happens')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">What happens after referral?</button></li>
+                  <li><button onClick={() => scrollTo('not-eligible')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">What if I am not eligible?</button></li>
+                  <li><button onClick={() => scrollTo('urgent-help')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Urgent help</button></li>
+                  <li><button onClick={() => scrollTo('related')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Related support</button></li>
+                </ul>
+              </div>
+
+              {/* Who can get help? */}
+              <div id="who-can-get-help" className="pb-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Who can get help?</h2>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  You may be able to get help if:
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    you are aged 18 or over
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    you live in Waltham Forest
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    you have a learning disability that started before adulthood
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    your learning disability has a significant effect on daily life and independence
+                  </li>
+                </ul>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  A learning disability is different from a learning difficulty. For example, dyslexia or ADHD on their own would not usually come under this specialist service.
+                </p>
+                <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6">
+                  <p className="text-gray-900">
+                    If you only need autism support and do not have a learning disability, use the <a href="https://www.walthamforest.gov.uk/schools-education-and-learning/local-offer-special-educational-needs-and-disability-send/information-send-conditions/autism" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">autism route</a> instead.
+                  </p>
+                </div>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* What support can the team provide? */}
+              <div id="what-support" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">What support can the team provide?</h2>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  The Community Learning Disability Team can help with:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    assessment and care planning
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    health and wellbeing support with NHS partners
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    specialist therapies and health input
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    support to stay healthy and independent
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    advice and information for carers and families
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    support to connect with activities and community opportunities
+                  </li>
+                </ul>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* How to ask for support */}
+              <div id="how-to-ask" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">How to ask for support</h2>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  You can ask for support in two ways:
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    complete the online support request form
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    call 020 8928 8300 if you need help to do this
+                  </li>
+                </ul>
+                <a
+                  href="#/adult-social-care/learning-disability-support/request-support"
+                  className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+                >
+                  Start support request
+                  <ArrowRight size={18} />
+                </a>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* What happens after referral? */}
+              <div id="what-happens" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">What happens after referral?</h2>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  After you contact us:
+                </p>
+                <ol className="space-y-3">
+                  <li className="flex gap-3 text-gray-700">
+                    <span className="font-bold text-[#bf3688] flex-shrink-0">1.</span>
+                    <span>We review the information you give us.</span>
+                  </li>
+                  <li className="flex gap-3 text-gray-700">
+                    <span className="font-bold text-[#bf3688] flex-shrink-0">2.</span>
+                    <span>We decide whether the Community Learning Disability Team is the right service.</span>
+                  </li>
+                  <li className="flex gap-3 text-gray-700">
+                    <span className="font-bold text-[#bf3688] flex-shrink-0">3.</span>
+                    <span>If needed, we carry out an assessment.</span>
+                  </li>
+                  <li className="flex gap-3 text-gray-700">
+                    <span className="font-bold text-[#bf3688] flex-shrink-0">4.</span>
+                    <span>We talk with you about the outcomes you want and agree what support may help.</span>
+                  </li>
+                  <li className="flex gap-3 text-gray-700">
+                    <span className="font-bold text-[#bf3688] flex-shrink-0">5.</span>
+                    <span>If you are eligible, we put a plan in place and review it regularly.</span>
+                  </li>
+                </ol>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* What if I am not eligible? */}
+              <div id="not-eligible" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">What if I am not eligible?</h2>
+                <p className="text-gray-700 mb-4 leading-relaxed font-medium">
+                  If this service is not the right route, we should not leave you without help.
+                </p>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  We may signpost you to:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    mainstream adult social care support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    autism support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    day opportunities
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    work and learning support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    community activities
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    other health or social care services
+                  </li>
+                </ul>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Urgent help */}
+              <div id="urgent-help" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Urgent help</h2>
+                <p className="text-gray-900 mb-3">
+                  For urgent social care issues outside working hours, call <a href="tel:02084963130" className="text-[#bf3688] font-bold underline hover:no-underline">020 8496 3130</a>.
+                </p>
+                <p className="text-gray-900 mb-3">
+                  For mental health crisis support, call <strong>111</strong> and press option 2.
+                </p>
+                <p className="text-gray-900">
+                  If there is immediate danger, call <strong>999</strong>.
+                </p>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Related support */}
+              <div id="related" className="pt-10">
+                <h2 className="text-gray-900 font-bold text-2xl mb-4">Related support</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://www.walthamforest.gov.uk/adult-social-care/get-social-care-help/getting-help-social-services" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Getting help from social services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.nelft.nhs.uk/community-learning-disability-team-waltham-forest/" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Community Learning Disability Team (NELFT)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.walthamforest.gov.uk/schools-education-and-learning/local-offer-special-educational-needs-and-disability-send/information-send-conditions/autism" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Autism support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Metadata */}
+            <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+              <p>Last updated: 27 March 2026</p>
+              <p>Next review: 27 March 2027</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="space-y-10">
-      {/* Self-referral */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Self-referral</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      You can refer yourself or someone you care for to our learning disability
-      services. You do not need a GP or professional to make a referral on your
-      behalf.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      To make a self-referral you can:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>
-      Call our Adult Social Care team on{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </li>
-      <li>
-      Complete our{" "}
-      <Link
-      to="/adult-social-care/learning-disability-support/request-support"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      online request form
-      </Link>
-      </li>
-      <li>Visit your local council office and ask to speak to someone about learning disability support</li>
-      </ul>
-      </section>
-
-      {/* What happens next */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What happens next</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Once we receive your request for support, a member of our team will contact
-      you within five working days. They will:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>Talk to you about your situation and what support you need</li>
-      <li>Explain what services are available</li>
-      <li>Let you know if you are eligible for a formal assessment</li>
-      <li>Give you information about other organisations that may be able to help</li>
-      </ul>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      If your needs are urgent, we will try to respond more quickly. If you are in
-      immediate danger, please call 999.
-      </p>
-      </section>
-
-      {/* Assessment process */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">The assessment process</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      If it looks like you may need ongoing support, we will carry out a needs
-      assessment. This is a conversation about your life, your strengths and the
-      areas where you need help.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      During the assessment, a social worker or support worker will:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>Ask you about your daily life and what you find difficult</li>
-      <li>Talk about what is important to you and what your goals are</li>
-      <li>Look at what support you already have from family, friends or other services</li>
-      <li>Discuss the different types of support that could help you</li>
-      </ul>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      You can have a family member, friend or advocate with you during the
-      assessment. We will arrange an interpreter if you need one.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      After the assessment, we will work with you to create a support plan that
-      sets out how your needs will be met. This may include council-funded
-      services, a personal budget, or a combination of different types of support.
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related links */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="rounded-lg border border-gray-200 bg-white p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      <li>
-      <Link
-      to="/adult-social-care/learning-disability-support/request-support"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Request support online
-      </Link>
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/learning-disability-support/support-for-carers-and-families"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Support for carers
-      </Link>
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/learning-disability-support/easy-read-information-and-resources"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Easy read resources
-      </Link>
-      </li>
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
-      </div>
-    </div>
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

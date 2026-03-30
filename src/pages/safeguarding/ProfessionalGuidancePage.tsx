@@ -1,207 +1,172 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, FileText } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+const sections = [
+  {
+    title: 'What to do if you are worried about a vulnerable adult',
+    body: 'Read the council\'s guidance on how to identify a vulnerable adult and what steps to take if you have a concern. Covers who can report, what information to gather, and how to refer.',
+    ctas: [
+      {
+        label: 'Read guidance',
+        href: 'https://www.walthamforest.gov.uk/adult-social-care/protecting-vulnerable-adults/what-do-if-you-are-worried-about-vulnerable-adult',
+        isPdf: false,
+      },
+    ],
+  },
+  {
+    title: 'Procedures for managing allegations related to adults working with adults with care and support needs',
+    body: 'The ALADO procedure sets out the steps organisations must follow when allegations are made against a person in a position of trust working with adults who have care and support needs.',
+    ctas: [
+      {
+        label: 'Read the ALADO procedure (PDF)',
+        href: 'https://www.proceduresonline.com/trixcms/media/2135/alado-procedure-final.pdf',
+        isPdf: true,
+      },
+    ],
+  },
+  {
+    title: 'London multi-agency adult safeguarding policy and procedures',
+    body: 'The London-wide policy and procedures agreed by statutory partners. Sets out how agencies should work together to safeguard adults at risk of abuse or neglect across the capital.',
+    ctas: [
+      {
+        label: 'Read the London procedures (PDF)',
+        href: 'https://www.walthamforest.gov.uk/sites/default/files/2025-01/London-Multi-Agency-Adult-Safeguarding-Policy-Procedures-April-2019.pdf',
+        isPdf: true,
+      },
+    ],
+  },
+  {
+    title: 'Multi-agency escalation and professional challenge guidance',
+    body: 'Guidance for practitioners on how to raise and escalate concerns when they disagree with a professional decision, including step-by-step escalation routes and how to seek a resolution.',
+    ctas: [
+      {
+        label: 'Read the guidance page',
+        href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/multi-agency-escalation-and-professional-challenge-guidance',
+        isPdf: false,
+      },
+      {
+        label: 'Download guidance (PDF)',
+        href: 'https://www.walthamforest.gov.uk/sites/default/files/2026-02/Escalation%20and%20professional%20challenge%20guidance%20-%202026.pdf',
+        isPdf: true,
+      },
+    ],
+  },
+  {
+    title: 'Statutory reviews and One Panel',
+    body: 'Information about Safeguarding Adults Reviews (SARs), Domestic Homicide Reviews (DHRs) and the One Panel approach used in Waltham Forest to oversee statutory learning reviews.',
+    ctas: [
+      {
+        label: 'Read about statutory reviews and One Panel',
+        href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/statutory-reviews-and-one-panel',
+        isPdf: false,
+      },
+    ],
+  },
+  {
+    title: 'Resources to improve practice',
+    body: 'A collection of training materials, threshold guidance, professional curiosity resources and safeguarding procedures to help practitioners develop their skills and understanding.',
+    ctas: [
+      {
+        label: 'Browse resources to improve practice',
+        href: '#/adult-social-care/resources-to-improve-practice',
+        isPdf: false,
+      },
+    ],
+  },
+  {
+    title: 'Annual reports',
+    body: 'Read the Strategic Partnership Boards\' annual reports, setting out what has been achieved, key themes from reviews, and priorities for the year ahead.',
+    ctas: [
+      {
+        label: 'Read annual reports',
+        href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/strategic-partnership-boards-annual-reports',
+        isPdf: false,
+      },
+    ],
+  },
+  {
+    title: 'Strategic Partnerships contacts',
+    body: 'Find contact details for the Strategic Partnerships team, including how to get in touch about the Safeguarding Adults Board, safeguarding reviews and partnership working.',
+    ctas: [
+      {
+        label: 'View contacts',
+        href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/strategic-partnership-boards-contacts',
+        isPdf: false,
+      },
+    ],
+  },
+];
 
 export default function ProfessionalGuidancePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Professional guidance and resources</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Professional guidance and resources</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Practice standards, training opportunities, and toolkits to support professionals working in
-          adult safeguarding in Waltham Forest.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/protecting-adults-at-risk" className="hover:underline">Protecting adults at risk of abuse</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/professionals-and-providers" className="hover:underline">Professionals and providers</a>
+          <span className="mx-1">&gt;</span>
+          <span>Professional guidance</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+          Professional guidance
+        </h1>
+
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Guidance, policies, procedures and resources for professionals working with adults at risk of abuse or neglect in Waltham Forest.
+        </p>
+
+        {/* Sections */}
+        <div className="max-w-4xl space-y-0">
+          {sections.map((section, i) => (
+            <div key={i}>
+              <div className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-xl mb-3">{section.title}</h2>
+                <p className="text-gray-700 mb-6">{section.body}</p>
+                <div className="flex flex-wrap gap-3">
+                  {section.ctas.map((cta, j) => (
+                    <a
+                      key={j}
+                      href={cta.href}
+                      target={cta.href.startsWith('http') ? '_blank' : undefined}
+                      rel={cta.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] ${
+                        j === 0
+                          ? 'bg-[#bf3688] text-white hover:bg-[#a02d73]'
+                          : 'border border-[#bf3688] text-[#bf3688] hover:bg-[#bf3688] hover:text-white'
+                      }`}
+                    >
+                      {cta.isPdf && <FileText size={15} className="flex-shrink-0" />}
+                      {cta.label}
+                      <ArrowRight size={15} />
+                    </a>
+                  ))}
+                </div>
+              </div>
+              {i < sections.length - 1 && <hr className="border-gray-200" />}
+            </div>
+          ))}
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Practice standards */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Practice standards</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          All professionals working with adults at risk in Waltham Forest are expected to follow the
-          London Multi-Agency Adult Safeguarding Policy and Procedures. In addition, the Waltham Forest
-          Safeguarding Adults Board has developed local practice standards that set out the expected
-          quality of safeguarding work.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Key practice standards include:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>
-          <strong>Making Safeguarding Personal</strong> - all safeguarding activity should be
-          person-centred, with the adult's wishes and desired outcomes guiding the response
-          </li>
-          <li>
-          <strong>Timely referrals</strong> - safeguarding concerns should be reported within 24 hours
-          of identification, or immediately if the adult is at imminent risk
-          </li>
-          <li>
-          <strong>Multi-agency working</strong> - effective information sharing and collaboration
-          between agencies to ensure a coordinated response
-          </li>
-          <li>
-          <strong>Recording and documentation</strong> - clear, accurate, and contemporaneous records
-          of all safeguarding activity
-          </li>
-          <li>
-          <strong>Mental capacity</strong> - assessment of mental capacity where there is reason to
-          believe the adult may lack capacity to make decisions about their safety
-          </li>
-          </ul>
-          </section>
-
-          {/* Training */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Training</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Waltham Forest Safeguarding Adults Board provides a range of training opportunities for
-          professionals across all partner agencies. Training is available at different levels depending
-          on your role and responsibilities.
-          </p>
-
-          <div className="mt-6 space-y-4">
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Level 1: Basic awareness</h3>
-          <p className="mt-2 text-wf-dark">
-          For all staff and volunteers. Covers what safeguarding is, how to recognise abuse and
-          neglect, and how to report concerns. Available as an e-learning module.
-          </p>
-          </div>
-
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Level 2: Responding to concerns</h3>
-          <p className="mt-2 text-wf-dark">
-          For staff who may need to respond to safeguarding concerns as part of their role. Covers
-          the referral process, information sharing, and Making Safeguarding Personal.
-          </p>
-          </div>
-
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Level 3: Enquiry managers</h3>
-          <p className="mt-2 text-wf-dark">
-          For professionals who lead or manage safeguarding enquiries. Covers the Section 42 enquiry
-          process, risk assessment, safeguarding planning, and complex case management.
-          </p>
-          </div>
-
-          <div className="rounded-md bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Specialist topics</h3>
-          <p className="mt-2 text-wf-dark">
-          Workshops and seminars on specific topics such as self-neglect, modern slavery, domestic
-          abuse, financial abuse, mental capacity, and organisational abuse.
-          </p>
-          </div>
-          </div>
-
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          For details of upcoming training sessions, please contact the SAB business unit or check the
-          Waltham Forest learning and development portal.
-          </p>
-          </section>
-
-          {/* Toolkits */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Toolkits and frameworks</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The following toolkits and frameworks are available to support professionals in their
-          safeguarding practice:
-          </p>
-          <ul className="mt-4 space-y-3 text-wf-dark">
-          <li>
-          <strong>Self-neglect and hoarding toolkit</strong> - guidance on working with adults who
-          self-neglect, including risk assessment tools and multi-agency escalation pathways
-          </li>
-          <li>
-          <strong>Financial abuse toolkit</strong> - guidance on identifying and responding to financial
-          abuse, including scams targeting vulnerable adults
-          </li>
-          <li>
-          <strong>Mental capacity assessment guidance</strong> - a step-by-step guide to carrying out
-          capacity assessments in safeguarding contexts
-          </li>
-          <li>
-          <strong>Safeguarding adults risk assessment framework</strong> - a structured approach to
-          assessing and managing risk in safeguarding cases
-          </li>
-          <li>
-          <strong>Information sharing protocol</strong> - guidance on lawful information sharing between
-          agencies in safeguarding situations
-          </li>
-          </ul>
-          </section>
-
-          {/* Policies and procedures */}
-          <section className="mb-8 mb-0">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Key policies and procedures</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <a href="https://londonadass.org.uk/safeguarding/policy-and-procedures/" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          London Multi-Agency Adult Safeguarding Policy and Procedures
-          </a>
-          </li>
-          <li>
-          <a href="https://www.legislation.gov.uk/ukpga/2014/23/contents/enacted" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care Act 2014
-          </a>
-          </li>
-          <li>
-          <a href="https://www.gov.uk/government/publications/care-act-statutory-guidance" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care and Support Statutory Guidance (Chapter 14: Safeguarding)
-          </a>
-          </li>
-          <li>
-          <a href="https://www.legislation.gov.uk/ukpga/2005/9/contents" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Mental Capacity Act 2005
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
-          Information for professionals
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/resources-to-improve-practice" className="text-wf-blue underline hover:text-wf-green">
-          Resources to improve practice
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/safeguarding-adults-board" className="text-wf-blue underline hover:text-wf-green">
-          Waltham Forest Safeguarding Adults Board
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/marac" className="text-wf-blue underline hover:text-wf-green">
-          MARAC - Multi-Agency Risk Assessment Conference
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* Metadata */}
+        <div className="max-w-4xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
         </div>
-      </div>
-    </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

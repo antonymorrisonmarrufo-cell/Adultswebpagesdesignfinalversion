@@ -1,120 +1,90 @@
-import { Link } from "react-router-dom";
+import CarersHero from '../../../components/carers/CarersHero';
+import Callout from '../../../components/carers/Callout';
+import Stepper from '../../../components/carers/Stepper';
+import Chip from '../../../components/carers/Chip';
+
+const steps = [
+  {
+    number: 1,
+    title: 'Tell us about yourself',
+    description: 'Share what caring is like for you. You can speak to us confidentially — we won\'t tell anyone without your permission unless we\'re worried about your safety.'
+  },
+  {
+    number: 2,
+    title: 'We listen and understand',
+    description: 'We\'ll talk about what would help make things easier. This might be time for yourself, help at school, or someone to talk to.'
+  },
+  {
+    number: 3,
+    title: 'Get the right support',
+    description: 'We can connect you with activities, groups, counselling, or practical help. Everything is designed to fit around your life and caring.'
+  },
+  {
+    number: 4,
+    title: 'Check in regularly',
+    description: 'We\'ll keep in touch to make sure you\'re getting what you need. You can always reach out if things change.'
+  }
+];
 
 export default function YoungCarersHub() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer/carers-hub" className="text-wf-blue underline hover:text-wf-green">Carers Hub</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Young carers hub</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Young carers hub</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          A dedicated space for young carers in Waltham Forest. A place where you can have fun, make friends,
-          get support, and just be yourself.
-          </p>
+    <>
+      <CarersHero 
+        title="Young Carers (0–18)"
+        description="If you care for someone at home — a parent, brother, sister, or someone else — you deserve support too. Get help to balance caring with school, friends, and your own life."
+        chips={['YC', 'Get a carer\'s assessment']}
+        urgentLink={{ text: 'Need urgent help?', href: '#/carers/emergency-help' }}
+      />
+
+      <section className="bg-gray-200 py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <Callout type="warning" title="Your safety matters">
+            <p>If you feel unsafe or too much is being asked of you, tell a trusted adult straight away. You can also call Childline on <a href="tel:0800 1111" className="text-[#EF3688] font-bold hover:underline">0800 1111</a> any time, day or night.</p>
+          </Callout>
+
+          <Callout type="info" title="We keep things confidential">
+            <p>Everything you tell us stays private unless we're worried you might be in danger. If we need to speak to someone else, we'll talk to you about it first.</p>
+          </Callout>
+
+          <section className="my-12">
+            <h2 className="text-[#EF3688] mb-8 font-bold text-3xl">How we can help you (step by step)</h2>
+            <Stepper steps={steps} />
+          </section>
+
+          <section className="my-12 bg-white border-2 border-[#EF3688] p-8 rounded-lg shadow-sm">
+            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">Get help now</h2>
+            <p className="text-gray-700 mb-6">
+              You don't need permission from your parent or guardian to talk to us. Call, email, or fill in our online form — whatever feels easiest.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a href="#/carers/assessment" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+                Request a young carer's assessment
+              </a>
+              <a href="#/carers/contacts" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+                Find local young carers groups
+              </a>
+            </div>
+          </section>
+
+          <section className="my-12">
+            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">What young carers tell us helps most</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-gray-900 mb-3 font-bold">Time for me</h3>
+                <p className="text-gray-700">Activities, trips and groups where you can relax and be yourself.</p>
+              </div>
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-gray-900 mb-3 font-bold">Someone to talk to</h3>
+                <p className="text-gray-700">Counselling or mentoring with people who understand caring.</p>
+              </div>
+              <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                <h3 className="text-gray-900 mb-3 font-bold">Help at school</h3>
+                <p className="text-gray-700">Support with homework, exams, or talking to teachers about your situation.</p>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* What we offer */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What the young carers hub offers</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The young carers hub is a safe and fun space for children and young people who care for someone
-          in their family. Here you can:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Meet other young carers</strong> - make friends with people who understand what it is like</li>
-          <li><strong>Join fun activities</strong> - sports, arts, games, cooking, and trips out</li>
-          <li><strong>Talk to someone</strong> - trusted workers who are there to listen and help</li>
-          <li><strong>Get help with school</strong> - homework support and advocacy with your school</li>
-          <li><strong>Learn new skills</strong> - workshops and training designed for young people</li>
-          <li><strong>Have time for yourself</strong> - a break from caring to do things you enjoy</li>
-          </ul>
-          </section>
-
-          {/* Regular sessions */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Regular sessions</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          We run regular sessions for different age groups:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Junior group (8-12)</strong> - after-school sessions with age-appropriate activities</li>
-          <li><strong>Senior group (13-17)</strong> - evening sessions with activities chosen by the group</li>
-          <li><strong>Holiday programme</strong> - full-day activities during school holidays, including day trips</li>
-          <li><strong>Young adult carers (16-25)</strong> - sessions for older young carers transitioning to adulthood</li>
-          </ul>
-          </section>
-
-          {/* How to join */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to join</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are a young carer, or you know a young person who cares for someone, you can join the
-          young carers hub by:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Calling us on <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a></li>
-          <li>Asking a teacher, school nurse, or GP to refer you</li>
-          <li>Visiting the Carers Hub with a parent or guardian</li>
-          <li>Asking a social worker to make a referral</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          All activities are free. We can help with transport if you need it.
-          </p>
-          </section>
-
-          {/* Young carers rights */}
-          <section className="mb-8 rounded-md bg-white p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights as a young carer</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          As a young carer, you have the right to a young carers assessment. This looks at how caring affects
-          your life, your education, and your wellbeing. It can lead to support for you and your family to
-          make sure you are not doing more than is appropriate for your age.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/being-carer/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/young-carers" className="text-wf-blue underline hover:text-wf-green">
-          Young carers
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.childrenssociety.org.uk/what-we-do/our-work/supporting-young-carers" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          The Children's Society - young carers
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

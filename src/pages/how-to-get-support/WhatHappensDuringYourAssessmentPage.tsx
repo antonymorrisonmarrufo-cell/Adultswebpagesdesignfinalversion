@@ -1,160 +1,150 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
-  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
-];
-
 export default function WhatHappensDuringYourAssessmentPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">What happens during your assessment</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      What happens during your assessment
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/how-to-get-support" className="hover:underline">How to get support</a>
+          <span className="mx-1">&gt;</span>
+          <span>What happens during your assessment</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          What happens during your assessment
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Your assessment is a conversation about your daily life. We want to understand what you can do, what you find difficult, and what kind of support would help.
+        </p>
+
+        {/* How the assessment works */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How the assessment works</h2>
+          <p className="text-gray-700">
+            Your assessment can take place face to face at your home, over the phone, or by video call. A social care professional from the council will carry out the assessment. If your needs involve health services, an NHS professional may also be involved.
+          </p>
+        </section>
+
+        {/* What we will talk about */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What we will talk about</h2>
+          <p className="text-gray-700 mb-4">
+            The assessment covers your daily life. We will ask about:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Any physical needs, such as difficulty washing, dressing, preparing meals, or getting around</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Your mental and emotional wellbeing, such as your memory, mood, or how you are coping</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Things that are important to you, such as spending time with family, attending activities, or getting to appointments</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Any support you already receive from family, friends, or other services</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Your home environment and whether it is safe and suitable</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>What you would like to achieve and what a good day looks like for you</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            We will also talk about your strengths — what you can do, not just what you find difficult. We want to understand the full picture so we can recommend the right kind of support.
+          </p>
+        </section>
+
+        {/* How long it takes */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How long it takes</h2>
+          <p className="text-gray-700">
+            A straightforward assessment usually takes around an hour. If your needs are more complex, it may take longer or involve more than one conversation. If your situation is urgent, we will prioritise your assessment.
+          </p>
+        </section>
+
+        {/* What happens afterwards */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens afterwards</h2>
+          <p className="text-gray-700 mb-4">
+            After your assessment, we will write to you with the outcome. The letter will explain:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Whether you have eligible care and support needs</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>If you are eligible, what happens next — including creating a care and support plan and carrying out a financial assessment to work out whether you need to contribute towards the cost</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>If you are not eligible, why that decision was made and what other support is available to you locally</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            If you disagree with the outcome, you can ask us to reconsider. We will tell you how to do this in the letter.
+          </p>
+        </section>
+
+        {/* If you are not eligible */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you are not eligible</h2>
+          <p className="text-gray-700">
+            If your assessment shows that you do not have eligible needs, we will still help. We will give you information and advice about community services, voluntary organisations, equipment, and other support that you can arrange yourself. You can ask for another assessment at any time if your situation changes.
+          </p>
+        </section>
+
+        {/* Callout box */}
+        <div className="bg-gray-100 border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-12">
+          <p className="text-gray-900">
+            The assessment is always free. It does not commit you to receiving services or paying anything. It is simply a way to understand your situation and your options.
+          </p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" className="text-[#bf3688] hover:underline">
+                Getting your care and support plan
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/request-an-assessment" className="text-[#bf3688] hover:underline">
+                Request an assessment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care" className="text-[#bf3688] hover:underline">
+                Paying for your care
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      A care needs assessment is a conversation between you and a social care
-      professional. It is designed to understand your situation, what matters
-      to you and how we can help you live as independently as possible.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">The assessment process</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      During the assessment, a social worker or trained assessor will talk with
-      you about your daily life. They will ask about:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Your physical and mental health conditions</li>
-      <li>How you manage everyday tasks such as washing, dressing, cooking and cleaning</li>
-      <li>Your ability to get around, both at home and in the community</li>
-      <li>Your relationships, social life and emotional wellbeing</li>
-      <li>Any risks to your safety or wellbeing</li>
-      <li>What support you already receive, including from family or friends</li>
-      <li>Your goals, wishes and what a good life looks like for you</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">How to prepare</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You do not need to do anything special to prepare, but you may find it
-      helpful to:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Think about the things you find difficult and when you most need help</li>
-      <li>Make a list of any medications you take</li>
-      <li>Gather information about your health conditions and any appointments</li>
-      <li>Ask a family member, friend or advocate to be with you during the assessment</li>
-      <li>Write down any questions you want to ask</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You have the right to have someone with you during the assessment. If you
-      do not have anyone, we can arrange an independent advocate to support you.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Possible outcomes</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      After the assessment, the assessor will determine whether you have eligible
-      needs under the Care Act 2014. The possible outcomes are:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Eligible needs identified:</strong> You will receive a care and
-      support plan setting out how your needs will be met, including a personal
-      budget
-      </li>
-      <li>
-      <strong>Needs identified but not eligible:</strong> You will be given
-      information and advice about other support available in the community
-      </li>
-      <li>
-      <strong>No current needs:</strong> You will be given information about
-      how to contact us in the future if your situation changes
-      </li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Whatever the outcome, you will receive a written copy of the assessment
-      and a clear explanation of the decision. If you disagree with the outcome,
-      you have the right to ask for a review.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If you have questions about the assessment process, our team is here to help.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
+
       </div>
     </div>
   );

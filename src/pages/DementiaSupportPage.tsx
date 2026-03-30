@@ -1,200 +1,153 @@
-import { Link } from "react-router-dom";
+import { ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../components/FeedbackBanner';
+import FeedbackSection from '../components/FeedbackSection';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
-const cards = [
+const featuredCards = [
   {
-    title: "Getting help and support",
-    description:
-      "Find out what local support services are available, including the Dementia Hub, adviser service, and when to see your GP.",
-    to: "/adult-social-care/specialist-services/dementia/get-help",
+    title: 'Get help with dementia',
+    description: 'Guidance for anyone worried about memory, anyone with a dementia diagnosis, and family or friends who help.',
+    additionalText: 'Find out what to do, who to contact and how we can help.',
+    link: 'Learn more',
+    href: '#/adult-social-care/specialist-services/dementia/get-help',
+    imageUrl: 'https://images.unsplash.com/photo-1738454738501-7e6626ccfcd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGRlcmx5JTIwcGVyc29uJTIwc3VwcG9ydCUyMGRlbWVudGlhJTIwY2FyZXxlbnwxfHx8fDE3NzQ2MDcxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080'
   },
   {
-    title: "Hornbeam Dementia Hub",
-    description:
-      "A welcoming centre offering information, activities and support for people living with dementia and their carers.",
-    to: "/adult-social-care/specialist-services/dementia/hub",
+    title: 'Waltham Forest Dementia Hub',
+    description: 'The Dementia Hub is based in Leyton. It is a focal point for dementia support within the borough.',
+    additionalText: 'The hub provides a variety of activities and information from different organisations.',
+    link: 'Learn more',
+    href: '#/adult-social-care/specialist-services/dementia/hub',
+    imageUrl: 'https://images.unsplash.com/photo-1751977979590-3554dd691c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBncm91cCUyMG1lZXRpbmclMjBlbGRlcmx5JTIwcGVvcGxlfGVufDF8fHx8MTc3NDYwNzEyMHww&ixlib=rb-4.1.0&q=80&w=1080'
+  }
+];
+
+const topicsInSection = [
+  {
+    title: 'NHS Memory Service (assessment and diagnosis )',
+    description: 'Specialist assessment via your GP.',
+    href: '#/adult-social-care/specialist-services/dementia/memory-service'
   },
   {
-    title: "Activities and social groups",
-    description:
-      "Singing for the Brain, art therapy, exercise classes, lunch clubs and other activities in Waltham Forest.",
-    to: "/adult-social-care/specialist-services/dementia/activities",
+    title: 'Activities and day support',
+    description: 'Cognitive stimulation, Ageing Well sessions, day centres and more.',
+    href: '#/adult-social-care/specialist-services/dementia/activities'
   },
   {
-    title: "Memory assessment service",
-    description:
-      "Learn what to expect from a memory assessment, how to get referred and what happens during the process.",
-    to: "/adult-social-care/specialist-services/dementia/memory-service",
+    title: 'Dementia Adviser (Alzheimer\'s Society)',
+    description: 'One- to- one guidance after diagnosis and when things change.',
+    href: '#/adult-social-care/specialist-services/dementia/adviser'
   },
   {
-    title: "Dementia adviser service",
-    description:
-      "One-to-one support from a dedicated adviser who can help you navigate life after a dementia diagnosis.",
-    to: "/adult-social-care/specialist-services/dementia/adviser",
+    title: 'Intensive Dementia Outreach Service (IDOS)',
+    description: 'Group sessions and home- visiting support; eligibility and referrals.',
+    href: '#/adult-social-care/specialist-services/dementia/idos'
   },
   {
-    title: "iDOS - online dementia resources",
-    description:
-      "Digital tools, apps and online support to help people with dementia and their carers.",
-    to: "/adult-social-care/specialist-services/dementia/idos",
+    title: 'Help for carers of people with dementia',
+    description: 'Local help from Carers First and our carers section.',
+    href: '#/adult-social-care/specialist-services/dementia/carers'
   },
   {
-    title: "Support for carers",
-    description:
-      "Respite care, support groups, and practical help for those caring for someone with dementia, including carers assessments.",
-    to: "/adult-social-care/specialist-services/dementia/carers",
-  },
-  {
-    title: "Planning for the future",
-    description:
-      "Guidance on lasting power of attorney, advance care planning, wills and other important decisions.",
-    to: "/adult-social-care/specialist-services/dementia/planning-ahead",
-  },
+    title: 'Planning ahead and end of life care',
+    description: 'Plan ahead for your care and decisions.',
+    href: '#/adult-social-care/specialist-services/dementia/planning-ahead'
+  }
+];
+
+const relatedInfo = [
+  { title: 'Request an assessment', href: 'https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b' },
+  { title: 'Support for carers', href: '#/adult-social-care/support-for-carers' },
+  { title: 'Travel and transport', href: '#/adult-social-care/travel-and-transport' }
 ];
 
 export default function DementiaSupportPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">
-      Home
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Adult Social Care
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Dementia support</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Dementia support
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
-      Waltham Forest Council provides a range of services and support for people
-      living with dementia and their families. Whether you have recently received a
-      diagnosis or have been living with dementia for some time, we are here to help.
-      </p>
+    <>
+      <section className="bg-gray-200 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6">
+            <a href="#" className="hover:underline">Home</a> &gt; 
+            <a href="#/adult-social-care" className="hover:underline"> Adult social care</a> &gt; 
+            <a href="#/adult-social-care/specialist-services" className="hover:underline"> Dementia, disabilities and specialist support</a> &gt; 
+            <span> Dementia support</span>
+          </nav>
+
+          <h1 className="text-5xl text-[#231F20] mb-6 font-bold leading-tight">Dementia support</h1>
+          
+          <p className="text-gray-700 max-w-4xl mb-12 text-base">
+            Get help if you're worried about memory, have a diagnosis, or support someone with dementia. Find local services, step- by- steps, activities and who to contact .
+          </p>
+
+          {/* Featured Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+            {featuredCards.map((card, index) => (
+              <div key={index} className="border-2 border-[#bf3688] bg-white p-6 flex flex-col shadow-sm">
+                <div className="flex flex-col lg:flex-row gap-6">
+                  <div className="flex-1 pr-12">
+                    <h3 className="text-[#bf3688] mb-3 font-bold">{card.title}</h3>
+                    <p className="text-gray-700 text-sm mb-2">{card.description}</p>
+                    <p className="text-gray-700 text-sm mb-4">{card.additionalText}</p>
+                    <a href={card.href} className="text-[#bf3688] text-sm font-semibold hover:underline">
+                      {card.link}
+                    </a>
+                  </div>
+                  <div className="lg:w-48 flex-shrink-0">
+                    <ImageWithFallback 
+                      src={card.imageUrl} 
+                      alt={card.title}
+                      className="w-full h-48 object-cover rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Topics in this section */}
+          <h2 className="text-[#bf3688] mb-8 font-bold">Topics in this section</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {topicsInSection.map((topic, index) => (
+              <a 
+                key={index}
+                href={topic.href}
+                className="bg-white border border-gray-200 p-6 pb-20 hover:shadow-md transition-shadow flex flex-col justify-between relative"
+              >
+                <div className="pr-12">
+                  <h3 className="text-[#bf3688] mb-3 font-bold text-base">{topic.title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{topic.description}</p>
+                </div>
+                <div className="absolute right-6 bottom-6">
+                  <div className="w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center text-white hover:bg-[#a02d73] transition-colors">
+                    <ArrowRight className="w-5 h-5" />
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Related information */}
+          <h2 className="text-[#bf3688] mb-8 font-bold">Related information</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {relatedInfo.map((info, index) => (
+              <a
+                key={index}
+                href={info.href}
+                className="bg-[#bf3688] text-white p-6 flex items-center justify-between hover:bg-[#a02d73] transition-colors group relative pr-20"
+              >
+                <span className="pr-4 font-semibold">{info.title}</span>
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#bf3688] flex-shrink-0 absolute right-6">
+                  <ArrowRight className="w-5 h-5" />
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Cards grid */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="grid gap-6 sm:grid-cols-2">
-      {cards.map((card) => (
-      <Link
-      key={card.to}
-      to={card.to}
-      className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-      >
-      <h3 className="text-base font-bold text-[#bf3688] mb-2">
-      {card.title}
-      </h3>
-      <p className="text-sm text-[#231F20] flex-1">
-      {card.description}
-      </p>
-      <div className="flex justify-end mt-4">
-        <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-        </div>
-      </div>
-      </Link>
-      ))}
-      </div>
-      </div>
-
-      {/* Contact banner */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Need help now?</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If you are worried about your memory or the memory of someone you know,
-      speak to your GP. You can also contact the services below for advice
-      and support.
-      </p>
-
-      <div className="mt-4 space-y-3">
-      <div>
-      <p className="text-sm font-semibold text-wf-dark">
-      Hornbeam Dementia Hub
-      </p>
-      <p className="text-sm text-wf-dark">
-      Drop in for information, activities and support at the{" "}
-      <Link to="/adult-social-care/specialist-services/dementia/hub" className="text-wf-blue underline">
-      Dementia Hub
-      </Link>
-      .
-      </p>
-      </div>
-
-      <div>
-      <p className="text-sm font-semibold text-wf-dark">
-      Dementia adviser service
-      </p>
-      <p className="text-sm text-wf-dark">
-      Get one-to-one support from a dedicated{" "}
-      <Link to="/adult-social-care/specialist-services/dementia/adviser" className="text-wf-blue underline">
-      dementia adviser
-      </Link>
-      .
-      </p>
-      </div>
-
-      <div>
-      <p className="text-sm font-semibold text-wf-dark">
-      Adult Social Care team
-      </p>
-      <p className="text-sm text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </div>
-
-      <div>
-      <p className="text-sm font-semibold text-wf-dark">
-      Alzheimer's Society national helpline
-      </p>
-      <p className="text-sm text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:03331503456" className="text-wf-blue underline">
-      0333 150 3456
-      </a>
-      </p>
-      <p className="text-sm text-wf-gray">
-      Open every day, including weekends and bank holidays
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
-      </div>
-    </div>
+      </section>
+      
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

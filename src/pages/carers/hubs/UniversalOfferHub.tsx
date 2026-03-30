@@ -1,125 +1,105 @@
-import { Link } from "react-router-dom";
+import CarersHero from '../../../components/carers/CarersHero';
+import { ArrowRight } from 'lucide-react';
+
+const audiences = [
+  {
+    title: 'Former carers',
+    description: 'Your caring role has ended but you may still need support to rebuild your life, find work, or deal with grief.',
+    links: ['After caring support', 'Bereavement counselling', 'Back to work programmes']
+  },
+  {
+    title: 'Working carers',
+    description: 'Practical help to stay in employment while caring, including rights, flexible working, and work/life balance.',
+    links: ['Know your rights at work', 'Flexible working', 'Carer-friendly employers']
+  },
+  {
+    title: 'Older carers (65+)',
+    description: 'Support for older people who care, including health checks, falls prevention, and planning for the future.',
+    links: ['Health checks for carers', 'Future planning', 'Emergency backup']
+  }
+];
 
 export default function UniversalOfferHub() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer/carers-hub" className="text-wf-blue underline hover:text-wf-green">Carers Hub</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Universal offer</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Universal offer for carers</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          The universal offer is the support that is available to all carers in Waltham Forest, regardless
-          of whether you have had a carers assessment. You do not need to meet any eligibility criteria.
-          </p>
+    <>
+      <CarersHero 
+        title="Universal Offer"
+        description="Advice and support for all carers, including those in work, older carers, and people whose caring role has ended. Quick access to information without needing a full assessment."
+        chips={['UO']}
+      />
+
+      <section className="bg-gray-200 py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <section className="mb-12">
+            <h2 className="text-[#EF3688] mb-6 font-bold text-3xl">Quick advice for all carers</h2>
+            <p className="text-gray-700 mb-8 max-w-4xl text-lg">
+              You don't always need a full assessment to get help. Use these quick links to find information, 
+              download guides, and connect with services.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {['Carer\'s handbook', 'Benefits checker', 'Local groups', 'Emergency plan template'].map((item, index) => (
+                <a 
+                  key={index}
+                  href="#"
+                  className="bg-white border-2 border-gray-200 p-4 rounded-lg hover:border-[#EF3688] hover:shadow-md transition-all text-center shadow-sm"
+                >
+                  <span className="text-gray-900 font-semibold">{item}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-[#EF3688] mb-8 font-bold text-2xl">Support for specific groups</h2>
+            <div className="space-y-6">
+              {audiences.map((audience, index) => (
+                <div key={index} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#EF3688] transition-colors shadow-sm">
+                  <h3 className="text-gray-900 mb-3 font-bold text-xl">{audience.title}</h3>
+                  <p className="text-gray-700 mb-4">{audience.description}</p>
+                  <div className="flex flex-wrap gap-3">
+                    {audience.links.map((link, idx) => (
+                      <a 
+                        key={idx}
+                        href="#"
+                        className="inline-flex items-center gap-2 text-[#EF3688] font-semibold hover:underline text-sm"
+                      >
+                        {link} <ArrowRight className="w-4 h-4" />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section className="bg-white border-2 border-[#EF3688] p-8 rounded-lg shadow-sm">
+            <h2 className="text-[#EF3688] mb-4 font-bold text-2xl">Find work after caring</h2>
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              Many carers take time out of work. When you're ready to return, we can connect you with job search support, 
+              skills training, CV workshops, and carer-friendly employers in Waltham Forest.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a href="#" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+                Book a careers appointment
+              </a>
+              <a href="#" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+                Download: Skills for carers
+              </a>
+            </div>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-[#EF3688] mb-6 font-bold text-2xl">Still need help?</h2>
+            <p className="text-gray-700 mb-6 max-w-4xl">
+              If you need more than quick advice, you can request a full carer&apos;s assessment or contact us for one-to-one support.
+            </p>
+            <a href="#/carers/assessment" className="inline-flex items-center gap-2 text-[#EF3688] font-bold hover:underline">
+              Request a carer&apos;s assessment <ArrowRight className="w-4 h-4" />
+            </a>
+          </section>
         </div>
-      </div>
-
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* What is included */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is included in the universal offer</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The following support is available to any carer in Waltham Forest, without the need for an assessment:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Information and advice</strong> - about your rights, local services, benefits, and support options</li>
-          <li><strong>Carers Hub drop-in sessions</strong> - come in for a chat, a cup of tea, and informal advice</li>
-          <li><strong>Carer support groups</strong> - meet other carers in a supportive environment</li>
-          <li><strong>Carer emergency card</strong> - a card to carry so emergency services know you are a carer</li>
-          <li><strong>Training and workshops</strong> - free courses on practical caring skills</li>
-          <li><strong>Wellbeing activities</strong> - mindfulness, exercise classes, and social events</li>
-          <li><strong>Signposting</strong> - to local and national organisations that can help</li>
-          <li><strong>Newsletter</strong> - regular updates about carer services and events</li>
-          </ul>
-          </section>
-
-          {/* Who can access */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who can access the universal offer</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The universal offer is for everyone who cares for someone in Waltham Forest. This includes:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Adult carers of any age</li>
-          <li>Parent carers of children with disabilities</li>
-          <li>Young carers (with age-appropriate activities)</li>
-          <li>Former carers who may still need support</li>
-          <li>People who are not sure if they are a carer</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You do not need to be registered as a carer, and you do not need a referral. Simply get in touch
-          or visit the Carers Hub.
-          </p>
-          </section>
-
-          {/* Beyond universal */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Need more support?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you need more support than the universal offer provides, you can request a carers assessment.
-          This will look at your specific needs and may lead to additional support such as direct payments,
-          respite care, or specialist services.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          <Link to="/adult-social-care/being-carer/carers-assessment-and-rights" className="text-wf-blue underline hover:text-wf-green">
-          Find out about carers assessments and your rights
-          </Link>
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Get started</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To find out more about the universal offer, visit the Carers Hub or call us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/being-carer/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/support-for-carers" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/ia-flow" className="text-wf-blue underline hover:text-wf-green">
-          Information and advice flow
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

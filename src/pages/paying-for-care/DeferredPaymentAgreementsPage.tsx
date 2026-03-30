@@ -1,170 +1,284 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Paying for a care home", to: "/adult-social-care/paying-for-care/paying-for-a-care-home" },
-  { title: "How care costs are worked out", to: "/adult-social-care/paying-for-care/how-care-costs-are-worked-out" },
-  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
-  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
-];
+import { ArrowRight, Phone, AlertCircle } from 'lucide-react';
 
 export default function DeferredPaymentAgreementsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Deferred payment agreements</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Deferred payment agreements</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          A deferred payment agreement means you do not have to sell your home in your
-          lifetime to pay for residential care. The council effectively lends you the
-          money, secured against your property.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/paying-for-care" className="hover:underline">Paying for your care</a>
+          <span className="mx-1">&gt;</span>
+          <span>Deferred payment agreements</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Deferred payment agreements
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you own your home and need to move permanently into a care home, a deferred payment agreement may help you pay for your care without having to sell your home straight away.
+        </p>
+
+        {/* What a deferred payment agreement is */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What a deferred payment agreement is</h2>
+          <p className="text-gray-700 mb-4">
+            A deferred payment agreement is an arrangement between you and the council. The council pays part of your care home fees on your behalf, and in return places a legal charge against your property (similar to a mortgage). The amount the council pays builds up as a debt, which is repaid later — usually when the property is sold, or from your estate after your death.
           </p>
+          <p className="text-gray-700">
+            This means you do not have to sell your home during your lifetime to pay for care. You can also choose to repay the debt from another source at any time.
+          </p>
+        </section>
+
+        {/* Who is eligible */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who is eligible</h2>
+          <p className="text-gray-700 mb-4">
+            Under the Care Act 2014, the council has a duty to offer a deferred payment agreement to everyone who meets the eligibility criteria. To be eligible, you must:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li>Have been assessed by Adult Social Care as needing to move permanently into a care home</li>
+            <li>Have non-property capital (savings, investments, and other assets excluding the value of your home) of less than £23,250</li>
+            <li>Own or have part legal ownership of a property that would be included in your financial assessment</li>
+            <li>Have agreement from all parties with a legal interest in the property to enter the scheme</li>
+            <li>Ensure the property is registered with the Land Registry (if it is not, you must arrange this at your own expense)</li>
+            <li>Have no other beneficial interests on the property that would prevent a legal charge being placed on it (for example, an outstanding mortgage or equity release)</li>
+          </ul>
+        </section>
+
+        {/* The 12-week property disregard */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">The 12-week property disregard</h2>
+          <p className="text-gray-700">
+            When you first move into permanent residential care, the value of your property is not counted in your financial assessment for the first 12 weeks. During this period, you will only need to pay a contribution based on your income and non-property capital. The deferred payment agreement starts after this 12-week period ends.
+          </p>
+        </section>
+
+        {/* How much you can defer */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How much you can defer</h2>
+          <p className="text-gray-700 mb-4">
+            The amount you can defer is based on the value of your property. In Waltham Forest, the council will defer up to 90% of the property value, minus an allowance of £14,250 (the lower capital limit).
+          </p>
+          <p className="text-gray-700">
+            A professional valuation of your property will be needed. The council can arrange this, or you can arrange your own.
+          </p>
+        </section>
+
+        {/* What you pay from your income */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you pay from your income</h2>
+          <p className="text-gray-700 mb-4">
+            Even with a deferred payment agreement, you will still pay a contribution from your income each week towards the cost of your care. This is calculated through your financial assessment in the same way as for any other care home resident.
+          </p>
+          <p className="text-gray-700">
+            Under a deferred payment agreement, you are allowed to keep a higher amount of your income each week to help with the upkeep of your property. The exact amount you can retain will be confirmed as part of your agreement.
+          </p>
+        </section>
+
+        {/* Interest */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Interest</h2>
+          <p className="text-gray-700 mb-4">
+            The council charges interest on the deferred amount. The interest rate is set by the government and is based on the gilt rate published in the Office for Budget Responsibility's Economic and Fiscal Outlook. The rate changes on 1 January and 1 July each year.
+          </p>
+          <p className="text-gray-700">
+            Interest is charged from the date your deferred payment agreement starts and is compounded daily. The current interest rate will be confirmed when you apply. You will receive regular statements (at least every six months) showing how the charge is building up and what the total outstanding amount is. You can request a statement at any time.
+          </p>
+        </section>
+
+        {/* Set-up costs */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Set-up costs</h2>
+          <p className="text-gray-700 mb-4">
+            There are costs involved in setting up a deferred payment agreement. These may include:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 mb-4 space-y-2">
+            <li>Property valuation</li>
+            <li>Drawing up a legal agreement</li>
+            <li>Placing a legal charge on your property</li>
+            <li>Land Registry searches and other legal costs</li>
+          </ul>
+          <p className="text-gray-700">
+            You can pay these costs upfront, or they can be added to the deferred amount. If they are added to the deferred amount, they will be subject to interest.
+          </p>
+        </section>
+
+        {/* Rental income */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Rental income</h2>
+          <p className="text-gray-700">
+            If you decide to rent out your property while you are in the care home, the rental income will be included in your financial assessment. This will increase the contribution you pay from your income each week, which reduces the amount being deferred and the eventual debt.
+          </p>
+        </section>
+
+        {/* Top-up payments */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Top-up payments</h2>
+          <p className="text-gray-700">
+            If your care home costs more than the council's agreed rate, the difference (the top-up) can sometimes be included within the deferred payment agreement. This means the top-up amount is added to the deferred debt rather than needing to be paid separately by a third party. Discuss this with the Financial Assessment team when you apply.
+          </p>
+        </section>
+
+        {/* How the agreement ends */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How the agreement ends</h2>
+          <p className="text-gray-700 mb-4">
+            The deferred payment agreement ends when:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li>You sell your property and repay the debt</li>
+            <li>You choose to repay the debt from another source</li>
+            <li>You pass away, in which case the debt must be repaid from your estate within 90 days</li>
+          </ul>
+          <p className="text-gray-700 mt-4">
+            The council cannot cancel the agreement without your consent.
+          </p>
+        </section>
+
+        {/* What happens if your debt reaches the limit */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens if your debt reaches the limit</h2>
+          <p className="text-gray-700">
+            If the total deferred amount approaches the maximum (90% of the property value minus £14,250), the council will contact you to discuss your options. This might include selling the property, finding another way to pay, or reviewing your financial situation.
+          </p>
+        </section>
+
+        {/* Your responsibilities */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Your responsibilities</h2>
+          <p className="text-gray-700 mb-4">
+            If you enter into a deferred payment agreement, you must:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li>Maintain the property in a reasonable condition</li>
+            <li>Keep the property insured (buildings insurance)</li>
+            <li>Inform the council of any changes that affect the property or your financial situation</li>
+            <li>Not take out any additional loans or charges against the property without the council's agreement</li>
+          </ul>
+        </section>
+
+        {/* Refusing or appealing a decision */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Refusing or appealing a decision</h2>
+          <p className="text-gray-700">
+            If the council refuses your application for a deferred payment, you will be told the reason in writing. You have the right to appeal the decision. Contact the Financial Assessment team to discuss your options.
+          </p>
+        </section>
+
+        {/* Get independent advice first - Callout box */}
+        <section className="mb-8">
+          <div className="bg-[#FFF4E6] border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="text-[#bf3688] mt-1 flex-shrink-0" size={24} />
+              <div>
+                <h3 className="font-bold text-gray-900 mb-2">Get independent advice first</h3>
+                <p className="text-gray-700 mb-4">
+                  A deferred payment agreement is a significant financial and legal decision. You should get independent financial and legal advice before entering into one. The council can provide information about how the scheme works, but we cannot advise you on whether it is the right option for your personal circumstances.
+                </p>
+                <p className="text-gray-700">
+                  See our page on <a href="#/adult-social-care/paying-for-care/get-financial-advice" className="text-[#bf3688] underline hover:no-underline">getting financial advice</a> for information about independent advisers, including the Society of Later Life Advisers (SOLLA) which specialises in care funding advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* How to apply */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to apply</h2>
+          <p className="text-gray-700 mb-4">
+            To apply for a deferred payment agreement, or to find out more, contact the Financial Assessment team.
+          </p>
+          <div className="bg-gray-50 border border-gray-200 p-6">
+            <div className="flex items-center gap-3 text-gray-900 mb-2">
+              <Phone size={20} className="text-[#bf3688]" />
+              <span className="font-bold">Phone: 020 8496 3130</span>
+            </div>
+            <p className="text-gray-700 text-sm mb-3 ml-8">Monday to Friday, 9am to 5pm</p>
+            <p className="text-gray-700 text-sm ml-8">
+              <strong>Email:</strong> residentialfau@walthamforest.gov.uk
+            </p>
+          </div>
+        </section>
+
+        {/* Further information */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Further information</h2>
+          <ul className="space-y-2">
+            <li>
+              <a 
+                href="https://www.moneyhelper.org.uk/en/care/care-homes/deferred-payment-agreements-for-long-term-care" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#bf3688] hover:underline"
+              >
+                MoneyHelper — deferred payment agreements for long-term care
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.ageuk.org.uk/information-advice/care/paying-for-care/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#bf3688] hover:underline"
+              >
+                Age UK — paying for care
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.gov.uk/government/publications/care-act-statutory-guidance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#bf3688] hover:underline"
+              >
+                GOV.UK — Care Act statutory guidance on deferred payments
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care/paying-for-care-home" className="text-[#bf3688] hover:underline">
+                Paying for a care home
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/how-care-costs-worked-out" className="text-[#bf3688] hover:underline">
+                How care costs are worked out
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/get-financial-advice" className="text-[#bf3688] hover:underline">
+                Get financial advice
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/financial-assessment" className="text-[#bf3688] hover:underline">
+                Financial assessment
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <div className="max-w-3xl space-y-8">
-          {/* Using your home to pay */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Using your home to pay for care</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you move into a care home permanently, the value of your property may
-          be taken into account when working out how much you pay. This could mean
-          you would need to sell your home to fund your care.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A deferred payment agreement (DPA) is an alternative. The council pays your
-          care home fees on your behalf and places a legal charge on your property. The
-          deferred amount, plus any interest and administrative charges, is repaid
-          later, usually when your home is sold or from your estate.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          This means you can delay the need to sell your home for as long as you need
-          to, giving you time and peace of mind.
-          </p>
-          </section>
-
-          {/* Eligibility */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who is eligible</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You may be eligible for a deferred payment agreement if:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>You have been assessed as needing permanent residential care</li>
-          <li>You own a property (or have a beneficial interest in one) that is not occupied by a spouse, partner or certain dependants</li>
-          <li>Your non-housing assets (savings, investments) are below &#163;23,250</li>
-          <li>You agree to the council placing a legal charge on your property</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you meet these criteria, the council must offer you a deferred payment
-          agreement. In some circumstances, the council may also agree to a DPA on a
-          discretionary basis even if you do not meet all the criteria.
-          </p>
-          </section>
-
-          {/* How it works */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How a deferred payment agreement works</h2>
-          <ol className="mt-3 list-decimal pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>You apply for a deferred payment agreement through the council</li>
-          <li>We carry out a financial assessment and value your property</li>
-          <li>If eligible, we draw up a legal agreement and place a charge on your property</li>
-          <li>The council pays your care home fees (minus any contribution you make from your income)</li>
-          <li>Interest accrues on the deferred amount at a rate set by the government</li>
-          <li>The deferred amount is repaid when you choose to sell your home, or from your estate after your death</li>
-          </ol>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You will still need to contribute towards the cost of your care from your
-          income. You will also be allowed to keep a small amount for personal
-          expenses (the Personal Expenses Allowance).
-          </p>
-          </section>
-
-          {/* Costs and charges */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Costs and charges</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          There are costs associated with a deferred payment agreement:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Interest:</strong> charged on the deferred amount at a rate set nationally, compounded every six months</li>
-          <li><strong>Administrative charge:</strong> the council may charge for setting up and managing the agreement</li>
-          <li><strong>Legal costs:</strong> you may need to pay for legal advice and the cost of registering the charge on your property</li>
-          <li><strong>Property maintenance:</strong> you are responsible for keeping the property insured and in good repair</li>
-          </ul>
-          </section>
-
-          {/* Ending the agreement */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Ending the agreement</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A deferred payment agreement can end in several ways:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>You choose to sell your property and repay the deferred amount</li>
-          <li>You repay the deferred amount from other sources</li>
-          <li>You pass away, and the amount is repaid from your estate</li>
-          <li>The equity in your home is used up (the council will not defer more than the value of your property minus 10%)</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When the agreement ends, the council will work with you or your estate to
-          arrange repayment. There is a 90-day period after the agreement ends in
-          which to repay the debt.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Find out if a deferred payment is right for you</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          Contact us to discuss whether a deferred payment agreement could work for
-          your situation. We strongly recommend getting independent financial advice
-          before entering into an agreement.
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-          </div>
-          </div>
-
-          {/* Related links */}
-          <div className="max-w-3xl mt-8">
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
-          </ul>
-          </section>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-8 text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
       </div>
     </div>
   );

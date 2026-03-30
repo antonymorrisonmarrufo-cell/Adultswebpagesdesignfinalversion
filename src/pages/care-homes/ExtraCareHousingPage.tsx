@@ -1,159 +1,265 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone, FileText } from 'lucide-react';
 
 export default function ExtraCareHousingPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/care-homes-and-supported-living" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Extra care housing</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Extra care housing</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Extra care housing offers self-contained flats or apartments with on-site care
-          staff available around the clock, designed for older people and adults who need
-          some support to live independently.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living" className="hover:underline">Care homes and supported living</a>
+          <span className="mx-1">&gt;</span>
+          <span>Extra care housing</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* What is extra care housing */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is extra care housing?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Extra care housing (sometimes called housing with care) provides
-          self-contained flats where you have your own front door, kitchen, and
-          bathroom. Unlike a care home, you have your own tenancy and can come and go as
-          you please. The difference from ordinary housing is that care and support staff
-          are based on-site and available 24 hours a day.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Extra care schemes usually include communal areas such as lounges, dining rooms,
-          gardens, and activity rooms. Many schemes also offer a restaurant or cafe,
-          laundry facilities, and organised social activities.
-          </p>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Extra care housing
+        </h1>
 
-          {/* Who is it for */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who is extra care housing for?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Extra care housing may be suitable for you if you:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Are aged 55 or over (age criteria may vary by scheme)</li>
-          <li>Have care and support needs that can be met with on-site care</li>
-          <li>Want to maintain your independence in your own flat</li>
-          <li>Would benefit from the social opportunities that a scheme provides</li>
-          <li>Are living in a home that is no longer suitable for your needs</li>
-          <li>Are a couple where one or both partners have care needs</li>
-          </ul>
-          </section>
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Extra care housing gives you your own flat with care and support available on site, so you can stay as independent as possible.
+        </p>
 
-          {/* What is included */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is included?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Extra care housing typically includes:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>A self-contained flat with your own kitchen, bathroom, and living space</li>
-          <li>24-hour on-site care staff who can help with personal care and daily tasks</li>
-          <li>A personal care plan tailored to your needs</li>
-          <li>An emergency call system in every flat</li>
-          <li>Communal lounges, gardens, and activity spaces</li>
-          <li>Social activities and events organised by the scheme</li>
-          <li>Support to access community services, health appointments, and social activities</li>
-          </ul>
-          </section>
-
-          {/* How to apply */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to apply</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To apply for extra care housing in Waltham Forest, you will need:
-          </p>
-          <ol className="mt-3 ml-6 list-decimal space-y-2 text-wf-dark leading-relaxed">
-          <li>A care and support assessment from Adult Social Care (contact us to request one)</li>
-          <li>To be registered on the Waltham Forest housing list (if the scheme is council-managed)</li>
-          <li>A referral from your social worker or housing officer to the extra care panel</li>
-          </ol>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Places are allocated based on the level of your care needs, your housing
-          circumstances, and the availability of flats. Contact our Adult Social Care
-          team to discuss your options:
-          </p>
-          <p className="mt-3 text-wf-dark">
-          <strong>Telephone:</strong>{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline font-semibold">
-          020 8496 3130
+        {/* Primary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <a
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Get a care assessment
+            <ArrowRight size={18} />
           </a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">
-          Monday to Friday, 9am to 5pm (excluding bank holidays)
-          </p>
-          </section>
-
-          {/* Costs */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Costs</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          In extra care housing you will pay rent and a service charge for your flat. You
-          may be eligible for housing benefit to help with these costs. The care and
-          support element is funded separately, and a financial assessment will determine
-          how much, if anything, you need to contribute towards your care.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          For more information, see our{" "}
-          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          paying for care
-          </Link>{" "}
-          page.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
-          Request housing and care support
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/sheltered-housing" className="text-wf-blue underline hover:text-wf-green">
-          Sheltered housing
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
-          Care homes and nursing homes
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          Paying for care
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="tel:02084963130"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            <Phone size={18} />
+            Call 020 8496 3130
+          </a>
         </div>
+
+        {/* Hero Image Placeholder */}
+        <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-80 flex items-center justify-center">
+          <p className="text-gray-400 text-center text-lg">
+            IMAGE PLACEHOLDER – EXTRA CARE / SHELTERED HOUSING
+          </p>
+        </div>
+
+        {/* Contents navigation */}
+        <nav className="mb-10 bg-gray-50 p-6 border border-gray-200">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#what-it-is" className="text-[#bf3688] hover:underline">What extra care housing is</a></li>
+            <li><a href="#who-it-suits" className="text-[#bf3688] hover:underline">Who it may suit</a></li>
+            <li><a href="#support-available" className="text-[#bf3688] hover:underline">What support is available on site</a></li>
+            <li><a href="#help-needed" className="text-[#bf3688] hover:underline">What you may still need help with</a></li>
+            <li><a href="#eligibility" className="text-[#bf3688] hover:underline">Eligibility</a></li>
+            <li><a href="#how-to-apply" className="text-[#bf3688] hover:underline">How to apply</a></li>
+            <li><a href="#related" className="text-[#bf3688] hover:underline">Related help</a></li>
+          </ul>
+        </nav>
+
+        {/* What extra care housing is */}
+        <section id="what-it-is" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What extra care housing is</h2>
+          <p className="text-gray-700">
+            Extra care housing is specialist housing for adults with higher care needs who still want independence and their own front door. You live in your own flat, with access to care and support on site.
+          </p>
+        </section>
+
+        {/* Who it may suit */}
+        <section id="who-it-suits" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who it may suit</h2>
+          <p className="text-gray-700 mb-4">Extra care housing may suit older adults and some adults with complex care needs, including people living with:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">dementia</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">physical disability or mobility problems</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">learning disability</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">brain injury</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">stroke</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">Parkinson's</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">low to moderate mental health needs</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* What support is available on site */}
+        <section id="support-available" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What support is available on site</h2>
+          <p className="text-gray-700 mb-4">Schemes may offer:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">24-hour on-site care and support</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">social activities</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">lifts</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">accessible units</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">adapted bathrooms and walk-in showers in communal areas</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">treatment rooms and visiting professionals in some schemes</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">assistive technology such as telecare</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* What you may still need help with */}
+        <section id="help-needed" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you may still need help with</h2>
+          <p className="text-gray-700 mb-4">
+            Even in extra care housing, some day-to-day tasks may still be your responsibility unless they are included in your agreed care package. This may include:
+          </p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">cleaning</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">laundry</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">shopping</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">decorating and furnishing your flat</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Eligibility */}
+        <section id="eligibility" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Eligibility</h2>
+          <p className="text-gray-700 mb-4">Extra care housing is generally intended for people:</p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">aged 55 or over</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">on the housing register</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">with care needs that have been assessed by Adult Social Care</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            Current live criteria say applicants usually need a minimum level of care, for example around 10 hours of care a week.
+          </p>
+        </section>
+
+        {/* How to apply */}
+        <section id="how-to-apply" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to apply</h2>
+          <p className="text-gray-700 mb-4">The right order is:</p>
+          <ol className="space-y-3 list-decimal list-inside text-gray-700 mb-6">
+            <li>ask Adult Social Care for a needs assessment</li>
+            <li>if extra care may be suitable, we discuss this in your support plan</li>
+            <li>if needed, apply to the housing register</li>
+            <li>complete the extra care application steps</li>
+          </ol>
+          <div className="flex flex-wrap gap-4 mb-6">
+            <a
+              href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+            >
+              Request a care assessment
+              <ArrowRight size={18} />
+            </a>
+            <a
+              href="https://www.walthamforest.gov.uk/housing/find-home/social-housing/apply-join-housing-waiting-list-housing-register"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Apply to the housing register
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
+          {/* Supporting download */}
+          <div className="bg-gray-50 p-6 border border-gray-200">
+            <h3 className="font-bold text-gray-900 mb-3">Supporting information</h3>
+            <a
+              href="https://www.walthamforest.gov.uk/sites/default/files/2021-11/extra-care-housing_0.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-[#bf3688] hover:underline"
+            >
+              <FileText size={20} />
+              <span>Extra care housing brochure (PDF)</span>
+            </a>
+          </div>
+        </section>
+
+        {/* Related help */}
+        <section id="related" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related help</h2>
+          <div className="space-y-3">
+            <a href="#/adult-social-care/care-homes-and-supported-living/sheltered-housing" className="block text-[#bf3688] hover:underline font-semibold">
+              Sheltered housing
+            </a>
+            <a href="#/adult-social-care/care-homes-and-supported-living/supported-living" className="block text-[#bf3688] hover:underline font-semibold">
+              Supported living
+            </a>
+            <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="block text-[#bf3688] hover:underline font-semibold">
+              Care homes and nursing homes
+            </a>
+          </div>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

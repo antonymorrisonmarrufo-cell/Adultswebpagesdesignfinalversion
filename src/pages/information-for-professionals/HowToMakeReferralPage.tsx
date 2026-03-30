@@ -1,168 +1,188 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
-  { title: "Key teams and contact details", to: "/adult-social-care/information-for-professionals/key-teams-contact-details" },
-  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
-];
+import { Phone, Mail, FileText, AlertCircle } from 'lucide-react';
 
 export default function HowToMakeReferralPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">How to make a referral</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      How to make a referral
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/information-for-professionals" className="hover:underline">Information for care professionals</a>
+          <span className="mx-1">&gt;</span>
+          <span>How to make a referral</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          How to make a referral
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you are a GP, nurse, hospital discharge coordinator, social worker, or other professional and you need to refer someone for adult social care support in Waltham Forest, this page explains how.
+        </p>
+
+        {/* Current referral process */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Current referral process</h2>
+          <p className="text-gray-700 mb-6">
+            To refer someone for adult social care support, please complete the referral form and send it to the Adults Hub.
+          </p>
+          
+          <div className="bg-gray-50 border border-gray-200 p-6 mb-6">
+            <div className="flex items-start gap-3 mb-4">
+              <FileText size={20} className="text-[#bf3688] mt-1 flex-shrink-0" />
+              <div>
+                <p className="font-bold text-gray-900 mb-1">Request for Help, Support, Protection or Safeguarding referral form</p>
+                <p className="text-sm text-gray-600">Word document</p>
+                <p className="text-sm text-gray-600 italic mt-2">Download available from the Adults Hub team</p>
+              </div>
+            </div>
+            
+            <div className="border-t border-gray-300 pt-4 space-y-3">
+              <div className="flex items-center gap-3 text-gray-700">
+                <Mail size={18} className="text-[#bf3688]" />
+                <div>
+                  <strong>Email the completed form to:</strong><br />
+                  <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-[#bf3688] hover:underline">
+                    socialcaredirect@walthamforest.gov.uk
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-3 text-gray-700">
+                <Phone size={18} className="text-[#bf3688]" />
+                <div>
+                  <strong>Phone (for urgent referrals or queries):</strong><br />
+                  020 8496 3130<br />
+                  <span className="text-sm">Monday to Friday, 9am to 5pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* What to include in your referral */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What to include in your referral</h2>
+          <p className="text-gray-700 mb-4">
+            To help the Adults Hub process your referral quickly, please include:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-4">
+            <li>The person's full name, date of birth, and address</li>
+            <li>Your name, role, organisation, and contact details</li>
+            <li>The reason for referral and what has prompted it now</li>
+            <li>A description of the person's current needs and situation</li>
+            <li>Any known risks or safeguarding concerns</li>
+            <li>Whether the person is aware of and consents to the referral</li>
+            <li>Whether the person has mental capacity to make decisions about their care</li>
+            <li>Details of any other professionals or services currently involved</li>
+            <li>Any relevant medical or social history</li>
+          </ul>
+          <p className="text-gray-700 italic">
+            Incomplete referrals may be returned, which delays the process.
+          </p>
+        </section>
+
+        {/* What happens after you refer */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens after you refer</h2>
+          <p className="text-gray-700 mb-4">Once your referral is received:</p>
+          <ol className="list-decimal ml-6 text-gray-700 space-y-2 mb-4">
+            <li>The Adults Hub will check whether the person is already known to Adult Social Care.</li>
+            <li>The referral will be logged and allocated to the appropriate team based on the nature of the need (for example, Adults Care Management, Home First, Occupational Therapy, or Mental Health).</li>
+            <li>For safeguarding concerns, the referral will be screened by the Multi-Agency Safeguarding Hub (MASH).</li>
+          </ol>
+          <p className="text-gray-700">
+            You will not currently receive automatic confirmation that your referral has been received. If you need to check, phone the Adults Hub on 020 8496 3130.
+          </p>
+        </section>
+
+        {/* Safeguarding referrals */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Safeguarding referrals</h2>
+          <p className="text-gray-700 mb-4">
+            If your referral involves a safeguarding concern about an adult at risk, use the dedicated safeguarding process. See our{' '}
+            <a href="#/adult-social-care/information-for-professionals/safeguarding-adults" className="text-[#bf3688] underline hover:no-underline">
+              safeguarding adults page
+            </a>{' '}
+            for the online referral form and procedures.
+          </p>
+        </section>
+
+        {/* Mental health referrals */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Mental health referrals</h2>
+          <p className="text-gray-700">
+            If the person's needs are primarily mental health related, the referral route is through NELFT, not the council's Adults Hub. Contact the NELFT Mental Health Single Point of Access on <strong>0300 300 1570 (option 4)</strong> for adults aged 18–64, or the NELFT Older Adult Mental Health Team on <strong>0300 555 1270</strong> for adults aged 65+ or those with complex cognitive conditions.
+          </p>
+        </section>
+
+        {/* Hospital discharge referrals */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Hospital discharge referrals</h2>
+          <p className="text-gray-700">
+            If you are referring from Whipps Cross Hospital or the Ainslie Rehabilitation Unit, please send referrals directly to the Hospital Social Work Team, not to the general Adults Hub inbox. Contact your hospital social work liaison for the correct pathway.
+          </p>
+        </section>
+
+        {/* Occupational therapy referrals */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Occupational therapy referrals</h2>
+          <p className="text-gray-700">
+            For OT referrals, download and complete the Adult Social Care referral form (the same form used for other referrals) and email it to{' '}
+            <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-[#bf3688] underline hover:no-underline">
+              socialcaredirect@walthamforest.gov.uk
+            </a>. Alternatively, phone 020 8496 3130.
+          </p>
+        </section>
+
+        {/* Callout box */}
+        <section className="mb-12">
+          <div className="bg-[#FFF4E6] border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="text-[#bf3688] mt-1 flex-shrink-0" size={24} />
+              <div>
+                <p className="text-gray-700">
+                  We know the current referral process relies on Word documents and email. We are working to replace this with a structured online referral form that provides confirmation of receipt and the ability to track the progress of your referral. This is part of the Adults Digital Front Door programme.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/information-for-professionals/safeguarding-adults" className="text-[#bf3688] hover:underline">
+                Safeguarding adults
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/information-for-professionals/key-teams-contact-details" className="text-[#bf3688] hover:underline">
+                Key teams and contact details
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-adult-social-care-works" className="text-[#bf3688] hover:underline">
+                How adult social care works
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If you are a health or social care professional and believe someone needs
-      adult social care support, you can make a referral to Waltham Forest
-      Council. This page explains how to do so and what information to include.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Online referral form</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The quickest way to make a referral is through our online professional
-      referral form. The form is available on the Waltham Forest Council website
-      and can be submitted securely at any time.
-      </p>
-      <div className="mt-4">
-      <a
-      href="https://safeguardingapp.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-semibold text-white shadow hover:bg-[#a02d73] transition"
-      >
-      Access the professional referral form
-      </a>
-      </div>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What to include in your referral</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      To help us process the referral quickly, please include the following
-      information:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Full name, date of birth, address and NHS number of the person</li>
-      <li>Your name, role and contact details</li>
-      <li>The reason for the referral and the person's presenting needs</li>
-      <li>Relevant medical history and current health conditions</li>
-      <li>Any existing care or support currently in place</li>
-      <li>Details of any risk factors, including safeguarding concerns</li>
-      <li>GP details and any other professionals involved</li>
-      <li>Whether the person has given consent to the referral</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Consent requirements</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Wherever possible, you should obtain the person's consent before making a
-      referral. Please indicate on the referral form whether consent has been
-      given. A referral can be made without consent in the following circumstances:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>The person lacks the mental capacity to give consent</li>
-      <li>There is a safeguarding concern and the person or others may be at risk</li>
-      <li>There is a legal duty to share information (for example, under the Mental Health Act)</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If the referral is made without consent, please explain the reason in the
-      referral.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What happens after you refer</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Once we receive your referral, we will:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Acknowledge receipt within two working days</li>
-      <li>Screen the referral to determine the appropriate response</li>
-      <li>Contact the person to arrange an assessment where appropriate</li>
-      <li>Update the referring professional on the outcome</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Urgent referrals, including safeguarding concerns, will be prioritised and
-      actioned on the same day wherever possible.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For urgent referrals or queries, call our Adult Social Care team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm. Out of hours: 020 8496 3000
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

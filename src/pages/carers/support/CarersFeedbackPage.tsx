@@ -1,114 +1,139 @@
-import { Link } from "react-router-dom";
-
 export default function CarersFeedbackPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer/support-for-carers" className="text-wf-blue underline hover:text-wf-green">Support for carers</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Carers feedback</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer/support-for-carers" className="text-[#bf3688] hover:underline">Support for carers</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Carers' feedback and testimonials</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Carers feedback</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Your feedback helps us to improve services for carers in Waltham Forest. Whether you want to share
-          a positive experience, raise a concern, or make a complaint, we want to hear from you.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* How to share feedback */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to share your feedback</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          There are several ways you can share your views about carer services:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Phone</strong> - call our Adult Social Care team on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>
-          </li>
-          <li><strong>In person</strong> - speak to a member of staff at the Carers Hub or during a drop-in session</li>
-          <li><strong>In writing</strong> - write to Adult Social Care, Waltham Forest Council, Town Hall, Forest Road, London E17 4JF</li>
-          <li><strong>Through your social worker</strong> - if you have an allocated worker, you can share feedback directly with them</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Carers' feedback and testimonials</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Hear from carers, see how feedback shapes services, and tell us what would make support better.
+        </p>
 
-          {/* Complaints */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Making a complaint</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are unhappy with a service you have received, you have the right to complain. We take all
-          complaints seriously and will investigate your concerns. Our complaints process:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Stage 1</strong> - we will try to resolve your complaint informally and respond within 10 working days</li>
-          <li><strong>Stage 2</strong> - if you are not satisfied, your complaint will be investigated by a senior manager</li>
-          <li><strong>Local Government Ombudsman</strong> - if you have been through our complaints process and are still unhappy, you can contact the Local Government and Social Care Ombudsman</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You can also ask someone else to make a complaint on your behalf, such as a friend, family member,
-          or an advocate.
-          </p>
-          </section>
-
-          {/* Compliments */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Sending a compliment</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If a member of staff or a service has made a positive difference to you, we would love to hear about
-          it. Compliments help us understand what is working well and motivate our teams. You can send a
-          compliment using any of the contact methods above.
-          </p>
-          </section>
-
-          {/* Annual survey */}
-          <section className="mb-8 rounded-md bg-white p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Annual carers survey</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Each year, we carry out a survey of carers to understand your experiences and identify areas for
-          improvement. If you are invited to take part, please do complete the survey - your responses are
-          anonymous and directly influence how we develop carer services.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/being-carer/support-for-carers" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">
-          Complaints and compliments
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.lgo.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Local Government and Social Care Ombudsman
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="#"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Give feedback
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="#"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Join the user research group
+          </a>
         </div>
+
+        <div className="prose max-w-none">
+          
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">What carers have said</h2>
+            
+            <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
+              <p className="text-gray-900 italic mb-2">
+                "The carer's assessment really helped me think about what I needed. I didn't realize how much I was struggling until someone asked."
+              </p>
+              <p className="text-gray-700 text-sm">– Carer, Waltham Forest</p>
+            </div>
+
+            <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
+              <p className="text-gray-900 italic mb-2">
+                "Carers First helped me apply for Carer's Allowance and connected me with a local support group. It made such a difference."
+              </p>
+              <p className="text-gray-700 text-sm">– Carer, Waltham Forest</p>
+            </div>
+
+            <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
+              <p className="text-gray-900 italic mb-2">
+                "I didn't think of myself as a carer at first. Finding out about the support available was really helpful."
+              </p>
+              <p className="text-gray-700 text-sm">– Carer, Waltham Forest</p>
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">How feedback shapes services</h2>
+            <p className="text-gray-700 mb-4">
+              We use feedback from carers to improve services and make sure support meets real needs.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Recent changes made because of carer feedback include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">clearer information about what a carer's assessment is</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">better signposting to financial support and benefits</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">more peer support groups in different parts of the borough</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Tell us what would help</h2>
+            <p className="text-gray-700 mb-4">
+              Your feedback helps us understand what is working well and what we need to improve.
+            </p>
+            <p className="text-gray-700 mb-4">
+              You can give feedback by:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">completing our online feedback form</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">speaking to your social worker or carer support worker</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">joining the user research group for carers</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Join the user research group</h2>
+            <p className="text-gray-700 mb-4">
+              The user research group gives carers the chance to be involved in improving services.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Members receive invites to activities, surveys and discussions that help shape the future of carer support in Waltham Forest.
+            </p>
+            <p className="text-gray-700 mb-4">
+              It is informal, flexible and you can take part as much or as little as you like.
+            </p>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

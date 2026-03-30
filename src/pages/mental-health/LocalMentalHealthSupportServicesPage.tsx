@@ -1,165 +1,212 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health-wellbeing" },
-  { title: "Talking therapies and professional support", to: "/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" },
-  { title: "Urgent mental health support", to: "/adult-social-care/mental-health-wellbeing/urgent-mental-health-support" },
-];
+import { ArrowRight } from 'lucide-react';
 
 export default function LocalMentalHealthSupportServicesPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/mental-health-wellbeing" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Local mental health support services</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Local mental health support services
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/mental-health-wellbeing" className="hover:underline">Mental health and wellbeing</a>
+          <span className="mx-1">&gt;</span>
+          <span>Local mental health support services</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Local mental health support services
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          There are many organisations in Waltham Forest that offer mental health support, peer groups, and specialist services. You do not need a referral to access most of them.
+        </p>
+
+        {/* Community support and peer groups */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Community support and peer groups</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">CREST WF</strong> — social, befriending, educational and healthy living support for older people with a disability and people experiencing dementia (<a href="https://www.crestwf.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">crestwf.org.uk</a>)
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Waltham Forest Hearing Voices Group</strong> — a peer support group for people who hear voices
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">WF Bipolar UK Support Group</strong> — peer support for people affected by bipolar disorder
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Coping Through Football</strong> — recovery-based football sessions for people with mental health conditions
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Support for specific communities */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Support for specific communities</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Black People's Mental Health Association (BPMHA)</strong> — support for black and minority ethnic communities
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">LGBTQIA+ support</strong> — local and national mental health services that understand the specific needs of LGBTQIA+ people. Services include MindOut (<a href="https://www.mindout.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">mindout.org.uk</a>) and Switchboard (<a href="https://switchboard.lgbt" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">switchboard.lgbt</a>)
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">SignHealth</strong> — mental health support for deaf people
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Empowering Deaf Society (EDS)</strong> — a deaf-led charity supporting deaf people across London
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Royal British Legion</strong> — support for armed forces veterans and their families
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Bereavement support */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Bereavement support</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Cruse Bereavement Support</strong> — free helpline on 0808 808 1677 (Monday to Friday, 9:30am to 5pm) and local support groups (<a href="https://www.cruse.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">cruse.org.uk</a>)
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Grief in Pieces</strong> — support for people who have lost someone to suicide
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">The Good Grief Trust</strong> — resources and practical support for people experiencing bereavement
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Substance use and mental health */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Substance use and mental health</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Change Grow Live (CGL)</strong> — drug and alcohol support for Waltham Forest residents, including help for people whose substance use is connected to mental health difficulties
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Wider support */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Wider support</h2>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Body and Soul</strong> — support for people affected by childhood trauma and adversity
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Sister Circle</strong> — support for women in difficult circumstances
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Two Generations</strong> — a homeshare programme connecting older people looking for companionship with younger people looking for affordable housing
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Find more services */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Find more services</h2>
+          <p className="text-gray-700 mb-6">
+            The council maintains an online Wellbeing Directory with a full list of support and community services in the borough, searchable by category and location.
+          </p>
+          <a
+            href="https://www.walthamforest.gov.uk/health-and-wellbeing/support-and-community-services-your-area"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Search the Wellbeing Directory
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/looking-after-your-mental-wellbeing" className="text-[#bf3688] hover:underline">
+                Looking after your mental wellbeing
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" className="text-[#bf3688] hover:underline">
+                Talking therapies and professional support
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health" className="text-[#bf3688] hover:underline">
+                Adult social care and mental health
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#bf3688] hover:underline">
+                Things to do during the day
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      A range of community organisations in Waltham Forest provide mental health
-      support, from peer groups and social activities to specialist services.
-      Many of these are free and do not require a referral.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Mind in Waltham Forest</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Mind in Waltham Forest is a local charity that provides a range of mental
-      health services, including:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Information and advice on mental health</li>
-      <li>Peer support groups for people with lived experience</li>
-      <li>Wellbeing workshops and courses</li>
-      <li>Employment and volunteering support</li>
-      <li>Advocacy services</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can contact Mind in Waltham Forest directly or drop in to their
-      offices during opening hours.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">NELFT community services</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      NELFT (North East London NHS Foundation Trust) provides a range of community
-      mental health services in Waltham Forest, including:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Community mental health teams for people with severe mental illness</li>
-      <li>Early intervention in psychosis service</li>
-      <li>Perinatal mental health team for new and expectant parents</li>
-      <li>Older adults mental health team</li>
-      <li>Rehabilitation and recovery services</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Most NELFT services require a referral from your GP or another health
-      professional.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Peer support</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Peer support brings together people with shared experiences to help each
-      other. In Waltham Forest, peer support is available through:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Hearing Voices groups</li>
-      <li>Depression and anxiety support groups</li>
-      <li>Bipolar support groups</li>
-      <li>Dual diagnosis groups (mental health and substance use)</li>
-      <li>Carer support groups for those supporting someone with mental illness</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Recovery college</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The Recovery College offers free educational courses designed to help people
-      develop skills and knowledge to manage their mental health and work towards
-      personal recovery goals. Courses are co-produced and co-delivered by people
-      with lived experience of mental health conditions alongside professionals.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Topics include managing anxiety, building self-esteem, understanding
-      medication, mindfulness and creative writing. Courses are open to anyone
-      aged 18 or over, including carers and staff.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For help finding local mental health services, contact our Adult Social
-      Care team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

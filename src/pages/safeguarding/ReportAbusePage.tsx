@@ -1,174 +1,159 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone, FileText } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
 
 export default function ReportAbusePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Report abuse or neglect</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Report abuse or neglect</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          If you think an adult with care and support needs is being abused or neglected, it is important to
-          act quickly. You do not need to be certain that abuse is happening to raise a concern.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/protecting-adults-at-risk" className="hover:underline">Protecting adults at risk of abuse</a>
+          <span className="mx-1">&gt;</span>
+          <span>Report abuse or neglect</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+          Report abuse or neglect
+        </h1>
+
+        {/* Intro */}
+        <p className="text-gray-700 max-w-4xl mb-8 text-base">
+          Use this page if you are worried that an adult is being harmed, neglected or unsafe. You can report a concern even if you do not know all the details.
+        </p>
+
+        {/* Emergency Alert */}
+        <div className="bg-[#fcedf3] border-2 border-[#003078] bg-[#d7f8ff] px-6 py-5 mb-10 max-w-4xl">
+          <div className="flex items-start gap-3">
+            <Phone className="text-[#bf3688] flex-shrink-0 mt-0.5" size={20} />
+            <div className="space-y-1 text-gray-900 text-sm">
+              <p><strong>If someone is in immediate danger, call 999.</strong></p>
+              <p>If you need urgent help outside normal office hours, contact the emergency duty team.</p>
+              <p>
+                If you are worried about a child,{' '}
+                <a href="#/children-and-families/report-concern-about-child" className="text-[#bf3688] underline hover:no-underline">
+                  use the child safeguarding route
+                </a>.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Emergency */}
-          <div className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6">
-          <h2 className="text-2xl font-bold text-[#d4351c]">In an emergency</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If someone is in <strong>immediate danger</strong>, call <strong>999</strong> for emergency services.
-          Do not delay contacting the police or ambulance service if you believe someone is being harmed right now.
-          </p>
+        <div className="max-w-4xl space-y-12">
+
+          {/* Section: If you are worried for yourself or someone you know */}
+          <div>
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">If you are worried for yourself or someone you know</h2>
+            <p className="text-gray-700 mb-4">
+              If you have urgent concerns that you or someone you know is being abused or neglected, you can:
+            </p>
+            <ul className="space-y-3 text-gray-700 mb-6">
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2 flex-shrink-0" />
+                <span>
+                  call{' '}
+                  <a href="tel:02084963130" className="text-[#bf3688] underline hover:no-underline font-semibold">
+                    020 8496 3130
+                  </a>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2 flex-shrink-0" />
+                <span>complete the online safeguarding concern form</span>
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">Your contact will be treated in the strictest confidence.</p>
+            <p className="text-gray-700 mb-4">
+              We can help if you or the person are unable to protect themselves and are experiencing, or are at risk of experiencing, abuse.
+            </p>
+            <p className="text-gray-700 mb-8">
+              You or the person you are worried about does not need to already be in contact with social workers or health workers to receive this service.
+            </p>
+
+            {/* Online CTA */}
+            <div className="bg-[#fcedf3] border-2 border-[#bf3688] p-8">
+              <h3 className="text-[#bf3688] font-bold text-lg mb-3">Report online</h3>
+              <p className="text-gray-700 mb-6">Tell us about the concern so we can decide what action may be needed.</p>
+              <a
+                href="https://action-spider-46698300.figma.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2"
+              >
+                Report a concern about a vulnerable adult
+                <ArrowRight size={18} />
+              </a>
+            </div>
           </div>
 
-          {/* Contact methods */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to report a safeguarding concern</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Anyone can raise a safeguarding concern. You do not have to be a professional or give your name,
-          although it is helpful if you can. You can report in the following ways:
-          </p>
+          <hr className="border-gray-200" />
 
-          <div className="mt-6 rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+          {/* Section: If you think a crime is being committed */}
+          <div>
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">If you think a crime is being or has been committed</h2>
+            <p className="text-gray-700">
+              If you think a crime is being or has been committed, or someone is in immediate danger, call{' '}
+              <strong>999</strong>.
+            </p>
           </div>
-          <h3 className="text-lg font-bold text-[#003078]">By phone</h3>
-          <p className="mt-2 text-wf-dark">
-          Call the Adult Social Care team:
-          </p>
-          <p className="mt-2 text-2xl font-bold text-[#231F20]">
-          <a href="tel:02084963130" className="no-underline text-[#231F20]">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">
-          Monday to Friday, 9am to 5pm
-          </p>
-          <p className="mt-4 text-wf-dark">
-          Outside office hours, call the Emergency Duty Team:
-          </p>
-          <p className="mt-1 text-xl font-bold text-[#231F20]">
-          <a href="tel:02084966000" className="no-underline text-[#231F20]">020 8496 6000</a>
-          </p>
 
-          <hr className="my-6 border-[#003078]/20" />
+          <hr className="border-gray-200" />
 
-          <h3 className="text-lg font-bold text-[#003078]">Online referral form</h3>
-          <p className="mt-2 text-wf-dark">
-          Complete our online safeguarding referral form. This is available 24 hours a day.
-          </p>
-          <a
-          href="https://safeguardingapp.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
-          >
-          Complete the referral form
-          </a>
-          <p className="mt-3 text-sm text-wf-gray">
-          Online referrals are reviewed during office hours. If the situation is urgent, please phone us.
-          </p>
+          {/* Section: Forms and documents */}
+          <div>
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Forms and documents</h2>
+            <p className="text-gray-700 mb-2">Professionals must complete the adult safeguarding concern form online.</p>
+            <p className="text-gray-700 mb-2">Members of the public can call or complete the online form.</p>
+            <p className="text-gray-700">
+              For safeguarding documents, guidance and reports, visit the{' '}
+              <a
+                href="https://www.walthamforest.gov.uk/adult-social-care/protecting-vulnerable-adults/safeguarding-adults-board-sab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#bf3688] underline hover:no-underline"
+              >
+                Safeguarding Adults Board page
+              </a>.
+            </p>
           </div>
-          </section>
 
-          {/* What to include */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What to include in your report</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When reporting a concern, try to include as much detail as possible. This helps us to respond
-          quickly and appropriately. Useful information includes:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>The name, address, and date of birth of the person you are concerned about (if known)</li>
-          <li>A description of what has happened or what you have seen</li>
-          <li>When and where the incident(s) took place</li>
-          <li>Whether the person is in immediate danger</li>
-          <li>Details of the person causing harm (if known)</li>
-          <li>Whether the person knows you are making this report</li>
-          <li>Any other relevant information, such as the person's care needs or living situation</li>
-          <li>Your name and contact details (you can remain anonymous, but this may limit what we can do)</li>
-          </ul>
-          </section>
+          <hr className="border-gray-200" />
 
-          {/* Who can report */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who can raise a safeguarding concern?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Anyone can raise a safeguarding concern, including:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>The person being abused or neglected</li>
-          <li>A family member, friend, or neighbour</li>
-          <li>A professional such as a social worker, doctor, nurse, or care worker</li>
-          <li>A member of the public</li>
-          <li>The police</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          You do not need to have proof that abuse or neglect is happening. If something does not seem
-          right, it is always better to report your concerns.
-          </p>
-          </section>
+          {/* Section: Quick guide */}
+          <div>
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Quick guide</h2>
+            <a
+              href="https://www.walthamforest.gov.uk/media/10188"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border border-gray-400 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group"
+            >
+              <FileText className="text-[#bf3688] flex-shrink-0" size={20} />
+              <span className="text-gray-900 font-semibold text-sm group-hover:text-[#bf3688] transition-colors">
+                Quick guide to adult safeguarding (PDF)
+              </span>
+              <ArrowRight className="text-[#bf3688] ml-auto" size={16} />
+            </a>
+          </div>
 
-          {/* What happens next */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What happens after you report</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When we receive a safeguarding concern, our team will review the information and decide on the
-          appropriate next steps. This may include a safeguarding enquiry under Section 42 of the Care Act 2014.
-          </p>
-          <p className="mt-3">
-          <Link to="/adult-social-care/what-happens-after-you-report" className="text-wf-blue underline hover:text-wf-green font-medium">
-          Find out more about what happens after a concern is raised
-          </Link>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
-          Safeguarding adults overview
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green">
-          Types of abuse and neglect
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
-          Information for professionals
-          </Link>
-          </li>
-          <li>
-          <Link to="/children-and-families/report-concern-about-child" className="text-wf-blue underline hover:text-wf-green">
-          Reporting concerns about a child
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-4xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

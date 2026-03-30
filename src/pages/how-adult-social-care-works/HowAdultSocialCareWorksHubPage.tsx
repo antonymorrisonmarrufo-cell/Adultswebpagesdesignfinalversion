@@ -1,189 +1,277 @@
-import { Link } from "react-router-dom";
-
-const steps = [
-  { number: 1, title: "Learn what adult social care is", description: "Understand the types of help available and who provides it.", to: "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" },
-  { number: 2, title: "Find out if you can get help", description: "Check who is eligible and what the criteria are.", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
-  { number: 3, title: "Ask for help", description: "Contact us to request an assessment for yourself or someone else.", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
-  { number: 4, title: "Have an assessment", description: "A social worker will discuss your needs with you.", to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment" },
-  { number: 5, title: "Get a care and support plan", description: "If eligible, you will receive a plan setting out how your needs will be met.", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
-  { number: 6, title: "Understand paying for care", description: "Find out how care costs work and what financial help is available.", to: "/adult-social-care/paying-for-care" },
-];
-
-const topicCards = [
-  { title: "What is adult social care?", description: "The types of help available, who provides it and your rights under the Care Act 2014.", to: "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" },
-  { title: "Who can get help?", description: "Eligibility criteria, what is assessed and what happens if you are or are not eligible.", to: "/adult-social-care/how-adult-social-care-works/who-can-get-help" },
-  { title: "How to ask for help", description: "How to request an assessment, who can ask and different ways to get in touch.", to: "/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" },
-  { title: "What happens during an assessment", description: "What to expect, what is discussed and what happens afterwards.", to: "/adult-social-care/how-to-get-support/what-happens-during-your-assessment" },
-  { title: "Your care and support plan", description: "What a care plan includes, who creates it and how it is reviewed.", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
-];
-
-const relatedPages = [
-  { title: "Paying for your care", to: "/adult-social-care/paying-for-care" },
-  { title: "Support for carers", to: "/adult-social-care/being-carer" },
-  { title: "Safeguarding adults", to: "/adult-social-care/protecting-adults-at-risk" },
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-];
+import { ArrowRight, Phone, AlertTriangle } from 'lucide-react';
 
 export default function HowAdultSocialCareWorksHubPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">How adult social care works</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">How adult social care works</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Adult social care helps people who need extra support to live their daily
-          lives. This section explains how the process works, from your first contact
-          with us through to getting a care and support plan.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <span>How adult social care works</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          How adult social care works
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-12 max-w-4xl">
+          Find out what adult social care is, who it is for, how to get help, and what you may need to pay.
+        </p>
+
+        {/* The journey step by step */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#bf3688] mb-6">The journey step by step</h2>
+          
+          <p className="text-gray-700 mb-6">
+            If you or someone you know needs help with everyday life because of illness, disability, or getting older, adult social care may be able to help. Here is how the process works:
           </p>
-        </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Key things to know */}
-          <div className="mb-8 rounded-md bg-white p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Key things to know</h2>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>Anyone can contact us to ask for help, not just the person who needs support</li>
-          <li>You do not need a referral from your GP</li>
-          <li>Assessments are always free, regardless of your income or savings</li>
-          <li>You have the right to be involved in decisions about your care</li>
-          <li>If you are not eligible for council-funded support, we will still give you information and advice</li>
-          </ul>
-          </div>
-
-          {/* 6-step journey */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Your journey in 6 steps</h2>
-          <div className="space-y-4">
-          {steps.map((step) => (
-          <Link
-          key={step.number}
-          to={step.to}
-          className="flex items-start gap-4 rounded-md bg-[#d7f8ff] p-5 shadow-sm hover:border-wf-green hover:shadow-md transition-all no-underline"
-          >
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#004E3E] text-lg font-bold text-white">
-          {step.number}
-          </span>
-          <div>
-          <h3 className="text-lg font-bold text-[#231F20]">{step.title}</h3>
-          <p className="mt-1 text-sm text-wf-gray">{step.description}</p>
-          </div>
-          </Link>
-          ))}
-          </div>
-          </section>
-
-          {/* Topic cards */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Explore this section</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-          {topicCards.map((card) => (
-          <Link
-          key={card.to}
-          to={card.to}
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">{card.title}</h3>
-          <p className="text-sm text-[#231F20] flex-1">{card.description}</p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          <div className="space-y-6 mb-8">
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                1
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">You contact us</h3>
+                <p className="text-gray-700">You can phone us, use our online self-assessment tool, or ask someone to contact us on your behalf. A GP, hospital, or other professional can also refer you.</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                2
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">We assess your needs</h3>
+                <p className="text-gray-700">A care needs assessment is a conversation about what you can and cannot do, what matters to you, and what support might help. It is always free.</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                3
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">We decide if you are eligible</h3>
+                <p className="text-gray-700">We look at whether your needs arise from a physical or mental condition, whether they affect your ability to do everyday things, and whether this has a significant impact on your wellbeing.</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                4
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">We work out the cost</h3>
+                <p className="text-gray-700">If you are eligible for support, we carry out a financial assessment to decide whether you need to contribute towards the cost of your care.</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                5
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">We agree a plan with you</h3>
+                <p className="text-gray-700">Your care and support plan sets out what help you will receive, how it will be provided, and how it will be paid for.</p>
+              </div>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-lg">
+                6
+              </div>
+              <div>
+                <h3 className="font-bold text-gray-900 mb-1">We review your plan regularly</h3>
+                <p className="text-gray-700">We check that your support is still working for you and make changes if your needs have changed.</p>
+              </div>
             </div>
           </div>
-          </Link>
-          ))}
+
+          <div className="bg-gray-100 border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <p className="text-gray-900">
+              <strong>A care needs assessment is always free.</strong> Anyone can ask for one. You do not need a referral from a GP or hospital.
+            </p>
           </div>
-          </section>
+        </section>
 
-          {/* Quick actions */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Quick actions</h2>
-          <div className="grid gap-4 md:grid-cols-3">
-          <Link
-          to="/adult-social-care/how-adult-social-care-works/how-to-ask-for-help"
-          className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
-          >
-          <span className="text-lg font-bold">Request an assessment</span>
-          </Link>
-          <a
-          href="tel:02084963130"
-          className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
-          >
-          <span className="text-lg font-bold">Call us now</span>
-          <span className="block mt-1 text-sm text-white/80">020 8496 3130</span>
-          </a>
-          <Link
-          to="/adult-social-care/paying-for-care"
-          className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
-          >
-          <span className="text-lg font-bold">Paying for care</span>
-          </Link>
-          </div>
-          </section>
-
-          {/* Emergency contact */}
-          <section className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#d4351c]">Emergency contact</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you or someone you know is in immediate danger, call <strong>999</strong>.
-          </p>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          For urgent social care needs outside office hours, contact the Emergency
-          Duty Team:
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963000" className="text-wf-blue underline">020 8496 3000</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Available 24 hours a day, 7 days a week</p>
-          </section>
-
-          {/* Daytime contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Contact Adult Social Care</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          To ask about adult social care or request an assessment, contact us during
-          office hours.
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
+        {/* Key things to know */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#bf3688] mb-6">Key things to know</h2>
+          
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Adult social care is for people aged 18 and over who need help with everyday life because of illness, disability, frailty, or a mental health condition.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A care needs assessment is free. You do not need to pay anything to find out whether you are eligible for support.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Not everyone who has an assessment will receive council-funded care. But even if you are not eligible, we will give you information and advice about other help available to you.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Adult social care is means-tested. If you are eligible for support, we will assess your finances to see if you need to contribute towards the cost.</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>You have choices. If you receive a personal budget, you can choose how your support is arranged, including managing it yourself through a direct payment.</span>
+            </li>
           </ul>
-          </section>
+        </section>
 
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* In this section - Card links */}
+        <section className="mb-12 bg-gray-200 p-8 border border-gray-200">
+          <h2 className="text-3xl font-bold text-[#bf3688] mb-8">In this section</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <a
+              href="#/adult-social-care/how-adult-social-care-works/what-is-adult-social-care"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">What is adult social care</h3>
+              <p className="text-gray-700 text-sm pr-12">What adult social care is, who provides it, and the kinds of help it can offer.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Card 2 */}
+            <a
+              href="#/adult-social-care/how-adult-social-care-works/who-can-get-help"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Who can get help</h3>
+              <p className="text-gray-700 text-sm pr-12">The eligibility criteria for adult social care and what we look at when deciding if you qualify for support.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Card 3 */}
+            <a
+              href="#/adult-social-care/how-adult-social-care-works/how-to-ask-for-help"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">How to ask for help</h3>
+              <p className="text-gray-700 text-sm pr-12">How to contact us, request an assessment, or use our online self-assessment tool.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Card 4 */}
+            <a
+              href="#/adult-social-care/how-adult-social-care-works/what-happens-during-an-assessment"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">What happens during an assessment</h3>
+              <p className="text-gray-700 text-sm pr-12">What to expect during a care needs assessment, what we will ask you about, and what happens afterwards.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Card 5 */}
+            <a
+              href="#/adult-social-care/how-adult-social-care-works/your-care-and-support-plan"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Your care and support plan</h3>
+              <p className="text-gray-700 text-sm pr-12">How your plan is created, what it includes, and how it is reviewed.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* Quick actions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-[#bf3688] mb-6">Quick actions</h2>
+          
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="https://portal.walthamforest.gov.uk/AchieveForms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+            >
+              Use our self-assessment tool
+              <ArrowRight size={18} />
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Contact Adult Social Care
+              <ArrowRight size={18} />
+            </a>
+          </div>
+        </section>
+
+        {/* Need help now */}
+        <section className="mb-12 bg-gray-100 p-8 border border-gray-200">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Need help now?</h2>
+          <p className="text-gray-700 mb-4 font-bold">
+            If you or someone you know is in immediate danger, call 999.
+          </p>
+          <p className="text-gray-700 mb-4">
+            If you are worried about a vulnerable adult, visit our keeping adults safe page or call our Adult Social Care team.
+          </p>
+          <div className="flex items-center gap-3 text-gray-900 mb-2">
+            <Phone size={20} className="text-[#bf3688]" />
+            <span className="font-bold">Phone: 020 8496 3130</span>
+          </div>
+          <p className="text-gray-700 text-sm ml-8 mb-3">Monday to Friday, 9am to 5pm</p>
+          <p className="text-gray-700 text-sm ml-8">
+            <strong>Out of hours emergencies:</strong> 020 8496 3130 (choose the emergency option)
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care" className="text-[#bf3688] hover:underline">
+                Paying for your care
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">
+                Being a carer
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/live-independently-at-home" className="text-[#bf3688] hover:underline">
+                Support at home
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
+
       </div>
     </div>
   );

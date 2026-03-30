@@ -1,234 +1,166 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Request an assessment", to: "/adult-social-care/how-to-get-support/request-an-assessment" },
-  { title: "Check your situation online", to: "/adult-social-care/how-to-get-support/check-your-situation-online" },
-];
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Contact us</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Contact us
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/how-to-get-support" className="hover:underline">How to get support</a>
+          <span className="mx-1">&gt;</span>
+          <span>Contact us</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Contact us
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-12">
+          If you think you or someone you know might need adult social care, get in touch. We can talk through your situation and help you work out the best next step.
+        </p>
+
+        {/* Phone */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Phone</h2>
+          <div className="flex items-center gap-3 text-gray-900 mb-2">
+            <Phone size={24} className="text-[#bf3688]" />
+            <span className="text-2xl font-bold">020 8496 3130</span>
+          </div>
+          <p className="text-gray-700 mb-4 ml-9">Monday to Friday, 9am to 5pm</p>
+          <p className="text-gray-700">
+            When you call, we will ask you some basic questions about your situation so we can understand what kind of help you need. If you are calling about someone else, please have their name, date of birth, and address ready if possible.
+          </p>
+        </section>
+
+        {/* Out of hours */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Out of hours</h2>
+          <p className="text-gray-700 mb-4">
+            If you need urgent social care help outside office hours, call 020 8496 3130 and choose the emergency option.
+          </p>
+          <p className="text-gray-700">
+            If someone is in immediate danger, call 999.
+          </p>
+        </section>
+
+        {/* Online */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Online</h2>
+          <p className="text-gray-700 mb-4">
+            You can use our self-assessment tool at any time, including evenings and weekends. It will check your situation and point you towards services that could help.
+          </p>
+          <a
+            href="https://portal.walthamforest.gov.uk/AchieveForms/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Use our self-assessment tool
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* What happens when you contact us */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens when you contact us</h2>
+          <p className="text-gray-700 mb-4">
+            When you get in touch, we will:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Listen to your situation and understand what kind of help you are looking for</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Give you information and advice about the support available</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Help you decide whether a care needs assessment is the right next step</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>If an assessment is needed, explain what happens and arrange a time that suits you</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            In some cases, we may be able to help straight away by putting you in touch with community services, voluntary organisations, equipment providers, or other support without needing a formal assessment.
+          </p>
+        </section>
+
+        {/* Who can contact us */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who can contact us</h2>
+          <p className="text-gray-700 mb-4">
+            Anyone can contact us:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>You can call for yourself</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A family member, friend, or carer can call on your behalf</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A GP, nurse, hospital, or other health professional can refer you</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Any other organisation, such as a housing provider, can contact us about you</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            You do not need a referral or a letter from a doctor. If you think you might need help, that is enough to get in touch.
+          </p>
+        </section>
+
+        {/* If you are a professional */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you are a professional</h2>
+          <p className="text-gray-700">
+            If you are a GP, nurse, social worker, or other professional and you want to refer someone for adult social care support, please phone 020 8496 3130.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/request-an-assessment" className="text-[#bf3688] hover:underline">
+                Request an assessment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/check-your-situation-online" className="text-[#bf3688] hover:underline">
+                Check your situation online
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If you need to speak to someone about adult social care, there are several
-      ways to get in touch. Our team can help you understand what support is
-      available, answer your questions and guide you through the process.
-      </p>
-      </section>
-
-      {/* Green callout - before you call */}
-      <section className="rounded-lg bg-white p-6">
-      <h2 className="text-xl font-bold text-[#231F20]">Before you call</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      Before you call, you might find what you need through our online
-      self-assessment tool or community support. Many people get the help they
-      need without contacting us directly.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      <Link
-      to="/adult-social-care/how-to-get-support/check-your-situation-online"
-      className="text-wf-blue underline hover:text-wf-green font-semibold"
-      >
-      Check your situation online
-      </Link>
-      </p>
-      </section>
-
-      {/* Community and voluntary support */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Community and voluntary support</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Many people find the right support through community services and local
-      organisations without needing a formal assessment. Explore what is available:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <Link
-      to="/adult-social-care/live-independently-at-home/social-prescribing"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Social prescribing and local groups
-      </Link>{" "}
-      — activities, groups, and voluntary sector support
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/being-carer/hubs/universal-offer"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Universal offer for carers
-      </Link>{" "}
-      — support available to all carers without an assessment
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/live-independently-at-home"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Living independently
-      </Link>{" "}
-      — equipment, home adaptations, and practical help
-      </li>
-      </ul>
-      </section>
-
-      {/* Other ways to get help - moved above phone */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Other ways to get help</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can also use our online tools to get started:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <Link
-      to="/adult-social-care/how-to-get-support/check-your-situation-online"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Check your situation online
-      </Link>{" "}
-      using our self-assessment tool
-      </li>
-      <li>
-      <Link
-      to="/adult-social-care/how-to-get-support/request-an-assessment"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Request an assessment
-      </Link>{" "}
-      using our online form
-      </li>
-      </ul>
-      </section>
-
-      {/* Phone */}
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Phone</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      Call our Adult Social Care team to discuss your needs or make a referral.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Email</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can email the Adult Social Care team at:{" "}
-      <a
-      href="mailto:socialcaredirect@walthamforest.gov.uk"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      socialcaredirect@walthamforest.gov.uk
-      </a>
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      We aim to respond to emails within two working days. Please include your
-      name, contact details and a brief description of the support you need.
-      Do not include sensitive personal information in your email unless it is
-      essential.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Office hours</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Our Adult Social Care team is available during the following hours:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li><strong>Monday to Friday:</strong> 9am to 5pm</li>
-      <li><strong>Saturday, Sunday and bank holidays:</strong> Closed</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you visit in person, our offices are located at Waltham Forest Town
-      Hall, Forest Road, Walthamstow, London E17 4JF.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Emergency out of hours</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you have an urgent social care need outside of office hours, such as
-      a safeguarding concern or an immediate risk to someone's safety, contact
-      the Emergency Duty Team.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      <strong>Emergency Duty Team:</strong>{" "}
-      <a href="tel:02084963000" className="text-wf-blue underline">
-      020 8496 3000
-      </a>
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      This service is available evenings, weekends and bank holidays. If someone
-      is in immediate danger, call 999.
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

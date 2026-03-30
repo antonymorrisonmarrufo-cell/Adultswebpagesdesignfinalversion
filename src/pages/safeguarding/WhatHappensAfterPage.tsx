@@ -1,174 +1,109 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, FileText } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+const sections = [
+  {
+    title: 'What we do when we receive a concern',
+    copy: 'We review the information provided and decide what action may be needed to protect the adult from harm.',
+  },
+  {
+    title: 'How the adult is involved',
+    copy: 'We will always try to involve the adult at risk in decisions about their safety.',
+  },
+  {
+    title: 'Working with other organisations',
+    copy: 'We work with the police, the NHS and other organisations where needed to protect adults at risk of harm.',
+  },
+  {
+    title: 'If risk becomes urgent',
+    copy: 'If someone is in immediate danger, call 999.',
+  },
+];
 
 export default function WhatHappensAfterPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">What happens after a concern is raised</span></li>
-          </ol>
+    <>
+      <section className="bg-gray-200 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6">
+            <a href="#" className="hover:underline">Home</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/protecting-adults-at-risk" className="hover:underline">Protecting adults at risk of abuse</a>
+            <span className="mx-1">&gt;</span>
+            <span>What happens after you report</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">What happens after a safeguarding concern is raised</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          When a safeguarding concern is reported to us, we follow a clear process to make sure the adult
-          is safe and their wishes are at the centre of everything we do.
+
+          {/* H1 */}
+          <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+            What happens after you report
+          </h1>
+
+          {/* Intro */}
+          <p className="text-gray-700 max-w-4xl mb-12 text-base font-semibold">
+            When we receive a report, we decide whether to carry out a safeguarding enquiry. This helps us understand what happened and what needs to happen next to keep the person safe.
           </p>
+
+          {/* Sections */}
+          <div className="max-w-4xl space-y-0 mb-14">
+            {sections.map((section, i) => (
+              <div key={i} className={`py-8 bg-white px-8 border-x border-t border-gray-200 ${i === sections.length - 1 ? 'border-b shadow-sm' : ''}`}>
+                <h2 className="text-[#bf3688] font-bold text-xl mb-3">{section.title}</h2>
+                <p className="text-gray-700">{section.copy}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA block */}
+          <div className="max-w-4xl border-2 border-[#bf3688] bg-white p-8 mb-10 shadow-sm">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-3">Need to report a concern?</h2>
+            <p className="text-gray-700 mb-6">If you are ready to tell us about a concern, use the reporting route.</p>
+            <a
+              href="#/adult-social-care/report-abuse-or-neglect"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              Report a concern
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
+          {/* Easy Read and accessible safeguarding information */}
+          <div className="max-w-4xl mb-12">
+            <h2 className="text-[#bf3688] mb-4 font-bold text-xl">Easy Read and accessible safeguarding information</h2>
+            <p className="text-gray-700 mb-6 text-sm">
+              Use these Easy Read leaflets if you want simpler safeguarding information.
+            </p>
+            
+            <div className="space-y-4">
+              <a
+                href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20SAFEGUARDING%20AA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-[#bf3688] hover:underline group"
+              >
+                <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                <span className="font-semibold text-sm">Safeguarding in Waltham Forest (Easy Read PDF)</span>
+              </a>
+
+              <a
+                href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20Financial%20Abuse%20AA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-[#bf3688] hover:underline group"
+              >
+                <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                <span className="font-semibold text-sm">Safeguarding adults: financial abuse (Easy Read PDF)</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Overview */}
-          <section className="mb-8">
-          <p className="text-wf-dark leading-relaxed">
-          The safeguarding process is guided by the principles of the Care Act 2014 and the approach known
-          as Making Safeguarding Personal. This means we will always try to understand what the adult wants
-          to happen and work with them to achieve the best possible outcome.
-          </p>
-          </section>
-
-          {/* Step 1: Screening */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 1: Screening the concern</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When we receive a safeguarding concern, a trained member of the Adult Social Care team will
-          review the information provided. During screening, we will consider:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Whether the person has care and support needs</li>
-          <li>Whether the concern relates to abuse or neglect</li>
-          <li>Whether the person is unable to protect themselves because of their care and support needs</li>
-          <li>Whether immediate action is needed to keep the person safe</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          If the concern does not meet the safeguarding threshold, it may be signposted to other services
-          that can help, such as community support, advocacy, or adult social care assessments.
-          </p>
-          </section>
-
-          {/* Step 2: Section 42 Enquiry */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 2: Section 42 enquiry</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If the concern meets the safeguarding threshold, a Section 42 enquiry will be carried out under
-          the Care Act 2014. The purpose of the enquiry is to:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Establish the facts about what has happened</li>
-          <li>Ascertain the adult's views and wishes</li>
-          <li>Assess what, if any, risk remains</li>
-          <li>Determine what action should be taken to safeguard the adult</li>
-          <li>Support the adult to achieve the outcomes they want</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          The enquiry may be led by the local authority or another organisation, such as the NHS or the
-          police. We will involve the adult (and their representative or advocate where appropriate)
-          throughout the process.
-          </p>
-          </section>
-
-          {/* Step 3: Safeguarding plan */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 3: Developing a safeguarding plan</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Where ongoing risks are identified, a safeguarding plan may be put in place. This plan will set
-          out the actions to be taken to protect the adult and reduce risk. The plan is developed with the
-          adult and may include:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Changes to the person's care and support arrangements</li>
-          <li>Referral to other services such as counselling or advocacy</li>
-          <li>Action by the police if a crime has been committed</li>
-          <li>Restrictions or conditions placed on the person causing harm</li>
-          <li>Monitoring and review arrangements</li>
-          </ul>
-          </section>
-
-          {/* Step 4: Outcomes */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 4: Outcomes and closure</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          At the end of the safeguarding process, we will review the outcomes with the adult to check
-          whether the actions taken have achieved what they wanted. We will ask:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Were the adult's desired outcomes met, partially met, or not met?</li>
-          <li>Is the adult now safer?</li>
-          <li>Is any further action or support needed?</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          The case will be closed when the enquiry is complete and appropriate actions have been taken.
-          If the adult's needs change or new concerns arise, a new safeguarding concern can be raised at
-          any time.
-          </p>
-          </section>
-
-          {/* Ongoing support */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Ongoing support</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Even after the safeguarding process has ended, support remains available. The adult may be
-          offered a care and support assessment, referred to community services, or supported through
-          an advocate. We are committed to working alongside individuals to promote their safety and
-          independence.
-          </p>
-          </section>
-
-          {/* Your rights */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights during the process</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Throughout the safeguarding process, you have the right to:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Be listened to and have your views taken into account</li>
-          <li>Be kept informed about what is happening</li>
-          <li>Have an independent advocate if you have substantial difficulty being involved</li>
-          <li>Make a complaint if you are unhappy with the process</li>
-          </ul>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/report-abuse-or-neglect" className="text-wf-blue underline hover:text-wf-green">
-          Report abuse or neglect
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green">
-          Types of abuse and neglect
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
-          Safeguarding adults overview
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">
-          Understand your rights
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
-      </div>
-    </div>
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

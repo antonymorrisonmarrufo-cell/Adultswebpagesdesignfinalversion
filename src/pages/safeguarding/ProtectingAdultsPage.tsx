@@ -1,226 +1,197 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone, FileText } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+const relatedInfo = [
+  { title: 'Worried about a child', href: '#/children-and-families/report-concern-about-child', external: false },
+  { title: 'Support for carers', href: '#/adult-social-care/support-for-carers', external: false },
+  { title: 'Request a care assessment', href: 'https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b', external: true },
+  { title: 'How adult social care works', href: '#/adult-social-care/how-adult-social-care-works', external: false },
+];
 
 export default function ProtectingAdultsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Safeguarding adults</span></li>
-          </ol>
+    <>
+      <section className="bg-gray-200 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6">
+            <a href="#" className="hover:underline">Home</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+            <span className="mx-1">&gt;</span>
+            <span>Protecting adults at risk of abuse</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Safeguarding adults</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Safeguarding means protecting an adult's right to live in safety, free from abuse and neglect.
-          If you are worried about yourself or someone else, we can help.
+
+          {/* H1 */}
+          <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+            Protecting adults at risk of abuse
+          </h1>
+
+          {/* Intro */}
+          <p className="text-gray-700 max-w-4xl mb-8 text-base">
+            Use this page if you are worried that an adult is being abused, neglected or is not safe. You can report a concern even if you do not know all the details.
           </p>
+
+          {/* Emergency Alert */}
+          <div className="bg-[#fcedf3] border-2 border-[#003078] bg-[#d7f8ff] px-6 py-5 mb-10 max-w-4xl">
+            <div className="flex items-start gap-3">
+              <Phone className="text-[#bf3688] flex-shrink-0 mt-0.5" size={20} />
+              <div className="space-y-1 text-gray-900 text-sm">
+                <p><strong>If someone is in immediate danger, call 999.</strong></p>
+                <p>If you need urgent help outside normal office hours, contact the emergency duty team.</p>
+                <p>
+                  If you are worried about a child,{' '}
+                  <a href="#/children-and-families/report-concern-about-child" className="text-[#bf3688] underline hover:no-underline">
+                    use the child safeguarding route
+                  </a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Choose what you need */}
+          <h2 className="text-[#bf3688] mb-8 font-bold text-xl">Choose what you need to do</h2>
+
+          {/* 2x2 card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+
+            {/* Card 1 — Report */}
+            <a
+              href="https://action-spider-46698300.figma.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-[#bf3688] bg-[#fcedf3] hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              <div>
+                <h3 className="mb-3 font-bold text-lg text-[#bf3688]">Report abuse or neglect</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">Use this if you are worried about an adult being harmed, neglected or unsafe.</p>
+              </div>
+              <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between">
+                <span className="text-sm font-semibold text-[#bf3688]">Report a concern</span>
+                <div className="w-10 h-10 rounded-full bg-[#bf3688] group-hover:bg-[#a02d73] flex items-center justify-center flex-shrink-0 transition-colors">
+                  <ArrowRight className="text-white w-5 h-5" />
+                </div>
+              </div>
+            </a>
+
+            {/* Card 2 — Professionals (dual CTA) */}
+            <div className="flex flex-col justify-between p-6 border-2 border-gray-200 bg-white">
+              <div>
+                <h3 className="mb-3 font-bold text-lg text-gray-900">Professionals and providers</h3>
+                <p className="text-gray-700 text-sm leading-relaxed mb-6">
+                  Use this if you work for a care provider, NHS service, council service, police, housing provider, voluntary organisation or another professional service.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://action-spider-46698300.figma.site/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                >
+                  Make a professional referral
+                  <ArrowRight size={16} />
+                </a>
+                <a
+                  href="#/adult-social-care/professionals-and-providers"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-[#bf3688] text-[#bf3688] px-5 py-2.5 text-sm font-semibold hover:bg-[#bf3688] hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+                >
+                  Read professional guidance
+                  <ArrowRight size={16} />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3 — Signs */}
+            <a
+              href="#/adult-social-care/abuse-and-neglect"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              <div>
+                <h3 className="mb-3 font-bold text-lg text-gray-900">Learn the signs of abuse and neglect</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">Read what abuse and neglect can look like, the different types of abuse, and when to report a concern.</p>
+              </div>
+              <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between">
+                <span className="text-sm font-semibold text-gray-700">Read about abuse and neglect</span>
+                <div className="w-10 h-10 rounded-full bg-[#bf3688] group-hover:bg-[#a02d73] flex items-center justify-center flex-shrink-0 transition-colors">
+                  <ArrowRight className="text-white w-5 h-5" />
+                </div>
+              </div>
+            </a>
+
+            {/* Card 4 — What happens after */}
+            <a
+              href="#/adult-social-care/what-happens-after-you-report"
+              className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-gray-200 bg-white hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
+            >
+              <div>
+                <h3 className="mb-3 font-bold text-lg text-gray-900">What happens after you report</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">Find out what happens when we receive a concern, how decisions are made, and what may happen next.</p>
+              </div>
+              <div className="absolute bottom-5 left-6 right-6 flex items-center justify-between">
+                <span className="text-sm font-semibold text-gray-700">Read what happens next</span>
+                <div className="w-10 h-10 rounded-full bg-[#bf3688] group-hover:bg-[#a02d73] flex items-center justify-center flex-shrink-0 transition-colors">
+                  <ArrowRight className="text-white w-5 h-5" />
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          {/* Related safeguarding information */}
+          <h2 className="text-[#bf3688] mb-6 font-bold text-xl">Related safeguarding information</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+            {relatedInfo.map((link, i) => (
+              <a
+                key={i}
+                href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
+                className="bg-white border border-gray-200 p-4 flex items-center justify-between hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] group"
+              >
+                <span className="text-gray-900 text-sm font-semibold pr-4">{link.title}</span>
+                <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors">
+                  <ArrowRight className="text-white w-4 h-4" />
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Easy Read and accessible safeguarding information */}
+          <div className="max-w-4xl mb-12">
+            <h2 className="text-[#bf3688] mb-4 font-bold text-xl">Easy Read and accessible safeguarding information</h2>
+            <p className="text-gray-700 mb-6 text-sm">
+              Accessible versions of safeguarding information are available in Easy Read.
+            </p>
+            
+            <div className="space-y-4">
+              <a
+                href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20SAFEGUARDING%20AA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-[#bf3688] hover:underline group"
+              >
+                <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                <span className="font-semibold text-sm">Safeguarding in Waltham Forest (Easy Read PDF)</span>
+              </a>
+
+              <a
+                href="https://www.walthamforest.gov.uk/sites/default/files/2023-01/Leaflet%20Financial%20Abuse%20AA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 text-[#bf3688] hover:underline group"
+              >
+                <FileText size={20} className="flex-shrink-0 mt-0.5" />
+                <span className="font-semibold text-sm">Safeguarding adults: financial abuse (Easy Read PDF)</span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Emergency banner */}
-          <div className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
-          <p className="mt-2 text-wf-dark">
-          Call <strong>999</strong> immediately. Do not wait to contact social services if someone is at risk of harm right now.
-          </p>
-          </div>
-
-          {/* What is safeguarding */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is safeguarding?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Safeguarding is about people and organisations working together to prevent and stop both the
-          risks and experience of abuse or neglect. It is about making sure that adults who have care and
-          support needs and who may be at risk are kept safe from harm, while ensuring their wellbeing is promoted.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Care Act 2014 sets out a clear legal framework for how local authorities and other parts of
-          the system should protect adults at risk of abuse or neglect. Waltham Forest Council works with
-          partners including the NHS, police, and voluntary organisations to keep adults safe.
-          </p>
-          </section>
-
-          {/* Hub links grid */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Safeguarding information and guidance</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-          <Link
-          to="/adult-social-care/report-abuse-or-neglect"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Report abuse or neglect</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          How to raise a safeguarding concern, who to contact, and what information you will need.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/abuse-and-neglect"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Types of abuse and neglect</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Understand the different forms of abuse and neglect, including physical, emotional, financial, and more.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/what-happens-after-you-report"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">What happens after a concern is raised</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Learn about the safeguarding process, from screening through to enquiry and outcomes.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/professionals-and-providers"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Information for professionals</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Duty to report, making a safeguarding referral, and professional responsibilities.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/professional-guidance"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Professional guidance and resources</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Practice standards, training opportunities, and toolkits for practitioners.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/safeguarding-adults-board"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Safeguarding Adults Board</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          The role and work of the Waltham Forest Safeguarding Adults Board, including the strategic plan.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/marac"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">MARAC</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Multi-Agency Risk Assessment Conference for high-risk domestic abuse cases.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/resources-to-improve-practice"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Resources to improve practice</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Research, case studies, and learning from safeguarding adult reviews.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/children-and-families/report-concern-about-child"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Reporting concerns about a child</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          If you are worried about a child, there is a separate process. Find out how to report.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-          </div>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">
-          How to get support from Adult Social Care
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">
-          Understand your rights
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.ann-craft-trust.org" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Ann Craft Trust - safeguarding adults
-          </a>
-          </li>
-          <li>
-          <a href="https://www.legislation.gov.uk/ukpga/2014/23/contents/enacted" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care Act 2014
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
-      </div>
-    </div>
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

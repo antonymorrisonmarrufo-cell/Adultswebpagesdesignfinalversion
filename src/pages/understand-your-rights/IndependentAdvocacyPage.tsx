@@ -1,167 +1,150 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
-  { title: "Mental capacity and decision making", to: "/adult-social-care/understand-your-rights/mental-capacity-and-decision-making" },
-  { title: "Independent help and advocacy", to: "/adult-social-care/complaints-compliments/independent-help-and-advocacy" },
-];
+import { Phone, AlertCircle, ExternalLink } from 'lucide-react';
 
 export default function IndependentAdvocacyPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Independent advocacy</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Independent advocacy
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/understand-your-rights" className="hover:underline">Understand your rights</a>
+          <span className="mx-1">&gt;</span>
+          <span>Independent advocacy</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Independent advocacy
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          An advocate is someone who helps you express your views, understand your rights, and make sure your voice is heard when decisions are being made about your care.
+        </p>
+
+        {/* What an advocate does */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What an advocate does</h2>
+          <p className="text-gray-700 mb-4">
+            An independent advocate is not a council employee. They work for a separate organisation and are there to represent your interests. An advocate can:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-4">
+            <li>Help you understand what is happening and what your options are</li>
+            <li>Support you to express your views in meetings, assessments, or reviews</li>
+            <li>Make sure the council listens to what you want</li>
+            <li>Help you challenge a decision if you think it is wrong</li>
+            <li>Support you through the complaints process</li>
+          </ul>
+          <p className="text-gray-700">
+            An advocate does not make decisions for you. They help you make your own decisions, or make sure your wishes are represented if you are unable to do this yourself.
+          </p>
+        </section>
+
+        {/* When the council must arrange an advocate */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">When the council must arrange an advocate</h2>
+          <p className="text-gray-700 mb-4">
+            Under the Care Act 2014, the council has a legal duty to arrange an independent advocate for you if two conditions are met:
+          </p>
+          <ol className="list-decimal ml-6 text-gray-700 space-y-2 mb-4">
+            <li>You have difficulty being involved in decisions about your care — for example, because of a learning disability, dementia, a mental health condition, or a communication difficulty.</li>
+            <li>There is no one appropriate available to support you — for example, you do not have a family member or friend who is able and willing to help.</li>
+          </ol>
+          <p className="text-gray-700">
+            This applies to care needs assessments, care and support planning, care reviews, and safeguarding enquiries. The council must consider whether you need an advocate at each of these stages.
+          </p>
+        </section>
+
+        {/* Types of advocacy */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Types of advocacy</h2>
+          <p className="text-gray-700 mb-4">
+            There are different types of independent advocacy, depending on your situation:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li><strong>Care Act advocacy</strong> — for people who need support to be involved in their care and support under the Care Act 2014</li>
+            <li><strong>Independent Mental Health Advocacy (IMHA)</strong> — for people who are detained under the Mental Health Act, or who are subject to a Community Treatment Order or guardianship</li>
+            <li><strong>Independent Mental Capacity Advocacy (IMCA)</strong> — for people who lack mental capacity and have no one else to represent them when serious decisions are being made about their care or treatment</li>
+            <li><strong>General advocacy</strong> — broader support to help you navigate services, raise concerns, or understand your rights</li>
+          </ul>
+        </section>
+
+        {/* How to get an advocate */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to get an advocate</h2>
+          <p className="text-gray-700 mb-4">
+            You can ask the council to arrange an advocate for you. Your social worker, care coordinator, or anyone involved in your care can also make a referral.
+          </p>
+          <p className="text-gray-700 mb-6">
+            You can also contact the advocacy service directly:
+          </p>
+          <div className="bg-gray-50 border border-gray-200 p-6 mb-6">
+            <h3 className="font-bold text-gray-900 mb-3">POhWER</h3>
+            <p className="text-gray-700 mb-4">
+              POhWER provides independent advocacy services in Waltham Forest for adults.
+            </p>
+            <div className="flex items-center gap-3 text-gray-900 mb-2">
+              <Phone size={20} className="text-[#bf3688]" />
+              <span className="font-bold">Phone: 0300 456 2370</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <ExternalLink size={16} className="text-[#bf3688]" />
+              <a 
+                href="https://www.pohwer.net/waltham-forest"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#bf3688] hover:underline"
+              >
+                pohwer.net/waltham-forest
+              </a>
+            </div>
+          </div>
+
+          {/* Callout box */}
+          <div className="bg-[#FFF4E6] border-2 border-[#003078] bg-[#d7f8ff] p-6">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="text-[#bf3688] mt-1 flex-shrink-0" size={24} />
+              <div>
+                <p className="text-gray-700">
+                  You do not need to wait for the council to offer you an advocate. If you think you need one, ask. If you find it difficult to be involved in decisions about your care and you do not have someone to help you, the council must arrange an advocate — this is a legal duty, not a discretionary service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/understand-your-rights/your-rights-under-care-act" className="text-[#bf3688] hover:underline">
+                Your rights under the Care Act
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/understand-your-rights/mental-capacity-decision-making" className="text-[#bf3688] hover:underline">
+                Mental capacity and decision-making
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns" className="text-[#bf3688] hover:underline">
+                Challenging decisions and raising concerns
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      An independent advocate is someone who can speak on your behalf and help
-      make sure your views and wishes are heard. There are several types of
-      statutory advocacy available depending on your circumstances.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Independent Mental Capacity Advocate (IMCA)</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      An IMCA must be appointed when a person lacks mental capacity to make a
-      specific decision and has no suitable family member, friend or other person
-      to represent them. IMCAs are involved in decisions about:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Serious medical treatment</li>
-      <li>A change of accommodation arranged by the NHS or council</li>
-      <li>Safeguarding adults proceedings</li>
-      <li>Care reviews</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The IMCA will gather relevant information, consult with the person as much
-      as possible and represent their interests in the decision-making process.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Independent Mental Health Advocate (IMHA)</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      An IMHA provides support to people who are subject to certain provisions
-      of the Mental Health Act 1983, including those who are:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Detained in hospital (sectioned)</li>
-      <li>Subject to a community treatment order</li>
-      <li>Subject to guardianship</li>
-      <li>Conditionally discharged restricted patients</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      IMHAs help you understand your rights under the Mental Health Act, the
-      treatment you are receiving and the options available to you.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Care Act advocacy</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Under the Care Act 2014, the council must arrange an independent advocate
-      for anyone who has substantial difficulty being involved in their:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Needs assessment</li>
-      <li>Care and support planning</li>
-      <li>Care plan review</li>
-      <li>Safeguarding enquiry or review</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      This duty applies when there is no suitable person (such as a family member
-      or friend) who is able to support the person to be involved.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">How to access an advocate</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can access advocacy services by:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Asking your social worker or care coordinator</li>
-      <li>Contacting the local advocacy service directly</li>
-      <li>Calling our Adult Social Care team</li>
-      <li>Asking a family member, friend or professional to make a referral</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      All statutory advocacy services are free.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For help accessing an independent advocate, contact our team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

@@ -1,126 +1,139 @@
-import { Link } from "react-router-dom";
-
 export default function TakingBreakPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer/support-for-carers" className="text-wf-blue underline hover:text-wf-green">Support for carers</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Taking a break from caring</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer/support-for-carers" className="text-[#bf3688] hover:underline">Support for carers</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Taking a break from caring</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Taking a break from caring</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Taking regular breaks is important for your health and wellbeing. There are different types of
-          respite and replacement care available to give you time to rest and recharge.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Why breaks matter */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Why taking a break matters</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Caring for someone can be physically and emotionally demanding. Without regular breaks, carers
-          are at risk of burnout, poor health, and social isolation. Taking time away from caring is not
-          selfish - it helps you to sustain your caring role in the long term and maintain your own quality of life.
-          </p>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Taking a break from caring</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Taking a break can help protect your health and wellbeing. Find out what respite and short-break support may be available.
+        </p>
 
-          {/* Respite care */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Respite care</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Respite care provides temporary care for the person you look after, allowing you to have a break.
-          This can include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Day care services</strong> - the person you care for attends a day centre for activities and social contact</li>
-          <li><strong>Sitting services</strong> - a trained worker stays with the person you care for at home while you go out</li>
-          <li><strong>Overnight or residential respite</strong> - the person you care for stays in a care home or other setting for a short period</li>
-          </ul>
-          </section>
-
-          {/* Replacement care */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Replacement care</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Replacement care (sometimes called substitute care) is when someone else takes over your caring
-          responsibilities for a period of time. This could be arranged through:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>A care agency providing a carer to come into the home</li>
-          <li>A family member or friend stepping in</li>
-          <li>A direct payment to arrange your own replacement care</li>
-          </ul>
-          </section>
-
-          {/* Short breaks */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Short breaks can range from a few hours to a few weeks. They give you time to do things like:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Attend medical appointments</li>
-          <li>Spend time with friends or family</li>
-          <li>Take a holiday or have a day out</li>
-          <li>Catch up on rest and sleep</li>
-          <li>Pursue hobbies or interests</li>
-          </ul>
-          </section>
-
-          {/* How to arrange */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">How to arrange a break</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Speak to us about what kind of break would help you. We can discuss options following a carers assessment.
-          Contact our Adult Social Care team on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/being-carer/support-for-carers" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/carers-assessment-and-rights" className="text-wf-blue underline hover:text-wf-green">
-          Carers assessment and rights
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/tasks/breaks-respite" className="text-wf-blue underline hover:text-wf-green">
-          Arranging breaks and respite
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Request a carer's assessment
+          </a>
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Get help from Carers First
+          </a>
         </div>
+
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#why-matters" className="text-[#bf3688] underline hover:no-underline">Why taking a break matters</a></li>
+            <li><a href="#get-respite" className="text-[#bf3688] underline hover:no-underline">How to get respite support</a></li>
+            <li><a href="#types-of-breaks" className="text-[#bf3688] underline hover:no-underline">Types of breaks</a></li>
+            <li><a href="#what-next" className="text-[#bf3688] underline hover:no-underline">What happens next</a></li>
+          </ul>
+        </div>
+
+        <div className="prose max-w-none">
+          
+          <div id="why-matters" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Why taking a break matters</h2>
+            <p className="text-gray-700 mb-4">
+              Caring can be physically and emotionally demanding. Taking regular breaks can help you:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">protect your own health and wellbeing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">maintain relationships and interests</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">keep caring sustainable in the long term</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="get-respite" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">How to get respite support</h2>
+            <p className="text-gray-700 mb-4">
+              The main route into funded respite support is through a carer's assessment.
+            </p>
+            <p className="text-gray-700 mb-4">
+              During the assessment, we talk to you about what kind of break would help most and what may be available.
+            </p>
+            <p className="text-gray-700 mb-4">
+              If you have eligible needs, we will work with you to arrange appropriate support.
+            </p>
+          </div>
+
+          <div id="types-of-breaks" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Types of breaks</h2>
+            <p className="text-gray-700 mb-4">
+              Breaks from caring can take different forms depending on what works for you and the person you care for:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Day opportunities</strong> – activities and support during the day</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Help at home</strong> – support at home so you can take time for yourself</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Short residential stays</strong> – planned short stays in a care setting</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Direct payments or personal budgets</strong> – where eligible, you may be able to arrange your own support</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="what-next" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">What happens next</h2>
+            <p className="text-gray-700 mb-4">
+              To explore what respite support may be available to you:
+            </p>
+            <ol className="space-y-2 mb-4 list-decimal list-inside">
+              <li className="text-gray-700">Request a carer's assessment using the link at the top of this page</li>
+              <li className="text-gray-700">Talk to us about the kind of break that would help most</li>
+              <li className="text-gray-700">If you have eligible needs, we will agree a support plan with you</li>
+            </ol>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

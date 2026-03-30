@@ -1,171 +1,115 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function GeorgeMasonLodgePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/care-homes-and-supported-living" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">George Mason Lodge</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">George Mason Lodge</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          George Mason Lodge is a council-run residential care home in Waltham Forest,
-          providing personal care and support for older people in a welcoming and
-          supportive environment.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living" className="hover:underline">Care homes and supported living</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="hover:underline">Care homes and nursing homes</a>
+          <span className="mx-1">&gt;</span>
+          <span>George Mason Lodge</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* About */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">About George Mason Lodge</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          George Mason Lodge is operated by the London Borough of Waltham Forest and
-          provides residential care for older adults who can no longer live independently
-          at home. The home is staffed by a team of trained care workers who provide
-          personal care and support around the clock.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The home aims to create a warm, friendly atmosphere where residents feel safe,
-          respected, and able to maintain their dignity and independence as much as
-          possible.
-          </p>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          George Mason Lodge
+        </h1>
 
-          {/* Services */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Services provided</h2>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>24-hour personal care including help with washing, dressing, and mobility</li>
-          <li>Nutritious meals prepared on-site, catering for dietary requirements and cultural preferences</li>
-          <li>Medication management and administration</li>
-          <li>A varied programme of social activities, outings, and entertainment</li>
-          <li>Support from visiting healthcare professionals including GPs, district nurses, and therapists</li>
-          <li>Assistance with laundry and housekeeping</li>
-          <li>Key worker system so each resident has a named member of staff who knows them well</li>
-          <li>Regular reviews of care plans with residents and their families</li>
-          </ul>
-          </section>
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          A council-run care home in Leytonstone for older adults, including people living with dementia and physical frailty.
+        </p>
 
-          {/* Accommodation */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Accommodation</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          George Mason Lodge offers single bedrooms, many with en-suite facilities.
-          Residents are encouraged to personalise their rooms with photographs, ornaments,
-          and small items of furniture to make them feel at home.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The home has communal lounges, a dining room, accessible gardens, and quiet
-          areas where residents can relax or spend time with visitors. The building is
-          fully accessible for wheelchair users and people with mobility difficulties.
-          </p>
-          </section>
-
-          {/* Visiting */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Visiting</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Family and friends are welcome to visit at any time. We believe that
-          maintaining relationships with loved ones is essential to residents' wellbeing.
-          There are comfortable areas where you can spend time with your family member in
-          private.
-          </p>
-          </section>
-
-          {/* Fees */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Fees and funding</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The cost of a placement at George Mason Lodge depends on your assessed care
-          needs and financial circumstances. Waltham Forest Council will carry out a
-          financial assessment to determine how much you will need to contribute. For
-          more information, see our{" "}
-          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          paying for care
-          </Link>{" "}
-          page.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Contact George Mason Lodge</h2>
-          <div className="mt-3 space-y-2 text-wf-dark">
-          <p>
-          <strong>Telephone:</strong>{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">
-          020 8496 3130
-          </a>{" "}
-          (Adult Social Care team)
-          </p>
-          <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-wf-blue underline">
-          socialcaredirect@walthamforest.gov.uk
+        {/* Primary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <a
+            href="tel:02085390218"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            <Phone size={18} />
+            Call George Mason Lodge: 020 8539 0218
           </a>
-          </p>
-          <p>
-          <strong>Address:</strong> George Mason Lodge, Waltham Forest, London
-          </p>
-          <p className="text-sm text-wf-gray">
-          To arrange a visit or find out more about availability, please contact the
-          Adult Social Care team.
-          </p>
-          </div>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
-          Care homes and nursing homes
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/mapleton-road" className="text-wf-blue underline hover:text-wf-green">
-          Mapleton Road
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/alliston-house" className="text-wf-blue underline hover:text-wf-green">
-          Alliston House
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
-          Request housing and care support
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          Paying for care
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Get a care assessment
+            <ArrowRight size={18} />
+          </a>
         </div>
+
+        {/* Secondary Image Placeholder */}
+        <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-64 flex items-center justify-center">
+          <p className="text-gray-400 text-center text-lg">
+            IMAGE PLACEHOLDER – GEORGE MASON LODGE
+          </p>
+        </div>
+
+        {/* About the home */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">About the home</h2>
+          <p className="text-gray-700">
+            George Mason Lodge is a purpose-built three-storey care home that can accommodate 39 residents.
+          </p>
+        </section>
+
+        {/* Who it supports */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who it supports</h2>
+          <p className="text-gray-700">
+            The home supports people over 65 and specialises in dementia care and support with physical frailty associated with older age.
+          </p>
+        </section>
+
+        {/* Accommodation and facilities */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Accommodation and facilities</h2>
+          <p className="text-gray-700 mb-4">
+            The ground floor includes a short-stay unit for up to nine residents, with single rooms and ensuite facilities.
+          </p>
+          <p className="text-gray-700">
+            Upper floors have small residential units with single rooms and shared toilet and bathing facilities, plus communal dining and lounge areas.
+          </p>
+        </section>
+
+        {/* Outdoor space and activities */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Outdoor space and activities</h2>
+          <p className="text-gray-700 mb-4">
+            The home has large grounds, raised beds and seating areas. Residents are encouraged to take part in activities.
+          </p>
+          <p className="text-gray-700">
+            Hairdressing is available for a charge.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related links</h2>
+          <div className="space-y-3">
+            <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="block text-[#bf3688] hover:underline font-semibold">
+              Care homes and nursing homes
+            </a>
+            <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support" target="_blank" rel="noopener noreferrer" className="block text-[#bf3688] hover:underline font-semibold">
+              Paying for care and support
+            </a>
+          </div>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

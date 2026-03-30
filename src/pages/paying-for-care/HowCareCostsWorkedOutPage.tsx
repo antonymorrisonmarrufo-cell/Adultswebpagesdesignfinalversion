@@ -1,156 +1,215 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Financial assessment", to: "/adult-social-care/paying-for-care/financial-assessment" },
-  { title: "Benefits and help with costs", to: "/adult-social-care/paying-for-care/benefits-and-help-with-costs" },
-  { title: "Paying for a care home", to: "/adult-social-care/paying-for-care/paying-for-a-care-home" },
-  { title: "Get financial advice", to: "/adult-social-care/paying-for-care/get-financial-advice" },
-];
+import { ArrowRight, FileText } from 'lucide-react';
 
 export default function HowCareCostsWorkedOutPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">How care costs are worked out</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">How care costs are worked out</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          The council uses a means test to work out how much you may need to pay towards
-          your care and support. This page explains how the process works.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/paying-for-care" className="hover:underline">Paying for your care</a>
+          <span className="mx-1">&gt;</span>
+          <span>How care costs are worked out</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <div className="max-w-3xl space-y-8">
-          {/* The means test */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">The means test</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When you are assessed as needing care and support, we carry out a financial
-          assessment (sometimes called a means test) to work out how much you can
-          afford to contribute towards the cost. This looks at your income, savings
-          and certain assets.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The means test is carried out under rules set by the government in the Care
-          Act 2014 and associated regulations. It is designed to make sure you are
-          never asked to pay more than you can reasonably afford.
-          </p>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          How care costs are worked out
+        </h1>
 
-          {/* Capital limits */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Capital limits</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The government sets two capital limits that affect how much you pay:
-          </p>
-          <div className="mt-4 space-y-4">
-          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-4">
-          <p className="font-semibold text-wf-dark">Upper capital limit: &#163;23,250</p>
-          <p className="mt-1 text-sm text-wf-dark leading-relaxed">
-          If your capital (savings, investments and certain assets) is above &#163;23,250,
-          you will be expected to pay the full cost of your care. This is sometimes
-          called being a self-funder.
-          </p>
-          </div>
-          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-4">
-          <p className="font-semibold text-wf-dark">Lower capital limit: &#163;14,250</p>
-          <p className="mt-1 text-sm text-wf-dark leading-relaxed">
-          If your capital is below &#163;14,250, it is not counted in the financial
-          assessment. You will only be asked to contribute from your income.
-          </p>
-          </div>
-          </div>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          If your capital is between &#163;14,250 and &#163;23,250, you will be treated as
-          having a "tariff income" of &#163;1 per week for every &#163;250 (or part of &#163;250)
-          above the lower limit. This tariff income is added to your actual income
-          when working out your contribution.
-          </p>
-          </section>
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you receive care or support arranged by the council, you may need to pay all or part of the cost. How much you pay depends on your income, savings, and personal circumstances.
+        </p>
 
-          {/* How your contribution is calculated */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How your contribution is calculated</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are eligible for council support, your weekly contribution is worked
-          out as follows:
+        {/* How we work out what you pay */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How we work out what you pay</h2>
+          <p className="text-gray-700">
+            If you are assessed as having eligible care and support needs, we use your assessment to understand your needs and work out the cost of your care and support plan. We then carry out a financial assessment to work out your contribution. This is based on your individual financial circumstances.
           </p>
-          <ol className="mt-3 list-decimal pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>We add up all your assessable income, including any tariff income from capital</li>
-          <li>We deduct certain allowances to make sure you have enough to live on (known as the Minimum Income Guarantee for care at home, or the Personal Expenses Allowance for care home residents)</li>
-          <li>We deduct eligible housing costs such as rent and council tax</li>
-          <li>We deduct disability-related expenditure where applicable</li>
-          <li>The remaining amount is your maximum weekly contribution</li>
-          </ol>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You will never be asked to pay more than the actual cost of your care. If
-          your calculated contribution is higher than the cost of your care, you will
-          pay the care cost only.
-          </p>
-          </section>
+        </section>
 
-          {/* What is not counted */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is not counted</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Certain types of income and capital are not included in the means test:
+        {/* When charges start */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">When charges start</h2>
+          <p className="text-gray-700">
+            Charges start from the date your services begin. However, they do not come into effect until your financial assessment has been completed. You will not receive an invoice until we have finished assessing your finances and told you the outcome.
           </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>Your main home (if you or your partner still lives there and you receive care at home)</li>
-          <li>Personal possessions such as furniture and clothing</li>
-          <li>The surrender value of a life insurance policy</li>
-          <li>Payments from the Independent Living Fund</li>
-          <li>War disablement pensions and war widow(er) pensions</li>
-          <li>Charitable and voluntary payments made on a regular basis</li>
+        </section>
+
+        {/* What you might need to pay */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you might need to pay</h2>
+          <p className="text-gray-700 mb-4">
+            There are three possible outcomes from a financial assessment:
+          </p>
+          <ul className="space-y-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">You pay nothing.</strong>
+                <span className="text-gray-700"> If your income is below a protected minimum level, you will not be asked to contribute towards your care costs.</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">You pay a contribution.</strong>
+                <span className="text-gray-700"> If you have some income above the protected minimum, you may be asked to pay a weekly amount towards your care. The exact amount depends on your circumstances.</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">You pay the full cost.</strong>
+                <span className="text-gray-700"> If you have savings and assets over £23,250, you will usually be expected to pay the full cost of your care. This is called self-funding.</span>
+              </div>
+            </li>
           </ul>
-          </section>
+        </section>
 
-          {/* Important note */}
-          <div className="rounded-md bg-white p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Important</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you deliberately reduce your capital to avoid paying for care (sometimes
-          called deprivation of assets), the council may still treat you as if you
-          have that capital. This includes giving away savings, transferring property
-          or spending money excessively.
+        {/* What happens after your financial assessment */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens after your financial assessment</h2>
+          <p className="text-gray-700 mb-4">
+            After your financial assessment, we will:
           </p>
-          </div>
-          </div>
-
-          {/* Related links */}
-          <div className="max-w-3xl mt-8">
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Calculate what you can afford to pay</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Explain clearly how your contribution has been worked out</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Tell you how to pay</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Explain what to do if your financial circumstances change</span>
+            </li>
           </ul>
-          </section>
-          </div>
+          <p className="text-gray-700">
+            You should usually receive your first invoice within seven weeks of the financial assessment visit. If that is not possible, we will write to you to explain why.
+          </p>
+        </section>
 
-          {/* Last updated */}
-          <p className="mt-8 text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* If you pay for your own care */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you pay for your own care</h2>
+          <p className="text-gray-700 mb-4">
+            If your savings and assets are over £23,250, you will usually pay the full cost of your care. This is often called self-funding.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Even if you are a self-funder, the council can still help you. You have the right to:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A care needs assessment, if you want one</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Information and advice about the types of care available</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Help finding suitable care providers</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            You do not have to arrange everything on your own.
+          </p>
+        </section>
+
+        {/* If you own your home */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you own your home</h2>
+          <p className="text-gray-700 mb-4">
+            If you own your home and are moving into permanent residential care, a deferred payment agreement may allow you to delay some of the cost instead of selling your home straight away. See our page on paying for a care home for more detail.
+          </p>
+          <p className="text-gray-700">
+            You should get independent legal and financial advice before making a decision about a deferred payment.
+          </p>
+        </section>
+
+        {/* Charging policies */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Charging policies</h2>
+          <p className="text-gray-700 mb-4">
+            The detailed rules for how contributions are calculated are set out in the council's charging policies:
+          </p>
+          <div className="space-y-3">
+            <a 
+              href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <FileText size={18} />
+              <span>Fairer Contributions Policy 2025/26 (PDF)</span>
+            </a>
+            <a 
+              href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <FileText size={18} />
+              <span>Residential Care Charging Policy (PDF)</span>
+            </a>
+          </div>
+        </section>
+
+        {/* CTA Button */}
+        <div className="mb-12">
+          <a
+            href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support/paying-your-care-and-support"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Pay your adult social care bill online
+            <ArrowRight size={18} />
+          </a>
         </div>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care/financial-assessment" className="text-[#bf3688] hover:underline">
+                Financial assessment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/paying-for-a-care-home" className="text-[#bf3688] hover:underline">
+                Paying for a care home
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/get-financial-advice" className="text-[#bf3688] hover:underline">
+                Get financial advice
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

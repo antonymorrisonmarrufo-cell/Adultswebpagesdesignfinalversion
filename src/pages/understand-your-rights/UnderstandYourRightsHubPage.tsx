@@ -1,140 +1,230 @@
-import { Link } from "react-router-dom";
-
-const cards = [
-  {
-    title: "Your rights under the Care Act",
-    description: "Understand your legal rights to assessment, support and a personal budget under the Care Act 2014.",
-    to: "/adult-social-care/understand-your-rights/your-rights-under-the-care-act",
-  },
-  {
-    title: "Independent advocacy",
-    description: "How an independent advocate can help you be involved in decisions about your care.",
-    to: "/adult-social-care/understand-your-rights/independent-advocacy",
-  },
-  {
-    title: "Mental capacity and decision making",
-    description: "The Mental Capacity Act 2005, its five principles and how decisions are made for people who lack capacity.",
-    to: "/adult-social-care/understand-your-rights/mental-capacity-and-decision-making",
-  },
-  {
-    title: "Your rights as a carer",
-    description: "Assessment, support and rights for unpaid carers under the Care Act 2014.",
-    to: "/adult-social-care/understand-your-rights/your-rights-as-a-carer",
-  },
-  {
-    title: "Challenging decisions and raising concerns",
-    description: "How to challenge a decision about your care, including complaints, reviews and the ombudsman.",
-    to: "/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns",
-  },
-];
-
-const relatedPages = [
-  { title: "How to get support", to: "/adult-social-care/how-to-get-support" },
-  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
-];
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function UnderstandYourRightsHubPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Understand your rights</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Understand your rights
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <span>Understand your rights</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Understand your rights
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          The Care Act 2014 gives you clear rights when it comes to adult social care. This section explains what you are entitled to, how to get independent support, and what to do if things go wrong.
+        </p>
+
+        {/* Your key rights */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Your key rights</h2>
+          <p className="text-gray-700 mb-4">Under the law, you have the right to:</p>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Ask for a care needs assessment</strong> at any time. The council must assess anyone who appears to need care and support. The assessment is always free.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Be involved in decisions about your care.</strong> The council must work with you to plan your care and support. Your views, wishes, and goals must be taken into account.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Receive information and advice</strong> about the care and support available to you, even if you are not eligible for council-funded services.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Have choice and control</strong> over how your care is arranged. If you receive a personal budget, you can choose to manage it yourself through a direct payment.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Have a carer's assessment</strong> if you are an unpaid carer. You have the same right to an assessment and support as the person you care for.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Access an independent advocate</strong> if you have difficulty being involved in decisions about your care and you do not have anyone appropriate to support you.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Be protected from abuse and neglect.</strong> The council has a duty to safeguard adults who have care and support needs and are at risk of harm.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Complain</strong> if something goes wrong. You have a legal right to raise a complaint about any aspect of your adult social care, and it will not affect the care you receive.
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-[#bf3688] font-bold mt-1">•</span>
+              <div>
+                <strong>Challenge a decision.</strong> If you disagree with a decision about your care or your financial assessment, you can ask for it to be reviewed.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* In this section */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">In this section</h2>
+
+          {/* Topic cards container - white background for deeper level pages */}
+          <div className="space-y-4">
+            
+            {/* Your rights under the Care Act */}
+            <a 
+              href="#/adult-social-care/understand-your-rights/your-rights-under-care-act"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">
+                Your rights under the Care Act
+              </h3>
+              <p className="text-gray-700 text-sm pr-12">
+                A plain English summary of what the Care Act 2014 means for you, including your right to an assessment, to be involved in your care, and to receive information and advice.
+              </p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Independent advocacy */}
+            <a 
+              href="#/adult-social-care/understand-your-rights/independent-advocacy"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">
+                Independent advocacy
+              </h3>
+              <p className="text-gray-700 text-sm pr-12">
+                What an advocate is, when the council must arrange one for you, and how to get independent support.
+              </p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Mental capacity and decision-making */}
+            <a 
+              href="#/adult-social-care/understand-your-rights/mental-capacity-decision-making"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">
+                Mental capacity and decision-making
+              </h3>
+              <p className="text-gray-700 text-sm pr-12">
+                Your right to make your own decisions, what happens if you lack capacity, and how the law protects you.
+              </p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Your rights as a carer */}
+            <a 
+              href="#/adult-social-care/understand-your-rights/your-rights-as-carer"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">
+                Your rights as a carer
+              </h3>
+              <p className="text-gray-700 text-sm pr-12">
+                What the law says about support for unpaid carers, including your right to an assessment and to services in your own right.
+              </p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Challenging decisions and raising concerns */}
+            <a 
+              href="#/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">
+                Challenging decisions and raising concerns
+              </h3>
+              <p className="text-gray-700 text-sm pr-12">
+                What to do if you disagree with a decision about your care, your financial assessment, or the way you have been treated.
+              </p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+        {/* Need help understanding your rights? */}
+        <section className="mb-12 bg-gray-50 border border-gray-200 p-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Need help understanding your rights?</h2>
+          <p className="text-gray-700 mb-4">
+            If you are not sure what you are entitled to, or you need help understanding a decision the council has made, contact the Adult Social Care team.
+          </p>
+          <div className="flex items-center gap-3 text-gray-900 mb-2">
+            <Phone size={20} className="text-[#bf3688]" />
+            <span className="font-bold">Phone: 020 8496 3130</span>
+          </div>
+          <p className="text-gray-700 text-sm mb-4 ml-8">Monday to Friday, 9am to 5pm</p>
+          <p className="text-gray-700">
+            You can also contact Healthwatch Waltham Forest or Citizens Advice for independent advice.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/how-adult-social-care-works" className="text-[#bf3688] hover:underline">
+                How adult social care works
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support" className="text-[#bf3688] hover:underline">
+                How to get support
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/complaints-compliments" className="text-[#bf3688] hover:underline">
+                Complaints, compliments and help shape our future services
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      The law gives you important rights when it comes to adult social care. This
-      section explains your rights under the Care Act 2014, the Mental Capacity
-      Act 2005 and other legislation, and tells you how to get help if you feel
-      your rights are not being upheld.
-      </p>
-      </section>
-
-      {/* Cards */}
-      <div className="grid gap-6 sm:grid-cols-2">
-      {cards.map((card) => (
-      <Link
-      key={card.to}
-      to={card.to}
-      className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-      >
-      <h3 className="text-base font-bold text-[#bf3688] mb-2">{card.title}</h3>
-      <p className="text-sm text-[#231F20] flex-1">{card.description}</p>
-      <div className="flex justify-end mt-4">
-        <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-        </div>
-      </div>
-      </Link>
-      ))}
-      </div>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If you have questions about your rights, contact our Adult Social Care team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

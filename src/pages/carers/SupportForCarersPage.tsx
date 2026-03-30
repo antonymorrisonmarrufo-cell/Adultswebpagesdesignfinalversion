@@ -1,196 +1,146 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function SupportForCarersPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Support for carers</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Support for carers</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Support for carers</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          There is a range of support available to help you in your caring role. From financial help and respite
-          breaks to health services, local groups, and training opportunities.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Support links grid */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Types of support available</h2>
-          <div className="grid gap-4 md:grid-cols-2">
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/financial-support"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Financial support</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Carer's Allowance, council tax discounts, grants, and other financial help for carers.
+      {/* White Background Section */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          
+          {/* Page Title and Standfirst */}
+          <h1 className="text-5xl font-bold text-[#231F20] mb-4">Support for carers</h1>
+          <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+            Explore the practical, financial and emotional support available to help you in your caring role.
           </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
 
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/taking-a-break"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Taking a break from caring</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Respite care, replacement care, and short breaks to help you recharge.
+          {/* Primary and Secondary CTAs */}
+          <div className="flex flex-wrap gap-4 mb-12">
+            <a
+              href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+            >
+              Request a carer's assessment
+            </a>
+            <a
+              href="https://www.carersfirst.org.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+            >
+              Get help from Carers First
+            </a>
+          </div>
+
+          {/* Intro */}
+          <p className="text-lg text-gray-700 mb-8">
+            Support may be available whether you need advice, a short break, financial guidance, emotional support or help planning for emergencies.
           </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
 
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/carer-emergency-plan"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Carer emergency plan</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Planning for emergencies so the person you care for is looked after if something happens to you.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
+          {/* Reassurance Panel */}
+          <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-12">
+            <p className="text-gray-900 text-lg">
+              You do not need to sort everything out on your own. Start with the support that matters most to you now.
+            </p>
           </div>
-          </Link>
 
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/health-and-wellbeing"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Health and wellbeing</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Free health checks, mental health support, exercise programmes, and wellbeing services.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
+        </div>
+      </div>
+
+      {/* Grey Background Section */}
+      <div className="bg-gray-200 pt-12">
+        <div className="max-w-7xl mx-auto px-6 pb-12">
+          
+          {/* Support Topic Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            
+            {/* Financial support */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/financial-support" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Financial support</h3>
+              <p className="text-gray-700 text-sm pr-12">Find out about benefits, discounts, grants and where to get help with money worries.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Taking a break from caring */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/taking-a-break" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Taking a break from caring</h3>
+              <p className="text-gray-700 text-sm pr-12">Find out what respite and short-break support may be available.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Carer emergency plan */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/carer-emergency-plan" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Carer emergency plan</h3>
+              <p className="text-gray-700 text-sm pr-12">Plan ahead so the person you care for is safe if you suddenly cannot help.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Your health and wellbeing */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/your-health-and-wellbeing" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Your health and wellbeing</h3>
+              <p className="text-gray-700 text-sm pr-12">Find support for your mental and physical wellbeing as a carer.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Local groups and services */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/local-groups-and-services" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Local groups and services</h3>
+              <p className="text-gray-700 text-sm pr-12">Find local groups, community activities and specialist organisations that support carers.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Training and workshops */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/training-and-workshops" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Training and workshops</h3>
+              <p className="text-gray-700 text-sm pr-12">Build your confidence, learn new skills and connect with other carers.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            {/* Carers' feedback and testimonials */}
+            <a href="#/adult-social-care/being-carer/support-for-carers/carers-feedback-and-testimonials" className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative block">
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Carers' feedback and testimonials</h3>
+              <p className="text-gray-700 text-sm pr-12">Hear from carers and tell us what would make support better.</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
           </div>
-          </Link>
 
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/local-groups-and-services"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Local groups and services</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Carer support groups, Carers First, and local organisations that can help.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
+          {/* Last Updated */}
+          <div className="text-sm text-gray-600 mb-8">
+            <p><strong>Last updated:</strong> 28 March 2026</p>
+            <p><strong>Next review:</strong> 28 March 2027</p>
           </div>
-          </Link>
 
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/training-and-workshops"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Training and workshops</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Free training in moving and handling, first aid, and condition-specific care skills.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/carers-feedback"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Carers feedback</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          Share your experience, give feedback, make a complaint, or send a compliment.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-
-          <Link
-          to="/adult-social-care/being-carer/support-for-carers/useful-contacts"
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">Useful contacts</h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          National helplines and local services for carers.
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-          </div>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Need help finding the right support?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Our team can help you find the support that is right for you. Contact Adult Social Care on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
-          (Monday to Friday, 9am to 5pm).
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/carers-assessment-and-rights" className="text-wf-blue underline hover:text-wf-green">
-          Carers assessment and rights
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/being-carer/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
       </div>
     </div>

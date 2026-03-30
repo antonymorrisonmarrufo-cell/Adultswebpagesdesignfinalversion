@@ -1,164 +1,154 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Information for professionals", to: "/adult-social-care/information-for-professionals" },
-  { title: "Market sustainability and commissioning", to: "/adult-social-care/our-policies/market-sustainability-commissioning" },
-  { title: "Our policies", to: "/adult-social-care/our-policies" },
-];
+import { FileText } from 'lucide-react';
 
 export default function CommissioningProviderInformationPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Commissioning and provider information</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Commissioning and provider information
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/information-for-professionals" className="hover:underline">Information for care professionals</a>
+          <span className="mx-1">&gt;</span>
+          <span>Commissioning and provider information</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Commissioning and provider information
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Information for care providers about commissioning arrangements, market opportunities, and how we work with the provider market in Waltham Forest.
+        </p>
+
+        {/* Market Position Statements */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Market Position Statements</h2>
+          <p className="text-gray-700 mb-6">
+            The council publishes Market Position Statements to give care providers a clear picture of the local adult social care market. These cover demand, supply, quality, spend, and commissioning intentions across different service areas, including domiciliary care, residential care, supported living, and learning disability services.
+          </p>
+          <a href="#" className="text-[#bf3688] hover:underline font-semibold">
+            View Market Position Statements
+          </a>
+        </section>
+
+        {/* Fair Cost of Care */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Fair Cost of Care</h2>
+          <p className="text-gray-700 mb-6">
+            In 2022, the government required all councils to carry out a fair cost of care exercise. This established a shared understanding with providers of the local cost of delivering care, to ensure that the prices paid are sustainable and fair.
+          </p>
+          <div className="space-y-3">
+            <div className="bg-gray-50 border border-gray-200 p-4">
+              <div className="flex items-start gap-3">
+                <FileText size={20} className="text-[#bf3688] mt-1" />
+                <div>
+                  <p className="font-bold text-gray-900 mb-1">Cost of Care Report — Residential and Nursing Care 65+</p>
+                  <p className="text-sm text-gray-600">PDF document</p>
+                  <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 p-4">
+              <div className="flex items-start gap-3">
+                <FileText size={20} className="text-[#bf3688] mt-1" />
+                <div>
+                  <p className="font-bold text-gray-900 mb-1">Cost of Care Report — Domiciliary Care 18+</p>
+                  <p className="text-sm text-gray-600">PDF document</p>
+                  <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Market Sustainability Plan */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Market Sustainability Plan</h2>
+          <p className="text-gray-700 mb-6">
+            The Market Sustainability Plan sets out how the council intends to move towards paying a fair cost of care. It covers the current sustainability of local care markets, the impact of future changes, and the council's approach to addressing any issues.
+          </p>
+          <div className="bg-gray-50 border border-gray-200 p-4">
+            <div className="flex items-start gap-3">
+              <FileText size={20} className="text-[#bf3688] mt-1" />
+              <div>
+                <p className="font-bold text-gray-900 mb-1">Market Sustainability Plan</p>
+                <p className="text-sm text-gray-600">PDF document</p>
+                <p className="text-sm text-gray-600 italic mt-1">Available on request from the Commissioning team</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Current frameworks and contracts */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Current frameworks and contracts</h2>
+          <p className="text-gray-700 mb-4">
+            The council commissions adult social care services through a combination of framework agreements and spot-purchased contracts. Key frameworks include:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
+            <li>Domiciliary care</li>
+            <li>Supported living (split into four needs-based lots)</li>
+            <li>Residential and nursing care</li>
+            <li>Learning disability services</li>
+          </ul>
+          <p className="text-gray-700">
+            If you are a provider interested in working with Waltham Forest, or if you have questions about current or upcoming commissioning opportunities, contact the Adult Social Care Commissioning team.
+          </p>
+        </section>
+
+        {/* Provider support */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Provider support</h2>
+          <p className="text-gray-700">
+            The council has funded Care Provider's Voice, which offers a job broker scheme for care providers, opportunities to share training, and support for provider engagement within and outside the borough.
+          </p>
+        </section>
+
+        {/* Contact the Commissioning team */}
+        <section className="mb-12 bg-gray-50 border border-gray-200 p-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Contact the Commissioning team</h2>
+          <p className="text-gray-700">
+            For enquiries about commissioning opportunities, framework agreements, or provider information, please contact the Adult Social Care Commissioning team.
+          </p>
+          <p className="text-gray-700 mt-4 text-sm italic">
+            Contact details available through the Adults Hub on 020 8496 3130
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/our-policies" className="text-[#bf3688] hover:underline">
+                Our policies
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/our-policies/market-sustainability-commissioning" className="text-[#bf3688] hover:underline">
+                Market sustainability and commissioning
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/information-for-professionals/key-teams-contact-details" className="text-[#bf3688] hover:underline">
+                Key teams and contact details
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      This page provides information for care providers and organisations
-      interested in delivering adult social care services in Waltham Forest.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Current contracts and frameworks</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Waltham Forest commissions a range of adult social care services including:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Home care and domiciliary care</li>
-      <li>Residential and nursing care</li>
-      <li>Supported living</li>
-      <li>Day opportunities and activities</li>
-      <li>Reablement and rehabilitation</li>
-      <li>Carers support services</li>
-      <li>Mental health support services</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Opportunities to tender for contracts are published on the council's
-      procurement portal. Providers are encouraged to register to receive
-      notifications about upcoming opportunities.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Quality standards</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      All commissioned providers are expected to meet the following quality
-      standards:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Registration with the Care Quality Commission (CQC) where required</li>
-      <li>Compliance with all relevant legislation and regulations</li>
-      <li>Person-centred care that promotes dignity and independence</li>
-      <li>Safe recruitment practices and adequate staffing levels</li>
-      <li>Robust safeguarding policies and procedures</li>
-      <li>Effective complaints handling</li>
-      <li>Regular training and supervision for staff</li>
-      <li>Transparent and accurate record keeping</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Market position statement</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Our market position statement sets out the council's commissioning
-      intentions and provides market intelligence for providers. It includes
-      data on demand, supply and opportunities in the local care market. Visit
-      our{" "}
-      <Link
-      to="/adult-social-care/our-policies/market-sustainability-commissioning"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      market sustainability and commissioning
-      </Link>{" "}
-      page for the full document.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Provider forums</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      We hold regular provider forums where commissioned providers can:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Receive updates on commissioning plans and policy changes</li>
-      <li>Share good practice and challenges</li>
-      <li>Contribute to service development and quality improvement</li>
-      <li>Network with other providers and council staff</li>
-      </ul>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For commissioning enquiries, contact our team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

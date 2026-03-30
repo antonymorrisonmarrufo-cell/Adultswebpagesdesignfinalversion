@@ -1,180 +1,149 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/adult-social-care/mental-health-wellbeing" },
-  { title: "Talking therapies and professional support", to: "/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" },
-  { title: "Local mental health support services", to: "/adult-social-care/mental-health-wellbeing/local-mental-health-support-services" },
-];
-
 export default function LookingAfterMentalWellbeingPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care/mental-health-wellbeing" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Looking after your mental wellbeing</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Looking after your mental wellbeing
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/mental-health-wellbeing" className="hover:underline">Mental health and wellbeing</a>
+          <span className="mx-1">&gt;</span>
+          <span>Looking after your mental wellbeing</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Looking after your mental wellbeing
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          There are practical things you can do every day to support your mental health. If you are going through a difficult time, these resources can help.
+        </p>
+
+        {/* Five ways to wellbeing */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Five ways to wellbeing</h2>
+          <p className="text-gray-700 mb-4">
+            Research shows that five simple actions can make a real difference to how you feel:
+          </p>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Connect</strong> — spend time with other people. Social connections help you feel supported and build resilience.
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Be active</strong> — any kind of physical activity can improve your mood. It does not need to be intense — a walk, some gardening, or gentle exercise all count.
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Take notice</strong> — pay attention to the world around you. Noticing your thoughts and feelings, and the things you see and hear, can help you feel more grounded.
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Keep learning</strong> — trying something new or building a skill can boost your confidence and give you a sense of purpose.
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Give</strong> — helping others, volunteering, or simply being kind to someone can improve your own wellbeing.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Free online resources */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Free online resources</h2>
+          <p className="text-gray-700 mb-4">
+            These resources are available at any time and can help you manage stress, low mood, anxiety, or difficulty sleeping:
+          </p>
+          <ul className="space-y-3 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Good Thinking</strong> — an NHS-approved digital wellbeing service covering anxiety, low mood, sleeping difficulties, and stress (<a href="https://www.good-thinking.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">good-thinking.uk</a>)
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Every Mind Matters</strong> — includes a personalised mind plan based on your answers to a short quiz, with practical tips and advice (<a href="https://www.nhs.uk/every-mind-matters" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">nhs.uk/every-mind-matters</a>)
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">Thrive LDN</strong> — a London-wide partnership with resources to support your mental wellbeing and ways to help others (<a href="https://www.thriveldn.co.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">thriveldn.co.uk</a>)
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        {/* Social prescribing */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Social prescribing</h2>
+          <p className="text-gray-700 mb-4">
+            If you feel isolated, disconnected, or unsure where to turn, a social prescribing link worker can help you find local activities, groups, and services that could support your wellbeing. This might include exercise groups, creative activities, volunteering, or social clubs.
+          </p>
+          <p className="text-gray-700">
+            Social prescribing is free and available through your GP. You can also contact the Waltham Forest Social Prescribing Service directly.
+          </p>
+        </section>
+
+        {/* Staying active */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Staying active</h2>
+          <p className="text-gray-700">
+            Physical activity is one of the most effective ways to support your mental health. The council offers a range of opportunities to get active in Waltham Forest, from parks and open spaces to leisure centres and community sports programmes.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" className="text-[#bf3688] hover:underline">
+                Talking therapies and professional support
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/local-mental-health-support-services" className="text-[#bf3688] hover:underline">
+                Local mental health support services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#bf3688] hover:underline">
+                Get moving in Waltham Forest
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-[#bf3688] hover:underline">
+                Things to do during the day
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      There are many things you can do to look after your mental health and
-      build resilience. Small changes to your daily routine can make a real
-      difference to how you feel.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Five ways to wellbeing</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Evidence shows that there are five simple steps you can take to improve
-      your mental health and wellbeing:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Connect:</strong> Spend time with family, friends and neighbours.
-      Talk to someone rather than sending an email or text.
-      </li>
-      <li>
-      <strong>Be active:</strong> Go for a walk, cycle, dance or garden. Find
-      an activity you enjoy that suits your level of fitness.
-      </li>
-      <li>
-      <strong>Take notice:</strong> Be mindful of the world around you. Pay
-      attention to your thoughts, feelings and the things you can see, hear
-      and smell.
-      </li>
-      <li>
-      <strong>Keep learning:</strong> Try something new, rediscover an old
-      interest, sign up for a course or learn to play an instrument.
-      </li>
-      <li>
-      <strong>Give:</strong> Do something for a friend, neighbour or stranger.
-      Volunteer, join a community group or simply smile at someone.
-      </li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Online resources</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      There are a number of free online resources that can help you manage your
-      mental health:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Every Mind Matters (NHS):</strong> Personalised mental health
-      action plan and expert advice
-      </li>
-      <li>
-      <strong>Mind:</strong> Information and support for a wide range of mental
-      health conditions
-      </li>
-      <li>
-      <strong>Mental Health Foundation:</strong> Guides on topics including
-      stress, anxiety, sleep and loneliness
-      </li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Apps and digital tools</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The following NHS-approved apps can help support your mental wellbeing:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li><strong>Calm Harm:</strong> Helps manage the urge to self-harm</li>
-      <li><strong>Catch It:</strong> Helps you notice and change your thinking patterns</li>
-      <li><strong>Daylight:</strong> Guided sessions for worry and anxiety</li>
-      <li><strong>Sleepio:</strong> Clinically proven programme for sleep problems</li>
-      <li><strong>Silvercloud:</strong> Online cognitive behavioural therapy (CBT) programmes</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Self-referral to talking therapies</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you are experiencing low mood, anxiety, stress or depression, you can
-      refer yourself directly to the local NHS talking therapies service without
-      needing to see your GP first. Visit our{" "}
-      <Link
-      to="/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      talking therapies and professional support
-      </Link>{" "}
-      page for details on how to access this service.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Need more support?</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If self-help is not enough and you need to talk to someone, contact our
-      Adult Social Care team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

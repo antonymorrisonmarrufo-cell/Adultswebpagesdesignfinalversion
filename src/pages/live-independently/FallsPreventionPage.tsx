@@ -1,188 +1,336 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, FileText, ExternalLink } from 'lucide-react';
+// Image placeholder - source from Figma;
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function FallsPreventionPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Falls prevention</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">Falls prevention</h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Falls are one of the most common causes of injury among older people, but
-          many falls can be prevented. Find out about the risk factors, what you can
-          do to stay safe and the support available in Waltham Forest.
-          </p>
-        </div>
-      </div>
+    <>
+    <div className="min-h-screen bg-white">
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Falls prevention and reablement</span>
+        </nav>
 
-          {/* Risk factors */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Risk factors for falling
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          There are many reasons why someone might fall. Common risk factors
-          include:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Muscle weakness and poor balance</li>
-          <li>Vision problems</li>
-          <li>Side effects from medication</li>
-          <li>Hazards around the home such as loose rugs, poor lighting or cluttered floors</li>
-          <li>Dizziness or low blood pressure</li>
-          <li>Conditions affecting mobility such as arthritis or Parkinson&apos;s disease</li>
-          <li>Fear of falling, which can lead to reduced activity and further loss of strength</li>
-          </ul>
-          </section>
+        <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+          {/* H1 */}
+          <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+            Falls prevention and reablement
+          </h1>
 
-          {/* Staying active */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Staying active</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Regular physical activity is one of the best ways to prevent falls.
-          Exercises that improve strength, balance and flexibility can
-          significantly reduce your risk. Even gentle activities such as walking,
-          tai chi or chair-based exercises can make a difference.
+          {/* Standfirst */}
+          <p className="text-gray-700 max-w-4xl mb-6 text-lg font-semibold">
+            Find support to reduce your risk of falling and rebuild your confidence and independence after illness, injury or a stay in hospital.
           </p>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Waltham Forest offers a range of exercise classes and programmes
-          specifically designed for older people. Ask your GP or contact our
-          social prescribing team for details.
-          </p>
-          </section>
 
-          {/* Home safety checks */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Home safety checks</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Simple changes around your home can help prevent falls. Consider the
-          following:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Remove loose rugs and secure any trailing wires</li>
-          <li>Make sure all rooms, stairs and landings are well lit</li>
-          <li>Fit grab rails in the bathroom and by the front door</li>
-          <li>Keep frequently used items within easy reach</li>
-          <li>Wear well-fitting shoes with non-slip soles</li>
-          <li>Make sure the path to the bathroom at night is clear and well lit</li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          You can request a free home safety check from our occupational therapy
-          team, who will visit your home and recommend any changes needed.
-          </p>
-          </section>
-
-          {/* Strength and balance classes */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Strength and balance classes
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Waltham Forest runs free strength and balance classes at community
-          centres and leisure facilities across the borough. These classes are
-          led by trained instructors and are suitable for people of all fitness
-          levels. You can be referred by your GP or self-refer.
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Classes typically run for 12 weeks and focus on improving lower body
-          strength, balance and coordination. Many people find they can continue
-          exercising independently after completing the programme.
-          </p>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">
-          Worried about falls?
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you or someone you care for has had a fall or is worried about
-          falling, contact our team for advice and support.
-          </p>
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-          <Link
-          to="/adult-social-care/live-independently-at-home/request-home-independence-assessment"
-          className="inline-block rounded-md bg-[#bf3688] px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-[#a02d73]"
-          >
-          Request a home assessment
-          </Link>
-          <a
-          href="tel:02084963130"
-          className="inline-block rounded-md border border-wf-green px-5 py-2.5 text-center text-sm font-semibold text-wf-green no-underline hover:bg-[#d7f8ff]"
-          >
-          Call 020 8496 3130
-          </a>
-          </div>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
-          Home adaptations
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology">
-          Equipment and aids
-          </Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
-          </li>
-          <li>
-          <Link to="/adult-social-care/live-independently-at-home/social-prescribing">
-          Social prescribing
-          </Link>
-          </li>
-          </ul>
+          {/* Primary CTAs */}
+          <div className="mb-10 flex flex-wrap gap-4">
+            <a
+              href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+            >
+              Get a care assessment
+              <ArrowRight size={18} />
+            </a>
+            <a
+              href="#/adult-social-care/live-independently-at-home/request-home-independence-assessment"
+              className="inline-flex items-center gap-3 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 font-bold hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+            >
+              Request a home independence assessment
+              <ArrowRight size={18} />
+            </a>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          {/* Hero image */}
+          <div className="mb-12 max-w-2xl">
+            <img
+              src="/Images/placeholder.svg"
+              alt="A group of diverse older adults taking part in a balance and stability class in a community hall"
+              className="w-full h-auto rounded border border-gray-200"
+            />
+          </div>
+
+          <div className="max-w-3xl space-y-0">
+
+            {/* Contents */}
+            <div className="bg-gray-100 border border-gray-300 p-6 mb-10 shadow-inner">
+              <h2 className="font-bold text-gray-900 mb-4 text-xl">Contents</h2>
+              <ul className="space-y-2">
+                <li><button onClick={() => scrollTo('why-falls')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Why falls happen</button></li>
+                <li><button onClick={() => scrollTo('reduce-risk')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">How to reduce your risk of falling</button></li>
+                <li><button onClick={() => scrollTo('activities')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Local activities and exercise</button></li>
+                <li><button onClick={() => scrollTo('reablement')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">What reablement is</button></li>
+                <li><button onClick={() => scrollTo('who-can-help')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Who reablement can help</button></li>
+                <li><button onClick={() => scrollTo('how-to-get-support')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">How to get support</button></li>
+                <li><button onClick={() => scrollTo('related')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Related help</button></li>
+              </ul>
+            </div>
+
+            {/* Why falls happen */}
+            <div id="why-falls" className="pb-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Why falls happen</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Falls are more common as people get older, but they should not be treated as inevitable.
+              </p>
+              <p className="text-gray-700 mb-4 font-semibold">
+                Some common reasons people fall include:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  loss of strength and balance
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  changes in medication
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  foot problems
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  medical conditions such as Parkinson's disease
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  trip hazards in the home
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  ice and snow
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  rushing or overreaching
+                </li>
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* How to reduce your risk */}
+            <div id="reduce-risk" className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">How to reduce your risk of falling</h2>
+              <p className="text-gray-700 mb-4 font-semibold">
+                You can often reduce your risk by:
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  improving balance and leg strength
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  removing clutter and trip hazards
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  improving lighting
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  reviewing unsuitable footwear
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  using the right equipment
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  getting advice if you feel unsteady at home
+                </li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed">
+                If you are worried about falling at home, we may be able to assess you and recommend equipment or adaptations.
+              </p>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Local activities and exercise */}
+            <div id="activities" className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Local activities and exercise</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Exercise can help improve strength, balance and confidence.
+              </p>
+              <p className="text-gray-700 mb-4 font-semibold">
+                Suggested activities may include:
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  gardening
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  dancing
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  tai chi
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  balance and stability classes
+                </li>
+              </ul>
+              <div className="pt-2">
+                <a
+                  href="https://www.walthamforest.gov.uk/sites/default/files/2021-11/get_the_best_out_of_living_in_waltham_forest_-_web_final.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#bf3688] font-bold underline hover:no-underline text-sm"
+                >
+                  <FileText size={16} />
+                  Guide to services and activities for the over 50s (PDF)
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* What reablement is */}
+            <div id="reablement" className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">What reablement is</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed font-medium">
+                Reablement is free, short-term support in your home to help you manage personal and practical daily tasks more independently.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                It focuses on helping you rebuild skills and confidence, rather than doing things for you.
+              </p>
+              <p className="text-gray-700 mb-4 font-semibold">
+                Reablement can help you:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  become more independent
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  relearn daily living skills
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  get mobile again
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  re-establish routines
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  feel more confident at home
+                </li>
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Who reablement can help */}
+            <div id="who-can-help" className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Who reablement can help</h2>
+              <p className="text-gray-700 mb-4 font-semibold">
+                You may benefit from reablement if:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  you have been ill
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  you have been in hospital
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  your long-term condition has got worse
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  you want support to become more independent at home
+                </li>
+                <li className="flex items-start gap-2 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  you are over 18 and live in Waltham Forest
+                </li>
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* How to get support */}
+            <div id="how-to-get-support" className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">How to get support</h2>
+              <p className="text-gray-700 mb-6 font-medium leading-relaxed">
+                If you think you need this kind of support, start with a care assessment or ask us for advice.
+              </p>
+              <a
+                href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 shadow-sm"
+              >
+                Get a care assessment
+                <ArrowRight size={18} />
+              </a>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Related help */}
+            <div id="related" className="pt-10">
+              <h2 className="text-gray-900 font-bold text-2xl mb-4">Related help</h2>
+              <ul className="space-y-3">
+                <li>
+                  <a href="#/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy" className="text-[#bf3688] font-bold underline hover:no-underline">
+                    Home adaptations and occupational therapy
+                  </a>
+                </li>
+                <li>
+                  <a href="#/adult-social-care/live-independently-at-home/help-at-home-and-personal-care" className="text-[#bf3688] font-bold underline hover:no-underline">
+                    Help at home and personal care
+                  </a>
+                </li>
+                <li>
+                  <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="text-[#bf3688] font-bold underline hover:no-underline">
+                    Keeping safe at home
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Metadata */}
+          <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+            <p>Last updated: 27 March 2026</p>
+            <p>Next review: 27 March 2027</p>
+          </div>
         </div>
-      </div>
+
+      </section>
     </div>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }
