@@ -1,5 +1,19 @@
 # Handover: Waltham Forest Adult Social Care Website Redesign
 
+**Date:** March 2026 | **Prepared by:** Tony Morrison | **Status:** Draft — awaiting stakeholder review
+
+---
+
+> **IMPORTANT: Content Reference**
+>
+> The **Figma Make design** (spend-chew-46422648.figma.site) is the **definitive content reference** for all page content, images, and detailed copy.
+>
+> The **Vercel prototype** (adultswebpagesdesignfinalversion.vercel.app) is the **structural and design prototype** — it demonstrates the navigation, design system, colour palette, layout patterns, and design principles. However, the detailed page content in the Vercel version is summarised/reconstructed and does not match the Figma Make version exactly.
+>
+> **Action for the digital team:** When building the production site, use the Figma Make published site as the source of truth for all page content, and the Vercel prototype + this handover document for the design system, colour palette, box types, and strategic design decisions.
+
+---
+
 ## 1. Technical Documentation
 
 ### Stack
