@@ -6,11 +6,11 @@
 
 > **IMPORTANT: Content Reference**
 >
-> The **Figma Make design** (spend-chew-46422648.figma.site) is the **definitive content reference** for all page content, images, and detailed copy.
+> The **Vercel prototype** (adultswebpagesdesignfinalversion.vercel.app) now contains the **full Figma Make source code** with all detailed page content, layouts, and CTAs.
 >
-> The **Vercel prototype** (adultswebpagesdesignfinalversion.vercel.app) is the **structural and design prototype** — it demonstrates the navigation, design system, colour palette, layout patterns, and design principles. However, the detailed page content in the Vercel version is summarised/reconstructed and does not match the Figma Make version exactly.
+> **Images:** Some pages reference images that were stored inside Figma Make's asset system. These show as broken images on the Vercel site. The images need to be exported from the Figma Make file and added to the `public/` folder. The **Figma Make preview** (spend-chew-46422648.figma.site) shows the complete design with all images for reference.
 >
-> **Action for the digital team:** When building the production site, use the Figma Make published site as the source of truth for all page content, and the Vercel prototype + this handover document for the design system, colour palette, box types, and strategic design decisions.
+> **Action for the digital team:** Export images from the Figma Make file and add them to the codebase. The 3 hero images on the landing page (care-assessment.jpg, report-abuse.jpg, blue-badge.jpg) are already sourced.
 
 ---
 
