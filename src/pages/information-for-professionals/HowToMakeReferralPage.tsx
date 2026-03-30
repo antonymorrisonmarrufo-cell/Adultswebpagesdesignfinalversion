@@ -43,7 +43,7 @@ export default function HowToMakeReferralPage() {
               Use this form for all adult social care referrals including requests for help, support, protection or safeguarding.
             </p>
             <a
-              href="https://safeguardingapp.vercel.app/"
+              href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
@@ -129,9 +129,9 @@ export default function HowToMakeReferralPage() {
           <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Occupational therapy referrals</h2>
           <p className="text-gray-700">
             For OT referrals, use the same{' '}
-            <a href="https://safeguardingapp.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">
-              online referral form
-            </a>. Select the appropriate referral type when completing the form.
+            <a href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">
+              online care referral form
+            </a>.
           </p>
         </section>
 

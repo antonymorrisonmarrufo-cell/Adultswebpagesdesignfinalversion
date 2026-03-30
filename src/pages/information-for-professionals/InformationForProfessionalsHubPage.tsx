@@ -44,70 +44,56 @@ export default function InformationForProfessionalsHubPage() {
               Report an adult safeguarding concern
               <ArrowRight size={18} />
             </a>
-            <a 
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <a
+              href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#bf3688] text-white py-4 px-6 text-center hover:bg-[#a02d73] transition-colors flex items-center justify-center gap-2"
             >
-              Contact the Adults Hub
+              Start care referral
               <ArrowRight size={18} />
             </a>
           </div>
         </section>
 
-        {/* Key contacts */}
+        {/* Professional referral routes - ONLINE ONLY */}
         <section className="mb-8" id="contact">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Key contacts</h2>
-          <div className="bg-gray-50 border border-gray-200 p-6 space-y-6">
-            
-            <div>
-              <h3 className="font-bold text-gray-900 mb-2">Adult Social Care referrals and enquiries</h3>
-              <div className="flex items-center gap-3 text-gray-700 mb-1">
-                <Phone size={18} className="text-[#bf3688]" />
-                <span><strong>Phone:</strong> 020 8496 3130</span>
-              </div>
-              <p className="text-gray-700 text-sm ml-7">Monday to Friday, 9am to 5pm</p>
-            </div>
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Professional referral routes</h2>
+          <div className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6 space-y-6">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+            <p className="text-sm text-gray-700 font-semibold">All professional referrals must be made online. No phone or email referrals accepted.</p>
 
             <div>
-              <h3 className="font-bold text-gray-900 mb-2">Adult safeguarding concerns (MASH)</h3>
-              <div className="flex items-center gap-3 text-gray-700 mb-1">
-                <Phone size={18} className="text-[#bf3688]" />
-                <span><strong>Phone:</strong> 020 8496 3130</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-700">
-                <Mail size={18} className="text-[#bf3688]" />
-                <span><strong>Email:</strong> <a href="mailto:MASHrequests@walthamforest.gov.uk" className="text-[#bf3688] hover:underline">MASHrequests@walthamforest.gov.uk</a></span>
-              </div>
+              <h3 className="font-bold text-[#003078] mb-2">Adult Social Care referrals and enquiries</h3>
+              <a
+                href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
+              >
+                Start care referral form
+              </a>
+              <p className="text-sm text-gray-700 mt-2">For all care needs including OT, home adaptations, equipment, reablement</p>
             </div>
 
-            <div>
-              <h3 className="font-bold text-gray-900 mb-2">Out of hours emergencies</h3>
-              <div className="flex items-center gap-3 text-gray-700">
-                <Phone size={18} className="text-[#bf3688]" />
-                <span><strong>Phone:</strong> 020 8496 3130 (choose the emergency option)</span>
-              </div>
+            <div className="border-t border-[#003078]/20 pt-4">
+              <h3 className="font-bold text-[#003078] mb-2">Adult safeguarding concerns</h3>
+              <a
+                href="https://safeguardingapp.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
+              >
+                Start safeguarding referral form
+              </a>
+              <p className="text-sm text-gray-700 mt-2">For reporting abuse or neglect of a vulnerable adult</p>
             </div>
 
-            <div>
-              <h3 className="font-bold text-gray-900 mb-2">NELFT Mental Health Single Point of Access</h3>
-              <div className="flex items-center gap-3 text-gray-700 mb-1">
-                <Phone size={18} className="text-[#bf3688]" />
-                <span><strong>Phone:</strong> 0300 300 1570 (option 4)</span>
-              </div>
-              <p className="text-gray-700 text-sm ml-7">For adults aged 18+ needing community mental health services</p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-gray-900 mb-2">NELFT Older Adult Mental Health Team</h3>
-              <div className="flex items-center gap-3 text-gray-700 mb-1">
-                <Phone size={18} className="text-[#bf3688]" />
-                <span><strong>Phone:</strong> 0300 555 1270</span>
-              </div>
-              <p className="text-gray-700 text-sm ml-7">For adults 65+ or adults with complex cognitive conditions</p>
+            <div className="border-t border-[#003078]/20 pt-4">
+              <h3 className="font-bold text-[#003078] mb-2">NELFT Mental Health referrals</h3>
+              <p className="text-sm text-gray-700">Mental health referrals go through NELFT, not the council.</p>
+              <p className="text-sm text-gray-700 mt-1"><strong>Single Point of Access:</strong> 0300 300 1570 (option 4) — adults 18+</p>
+              <p className="text-sm text-gray-700"><strong>Older Adult Team:</strong> 0300 555 1270 — adults 65+</p>
             </div>
 
           </div>
