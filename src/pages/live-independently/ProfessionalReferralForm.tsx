@@ -341,7 +341,7 @@ export default function ProfessionalReferralForm() {
           <div>
           <button
           type="submit"
-          className="rounded-md bg-wf-green px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-wf-green/90 focus:outline-none focus:ring-2 focus:ring-wf-green focus:ring-offset-2"
+          className="rounded-md bg-[#bf3688] px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#a02d73] focus:outline-none focus:ring-2 focus:ring-[#bf3688] focus:ring-offset-2"
           >
           Submit referral
           </button>

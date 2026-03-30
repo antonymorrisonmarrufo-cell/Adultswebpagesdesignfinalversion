@@ -97,7 +97,7 @@ export default function HowToGetSupportHubPage() {
       to={card.to}
       className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
       >
-      <span className="inline-block rounded-full bg-wf-green px-3 py-1 text-sm font-semibold text-white mb-3">
+      <span className="inline-block rounded-full bg-[#bf3688] px-3 py-1 text-sm font-semibold text-white mb-3">
       Step {index + 1}
       </span>
       <h3 className="text-base font-bold text-[#bf3688] mb-2">{card.title}</h3>

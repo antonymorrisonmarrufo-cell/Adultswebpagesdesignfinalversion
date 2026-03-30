@@ -138,7 +138,7 @@ export default function HomeAdaptationsPage() {
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Link
           to="/adult-social-care/live-independently-at-home/request-home-independence-assessment"
-          className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
+          className="inline-block rounded-md bg-[#bf3688] px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-[#a02d73]"
           >
           Request a home assessment
           </Link>

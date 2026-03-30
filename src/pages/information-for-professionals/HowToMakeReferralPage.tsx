@@ -62,7 +62,7 @@ export default function HowToMakeReferralPage() {
       <div className="mt-4">
       <a
       href="#"
-      className="inline-block rounded bg-wf-green px-6 py-3 text-sm font-semibold text-white shadow hover:bg-wf-green/90 transition"
+      className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-semibold text-white shadow hover:bg-[#a02d73] transition"
       >
       Access the professional referral form
       </a>
