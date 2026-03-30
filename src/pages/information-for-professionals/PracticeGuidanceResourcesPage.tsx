@@ -117,7 +117,7 @@ export default function PracticeGuidanceResourcesPage() {
             <li>Mental Capacity Act: using the key principles in care planning</li>
           </ul>
 
-          <a href="#" className="text-[#bf3688] hover:underline font-semibold">
+          <a href="https://www.walthamforest.gov.uk/families-young-people-and-children/information-professionals/mental-capacity-waltham-forest" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline font-semibold">
             Mental Capacity in Waltham Forest — further information
           </a>
         </section>
@@ -216,7 +216,7 @@ export default function PracticeGuidanceResourcesPage() {
             <li>Alcohol awareness — spotlight (December 2022)</li>
             <li>Making Every Contact Count (MECC) — spotlight (June 2022)</li>
           </ul>
-          <a href="#" className="text-[#bf3688] hover:underline font-semibold">
+          <a href="https://www.walthamforest.gov.uk/families-young-people-and-children/information-professionals/resources-improve-practice" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline font-semibold">
             View all spotlight bulletins and 7-minute briefings
           </a>
         </section>
@@ -235,7 +235,7 @@ export default function PracticeGuidanceResourcesPage() {
             <li>Think Family</li>
             <li>Language matters</li>
           </ul>
-          <a href="#" className="text-[#bf3688] hover:underline font-semibold">
+          <a href="https://www.walthamforest.gov.uk/families-young-people-and-children/information-professionals/resources-improve-practice" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline font-semibold">
             View all bitesize videos
           </a>
         </section>

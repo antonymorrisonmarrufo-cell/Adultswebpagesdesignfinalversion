@@ -5,17 +5,29 @@ const audiences = [
   {
     title: 'Former carers',
     description: 'Your caring role has ended but you may still need support to rebuild your life, find work, or deal with grief.',
-    links: ['After caring support', 'Bereavement counselling', 'Back to work programmes']
+    links: [
+      { label: 'After caring support', href: '#/adult-social-care/being-carer/support-after-caring' },
+      { label: 'Bereavement counselling', href: 'https://www.cruse.org.uk' },
+      { label: 'Back to work programmes', href: '#/adult-social-care/being-carer/work-and-education' },
+    ]
   },
   {
     title: 'Working carers',
     description: 'Practical help to stay in employment while caring, including rights, flexible working, and work/life balance.',
-    links: ['Know your rights at work', 'Flexible working', 'Carer-friendly employers']
+    links: [
+      { label: 'Know your rights at work', href: 'https://www.gov.uk/flexible-working' },
+      { label: 'Flexible working', href: 'https://www.gov.uk/flexible-working' },
+      { label: 'Carer-friendly employers', href: 'https://www.carersuk.org/help-and-advice/work-and-career' },
+    ]
   },
   {
     title: 'Older carers (65+)',
     description: 'Support for older people who care, including health checks, falls prevention, and planning for the future.',
-    links: ['Health checks for carers', 'Future planning', 'Emergency backup']
+    links: [
+      { label: 'Health checks for carers', href: '#/adult-social-care/being-carer/support-for-carers/health-and-wellbeing' },
+      { label: 'Future planning', href: '#/adult-social-care/being-carer/support-for-carers/carer-emergency-plan' },
+      { label: 'Emergency backup', href: '#/adult-social-care/being-carer/support-for-carers/carer-emergency-plan' },
+    ]
   }
 ];
 
@@ -38,13 +50,19 @@ export default function UniversalOfferHub() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {['Carer\'s handbook', 'Benefits checker', 'Local groups', 'Emergency plan template'].map((item, index) => (
-                <a 
+              {[
+                { label: "Carer's handbook", href: "https://www.carersuk.org/help-and-advice/introduction-to-caring/" },
+                { label: "Benefits checker", href: "https://www.gov.uk/benefits-calculators" },
+                { label: "Local groups", href: "#/adult-social-care/being-carer/support-for-carers/local-groups-and-services" },
+                { label: "Emergency plan template", href: "#/adult-social-care/being-carer/support-for-carers/carer-emergency-plan" },
+              ].map((item, index) => (
+                <a
                   key={index}
-                  href="#"
-                  className="bg-white border-2 border-gray-200 p-4 rounded-lg hover:border-[#EF3688] hover:shadow-md transition-all text-center shadow-sm"
+                  href={item.href}
+                  {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="bg-white border-2 border-gray-200 p-4 rounded-lg hover:border-[#bf3688] hover:shadow-md transition-all text-center shadow-sm"
                 >
-                  <span className="text-gray-900 font-semibold">{item}</span>
+                  <span className="text-gray-900 font-semibold">{item.label}</span>
                 </a>
               ))}
             </div>
@@ -59,12 +77,13 @@ export default function UniversalOfferHub() {
                   <p className="text-gray-700 mb-4">{audience.description}</p>
                   <div className="flex flex-wrap gap-3">
                     {audience.links.map((link, idx) => (
-                      <a 
+                      <a
                         key={idx}
-                        href="#"
-                        className="inline-flex items-center gap-2 text-[#EF3688] font-semibold hover:underline text-sm"
+                        href={link.href}
+                        {...(link.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        className="inline-flex items-center gap-2 text-[#bf3688] font-semibold hover:underline text-sm"
                       >
-                        {link} <ArrowRight className="w-4 h-4" />
+                        {link.label} <ArrowRight className="w-4 h-4" />
                       </a>
                     ))}
                   </div>
@@ -83,7 +102,7 @@ export default function UniversalOfferHub() {
               <a href="https://www.walthamforest.gov.uk/adult-learning" target="_blank" rel="noopener noreferrer" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
                 Book a careers appointment
               </a>
-              <a href="#" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+              <a href="https://www.carersuk.org/help-and-advice/introduction-to-caring/" target="_blank" rel="noopener noreferrer" className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
                 Download: Skills for carers
               </a>
             </div>
