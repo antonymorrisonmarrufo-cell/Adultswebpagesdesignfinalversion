@@ -126,12 +126,12 @@ export default function LookingAfterMentalWellbeingPage() {
               </a>
             </li>
             <li>
-              <a href="#" className="text-[#bf3688] hover:underline">
+              <a href="https://www.walthamforest.gov.uk/leisure-and-culture" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">
                 Get moving in Waltham Forest
               </a>
             </li>
             <li>
-              <a href="#" className="text-[#bf3688] hover:underline">
+              <a href="https://www.walthamforest.gov.uk/adult-social-care" className="text-[#bf3688] hover:underline">
                 Things to do during the day
               </a>
             </li>

@@ -190,7 +190,7 @@ export default function MentalHealthWellbeingHubPage() {
               </a>
             </li>
             <li>
-              <a href="#" className="text-[#bf3688] hover:underline">
+              <a href="https://www.nhs.uk/live-well/alcohol-advice/" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">
                 Alcohol, drugs, and smoking
               </a>
             </li>

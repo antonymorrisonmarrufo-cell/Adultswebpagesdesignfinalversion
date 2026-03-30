@@ -194,7 +194,7 @@ export default function LocalMentalHealthSupportServicesPage() {
               </a>
             </li>
             <li>
-              <a href="#" className="text-[#bf3688] hover:underline">
+              <a href="https://www.walthamforest.gov.uk/adult-social-care" className="text-[#bf3688] hover:underline">
                 Things to do during the day
               </a>
             </li>

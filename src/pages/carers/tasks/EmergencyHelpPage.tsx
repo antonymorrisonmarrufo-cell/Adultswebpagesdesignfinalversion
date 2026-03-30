@@ -154,7 +154,7 @@ export default function EmergencyHelpPage() {
             If you or the person you care for rely on electricity for medical equipment, register with your energy supplier for priority support. 
             You'll get advance warning of power cuts and priority reconnection.
           </p>
-          <a href="#" className="inline-block bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+          <a href="https://www.ofgem.gov.uk/information-for-household-consumers/getting-extra-help/priority-services-register" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
             Find your energy supplier's priority register
           </a>
         </section>

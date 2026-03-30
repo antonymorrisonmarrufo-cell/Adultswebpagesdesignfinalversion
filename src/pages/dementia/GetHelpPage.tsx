@@ -59,7 +59,7 @@ export default function GetHelpPage() {
             </p>
 
             <a
-              href="#"
+              href="https://www.walthamforest.gov.uk/adult-social-care" target="_blank" rel="noopener noreferrer"
               className="inline-block bg-[#bf3688] text-white px-6 py-3 hover:bg-[#B01758] transition-colors mb-12 font-bold shadow-sm"
             >
               Read our Dementia Strategy
