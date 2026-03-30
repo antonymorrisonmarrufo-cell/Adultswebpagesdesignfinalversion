@@ -1,0 +1,2540 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="15151.01px" height="21281.1px"
+		style="transform-origin: 0px 0px 0px;" version="1.1"
+		xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style xmlns="http://www.w3.org/2000/svg" type="text/css"><![CDATA[
+		* {
+			text-rendering: geometricprecision !important;
+		}
+		]]><![CDATA[@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url("https://mirostatic.com/app/static/a73798e3d459e1bc.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url("https://mirostatic.com/app/static/a8edd710f88715d4.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans Medium'), local('NotoSans-Medium'), url("https://mirostatic.com/app/static/006d7e33e60b9e12.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Noto Sans Medium Italic'), local('NotoSans-MediumItalic'), url("https://mirostatic.com/app/static/31387059566a3171.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Sans SemiBold'), local('NotoSans-SemiBold'), url("https://mirostatic.com/app/static/526dd53b40975c37.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Noto Sans SemiBold Italic'), local('NotoSans-SemiBoldItalic'), url("https://mirostatic.com/app/static/e73d4fdd87d7e319.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url("https://mirostatic.com/app/static/9f11d6779c14d2bc.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url("https://mirostatic.com/app/static/888e13e017cedc15.woff2") format('woff2');
+}
+]]><![CDATA[@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/800985e1502d12bf.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/d8a7ca42a20caea5.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/3cc74c1d3919bd5c.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/f0481285dc248cf0.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/2f5e8dcf6e47bf00.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/0e625f45b71a26f1.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("https://mirostatic.com/app/static/645c27eb7d93eca8.woff2") format('woff2');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans Hebrew';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Hebrew Regular'), local('Noto Sans Hebrew-Regular'), url("https://mirostatic.com/app/static/7ebe1dcf0343326c.woff2") format('woff2'), url("https://mirostatic.com/app/static/6c11f037d6968262.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans Hebrew';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Hebrew Bold'), local('Noto Sans Hebrew-Bold'), url("https://mirostatic.com/app/static/d2883e2f177d0dad.woff2") format('woff2'), url("https://mirostatic.com/app/static/8546991909eadbc9.woff") format('woff');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'), local('Noto Sans Japanese-Regular'), url("https://mirostatic.com/app/static/9320b3c07ab79383.woff2") format('woff2'), url("https://mirostatic.com/app/static/a43be2cbcfc0b250.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Japanese Bold'), local('Noto Sans Japanese-Bold'), url("https://mirostatic.com/app/static/7ab032c73212439f.woff2") format('woff2'), url("https://mirostatic.com/app/static/29f177f4466bd7a1.woff") format('woff');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url("https://mirostatic.com/app/static/7a5b625774730d22.woff2") format('woff2'), url("https://mirostatic.com/app/static/2d84dc606f1fb88e.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url("https://mirostatic.com/app/static/fa5a3d9073cdd58f.woff2") format('woff2'), url("https://mirostatic.com/app/static/7ded243557c83342.woff") format('woff');
+}
+]]><![CDATA[@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url("https://mirostatic.com/app/static/e3a9ebdaac06bbc4.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url("https://mirostatic.com/app/static/475ba9e4e2d63456.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url("https://mirostatic.com/app/static/1b15168ef6fa4e16.woff2") format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("https://mirostatic.com/app/static/447291a88c067396.woff2") format('woff2');
+}
+]]></style><clipPath id="clipPath5"><rect x="0.9545454545454533" y="0" width="221.0909090909091" height="95" /></clipPath></defs><rect id="svg-board-background-color" width="100%" height="100%" fill="#f2f2f2"></rect><g width="23866.94px" height="27685.05px"  transform="translate(-3737.26, -3201.98) scale(1) rotate(0, 11933.47, 13842.525)"><svg
+	width="23866.936386373876"
+	height="27685.053463928536"
+	style="width:23866.936386373876px; height: 27685.053463928536px;"
+	class="prototypingContainer-widget"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="904325588973">
+		<rect
+			x="0"
+			y="0"
+			width="23866.936386373876"
+			height="27685.053463928536"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			fill="#ffffff"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="23866.936386373876"
+			height="27685.053463928536"
+			rx="0"
+			ry="0"
+			clip-path="url(#904325588973)"
+		></rect>
+	</g>
+	<g transform="translate(0, 0)">
+		<text x="0" y="14" font-size="14"></text>
+	</g>
+</svg>
+</g><g width="1440px" height="2022.62px"  transform="translate(0, 0.02) scale(10.521533398998793) rotate(0, 720, 1011.31)"><svg
+	width="1440"
+	height="2022.623193323472"
+	style="width:1440px; height: 2022.623193323472px;"
+	class="prototypingScreen-widget"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="86751159056">
+		<rect
+			x="0"
+			y="0"
+			width="1440"
+			height="2022.623193323472"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			fill="#ffffff"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="1440"
+			height="2022.623193323472"
+			rx="0"
+			ry="0"
+			clip-path="url(#86751159056)"
+		></rect>
+	</g>
+</svg>
+</g><g width="13218.42px" height="12160.45px"  transform="translate(1040.91, 3061.19) scale(1) rotate(0, 6609.21, 6080.225)"><svg
+	width="13218.42373117161"
+	height="12160.451427012584"
+	shape-border-width="shape-background"
+	style="width:13218.42373117161px; height: 12160.451427012584px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="335303627963">
+		<rect
+			x="0"
+			y="0"
+			width="13218.42373117161"
+			height="12160.451427012584"
+			rx="10"
+			ry="10"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#f5f5f5"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="13218.42373117161"
+			height="12160.451427012584"
+			rx="10"
+			ry="10"
+			clip-path="url(#335303627963)"
+		></rect>
+	</g>
+</svg>
+</g><g width="13218.42px" height="12160.45px"  transform="translate(1040.91, 3061.19) rotate(0, 6609.21, 6080.225)"><g transform="translate(608.0225713506292, 608.0225713506292)"></g></g><g width="15764.13px" height="3270.35px"  transform="translate(-613.12, 18010.75) scale(1) rotate(0, 7882.065, 1635.175)"><svg
+	width="15764.126834004997"
+	height="3270.348104785374"
+	shape-border-width="shape-background"
+	style="width:15764.126834004997px; height: 3270.348104785374px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1716811410453">
+		<rect
+			x="0"
+			y="0"
+			width="15764.126834004997"
+			height="3270.348104785374"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#111111"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="15764.126834004997"
+			height="3270.348104785374"
+			rx="0"
+			ry="0"
+			clip-path="url(#1716811410453)"
+		></rect>
+	</g>
+</svg>
+</g><g width="15764.13px" height="3270.35px"  transform="translate(-613.12, 18010.75) rotate(0, 7882.065, 1635.175)"><g transform="translate(163.5174052392687, 163.5174052392687)"></g></g><g width="15537.19px" height="2062.22px"  transform="translate(0, 15948.53) scale(1) rotate(0, 7768.595, 1031.11)"><svg
+	width="15537.189304768062"
+	height="2062.220546204093"
+	shape-border-width="shape-background"
+	style="width:15537.189304768062px; height: 2062.220546204093px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="247007215358">
+		<rect
+			x="0"
+			y="0"
+			width="15537.189304768062"
+			height="2062.220546204093"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#004440"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="15537.189304768062"
+			height="2062.220546204093"
+			rx="0"
+			ry="0"
+			clip-path="url(#247007215358)"
+		></rect>
+	</g>
+</svg>
+</g><g width="15537.19px" height="2062.22px"  transform="translate(0, 15948.53) rotate(0, 7768.595, 1031.11)"><g transform="translate(103.11102731020465, 103.11102731020465)"></g></g><g width="7074.09px" height="1014.99px"  transform="translate(1272.59, 9608.62) scale(1) rotate(0, 3537.045, 507.495)"><svg
+	width="7074.093137411947"
+	height="1014.9912529873285"
+	shape-border-width="shape-background"
+	style="width:7074.093137411947px; height: 1014.9912529873285px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="82368580292">
+		<rect
+			x="0"
+			y="0"
+			width="7074.093137411947"
+			height="1014.9912529873285"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#bf3688"
+			stroke-width="40"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#ffffff"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="7074.093137411947"
+			height="1014.9912529873285"
+			rx="80"
+			ry="80"
+			clip-path="url(#82368580292)"
+		></rect>
+	</g>
+</svg>
+</g><g width="7074.09px" height="1014.99px"  transform="translate(1272.59, 9608.62) rotate(0, 3537.045, 507.495)"><g transform="translate(50.749562649366425, 50.749562649366425)"></g></g><g width="7074.09px" height="1014.99px"  transform="translate(1272.59, 10830.75) scale(1) rotate(0, 3537.045, 507.495)"><svg
+	width="7074.093137411947"
+	height="1014.9912529873285"
+	shape-border-width="shape-background"
+	style="width:7074.093137411947px; height: 1014.9912529873285px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="996102678199">
+		<rect
+			x="0"
+			y="0"
+			width="7074.093137411947"
+			height="1014.9912529873285"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#4e226f"
+			stroke-width="40"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#ffffff"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="7074.093137411947"
+			height="1014.9912529873285"
+			rx="80"
+			ry="80"
+			clip-path="url(#996102678199)"
+		></rect>
+	</g>
+</svg>
+</g><g width="7074.09px" height="1014.99px"  transform="translate(1272.59, 10830.75) rotate(0, 3537.045, 507.495)"><g transform="translate(50.749562649366425, 50.749562649366425)"></g></g><g width="7076.61px" height="1031.11px"  transform="translate(1272.59, 8331.55) scale(1) rotate(0, 3538.305, 515.555)"><svg
+	width="7076.605603437834"
+	height="1031.1102731018818"
+	shape-border-width="shape-background"
+	style="width:7076.605603437834px; height: 1031.1102731018818px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="737329521170">
+		<rect
+			x="0"
+			y="0"
+			width="7076.605603437834"
+			height="1031.1102731018818"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#004e3e"
+			stroke-width="40"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#ffffff"
+			fill-opacity="0.9"
+			x="0"
+			y="0"
+			width="7076.605603437834"
+			height="1031.1102731018818"
+			rx="80"
+			ry="80"
+			clip-path="url(#737329521170)"
+		></rect>
+	</g>
+</svg>
+</g><g width="7076.61px" height="1031.11px"  transform="translate(1272.59, 8331.55) rotate(0, 3538.305, 515.555)"><g transform="translate(51.555513655094096, 51.555513655094096)"></g></g><g width="15151.01px" height="885.62px"  transform="translate(0, 15221.64) scale(1) rotate(0, 7575.505, 442.81)"><svg
+	width="15151.008094558252"
+	height="885.6213205299767"
+	shape-border-width="shape-background"
+	style="width:15151.008094558252px; height: 885.6213205299767px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="848184724588">
+		<rect
+			x="0"
+			y="0"
+			width="15151.008094558252"
+			height="885.6213205299767"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#8dc640"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="15151.008094558252"
+			height="885.6213205299767"
+			rx="0"
+			ry="0"
+			clip-path="url(#848184724588)"
+		></rect>
+	</g>
+</svg>
+</g><g width="15151.01px" height="885.62px"  transform="translate(0, 15221.64) rotate(0, 7575.505, 442.81)"><g transform="translate(44.28106602649884, 44.28106602649884)"></g></g><g width="6289.6px" height="1157.37px"  transform="translate(1287.56, 13252.2) scale(1) rotate(0, 3144.8, 578.685)"><svg
+	width="6289.6021859526845"
+	height="1157.3686738899771"
+	shape-border-width="shape-background"
+	style="width:6289.6021859526845px; height: 1157.3686738899771px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1232756875726">
+		<rect
+			x="0"
+			y="0"
+			width="6289.6021859526845"
+			height="1157.3686738899771"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#bf3688"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="6289.6021859526845"
+			height="1157.3686738899771"
+			rx="80"
+			ry="80"
+			clip-path="url(#1232756875726)"
+		></rect>
+	</g>
+</svg>
+</g><g width="6289.6px" height="1157.37px"  transform="translate(1287.56, 13252.2) rotate(0, 3144.8, 578.685)"><g transform="translate(57.86843369449886, 57.86843369449886)"></g></g><g width="6217.61px" height="1146.85px"  transform="translate(7808.64, 13262.72) scale(1) rotate(0, 3108.805, 573.425)"><svg
+	width="6217.614613520841"
+	height="1146.8471404908685"
+	shape-border-width="shape-background"
+	style="width:6217.614613520841px; height: 1146.8471404908685px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1262635927966">
+		<rect
+			x="0"
+			y="0"
+			width="6217.614613520841"
+			height="1146.8471404908685"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#bf3688"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="6217.614613520841"
+			height="1146.8471404908685"
+			rx="80"
+			ry="80"
+			clip-path="url(#1262635927966)"
+		></rect>
+	</g>
+</svg>
+</g><g width="6217.61px" height="1146.85px"  transform="translate(7808.64, 13262.72) rotate(0, 3108.805, 573.425)"><g transform="translate(57.342357024543425, 57.342357024543425)"></g></g><g width="3345.85px" height="885.62px"  transform="translate(1356.59, 5891.59) scale(1) rotate(0, 1672.925, 442.81)"><svg
+	width="3345.847620881617"
+	height="885.6213205299767"
+	shape-border-width="shape-background"
+	style="width:3345.847620881617px; height: 885.6213205299767px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1650220212928">
+		<rect
+			x="0"
+			y="0"
+			width="3345.847620881617"
+			height="885.6213205299767"
+			rx="80"
+			ry="80"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="#e5e7eb"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#bf3688"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="3345.847620881617"
+			height="885.6213205299767"
+			rx="80"
+			ry="80"
+			clip-path="url(#1650220212928)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3345.85px" height="885.62px"  transform="translate(1356.59, 5891.59) rotate(0, 1672.925, 442.81)"><g transform="translate(44.28106602649884, 44.28106602649884)"></g></g><g width="106px" height="41px"  transform="translate(9827.11, 147.3) scale(10.521533398998793) rotate(0, 53, 20.5)"><svg
+	width="106"
+	height="41"
+	style="width:106px; height: 41px;"
+	class="inputButton-widget"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1125563819394">
+		<rect
+			x="0"
+			y="0"
+			width="106"
+			height="41"
+			rx="11"
+			ry="11"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			fill="#ffffff"
+			fill-opacity="1"
+			x="0"
+			y="0"
+			width="106"
+			height="41"
+			rx="11"
+			ry="11"
+			stroke="#e9eaeb"
+			stroke-width="1.454546"
+			stroke-opacity="1"
+			stroke-dasharray=""
+			clip-path="url(#1125563819394)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1115.282540293872px" height="431.38286935895053px"  transform="translate(9827.11, 147.3) rotate(0, 557.641270146936, 215.69143467947526)"><g transform="translate(84.17226719199034, 0)"><text xml:space="preserve" x="113.71270520187466" y="263.03833497496987" width="719.512595506142" textLength="719.512595506142" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Roboto", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="126.25840078798552" 
+				fill="#333333" direction="ltr" >English( EN )</text></g></g><g transform="translate(1099.5, 18568.39) scale(5.2607666994993965) rotate(0, 32, 36)"><rect x="0" y="0" width="64" height="72" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABICAMAAABx5AOBAAABWVBMVEW7u7vc3NyhoaHCwsKHh4dMTEyoqKgRERFtbW3JyckYGBh0dHQ5OTmVlZVaWlrX19f4+PhhYWHe3t5HR0ejo6P///9oaGjl5eUTExNvb280NDTs7OxVVVUaGhrS0tI7Ozvz8/O4uLghISF9fX1CQkKenp76+vooKCjg4OBJSUnGxsYvLy+Li4vn5+dQUFAVFRWzs7M9PT1eXl66urojIyPb29tERET8/PyGhobi4uJsbGzIyMjp6elSUlKurq4XFxc4ODiUlJTw8PB6enr39/dgYGC8vLwlJSXd3d3Dw8MsLCyIiIjk5ORNTU1ubm5UVFSwsLDR0dE6OjqWlpa3t7cgICBBQUFISEikpKQuLi7m5uaRkZHt7e13d3fT09M8PDyYmJj09PQiIiLa2tr7+/vAwMDh4eHHx8cwMDDo6OhRUVGtra03NzeTk5Pv7+9YWFjV1dU+Pj6ampoWInNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAAQAAAAAOgBAABAAAASAAAAAAAAAC99J9MAAACIklEQVR4nN3XWVfTUBSG4QOiR4sUED7EUhFxqExVKVbEAQRRY0QqBWTGgUGpyvD/L1wNzZyc7H1y575Is1b7Pk3aJG2EVM2xga+/la+QQvXk4lMAnwvaQNdf1OfCTU1g6ZnVA4/0gPWTRg+s6QDfnzs9UOUDD4WnBybZwCtfD2wzgeZAD/SwgNehHsgygJaIHgMXycBcVA98PCUCl6N74GSEBHTG9cDwIAHI348HsNybCHzZUvTApSRg94GyB87UwM+dhB4YVQETw4k9cCcemC4ReuBGLFAj9UBnDNBM7PHmZSTQRu2BX+UIwKT3wI9CGNjhADBDwC1Wj7EQ8IEH9Id3YTnlLsiV6nVy3j4ffSBJefVJYlzxBQHg8TXC21figVX7x5AjCHe1vEHqA4Jw1oZeEHu/IOyVhT5y7xNE4/FoltF7BXH+kP/G6j2CsJbZDmbvCqK+GN9j944gpJQzGrnzx0dwryWeyduAoQmYNrCpCWRtYFWvN9xvodxtWEMt61MyQyfTPfJ7L0WeTHP0jX+fiQAW6T1wOwzkeAfznyCQ6Wf1wKcAUGP2QNEHmOwefTkPMMXvgcOMAxRTno25g3QnU2ZfswemLGBNu8deUUqhezWxpumdFE1pALRK/70Ve4y0wGbKzwD1b2G+YsSMs51xU1XfOy+4O6oY8V8DMzZQ0gRkewNQ3PyrAfsQOdYFCles3v1bywWkNGtvz+4qXyH/AZE2PTWnVVdfAAAAAElFTkSuQmCC" width="64px" height="72px" id="IMG_0" /><rect x="0" y="0" width="64" height="72" style="fill:#999999;" fill-opacity="0" /></g><g transform="translate(8443.53, 19715.24) scale(5.2607666994993965) rotate(0, 20, 20)"><rect x="0" y="0" width="40" height="40" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,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" width="40px" height="40px" id="IMG_1" /><rect x="0" y="0" width="40" height="40" style="fill:#999999;" fill-opacity="0" /></g><g transform="translate(13877.9, 284.08) scale(5.2607666994993965) rotate(0, 17, 16)"><rect x="0" y="0" width="34" height="32" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAMAAABAUVr7AAAAWlBMVEXp6elcXFyhoaFmZmbMzMzj4+Pt7e1JSUnT09OBgYGYmJh0dHS5ubldXV3Dw8Pa2tpNTU3u7u4zMzOPj489PT3////o6OhRUVHExMQ6Ojr5+fmQkJCDg4NVVVV8z5kPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAAIgAAAAOgBAABAAAAIAAAAAAAAABbMKLTAAAAe0lEQVR4nNXRQRKCMBQD0AgFpSBgNSpF7n9Nhu6bz4KFZP2mk+aDZrCPFGU+z3ojn6AyEnRShODMV64R5PenunR7f3QycvP59Im0cro7wco4wADyJcX0AOkXIS7z3013EHH5xES8nK7ZiHEAgNEgFchGijLVhaj7PmqXFaYVS+SPiJwkAAAAAElFTkSuQmCC" width="34px" height="32px" id="IMG_2" /><rect x="0" y="0" width="34" height="32" style="fill:#999999;" fill-opacity="0" /></g><g transform="translate(7749.11, 19736.28) scale(5.2607666994993965) rotate(0, 22, 16)"><rect x="0" y="0" width="44" height="32" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAgCAIAAADmJA0tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAALAAAAAOgBAABAAAAIAAAAAAAAABCyOm0AAAChUlEQVR4nMWXPWjqUBSAT32veGOKNUMLsRqXIoKLOGUQaukgFASXdrPYobq5BOfi5u5ccBYndRTBQqHgUCh06VCozY2kkdbiv4uPGJ8tvjfEGJJvyoV7zv04yc29Z4uiKFCNxWJBCBFzlAeE0Pb29mg0Gs8ZjUaTyUQZqk/7e2UcCAS8Xi/DMK45u7u7JEnabDZyDkJIferBYDAcDvv9/nA4HAwG7+/vr6+vPM9jjJvNpiiK31OpvxwfHxcKhZkhfH5+5nK55dK/CIIAALfbfX9/HwgEwBAQQqFQCADu7u6+K1EqlWZmwLKs/FFSFBWLxUwxmM1m1WqVoigLANA0DSbh8/nkTWeuhNPpNF+CIAin0ylLuFyudYMfHh708jg4OJAl3G73upEnJyeJROLj42NziUUlNEgAQLlcPjw8vL6+1kfCbrdrTpHP5z0ez83NjeYM+/v7ssSG9Hq9TCYTDodrtZqGcIfDoYOEwuPj4/n5eSKReH5+BrMkFMrlMsuy2Wx2MpmAWRIAcHFxkUwmrVaryvnj8Xj1PrEJR0dHHMcpx6N6vr6+9JFgGIbjuHg8riFWH4l0Op1KpTT/+xcSkiTt7e1piI9Go1dXV+vWfwVRFGWJt7e3dSX8fn8ymdRW/xUEQZAleJ4PBoNrRRaLRb3OXkEQ5C3K8/y6kTqe/hhjWUIQBDCJbrfb6XRkiXa7bZYExnhxs3p5eZlOp6ZI1Ot1AJD7DlEUbTYby7IGG7Tb7bOzs4UEADQaDd8cIyVOT08lSVq8DoXLy8tIJHJ7e2vA8pVKhabpp6cnZbj1b1fu+sGyId7Z2SFJUv3ZCABKH7xEkqRWqyUIAsa40+n8nPkfCeP5A5RsR068tfU2AAAAAElFTkSuQmCC" width="44px" height="32px" id="IMG_3" /><rect x="0" y="0" width="44" height="32" style="fill:#999999;" fill-opacity="0" /></g><g transform="translate(8159.45, 19704.72) scale(5.2607666994993965) rotate(0, 12, 21)"><rect x="0" y="0" width="24" height="42" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAqCAMAAACeG2tsAAAAY1BMVEUkJCRSUlLc3Nzz8/Pm5uYhISGrq6vw8PBwcHDj4+M1NTVjY2N6enq/v78RERGvr68vLy/n5+fDw8OIiIjk5ORNTU2zs7P4+PiPj48mJibHx8f///+tra2goKBOTk60tLTIyMgbIpK5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtGVYSWZJSSoACAAAAAYAEgEDAAEAAAABAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAACAAAAEwIDAAEAAAABAAAAaYcEAAEAAABmAAAAAAAAAEgAAAABAAAASAAAAAEAAAAGAACQBwAEAAAAMDIxMAGRBwAEAAAAAQIDAACgBwAEAAAAMDEwMAGgAwABAAAA//8AAAKgBAABAAAAGAAAAAOgBAABAAAAKgAAAAAAAABn3+ULAAAAgklEQVR4nO3QSxaCMBBE0RgV/xFpA2gpsP9VetAOYKCmOuEN6w5yOsaRTDys/d6MQc4WAJa2+YLtBV1DyPsZQ1hgGm4rAiUIJGEqHqWI9HDX3frowJ3CIb5c96sjkP0WBBPVDI4MKgYpgQ17/MTg2YL/FO7w7/7+idoMTuu+JNMCvAB2y0vqSmHVhwAAAABJRU5ErkJggg==" width="24px" height="42px" id="IMG_4" /><rect x="0" y="0" width="24" height="42" style="fill:#999999;" fill-opacity="0" /></g><g width="782.42px" height="160px"  transform="translate(1356.57, 3822.88) scale(11.285714285714285) rotate(0, 391.21, 80)"><svg
+	width="782.42"
+	height="160"
+	shape-border-width="shape-background"
+	style="width:782.42px; height: 160px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="569767939325">
+		<rect
+			x="0"
+			y="0"
+			width="782.42"
+			height="160"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="782.42"
+			height="160"
+			rx="0"
+			ry="0"
+			clip-path="url(#569767939325)"
+		></rect>
+	</g>
+</svg>
+</g><g width="8830.16857142857px" height="1805.7142857142856px"  transform="translate(1356.57, 3822.88) rotate(0, 4415.084285714285, 902.8571428571428)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="158" width="8717.7734375" textLength="8717.7734375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >Autism affects how people communicate, interact with others, and experience the world around them. Because it varies from </text><text xml:space="preserve" x="0" y="338.57142857142856" width="4789.9150390625" textLength="4789.9150390625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >person to person, it&#39;s often called Autism Spectrum Condition (ASC).</text><text xml:space="preserve" x="0" y="699.7142857142857" width="8772.6259765625" textLength="8772.6259765625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >Many adults live with autism, whether diagnosed early in life or later on. It&#39;s a lifelong condition, and while there&#39;s no cure, the </text><text xml:space="preserve" x="0" y="880.2857142857142" width="8489.9541015625" textLength="8489.9541015625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >right support can make a big difference. Some people may find social situations challenging or feel overwhelmed by busy </text><text xml:space="preserve" x="0" y="1060.8571428571427" width="6059.624023437499" textLength="6059.624023437499" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >environments. Others may have strong interests or routines that help them feel secure.</text><text xml:space="preserve" x="0" y="1422" width="8536.5517578125" textLength="8536.5517578125" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >Support is available to help with everyday life — from understanding and managing social interactions, to accessing work, </text><text xml:space="preserve" x="0" y="1602.5714285714284" width="8645.408203125" textLength="8645.408203125" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >education, and community activities. Services like speech and language therapy, occupational therapy, and tailored support </text><text xml:space="preserve" x="0" y="1783.1428571428569" width="5170.256835937499" textLength="5170.256835937499" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="158" 
+				fill="#333333" direction="ltr" >plans can help adults with autism live more independently and confidently.</text></g></g><g transform="translate(13409.69, 15569.75) scale(5.2607666994993965) rotate(0, 20, 18)"><rect x="0" y="0" width="40" height="36" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,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" width="40px" height="36px" id="IMG_5" /><rect x="0" y="0" width="40" height="36" style="fill:#999999;" fill-opacity="0" /></g><g width="282.03px" height="16px"  transform="translate(1083.68, 1832.25) scale(35.357142857142854) rotate(0, 141.015, 8)"><svg
+	width="282.03"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:282.03px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1385439416356">
+		<rect
+			x="0"
+			y="0"
+			width="282.03"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="282.03"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1385439416356)"
+		></rect>
+	</g>
+</svg>
+</g><g width="9971.774999999998px" height="565.7142857142857px"  transform="translate(1083.68, 1832.25) rotate(0, 4985.887499999999, 282.85714285714283)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="494.99999999999994" width="7149.946289062499" textLength="7149.946289062499" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="494.99999999999994" 
+				fill="#006a60" direction="ltr" font-weight="bold">Support for adults with autism</text></g></g><g width="715.87px" height="32px"  transform="translate(1099.48, 17032.25) scale(11.273071498927278) rotate(0, 357.935, 16)"><svg
+	width="715.87"
+	height="32"
+	shape-border-width="shape-background"
+	style="width:715.87px; height: 32px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="162670268451">
+		<rect
+			x="0"
+			y="0"
+			width="715.87"
+			height="32"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="715.87"
+			height="32"
+			rx="0"
+			ry="0"
+			clip-path="url(#162670268451)"
+		></rect>
+	</g>
+</svg>
+</g><g width="8070.05369393707px" height="360.7382879656729px"  transform="translate(1099.48, 17032.25) rotate(0, 4035.026846968535, 180.36914398283645)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="157.8230009849819" width="7907.410133823231" textLength="7907.410133823231" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="157.8230009849819" 
+				fill="#ffffff" direction="ltr" >Send feedback directly to the content team using our website feedback form. You can also join our user research </text><text xml:space="preserve" x="0" y="338.1921449678183" width="6631.956769906026" textLength="6631.956769906026" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="157.8230009849819" 
+				fill="#ffffff" direction="ltr" >group to receive invites to activities and surveys to help shape future improvements to the site .</text></g></g><g width="615.79px" height="16px"  transform="translate(1094.22, 2430.47) scale(12.776147698784248) rotate(0, 307.895, 8)"><svg
+	width="615.79"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:615.79px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="817187394831">
+		<rect
+			x="0"
+			y="0"
+			width="615.79"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="615.79"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#817187394831)"
+		></rect>
+	</g>
+</svg>
+</g><g width="7867.423991434352px" height="204.41836318054797px"  transform="translate(1094.22, 2430.47) rotate(0, 3933.711995717176, 102.20918159027399)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="178.86606778297948" width="5816.553343886059" textLength="5816.553343886059" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="178.86606778297948" 
+				fill="#333333" direction="ltr" >Find out how to get an adult autism assessment and where to get support</text></g></g><g width="455.16px" height="32px"  transform="translate(2058.28, 9899.67) scale(13.527685798712735) rotate(0, 227.58, 16)"><svg
+	width="455.16"
+	height="32"
+	shape-border-width="shape-background"
+	style="width:455.16px; height: 32px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="925825463925">
+		<rect
+			x="0"
+			y="0"
+			width="455.16"
+			height="32"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="455.16"
+			height="32"
+			rx="0"
+			ry="0"
+			clip-path="url(#925825463925)"
+		></rect>
+	</g>
+</svg>
+</g><g width="6157.261468142089px" height="432.8859455588075px"  transform="translate(2058.28, 9899.67) rotate(0, 3078.6307340710446, 216.44297277940376)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="189.38760118197828" width="6116.535207509565" textLength="6116.535207509565" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#333333" direction="ltr" >If you have a diagnosis for autism and need practical support at home or </text><text xml:space="preserve" x="0" y="405.830573961382" width="4094.7670802431635" textLength="4094.7670802431635" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#333333" direction="ltr" >in the community contact Adult Social Care for a </text><a href="https://care%20needs%20assessment%20page/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="4094.7670802431635" y="405.830573961382" width="2000.1291142407267" textLength="2000.1291142407267" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#333333" direction="ltr" text-decoration="underline">care needs assessment</text></a></g></g><g width="442.8px" height="16px"  transform="translate(2156.41, 11246.02) scale(13.527685798712735) rotate(0, 221.4, 8)"><svg
+	width="442.8"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:442.8px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="80490887434">
+		<rect
+			x="0"
+			y="0"
+			width="442.8"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="442.8"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#80490887434)"
+		></rect>
+	</g>
+</svg>
+</g><g width="5990.059271669999px" height="216.44297277940376px"  transform="translate(2156.41, 11246.02) rotate(0, 2995.0296358349997, 108.22148638970188)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="189.38760118197828" width="4316.243303305096" textLength="4316.243303305096" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#333333" direction="ltr" >Find local groups to build skills and reduce isolation</text></g></g><g width="266.71px" height="16px"  transform="translate(1190.57, 7668.09) scale(20.571428571428573) rotate(0, 133.355, 8)"><svg
+	width="266.71"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:266.71px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1237092928158">
+		<rect
+			x="0"
+			y="0"
+			width="266.71"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="266.71"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1237092928158)"
+		></rect>
+	</g>
+</svg>
+</g><g width="5486.605714285714px" height="329.14285714285717px"  transform="translate(1190.57, 7668.09) rotate(0, 2743.302857142857, 164.57142857142858)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="288" width="2223.84375" textLength="2223.84375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="288" 
+				fill="#bf3688" direction="ltr" font-weight="bold">How to get help </text></g></g><g width="442.21px" height="32px"  transform="translate(2058.28, 8632.66) scale(13.527685798712735) rotate(0, 221.105, 16)"><svg
+	width="442.21"
+	height="32"
+	shape-border-width="shape-background"
+	style="width:442.21px; height: 32px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1132508179769">
+		<rect
+			x="0"
+			y="0"
+			width="442.21"
+			height="32"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="442.21"
+			height="32"
+			rx="0"
+			ry="0"
+			clip-path="url(#1132508179769)"
+		></rect>
+	</g>
+</svg>
+</g><g width="5982.077937048758px" height="432.8859455588075px"  transform="translate(2058.28, 8632.66) rotate(0, 2991.038968524379, 216.44297277940376)"><g transform="translate(0, 0)"><a href="https://www.nhs.uk/nhs-services/gps/gp-appointments-and-bookings/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189.38760118197828" width="2010.8561463389249" textLength="2010.8561463389249" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#3578ff" direction="ltr" text-decoration="underline">Book a GP appointment</text></a><text xml:space="preserve" x="2010.8561463389249" y="189.38760118197828" width="3399.914328640925" textLength="3399.914328640925" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#403d3d" direction="ltr" > to discuss a referral to the Adult Autism </text><text xml:space="preserve" x="0" y="405.830573961382" width="631.5077775740868" textLength="631.5077775740868" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#403d3d" direction="ltr" >Service</text></g></g><g width="295.08px" height="32px"  transform="translate(11063.38, 18536.83) scale(9.76999529907031) rotate(0, 147.54, 16)"><svg
+	width="295.08"
+	height="32"
+	shape-border-width="shape-background"
+	style="width:295.08px; height: 32px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="408144259276">
+		<rect
+			x="0"
+			y="0"
+			width="295.08"
+			height="32"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="295.08"
+			height="32"
+			rx="0"
+			ry="0"
+			clip-path="url(#408144259276)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2882.930212849667px" height="312.6398495702499px"  transform="translate(11063.38, 18536.83) rotate(0, 1441.4651064248335, 156.31992478512495)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="2878.5230290327268" textLength="2878.5230290327268" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >We make a commitment to making our website </text><text xml:space="preserve" x="0" y="293.0998589721093" width="1505.1135726747457" textLength="1505.1135726747457" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >accessible to all visitors .</text></g></g><g width="702.44px" height="16px"  transform="translate(1089, 15559.23) scale(11.273071498927278) rotate(0, 351.22, 8)"><svg
+	width="702.44"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:702.44px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1296738018030">
+		<rect
+			x="0"
+			y="0"
+			width="702.44"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="702.44"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1296738018030)"
+		></rect>
+	</g>
+</svg>
+</g><g width="7918.656343706478px" height="180.36914398283645px"  transform="translate(1089, 15559.23) rotate(0, 3959.328171853239, 90.18457199141822)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="157.8230009849819" width="5778.340860769969" textLength="5778.340860769969" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="157.8230009849819" 
+				fill="#ffffff" direction="ltr" >We are improving our website and value your feedback to better meet your needs .</text></g></g><g width="116.87px" height="16px"  transform="translate(1190.59, 12662.24) scale(20.571428571428573) rotate(0, 58.435, 8)"><svg
+	width="116.87"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:116.87px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="849705631854">
+		<rect
+			x="0"
+			y="0"
+			width="116.87"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="116.87"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#849705631854)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2404.1828571428573px" height="329.14285714285717px"  transform="translate(1190.59, 12662.24) rotate(0, 1202.0914285714287, 164.57142857142858)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="288" width="1968.8906250000002" textLength="1968.8906250000002" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="288" 
+				fill="#bf3688" direction="ltr" font-weight="bold">Related Pages</text></g></g><g width="139.24px" height="16px"  transform="translate(1190.56, 3230.49) scale(20.571428571428573) rotate(0, 69.62, 8)"><svg
+	width="139.24"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:139.24px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="55270722365">
+		<rect
+			x="0"
+			y="0"
+			width="139.24"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="139.24"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#55270722365)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2864.3657142857146px" height="329.14285714285717px"  transform="translate(1190.56, 3230.49) rotate(0, 1432.1828571428573, 164.57142857142858)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="288" width="2208.234375" textLength="2208.234375" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="288" 
+				fill="#bf3688" direction="ltr" font-weight="bold">What is autism?</text></g></g><g width="453.95px" height="16px"  transform="translate(1464.13, 13925.58) scale(11.273071498927278) rotate(0, 226.975, 8)"><svg
+	width="453.95"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:453.95px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1651077552599">
+		<rect
+			x="0"
+			y="0"
+			width="453.95"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="453.95"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1651077552599)"
+		></rect>
+	</g>
+</svg>
+</g><g width="5117.410806938038px" height="180.36914398283645px"  transform="translate(1464.13, 13925.58) rotate(0, 2558.705403469019, 90.18457199141822)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="157.8230009849819" width="3904.1156620611096" textLength="3904.1156620611096" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="157.8230009849819" 
+				fill="#ffffff" direction="ltr" >Some people are autistic and have a learning disability .</text></g></g><g width="238.4px" height="16px"  transform="translate(1474.67, 13546.8) scale(15.030761998569702) rotate(0, 119.2, 8)"><svg
+	width="238.4"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:238.4px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1670384121012">
+		<rect
+			x="0"
+			y="0"
+			width="238.4"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="238.4"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1670384121012)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3583.3336604590168px" height="240.49219197711523px"  transform="translate(1474.67, 13546.8) rotate(0, 1791.6668302295084, 120.24609598855761)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="210.43066797997582" width="2608.6004876345833" textLength="2608.6004876345833" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="210.43066797997582" 
+				fill="#ffffff" direction="ltr" >Learning disabilities support</text></g></g><g width="363.66px" height="16px"  transform="translate(8071.67, 13936.1) scale(10.521533398998793) rotate(0, 181.83, 8)"><svg
+	width="363.66"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:363.66px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="232252749801">
+		<rect
+			x="0"
+			y="0"
+			width="363.66"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="363.66"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#232252749801)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3826.260835879901px" height="168.3445343839807px"  transform="translate(8071.67, 13936.1) rotate(0, 1913.1304179399506, 84.17226719199034)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="147.3014675859831" width="2805.4887913373323" textLength="2805.4887913373323" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="147.3014675859831" 
+				fill="#ffffff" direction="ltr" >Reasonable adjustments, Access to Work .</text></g></g><g width="85.02px" height="16px"  transform="translate(1120.54, 16500.91) scale(21.043066797997586) rotate(0, 42.51, 8)"><svg
+	width="85.02"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:85.02px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="915517579544">
+		<rect
+			x="0"
+			y="0"
+			width="85.02"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="85.02"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#915517579544)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1789.0815391657547px" height="336.6890687679614px"  transform="translate(1120.54, 16500.91) rotate(0, 894.5407695828774, 168.3445343839807)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="294.6029351719662" width="1359.0861970237972" textLength="1359.0861970237972" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="294.6029351719662" 
+				fill="#ffffff" direction="ltr" font-weight="bold">Feedback</text></g></g><g width="266.8px" height="16px"  transform="translate(11073.91, 19136.55) scale(12.024609598855763) rotate(0, 133.4, 8)"><svg
+	width="266.8"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:266.8px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="904331211640">
+		<rect
+			x="0"
+			y="0"
+			width="266.8"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="266.8"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#904331211640)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3208.165840974718px" height="192.3937535816922px"  transform="translate(11073.91, 19136.55) rotate(0, 1604.082920487359, 96.1968767908461)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="168.3445343839807" width="2423.405059916269" textLength="2423.405059916269" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="168.3445343839807" 
+				fill="#ffffff" direction="ltr" >Read our accessibility statement</text></g></g><g width="275px" height="16px"  transform="translate(1099.5, 20567.48) scale(8.266919099213338) rotate(0, 137.5, 8)"><svg
+	width="275"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:275px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1635837156610">
+		<rect
+			x="0"
+			y="0"
+			width="275"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="275"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1635837156610)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2273.4027522836677px" height="132.2707055874134px"  transform="translate(1099.5, 20567.48) rotate(0, 1136.7013761418339, 66.1353527937067)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="115.73686738898672" width="2268.453903252596" textLength="2268.453903252596" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="115.73686738898672" 
+				fill="#ffffff" direction="ltr" >© London Borough of Waltham Forest, 2025</text></g></g><g width="276.84px" height="16px"  transform="translate(7749.13, 19294.38) scale(9.76999529907031) rotate(0, 138.42, 8)"><svg
+	width="276.84"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:276.84px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1680635509337">
+		<rect
+			x="0"
+			y="0"
+			width="276.84"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="276.84"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1680635509337)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2704.7254985946242px" height="156.31992478512495px"  transform="translate(7749.13, 19294.38) rotate(0, 1352.3627492973121, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="1968.8830370274893" textLength="1968.8830370274893" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >Make a complaint or compliment</text></g></g><g width="132.61px" height="16px"  transform="translate(1509.84, 18610.48) scale(15.030761998569702) rotate(0, 66.305, 8)"><svg
+	width="132.61"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:132.61px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="170636492224">
+		<rect
+			x="0"
+			y="0"
+			width="132.61"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="132.61"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#170636492224)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1993.2293486303283px" height="240.49219197711523px"  transform="translate(1509.84, 18610.48) rotate(0, 996.6146743151642, 120.24609598855761)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="210.43066797997582" width="1477.2273991934142" textLength="1477.2273991934142" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="210.43066797997582" 
+				fill="#ffffff" direction="ltr" >Waltham Forest</text></g></g><g width="200.32px" height="16px"  transform="translate(4413.78, 19010.3) scale(9.76999529907031) rotate(0, 100.16, 8)"><svg
+	width="200.32"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:200.32px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="149147050680">
+		<rect
+			x="0"
+			y="0"
+			width="200.32"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="200.32"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#149147050680)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1957.1254583097643px" height="156.31992478512495px"  transform="translate(4413.78, 19010.3) rotate(0, 978.5627291548822, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="1452.2182075008727" textLength="1452.2182075008727" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >Apply for a school place</text></g></g><g width="110.25px" height="16px"  transform="translate(4434.84, 18590.19) scale(13.527685798712735) rotate(0, 55.125, 8)"><svg
+	width="110.25"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:110.25px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="299770539850">
+		<rect
+			x="0"
+			y="0"
+			width="110.25"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="110.25"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#299770539850)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1491.427359308079px" height="216.44297277940376px"  transform="translate(4434.84, 18590.19) rotate(0, 745.7136796540395, 108.22148638970188)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="189.38760118197828" width="1242.0238630249758" textLength="1242.0238630249758" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189.38760118197828" 
+				fill="#ffffff" direction="ltr" font-weight="bold">Popular tasks</text></g></g><g width="172.18px" height="16px"  transform="translate(4413.8, 19599.5) scale(9.76999529907031) rotate(0, 86.09, 8)"><svg
+	width="172.18"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:172.18px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="846313702927">
+		<rect
+			x="0"
+			y="0"
+			width="172.18"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="172.18"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#846313702927)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1682.197790593926px" height="156.31992478512495px"  transform="translate(4413.8, 19599.5) rotate(0, 841.098895296963, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="1239.1674311061072" textLength="1239.1674311061072" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >Get a parking permit</text></g></g><g width="163.15px" height="16px"  transform="translate(8071.71, 13546.8) scale(15.030761998569702) rotate(0, 81.575, 8)"><svg
+	width="163.15"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:163.15px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="888178678026">
+		<rect
+			x="0"
+			y="0"
+			width="163.15"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="163.15"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#888178678026)"
+		></rect>
+	</g>
+</svg>
+</g><g width="2452.268820066647px" height="240.49219197711523px"  transform="translate(8071.71, 13546.8) rotate(0, 1226.1344100333235, 120.24609598855761)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="210.43066797997582" width="1762.1513456330983" textLength="1762.1513456330983" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="210.43066797997582" 
+				fill="#ffffff" direction="ltr" >Work and disability</text></g></g><g width="162.06px" height="16px"  transform="translate(4413.76, 19304.9) scale(9.76999529907031) rotate(0, 81.03, 8)"><svg
+	width="162.06"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:162.06px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="888550299181">
+		<rect
+			x="0"
+			y="0"
+			width="162.06"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="162.06"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#888550299181)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1583.3254381673344px" height="156.31992478512495px"  transform="translate(4413.76, 19304.9) rotate(0, 791.6627190836672, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="1170.8442510898547" textLength="1170.8442510898547" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >Check your bin day</text></g></g><g width="227px" height="16px"  transform="translate(1452.94, 6220.12) scale(14.285714285714286) rotate(0, 113.5, 8)"><svg
+	width="227"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:227px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="572801613468">
+		<rect
+			x="0"
+			y="0"
+			width="227"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="227"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#572801613468)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3242.857142857143px" height="228.57142857142858px"  transform="translate(1452.94, 6220.12) rotate(0, 1621.4285714285716, 114.28571428571429)"><g transform="translate(0, 0)"><text xml:space="preserve" x="393.4012276785713" y="200" width="2456.0546875" textLength="2456.0546875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="200" 
+				fill="#ffffff" direction="ltr" font-weight="bold">Read our Autism Strategy</text></g></g><g width="103.54px" height="16px"  transform="translate(11342.19, 290.47) scale(9.76999529907031) rotate(0, 51.77, 8)"><svg
+	width="103.54"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:103.54px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="58841911442">
+		<rect
+			x="0"
+			y="0"
+			width="103.54"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="103.54"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#58841911442)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1011.58531326574px" height="156.31992478512495px"  transform="translate(11342.19, 290.47) rotate(0, 505.79265663287, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="775.1308184444044" textLength="775.1308184444044" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#333333" direction="ltr" font-weight="bold">My Account</text></g></g><g width="67.24px" height="16px"  transform="translate(13299.21, 252.14) scale(14.27922389864122) rotate(0, 33.62, 8)"><svg
+	width="67.24"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:67.24px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="219220652399">
+		<rect
+			x="0"
+			y="0"
+			width="67.24"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="67.24"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#219220652399)"
+		></rect>
+	</g>
+</svg>
+</g><g width="960.1350149446356px" height="228.46758237825952px"  transform="translate(13299.21, 252.14) rotate(0, 480.0675074723178, 114.23379118912976)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="199.90913458097708" width="694.2157056347212" textLength="694.2157056347212" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="199.90913458097708" 
+				fill="#333333" direction="ltr" font-weight="bold">Menu =</text></g></g><g width="67.75px" height="16px"  transform="translate(7749.08, 18570.27) scale(12.776147698784248) rotate(0, 33.875, 8)"><svg
+	width="67.75"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:67.75px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1605443587739">
+		<rect
+			x="0"
+			y="0"
+			width="67.75"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="67.75"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1605443587739)"
+		></rect>
+	</g>
+</svg>
+</g><g width="865.5840065926328px" height="204.41836318054797px"  transform="translate(7749.08, 18570.27) rotate(0, 432.7920032963164, 102.20918159027399)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="178.86606778297948" width="665.7695481980725" textLength="665.7695481980725" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="178.86606778297948" 
+				fill="#ffffff" direction="ltr" font-weight="bold">Contact</text></g></g><g width="77.33px" height="16px"  transform="translate(12394.37, 294.6) scale(10.521533398998793) rotate(0, 38.665, 8)"><svg
+	width="77.33"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:77.33px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1581590960825">
+		<rect
+			x="0"
+			y="0"
+			width="77.33"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="77.33"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1581590960825)"
+		></rect>
+	</g>
+</svg>
+</g><g width="813.6301777445766px" height="168.3445343839807px"  transform="translate(12394.37, 294.6) rotate(0, 406.8150888722883, 84.17226719199034)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="147.3014675859831" width="646.8174306644268" textLength="646.8174306644268" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="147.3014675859831" 
+				fill="#333333" direction="ltr" font-weight="bold">Q Search</text></g></g><g width="114.38px" height="16px"  transform="translate(10789.83, 20567.48) scale(8.266919099213338) rotate(0, 57.19, 8)"><svg
+	width="114.38"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:114.38px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1068716288790">
+		<rect
+			x="0"
+			y="0"
+			width="114.38"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="114.38"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1068716288790)"
+		></rect>
+	</g>
+</svg>
+</g><g width="945.5702065680215px" height="132.2707055874134px"  transform="translate(10789.83, 20567.48) rotate(0, 472.78510328401075, 66.1353527937067)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="115.73686738898672" width="707.4755092005493" textLength="707.4755092005493" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="115.73686738898672" 
+				fill="#ffffff" direction="ltr" >Privacy policy</text></g></g><g width="123.69px" height="16px"  transform="translate(11705.21, 20567.48) scale(8.266919099213338) rotate(0, 61.845, 8)"><svg
+	width="123.69"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:123.69px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="804067585857">
+		<rect
+			x="0"
+			y="0"
+			width="123.69"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="123.69"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#804067585857)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1022.5352233816977px" height="132.2707055874134px"  transform="translate(11705.21, 20567.48) rotate(0, 511.26761169084887, 66.1353527937067)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="115.73686738898672" width="746.1863266621976" textLength="746.1863266621976" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="115.73686738898672" 
+				fill="#ffffff" direction="ltr" >Cookies policy</text></g></g><g width="36.8px" height="16px"  transform="translate(13704.3, 15567.5) scale(12.024609598855763) rotate(0, 18.4, 8)"><svg
+	width="36.8"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:36.8px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="233395232056">
+		<rect
+			x="0"
+			y="0"
+			width="36.8"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="36.8"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#233395232056)"
+		></rect>
+	</g>
+</svg>
+</g><g width="442.505633237892px" height="192.3937535816922px"  transform="translate(13704.3, 15567.5) rotate(0, 221.252816618946, 96.1968767908461)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="168.3445343839807" width="364.80129081841125" textLength="364.80129081841125" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="168.3445343839807" 
+				fill="#333333" direction="ltr" font-weight="bold">Hide</text></g></g><g width="90.03px" height="16px"  transform="translate(7738.59, 18999.77) scale(9.76999529907031) rotate(0, 45.015, 8)"><svg
+	width="90.03"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:90.03px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1766779235996">
+		<rect
+			x="0"
+			y="0"
+			width="90.03"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="90.03"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1766779235996)"
+		></rect>
+	</g>
+</svg>
+</g><g width="879.5926767753px" height="156.31992478512495px"  transform="translate(7738.59, 18999.77) rotate(0, 439.79633838765, 78.15996239256248)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="136.77993418698435" width="653.8454861770393" textLength="653.8454861770393" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="136.77993418698435" 
+				fill="#ffffff" direction="ltr" >Contact us</text></g></g><g width="97.09px" height="16px"  transform="translate(13420.22, 20556.96) scale(8.266919099213338) rotate(0, 48.545, 8)"><svg
+	width="97.09"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:97.09px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1334584783516">
+		<rect
+			x="0"
+			y="0"
+			width="97.09"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="97.09"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1334584783516)"
+		></rect>
+	</g>
+</svg>
+</g><g width="802.635175342623px" height="132.2707055874134px"  transform="translate(13420.22, 20556.96) rotate(0, 401.3175876713115, 66.1353527937067)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="115.73686738898672" width="602.5324609870003" textLength="602.5324609870003" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="115.73686738898672" 
+				fill="#ffffff" direction="ltr" >Press office</text></g></g><g width="66px" height="16px"  transform="translate(12683.71, 20567.48) scale(8.266919099213338) rotate(0, 33, 8)"><svg
+	width="66"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:66px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="159899315372">
+		<rect
+			x="0"
+			y="0"
+			width="66"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="66"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#159899315372)"
+		></rect>
+	</g>
+</svg>
+</g><g width="545.6166605480803px" height="132.2707055874134px"  transform="translate(12683.71, 20567.48) rotate(0, 272.80833027404015, 66.1353527937067)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="115.73686738898672" width="540.1430559101245" textLength="540.1430559101245" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="115.73686738898672" 
+				fill="#ffffff" direction="ltr" >Disclaimer</text></g></g><g transform="translate(1014.89, 51.53) scale(6.0914140731045645) rotate(0, 111.5, 47.5)"><rect x="0.9545454545454533" y="0" width="221.0909090909091" height="95" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/jpeg;base64,/9j/4QC8RXhpZgAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAABMCAwABAAAAAQAAAGmHBAABAAAAZgAAAAAAAABIAAAAAQAAAEgAAAABAAAABgAAkAcABAAAADAyMTABkQcABAAAAAECAwAAoAcABAAAADAxMDABoAMAAQAAAP//AAACoAQAAQAAAN8AAAADoAQAAQAAAF8AAAAAAAAA/9sAQwADAgIDAgIDAwMDBAMDBAUIBQUEBAUKBwcGCAwKDAwLCgsLDQ4SEA0OEQ4LCxAWEBETFBUVFQwPFxgWFBgSFBUU/9sAQwEDBAQFBAUJBQUJFA0LDRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU/8AAEQgAXwDfAwERAAIRAQMRAf/EAB4AAQABBQEBAQEAAAAAAAAAAAAJAQIGBwgDBQQK/8QARxAAAAQFAQMJBgMFAw0AAAAAAAECAwQFBgcRCBIhMQkTFBhBUVWV0hciMlZhgRUjcRZCkaGxGWLTJjM0Q0VGUnKCkpOiw//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCVMAAAAAAAAAAAAAAAAAAWqPsLcYCm13bwGqL2aoLd2Ak64+rahh4dZZ2YSHUTr5n2flkeQEbN9uWIqqonn5bbKUJkjO0aWZo9h11Zdh80pJkX6ANJR3KWanJSaCjasdg1LLKekShlG0XeWWyAesByk2qCPYXFQtSvxkM18bjUmaWgv1Mm938QHRlk+WViWHYWWXJp1JIThL02g1mpeeBmbRJ7wEjlpL6UVe+QMzakJ5DzOHcTtc1tkl5H/M3nJfcgGebZ8ewBcgzMu8BcAAAAAAAAAAAAAAAAAAAAAAACxe/9AHE3KF67S00SxqlaabS/WcyYN1Lyt6IVs8ltHgy97JAI37A6Vbp6560fn8xjohEqcdNUVP5kalo4nlCOJ9hkXYQCU6xnJvWeszDIddkaKpmhkRqiZylLxIV3tlslskA2jcTStay6MCzCz6jJXEGzgmnSh0ktsi7EngB9aktPluqIp38ElNHyqFl5p2VtJhk/m95q3bzAaFv9yZVprxsORMrliaQnBJPm3pWhLTSlY4rSRbwEXdeUFdzk7rxsxEHGvQ7Tb3OQseyaihJg2R8FFuyR44H3AJgtGuq2Vaq7ZtzllsoKeQmGpjAmZZQvgSiIj4KwZkA6CLBEQBkBUAAAAAAAAAAAAAAAAAAAFFYxvAWZPsAal1E6m6L01Uc/OaomKW4g0K6LAte+8+5j3S2C37OcZPG4gEFU7raY6w9UMDGVCtcEmpJqhkmGlG4UK2tXwpPBZIgH9BdtaGlNuaJlEhk0G1BwUHDNtklpBJ2jJJEaj+p4yAyfBdwBggDABgu4BprVraqQ3YsZVctnUE2+puCcdh3zRtLYcItyk9oCFHR9qnmGkC8UXE7LkfTUQ8qFmcGk8G4hKjSlZfVOTPHbwATt2jvDS18aKg6ppCZImMqiUkZZ3ONK/wCBxOfdV9DAZruPHEBeXABUAAAAAAAAAAAAAAAAAAUPgAwu8Nx4K0dtKhq2PWlLEqhFxOyo8bZpLOC7wEEb83rzlCdTMJBRMSp96YRBk00jKWoWFQeTMiMzJJ7BfcwEtFluThs/ZOdS+cy+WvzebwKkusxU0NLikOF++nBFgwHU6OAC4AAAAB+eNg2ZjCuw0Q2l5hxOytCyySiPiRgOKdQ3Jd2xuLJJ3MaagV0/Ui0LfY6JspZW5gzMjSScntHu+4CO3R7qIqfRbf1+m6hcchJA5GdCncufUewyeSI3STwJZERFnuMBPFLZizOJZCR0Krbh4ppD7au9CiIy/kZAP2pLBY4gKgAAAAAAAAAAAAAAAAAC1XABHHyyF4VU/baQ0LCPKZi5o+UVEbKvjhyJSTTjuMyAevI82JhJBauOuTFNocmM8eVDw5uJ95lDSlJMyPs2sgJFOBY4AL08AFwAAAAChgLD3HvPB9wCIHlj7Iop6t5BcGXQaIWBmTXRItTadzkTlStoz79kiAdp8mjdSIujpap9yYxXSJrL3HYR0jzlKELNLf8A6kQDq4uACoAAAAAAAAAAAAAAAAAAtX8JgIfuWtkkZ7VaIm2FHAFKDh9o+BOc6o/6AO0OTHq2V1VpQp1MuImXIN59l5gz95KiVjP34gOryQZ5zwMBcStksHuADXv3bwFNv6ZIBdtAKEvJAB+8RAKbOVZPs4AOAOWLrCQwFhpTIYxxp+cxUxS7Dw2S5xBEhZc7juLh9wHx+Rkk8yhLUVLMYh01y+KiUphmzPck0molfzASMlwAVAAAAAAAAAAAAAAAAAAHjFRDcJDOvuqJDTSDWtR/ukRZMwEGuvm/071WahUULS6TjpTARn4fLmGkkfSncn7+cZ7cYyAlD0L6anNM9koCSTB7pE8ijOKjFluJJrPaJGP7ucAOjQHms8n347O8BQyPefAwGCzO9dJSi6krt3ETA0VVM2nH4eEJGSNCE7SjM+zcArQV6qTuVUNSyOQx5xUwp6LOCj21o2SbdIiMyI+0t/EBnST3Hu3ALkfrkBcA4P5UzSbHXtoFmtKcZXFVDTzJ85DkozN2GLaUaUJ7VZPuAcu8lfq4iLaVj7Kqne5mQzB1ZQanUkjosRkzUk92T2lYLfwATIpIiSRFwAVAAAAAAAAAAAAAAAAAAGtNSFYuUHZOrpuy1zrrcA62ku41pNOf5gIj+SJoiArjUvMZnN2elOSmXKjoda+JP84kiV9smAm3I8GeeICpKAY1XtyaYtfJ0Teqp1DSOWqdQwUTFGZI21mSUp3FxMzx9wHFVW6m7g6UNR8wO5DhzizdWRnOSmdM5UiXbXwpUoz+EiLOyRdoD5NUzqAqDlTrbzKWRLUbAxMlfdaiGVZStJwuSMj/AEAfk0j17JLYXl1KVNUMa1ASiXzd9111asZJKUmZEQDK9O+o65OoC68zufHvM0fYWStvNt9Pyk449lSdtJkeDJJkSj3AO1aLrWR3DpuCn9NzNmbyaNb5yHjIfPNuJ7yzgB9vb2uACi8KSZKTtEZHkvoAgU1w0BA2W1wPwtPsdFhOmQUxaSjcXOOKStXD6/1AToUFPH6mouSzWKb5qIi4VDriO4zLeA++AAAAAAAAAAAAAAAAAANWanqTiq1sVWErgjIohcC44WTx8CTUf9AETPJC3AldGajJhK5q8iFXOJeqDhTWeDU/ziTJGO88H/ABNqR7z3buGQFu/wCxANV39tvQt+bfTOi6smEGUPEF7plFkhbLhb0q3KI9x4PH0AcCUvXbNjpxEaatQUXB1bb6aoNEhqVDyXFMtGeyglGnejtPJnkgHvp+0aVfYfXHSEzhot2pbeOQ0W5LJ2lfOJbbUyeG1bzxjJEW/fgBjTGiiaVtqTujVtzI52l7Sy6buxcYpx7mymWMHsEWSyky/eLuAfefqCO19Vm1byjoqHoGwVMKS1GPE4llUelO5KUpPZNWTTgzI+3JgJIraySkqDpOU0jSb8G1KZVDkxCwjEQTqkILhvzk+3eAy/OEnuIjLjgB+ePjYaWQz0ZGRDULCMJNbr7yyQhCe8zPgQCAvVNc6F1Fa21TaTEp6CdmcHL2tj3iMmlpQai7y3GeQE+FPShEhkcDLm1baIVlLRKxxwQD6AAAAAAAAAAAAAAAAAAA8I2FbjoR+GeSS2XkG2tJ9qTLBl/AwEH+vTSTVOmG7/7fUS1Hs0zExHToWaQHufhz+0eG9pO8jLGclu38QG1LB8sdG0rTbEruZIIyoophJITMJcaUuOEXavbVvPvMB0nI+Vus1NYFD75R0tcV/qIjZ2i/gA5ZqytNLFY1JMZ1GXPuWxExzynnG4eaoS2g1HnCS2dxF2EAx2Mp/RnVUwhkTi4VwIwzMmyiI+PacJou/ejgAlZ05U7TdLWhkcuo+exlR08hBnCTCPeJ11aD3kW1gtxcCLADD9ZtC27r60pQNz6tjqPpdqJJ52LgonmTdMkn+Wo9lWUnk92OwBH/AC+hdGUhh+iS299awMMlR4ag5kSEZzxIib7QGwbPVzpVsnWrNTyi9tWzOMZLZ6LNZhzrDhZzhSSRvAb3q3lT7H05CG9Bzhc9Xj/MwXxfzIgHBurvlQqkvxJ5hSNHQLlO0nGEbb6nP9KiEHu2DNKsbJ9wDPeS/wBEEynVVlcqupNFQErgCSuUsxKS2ItZkeVmW88J3Y4AJey4AKgADFoi6VGwUQ4xEVbI2H2zNK2nZiylSTLiRkatxgLPa3Q/zlIPM2PUAe1uh/nGQeZseoA9rdD/ADjIPM2PUAe1uh/nGQeZseoA9rdD/OMg8zY9QB7W6H+cZB5mx6gD2t0P84yDzNj1AHtbof5xkHmbHqAPa3Q/zjIPM2PUAe1uh/nGQeZseoA9rdD/ADjIPM2PUAtXdqh1Fj9spB5mz6gH4ZvcC3E+gHYCZVPTUbCulhTL8wYWk/sagHId4dBumi50a5HS2qJLS0wdM1OvQc0aWlRn/cNzBANHPck5albijb1BQDaTP4TKFPH0zzwDz/sm7Vlx1DS/H0TC/wCMA5B1habZLporiVyOR1pC1rCR0F0vpcKaPyz2jTsq2FKLO7PEBL7yY7z0Ro7pJbq1KVzsQWVHncSzwQDXvLDuLb0yS/ZUaCVOGyPHaWwvcAj80f6LKY1IU7MZrUdyYOiUwyyQ209zRqc3mWffWnuAdDFyTdrD4ahZfkuPuwv+MA9GeSctRnK9QcCsu4ihU/8A2MB0JYPRbpvso4xGxNSyGqJ4yZbMdHTFlJf+PnDT9wHWMLdCgoJhDDFW06wygsJbbmLCUkX0IlAPcrt0ORF/llIPM2PUAHdyhi/3ykHmbHqAXs3UouKfS0zV0jedV8KG5kypR7s7iJQCEXUBo+u1GXnq2KgoRuJhIqYPRDTv4g0j3VrMyLBrI+BgNfdTi8p/7NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3l8NR5mz6wDqb3k8NR5mz6wFp6N7xlu/DEeZs+sBb1Krux7ySelDClZ2dpcxYPBf94CaPQfbia2o0z03Tk4JCZiwt5ayQslkW0vJbyMyAYRym1pp7eDT41Kqeabej4aYoiTaW4lBKSSVFxUZF2gIk2tG14WmiQ3Km20J3klMyYLj/ANYC/qcXkxn8NR5mz6wFepveXw1HmbPrAOpveXw1HmbPrAOpveXw1HmbPrAOpveXw1HmbPrAOpveTw1HmbPrAZdaDSXdqU3Kk0XGyxBQ7RvbSvxFk8ZZWRbtv6kA/9k=" width="223px" height="95px" id="IMG_6" clip-path="url(#clipPath5)" /><rect x="0.9545454545454533" y="0" width="221.0909090909091" height="95" style="fill:#999999;" fill-opacity="0" /></g><g width="149.69px" height="16px"  transform="translate(1020.67, 639.39) scale(11.273071498927278) rotate(0, 74.845, 8)"><svg
+	width="149.69"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:149.69px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="324579793964">
+		<rect
+			x="0"
+			y="0"
+			width="149.69"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="149.69"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#324579793964)"
+		></rect>
+	</g>
+</svg>
+</g><g width="1687.4660726744241px" height="180.36914398283645px"  transform="translate(1020.67, 639.39) rotate(0, 843.7330363372121, 90.18457199141822)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="157.8230009849819" width="1177.9699184845865" textLength="1177.9699184845865" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="157.8230009849819" 
+				fill="#000000" direction="ltr" font-weight="bold">Waltham Forest</text></g></g><g width="462.84px" height="16px"  transform="translate(1020.69, 1081.08) scale(10.509997649579246) rotate(0, 231.42, 8)"><svg
+	width="462.84"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:462.84px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="342473534901">
+		<rect
+			x="0"
+			y="0"
+			width="462.84"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="462.84"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#342473534901)"
+		></rect>
+	</g>
+</svg>
+</g><g width="4864.447312131258px" height="168.15996239326793px"  transform="translate(1020.69, 1081.08) rotate(0, 2432.223656065629, 84.07998119663397)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="147.13996709410944" width="4125.8104249737935" textLength="4125.8104249737935" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="147.13996709410944" 
+				fill="#222222" direction="ltr" >Home&gt; Adult social care &gt; Specialist services &gt; Autism support</text></g></g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 8614.05) scale(1) rotate(0, 236.16, 233.055)"><svg
+	width="472.3205210801098"
+	height="466.1132558621467"
+	style="width:472.3205210801098px; height: 466.1132558621467px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="436740636777">
+		<ellipse cx="236.1602605400549" cy="233.05662793107334" rx="236.1602605400549" ry="233.05662793107334"></ellipse>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<ellipse
+			class="shape-element shape-element-ellipse"
+			cx="236.1602605400549"
+			cy="233.05662793107334"
+			rx="236.1602605400549"
+			ry="233.05662793107334"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#231f20"
+			fill-opacity="1"
+			clip-path="url(#436740636777)"
+		/>
+	</g>
+</svg>
+</g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 8614.05) rotate(0, 236.16, 233.055)"><g transform="translate(69.16973886540023, 68.26070592054123)"><text xml:space="preserve" x="109.79052472641249" y="228.7959220105321" width="114.39999389648438" textLength="114.39999389648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="200" 
+				fill="#ffffff" direction="ltr" font-weight="bold">1</text></g></g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 9883.06) scale(1) rotate(0, 236.16, 233.055)"><svg
+	width="472.3205210801098"
+	height="466.1132558621467"
+	style="width:472.3205210801098px; height: 466.1132558621467px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="252556977140">
+		<ellipse cx="236.1602605400549" cy="233.05662793107334" rx="236.1602605400549" ry="233.05662793107334"></ellipse>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<ellipse
+			class="shape-element shape-element-ellipse"
+			cx="236.1602605400549"
+			cy="233.05662793107334"
+			rx="236.1602605400549"
+			ry="233.05662793107334"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#231f20"
+			fill-opacity="1"
+			clip-path="url(#252556977140)"
+		/>
+	</g>
+</svg>
+</g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 9883.06) rotate(0, 236.16, 233.055)"><g transform="translate(69.16973886540023, 68.26070592054123)"><text xml:space="preserve" x="109.79052472641249" y="228.7959220105321" width="114.39999389648438" textLength="114.39999389648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="200" 
+				fill="#ffffff" direction="ltr" font-weight="bold">2</text></g></g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 11105.19) scale(1) rotate(0, 236.16, 233.055)"><svg
+	width="472.3205210801098"
+	height="466.1132558621467"
+	style="width:472.3205210801098px; height: 466.1132558621467px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="668718749028">
+		<ellipse cx="236.1602605400549" cy="233.05662793107334" rx="236.1602605400549" ry="233.05662793107334"></ellipse>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<ellipse
+			class="shape-element shape-element-ellipse"
+			cx="236.1602605400549"
+			cy="233.05662793107334"
+			rx="236.1602605400549"
+			ry="233.05662793107334"
+			stroke="#1a1a1a"
+			stroke-width="4"
+			stroke-dasharray=""
+			stroke-opacity="1"
+			fill="#231f20"
+			fill-opacity="1"
+			clip-path="url(#668718749028)"
+		/>
+	</g>
+</svg>
+</g><g width="472.32px" height="466.11px"  transform="translate(1444.36, 11105.19) rotate(0, 236.16, 233.055)"><g transform="translate(69.16973886540023, 68.26070592054123)"><text xml:space="preserve" x="109.79052472641249" y="228.7959220105321" width="114.39999389648438" textLength="114.39999389648438" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Noto Sans", Helvetica, OpenSans, Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="200" 
+				fill="#ffffff" direction="ltr" font-weight="bold">3</text></g></g><g transform="translate(10524.02, 3448.05) scale(6.532346403337107) rotate(0, 225.5, 271.5)"><rect x="0" y="0" width="451" height="543" style="fill:#999999;" fill-opacity="0.1" /><image href="data:image/png;base64,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" width="451px" height="543px" id="IMG_7" /><rect x="0" y="0" width="451" height="543" style="fill:#999999;stroke-width:1.2246747961671367;stroke:#231f20;stroke-opacity:1;stroke-dasharray: none;stroke-linecap: round;stroke-linejoin: round;" fill-opacity="0" /></g><g width="234px" height="16px"  transform="translate(11396.21, 8722.66) scale(13.5) rotate(0, 117, 8)"><svg
+	width="234"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:234px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1441678841963">
+		<rect
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1441678841963)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3159px" height="216px"  transform="translate(11396.21, 8722.66) rotate(0, 1579.5, 108)"><g transform="translate(0, 0)"><a href="https://www.autism.org.uk/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189" width="110.373046875" textLength="110.373046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#bf3688" direction="ltr" text-decoration="underline" font-weight="bold">&gt;</text></a><a href="https://www.autism.org.uk/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="110.373046875" y="189" width="2079.9228515625" textLength="2079.9228515625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline"> National Autistic Society</text></a></g></g><g width="162.23px" height="16px"  transform="translate(11342.24, 8150.96) scale(20.571428571428573) rotate(0, 81.115, 8)"><svg
+	width="162.23"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:162.23px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="442093545839">
+		<rect
+			x="0"
+			y="0"
+			width="162.23"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="162.23"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#442093545839)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3337.302857142857px" height="329.14285714285717px"  transform="translate(11342.24, 8150.96) rotate(0, 1668.6514285714286, 164.57142857142858)"><g transform="translate(0, 0)"><text xml:space="preserve" x="0" y="288" width="1872.5625000000002" textLength="1872.5625000000002" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="288" 
+				fill="#bf3688" direction="ltr" font-weight="bold">Related links:</text></g></g><g width="234px" height="32px"  transform="translate(11396.21, 9065.55) scale(13.5) rotate(0, 117, 16)"><svg
+	width="234"
+	height="32"
+	shape-border-width="shape-background"
+	style="width:234px; height: 32px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1393143480912">
+		<rect
+			x="0"
+			y="0"
+			width="234"
+			height="32"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="234"
+			height="32"
+			rx="0"
+			ry="0"
+			clip-path="url(#1393143480912)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3159px" height="432px"  transform="translate(11396.21, 9065.55) rotate(0, 1579.5, 216)"><g transform="translate(0, 0)"><a href="https://www.nelft.nhs.uk/adult-autism-service" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189" width="110.373046875" textLength="110.373046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#bf3688" direction="ltr" text-decoration="underline" font-weight="bold">&gt;</text></a><a href="https://www.nelft.nhs.uk/adult-autism-service" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="110.373046875" y="189" width="2615.9150390625" textLength="2615.9150390625" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline"> North East London NHS Adult </text></a><a href="https://www.nelft.nhs.uk/adult-autism-service" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="405" width="1312.8486328125" textLength="1312.8486328125" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline">Autism Service </text></a></g></g><g width="234px" height="16px"  transform="translate(11396.21, 9624.55) scale(13.5) rotate(0, 117, 8)"><svg
+	width="234"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:234px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="1003320492565">
+		<rect
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#1003320492565)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3159px" height="216px"  transform="translate(11396.21, 9624.55) rotate(0, 1579.5, 108)"><g transform="translate(0, 0)"><a href="https://www.autisticinclusivemeets.org/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189" width="110.373046875" textLength="110.373046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#bf3688" direction="ltr" text-decoration="underline" font-weight="bold">&gt;</text></a><a href="https://www.autisticinclusivemeets.org/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="110.373046875" y="189" width="2331.76904296875" textLength="2331.76904296875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline"> Autistic Inclusive meets UK</text></a></g></g><g width="234px" height="16px"  transform="translate(11396.21, 10042.32) scale(13.5) rotate(0, 117, 8)"><svg
+	width="234"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:234px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="177110392646">
+		<rect
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#177110392646)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3159px" height="216px"  transform="translate(11396.21, 10042.32) rotate(0, 1579.5, 108)"><g transform="translate(0, 0)"><a href="https://www.autisticinclusivemeets.org/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189" width="110.373046875" textLength="110.373046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#bf3688" direction="ltr" text-decoration="underline" font-weight="bold">&gt;</text></a><a href="https://www.actionforneurodiversity.org/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="110.373046875" y="189" width="2111.2998046875" textLength="2111.2998046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline"> Action for Neurodiversity</text></a></g></g><g width="234px" height="16px"  transform="translate(11396.21, 10460.32) scale(13.5) rotate(0, 117, 8)"><svg
+	width="234"
+	height="16"
+	shape-border-width="shape-background"
+	style="width:234px; height: 16px;"
+	class="shape-background"
+	preserveAspectRatio="none"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<clipPath id="736171911546">
+		<rect
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+		></rect>
+	</clipPath>
+	<g id="Page-1" stroke="none" stroke-width="0" fill="none" fill-rule="evenodd">
+		<rect
+			class="shape-element shape-element-rect"
+			stroke="transparent"
+			stroke-width="0"
+			stroke-dasharray=""
+			stroke-opacity="0"
+			fill="transparent"
+			fill-opacity="0"
+			x="0"
+			y="0"
+			width="234"
+			height="16"
+			rx="0"
+			ry="0"
+			clip-path="url(#736171911546)"
+		></rect>
+	</g>
+</svg>
+</g><g width="3159px" height="216px"  transform="translate(11396.21, 10460.32) rotate(0, 1579.5, 108)"><g transform="translate(0, 0)"><a href="https://www.sycamoretrust.org.uk/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="0" y="189" width="110.373046875" textLength="110.373046875" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#bf3688" direction="ltr" text-decoration="underline" font-weight="bold">&gt;</text></a><a href="https://www.sycamoretrust.org.uk/" target="_blank" rel="noopener noreferrer"><text xml:space="preserve" x="110.373046875" y="189" width="1379.2939453125" textLength="1379.2939453125" lengthAdjust="spacingAndGlyphs" letter-spacing="0" font-family='"Arial", Arial, sans-serif, Noto Sans Hebrew, Noto Sans, Noto Sans JP, Noto Sans KR' font-size="189" 
+				fill="#305bab" direction="ltr" text-decoration="underline"> Sycamore Trust</text></a></g></g><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADfElEQVR4AeyZP08UURTFFystIDaYEDsLGwqtACttYCtNLKTDD6A0NrZAaWeBX0A6TIzRRggxsdKl8E9vrIkkhkChFmb9HXI3cff92Xnz3kBIltzDzL5377nn7Oy82Zk91zrjfyMDp30AR0cgdAS63e44uGYYD+Xljhc5AoicAG3wBHwEPxB2CL4YDjUGNKcc5U4wlx1ZBhC0AF6jYg+8BY/BLJgEg6ExzSlHuXuqBQuDiSmvaxmg6Qx4TqMtcBtcAKmhGtVuiQvMpBIoP9kAjR5S2AFLoFSIq2PcSZxJBmiwCvs6aCrWrUdl/soGjHilMnP9xBXrVYmhkgEI78F2EuJpcxwyoZ7HL2L/hhow8ZsxkobmNq13lD5qAAKtDKchvidaJqSh99rZRg2QvQxSQyvUGkXassmOqIagAd59XWC0vKUo+EPyg7GxsVUwx76MsMmKJdPiJQkaIDvqnHlffEP4p94E+1p2S5gIavEawPFFRMyD1Jimtm/1KGRiHl5pcvR4DZB1C5wHdUInXmkT0iJNjp6QgZtOZtpAEya8mkIGbqTp9WaXNuHVFDJwxZVUa6SkCa8mxwAni+6e9N29lmJPUSkTk6atr4VjgFmvU8ZzImTiZyKpo81nIJEzK/1vVjXFPgPfGS8di1wPXvxPysdBF7nUj6qjzTFAoyMa7YNSERKf+vV837T16XIM2Kzj1MZTN6XEq69XU8jAe1VkoqR4SfFqChl4p4oMlBYvKV5NIQMfqPgF6kQT4qVFmhw9XgOcLHqqtuNkDx/Q12nfapN6wg522jFNg+MtrwHLqvP45DLL41Wrb7GvpTJXvOiCWoIGcLxN5QZICT1teynh4DOFJcRvmBbo3AgasNSgc5v3baYZlPDrbEtEVEPUAM53URC8nWOu6Vg2DcE+UQOqguAZ2xL3tdAkxZr1jhYNNaBqiHQynqQJiVdPtY+ikgExmIlF7TcMXUcqiZeOygaUjAmt8U2akHj1ULtKSDIgRjOhX1pSl1iVhyCuWeMO5XjHkw2IhUa74D77bfAG/AapoRrVtsUFtOKlckSvxEPJaLoN7pA4Be6Cp6DTarV89xMa0/NS5Sh3SrVAF0zK6kWtIzDYChEH4BV4BObAJXL0K6QuZsKExoDmlKPcA3Kyo4gBnwrEHoGvBt3l+dKyxxozkK2sIsHIQMU3qrG0fwAAAP//xaN+RgAAAAZJREFUAwB5QzdwEotm6QAAAABJRU5ErkJggg==" width="48px" height="48px"  transform="translate(7074.3, 13636.24) scale(8.110348661735461) rotate(0, 24, 24)" /><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADfElEQVR4AeyZP08UURTFFystIDaYEDsLGwqtACttYCtNLKTDD6A0NrZAaWeBX0A6TIzRRggxsdKl8E9vrIkkhkChFmb9HXI3cff92Xnz3kBIltzDzL5377nn7Oy82Zk91zrjfyMDp30AR0cgdAS63e44uGYYD+Xljhc5AoicAG3wBHwEPxB2CL4YDjUGNKcc5U4wlx1ZBhC0AF6jYg+8BY/BLJgEg6ExzSlHuXuqBQuDiSmvaxmg6Qx4TqMtcBtcAKmhGtVuiQvMpBIoP9kAjR5S2AFLoFSIq2PcSZxJBmiwCvs6aCrWrUdl/soGjHilMnP9xBXrVYmhkgEI78F2EuJpcxwyoZ7HL2L/hhow8ZsxkobmNq13lD5qAAKtDKchvidaJqSh99rZRg2QvQxSQyvUGkXassmOqIagAd59XWC0vKUo+EPyg7GxsVUwx76MsMmKJdPiJQkaIDvqnHlffEP4p94E+1p2S5gIavEawPFFRMyD1Jimtm/1KGRiHl5pcvR4DZB1C5wHdUInXmkT0iJNjp6QgZtOZtpAEya8mkIGbqTp9WaXNuHVFDJwxZVUa6SkCa8mxwAni+6e9N29lmJPUSkTk6atr4VjgFmvU8ZzImTiZyKpo81nIJEzK/1vVjXFPgPfGS8di1wPXvxPysdBF7nUj6qjzTFAoyMa7YNSERKf+vV837T16XIM2Kzj1MZTN6XEq69XU8jAe1VkoqR4SfFqChl4p4oMlBYvKV5NIQMfqPgF6kQT4qVFmhw9XgOcLHqqtuNkDx/Q12nfapN6wg522jFNg+MtrwHLqvP45DLL41Wrb7GvpTJXvOiCWoIGcLxN5QZICT1teynh4DOFJcRvmBbo3AgasNSgc5v3baYZlPDrbEtEVEPUAM53URC8nWOu6Vg2DcE+UQOqguAZ2xL3tdAkxZr1jhYNNaBqiHQynqQJiVdPtY+ikgExmIlF7TcMXUcqiZeOygaUjAmt8U2akHj1ULtKSDIgRjOhX1pSl1iVhyCuWeMO5XjHkw2IhUa74D77bfAG/AapoRrVtsUFtOKlckSvxEPJaLoN7pA4Be6Cp6DTarV89xMa0/NS5Sh3SrVAF0zK6kWtIzDYChEH4BV4BObAJXL0K6QuZsKExoDmlKPcA3Kyo4gBnwrEHoGvBt3l+dKyxxozkK2sIsHIQMU3qrG0fwAAAP//xaN+RgAAAAZJREFUAwB5QzdwEotm6QAAAABJRU5ErkJggg==" width="48px" height="48px"  transform="translate(13420.22, 13641.5) scale(8.110348661735461) rotate(0, 24, 24)" /><metadata>
+							<sv>
+								<x>356249.4448350833</x>
+								<y>-603980.109244301</y>
+								<width>558000.0000000003</width>
+								<height>273404.011461318</height>
+							</sv>
+						</metadata></svg>
