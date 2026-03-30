@@ -24,13 +24,15 @@ export default function ParentCarersPage() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a
-            href="#"
+            href="#/adult-social-care/being-carer/carers-assessment-and-rights"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
           >
             Find parent carer support
           </a>
           <a
-            href="#"
+            href="https://www.walthamforest.gov.uk/children-and-families/special-educational-needs-and-disability-send"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
           >
             Contact SEND services
@@ -154,16 +156,16 @@ export default function ParentCarersPage() {
             </p>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">Education, Health and Care Plans (EHCPs)</a>
+                <a href="https://www.gov.uk/children-with-special-educational-needs/extra-SEN-help" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Education, Health and Care Plans (EHCPs)</a>
               </li>
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">SEND support and services</a>
+                <a href="https://www.walthamforest.gov.uk/children-and-families/special-educational-needs-and-disability-send" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">SEND support and services</a>
               </li>
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">Short breaks for disabled children</a>
+                <a href="https://www.walthamforest.gov.uk/children-and-families" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Short breaks for disabled children</a>
               </li>
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">Transition to adult services</a>
+                <a href="#/adult-social-care/learning-disability-support/preparing-for-adulthood" className="text-[#bf3688] underline hover:no-underline">Transition to adult services</a>
               </li>
             </ul>
           </div>

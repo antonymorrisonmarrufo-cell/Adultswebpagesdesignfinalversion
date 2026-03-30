@@ -28,7 +28,9 @@ export default function LocalGroupsServicesPage() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a
-            href="#"
+            href="https://www.walthamforest.gov.uk/adult-social-care"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
           >
             Find local support
@@ -74,7 +76,7 @@ export default function LocalGroupsServicesPage() {
             <p className="text-gray-700 mb-4">
               Search for local groups, activities and services across Waltham Forest.
             </p>
-            <a href="#" className="text-[#bf3688] underline hover:no-underline font-bold">Search the community directory</a>
+            <a href="https://www.walthamforest.gov.uk/adult-social-care" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-bold">Search the community directory</a>
           </div>
 
           <div className="bg-white border-2 border-gray-200 p-6">
@@ -82,7 +84,7 @@ export default function LocalGroupsServicesPage() {
             <p className="text-gray-700 mb-4">
               Local mental health support and wellbeing services available in the borough.
             </p>
-            <a href="#" className="text-[#bf3688] underline hover:no-underline font-bold">Find mental health support</a>
+            <a href="#/adult-social-care/mental-health-wellbeing" className="text-[#bf3688] underline hover:no-underline font-bold">Find mental health support</a>
           </div>
 
           <div className="bg-white border-2 border-gray-200 p-6">

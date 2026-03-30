@@ -24,7 +24,9 @@ export default function WorkEducationPage() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a
-            href="#"
+            href="https://www.walthamforest.gov.uk/adult-learning"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
           >
             Find work and training support
@@ -195,7 +197,7 @@ export default function WorkEducationPage() {
                 <a href="https://nationalcareers.service.gov.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">National Careers Service</a>
               </li>
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">Waltham Forest adult learning and skills</a>
+                <a href="https://www.walthamforest.gov.uk/adult-learning" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Waltham Forest adult learning and skills</a>
               </li>
             </ul>
           </div>

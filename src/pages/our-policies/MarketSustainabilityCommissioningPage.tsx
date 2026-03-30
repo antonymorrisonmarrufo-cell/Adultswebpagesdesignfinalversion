@@ -109,14 +109,14 @@ export default function MarketSustainabilityCommissioningPage() {
       the findings.
       </p>
       <div className="mt-4 space-y-3">
-      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+      <a href="https://www.walthamforest.gov.uk/sites/default/files/2023-02/Cost_of_care_report%2065_%20Care%20Homes_v1.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
         <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-        Cost of Care Report — Residential and Nursing Care 65+ [PDF — link to be added]
+        Cost of Care Report — Residential and Nursing Care 65+ [PDF]
       </a>
       <br />
-      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+      <a href="https://www.walthamforest.gov.uk/sites/default/files/2023-02/Cost_of_care_report18_%20Domiciliary%20Care_v1.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
         <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-        Cost of Care Report — Domiciliary Care 18+ [PDF — link to be added]
+        Cost of Care Report — Domiciliary Care 18+ [PDF]
       </a>
       </div>
       </section>
@@ -130,9 +130,9 @@ export default function MarketSustainabilityCommissioningPage() {
       changes, and the council's approach to addressing sustainability issues.
       </p>
       <div className="mt-4">
-      <a href="#" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+      <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support/fair-cost-care" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
         <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-        Market Sustainability Plan [PDF — link to be added]
+        Market Sustainability Plan
       </a>
       </div>
       </section>

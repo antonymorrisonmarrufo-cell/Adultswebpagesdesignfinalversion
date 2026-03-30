@@ -26,13 +26,13 @@ export default function CarersFeedbackPage() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a
-            href="#"
+            href="#/adult-social-care/complaints-compliments"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
           >
             Give feedback
           </a>
           <a
-            href="#"
+            href="#/adult-social-care/complaints-compliments"
             className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
           >
             Join the user research group

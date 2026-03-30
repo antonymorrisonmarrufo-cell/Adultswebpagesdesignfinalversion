@@ -75,7 +75,7 @@ export default function GetHelpPage() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold">
-                    <a href="#" className="text-[#0066CC] hover:underline">Book a GP appointment</a> to discuss a referral to the NHS Memory Service
+                    <a href="https://www.nhs.uk/nhs-services/gps/" target="_blank" rel="noopener noreferrer" className="text-[#0066CC] hover:underline">Book a GP appointment</a> to discuss a referral to the NHS Memory Service
                   </p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function GetHelpPage() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold">
-                    If you have a diagnosis for dementia and need practical support at home or in the community contact Adult Social Care for a <a href="#" className="text-[#0066CC] hover:underline">care needs assessment</a>
+                    If you have a diagnosis for dementia and need practical support at home or in the community contact Adult Social Care for a <a href="#/adult-social-care/how-to-get-support/request-an-assessment" className="text-[#0066CC] hover:underline">care needs assessment</a>
                   </p>
                 </div>
               </div>

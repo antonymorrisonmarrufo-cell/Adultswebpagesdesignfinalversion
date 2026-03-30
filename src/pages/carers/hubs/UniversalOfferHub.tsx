@@ -80,7 +80,7 @@ export default function UniversalOfferHub() {
               skills training, CV workshops, and carer-friendly employers in Waltham Forest.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="#" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+              <a href="https://www.walthamforest.gov.uk/adult-learning" target="_blank" rel="noopener noreferrer" className="bg-[#EF3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
                 Book a careers appointment
               </a>
               <a href="#" className="bg-white border-2 border-[#EF3688] text-[#EF3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">

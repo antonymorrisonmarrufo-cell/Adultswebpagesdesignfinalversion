@@ -165,7 +165,7 @@ export default function FinancialSupportPage() {
             <div className="bg-white border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
               <h3 className="font-bold text-gray-900 mb-2">Council Tax Reduction</h3>
               <p className="text-gray-700 mb-3">You may get up to 100% off your Council Tax if you're on a low income or benefits. Carers sometimes qualify for extra discounts.</p>
-              <a href="#" className="text-[#bf3688] underline hover:no-underline font-semibold">Apply for Council Tax Reduction</a>
+              <a href="https://www.gov.uk/council-tax-reduction" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-semibold">Apply for Council Tax Reduction</a>
             </div>
             <p className="text-gray-700 mb-4">
               Contact the council to check if you are eligible for support.

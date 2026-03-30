@@ -180,7 +180,7 @@ export default function BeingCarerPage() {
                 <a href="#/adult-social-care" className="text-[#bf3688] underline hover:no-underline">Adult social care</a>
               </li>
               <li>
-                <a href="#" className="text-[#bf3688] underline hover:no-underline">Paying for care and support</a>
+                <a href="#/adult-social-care/paying-for-care" className="text-[#bf3688] underline hover:no-underline">Paying for care and support</a>
               </li>
               <li>
                 <a href="https://www.carersfirst.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Carers First</a>

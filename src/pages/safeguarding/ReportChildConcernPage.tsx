@@ -17,7 +17,7 @@ export default function ReportChildConcernPage() {
         <nav className="text-sm text-gray-600 mb-6">
           <a href="#/adult-social-care" className="hover:underline">Home</a>
           <span className="mx-1">&gt;</span>
-          <a href="#" className="hover:underline">Children and families</a>
+          <a href="https://www.walthamforest.gov.uk/children-and-families" target="_blank" rel="noopener noreferrer" className="hover:underline">Children and families</a>
           <span className="mx-1">&gt;</span>
           <span>Report a concern about a child</span>
         </nav>

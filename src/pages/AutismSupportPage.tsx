@@ -76,7 +76,7 @@ export default function AutismSupportPage() {
                 </div>
                 <div>
                   <p className="text-gray-700">
-                    <a href="#" className="text-[#0066CC] font-semibold hover:underline">Book a GP appointment</a> to discuss a referral to the Adult Autism Service
+                    <a href="https://www.nhs.uk/nhs-services/gps/" target="_blank" rel="noopener noreferrer" className="text-[#0066CC] font-semibold hover:underline">Book a GP appointment</a> to discuss a referral to the Adult Autism Service
                   </p>
                 </div>
               </div>

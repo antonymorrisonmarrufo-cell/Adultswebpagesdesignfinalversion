@@ -28,7 +28,7 @@ export default function CarerEmergencyPlanPage() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a
-            href="#"
+            href="#/adult-social-care/being-carer/carers-assessment-and-rights"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
           >
             Register for the emergency card scheme
