@@ -7,7 +7,7 @@ const hubCards = [
     title: 'Make a professional referral',
     body: 'Use this route to submit a safeguarding concern about an adult with care and support needs.',
     cta: 'Start professional referral',
-    href: 'https://action-spider-46698300.figma.site/',
+    href: 'https://safeguardingapp.vercel.app/',
     external: true,
     primary: true,
   },

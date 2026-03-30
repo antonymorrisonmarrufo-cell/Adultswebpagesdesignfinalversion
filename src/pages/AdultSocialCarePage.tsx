@@ -11,7 +11,7 @@ const heroCards = [
   {
     title: "Report abuse or neglect of an adult",
     image: "/Images/report-abuse.jpg",
-    href: "https://www.walthamforest.gov.uk/adult-social-care/safeguarding/report-abuse",
+    href: "https://safeguardingapp.vercel.app/",
     alt: "Concerned elderly person",
   },
   {

@@ -81,7 +81,7 @@ export default function ReportAbusePage() {
               <h3 className="text-[#bf3688] font-bold text-lg mb-3">Report online</h3>
               <p className="text-gray-700 mb-6">Tell us about the concern so we can decide what action may be needed.</p>
               <a
-                href="https://action-spider-46698300.figma.site/"
+                href="https://safeguardingapp.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2"

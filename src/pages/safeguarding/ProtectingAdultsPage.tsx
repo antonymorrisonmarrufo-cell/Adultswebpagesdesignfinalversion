@@ -58,7 +58,7 @@ export default function ProtectingAdultsPage() {
 
             {/* Card 1 — Report */}
             <a
-              href="https://action-spider-46698300.figma.site/"
+              href="https://safeguardingapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col justify-between p-6 pb-20 relative border-2 border-[#bf3688] bg-[#fcedf3] hover:shadow-lg transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
@@ -85,7 +85,7 @@ export default function ProtectingAdultsPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://action-spider-46698300.figma.site/"
+                  href="https://safeguardingapp.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#bf3688] text-white px-5 py-2.5 text-sm font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69]"
