@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
 const services = [
-  { title: "Autism support", desc: "Information, diagnosis, support services, and local groups for autistic adults.", link: "/autism" },
-  { title: "Visual and hearing support", desc: "Sensory services, equipment, registration, and specialist support.", link: "/visual-hearing" },
-  { title: "Physical disabilities", desc: "Support services, equipment, adaptations, and personal assistance.", link: "/physical-disabilities" },
-  { title: "Long-term conditions", desc: "Managing long-term health conditions with support and self-management.", link: "/long-term-conditions" },
-  { title: "Work and disability", desc: "Employment support, Access to Work, supported employment, and volunteering.", link: "/work-disability" },
-  { title: "Power of attorney", desc: "Setting up lasting power of attorney, types, costs, and how to register.", link: "/power-of-attorney" },
+  { title: "Dementia support", desc: "Understand symptoms, who can help, and how to get an assessment and ongoing support.", link: "/adult-social-care/specialist-services/dementia-support" },
+  { title: "Learning disabilities support", desc: "Get help from adult social care and NHS partners if you have a learning disability.", link: "/adult-social-care/learning-disability-support" },
+  { title: "Autism support", desc: "Information, diagnosis, support services, and local groups for autistic adults.", link: "/adult-social-care/specialist-services/autism-support" },
+  { title: "Visual and hearing support", desc: "Sensory services, equipment, registration, and specialist support.", link: "/adult-social-care/specialist-services/visual-and-hearing-impairments" },
+  { title: "Physical disabilities", desc: "Support services, equipment, adaptations, and personal assistance.", link: "/adult-social-care/specialist-services/physical-disabilities" },
+  { title: "Long-term conditions", desc: "Managing long-term health conditions with support and self-management.", link: "/adult-social-care/specialist-services/long-term-conditions" },
+  { title: "Work and disability", desc: "Employment support, Access to Work, supported employment, and volunteering.", link: "/adult-social-care/work-and-disability" },
+  { title: "Power of attorney", desc: "Setting up lasting power of attorney, types, costs, and how to register.", link: "/adult-social-care/specialist-services/power-attorney-deputyship-and-appointeeship" },
 ];
 
 export default function SpecialistServicesPage() {

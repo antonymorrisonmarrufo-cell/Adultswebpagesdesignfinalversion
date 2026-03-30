@@ -14,7 +14,7 @@ export default function CarersHero({ title, description, breadcrumb = "Support f
     <section className="bg-gradient-to-br from-[#FFF0F7] to-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="text-sm text-gray-600 mb-4">
-          Part of: <a href="#/carers" className="text-[#EF3688] hover:underline">{breadcrumb}</a>
+          Part of: <a href="#/adult-social-care/being-carer" className="text-[#EF3688] hover:underline">{breadcrumb}</a>
         </div>
         
         <h1 className="text-[#EF3688] mb-6">{title}</h1>
