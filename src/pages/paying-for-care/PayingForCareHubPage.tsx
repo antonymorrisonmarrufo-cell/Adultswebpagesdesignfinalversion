@@ -213,7 +213,7 @@ export default function PayingForCareHubPage() {
               <ArrowRight size={18} />
             </a>
             <a
-              href="https://portal.walthamforest.gov.uk/AchieveForms/"
+              href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
@@ -225,7 +225,7 @@ export default function PayingForCareHubPage() {
         </section>
 
         {/* Need help */}
-        <section className="mb-12 bg-gray-100 p-8 border border-gray-200">
+        <section className="mb-12 rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-8">
           <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Need help?</h2>
           <p className="text-gray-700 mb-4">
             If you have questions about paying for care, or if you need help understanding your options, contact the Adult Social Care team.

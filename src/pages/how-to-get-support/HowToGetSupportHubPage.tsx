@@ -43,7 +43,7 @@ export default function HowToGetSupportHubPage() {
                 Use our self-assessment tool to answer some questions about your daily life. It takes a few minutes and will tell you whether you might be eligible for support. It will also point you towards information, advice, and local services that could help.
               </p>
               <a
-                href="https://portal.walthamforest.gov.uk/AchieveForms/"
+                href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-6 py-2 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
@@ -198,7 +198,7 @@ export default function HowToGetSupportHubPage() {
         </section>
 
         {/* Need help urgently */}
-        <section className="mb-12 bg-gray-100 p-8 border border-gray-200">
+        <section className="mb-12 rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-8">
           <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Need help urgently?</h2>
           <p className="text-gray-700 mb-4 font-bold">
             If you or someone you know is in immediate danger, call 999.

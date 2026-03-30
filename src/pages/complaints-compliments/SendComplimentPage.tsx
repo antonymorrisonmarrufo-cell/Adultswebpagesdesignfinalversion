@@ -29,7 +29,7 @@ export default function SendComplimentPage() {
         {/* Primary CTA */}
         <div className="mb-12">
           <a
-            href="https://portal.walthamforest.gov.uk/AchieveForms/"
+            href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"

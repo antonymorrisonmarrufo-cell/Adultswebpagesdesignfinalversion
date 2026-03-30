@@ -202,7 +202,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://portal.walthamforest.gov.uk/AchieveForms/"
+              href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
@@ -221,8 +221,8 @@ export default function HowAdultSocialCareWorksHubPage() {
         </section>
 
         {/* Need help now */}
-        <section className="mb-12 bg-gray-100 p-8 border border-gray-200">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Need help now?</h2>
+        <section className="mb-12 rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-8">
+          <h2 className="text-2xl font-bold text-[#d4351c] mb-4">Need help now?</h2>
           <p className="text-gray-700 mb-4 font-bold">
             If you or someone you know is in immediate danger, call 999.
           </p>
