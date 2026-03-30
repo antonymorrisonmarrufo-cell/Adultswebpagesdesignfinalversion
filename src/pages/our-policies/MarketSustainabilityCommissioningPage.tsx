@@ -138,19 +138,13 @@ export default function MarketSustainabilityCommissioningPage() {
       </section>
 
       <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
+      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+      <h2 className="text-xl font-bold text-[#003078]">Contact us</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For questions about commissioning or the care market in Waltham Forest,
-      contact our team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
+      If you require information about any of LBWF's Adult Social Care provisions, please email{" "}
+      <a href="mailto:contract.management@walthamforest.gov.uk" className="text-wf-blue underline hover:text-wf-green font-semibold">
+      contract.management@walthamforest.gov.uk
       </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
       </p>
       </section>
       </div>

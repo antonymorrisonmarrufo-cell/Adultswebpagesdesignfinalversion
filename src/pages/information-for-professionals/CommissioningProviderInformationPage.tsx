@@ -98,7 +98,7 @@ export default function CommissioningProviderInformationPage() {
             <li>Learning disability services</li>
           </ul>
           <p className="text-gray-700">
-            If you are a provider interested in working with Waltham Forest, or if you have questions about current or upcoming commissioning opportunities, contact the Adult Social Care Commissioning team.
+            If you are a provider interested in working with Waltham Forest, or if you have questions about current or upcoming commissioning opportunities, email <a href="mailto:contract.management@walthamforest.gov.uk" className="text-[#bf3688] underline">contract.management@walthamforest.gov.uk</a>.
           </p>
         </section>
 
@@ -111,13 +111,14 @@ export default function CommissioningProviderInformationPage() {
         </section>
 
         {/* Contact the Commissioning team */}
-        <section className="mb-12 bg-gray-50 border border-gray-200 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Contact the Commissioning team</h2>
-          <p className="text-gray-700">
-            For enquiries about commissioning opportunities, framework agreements, or provider information, please contact the Adult Social Care Commissioning team.
-          </p>
-          <p className="text-gray-700 mt-4 text-sm italic">
-            Contact details available through the Adults Hub on 020 8496 3130
+        <section className="mb-12 rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+          <h2 className="text-xl font-bold text-[#003078] mb-4">Contact the Commissioning team</h2>
+          <p className="text-sm text-gray-700">
+            If you require information about any of LBWF's Adult Social Care provisions, please email{" "}
+            <a href="mailto:contract.management@walthamforest.gov.uk" className="text-wf-blue underline hover:text-wf-green font-semibold">
+              contract.management@walthamforest.gov.uk
+            </a>
           </p>
         </section>
 
