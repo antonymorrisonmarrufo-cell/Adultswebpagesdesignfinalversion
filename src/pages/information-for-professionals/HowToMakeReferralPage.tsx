@@ -26,43 +26,37 @@ export default function HowToMakeReferralPage() {
           If you are a GP, nurse, hospital discharge coordinator, social worker, or other professional and you need to refer someone for adult social care support in Waltham Forest, this page explains how.
         </p>
 
-        {/* Current referral process */}
+        {/* Online referral form */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Current referral process</h2>
-          <p className="text-gray-700 mb-6">
-            To refer someone for adult social care support, please complete the referral form and send it to the Adults Hub.
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to make a referral</h2>
+          <p className="text-gray-700 mb-4 font-semibold">
+            All professional referrals must be made using the online referral form.
           </p>
-          
-          <div className="bg-gray-50 border border-gray-200 p-6 mb-6">
-            <div className="flex items-start gap-3 mb-4">
-              <FileText size={20} className="text-[#bf3688] mt-1 flex-shrink-0" />
-              <div>
-                <p className="font-bold text-gray-900 mb-1">Request for Help, Support, Protection or Safeguarding referral form</p>
-                <p className="text-sm text-gray-600">Word document</p>
-                <p className="text-sm text-gray-600 italic mt-2">Download available from the Adults Hub team</p>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-300 pt-4 space-y-3">
-              <div className="flex items-center gap-3 text-gray-700">
-                <Mail size={18} className="text-[#bf3688]" />
-                <div>
-                  <strong>Email the completed form to:</strong><br />
-                  <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-[#bf3688] hover:underline">
-                    socialcaredirect@walthamforest.gov.uk
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3 text-gray-700">
-                <Phone size={18} className="text-[#bf3688]" />
-                <div>
-                  <strong>Phone (for urgent referrals or queries):</strong><br />
-                  020 8496 3130<br />
-                  <span className="text-sm">Monday to Friday, 9am to 5pm</span>
-                </div>
-              </div>
-            </div>
+          <p className="text-gray-700 mb-6">
+            The online form is the only accepted method for professional referrals. Email referrals will be returned with a request to complete the online form. Phone agents will direct you to the online form.
+          </p>
+
+          <div className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-6">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#003078] text-white text-sm font-bold mb-3">i</div>
+            <h3 className="text-lg font-bold text-[#003078] mb-3">Professional referral form</h3>
+            <p className="text-sm text-gray-700 mb-4">
+              Use this form for all adult social care referrals including requests for help, support, protection or safeguarding.
+            </p>
+            <a
+              href="https://safeguardingapp.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
+            >
+              Start the online referral form
+            </a>
+          </div>
+
+          <div className="rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-4">
+            <h3 className="text-base font-bold text-[#d4351c] mb-2">Emergency only</h3>
+            <p className="text-sm text-gray-700">
+              Phone is only for genuine emergencies where someone is at immediate risk and you cannot complete the online form. Call <strong>020 8496 3130</strong> (Mon–Fri 9am–5pm) or <strong>020 8496 3000</strong> (out of hours).
+            </p>
           </div>
         </section>
 
@@ -98,7 +92,7 @@ export default function HowToMakeReferralPage() {
             <li>For safeguarding concerns, the referral will be screened by the Multi-Agency Safeguarding Hub (MASH).</li>
           </ol>
           <p className="text-gray-700">
-            You will not currently receive automatic confirmation that your referral has been received. If you need to check, phone the Adults Hub on 020 8496 3130.
+            You will receive confirmation that your referral has been received via the online form. You can track the progress of your referral through the system.
           </p>
         </section>
 
@@ -134,21 +128,21 @@ export default function HowToMakeReferralPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Occupational therapy referrals</h2>
           <p className="text-gray-700">
-            For OT referrals, download and complete the Adult Social Care referral form (the same form used for other referrals) and email it to{' '}
-            <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-[#bf3688] underline hover:no-underline">
-              socialcaredirect@walthamforest.gov.uk
-            </a>. Alternatively, phone 020 8496 3130.
+            For OT referrals, use the same{' '}
+            <a href="https://safeguardingapp.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">
+              online referral form
+            </a>. Select the appropriate referral type when completing the form.
           </p>
         </section>
 
         {/* Callout box */}
         <section className="mb-12">
-          <div className="bg-[#FFF4E6] border-2 border-[#003078] bg-[#d7f8ff] p-6">
+          <div className="border-2 border-[#003078] bg-[#d7f8ff] p-6 rounded-lg">
             <div className="flex items-start gap-3">
-              <AlertCircle className="text-[#bf3688] mt-1 flex-shrink-0" size={24} />
+              <AlertCircle className="text-[#003078] mt-1 flex-shrink-0" size={24} />
               <div>
                 <p className="text-gray-700">
-                  We know the current referral process relies on Word documents and email. We are working to replace this with a structured online referral form that provides confirmation of receipt and the ability to track the progress of your referral. This is part of the Adults Digital Front Door programme.
+                  The new online referral form replaces the previous Word document and email process. It provides confirmation of receipt and allows you to track the progress of your referral. All professionals should now use the online form for all referrals.
                 </p>
               </div>
             </div>
