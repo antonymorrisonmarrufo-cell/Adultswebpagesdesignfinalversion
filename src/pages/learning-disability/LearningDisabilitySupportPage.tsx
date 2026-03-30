@@ -71,7 +71,7 @@ export default function LearningDisabilitySupportPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src="/Images/placeholder.svg"
+                src="/Images/learning-disability.jpg"
                 alt="An adult with a learning disability in a bright community setting, sitting at a table with a support worker, engaged in conversation about support options"
                 className="w-full h-auto rounded border border-gray-200"
               />

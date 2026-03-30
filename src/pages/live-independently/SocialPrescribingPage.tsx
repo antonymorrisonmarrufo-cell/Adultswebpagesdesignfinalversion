@@ -40,7 +40,7 @@ export default function SocialPrescribingPage() {
 
         <div className="mb-12 max-w-2xl">
           <img
-            src="https://images.unsplash.com/photo-1772206605293-3fadeaa944e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjB3ZWxsYmVpbmclMjBhY3Rpdml0eSUyMGdyb3VwfGVufDF8fHx8MTc3NDYzNjU5Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="/Images/social-prescribing.jpg"
             alt="Community wellbeing activity bringing people together"
             className="w-full h-auto rounded"
           />

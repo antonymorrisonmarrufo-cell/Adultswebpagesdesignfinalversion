@@ -69,7 +69,7 @@ export default function HomeAdaptationsPage() {
         {/* Hero image */}
         <div className="mb-12 max-w-2xl">
           <img
-            src="/Images/placeholder.svg"
+            src="/Images/home-adaptations.jpg"
             alt="A care worker supporting an older person at home with daily tasks"
             className="w-full h-auto rounded"
           />

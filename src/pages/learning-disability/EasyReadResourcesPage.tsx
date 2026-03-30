@@ -46,7 +46,7 @@ export default function EasyReadResourcesPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src="/Images/placeholder.svg"
+                src="/Images/easy-read.jpg"
                 alt="An adult with a learning disability and support worker looking at easy-read information together in a library setting"
                 className="w-full h-auto rounded border border-gray-200"
               />

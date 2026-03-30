@@ -60,7 +60,7 @@ export default function PreparingForAdulthoodPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src="https://images.unsplash.com/photo-1758270705639-9727f350f026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGFkdWx0JTIwbGVhcm5pbmclMjBkaXNhYmlsaXR5JTIwY29sbGVnZSUyMGxhcHRvcCUyMGNvbW11bml0eSUyMGxlYXJuaW5nfGVufDF8fHx8MTc3NDY1Mjk5OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/Images/preparing-adulthood.jpg"
                 alt="A young adult with a learning disability in a college or community-learning setting, looking at a laptop with a supportive adult nearby"
                 className="w-full h-auto rounded border border-gray-200"
               />

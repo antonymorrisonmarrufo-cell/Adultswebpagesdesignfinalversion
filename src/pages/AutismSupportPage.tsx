@@ -114,7 +114,7 @@ export default function AutismSupportPage() {
                 rel="noopener noreferrer"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1620302044865-d934e46372b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRpc20lMjBzdHJhdGVneSUyMGRvY3VtZW50JTIwY29sb3JmdWwlMjBpbmZvZ3JhcGhpY3xlbnwxfHx8fDE3NzQ2MDkxNzB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+                  src="/Images/autism.jpg" 
                   alt="Waltham Forest All-Age Autism Strategy" 
                   className="w-full h-auto hover:opacity-90 transition-opacity cursor-pointer border border-gray-200"
                 />

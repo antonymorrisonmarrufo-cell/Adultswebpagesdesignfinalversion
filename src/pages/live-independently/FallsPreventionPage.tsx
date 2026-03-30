@@ -59,7 +59,7 @@ export default function FallsPreventionPage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src="/Images/placeholder.svg"
+              src="/Images/falls-prevention.jpg"
               alt="A group of diverse older adults taking part in a balance and stability class in a community hall"
               className="w-full h-auto rounded border border-gray-200"
             />

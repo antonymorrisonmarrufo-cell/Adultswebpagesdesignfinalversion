@@ -88,7 +88,7 @@ export default function LiveIndependentlyPage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src="/Images/placeholder.svg"
+              src="/Images/hero-independent.jpg"
               alt="Active Black senior woman exercising on a bike at home, staying independent and healthy"
               className="w-full h-auto rounded"
             />
@@ -140,7 +140,7 @@ export default function LiveIndependentlyPage() {
               </div>
               <div className="w-64 flex-shrink-0 hidden sm:block">
                 <img
-                  src="/Images/placeholder.svg"
+                  src="/Images/homeshare.jpg"
                   alt="A younger woman smiling with an elderly woman at home, sharing companionship over a cup of tea"
                   className="w-full h-full object-cover"
                 />
@@ -166,7 +166,7 @@ export default function LiveIndependentlyPage() {
               </div>
               <div className="w-64 flex-shrink-0 hidden sm:block">
                 <img
-                  src="https://images.unsplash.com/photo-1630068846062-3ffe78aa5049?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBhY3Rpdml0eSUyMGdyb3VwJTIwc29jaWFsJTIwd2VsbGJlaW5nJTIwZGl2ZXJzZSUyMHBlb3BsZXxlbnwxfHx8fDE3NzQ2MzkzNjV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/Images/community-activity.jpg"
                   alt="Diverse group of people taking part in a community activity"
                   className="w-full h-full object-cover"
                 />

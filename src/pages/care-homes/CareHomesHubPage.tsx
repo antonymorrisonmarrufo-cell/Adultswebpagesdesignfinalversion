@@ -43,7 +43,7 @@ export default function CareHomesHubPage() {
 
         {/* Hero Image Placeholder */}
         <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-96 flex items-center justify-center">
-          <img src="/Images/placeholder.svg" alt="Care Homes and Supported Living Hub" className="w-full h-full object-cover" />
+          <img src="/Images/care-homes-hub.jpg" alt="Care Homes and Supported Living Hub" className="w-full h-full object-cover" />
         </div>
 
         {/* How the main options compare */}

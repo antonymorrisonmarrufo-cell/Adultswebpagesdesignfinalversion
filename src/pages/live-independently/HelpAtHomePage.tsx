@@ -51,7 +51,7 @@ export default function HelpAtHomePage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src="https://images.unsplash.com/photo-1765896387387-0538bc9f997e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJlZ2l2ZXIlMjBoZWxwaW5nJTIwZWxkZXJseSUyMHdvbWFuJTIwYXQlMjBob21lJTIwcGVyc29uYWwlMjBjYXJlfGVufDF8fHx8MTc3NDY0NDY0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/Images/help-at-home.jpg"
               alt="Care worker helping a resident with personal care at home"
               className="w-full h-auto rounded border border-gray-200"
             />

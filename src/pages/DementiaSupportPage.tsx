@@ -10,7 +10,7 @@ const featuredCards = [
     additionalText: 'Find out what to do, who to contact and how we can help.',
     link: 'Learn more',
     href: '#/adult-social-care/specialist-services/dementia/get-help',
-    imageUrl: 'https://images.unsplash.com/photo-1738454738501-7e6626ccfcd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGRlcmx5JTIwcGVyc29uJTIwc3VwcG9ydCUyMGRlbWVudGlhJTIwY2FyZXxlbnwxfHx8fDE3NzQ2MDcxMjB8MA&ixlib=rb-4.1.0&q=80&w=1080'
+    imageUrl: '/Images/dementia-help.jpg'
   },
   {
     title: 'Waltham Forest Dementia Hub',
@@ -18,7 +18,7 @@ const featuredCards = [
     additionalText: 'The hub provides a variety of activities and information from different organisations.',
     link: 'Learn more',
     href: '#/adult-social-care/specialist-services/dementia/hub',
-    imageUrl: 'https://images.unsplash.com/photo-1751977979590-3554dd691c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBncm91cCUyMG1lZXRpbmclMjBlbGRlcmx5JTIwcGVvcGxlfGVufDF8fHx8MTc3NDYwNzEyMHww&ixlib=rb-4.1.0&q=80&w=1080'
+    imageUrl: '/Images/community-activity.jpg'
   }
 ];
 

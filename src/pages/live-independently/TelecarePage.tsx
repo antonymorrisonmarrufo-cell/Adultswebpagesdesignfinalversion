@@ -56,7 +56,7 @@ export default function TelecarePage() {
         {/* Hero image */}
         <div className="mb-12 max-w-2xl">
           <img
-            src="/Images/placeholder.svg"
+            src="/Images/telecare.jpg"
             alt="Elderly woman sitting in a chair holding a community alarm pendant, with a support worker in a high-visibility jacket looking on from a doorway"
             className="w-full h-auto rounded"
           />

@@ -58,7 +58,7 @@ export default function SupportForCarersPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src="/Images/placeholder.svg"
+                src="/Images/carers-support.jpg"
                 alt="A parent or unpaid carer and an adult with a learning disability spending time together at home"
                 className="w-full h-auto rounded border border-gray-200"
               />

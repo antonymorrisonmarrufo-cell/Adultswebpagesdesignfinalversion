@@ -45,7 +45,7 @@ export default function HomesharePage() {
 
         <div className="mb-12 max-w-2xl">
           <img
-            src="/Images/placeholder.svg"
+            src="/Images/homeshare.jpg"
             alt="A young woman pouring tea for an elderly man at home, sharing companionship"
             className="w-full h-auto rounded"
           />

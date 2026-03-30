@@ -108,7 +108,7 @@ export default function GetHelpPage() {
           <div className="lg:col-span-1">
             <div className="bg-white p-6 mb-8 shadow-sm">
               <img 
-                src="https://images.unsplash.com/photo-1759215524566-8aea4761a926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW1lbnRpYSUyMGNhcmUlMjBzdXBwb3J0JTIwc3RyYXRlZ3klMjBkb2N1bWVudCUyMGNvbG9yZnVsJTIwaW5mb2dyYXBoaWN8ZW58MXx8fHwxNzc0NjA4ODk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+                src="/Images/dementia-help.jpg" 
                 alt="All-Age Dementia Strategy" 
                 className="w-full h-auto border border-gray-200"
               />

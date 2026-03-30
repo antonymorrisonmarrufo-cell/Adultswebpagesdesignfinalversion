@@ -57,7 +57,7 @@ export default function AskForSupportPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-xl">
               <img
-                src="/Images/placeholder.svg"
+                src="/Images/ask-support.jpg"
                 alt="An adult with a learning disability and a family member sitting together at a kitchen table at home, reviewing simple paperwork"
                 className="w-full h-auto rounded border border-gray-200"
               />

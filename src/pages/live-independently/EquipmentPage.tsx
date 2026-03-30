@@ -56,7 +56,7 @@ export default function EquipmentPage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src="https://images.unsplash.com/photo-1710952615354-3e5e9f234fc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjB1c2luZyUyMGtpdGNoZW4lMjB0cm9sbGV5JTIwbW9iaWxpdHklMjBhaWQlMjBsYW5kc2NhcGV8ZW58MXx8fHwxNzc0NjQ1MzAzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/Images/equipment.jpg"
               alt="Person using a mobility trolley safely in their home"
               className="w-full h-auto rounded border border-gray-200"
             />
