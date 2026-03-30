@@ -19,7 +19,7 @@ export default function FinancialAssessmentPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
+          <li><Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Financial assessment</span></li>
           </ol>

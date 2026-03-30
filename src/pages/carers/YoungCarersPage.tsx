@@ -12,7 +12,7 @@ export default function YoungCarersPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
+          <li><Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Young carers</span></li>
           </ol>
@@ -110,12 +110,12 @@ export default function YoungCarersPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/being-carer" className="text-wf-blue underline hover:text-wf-green">
           Being a carer
           </Link>
           </li>
           <li>
-          <Link to="/carers/hubs/young-carers" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/being-carer/hubs/young-carers" className="text-wf-blue underline hover:text-wf-green">
           Young carers hub
           </Link>
           </li>

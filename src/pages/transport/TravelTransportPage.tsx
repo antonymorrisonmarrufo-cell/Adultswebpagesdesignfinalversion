@@ -113,7 +113,7 @@ export default function TravelTransportPage() {
           <ul className="space-y-2 text-[#004E3E]">
           <li>
           <Link
-          to="/live-independently"
+          to="/adult-social-care/live-independently-at-home"
           className="hover:underline"
           >
           Living independently
@@ -121,7 +121,7 @@ export default function TravelTransportPage() {
           </li>
           <li>
           <Link
-          to="/how-to-get-support"
+          to="/adult-social-care/how-to-get-support"
           className="hover:underline"
           >
           How to get support

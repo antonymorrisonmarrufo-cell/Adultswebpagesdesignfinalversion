@@ -23,7 +23,7 @@ export default function HowToMakeReferralPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
+      <Link to="/adult-social-care/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>

@@ -31,7 +31,7 @@ export default function SocialPrescribingPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -155,18 +155,18 @@ export default function SocialPrescribingPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/falls-prevention">
+          <Link to="/adult-social-care/live-independently-at-home/falls-prevention-and-reablement">
           Falls prevention
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/homeshare">Homeshare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/homeshare">Homeshare</Link>
           </li>
           <li>
-          <Link to="/live-independently/help-at-home">Help at home</Link>
+          <Link to="/adult-social-care/live-independently-at-home/help-at-home-and-personal-care">Help at home</Link>
           </li>
           <li>
-          <Link to="/mental-health">Mental health</Link>
+          <Link to="/adult-social-care/mental-health-wellbeing">Mental health</Link>
           </li>
           </ul>
           </div>

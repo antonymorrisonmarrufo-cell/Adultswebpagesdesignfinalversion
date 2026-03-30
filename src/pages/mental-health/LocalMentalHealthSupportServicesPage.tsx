@@ -23,7 +23,7 @@ export default function LocalMentalHealthSupportServicesPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
+      <Link to="/adult-social-care/mental-health-wellbeing" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>

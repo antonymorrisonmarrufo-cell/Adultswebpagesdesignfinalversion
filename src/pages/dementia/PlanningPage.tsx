@@ -24,7 +24,7 @@ export default function PlanningPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+      <Link to="/adult-social-care/specialist-services/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -181,7 +181,7 @@ export default function PlanningPage() {
       <li>
       Your{" "}
       <Link
-      to="/dementia/adviser"
+      to="/adult-social-care/specialist-services/dementia/adviser"
       className="text-wf-blue underline hover:text-wf-green"
       >
       dementia adviser

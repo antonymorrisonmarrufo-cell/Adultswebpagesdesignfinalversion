@@ -23,7 +23,7 @@ export default function WhatHappensDuringYourAssessmentPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
+      <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>

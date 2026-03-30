@@ -23,7 +23,7 @@ export default function MakeComplaintPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
+      <Link to="/adult-social-care/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -127,7 +127,7 @@ export default function MakeComplaintPage() {
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
       An independent advocate can help you make a complaint. Visit our{" "}
       <Link
-      to="/complaints-compliments/independent-help-advocacy"
+      to="/adult-social-care/complaints-compliments/independent-help-and-advocacy"
       className="text-wf-blue underline hover:text-wf-green"
       >
       independent help and advocacy

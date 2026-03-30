@@ -104,7 +104,7 @@ export default function PhysicalDisabilitiesPage() {
       <strong>Disabled Facilities Grant</strong> of up to &pound;30,000.
       Visit our{" "}
       <Link
-      to="/live-independently/home-adaptations"
+      to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy"
       className="text-wf-blue underline hover:text-wf-green"
       >
       home adaptations

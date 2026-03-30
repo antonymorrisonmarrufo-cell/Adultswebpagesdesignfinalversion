@@ -23,7 +23,7 @@ export default function YourRightsAsCarerPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
+      <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -114,7 +114,7 @@ export default function YourRightsAsCarerPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       For more information, visit our{" "}
       <Link
-      to="/understand-your-rights/challenging-decisions-raising-concerns"
+      to="/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns"
       className="text-wf-blue underline hover:text-wf-green"
       >
       challenging decisions and raising concerns

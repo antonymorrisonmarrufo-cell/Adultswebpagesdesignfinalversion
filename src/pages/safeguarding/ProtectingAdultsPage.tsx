@@ -54,7 +54,7 @@ export default function ProtectingAdultsPage() {
           <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Safeguarding information and guidance</h2>
           <div className="grid gap-4 md:grid-cols-2">
           <Link
-          to="/safeguarding/report-abuse"
+          to="/adult-social-care/report-abuse-or-neglect"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Report abuse or neglect</h3>
@@ -69,7 +69,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/abuse-and-neglect"
+          to="/adult-social-care/abuse-and-neglect"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Types of abuse and neglect</h3>
@@ -84,7 +84,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/what-happens-after"
+          to="/adult-social-care/what-happens-after-you-report"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">What happens after a concern is raised</h3>
@@ -99,7 +99,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/professionals"
+          to="/adult-social-care/professionals-and-providers"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Information for professionals</h3>
@@ -114,7 +114,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/professional-guidance"
+          to="/adult-social-care/professional-guidance"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Professional guidance and resources</h3>
@@ -129,7 +129,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/safeguarding-board"
+          to="/adult-social-care/safeguarding-adults-board"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Safeguarding Adults Board</h3>
@@ -144,7 +144,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/marac"
+          to="/adult-social-care/marac"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">MARAC</h3>
@@ -159,7 +159,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/resources-improve-practice"
+          to="/adult-social-care/resources-to-improve-practice"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Resources to improve practice</h3>
@@ -174,7 +174,7 @@ export default function ProtectingAdultsPage() {
           </Link>
 
           <Link
-          to="/safeguarding/report-child-concern"
+          to="/children-and-families/report-concern-about-child"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Reporting concerns about a child</h3>
@@ -195,12 +195,12 @@ export default function ProtectingAdultsPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">
           How to get support from Adult Social Care
           </Link>
           </li>
           <li>
-          <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">
           Understand your rights
           </Link>
           </li>

@@ -23,7 +23,7 @@ export default function HelpShapeServicesPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
+      <Link to="/adult-social-care/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -82,7 +82,7 @@ export default function HelpShapeServicesPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       Visit our{" "}
       <Link
-      to="/our-policies/consultations"
+      to="/adult-social-care/our-policies/consultations"
       className="text-wf-blue underline hover:text-wf-green"
       >
       consultations

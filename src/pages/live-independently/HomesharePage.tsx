@@ -31,7 +31,7 @@ export default function HomesharePage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -171,18 +171,18 @@ export default function HomesharePage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/help-at-home">Help at home</Link>
+          <Link to="/adult-social-care/live-independently-at-home/help-at-home-and-personal-care">Help at home</Link>
           </li>
           <li>
-          <Link to="/live-independently/social-prescribing">
+          <Link to="/adult-social-care/live-independently-at-home/social-prescribing">
           Social prescribing
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home">Keeping safe</Link>
           </li>
           <li>
-          <Link to="/carers">Being a carer</Link>
+          <Link to="/adult-social-care/being-carer">Being a carer</Link>
           </li>
           </ul>
           </div>

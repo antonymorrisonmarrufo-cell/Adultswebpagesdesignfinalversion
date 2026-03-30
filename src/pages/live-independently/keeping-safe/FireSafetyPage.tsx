@@ -31,13 +31,13 @@ export default function FireSafetyPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home">Keeping safe</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -181,20 +181,20 @@ export default function FireSafetyPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door">
           Callers to your door
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
           </li>
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe/further-information">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe">
           Further information on staying safe
           </Link>
           </li>

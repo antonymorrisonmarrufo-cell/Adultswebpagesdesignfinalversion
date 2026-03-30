@@ -112,7 +112,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Quick actions</h2>
           <div className="grid gap-4 md:grid-cols-3">
           <Link
-          to="/how-adult-social-care-works/how-to-ask-for-help"
+          to="/adult-social-care/how-adult-social-care-works/how-to-ask-for-help"
           className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
           >
           <span className="text-lg font-bold">Request an assessment</span>
@@ -125,7 +125,7 @@ export default function HowAdultSocialCareWorksHubPage() {
           <span className="block mt-1 text-sm text-white/80">020 8496 3130</span>
           </a>
           <Link
-          to="/paying-for-care"
+          to="/adult-social-care/paying-for-care"
           className="block rounded-md bg-[#004E3E] p-5 text-center text-white shadow-sm hover:bg-[#004d48] transition-colors no-underline"
           >
           <span className="text-lg font-bold">Paying for care</span>

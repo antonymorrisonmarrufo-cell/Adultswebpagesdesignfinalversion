@@ -105,7 +105,7 @@ export default function LiveIndependentlyPage() {
           You do not need a formal assessment to access many of these services.
           Browse the options below or use our{" "}
           <Link
-          to="/how-to-get-support/check-situation-online"
+          to="/adult-social-care/how-to-get-support/check-your-situation-online"
           className="font-semibold text-wf-green underline hover:text-wf-green/80"
           >
           self-assessment tool
@@ -146,7 +146,7 @@ export default function LiveIndependentlyPage() {
           </p>
           <p className="mt-3 text-sm text-wf-dark">
           <Link
-          to="/how-to-get-support/check-situation-online"
+          to="/adult-social-care/how-to-get-support/check-your-situation-online"
           className="font-semibold text-wf-green underline hover:text-wf-green/80"
           >
           Try our self-assessment tool
@@ -169,16 +169,16 @@ export default function LiveIndependentlyPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/how-to-get-support">How to get support</Link>
+          <Link to="/adult-social-care/how-to-get-support">How to get support</Link>
           </li>
           <li>
-          <Link to="/paying-for-care">Paying for care</Link>
+          <Link to="/adult-social-care/paying-for-care">Paying for care</Link>
           </li>
           <li>
-          <Link to="/carers">Being a carer</Link>
+          <Link to="/adult-social-care/being-carer">Being a carer</Link>
           </li>
           <li>
-          <Link to="/safeguarding">Safeguarding</Link>
+          <Link to="/adult-social-care/protecting-adults-at-risk">Safeguarding</Link>
           </li>
           </ul>
           </div>

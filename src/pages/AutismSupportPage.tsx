@@ -245,7 +245,7 @@ export default function AutismSupportPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       Visit our{" "}
       <Link
-      to="/carers/support"
+      to="/adult-social-care/being-carer/support-for-carers"
       className="text-wf-blue underline hover:text-wf-green"
       >
       support for carers

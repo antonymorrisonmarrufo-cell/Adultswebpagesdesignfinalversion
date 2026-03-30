@@ -23,7 +23,7 @@ export default function CommissioningProviderInformationPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
+      <Link to="/adult-social-care/information-for-professionals" className="text-wf-blue underline hover:text-wf-green">Information for professionals</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -98,7 +98,7 @@ export default function CommissioningProviderInformationPage() {
       data on demand, supply and opportunities in the local care market. Visit
       our{" "}
       <Link
-      to="/our-policies/market-sustainability-commissioning"
+      to="/adult-social-care/our-policies/market-sustainability-commissioning"
       className="text-wf-blue underline hover:text-wf-green"
       >
       market sustainability and commissioning

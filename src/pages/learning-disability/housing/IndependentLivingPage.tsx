@@ -25,7 +25,7 @@ export default function IndependentLivingPage() {
       </li>
       <li className="flex items-center gap-1">
       <Link
-      to="/learning-disability-support"
+      to="/adult-social-care/learning-disability-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Learning disability support
@@ -34,7 +34,7 @@ export default function IndependentLivingPage() {
       </li>
       <li className="flex items-center gap-1">
       <Link
-      to="/learning-disability-support/housing-options"
+      to="/adult-social-care/learning-disability-support/housing-and-support-options"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Housing options
@@ -152,7 +152,7 @@ export default function IndependentLivingPage() {
       <ul className="mt-4 space-y-2">
       <li>
       <Link
-      to="/learning-disability-support/housing-options/supported-living"
+      to="/adult-social-care/learning-disability-support/housing/supported-living"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Supported living
@@ -160,7 +160,7 @@ export default function IndependentLivingPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support/preparing-for-adulthood"
+      to="/adult-social-care/learning-disability-support/preparing-for-adulthood"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Preparing for adulthood
@@ -168,7 +168,7 @@ export default function IndependentLivingPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support/housing-options"
+      to="/adult-social-care/learning-disability-support/housing-and-support-options"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Housing options

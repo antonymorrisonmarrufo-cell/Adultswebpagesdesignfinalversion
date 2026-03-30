@@ -23,7 +23,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
+      <Link to="/adult-social-care/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -89,7 +89,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
       The council has a statutory complaints procedure for adult social care.
       Visit our{" "}
       <Link
-      to="/complaints-compliments/make-complaint"
+      to="/adult-social-care/complaints-compliments/make-a-complaint"
       className="text-wf-blue underline hover:text-wf-green"
       >
       make a complaint
@@ -135,7 +135,7 @@ export default function ChallengingDecisionsRaisingConcernsPage() {
       An independent advocate can help you challenge a decision. Contact our
       team or visit our{" "}
       <Link
-      to="/understand-your-rights/independent-advocacy"
+      to="/adult-social-care/understand-your-rights/independent-advocacy"
       className="text-wf-blue underline hover:text-wf-green"
       >
       independent advocacy

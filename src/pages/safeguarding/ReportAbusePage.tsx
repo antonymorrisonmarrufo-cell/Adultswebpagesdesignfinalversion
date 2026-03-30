@@ -12,7 +12,7 @@ export default function ReportAbusePage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
+          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Report abuse or neglect</span></li>
           </ol>
@@ -130,7 +130,7 @@ export default function ReportAbusePage() {
           appropriate next steps. This may include a safeguarding enquiry under Section 42 of the Care Act 2014.
           </p>
           <p className="mt-3">
-          <Link to="/safeguarding/what-happens-after" className="text-wf-blue underline hover:text-wf-green font-medium">
+          <Link to="/adult-social-care/what-happens-after-you-report" className="text-wf-blue underline hover:text-wf-green font-medium">
           Find out more about what happens after a concern is raised
           </Link>
           </p>
@@ -141,22 +141,22 @@ export default function ReportAbusePage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
           Safeguarding adults overview
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green">
           Types of abuse and neglect
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
           Information for professionals
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/report-child-concern" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/children-and-families/report-concern-about-child" className="text-wf-blue underline hover:text-wf-green">
           Reporting concerns about a child
           </Link>
           </li>

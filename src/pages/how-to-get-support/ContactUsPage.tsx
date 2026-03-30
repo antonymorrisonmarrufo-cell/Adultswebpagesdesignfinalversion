@@ -23,7 +23,7 @@ export default function ContactUsPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
+      <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -62,7 +62,7 @@ export default function ContactUsPage() {
       </p>
       <p className="mt-3 text-sm text-wf-dark leading-relaxed">
       <Link
-      to="/how-to-get-support/check-situation-online"
+      to="/adult-social-care/how-to-get-support/check-your-situation-online"
       className="text-wf-blue underline hover:text-wf-green font-semibold"
       >
       Check your situation online
@@ -80,7 +80,7 @@ export default function ContactUsPage() {
       <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
       <li>
       <Link
-      to="/live-independently/social-prescribing"
+      to="/adult-social-care/live-independently-at-home/social-prescribing"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Social prescribing and local groups
@@ -89,7 +89,7 @@ export default function ContactUsPage() {
       </li>
       <li>
       <Link
-      to="/carers/hubs/universal-offer"
+      to="/adult-social-care/being-carer/hubs/universal-offer"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Universal offer for carers
@@ -98,7 +98,7 @@ export default function ContactUsPage() {
       </li>
       <li>
       <Link
-      to="/live-independently"
+      to="/adult-social-care/live-independently-at-home"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Living independently
@@ -117,7 +117,7 @@ export default function ContactUsPage() {
       <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
       <li>
       <Link
-      to="/how-to-get-support/check-situation-online"
+      to="/adult-social-care/how-to-get-support/check-your-situation-online"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Check your situation online
@@ -126,7 +126,7 @@ export default function ContactUsPage() {
       </li>
       <li>
       <Link
-      to="/how-to-get-support/request-assessment"
+      to="/adult-social-care/how-to-get-support/request-an-assessment"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Request an assessment

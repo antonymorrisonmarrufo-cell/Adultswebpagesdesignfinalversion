@@ -12,7 +12,7 @@ export default function ResourcesImprovePracticePage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
+          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Resources to improve practice</span></li>
           </ol>
@@ -167,22 +167,22 @@ export default function ResourcesImprovePracticePage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/safeguarding/professional-guidance" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/professional-guidance" className="text-wf-blue underline hover:text-wf-green">
           Professional guidance and resources
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/safeguarding-board" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/safeguarding-adults-board" className="text-wf-blue underline hover:text-wf-green">
           Waltham Forest Safeguarding Adults Board
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
           Information for professionals
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
           Safeguarding adults overview
           </Link>
           </li>

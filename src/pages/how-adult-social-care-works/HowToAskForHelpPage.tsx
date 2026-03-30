@@ -19,7 +19,7 @@ export default function HowToAskForHelpPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
+          <li><Link to="/adult-social-care/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">How to ask for help</span></li>
           </ol>
@@ -48,12 +48,12 @@ export default function HowToAskForHelpPage() {
           </p>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
           <li>
-          <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
           Browse community support and activities
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/equipment" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology" className="text-wf-blue underline hover:text-wf-green">
           Equipment and aids to stay independent
           </Link>
           </li>
@@ -69,31 +69,31 @@ export default function HowToAskForHelpPage() {
           </p>
           <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
           <li>
-          <Link to="/live-independently/equipment" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology" className="text-wf-blue underline hover:text-wf-green">
           Equipment and aids
           </Link>{" "}
           to help you stay independent at home
           </li>
           <li>
-          <Link to="/live-independently/telecare" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm" className="text-wf-blue underline hover:text-wf-green">
           Telecare
           </Link>{" "}
           personal alarms and monitoring for safety and peace of mind
           </li>
           <li>
-          <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
           Community groups and social prescribing
           </Link>{" "}
           to stay active and connected
           </li>
           <li>
-          <Link to="/carers/hubs/universal-offer" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/being-carer/hubs/universal-offer" className="text-wf-blue underline hover:text-wf-green">
           Carers Hub universal offer
           </Link>{" "}
           for anyone in a caring role
           </li>
           <li>
-          <Link to="/live-independently/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home/social-prescribing" className="text-wf-blue underline hover:text-wf-green">
           Social prescribing
           </Link>{" "}
           connecting you to local activities, groups and services that support your wellbeing

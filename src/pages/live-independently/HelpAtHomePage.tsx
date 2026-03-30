@@ -31,7 +31,7 @@ export default function HelpAtHomePage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -132,7 +132,7 @@ export default function HelpAtHomePage() {
           </p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Link
-          to="/live-independently/request-home-assessment"
+          to="/adult-social-care/live-independently-at-home/request-home-independence-assessment"
           className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
           >
           Request a home assessment
@@ -151,20 +151,20 @@ export default function HelpAtHomePage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/equipment-and-aids">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology">
           Equipment and aids
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>
           <li>
-          <Link to="/paying-for-care">Paying for care</Link>
+          <Link to="/adult-social-care/paying-for-care">Paying for care</Link>
           </li>
           <li>
-          <Link to="/carers">Being a carer</Link>
+          <Link to="/adult-social-care/being-carer">Being a carer</Link>
           </li>
           </ul>
           </div>

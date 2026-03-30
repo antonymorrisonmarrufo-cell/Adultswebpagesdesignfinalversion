@@ -91,7 +91,7 @@ export default function ReportAbusePage() {
           report your concerns. If something does not seem right, tell us.
           </p>
           <p className="mt-3">
-          <Link to="/safeguarding/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green font-medium">
+          <Link to="/adult-social-care/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green font-medium">
           Learn about the different types of abuse and neglect
           </Link>
           </p>
@@ -115,7 +115,7 @@ export default function ReportAbusePage() {
           process through our MASH team.
           </p>
           <p className="mt-3">
-          <Link to="/safeguarding/report-child-concern" className="text-wf-blue underline hover:text-wf-green font-medium">
+          <Link to="/children-and-families/report-concern-about-child" className="text-wf-blue underline hover:text-wf-green font-medium">
           Find out how to report concerns about a child
           </Link>
           </p>
@@ -126,22 +126,22 @@ export default function ReportAbusePage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">More information</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
           Safeguarding adults - full information
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/report-abuse-or-neglect" className="text-wf-blue underline hover:text-wf-green">
           Detailed guide to reporting abuse
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/what-happens-after" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/what-happens-after-you-report" className="text-wf-blue underline hover:text-wf-green">
           What happens after you report a concern
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/professionals-and-providers" className="text-wf-blue underline hover:text-wf-green">
           Information for professionals
           </Link>
           </li>

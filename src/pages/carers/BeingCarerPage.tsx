@@ -45,11 +45,11 @@ export default function BeingCarerPage() {
           <section className="mb-8 rounded-md bg-white p-6">
           <p className="text-base leading-relaxed text-wf-dark">
           You do not need an assessment to get support as a carer. Visit the{" "}
-          <Link to="/carers/hub" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">
+          <Link to="/adult-social-care/being-carer/carers-hub" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">
           Carers Hub
           </Link>{" "}
           for free drop-in advice, peer support groups, and activities. See the{" "}
-          <Link to="/carers/hubs/universal-offer" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">
+          <Link to="/adult-social-care/being-carer/hubs/universal-offer" className="font-semibold text-[#004E3E] underline hover:text-[#004E3E]/80">
           Universal Offer
           </Link>{" "}
           for support available to all carers without an assessment.
@@ -61,7 +61,7 @@ export default function BeingCarerPage() {
           <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Information and support for carers</h2>
           <div className="grid gap-4 md:grid-cols-2">
           <Link
-          to="/carers/carers-hub"
+          to="/adult-social-care/being-carer/carers-hub"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Carers Hub</h3>
@@ -76,7 +76,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/support"
+          to="/adult-social-care/being-carer/support-for-carers"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Support for carers</h3>
@@ -91,7 +91,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/hubs/universal-offer"
+          to="/adult-social-care/being-carer/hubs/universal-offer"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Universal Offer Hub</h3>
@@ -106,7 +106,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/assessment-rights"
+          to="/adult-social-care/being-carer/carers-assessment-and-rights"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Carers assessment and rights</h3>
@@ -121,7 +121,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/young-carers"
+          to="/adult-social-care/being-carer/young-carers"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Young carers</h3>
@@ -136,7 +136,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/parent-carers"
+          to="/adult-social-care/being-carer/parent-carers"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Parent carers</h3>
@@ -151,7 +151,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/work-education"
+          to="/adult-social-care/being-carer/work-and-education"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Work and education</h3>
@@ -166,7 +166,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/support-after-caring"
+          to="/adult-social-care/being-carer/support-after-caring"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Support after caring ends</h3>
@@ -181,7 +181,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/strategy-council-duties"
+          to="/adult-social-care/being-carer/strategy-and-council-duties"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Carers strategy and council duties</h3>
@@ -196,7 +196,7 @@ export default function BeingCarerPage() {
           </Link>
 
           <Link
-          to="/carers/ia-flow"
+          to="/adult-social-care/being-carer/ia-flow"
           className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
           >
           <h3 className="text-base font-bold text-[#bf3688] mb-2">Information and advice flow</h3>
@@ -234,7 +234,7 @@ export default function BeingCarerPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">
           How to get support from Adult Social Care
           </Link>
           </li>

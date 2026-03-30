@@ -38,7 +38,7 @@ export default function ProfessionalReferralForm() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -82,7 +82,7 @@ export default function ProfessionalReferralForm() {
           .
           </p>
           <Link
-          to="/live-independently"
+          to="/adult-social-care/live-independently-at-home"
           className="mt-4 inline-block text-sm font-semibold text-wf-green hover:underline"
           >
           Return to Live independently
@@ -374,15 +374,15 @@ export default function ProfessionalReferralForm() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </li>
           <li>
-          <Link to="/information-for-professionals">
+          <Link to="/adult-social-care/information-for-professionals">
           Information for professionals
           </Link>
           </li>
           <li>
-          <Link to="/how-to-get-support">How to get support</Link>
+          <Link to="/adult-social-care/how-to-get-support">How to get support</Link>
           </li>
           </ul>
           </div>

@@ -12,7 +12,7 @@ export default function SupportedLivingPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
+          <li><Link to="/adult-social-care/care-homes-and-supported-living" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Supported living</span></li>
           </ol>
@@ -124,22 +124,22 @@ export default function SupportedLivingPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
           Request housing and care support
           </Link>
           </li>
           <li>
-          <Link to="/care-homes/shared-lives" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/shared-lives" className="text-wf-blue underline hover:text-wf-green">
           Shared Lives
           </Link>
           </li>
           <li>
-          <Link to="/care-homes/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
           Extra care housing
           </Link>
           </li>
           <li>
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
           Paying for care
           </Link>
           </li>

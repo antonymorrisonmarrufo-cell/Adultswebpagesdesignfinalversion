@@ -12,7 +12,7 @@ export default function ShelteredHousingPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
+          <li><Link to="/adult-social-care/care-homes-and-supported-living" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Sheltered housing</span></li>
           </ol>
@@ -59,7 +59,7 @@ export default function ShelteredHousingPage() {
           Sheltered housing does not include personal care. If you need help with
           personal care such as washing, dressing, or taking medication, you may be able
           to receive home care services or may be better suited to{" "}
-          <Link to="/care-homes/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
           extra care housing
           </Link>.
           </p>
@@ -138,22 +138,22 @@ export default function ShelteredHousingPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/care-homes/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/extra-care-housing" className="text-wf-blue underline hover:text-wf-green">
           Extra care housing
           </Link>
           </li>
           <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
           Request housing and care support
           </Link>
           </li>
           <li>
-          <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
           Care homes and nursing homes
           </Link>
           </li>
           <li>
-          <Link to="/live-independently" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/live-independently-at-home" className="text-wf-blue underline hover:text-wf-green">
           Live independently
           </Link>
           </li>

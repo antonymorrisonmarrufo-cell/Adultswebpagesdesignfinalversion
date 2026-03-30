@@ -136,7 +136,7 @@ export default function DementiaSupportPage() {
       </p>
       <p className="text-sm text-wf-dark">
       Drop in for information, activities and support at the{" "}
-      <Link to="/dementia/hub" className="text-wf-blue underline">
+      <Link to="/adult-social-care/specialist-services/dementia/hub" className="text-wf-blue underline">
       Dementia Hub
       </Link>
       .
@@ -149,7 +149,7 @@ export default function DementiaSupportPage() {
       </p>
       <p className="text-sm text-wf-dark">
       Get one-to-one support from a dedicated{" "}
-      <Link to="/dementia/adviser" className="text-wf-blue underline">
+      <Link to="/adult-social-care/specialist-services/dementia/adviser" className="text-wf-blue underline">
       dementia adviser
       </Link>
       .

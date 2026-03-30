@@ -12,7 +12,7 @@ export default function AbuseAndNeglectPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
+          <li><Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Types of abuse and neglect</span></li>
           </ol>
@@ -122,7 +122,7 @@ export default function AbuseAndNeglectPage() {
           physical, sexual, financial, and emotional abuse. Coercive control is now a criminal offence.
           </p>
           <p className="mt-3">
-          <Link to="/safeguarding/marac" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/marac" className="text-wf-blue underline hover:text-wf-green">
           Learn about MARAC for high-risk domestic abuse cases
           </Link>
           </p>
@@ -166,7 +166,7 @@ export default function AbuseAndNeglectPage() {
           <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
           </p>
           <p className="mt-2">
-          <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green font-medium">
+          <Link to="/adult-social-care/report-abuse-or-neglect" className="text-wf-blue underline hover:text-wf-green font-medium">
           How to report abuse or neglect
           </Link>
           </p>
@@ -177,17 +177,17 @@ export default function AbuseAndNeglectPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/report-abuse-or-neglect" className="text-wf-blue underline hover:text-wf-green">
           Report abuse or neglect
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding/what-happens-after" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/what-happens-after-you-report" className="text-wf-blue underline hover:text-wf-green">
           What happens after a concern is raised
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/protecting-adults-at-risk" className="text-wf-blue underline hover:text-wf-green">
           Safeguarding adults overview
           </Link>
           </li>

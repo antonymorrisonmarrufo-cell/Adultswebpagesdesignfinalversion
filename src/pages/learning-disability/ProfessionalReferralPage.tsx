@@ -25,7 +25,7 @@ export default function ProfessionalReferralPage() {
       </li>
       <li className="flex items-center gap-1">
       <Link
-      to="/learning-disability-support"
+      to="/adult-social-care/learning-disability-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Learning disability support
@@ -73,7 +73,7 @@ export default function ProfessionalReferralPage() {
       <li>
       Completing our{" "}
       <Link
-      to="/learning-disability-support/request-support"
+      to="/adult-social-care/learning-disability-support/request-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       online referral form
@@ -139,7 +139,7 @@ export default function ProfessionalReferralPage() {
       <ul className="mt-4 space-y-2">
       <li>
       <Link
-      to="/learning-disability-support/request-support"
+      to="/adult-social-care/learning-disability-support/request-support"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Request support form
@@ -147,7 +147,7 @@ export default function ProfessionalReferralPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support/ask-for-support"
+      to="/adult-social-care/learning-disability-support/ask-for-support"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Ask for support
@@ -155,7 +155,7 @@ export default function ProfessionalReferralPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support"
+      to="/adult-social-care/learning-disability-support"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Learning disability support

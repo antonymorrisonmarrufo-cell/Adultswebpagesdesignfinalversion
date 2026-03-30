@@ -87,7 +87,7 @@ export default function MentalHealthWellbeingHubPage() {
       </p>
       <p className="mt-2">
       <Link
-      to="/mental-health/urgent-support"
+      to="/adult-social-care/mental-health-wellbeing/urgent-mental-health-support"
       className="text-sm font-semibold text-red-700 underline hover:text-red-900"
       >
       See all urgent mental health support options

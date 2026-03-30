@@ -31,13 +31,13 @@ export default function CallersToYourDoorPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home">Keeping safe</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -175,22 +175,22 @@ export default function CallersToYourDoorPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/keeping-safe/online-email-postal-fraud">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud">
           Online, email and postal fraud
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe/fraud-over-the-phone">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone">
           Fraud over the phone
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe/fire-safety">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home">
           Fire safety at home
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
           </li>
           </ul>
           </div>

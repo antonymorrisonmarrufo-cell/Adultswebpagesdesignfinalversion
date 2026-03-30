@@ -38,7 +38,7 @@ export default function RequestHomeAssessmentForm() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -80,7 +80,7 @@ export default function RequestHomeAssessmentForm() {
           .
           </p>
           <Link
-          to="/live-independently"
+          to="/adult-social-care/live-independently-at-home"
           className="mt-4 inline-block text-sm font-semibold text-wf-green hover:underline"
           >
           Return to Live independently
@@ -211,17 +211,17 @@ export default function RequestHomeAssessmentForm() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/equipment-and-aids">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology">
           Equipment and aids
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/help-at-home">Help at home</Link>
+          <Link to="/adult-social-care/live-independently-at-home/help-at-home-and-personal-care">Help at home</Link>
           </li>
           </ul>
           </div>

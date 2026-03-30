@@ -23,7 +23,7 @@ export default function MarketSustainabilityCommissioningPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+      <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -86,7 +86,7 @@ export default function MarketSustainabilityCommissioningPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       For detailed provider guidance, visit our{" "}
       <Link
-      to="/information-for-professionals/commissioning-provider-information"
+      to="/adult-social-care/information-for-professionals/commissioning-provider-information"
       className="text-wf-blue underline hover:text-wf-green"
       >
       commissioning and provider information

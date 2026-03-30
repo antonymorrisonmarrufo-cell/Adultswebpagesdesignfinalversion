@@ -23,7 +23,7 @@ export default function LookingAfterMentalWellbeingPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
+      <Link to="/adult-social-care/mental-health-wellbeing" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -126,7 +126,7 @@ export default function LookingAfterMentalWellbeingPage() {
       refer yourself directly to the local NHS talking therapies service without
       needing to see your GP first. Visit our{" "}
       <Link
-      to="/mental-health/talking-therapies-professional-support"
+      to="/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       talking therapies and professional support

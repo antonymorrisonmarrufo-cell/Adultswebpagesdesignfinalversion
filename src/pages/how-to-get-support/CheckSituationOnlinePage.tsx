@@ -23,7 +23,7 @@ export default function CheckSituationOnlinePage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
+      <Link to="/adult-social-care/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -90,7 +90,7 @@ export default function CheckSituationOnlinePage() {
       If your answers suggest you may be eligible for support from Adult Social
       Care, you will be guided on how to{" "}
       <Link
-      to="/how-to-get-support/request-assessment"
+      to="/adult-social-care/how-to-get-support/request-an-assessment"
       className="text-wf-blue underline hover:text-wf-green"
       >
       request an assessment

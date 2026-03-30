@@ -24,7 +24,7 @@ export default function GetHelpPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
+      <Link to="/adult-social-care/specialist-services/dementia-support" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -94,7 +94,7 @@ export default function GetHelpPage() {
       <p className="mt-3 text-wf-dark leading-relaxed">
       For full details on what to expect, visit our{" "}
       <Link
-      to="/dementia/memory-service"
+      to="/adult-social-care/specialist-services/dementia/memory-service"
       className="text-wf-blue underline hover:text-wf-green"
       >
       memory assessment service

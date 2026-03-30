@@ -31,7 +31,7 @@ export default function TelecarePage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -149,7 +149,7 @@ export default function TelecarePage() {
           </p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Link
-          to="/live-independently/request-telecare"
+          to="/adult-social-care/live-independently-at-home/request-telecare-or-community-alarm"
           className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
           >
           Request telecare online
@@ -168,20 +168,20 @@ export default function TelecarePage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/falls-prevention">
+          <Link to="/adult-social-care/live-independently-at-home/falls-prevention-and-reablement">
           Falls prevention
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home">Keeping safe</Link>
           </li>
           <li>
-          <Link to="/live-independently/equipment-and-aids">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology">
           Equipment and aids
           </Link>
           </li>
           <li>
-          <Link to="/paying-for-care">Paying for care</Link>
+          <Link to="/adult-social-care/paying-for-care">Paying for care</Link>
           </li>
           </ul>
           </div>

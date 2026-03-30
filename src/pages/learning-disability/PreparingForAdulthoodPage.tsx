@@ -25,7 +25,7 @@ export default function PreparingForAdulthoodPage() {
       </li>
       <li className="flex items-center gap-1">
       <Link
-      to="/learning-disability-support"
+      to="/adult-social-care/learning-disability-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Learning disability support
@@ -131,7 +131,7 @@ export default function PreparingForAdulthoodPage() {
       <p className="mt-3 text-sm text-wf-dark leading-relaxed">
       For more information about housing, visit our{" "}
       <Link
-      to="/learning-disability-support/housing-options"
+      to="/adult-social-care/learning-disability-support/housing-and-support-options"
       className="text-wf-blue underline hover:text-wf-green"
       >
       housing options
@@ -149,7 +149,7 @@ export default function PreparingForAdulthoodPage() {
       <ul className="mt-4 space-y-2">
       <li>
       <Link
-      to="/learning-disability-support/ask-for-support"
+      to="/adult-social-care/learning-disability-support/ask-for-support"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Ask for support
@@ -157,7 +157,7 @@ export default function PreparingForAdulthoodPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support/support-for-carers"
+      to="/adult-social-care/learning-disability-support/support-for-carers-and-families"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Support for carers
@@ -165,7 +165,7 @@ export default function PreparingForAdulthoodPage() {
       </li>
       <li>
       <Link
-      to="/learning-disability-support/housing-options"
+      to="/adult-social-care/learning-disability-support/housing-and-support-options"
       className="text-sm text-wf-blue underline hover:text-wf-green"
       >
       Housing options

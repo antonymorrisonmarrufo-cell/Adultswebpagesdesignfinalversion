@@ -31,7 +31,7 @@ export default function FallsPreventionPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -140,7 +140,7 @@ export default function FallsPreventionPage() {
           </p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Link
-          to="/live-independently/request-home-assessment"
+          to="/adult-social-care/live-independently-at-home/request-home-independence-assessment"
           className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
           >
           Request a home assessment
@@ -159,20 +159,20 @@ export default function FallsPreventionPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/equipment-and-aids">
+          <Link to="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology">
           Equipment and aids
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
           </li>
           <li>
-          <Link to="/live-independently/social-prescribing">
+          <Link to="/adult-social-care/live-independently-at-home/social-prescribing">
           Social prescribing
           </Link>
           </li>

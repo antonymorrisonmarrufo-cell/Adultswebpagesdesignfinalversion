@@ -31,13 +31,13 @@ export default function FraudOverPhonePage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home">Keeping safe</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -192,22 +192,22 @@ export default function FraudOverPhonePage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/keeping-safe/online-email-postal-fraud">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud">
           Online, email and postal fraud
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door">
           Callers to your door
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/keeping-safe/further-information">
+          <Link to="/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe">
           Further information on staying safe
           </Link>
           </li>
           <li>
-          <Link to="/safeguarding">Safeguarding</Link>
+          <Link to="/adult-social-care/protecting-adults-at-risk">Safeguarding</Link>
           </li>
           </ul>
           </div>

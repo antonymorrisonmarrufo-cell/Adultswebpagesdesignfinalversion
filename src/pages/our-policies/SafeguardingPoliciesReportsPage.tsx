@@ -23,7 +23,7 @@ export default function SafeguardingPoliciesReportsPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+      <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>

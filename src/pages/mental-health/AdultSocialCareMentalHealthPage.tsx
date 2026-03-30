@@ -23,7 +23,7 @@ export default function AdultSocialCareMentalHealthPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
+      <Link to="/adult-social-care/mental-health-wellbeing" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -115,7 +115,7 @@ export default function AdultSocialCareMentalHealthPage() {
       A care needs assessment will help determine the level of support you need.
       Visit our{" "}
       <Link
-      to="/how-to-get-support/request-assessment"
+      to="/adult-social-care/how-to-get-support/request-an-assessment"
       className="text-wf-blue underline hover:text-wf-green"
       >
       request an assessment

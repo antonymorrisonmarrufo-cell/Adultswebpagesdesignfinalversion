@@ -120,7 +120,7 @@ export default function HowToGetSupportHubPage() {
       </p>
       <p className="mt-3 text-sm text-wf-dark leading-relaxed">
       <Link
-      to="/how-to-get-support/check-situation-online"
+      to="/adult-social-care/how-to-get-support/check-your-situation-online"
       className="text-wf-blue underline hover:text-wf-green font-semibold"
       >
       Check your situation online first

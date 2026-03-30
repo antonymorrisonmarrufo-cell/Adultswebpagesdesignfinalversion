@@ -58,7 +58,7 @@ export default function HousingAndSupportOptionsPage() {
       </li>
       <li className="flex items-center gap-1">
       <Link
-      to="/learning-disability-support"
+      to="/adult-social-care/learning-disability-support"
       className="text-wf-blue underline hover:text-wf-green"
       >
       Learning disability support

@@ -31,7 +31,7 @@ export default function EquipmentPage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -90,7 +90,7 @@ export default function EquipmentPage() {
           </p>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
           <li>
-          <Link to="/live-independently/request-home-assessment">
+          <Link to="/adult-social-care/live-independently-at-home/request-home-independence-assessment">
           Request a home assessment online
           </Link>
           </li>
@@ -141,7 +141,7 @@ export default function EquipmentPage() {
           </p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row">
           <Link
-          to="/live-independently/request-home-assessment"
+          to="/adult-social-care/live-independently-at-home/request-home-independence-assessment"
           className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
           >
           Request a home assessment
@@ -160,20 +160,20 @@ export default function EquipmentPage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
           </li>
           <li>
-          <Link to="/live-independently/falls-prevention">
+          <Link to="/adult-social-care/live-independently-at-home/falls-prevention-and-reablement">
           Falls prevention
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/help-at-home">Help at home</Link>
+          <Link to="/adult-social-care/live-independently-at-home/help-at-home-and-personal-care">Help at home</Link>
           </li>
           </ul>
           </div>

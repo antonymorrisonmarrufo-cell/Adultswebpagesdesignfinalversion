@@ -12,7 +12,7 @@ export default function CareHomesNursingHomesPage() {
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
+          <li><Link to="/adult-social-care/care-homes-and-supported-living" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
           <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
           <li><span className="font-medium text-wf-dark">Care homes and nursing homes</span></li>
           </ol>
@@ -137,7 +137,7 @@ export default function CareHomesNursingHomesPage() {
           </p>
           <p className="mt-3 text-wf-dark leading-relaxed">
           For full details, see our{" "}
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
           paying for care
           </Link>{" "}
           page.
@@ -152,21 +152,21 @@ export default function CareHomesNursingHomesPage() {
           </p>
           <div className="mt-4 grid gap-4 md:grid-cols-3">
           <Link
-          to="/care-homes/george-mason-lodge"
+          to="/adult-social-care/care-homes-and-supported-living/george-mason-lodge"
           className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
           >
           <h3 className="text-lg font-bold text-[#231F20]">George Mason Lodge</h3>
           <p className="mt-2 text-sm text-wf-gray">Council-run residential care home</p>
           </Link>
           <Link
-          to="/care-homes/mapleton-road"
+          to="/adult-social-care/care-homes-and-supported-living/mapleton-road"
           className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
           >
           <h3 className="text-lg font-bold text-[#231F20]">Mapleton Road</h3>
           <p className="mt-2 text-sm text-wf-gray">Care facility and services</p>
           </Link>
           <Link
-          to="/care-homes/alliston-house"
+          to="/adult-social-care/care-homes-and-supported-living/alliston-house"
           className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
           >
           <h3 className="text-lg font-bold text-[#231F20]">Alliston House</h3>
@@ -201,12 +201,12 @@ export default function CareHomesNursingHomesPage() {
           <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
           <ul className="mt-4 space-y-3">
           <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
           Request housing and care support
           </Link>
           </li>
           <li>
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
+          <Link to="/adult-social-care/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
           Paying for care
           </Link>
           </li>

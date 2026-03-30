@@ -64,7 +64,7 @@ export default function KeepingSafePage() {
           <BreadcrumbSeparator />
           <BreadcrumbItem>
           <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
+          <Link to="/adult-social-care/live-independently-at-home">Live independently</Link>
           </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
@@ -136,18 +136,18 @@ export default function KeepingSafePage() {
           <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
           <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
+          <Link to="/adult-social-care/live-independently-at-home/telecare-and-community-alarm">Telecare</Link>
           </li>
           <li>
-          <Link to="/safeguarding">Safeguarding</Link>
+          <Link to="/adult-social-care/protecting-adults-at-risk">Safeguarding</Link>
           </li>
           <li>
-          <Link to="/live-independently/falls-prevention">
+          <Link to="/adult-social-care/live-independently-at-home/falls-prevention-and-reablement">
           Falls prevention
           </Link>
           </li>
           <li>
-          <Link to="/live-independently/home-adaptations">
+          <Link to="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy">
           Home adaptations
           </Link>
           </li>

@@ -25,7 +25,7 @@ export default function TaxicardPage() {
           </li>
           <li>
           <Link
-          to="/transport"
+          to="/adult-social-care/travel-and-transport"
           className="hover:underline text-[#004E3E]"
           >
           Travel and transport
@@ -224,7 +224,7 @@ export default function TaxicardPage() {
           <ul className="space-y-2 text-[#004E3E]">
           <li>
           <Link
-          to="/transport"
+          to="/adult-social-care/travel-and-transport"
           className="hover:underline"
           >
           Travel and transport
@@ -232,7 +232,7 @@ export default function TaxicardPage() {
           </li>
           <li>
           <Link
-          to="/transport/freedom-pass-disabled"
+          to="/adult-social-care/travel-and-transport/freedom-pass-disabled"
           className="hover:underline"
           >
           Freedom Pass for disabled people
@@ -240,7 +240,7 @@ export default function TaxicardPage() {
           </li>
           <li>
           <Link
-          to="/transport/blue-badge"
+          to="/adult-social-care/travel-and-transport/blue-badge"
           className="hover:underline"
           >
           Blue Badge
@@ -248,7 +248,7 @@ export default function TaxicardPage() {
           </li>
           <li>
           <Link
-          to="/transport/transport-mobility"
+          to="/adult-social-care/travel-and-transport/transport-mobility-support"
           className="hover:underline"
           >
           Transport and mobility support

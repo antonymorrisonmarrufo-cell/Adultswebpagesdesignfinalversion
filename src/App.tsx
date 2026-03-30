@@ -1,4 +1,5 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -166,16 +167,32 @@ import ParentCarersPage from "@/pages/carers/ParentCarersPage";
 import WorkEducationPage from "@/pages/carers/WorkEducationPage";
 import SupportAfterCaringPage from "@/pages/carers/SupportAfterCaringPage";
 import StrategyCouncilDutiesPage from "@/pages/carers/StrategyCouncilDutiesPage";
+import CarersHubPage from "@/pages/carers/CarersHubPage";
+import IAFlowPage from "@/pages/carers/IAFlowPage";
+import AdultCarersHub from "@/pages/carers/hubs/AdultCarersHub";
+import ParentCarersHub from "@/pages/carers/hubs/ParentCarersHub";
+import UniversalOfferHub from "@/pages/carers/hubs/UniversalOfferHub";
+import YoungCarersHub from "@/pages/carers/hubs/YoungCarersHub";
+import CarerTaskAssessmentPage from "@/pages/carers/tasks/AssessmentPage";
+import CarerTaskBreaksRespitePage from "@/pages/carers/tasks/BreaksRespitePage";
+import CarerTaskEmergencyHelpPage from "@/pages/carers/tasks/EmergencyHelpPage";
+import CarerTaskMoneyBenefitsPage from "@/pages/carers/tasks/MoneyBenefitsPage";
+
+// How adult social care works - additional pages
+import HowToAskForHelpPage from "@/pages/how-adult-social-care-works/HowToAskForHelpPage";
 
 function ScrollToTop() {
-  const { pathname } = window.location;
-  window.scrollTo(0, 0);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return null;
 }
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Header />
       <main className="flex-grow">
         <Routes>
@@ -348,6 +365,19 @@ export default function App() {
           <Route path="/adult-social-care/being-carer/work-and-education" element={<WorkEducationPage />} />
           <Route path="/adult-social-care/being-carer/support-after-caring" element={<SupportAfterCaringPage />} />
           <Route path="/adult-social-care/being-carer/strategy-and-council-duties" element={<StrategyCouncilDutiesPage />} />
+          <Route path="/adult-social-care/being-carer/carers-hub" element={<CarersHubPage />} />
+          <Route path="/adult-social-care/being-carer/ia-flow" element={<IAFlowPage />} />
+          <Route path="/adult-social-care/being-carer/hubs/adult-carers" element={<AdultCarersHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/parent-carers" element={<ParentCarersHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/universal-offer" element={<UniversalOfferHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/young-carers" element={<YoungCarersHub />} />
+          <Route path="/adult-social-care/being-carer/tasks/assessment" element={<CarerTaskAssessmentPage />} />
+          <Route path="/adult-social-care/being-carer/tasks/breaks-respite" element={<CarerTaskBreaksRespitePage />} />
+          <Route path="/adult-social-care/being-carer/tasks/emergency-help" element={<CarerTaskEmergencyHelpPage />} />
+          <Route path="/adult-social-care/being-carer/tasks/money-benefits" element={<CarerTaskMoneyBenefitsPage />} />
+
+          {/* How adult social care works - additional */}
+          <Route path="/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" element={<HowToAskForHelpPage />} />
 
           {/* Default fallback */}
           <Route path="*" element={<Navigate to="/adult-social-care" replace />} />
