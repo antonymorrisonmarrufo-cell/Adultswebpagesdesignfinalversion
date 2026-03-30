@@ -106,7 +106,9 @@ export default function CheckSituationOnlinePage() {
       </p>
       <div className="mt-4">
       <a
-      href="#"
+      href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-semibold text-white shadow hover:bg-[#a02d73] transition"
       >
       Start the self-assessment

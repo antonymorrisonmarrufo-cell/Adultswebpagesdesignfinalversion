@@ -143,7 +143,7 @@ export default function SafeguardingPoliciesReportsPage() {
       </p>
       <div className="mt-4">
       <a
-      href="https://portal.walthamforest.gov.uk/service/Report_an_adult_safeguarding_concern"
+      href="https://safeguardingapp.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-semibold text-white shadow hover:bg-[#a02d73] transition"

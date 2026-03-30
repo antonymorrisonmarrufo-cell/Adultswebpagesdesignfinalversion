@@ -63,7 +63,7 @@ export default function ProfessionalsPage() {
           to ensure all relevant information is captured.
           </p>
           <a
-          href="https://portal.walthamforest.gov.uk/service/Report_an_adult_safeguarding_concern"
+          href="https://safeguardingapp.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"

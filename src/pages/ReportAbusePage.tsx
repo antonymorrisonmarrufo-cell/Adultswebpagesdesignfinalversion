@@ -70,7 +70,7 @@ export default function ReportAbusePage() {
           Use our online referral form to report your concerns. Available 24 hours a day, 7 days a week.
           </p>
           <a
-          href="https://portal.walthamforest.gov.uk/service/Report_an_adult_safeguarding_concern"
+          href="https://safeguardingapp.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#a02d73] transition-colors"
