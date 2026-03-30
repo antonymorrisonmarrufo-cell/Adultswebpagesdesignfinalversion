@@ -75,12 +75,12 @@ export default function RequestTelecareForm() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <button
+            <a href="https://safeguardingapp.vercel.app/" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-[#bf3688] text-white px-8 py-4 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D61F69] focus-visible:ring-offset-2 text-lg"
             >
               Start form
               <ArrowRight size={20} />
-            </button>
+            </a>
             <a
               href="#/adult-social-care/live-independently-at-home/telecare-and-community-alarm"
               className="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 font-semibold hover:bg-gray-200 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2"
