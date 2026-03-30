@@ -1,146 +1,156 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Who can get help", to: "/how-adult-social-care-works/who-can-get-help" },
-  { title: "How to ask for help", to: "/how-adult-social-care-works/how-to-ask-for-help" },
-  { title: "Paying for your care", to: "/paying-for-care" },
-  { title: "Support for carers", to: "/carers" },
-];
-
 export default function WhatIsAdultSocialCarePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/how-adult-social-care-works" className="text-wf-blue underline hover:text-wf-green">How adult social care works</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">What is adult social care?</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">What is adult social care?</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Adult social care is the support provided to adults who need extra help to
-          manage their daily lives, stay safe and live as independently as possible.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/how-adult-social-care-works" className="hover:underline">How adult social care works</a>
+          <span className="mx-1">&gt;</span>
+          <span>What is adult social care</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          What is adult social care
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Adult social care is the help and support that some adults need to live as independently and safely as possible.
+        </p>
+
+        {/* What adult social care means */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What adult social care means</h2>
+          <p className="text-gray-700 mb-4">
+            Adult social care covers the support that people aged 18 and over may need because of illness, disability, frailty, or a mental health condition. It can include help at home, support in the community, or care in a residential setting.
           </p>
+          <p className="text-gray-700">
+            The aim is to help you live as independently as possible, to stay safe, and to have a good quality of life. It is not just about the council providing services — it includes the help given by family, friends, carers, and voluntary organisations.
+          </p>
+        </section>
+
+        {/* The kinds of help available */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">The kinds of help available</h2>
+          <p className="text-gray-700 mb-4">
+            Adult social care can include:
+          </p>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Help with personal care, such as washing, dressing, and eating</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Support to manage at home, such as cooking, shopping, and housework</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Equipment and adaptations to help you stay safe and independent at home</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Support to get out and about, attend activities, or stay connected to your community</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Short-term support to help you recover after an illness or hospital stay (sometimes called reablement)</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Longer-term care at home or in a care home</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Support for people with learning disabilities, autism, or mental health conditions</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Support and advice for unpaid carers</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Who provides it */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who provides it</h2>
+          <p className="text-gray-700 mb-4">
+            In Waltham Forest, adult social care is arranged and funded by the council. Some support is provided directly by the council, and some is provided by other organisations such as care agencies, voluntary groups, and community services.
+          </p>
+          <p className="text-gray-700">
+            The council works with NHS services, housing, and other organisations to make sure that the support you receive is joined up.
+          </p>
+        </section>
+
+        {/* Your rights */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Your rights</h2>
+          <p className="text-gray-700 mb-4">
+            Under the Care Act 2014, you have the right to:
+          </p>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Ask for a care needs assessment at any time</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Receive information and advice about the support available, even if you are not eligible for council-funded care</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Be involved in decisions about your care and support</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Have a carer's assessment if you are looking after someone</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Raise concerns about the safety of a vulnerable adult</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/how-adult-social-care-works/who-can-get-help" className="text-[#bf3688] hover:underline">
+                Who can get help
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" className="text-[#bf3688] hover:underline">
+                How to ask for help
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">
+                Being a carer
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <div className="max-w-3xl space-y-8">
-          {/* Definition */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What adult social care means</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Adult social care is a wide range of services and support for adults aged
-          18 and over who have care and support needs because of illness, disability,
-          a mental health condition, substance misuse or age-related frailty.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          It is different from healthcare provided by the NHS. While the NHS treats
-          illness and injury, social care is about helping people with their day-to-day
-          lives and maintaining their wellbeing, independence and dignity.
-          </p>
-          </section>
-
-          {/* Types of help */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Types of help available</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Adult social care can include many different types of support:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>Help with personal care such as washing, dressing and eating</li>
-          <li>Support to live safely in your own home, including home adaptations and equipment</li>
-          <li>Day centres and activities to reduce social isolation</li>
-          <li>Residential care homes and nursing homes for people who can no longer live at home</li>
-          <li>Respite care to give unpaid carers a break</li>
-          <li>Support with managing your mental health</li>
-          <li>Help for people with learning disabilities to live as independently as possible</li>
-          <li>Safeguarding to protect adults at risk of abuse or neglect</li>
-          </ul>
-          </section>
-
-          {/* Who provides it */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who provides adult social care?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Adult social care is organised by your local council. Waltham Forest Council
-          is responsible for assessing your needs and arranging support. However, the
-          care itself is often delivered by a range of providers:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>The council's own care services</li>
-          <li>Independent care agencies and home care providers</li>
-          <li>Voluntary and community organisations</li>
-          <li>Private care homes and nursing homes</li>
-          <li>Personal assistants employed directly by the person receiving care</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Regardless of who delivers your care, the council has a duty to make sure
-          it meets your assessed needs and that the quality is acceptable.
-          </p>
-          </section>
-
-          {/* Care Act 2014 */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights under the Care Act 2014</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Care Act 2014 is the law that sets out how adult social care works in
-          England. It gives you important rights:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Right to an assessment:</strong> anyone who appears to have care and support needs has the right to a free assessment, regardless of their finances</li>
-          <li><strong>Wellbeing principle:</strong> everything the council does must promote your wellbeing, including your personal dignity, physical and mental health, and control over your daily life</li>
-          <li><strong>Prevention:</strong> the council must provide services to prevent, reduce or delay the need for care and support</li>
-          <li><strong>Information and advice:</strong> the council must provide clear information to help you understand the care system and make informed decisions</li>
-          <li><strong>Choice and control:</strong> you have the right to be involved in decisions about your care and to choose how your needs are met</li>
-          <li><strong>Carers' rights:</strong> if you are an unpaid carer, you have the right to an assessment of your own needs</li>
-          </ul>
-          </section>
-
-          {/* Contact */}
-          <div className="rounded-md bg-white p-6">
-          <h2 className="text-xl font-bold text-[#bf3688]">Want to find out more?</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you have questions about adult social care or think you or someone you
-          know may need support, contact us.
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-          </div>
-          </div>
-
-          {/* Related links */}
-          <div className="max-w-3xl mt-8">
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
-          </ul>
-          </section>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-8 text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
       </div>
     </div>
   );

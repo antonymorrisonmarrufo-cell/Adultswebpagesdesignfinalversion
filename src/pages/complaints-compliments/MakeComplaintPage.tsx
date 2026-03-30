@@ -1,164 +1,244 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Independent help and advocacy", to: "/complaints-compliments/independent-help-advocacy" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
-];
+import { ArrowRight, Phone, Mail } from 'lucide-react';
 
 export default function MakeComplaintPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Make a complaint</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Make a complaint
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/complaints-compliments" className="hover:underline">Complaints, compliments and help shape our future services</a>
+          <span className="mx-1">&gt;</span>
+          <span>Make a complaint about adult social care</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Make a complaint about adult social care
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If something has gone wrong with your adult social care, or you are unhappy with the service you have received, you have the right to make a complaint.
+        </p>
+
+        {/* Primary CTA */}
+        <div className="mb-12">
+          <a
+            href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Make a complaint online
+            <ArrowRight size={18} />
+          </a>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* What you can complain about */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you can complain about</h2>
+          <p className="text-gray-700 mb-4">
+            You can make a complaint about any aspect of adult social care provided or arranged by the council. This includes:
+          </p>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A delay in providing a service or carrying out an assessment</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A mistake in how your care has been arranged</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A failure to deliver a service to the quality you were promised</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Staff not being helpful or not treating you with respect</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Not being listened to or not being involved in decisions about your care</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>The council not meeting its legal duties under the Care Act</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Problems with a care provider that the council has arranged for you</span>
+            </li>
+          </ul>
+        </section>
 
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If you are unhappy with a service you have received from Adult Social Care,
-      you have the right to make a complaint. We take all complaints seriously
-      and will work to resolve your concerns as quickly as possible.
-      </p>
-      </section>
+        {/* Who can complain */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who can complain</h2>
+          <p className="text-gray-700 mb-4">
+            You can make a complaint yourself. Someone else can also complain on your behalf — for example, a family member, friend, carer, or advocate — as long as you have given written consent for them to represent you.
+          </p>
+          <p className="text-gray-700">
+            If you lack the capacity to consent, an appropriate person can make the complaint on your behalf.
+          </p>
+        </section>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">How to make a complaint</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can make a complaint in the following ways:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Online:</strong> Complete the online complaints form on the
-      Waltham Forest Council website
-      </li>
-      <li>
-      <strong>By phone:</strong> Call{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>{" "}
-      (Monday to Friday, 9am to 5pm)
-      </li>
-      <li>
-      <strong>By email:</strong>{" "}
-      <a
-      href="mailto:socialcaredirect@walthamforest.gov.uk"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      socialcaredirect@walthamforest.gov.uk
-      </a>
-      </li>
-      <li>
-      <strong>In writing:</strong> Write to Adult Social Care Complaints,
-      Waltham Forest Council, Town Hall, Forest Road, Walthamstow, London E17 4JF
-      </li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can also ask someone else to make the complaint on your behalf, such as
-      a family member, friend or advocate.
-      </p>
-      </section>
+        {/* Time limit */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Time limit</h2>
+          <p className="text-gray-700">
+            Complaints should be made within 12 months of the date the problem happened, or within 12 months of when you first became aware of it. In some circumstances, we may still consider a complaint made after this period.
+          </p>
+        </section>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">The complaints process</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Adult social care complaints follow a single-stage process:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>We will acknowledge your complaint within 3 working days</li>
-      <li>A complaints officer will contact you to discuss your concerns and agree how the complaint will be investigated</li>
-      <li>We will investigate your complaint thoroughly and fairly</li>
-      <li>You will receive a written response within 25 working days. If the investigation takes longer, we will keep you informed of progress</li>
-      <li>The response will explain what we found, what action we will take and your options if you remain dissatisfied</li>
-      </ul>
-      </section>
+        {/* How to complain */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to complain</h2>
+          
+          <div className="space-y-4 mb-6">
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1">Online:</p>
+              <p className="text-gray-700">Use our complaint form — this is the quickest way to contact us.</p>
+            </div>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">If you are not satisfied</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you are not happy with the outcome of your complaint, you can escalate
-      it to the Local Government and Social Care Ombudsman (LGSCO). The
-      Ombudsman is an independent body that investigates complaints about
-      councils and adult social care providers.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      <strong>Local Government and Social Care Ombudsman</strong><br />
-      Telephone: 0300 061 0614<br />
-      Website: www.lgo.org.uk
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The Ombudsman will usually expect you to have completed the council's
-      complaints process before they investigate.
-      </p>
-      </section>
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1 flex items-center gap-2">
+                <Phone size={18} className="text-[#bf3688]" />
+                Phone:
+              </p>
+              <p className="text-gray-700">Call our Resolution Centre on 020 8496 3130.</p>
+            </div>
 
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Need help making a complaint?</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      An independent advocate can help you make a complaint. Visit our{" "}
-      <Link
-      to="/complaints-compliments/independent-help-advocacy"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      independent help and advocacy
-      </Link>{" "}
-      page for more information.
-      </p>
-      </section>
-      </div>
-      </div>
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1 flex items-center gap-2">
+                <Mail size={18} className="text-[#bf3688]" />
+                Email:
+              </p>
+              <p className="text-gray-700">
+                <a href="mailto:information.officer@walthamforest.gov.uk" className="text-[#bf3688] hover:underline">
+                  information.officer@walthamforest.gov.uk
+                </a>
+              </p>
+            </div>
 
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1">Letter:</p>
+              <p className="text-gray-700">
+                Complaints Team, Waltham Forest Town Hall, Forest Road, London E17 4JF
+              </p>
+            </div>
+          </div>
 
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
+          <p className="text-gray-700">
+            If you need help submitting your complaint, you can visit one of our libraries for assistance with the online form, or ask a family member, friend, or advocate to help.
+          </p>
+        </section>
+
+        {/* What happens after you complain */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What happens after you complain</h2>
+          <p className="text-gray-700 mb-4">
+            Once you have made your complaint:
+          </p>
+          
+          <div className="space-y-4">
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-sm">
+                1
+              </div>
+              <p className="text-gray-700 pt-1">We will acknowledge it within 3 working days.</p>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-sm">
+                2
+              </div>
+              <p className="text-gray-700 pt-1">We will investigate your complaint. This usually involves speaking to the people involved and reviewing your records.</p>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-sm">
+                3
+              </div>
+              <p className="text-gray-700 pt-1">We aim to send you a written response within 20 working days, explaining what we found and what we are doing about it.</p>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-sm">
+                4
+              </div>
+              <p className="text-gray-700 pt-1">If we need to contact other parties, such as a GP, hospital, or care provider, the investigation may take longer. We will keep you informed.</p>
+            </div>
+            
+            <div className="flex gap-4 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#bf3688] text-white flex items-center justify-center font-bold text-sm">
+                5
+              </div>
+              <p className="text-gray-700 pt-1">In some cases, we may need to get a second opinion from an independent assessor. The complaints team will let you know if this is needed.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* If you are not satisfied with the outcome */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you are not satisfied with the outcome</h2>
+          <p className="text-gray-700 mb-4">
+            If you are unhappy with our response, you have the right to take your complaint to the Local Government and Social Care Ombudsman (LGSCO). The Ombudsman is independent of the council and can investigate complaints about adult social care.
+          </p>
+          <p className="text-gray-700 mb-6">
+            You can contact the Ombudsman at any time for advice, but they will usually ask whether you have been through the council's complaints process first.
+          </p>
+          <a
+            href="https://www.lgo.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Contact the Local Government and Social Care Ombudsman
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Callout box */}
+        <div className="bg-gray-100 border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-12">
+          <p className="text-gray-900">
+            Making a complaint will not affect the care you receive. You have a legal right to complain, and we take all complaints seriously. Our goal is to put things right and learn from what has happened.
+          </p>
         </div>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/complaints-compliments/independent-help-and-advocacy" className="text-[#bf3688] hover:underline">
+                Independent help and advocacy
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/complaints-compliments/send-us-a-compliment" className="text-[#bf3688] hover:underline">
+                Send us a compliment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support" className="text-[#bf3688] hover:underline">
+                How to get support
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

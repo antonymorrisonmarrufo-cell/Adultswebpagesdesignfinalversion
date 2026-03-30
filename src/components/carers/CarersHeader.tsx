@@ -15,7 +15,7 @@ export default function CarersHeader() {
         </div>
         
         <nav className="flex items-center gap-6">
-          <a href="#/carers/ia-flow" className="text-sm text-gray-700 hover:text-gray-900 hover:underline">IA Flow</a>
+          <a href="#/adult-social-care/being-carer/ia-flow" className="text-sm text-gray-700 hover:text-gray-900 hover:underline">IA Flow</a>
           <button className="text-sm text-gray-700 hover:text-gray-900">English [EN]</button>
           <button className="text-sm text-gray-700 hover:text-gray-900">My Account</button>
           <button className="text-sm flex items-center gap-1 text-gray-700 hover:text-gray-900">

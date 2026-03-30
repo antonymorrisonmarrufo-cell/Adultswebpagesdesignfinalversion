@@ -1,142 +1,182 @@
-import { Link } from "react-router-dom";
-
 export default function ParentCarersPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Parent carers</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Parent carers</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Parent carers</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          A parent carer is a parent or guardian who provides additional care for a child or young person
-          with a disability, long-term illness, or additional needs. Find out about the support available
-          to you and your family.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Support for parent carers */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Support for parent carers</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          As a parent carer, you face unique challenges. The care you provide goes beyond what is expected
-          of a parent and can affect your health, finances, work, and family life. You are entitled to:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>A carers assessment to look at how caring affects your life</li>
-          <li>Information and advice about services and entitlements</li>
-          <li>Support to help you balance caring with other aspects of your life</li>
-          <li>Access to parent carer groups and peer support</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Parent carers</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Support for parents and carers of disabled children and young people.
+        </p>
 
-          {/* Short breaks */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks for disabled children</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Short breaks give your child positive experiences and opportunities while giving you time to rest.
-          These can include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>After-school clubs and holiday activities for children with additional needs</li>
-          <li>Overnight short breaks in a specialist setting</li>
-          <li>Direct payments to arrange your own short break care</li>
-          <li>Befriending and sitting services</li>
-          <li>Family activities designed for families with disabled children</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Waltham Forest publishes a Short Breaks Statement setting out what is available. Contact us to
-          find out more or to request an assessment.
-          </p>
-          </section>
-
-          {/* Parent carer forum */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Parent carer forum</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Waltham Forest Parent Carer Forum is a group of parents and carers of children and young
-          people with disabilities or additional needs. The forum:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Gives parent carers a voice in shaping local services</li>
-          <li>Works with the council, health services, and schools to improve provision</li>
-          <li>Provides peer support and a chance to connect with other parent carers</li>
-          <li>Holds regular meetings, events, and workshops</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          All parent carers are welcome to join the forum. It is a great way to meet others who understand
-          your situation and to have your say about local services.
-          </p>
-          </section>
-
-          {/* EHC plans */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Education, Health and Care plans</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If your child has special educational needs or a disability, they may be entitled to an Education,
-          Health and Care (EHC) plan. This plan sets out the support your child needs across education,
-          health, and social care. The council's SEND team can provide information and support with the
-          EHC plan process.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Get in touch</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To find out more about support for parent carers, contact our Adult Social Care team on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
-          or visit the Carers Hub.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/hubs/parent-carers" className="text-wf-blue underline hover:text-wf-green">
-          Parent carers hub
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/assessment-rights" className="text-wf-blue underline hover:text-wf-green">
-          Carers assessment and rights
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.contact.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Contact - for families with disabled children
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="#/adult-social-care/being-carer/carers-assessment-and-rights"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Find parent carer support
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="https://www.walthamforest.gov.uk/children-and-families/special-educational-needs-and-disability-send"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Contact SEND services
+          </a>
         </div>
+
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#who-are" className="text-[#bf3688] underline hover:no-underline">Who parent carers are</a></li>
+            <li><a href="#your-rights" className="text-[#bf3688] underline hover:no-underline">Your rights</a></li>
+            <li><a href="#assessment-support" className="text-[#bf3688] underline hover:no-underline">Assessments and support</a></li>
+            <li><a href="#local-groups" className="text-[#bf3688] underline hover:no-underline">Local groups and services</a></li>
+            <li><a href="#send-help" className="text-[#bf3688] underline hover:no-underline">Related SEND help</a></li>
+          </ul>
+        </div>
+
+        <div className="prose max-w-none">
+          
+          <div id="who-are" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Who parent carers are</h2>
+            <p className="text-gray-700 mb-4">
+              A parent carer is a parent or carer of a disabled child or young person under 18.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This includes children and young people with:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">physical disabilities</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">learning disabilities</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">autism</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">mental health needs</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">sensory impairments</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">complex health needs</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="your-rights" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Your rights</h2>
+            <p className="text-gray-700 mb-4">
+              As a parent carer, you have the right to ask for an assessment of your own needs under the Care Act 2014.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This is separate from your child's needs assessment and looks at the impact caring has on your own wellbeing.
+            </p>
+            <p className="text-gray-700">
+              You also have rights under the Children and Families Act 2014 if your child has special educational needs and disabilities (SEND).
+            </p>
+          </div>
+
+          <div id="assessment-support" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Assessments and support</h2>
+            <p className="text-gray-700 mb-4">
+              A parent carer's assessment looks at:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">how caring affects your health and wellbeing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">whether you can work, study or maintain relationships</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">what support would help you in your caring role</span>
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              Support may include respite breaks, practical help, peer support, or signposting to local services and benefits.
+            </p>
+          </div>
+
+          <div id="local-groups" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Local groups and services</h2>
+            
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Parent Carer Forum</h3>
+              <p className="text-gray-700 mb-4">
+                A parent-led group that represents the views and experiences of parent carers in Waltham Forest.
+              </p>
+              <p className="text-gray-700">
+                The forum provides peer support, information and a voice in shaping local SEND services.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Carers First</h3>
+              <p className="text-gray-700 mb-4">
+                Carers First supports parent carers with information, advice, emotional support and access to breaks and activities.
+              </p>
+              <p className="text-gray-700">
+                <a href="https://www.carersfirst.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-bold">Visit Carers First</a>
+              </p>
+            </div>
+          </div>
+
+          <div id="send-help" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Related SEND help</h2>
+            <p className="text-gray-700 mb-4">
+              If your child has special educational needs or disabilities, you may also need:
+            </p>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.gov.uk/children-with-special-educational-needs/extra-SEN-help" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Education, Health and Care Plans (EHCPs)</a>
+              </li>
+              <li>
+                <a href="https://www.walthamforest.gov.uk/children-and-families/special-educational-needs-and-disability-send" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">SEND support and services</a>
+              </li>
+              <li>
+                <a href="https://www.walthamforest.gov.uk/children-and-families" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Short breaks for disabled children</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/learning-disability-support/preparing-for-adulthood" className="text-[#bf3688] underline hover:no-underline">Transition to adult services</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

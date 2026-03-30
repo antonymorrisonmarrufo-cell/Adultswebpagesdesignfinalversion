@@ -1,166 +1,175 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
-  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
-  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
-  { title: "Direct payments and personal budgets", to: "/paying-for-care/direct-payments-personal-budgets" },
-];
-
 export default function BenefitsAndHelpPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Benefits and help with costs</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Benefits and help with costs</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          You may be entitled to benefits and other financial support that can help
-          with the cost of care. Many people do not claim everything they are entitled to.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/paying-for-care" className="hover:underline">Paying for your care</a>
+          <span className="mx-1">&gt;</span>
+          <span>Benefits and help with costs</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Benefits and help with costs
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          You may be entitled to benefits or other financial support that can help with disability-related costs or caring responsibilities. Many people miss out because they do not know what is available.
+        </p>
+
+        {/* You may be missing out */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">You may be missing out</h2>
+          <p className="text-gray-700 mb-4">
+            Many people who could claim a benefit do not realise they are entitled. Some benefits are paid regardless of how much you earn or have in savings. Others are means-tested, but the rules change regularly, so it is worth checking even if you have been refused in the past.
+          </p>
+          <p className="text-gray-700">
+            Claiming the right benefits can also reduce what you are asked to pay towards your care costs. During a financial assessment, we check whether you are receiving everything you are entitled to.
+          </p>
+        </section>
+
+        {/* Benefits that may help you */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Benefits that may help you</h2>
+          
+          {/* If you have a disability or long-term condition */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">If you have a disability or long-term condition</h3>
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <div>
+                  <strong className="text-gray-900">Personal Independence Payment (PIP)</strong>
+                  <span className="text-gray-700"> – helps with extra costs if you have a long-term health condition or disability and are under State Pension age.</span>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <div>
+                  <strong className="text-gray-900">Attendance Allowance</strong>
+                  <span className="text-gray-700"> – for people over State Pension age who need help with personal care or supervision because of a disability or illness. You do not need to have someone caring for you to claim it.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* If you are a carer */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">If you are a carer</h3>
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <div>
+                  <strong className="text-gray-900">Carer's Allowance</strong>
+                  <span className="text-gray-700"> – if you spend at least 35 hours a week caring for someone who receives certain disability benefits.</span>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <div>
+                  <strong className="text-gray-900">Carer's Credit</strong>
+                  <span className="text-gray-700"> – protects your State Pension if you are caring for someone but not earning enough to pay National Insurance.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Other support */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Other support</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <span>Council Tax Reduction – you may be able to reduce your council tax bill.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <span>Housing Benefit or help with rent through Universal Credit.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <span>Pension Credit – if you are over State Pension age and on a low income.</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-[#bf3688] mt-1">•</span>
+                <span>Winter Fuel Payment – a yearly payment to help with heating costs.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Callout box */}
+        <div className="bg-gray-100 border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-8">
+          <p className="text-gray-900">
+            <strong>Attendance Allowance is one of the most under-claimed benefits.</strong> You do not need someone caring for you to be eligible. If you are over State Pension age and need help with things like washing, dressing, or getting around safely, it is worth checking whether you qualify.
           </p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <div className="max-w-3xl space-y-8">
-          {/* Attendance Allowance */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Attendance Allowance</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Attendance Allowance is a tax-free benefit for people aged 65 or over who
-          have a physical or mental disability and need help with personal care or
-          supervision. You do not need to have someone actually caring for you to claim.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          There are two rates:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Lower rate:</strong> if you need help during the day or night</li>
-          <li><strong>Higher rate:</strong> if you need help both during the day and at night, or you are terminally ill</li>
+        {/* Where to get help checking your benefits */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Where to get help checking your benefits</h2>
+          <ul className="space-y-2">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <a href="https://www.gov.uk/browse/benefits" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline font-bold">
+                  GOV.UK
+                </a>
+                <span className="text-gray-700"> – benefit information and online applications</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <span className="text-gray-700 font-bold">Citizens Advice</span>
+                <span className="text-gray-700"> – free, confidential advice on benefits and money</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <span className="text-gray-700 font-bold">Age UK Waltham Forest</span>
+                <span className="text-gray-700"> – advice and support for older residents</span>
+              </div>
+            </li>
           </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Attendance Allowance is not means tested, so your income and savings do not
-          affect whether you can claim. It can also increase the amount of other
-          benefits you receive, such as Pension Credit.
-          </p>
-          </section>
+        </section>
 
-          {/* PIP */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Personal Independence Payment (PIP)</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          PIP is for people aged 16 to State Pension age who have a long-term health
-          condition or disability that affects their daily living or mobility. It has
-          two components:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Daily living component:</strong> if you need help with everyday tasks such as washing, dressing, eating or managing your medication</li>
-          <li><strong>Mobility component:</strong> if you have difficulty getting around or planning a journey</li>
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care/financial-assessment" className="text-[#bf3688] hover:underline">
+                Financial assessment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/how-care-costs-are-worked-out" className="text-[#bf3688] hover:underline">
+                How care costs are worked out
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/get-financial-advice" className="text-[#bf3688] hover:underline">
+                Get financial advice
+              </a>
+            </li>
           </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          PIP is not means tested and is not affected by whether you are working.
-          You can claim PIP even if you are receiving other benefits.
-          </p>
-          </section>
+        </section>
 
-          {/* Pension Credit */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Pension Credit</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Pension Credit tops up your weekly income if it is below a certain level.
-          It is available to people who have reached State Pension age. There are
-          two parts:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Guarantee Credit:</strong> tops up your weekly income to a minimum guaranteed amount</li>
-          <li><strong>Savings Credit:</strong> an extra payment for people who have some savings or a private pension (only available if you reached State Pension age before 6 April 2016)</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Receiving Pension Credit can also entitle you to other help, including
-          Housing Benefit, council tax reduction and help with NHS costs.
-          </p>
-          </section>
-
-          {/* Council tax reduction */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Council tax reduction</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are on a low income or receive certain benefits, you may be able to
-          get a reduction in your council tax. In some cases, you may not have to pay
-          any council tax at all.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You may also be entitled to a council tax discount if:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>You have a severe mental impairment (such as dementia)</li>
-          <li>You live alone or with people who do not count for council tax purposes</li>
-          <li>Your property has been adapted for a disabled person</li>
-          </ul>
-          </section>
-
-          {/* Other help */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Other help available</h2>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Carer's Allowance:</strong> a benefit for people who spend at least 35 hours a week caring for someone</li>
-          <li><strong>NHS Continuing Healthcare:</strong> free care arranged and funded by the NHS for people with complex ongoing health needs</li>
-          <li><strong>Disabled Facilities Grant:</strong> funding to make adaptations to your home</li>
-          <li><strong>Blue Badge scheme:</strong> helps you park closer to your destination if you have a mobility problem</li>
-          <li><strong>Freedom Pass:</strong> free travel on public transport in London</li>
-          </ul>
-          </section>
-
-          {/* Help claiming */}
-          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Get help with your benefits</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you need help understanding which benefits you may be entitled to or
-          making a claim, contact us or visit your local Citizens Advice.
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-          </div>
-          </div>
-
-          {/* Related links */}
-          <div className="max-w-3xl mt-8">
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
-          </ul>
-          </section>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-8 text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
+
       </div>
     </div>
   );

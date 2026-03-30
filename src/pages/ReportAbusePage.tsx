@@ -1,157 +1,127 @@
-import { Link } from "react-router-dom";
+import { ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../components/FeedbackBanner';
+import FeedbackSection from '../components/FeedbackSection';
+
+const audienceCards = [
+  {
+    title: 'Members of the public',
+    description: 'Get in contact if you are a member of the public who is worried about an adult being harmed or abused.',
+    href: '#'
+  },
+  {
+    title: 'Professional and provider referrals and guidance',
+    description: 'Guidance for care professionals, providers and partners on how to make adult safeguarding referrals.',
+    href: '#'
+  }
+];
+
+const relatedInfo = [
+  { title: 'Request a care assessment', href: '#/adult-social-care' },
+  { title: 'Support for carers', href: '#/carers' },
+  { title: 'How adult social care works', href: '#/adult-social-care' }
+];
 
 export default function ReportAbusePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Report abuse</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Report abuse</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          If you are worried that an adult is being abused or neglected, or if you are being abused
-          yourself, help is available. You can report your concerns quickly using the options below.
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <span>Report abuse or neglect</span>
+        </nav>
+
+        {/* Page Title */}
+        <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+          Protecting adults at risk of abuse
+        </h1>
+
+        {/* Intro */}
+        <p className="text-gray-700 max-w-4xl mb-8 text-base">
+          How to recognise and report the abuse and neglect of an adult. Please get in contact, even if you're not 100% sure, or don't have all the details.
+        </p>
+
+        {/* Emergency Alert Banner */}
+        <div className="bg-[#fcedf3] border border-[#bf3688] px-6 py-4 mb-10 max-w-4xl">
+          <p className="text-gray-900 text-center">
+            If someone is in immediate danger, call the police on <strong>999</strong>
           </p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Emergency */}
-          <div className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6">
-          <h2 className="text-2xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
-          <p className="mt-2 text-wf-dark text-lg">
-          Call <strong className="text-3xl">999</strong> now.
-          </p>
-          <p className="mt-2 text-wf-dark">
-          Do not wait to contact social services. If someone is at risk of harm right now, always call
-          the emergency services first.
-          </p>
-          </div>
-
-          {/* Quick contact options */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Report a safeguarding concern</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {/* Phone */}
-          <div className="rounded-md border-2 border-[#004E3E] p-6">
-          <h3 className="text-lg font-bold text-[#231F20]">Call us</h3>
-          <p className="mt-2 text-wf-dark">
-          Speak to our Adult Social Care team about your concern:
-          </p>
-          <p className="mt-3 text-3xl font-bold text-[#231F20]">
-          <a href="tel:02084963130" className="no-underline text-[#004E3E]">020 8496 3130</a>
-          </p>
-          <p className="mt-2 text-sm text-wf-gray">Monday to Friday, 9am to 5pm</p>
-          <div className="mt-4 border-t border-wf-gray-light pt-4">
-          <p className="text-wf-dark text-sm">
-          <strong>Outside office hours:</strong>
-          </p>
-          <p className="text-lg font-bold text-[#231F20] mt-1">
-          <a href="tel:02084966000" className="no-underline text-[#004E3E]">020 8496 6000</a>
-          </p>
-          <p className="text-sm text-wf-gray">Emergency Duty Team</p>
-          </div>
-          </div>
-
-          {/* Online form */}
-          <div className="rounded-md border-2 border-[#004E3E] p-6">
-          <h3 className="text-lg font-bold text-[#231F20]">Report online</h3>
-          <p className="mt-2 text-wf-dark">
-          Use our online referral form to report your concerns. Available 24 hours a day, 7 days a week.
-          </p>
-          <a
-          href="/safeguarding/referral-form"
-          className="mt-4 inline-block rounded bg-[#004E3E] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#004d47] transition-colors"
-          >
-          Complete the referral form
-          </a>
-          <p className="mt-4 text-sm text-wf-gray">
-          Online referrals are reviewed during office hours. If urgent, please call.
-          </p>
-          </div>
-          </div>
-          </section>
-
-          {/* What is abuse */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What counts as abuse?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Abuse can take many forms, including physical harm, emotional cruelty, financial exploitation,
-          neglect, sexual abuse, and more. You do not need to be certain that abuse is happening to
-          report your concerns. If something does not seem right, tell us.
-          </p>
-          <p className="mt-3">
-          <Link to="/safeguarding/abuse-and-neglect" className="text-wf-blue underline hover:text-wf-green font-medium">
-          Learn about the different types of abuse and neglect
-          </Link>
-          </p>
-          </section>
-
-          {/* Who can report */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Anyone can report</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You can raise a concern whether you are the person being harmed, a family member, a friend, a
-          neighbour, a carer, a professional, or a member of the public. You can report anonymously,
-          although giving your name helps us to follow up.
-          </p>
-          </section>
-
-          {/* Concerned about a child */}
-          <section className="mb-8 mb-0">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Concerned about a child?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are worried about a child or young person under 18, there is a separate reporting
-          process through our MASH team.
-          </p>
-          <p className="mt-3">
-          <Link to="/safeguarding/report-child-concern" className="text-wf-blue underline hover:text-wf-green font-medium">
-          Find out how to report concerns about a child
-          </Link>
-          </p>
-          </section>
-
-          {/* More information */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">More information</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
-          Safeguarding adults - full information
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding/report-abuse" className="text-wf-blue underline hover:text-wf-green">
-          Detailed guide to reporting abuse
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding/what-happens-after" className="text-wf-blue underline hover:text-wf-green">
-          What happens after you report a concern
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">
-          Information for professionals
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* Two Audience Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          {audienceCards.map((card, index) => (
+            <a
+              key={index}
+              href={card.href}
+              className="bg-white border border-gray-200 p-6 pb-20 hover:shadow-md transition-shadow flex flex-col justify-between relative min-h-[180px]"
+            >
+              <div>
+                <h3 className="text-[#bf3688] mb-3 font-bold text-base pr-12">{card.title}</h3>
+                <p className="text-gray-600 text-sm pr-12">{card.description}</p>
+              </div>
+              <div className="absolute right-6 bottom-6">
+                <div className="w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center text-white hover:bg-[#a02d73] transition-colors">
+                  <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </a>
+          ))}
         </div>
-      </div>
-    </div>
+
+        {/* What is abuse section */}
+        <h2 className="text-[#bf3688] mb-4 font-bold text-xl">What is abuse and neglect?</h2>
+        <p className="text-gray-700 max-w-4xl mb-6 text-base">
+          Abuse is when someone does something to an adult that harms or hurts them. Neglect is when someone fails to care for an adult properly. Abuse can happen anywhere — at home, in a care home, in hospital, or in the community.
+        </p>
+        <p className="text-gray-700 max-w-4xl mb-4 text-base">Types of abuse include:</p>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 max-w-4xl mb-12 text-base">
+          <li>Physical abuse — hitting, pushing, restraining</li>
+          <li>Emotional or psychological abuse — threats, bullying, isolation</li>
+          <li>Financial or material abuse — theft, fraud, misuse of money</li>
+          <li>Sexual abuse — any sexual act without consent</li>
+          <li>Neglect — failing to provide food, warmth, medication or care</li>
+          <li>Discriminatory abuse — based on race, religion, gender, disability or other characteristics</li>
+          <li>Organisational abuse — poor care practices in institutions</li>
+          <li>Domestic abuse — abuse between partners or family members</li>
+          <li>Modern slavery — trafficking, forced labour or servitude</li>
+          <li>Self-neglect — inability to look after oneself</li>
+        </ul>
+
+        {/* What happens next */}
+        <h2 className="text-[#bf3688] mb-4 font-bold text-xl">What happens after you report?</h2>
+        <p className="text-gray-700 max-w-4xl mb-6 text-base">
+          When we receive a report, we will decide whether to carry out a safeguarding enquiry. This helps us understand what happened and what needs to happen next to keep the person safe.
+        </p>
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          We will always try to involve the adult at risk in any decisions about their safety. We work with the police, the NHS, and other organisations to protect adults at risk of harm.
+        </p>
+
+        {/* Related information */}
+        <h2 className="text-[#bf3688] mb-8 font-bold text-xl">Related information</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {relatedInfo.map((info, index) => (
+            <a
+              key={index}
+              href={info.href}
+              className="bg-[#bf3688] text-white p-6 flex items-center justify-between hover:bg-[#a02d73] transition-colors relative pr-20"
+            >
+              <span className="pr-4 font-semibold">{info.title}</span>
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#bf3688] flex-shrink-0 absolute right-6">
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </a>
+          ))}
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

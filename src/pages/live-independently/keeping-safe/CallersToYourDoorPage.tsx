@@ -1,204 +1,168 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../../../components/FeedbackBanner';
+import FeedbackSection from '../../../components/FeedbackSection';
 
 export default function CallersToYourDoorPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Callers to your door</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">
-          Dealing with callers at your door
-          </h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Bogus callers and rogue traders can be convincing and persistent.
-          Knowing how to deal with unexpected callers can help you stay safe at
-          home.
-          </p>
-        </div>
-      </div>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="hover:underline">Keeping safe at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Callers to your door</span>
+        </nav>
 
-          {/* Safety tips */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Safety tips for doorstep callers
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          Always use your door chain or spy hole before opening the door to
-          anyone you do not know.
-          </li>
-          <li>
-          Ask to see identification. Genuine callers will not mind waiting
-          while you check. If in doubt, close the door and call the
-          organisation they claim to be from using a number from your phone
-          book or their official website.
-          </li>
-          <li>
-          Never let anyone into your home if you are unsure who they are.
-          </li>
-          <li>
-          Do not agree to have work done on your home by someone who calls
-          without an appointment. Legitimate tradespeople will not pressure
-          you into immediate decisions.
-          </li>
-          <li>
-          Never hand over cash or your bank card to someone at the door.
-          </li>
-          <li>
-          If someone claims there is an emergency (for example, a water leak),
-          call the relevant utility company yourself to check before letting
-          anyone in.
-          </li>
-          <li>
-          Consider fitting a door chain, spy hole or video doorbell if you do
-          not already have one.
-          </li>
-          </ul>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Callers to your door
+        </h1>
 
-          {/* No Cold Calling zones */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          No Cold Calling zones
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Waltham Forest has established No Cold Calling zones in parts of the
-          borough. In these areas, doorstep selling is discouraged and signs are
-          displayed to deter cold callers. If you live in a No Cold Calling zone
-          and receive an unwanted visit from a trader, you should report it to
-          Trading Standards.
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you would like your street to become a No Cold Calling zone,
-          contact the council&apos;s Trading Standards team for more information.
-          </p>
-          </section>
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Stay safe from doorstep callers by checking ID, using a door chain, avoiding pressure, and never sharing personal details.
+        </p>
 
-          {/* Reporting */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Reporting suspicious callers
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you have been targeted by a bogus caller or rogue trader, report it
-          as soon as possible:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Action Fraud:</strong> call 0300 123 2040 or visit{" "}
-          <a
-          href="https://www.actionfraud.police.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          actionfraud.police.uk
-          </a>
-          </li>
-          <li>
-          <strong>Citizens Advice consumer helpline:</strong> call 0808 223
-          1133
-          </li>
-          <li>
-          <strong>Police non-emergency:</strong> call 101
-          </li>
-          <li>
-          <strong>In an emergency:</strong> call 999
-          </li>
-          </ul>
-          </section>
+        <div className="max-w-3xl space-y-0">
 
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">Need advice?</h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you are concerned about doorstep callers or would like advice on
-          keeping safe, contact our Adult Social Care team.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Phone:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/keeping-safe/online-email-postal-fraud">
-          Online, email and postal fraud
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/fraud-over-the-phone">
-          Fraud over the phone
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/fire-safety">
-          Fire safety at home
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
-          </li>
-          </ul>
+          {/* Why this matters */}
+          <div className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Why this matters</h2>
+            <p className="text-gray-700 mb-4">
+              Many legitimate companies call at people's homes, but criminals also use doorstep visits to pressure people into sharing information or paying for things they do not want.
+            </p>
+            <p className="text-gray-700 mb-4">
+              They may pretend to be:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                utility workers
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                officials
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                survey staff
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                traders
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                people checking something at your home
+              </li>
+            </ul>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <hr className="border-gray-200" />
+
+          {/* Ways to protect yourself */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Ways to protect yourself</h2>
+            <p className="text-gray-700 mb-4">
+              Ways to protect yourself include:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                fit a door chain and spy hole if possible
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                always ask for and check identification
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not let people in if you are unsure who they are
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                if you are interested in something, ask them to leave contact details so you can arrange a later appointment
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not sign on the spot
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                get at least three written quotes for work
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                never share personal or financial details at the door
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* If you decide to buy */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">If you decide to buy</h2>
+            <p className="text-gray-700 mb-4">
+              If you do decide to buy something:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                ask for references from previous customers
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                get any agreement in writing
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                check the cooling-off period
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not pay for work before it is completed and you are satisfied
+              </li>
+            </ul>
+          </div>
+
+          {/* Navigation */}
+          <div className="pt-10 border-t border-gray-200 flex justify-between gap-4">
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <ArrowLeft size={18} />
+              <span>Keeping safe at home</span>
+            </a>
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <span>Online, email or postal fraud</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

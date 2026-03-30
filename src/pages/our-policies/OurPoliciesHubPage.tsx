@@ -4,34 +4,34 @@ const cards = [
   {
     title: "Charging and financial policies",
     description: "How we charge for care services and our fairer contributions policy.",
-    to: "/our-policies/charging-financial-policies",
+    to: "/adult-social-care/our-policies/charging-and-financial-policies",
   },
   {
     title: "Safeguarding policies and reports",
     description: "Safeguarding Adults Board annual reports and multi-agency procedures.",
-    to: "/our-policies/safeguarding-policies-reports",
+    to: "/adult-social-care/our-policies/safeguarding-policies-reports",
   },
   {
     title: "Market sustainability and commissioning",
     description: "Market position statement and information for care providers.",
-    to: "/our-policies/market-sustainability-commissioning",
+    to: "/adult-social-care/our-policies/market-sustainability-commissioning",
   },
   {
     title: "Privacy and data",
     description: "How we handle your personal information and your data protection rights.",
-    to: "/our-policies/privacy-and-data",
+    to: "/adult-social-care/our-policies/privacy-and-data",
   },
   {
     title: "Consultations",
     description: "Current and past consultations on adult social care services.",
-    to: "/our-policies/consultations",
+    to: "/adult-social-care/our-policies/consultations",
   },
 ];
 
 const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Paying for care", to: "/paying-for-care" },
+  { title: "Understand your rights", to: "/adult-social-care/understand-your-rights" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
 ];
 
 export default function OurPoliciesHubPage() {
@@ -94,6 +94,40 @@ export default function OurPoliciesHubPage() {
       </Link>
       ))}
       </div>
+
+      {/* Key documents — quick links */}
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Key documents — quick links</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      For quick access to the most commonly requested documents:
+      </p>
+      <div className="mt-4 space-y-3">
+      <a href="https:\/\/www.walthamforest.gov.uk\/sites\/default\/files\/2025-11\/Fairer_contributions_policy_25_26%20%28Updated%20Oct25%29_v3.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors w-full sm:w-auto">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Fairer Contributions Policy 2025/26 (PDF)
+      </a>
+      <br />
+      <a href="https:\/\/www.walthamforest.gov.uk\/adult-social-care\/paying-care-and-support\/paying-your-care-and-support" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors w-full sm:w-auto">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Residential Care Charging Policy [PDF — link to be added]
+      </a>
+      <br />
+      <a href="https:\/\/www.walthamforest.gov.uk\/adult-social-care\/protecting-vulnerable-adults\/safeguarding-adults-board-sab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors w-full sm:w-auto">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        SAB Annual Report 2024/25 [PDF — link to be added]
+      </a>
+      <br />
+      <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support/fair-cost-care" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors w-full sm:w-auto">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Market Sustainability Plan
+      </a>
+      <br />
+      <a href="https:\/\/www.walthamforest.gov.uk\/council-and-elections\/your-data-and-privacy\/our-privacy-notices\/adult-social-care-privacy-notice" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors w-full sm:w-auto">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Adult Social Care Privacy Notice [PDF — link to be added]
+      </a>
+      </div>
+      </section>
 
       <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
       <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>

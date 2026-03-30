@@ -1,259 +1,150 @@
-import { Link } from "react-router-dom";
+import { ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+import HelpOnlineForms from '../../components/transport/HelpOnlineForms';
+
+const whatItCovers = [
+  'most public transport in London 24 hours a day',
+  'most National Rail services within the London area after 9.30am and all day at weekends and on public holidays',
+  'local bus services in the rest of England',
+];
 
 export default function FreedomPassOlderPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
-          <li>
-          <Link to="/" className="hover:underline text-[#004E3E]">
-          Home
-          </Link>
+    <>
+    <div className="min-h-screen bg-white">
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li>
-          <Link
-          to="/adult-social-care"
-          className="hover:underline text-[#004E3E]"
-          >
-          Adult Social Care
-          </Link>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li>
-          <Link
-          to="/transport"
-          className="hover:underline text-[#004E3E]"
-          >
-          Travel and transport
-          </Link>
+          <a href="#/adult-social-care/travel-and-transport" className="hover:underline">Travel and transport</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li className="text-gray-900 font-medium">
-          Freedom Pass for older people
-          </li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20] mb-6">
-          Freedom Pass for older people
+          <span>Freedom Pass for older people</span>
+        </nav>
+
+        <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+          {/* H1 */}
+          <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+            Freedom Pass for older people
           </h1>
-          
-          <p className="text-lg text-gray-700 mb-8">
-          The Older Persons Freedom Pass gives you free travel on public
-          transport in London. It is available to Waltham Forest residents who
-          are aged 60 or over.
-          </p>
-        </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+          {/* Standfirst */}
+          <p className="text-gray-700 max-w-4xl mb-6 text-lg font-semibold">
+            Free travel on most public transport in London for older people.
+          </p>
 
-          {/* Eligibility */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Who is eligible
-          </h2>
-          <p className="text-gray-700 mb-4">
-          You can apply for an Older Persons Freedom Pass if you:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>Are aged 60 or over</li>
-          <li>Live in the London Borough of Waltham Forest</li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          There is no means test &mdash; eligibility is based solely on your
-          age and residency. You can apply from the day of your 60th birthday.
-          </p>
-          </section>
-
-          {/* How to apply */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          How to apply
-          </h2>
-          <p className="text-gray-700 mb-4">
-          You can apply online through the London Councils website. To apply,
-          you will need:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>A recent digital photograph</li>
-          <li>
-          Proof of your age (such as a passport, birth certificate or
-          driving licence)
-          </li>
-          <li>
-          Proof of your Waltham Forest address (such as a council tax bill,
-          utility bill or bank statement dated within the last 3 months)
-          </li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          The pass is free of charge. Applications are usually processed
-          within 3 to 4 weeks.
-          </p>
-          <div className="mt-4">
-          <a
-          href="https://www.londoncouncils.gov.uk/services/freedom-pass"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
-          >
-          Apply on the London Councils website
-          </a>
-          </div>
-          </section>
-
-          {/* What it covers */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          What the Freedom Pass covers
-          </h2>
-          <p className="text-gray-700 mb-4">
-          With an Older Persons Freedom Pass you get free travel on:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>All London buses (24 hours a day, 7 days a week)</li>
-          <li>The Tube (Underground) &mdash; after 9am on weekdays and all day on weekends and public holidays</li>
-          <li>DLR (Docklands Light Railway) &mdash; after 9am on weekdays</li>
-          <li>London Overground &mdash; after 9am on weekdays</li>
-          <li>Elizabeth line (within London) &mdash; after 9am on weekdays</li>
-          <li>London trams &mdash; after 9am on weekdays</li>
-          <li>
-          Most National Rail services within London &mdash; after 9.30am on
-          weekdays and all day on weekends and public holidays
-          </li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          Please note that free travel on rail services (other than buses)
-          is not available during the morning peak period on weekdays. Bus
-          travel is free at all times.
-          </p>
-          </section>
-
-          {/* Renewal */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Renewing your Freedom Pass
-          </h2>
-          <p className="text-gray-700 mb-4">
-          Freedom Passes are usually valid for 5 years. London Councils will
-          contact you before your pass is due to expire. You will be asked to
-          confirm your current address and provide a new photograph.
-          </p>
-          <p className="text-gray-700">
-          Renewal is free and can be done online through the London Councils
-          website. If you do not renew before your pass expires, you will not
-          be able to use it for free travel.
-          </p>
-          </section>
-
-          {/* Lost or stolen */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Lost, stolen or damaged passes
-          </h2>
-          <p className="text-gray-700">
-          If your Freedom Pass is lost, stolen or damaged, you can request a
-          replacement through the{" "}
-          <a
-          href="https://www.londoncouncils.gov.uk/services/freedom-pass"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          London Councils website
-          </a>{" "}
-          or by calling{" "}
-          <a
-          href="tel:03001234444"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          0300 123 4444
-          </a>
-          . A replacement fee of &pound;10 may apply.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Contact
-          </h2>
-          <p className="text-gray-700 mb-2">
-          Freedom Passes are managed by London Councils. For help with your
-          application or any queries, contact the London Councils Freedom Pass
-          team:
-          </p>
-          <p className="text-gray-700 mb-2">
-          Telephone:{" "}
-          <a
-          href="tel:03432221234"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          0343 222 1234
-          </a>
-          </p>
-          <p className="text-gray-700">
-          Apply at{" "}
-          <a
-          href="https://www.freedompass.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          freedompass.org
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="bg-[#f3f2f1] rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
-          Related links
-          </h2>
-          <ul className="space-y-2 text-[#004E3E]">
-          <li>
-          <Link
-          to="/transport"
-          className="hover:underline"
-          >
-          Travel and transport
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/freedom-pass-disabled"
-          className="hover:underline"
-          >
-          Freedom Pass for disabled people
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/taxicard"
-          className="hover:underline"
-          >
-          Taxicard
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/transport-mobility"
-          className="hover:underline"
-          >
-          Transport and mobility support
-          </Link>
-          </li>
-          </ul>
+          {/* Primary CTA */}
+          <div className="mb-10">
+            <a
+              href="https://www.freedompass.org/apply-pass/older-persons-freedom-pass/apply-older-persons-freedom-pass"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 shadow-sm"
+            >
+              Apply for a Freedom Pass for older people online
+              <ArrowRight size={18} />
+            </a>
           </div>
 
-          <p className="text-sm text-gray-500">Last updated: March 2026</p>
+          <div className="max-w-3xl space-y-0">
+
+            {/* What it covers */}
+            <div className="pb-10">
+              <p className="text-gray-700 mb-4 font-semibold">The Freedom Pass for older people gives free travel on:</p>
+              <ul className="space-y-3">
+                {whatItCovers.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Eligibility */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Eligibility</h2>
+              <p className="text-gray-700 mb-4 font-semibold">You can apply for the older person's Freedom Pass if:</p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-2 text-gray-700 font-medium">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  you meet the age criteria
+                </li>
+                <li className="flex items-start gap-2 text-gray-700 font-medium">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  your sole or main residence is in the London Borough of Waltham Forest
+                </li>
+              </ul>
+
+              <div className="space-y-3">
+                <a
+                  href="https://www.freedompass.org/concessionary-travel/passengers/older-persons-freedom-pass/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                >
+                  <ArrowRight size={14} />
+                  Check you meet the age criteria
+                </a>
+                <div className="pt-1">
+                  <a
+                    href="https://tfl.gov.uk/fares/free-and-discounted-travel/60-plus-oyster-photocard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                  >
+                    <ArrowRight size={14} />
+                    TfL 60+ London Oyster Photocard
+                  </a>
+                </div>
+                <div className="pt-1">
+                  <a
+                    href="https://www.freedompass.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                  >
+                    <ArrowRight size={14} />
+                    Freedom Pass website
+                  </a>
+                </div>
+                <div className="pt-1">
+                  <a
+                    href="https://www.londoncouncils.gov.uk/contact-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                  >
+                    <ArrowRight size={14} />
+                    London Councils contact details
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Help with online forms */}
+            <HelpOnlineForms />
+
+          </div>
+
+          {/* Metadata */}
+          <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+            <p>Last updated: 27 March 2026</p>
+            <p>Next review: 27 March 2027</p>
+          </div>
         </div>
-      </div>
+
+      </section>
     </div>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

@@ -1,162 +1,150 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Make a complaint", to: "/complaints-compliments/make-complaint" },
-  { title: "Understand your rights", to: "/understand-your-rights" },
-];
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function IndependentHelpAdvocacyPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Independent help and advocacy</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Independent help and advocacy
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/complaints-compliments" className="hover:underline">Complaints, compliments and help shape our future services</a>
+          <span className="mx-1">&gt;</span>
+          <span>Independent help and advocacy</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Independent help and advocacy
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you need help making a complaint, or you want independent support to raise a concern about adult social care, there are organisations that can help.
+        </p>
+
+        {/* Independent advocacy */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Independent advocacy</h2>
+          <p className="text-gray-700 mb-4">
+            If you find it difficult to speak up for yourself, or if you do not have a family member or friend who can help, you may be entitled to an independent advocate. An advocate is someone who helps you express your views and make sure your voice is heard.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Under the Care Act 2014, the council must arrange an independent advocate for you if you have difficulty being involved in decisions about your care and you do not have anyone appropriate to support you.
+          </p>
+          <p className="text-gray-700 mb-2">
+            To ask about getting an advocate, contact the Adult Social Care team on 020 8496 3130.
+          </p>
+        </section>
+
+        {/* Healthwatch Waltham Forest */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Healthwatch Waltham Forest</h2>
+          <p className="text-gray-700 mb-6">
+            Healthwatch Waltham Forest is independent of the council. They can listen to your experience, help you understand your options, and signpost you to the right place to raise a concern.
+          </p>
+          <a
+            href="https://www.healthwatchwalthamforest.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Visit Healthwatch Waltham Forest
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Citizens Advice Waltham Forest */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Citizens Advice Waltham Forest</h2>
+          <p className="text-gray-700 mb-6">
+            Citizens Advice can provide free, confidential advice on your rights, including how to make a complaint about social care services. They can also help you write a complaint or prepare for a meeting.
+          </p>
+          <a
+            href="https://www.citizensadvice.org.uk/local/waltham-forest/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Visit Citizens Advice Waltham Forest
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Local Government and Social Care Ombudsman */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Local Government and Social Care Ombudsman</h2>
+          <p className="text-gray-700 mb-4">
+            If you have been through the council's complaints process and are not satisfied with the outcome, the Local Government and Social Care Ombudsman (LGSCO) can investigate your complaint independently.
+          </p>
+          <p className="text-gray-700 mb-4">
+            The Ombudsman can look at complaints about the way a council has carried out its adult social care duties, including failures to act, delays, poor decision-making, and unfair treatment.
+          </p>
+          <p className="text-gray-700 mb-6">
+            You can contact the Ombudsman at any time for advice, but they will usually ask whether you have completed the council's own process first.
+          </p>
+          <a
+            href="https://www.lgo.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Contact the LGSCO
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Care Quality Commission (CQC) */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Care Quality Commission (CQC)</h2>
+          <p className="text-gray-700 mb-4">
+            If your concern is specifically about the quality or safety of a care provider (for example, a care home, domiciliary care agency, or nursing home), you can raise it with the Care Quality Commission. The CQC regulates and inspects care providers in England.
+          </p>
+          <p className="text-gray-700 mb-6">
+            The CQC does not investigate individual complaints, but they use the information people share with them to inform their inspections and regulatory decisions.
+          </p>
+          <a
+            href="https://www.cqc.org.uk/give-feedback-on-care"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Share your experience with CQC
+            <ArrowRight size={18} />
+          </a>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/complaints-compliments/make-a-complaint" className="text-[#bf3688] hover:underline">
+                Make a complaint about adult social care
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support" className="text-[#bf3688] hover:underline">
+                How to get support
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      An advocate is an independent person who can help you express your views,
-      understand your rights and make sure your voice is heard in decisions about
-      your care and support.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What advocates do</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      An independent advocate can:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Help you understand information about your care and support</li>
-      <li>Support you to express your views and wishes</li>
-      <li>Help you make decisions about your care</li>
-      <li>Attend meetings with you, such as assessments, care plan reviews or safeguarding meetings</li>
-      <li>Help you make a complaint or challenge a decision</li>
-      <li>Write letters or make phone calls on your behalf</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Advocates are independent of the council and the NHS. They work for you,
-      not for the organisations providing your care.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Types of advocacy</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      There are different types of advocacy depending on your situation:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Independent Mental Capacity Advocate (IMCA):</strong> For people
-      who lack mental capacity and have no one appropriate to represent them in
-      decisions about serious medical treatment, changes of accommodation or
-      safeguarding
-      </li>
-      <li>
-      <strong>Independent Mental Health Advocate (IMHA):</strong> For people
-      who are detained under the Mental Health Act, or subject to a community
-      treatment order or guardianship
-      </li>
-      <li>
-      <strong>Care Act advocacy:</strong> For anyone who has difficulty being
-      involved in their assessment, care planning or review, and who has no
-      suitable person to support them
-      </li>
-      <li>
-      <strong>NHS complaints advocacy:</strong> For help making a complaint
-      about NHS services
-      </li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">How to access an advocate</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Advocacy services are free. You can access an advocate by:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Asking your social worker to make a referral</li>
-      <li>Contacting the local advocacy service directly</li>
-      <li>Asking a family member, friend or other professional to refer you</li>
-      <li>Contacting our Adult Social Care team for help finding an advocate</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The council has a legal duty to arrange an advocate for you if you have
-      difficulty being involved in decisions about your care and have no suitable
-      person to support you.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      For help finding an independent advocate, contact our team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

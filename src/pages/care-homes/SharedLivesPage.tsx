@@ -1,169 +1,231 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone, FileText } from 'lucide-react';
 
 export default function SharedLivesPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Shared Lives</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Shared Lives</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Shared Lives is a scheme where adults who need support are matched with an
-          approved carer and live as part of that carer's family in their home.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living" className="hover:underline">Care homes and supported living</a>
+          <span className="mx-1">&gt;</span>
+          <span>Shared Lives</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Shared Lives
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Shared Lives helps adults who need support to live with a trained carer in a family home and share in family and community life.
+        </p>
+
+        {/* Primary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <a
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Get a care assessment
+            <ArrowRight size={18} />
+          </a>
+          <a
+            href="tel:02084963130"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            <Phone size={18} />
+            Call 020 8496 3130
+          </a>
+        </div>
+
+        {/* Hero Image Placeholder */}
+        <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-80 flex items-center justify-center">
+          <p className="text-gray-400 text-center text-lg">
+            IMAGE PLACEHOLDER – SHARED LIVES
           </p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* What is Shared Lives */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is Shared Lives?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Shared Lives (sometimes called adult placement) is a way of providing care and
-          support in a family setting. You live with an approved Shared Lives carer in
-          their home and become part of their household. Carers are carefully recruited,
-          trained, and supported by the Shared Lives scheme.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Shared Lives can offer long-term placements, short breaks (respite care), or
-          day support. The focus is on building a genuine relationship between you and
-          your carer, giving you a sense of belonging and community.
-          </p>
-          </section>
-
-          {/* Who is it for */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Who is Shared Lives for?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Shared Lives may be suitable for adults who:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Have a learning disability</li>
-          <li>Have a mental health condition</li>
-          <li>Have a physical disability or sensory impairment</li>
-          <li>Are an older person who would benefit from a family environment</li>
-          <li>Are looking for an alternative to residential care</li>
+        {/* Contents navigation */}
+        <nav className="mb-10 bg-gray-50 p-6 border border-gray-200">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#what-it-is" className="text-[#bf3688] hover:underline">What Shared Lives is</a></li>
+            <li><a href="#who-it-suits" className="text-[#bf3688] hover:underline">Who it may suit</a></li>
+            <li><a href="#daily-life" className="text-[#bf3688] hover:underline">What daily life can be like</a></li>
+            <li><a href="#stays-respite" className="text-[#bf3688] hover:underline">Long stays, short breaks and respite</a></li>
+            <li><a href="#paying" className="text-[#bf3688] hover:underline">Paying for Shared Lives</a></li>
+            <li><a href="#how-to-get" className="text-[#bf3688] hover:underline">How to get Shared Lives</a></li>
+            <li><a href="#related" className="text-[#bf3688] hover:underline">Related help</a></li>
           </ul>
-          </section>
+        </nav>
 
-          {/* How matching works */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How the matching process works</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Finding the right match is central to the success of a Shared Lives placement.
-          The process includes:
+        {/* What Shared Lives is */}
+        <section id="what-it-is" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What Shared Lives is</h2>
+          <p className="text-gray-700 mb-4">
+            In Shared Lives, you live with a trained carer in their home and are supported as part of everyday family and community life.
           </p>
-          <ol className="mt-3 ml-6 list-decimal space-y-2 text-wf-dark leading-relaxed">
-          <li>An assessment of your needs, preferences, interests, and personality</li>
-          <li>Identifying carers whose home, lifestyle, and skills are a good fit</li>
-          <li>A series of introductory visits so you and the carer can get to know each other</li>
-          <li>A trial period to make sure the placement is right for everyone</li>
-          <li>Ongoing reviews and support from the Shared Lives team</li>
-          </ol>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You will never be placed with a carer without your agreement. If a placement
-          does not work out, the team will work with you to find an alternative.
-          </p>
-          </section>
+          <p className="text-gray-700 mb-4">You will usually have:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">your own bedroom</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">use of shared spaces such as the kitchen, bathroom and living room</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">support that is built around your needs and strengths</span>
+            </li>
+          </ul>
+        </section>
 
-          {/* Costs */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Costs</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The cost of a Shared Lives placement depends on your assessed needs and
-          financial situation. Waltham Forest Council will carry out a financial
-          assessment to determine how much, if anything, you will need to contribute.
+        {/* Who it may suit */}
+        <section id="who-it-suits" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who it may suit</h2>
+          <p className="text-gray-700 mb-4">Shared Lives may suit adults who want:</p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">a family-based home</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">day-to-day support in an ordinary home setting</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">a more personal alternative to a care home</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">short breaks or respite as well as longer-term support</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            It can support people with a range of needs, including learning disability, older age, and physical or sensory disability.
           </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The council pays the Shared Lives carer a weekly fee to cover the cost of your
-          care and support. You may also need to contribute towards your household living
-          costs, such as food and bills, from your benefits or income.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          For more information about financial assessments, see our{" "}
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          paying for care
-          </Link>{" "}
-          page.
-          </p>
-          </section>
+        </section>
 
-          {/* How to access */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to access Shared Lives</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To find out more about Shared Lives or to request a placement, contact our
-          Adult Social Care team:
+        {/* What daily life can be like */}
+        <section id="daily-life" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What daily life can be like</h2>
+          <p className="text-gray-700 mb-4">Shared Lives is about ordinary home life. Support may include:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">personal care</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">help with routines</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">practical day-to-day support</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">meals and home life</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">getting involved in the community</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">building confidence and independence</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Long stays, short breaks and respite */}
+        <section id="stays-respite" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Long stays, short breaks and respite</h2>
+          <p className="text-gray-700 mb-4">Shared Lives can include:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">long-term living arrangements</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">short stays</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">respite</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Paying for Shared Lives */}
+        <section id="paying" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Paying for Shared Lives</h2>
+          <p className="text-gray-700 mb-4">
+            There is a charge for this service. We will explain likely costs as part of your needs assessment and financial assessment.
           </p>
-          <p className="mt-3 text-wf-dark">
-          <strong>Telephone:</strong>{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline font-semibold">
-          020 8496 3130
+        </section>
+
+        {/* How to get Shared Lives */}
+        <section id="how-to-get" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to get Shared Lives</h2>
+          <p className="text-gray-700 mb-6">
+            The first step is a care needs assessment. If Shared Lives looks right for you, we can discuss availability and next steps as part of your support planning.
+          </p>
+          <a
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors mb-6 inline-block"
+          >
+            Request a care assessment
+            <ArrowRight size={18} />
           </a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">
-          Monday to Friday, 9am to 5pm (excluding bank holidays)
-          </p>
-          </section>
 
-          {/* Become a carer */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+          {/* Supporting download */}
+          <div className="bg-gray-50 p-6 border border-gray-200">
+            <h3 className="font-bold text-gray-900 mb-3">Supporting information</h3>
+            <a
+              href="https://www.walthamforest.gov.uk/sites/default/files/2023-03/SL%20service%20user%20guide%202023.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 text-[#bf3688] hover:underline"
+            >
+              <FileText size={20} />
+              <span>Shared Lives user guide (PDF)</span>
+            </a>
           </div>
-          <h2 className="text-xl font-bold text-[#003078]">Become a Shared Lives carer</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you have a spare room and would like to make a real difference to someone's
-          life, we would love to hear from you. Shared Lives carers receive training,
-          ongoing support, and a weekly payment. Contact our team on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>{" "}
-          to find out more.
-          </p>
-          </section>
+        </section>
 
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
-          Request housing and care support
-          </Link>
-          </li>
-          <li>
-          <Link to="/care-homes/supported-living" className="text-wf-blue underline hover:text-wf-green">
-          Supported living
-          </Link>
-          </li>
-          <li>
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          Paying for care
-          </Link>
-          </li>
-          <li>
-          <a href="https://sharedlivesplus.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Shared Lives Plus (national organisation)
-          </a>
-          </li>
-          </ul>
-          </section>
+        {/* Related help */}
+        <section id="related" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related help</h2>
+          <div className="space-y-3">
+            <a href="#/adult-social-care/care-homes-and-supported-living/supported-living" className="block text-[#bf3688] hover:underline font-semibold">
+              Supported living
+            </a>
+            <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="block text-[#bf3688] hover:underline font-semibold">
+              Care homes and nursing homes
+            </a>
+            <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support" target="_blank" rel="noopener noreferrer" className="block text-[#bf3688] hover:underline font-semibold">
+              Paying for care and support
+            </a>
+          </div>
+        </section>
 
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
+
       </div>
     </div>
   );

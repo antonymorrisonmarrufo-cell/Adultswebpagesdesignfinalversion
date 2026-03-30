@@ -1,195 +1,355 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, Phone } from 'lucide-react';
+// Image placeholder - source from Figma;
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+import HelpOnlineFormsBlock from '../../components/live-independently/HelpOnlineFormsBlock';
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function TelecarePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Telecare</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">Telecare</h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Telecare uses simple technology to help you feel safe and supported at
-          home. If something goes wrong, an alarm is triggered and help is sent to
-          you quickly.
-          </p>
-        </div>
-      </div>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Telecare and community alarm</span>
+        </nav>
 
-          {/* Personal alarms */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Personal alarms</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          A personal alarm is a small button you wear as a pendant or wristband.
-          If you fall or feel unwell, you press the button to alert a 24-hour
-          monitoring centre. An operator will speak to you through a base unit
-          connected to your phone line and arrange help if needed, whether that
-          is contacting a family member, a neighbour or the emergency services.
-          </p>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Telecare and assistive technology
+        </h1>
 
-          {/* Sensors */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Sensors</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          A range of sensors can be installed in your home to provide additional
-          safety. These include:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Smoke and heat detectors linked to the monitoring centre</li>
-          <li>Carbon monoxide detectors</li>
-          <li>Flood detectors for sinks and baths</li>
-          <li>Bed and chair occupancy sensors</li>
-          <li>Door sensors to alert if someone leaves the home unexpectedly</li>
-          <li>Epilepsy sensors</li>
-          <li>Fall detectors that trigger automatically</li>
-          </ul>
-          </section>
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-6 text-base">
+          Find alarms, sensors and remote monitoring that can help you stay safe at home and get help quickly in an emergency.
+        </p>
 
-          {/* How telecare works */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">How telecare works</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Telecare equipment is connected to a 24-hour monitoring centre. When an
-          alarm is triggered, the monitoring centre will:
-          </p>
-          <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Try to speak with you through the base unit</li>
-          <li>Contact your named responders (family, friends or neighbours)</li>
-          <li>Send a mobile response officer if no responder is available</li>
-          <li>Call the emergency services if the situation requires it</li>
-          </ol>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          A telecare technician will visit your home to install the equipment,
-          show you how it works and test it with you.
-          </p>
-          </section>
-
-          {/* Eligibility */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Eligibility</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Telecare is available to Waltham Forest residents who:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Are aged 18 or over</li>
-          <li>Have a disability, long-term health condition or are at risk of falling</li>
-          <li>Live alone or spend periods of time alone at home</li>
-          <li>Would benefit from additional reassurance and safety monitoring</li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          You do not need to have a care package or social worker to access
-          telecare. Anyone can refer themselves or be referred by a family
-          member, carer or professional.
-          </p>
-          </section>
-
-          {/* Costs */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Costs</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          There is a weekly charge for the telecare service which covers
-          equipment, installation, monitoring and maintenance. The current
-          charges are:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Basic personal alarm service: from &pound;4.50 per week</li>
-          <li>Enhanced telecare package with sensors: from &pound;7.00 per week</li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you receive certain benefits, you may be eligible for a reduction in
-          charges. Contact us for more information about costs.
-          </p>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">Request telecare</h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          To request a telecare service for yourself or someone else, complete
-          our online form or call us.
-          </p>
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-          <Link
-          to="/live-independently/request-telecare"
-          className="inline-block rounded-md bg-wf-green px-5 py-2.5 text-center text-sm font-semibold text-white no-underline hover:bg-wf-green/90"
-          >
-          Request telecare online
-          </Link>
+        {/* Primary CTAs */}
+        <div className="mb-10 flex flex-wrap gap-4">
           <a
-          href="tel:02084963130"
-          className="inline-block rounded-md border border-wf-green px-5 py-2.5 text-center text-sm font-semibold text-wf-green no-underline hover:bg-[#d7f8ff]"
+            href="#/adult-social-care/live-independently-at-home/request-telecare-or-community-alarm"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
           >
-          Call 020 8496 3130
+            Request telecare or community alarm
+            <ArrowRight size={18} />
           </a>
-          </div>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/falls-prevention">
-          Falls prevention
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </li>
-          <li>
-          <Link to="/live-independently/equipment-and-aids">
-          Equipment and aids
-          </Link>
-          </li>
-          <li>
-          <Link to="/paying-for-care">Paying for care</Link>
-          </li>
-          </ul>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="tel:02084963130"
+            className="inline-flex items-center gap-3 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 font-semibold hover:bg-gray-200 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
+          >
+            <Phone size={18} />
+            Call 020 8496 3130
+          </a>
         </div>
-      </div>
-    </div>
+
+        {/* Hero image */}
+        <div className="mb-12 max-w-2xl">
+          <img
+            src="/Images/placeholder.svg"
+            alt="Elderly woman sitting in a chair holding a community alarm pendant, with a support worker in a high-visibility jacket looking on from a doorway"
+            className="w-full h-auto rounded"
+          />
+        </div>
+
+        <div className="max-w-3xl space-y-0">
+
+          {/* Contents */}
+          <div className="bg-gray-200 border border-gray-300 p-6 mb-10">
+            <h2 className="font-bold text-gray-900 mb-4">Contents</h2>
+            <ul className="space-y-2">
+              <li><button onClick={() => scrollTo('what-is-it')} className="text-[#bf3688] underline hover:no-underline text-left">What telecare and community alarm can do</button></li>
+              <li><button onClick={() => scrollTo('alarm-only')} className="text-[#bf3688] underline hover:no-underline text-left">Community alarm only</button></li>
+              <li><button onClick={() => scrollTo('with-sensors')} className="text-[#bf3688] underline hover:no-underline text-left">Community alarm with telecare sensors</button></li>
+              <li><button onClick={() => scrollTo('who-can-get')} className="text-[#bf3688] underline hover:no-underline text-left">Who can get it</button></li>
+              <li><button onClick={() => scrollTo('costs')} className="text-[#bf3688] underline hover:no-underline text-left">What it costs</button></li>
+              <li><button onClick={() => scrollTo('info-needed')} className="text-[#bf3688] underline hover:no-underline text-left">What information we need</button></li>
+              <li><button onClick={() => scrollTo('digital-switchover')} className="text-[#bf3688] underline hover:no-underline text-left">Digital phone switchover</button></li>
+              <li><button onClick={() => scrollTo('related')} className="text-[#bf3688] underline hover:no-underline text-left">Related help</button></li>
+            </ul>
+          </div>
+
+          {/* What telecare and community alarm can do */}
+          <div id="what-is-it" className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">What telecare and community alarm can do</h2>
+            <p className="text-gray-700 mb-4">
+              Telecare and community alarm services can help people live more safely and independently at home.
+            </p>
+            <p className="text-gray-700 mb-4">
+              They can provide:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a way to call for help quickly in an emergency
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                reassurance if you live alone
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                extra peace of mind for family and carers
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                sensors that detect risks and raise an alert if something is wrong
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* Community alarm only */}
+          <div id="alarm-only" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Community alarm only</h2>
+            <p className="text-gray-700 mb-4">
+              A community alarm is a telephone unit linked to a pendant or wristband.
+            </p>
+            <p className="text-gray-700 mb-4">
+              When you press the red button, it connects 24 hours a day, 365 days a year to a control centre.
+            </p>
+            <p className="text-gray-700 mb-4">
+              The control centre can:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                speak to you
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                contact relatives, friends or neighbours
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                contact the emergency services if needed
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              To qualify for a community alarm, you may need to meet one or more of these criteria:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                live alone
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                be housebound
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                be home alone regularly while relatives or carers are out
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                feel vulnerable at home
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                be a carer of a disabled child or adult who may need emergency help
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                need a way to contact a doctor or someone else in an emergency
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* Community alarm with telecare sensors */}
+          <div id="with-sensors" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Community alarm with telecare sensors</h2>
+            <p className="text-gray-700 mb-4">
+              Telecare adds sensors around the home to help detect problems and raise an alert if needed.
+            </p>
+            <p className="text-gray-700 mb-4">
+              For example, sensors may detect:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                if someone leaves the house at an unsafe time
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                if someone does not return to bed after getting up in the night
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                smoke, gas or heat
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                movement that may alert a carer in the same home
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              If an alarm is raised, the operator will check the person is safe and may contact a relative, mobile warden or emergency services.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* Who can get it */}
+          <div id="who-can-get" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Who can get it</h2>
+            <p className="text-gray-700 mb-4">
+              Community alarm and telecare may be suitable if you:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                live alone
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                feel vulnerable at home
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                need extra reassurance because of a health condition, disability or memory problem
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                need support to remain safe at home
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                are worried about someone who may need help in an emergency
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* What it costs */}
+          <div id="costs" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">What it costs</h2>
+            <p className="text-gray-700 mb-4">
+              Current live charges are:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                community alarm only: £3.47 per week
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                community alarm with telecare equipment: £5.78 per week
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              This usually includes monitoring and response.
+            </p>
+            <p className="text-gray-700">
+              You can pay monthly by standing order or be invoiced quarterly.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* What information we need */}
+          <div id="info-needed" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">What information we need</h2>
+            <p className="text-gray-700 mb-4">
+              To set up the service, we may need:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                personal details
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                emergency contact details
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                details of at least two local keyholders who can help with access if needed
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                information about your home setup
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                details about any risks or support needs
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              If you do not have a keyholder, a keysafe may be considered.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* Digital phone switchover */}
+          <div id="digital-switchover" className="py-10">
+            <div className="bg-[#fcedf3] border-2 border-[#003078] bg-[#d7f8ff] px-5 py-4 mb-6">
+              <h3 className="font-bold text-gray-900 mb-2">Digital phone switchover</h3>
+              <p className="text-gray-900 text-sm">
+                The UK landline network is being upgraded. Old analogue phone lines are being phased out and many customers are being moved to digital services.
+              </p>
+            </div>
+            <p className="text-gray-700 mb-4">
+              If you already have a community alarm, the service may need to check your equipment before your phone line changes.
+            </p>
+            <p className="text-gray-700">
+              The current live page says the wider switchover is expected to complete by January 2027.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          {/* Related help */}
+          <div id="related" className="pt-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Related help</h2>
+            <ul className="space-y-2 mb-6">
+              <li>
+                <a href="#/adult-social-care/live-independently-at-home/help-at-home-and-personal-care" className="text-[#bf3688] underline hover:no-underline">
+                  Help at home and personal care
+                </a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/live-independently-at-home/falls-prevention-and-reablement" className="text-[#bf3688] underline hover:no-underline">
+                  Falls prevention and reablement
+                </a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="text-[#bf3688] underline hover:no-underline">
+                  Keeping safe at home
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <HelpOnlineFormsBlock />
+
+        </div>
+
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

@@ -1,138 +1,214 @@
-import { Link } from "react-router-dom";
-
 export default function WorkEducationPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Work and education</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Work, education and training</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Work and education</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Balancing a caring role with work or education can be challenging. You have legal rights as a
-          working carer, and there is support available to help you continue with work or study.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Flexible working */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Flexible working rights</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          As a carer, you have important rights at work. Since April 2024, all employees have the right
-          to request flexible working from day one of employment. This means you can ask your employer for:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Changes to your working hours (for example, starting later or finishing earlier)</li>
-          <li>Compressed hours (working your hours over fewer days)</li>
-          <li>Working from home or a combination of home and office</li>
-          <li>Part-time working</li>
-          <li>Job sharing</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Your employer must consider your request reasonably and give you a decision within two months.
-          They can only refuse for specific business reasons.
-          </p>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Work, education and training</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Find support if you want to balance caring with work or study, return to work, or build skills for the future.
+        </p>
 
-          {/* Carer's leave */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Carer's leave</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Since April 2024, employees who are carers have the right to one week of unpaid carer's leave
-          per year. This can be taken flexibly, in individual or half days. You do not need to provide
-          evidence of your caring role, and your employer cannot refuse the request.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You may also be entitled to reasonable time off for emergencies involving dependants.
-          </p>
-          </section>
-
-          {/* Education support */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Education and training support</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you want to continue your education or take up new training, support is available:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Many colleges and universities have carer support policies, including flexibility with deadlines and attendance</li>
-          <li>You may be eligible for additional funding or bursaries as a student carer</li>
-          <li>The Open University offers flexible distance learning that can fit around caring</li>
-          <li>Local adult education courses are available at Waltham Forest College</li>
-          <li>Free online courses are available through platforms such as FutureLearn and the Skills Toolkit</li>
-          </ul>
-          </section>
-
-          {/* Employment advice */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Employment advice</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you need help with work-related issues, the following services can provide advice:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>ACAS</strong> - free advice on workplace rights (call 0300 123 1100)</li>
-          <li><strong>Citizens Advice</strong> - help with employment issues, benefits, and rights</li>
-          <li><strong>Carers UK Employer Support</strong> - resources and toolkits for working carers</li>
-          <li><strong>Jobcentre Plus</strong> - support with finding work that fits around your caring responsibilities</li>
-          </ul>
-          </section>
-
-          {/* Talk to us */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Talk to us</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If your caring role is affecting your ability to work or study, a carers assessment can help
-          identify support. Contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/financial-support" className="text-wf-blue underline hover:text-wf-green">
-          Financial support for carers
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.gov.uk/flexible-working" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          GOV.UK - flexible working
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="https://www.walthamforest.gov.uk/adult-learning"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Find work and training support
           </a>
-          </li>
-          <li>
-          <a href="https://www.carersuk.org/help-and-advice/work-and-career" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Carers UK - work and career
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Get advice
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
+
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#balancing" className="text-[#bf3688] underline hover:no-underline">Balancing work and caring</a></li>
+            <li><a href="#flexible-working" className="text-[#bf3688] underline hover:no-underline">Flexible working and your rights</a></li>
+            <li><a href="#returning" className="text-[#bf3688] underline hover:no-underline">Returning to work</a></li>
+            <li><a href="#training" className="text-[#bf3688] underline hover:no-underline">Training and skills development</a></li>
+            <li><a href="#financial-help" className="text-[#bf3688] underline hover:no-underline">Financial help while returning to work</a></li>
+            <li><a href="#schemes" className="text-[#bf3688] underline hover:no-underline">Schemes and services that can help</a></li>
+          </ul>
+        </div>
+
+        <div className="prose max-w-none">
+          
+          <div id="balancing" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Balancing work and caring</h2>
+            <p className="text-gray-700 mb-4">
+              Many carers want to stay in work or education but find it difficult to balance with their caring role.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Support may include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">respite support to give you time to work or study</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">advice on flexible working and your employment rights</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">help with childcare or emergency care plans</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="flexible-working" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Flexible working and your rights</h2>
+            <p className="text-gray-700 mb-4">
+              If you are employed, you have the right to request flexible working arrangements.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This could include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">changing your working hours or patterns</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">working from home part or full time</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">reducing your hours</span>
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              You may also have the right to time off for emergencies and unpaid carer's leave.
+            </p>
+            <p className="text-gray-700">
+              <a href="https://www.gov.uk/flexible-working" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-bold">Find out more about flexible working on GOV.UK</a>
+            </p>
+          </div>
+
+          <div id="returning" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Returning to work</h2>
+            <p className="text-gray-700 mb-4">
+              If you have taken time out of work to care, returning can feel daunting.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Help is available including:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">advice on job searching and updating your CV</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">confidence-building and interview skills support</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">information on local job clubs and employment services</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="training" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Training and skills development</h2>
+            <p className="text-gray-700 mb-4">
+              Free or low-cost training may be available to help you build new skills or update existing qualifications.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This could include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">online courses and distance learning</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">IT and digital skills training</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">vocational courses and apprenticeships</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="financial-help" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Financial help while returning to work</h2>
+            <p className="text-gray-700 mb-4">
+              Some benefits and grants may be available to help with costs when returning to work or training.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This could include help with:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">course fees and materials</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">travel costs</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">childcare or care costs during training</span>
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              Contact Carers First or your local Jobcentre Plus for advice on what may be available.
+            </p>
+          </div>
+
+          <div id="schemes" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Schemes and services that can help</h2>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.carersfirst.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Carers First – work and training support</a>
+              </li>
+              <li>
+                <a href="https://www.gov.uk/jobsearch" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Find a job – GOV.UK</a>
+              </li>
+              <li>
+                <a href="https://nationalcareers.service.gov.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">National Careers Service</a>
+              </li>
+              <li>
+                <a href="https://www.walthamforest.gov.uk/adult-learning" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Waltham Forest adult learning and skills</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

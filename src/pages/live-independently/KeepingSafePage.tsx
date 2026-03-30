@@ -1,163 +1,102 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, Shield, Phone, Mail, Flame, Info } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
 
-const subPages = [
+const safetyCards = [
   {
-    title: "Callers to your door",
-    description:
-      "How to stay safe when someone calls at your door, No Cold Calling zones and how to report suspicious callers.",
-    href: "/live-independently/keeping-safe/callers-to-your-door",
+    title: 'Callers to your door',
+    icon: Shield,
+    href: '#/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door'
   },
   {
-    title: "Online, email and postal fraud",
-    description:
-      "Common scam types, how to protect yourself and how to report online, email or postal fraud.",
-    href: "/live-independently/keeping-safe/online-email-postal-fraud",
+    title: 'Online, email or postal fraud',
+    icon: Mail,
+    href: '#/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud'
   },
   {
-    title: "Fraud over the phone",
-    description:
-      "How to recognise phone scams, call blocking advice and how to report telephone fraud.",
-    href: "/live-independently/keeping-safe/fraud-over-the-phone",
+    title: 'Fraud over the phone',
+    icon: Phone,
+    href: '#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone'
   },
   {
-    title: "Fire safety at home",
-    description:
-      "Free fire safety visits, smoke alarms, fire escape plans and fire prevention advice.",
-    href: "/live-independently/keeping-safe/fire-safety",
+    title: 'Fire safety advice for your home',
+    icon: Flame,
+    href: '#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home'
   },
   {
-    title: "Further information on staying safe",
-    description:
-      "Useful contacts, resources and organisations that can help you stay safe.",
-    href: "/live-independently/keeping-safe/further-information",
-  },
+    title: 'Further information about keeping your home safe',
+    icon: Info,
+    href: '#/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe'
+  }
 ];
 
 export default function KeepingSafePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Keeping safe</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">Keeping safe at home</h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Staying safe at home is about more than locks and alarms. Fraud, scams
-          and bogus callers target vulnerable people every day. Find out how to
-          protect yourself and where to get help.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Keeping safe at home</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Keeping safe at home
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-6 text-base">
+          Practical advice to help you stay safe from scams, fraud, doorstep crime and fire risks at home.
+        </p>
+
+        {/* Intro copy */}
+        <p className="text-gray-700 max-w-4xl mb-12">
+          Use this section to find simple advice about common risks and where to get trusted help.
+        </p>
+
+        {/* Safety topic cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl">
+          {safetyCards.map((card, index) => {
+            const Icon = card.icon;
+            return (
+              <a
+                key={index}
+                href={card.href}
+                className="bg-white border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow relative block group"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-[#fcedf3] flex items-center justify-center flex-shrink-0 group-hover:bg-[#bf3688] transition-colors">
+                    <Icon className="text-[#bf3688] group-hover:text-white transition-colors" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#bf3688] transition-colors">
+                      {card.title}
+                    </h3>
+                  </div>
+                  <ArrowRight className="text-[#bf3688] flex-shrink-0 mt-1" size={20} />
+                </div>
+              </a>
+            );
+          })}
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-          {/* Sub-page cards */}
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {subPages.map((page) => (
-          <Link
-          key={page.href}
-          to={page.href}
-          className="flex flex-col bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow no-underline group min-h-[180px]"
-          >
-          <h3 className="text-base font-bold text-[#bf3688] mb-2">
-          {page.title}
-          </h3>
-          <p className="text-sm text-[#231F20] flex-1">
-          {page.description}
-          </p>
-          <div className="flex justify-end mt-4">
-            <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center group-hover:bg-[#a02d73] transition-colors">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            </div>
-          </div>
-          </Link>
-          ))}
-          </div>
-
-          {/* Emergency info */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">
-          In an emergency
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you feel threatened or are in immediate danger, call{" "}
-          <strong>999</strong>. To report a non-emergency crime, call the police
-          on <strong>101</strong>.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Adult Social Care:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
-          </li>
-          <li>
-          <Link to="/safeguarding">Safeguarding</Link>
-          </li>
-          <li>
-          <Link to="/live-independently/falls-prevention">
-          Falls prevention
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/home-adaptations">
-          Home adaptations
-          </Link>
-          </li>
-          </ul>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
         </div>
-      </div>
-    </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

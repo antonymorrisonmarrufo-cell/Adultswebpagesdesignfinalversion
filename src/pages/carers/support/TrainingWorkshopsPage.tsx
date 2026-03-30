@@ -1,121 +1,115 @@
-import { Link } from "react-router-dom";
-
 export default function TrainingWorkshopsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">Support for carers</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Training and workshops</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer/support-for-carers" className="text-[#bf3688] hover:underline">Support for carers</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Training and workshops</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Training and workshops</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Free training courses and workshops are available to help you develop the skills and confidence
-          you need in your caring role.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Moving and handling */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Moving and handling</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you help the person you care for to move, transfer, or reposition, it is important to know
-          how to do this safely. Moving and handling training teaches you:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>How to move someone safely without injuring yourself or them</li>
-          <li>How to use hoists, slide sheets, and other equipment</li>
-          <li>Techniques for helping someone to sit, stand, or get into bed</li>
-          <li>How to protect your back and joints</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Training and workshops for carers</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Build your confidence, learn new skills and connect with other carers through training, workshops and local activities.
+        </p>
 
-          {/* First aid */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">First aid</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Basic first aid skills can give you confidence to handle medical situations at home. Training covers:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>What to do if someone falls</li>
-          <li>How to deal with choking</li>
-          <li>Basic wound care and managing bleeding</li>
-          <li>When to call 999 and what information to give</li>
-          <li>CPR and using a defibrillator</li>
-          </ul>
-          </section>
-
-          {/* Condition-specific */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Condition-specific training</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          We offer workshops tailored to the specific conditions or needs of the person you care for. These include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Dementia awareness</strong> - understanding dementia, communication techniques, and managing challenging behaviour</li>
-          <li><strong>Mental health awareness</strong> - recognising signs of mental health conditions and how to provide support</li>
-          <li><strong>Medication management</strong> - safely managing and administering medication</li>
-          <li><strong>Nutrition and hydration</strong> - supporting healthy eating and drinking for the person you care for</li>
-          <li><strong>Managing continence</strong> - practical skills and advice for dealing with continence issues</li>
-          <li><strong>End of life care</strong> - understanding palliative care and how to support someone approaching the end of life</li>
-          </ul>
-          </section>
-
-          {/* How to book */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">How to book</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          All training is free for carers in Waltham Forest. Courses are held at the Carers Hub and other
-          community venues, with some available online. To find out about upcoming courses or to book a place,
-          contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
-          or ask at the Carers Hub.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/local-groups-services" className="text-wf-blue underline hover:text-wf-green">
-          Local groups and services
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            See training and workshops
+          </a>
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Contact Carers First
+          </a>
         </div>
+
+        <div className="prose max-w-none">
+          
+          <p className="text-lg text-gray-700 mb-8">
+            Training and workshops can help you feel more confident in your caring role, learn practical skills, and meet other carers in similar situations.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            
+            <div className="bg-white border-2 border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Training and workshops</h3>
+              <p className="text-gray-700 mb-4">
+                Learn practical caring skills, manage stress, understand conditions like dementia, and get advice on benefits and finances.
+              </p>
+              <p className="text-gray-700">
+                Contact Carers First to find out what training is available.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">What's on guide</h3>
+              <p className="text-gray-700 mb-4">
+                Regular activities, social events and information sessions for carers across Waltham Forest.
+              </p>
+              <p className="text-gray-700">
+                Check the Carers First website for the latest events.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Peer support groups</h3>
+              <p className="text-gray-700 mb-4">
+                Connect with other carers, share experiences and get mutual support in a safe and friendly environment.
+              </p>
+              <p className="text-gray-700">
+                Groups meet regularly in different parts of the borough.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Carers' forum</h3>
+              <p className="text-gray-700 mb-4">
+                Have your say on services, share your views and help shape support for carers in Waltham Forest.
+              </p>
+              <p className="text-gray-700">
+                Get involved by contacting Carers First.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Online learning resources</h3>
+              <p className="text-gray-700 mb-4">
+                Access free online courses and information at a time that suits you.
+              </p>
+              <p className="text-gray-700">
+                Carers First can point you to trusted online learning platforms.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

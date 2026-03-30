@@ -1,161 +1,211 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "How to get support", to: "/how-to-get-support" },
-  { title: "What happens during your assessment", to: "/how-to-get-support/what-happens-during-your-assessment" },
-  { title: "Paying for care", to: "/paying-for-care" },
-];
-
 export default function GettingCareAndSupportPlanPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/how-to-get-support" className="text-wf-blue underline hover:text-wf-green">How to get support</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Getting a care and support plan</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Getting a care and support plan
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/how-to-get-support" className="hover:underline">How to get support</a>
+          <span className="mx-1">&gt;</span>
+          <span>Getting your care and support plan</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Getting your care and support plan
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If your assessment shows that you have eligible needs, we will work with you to create a care and support plan. This sets out what help you will receive, how it will be provided, and how it will be paid for.
+        </p>
+
+        {/* What a care and support plan is */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What a care and support plan is</h2>
+          <p className="text-gray-700">
+            A care and support plan is a written document created with you that describes:
+          </p>
+          <ul className="space-y-2 text-gray-700 mt-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Your eligible care and support needs</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>What outcomes you want to achieve — for example, being able to get washed and dressed safely, getting out of the house, or maintaining relationships</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>The support that will be provided to meet those needs</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>How your support will be arranged — whether by the council, by you through a direct payment, or a combination</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Your personal budget — the amount of money allocated to meet your eligible needs</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Any contribution you need to make towards the cost</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>What to do if something goes wrong or your support does not turn up</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Who creates the plan */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who creates the plan</h2>
+          <p className="text-gray-700 mb-4">
+            You are involved in creating your plan. You can write it yourself, work on it with a family member or friend, or do it with support from a social care professional. If you need help and do not have anyone to support you, we can arrange an independent advocate.
+          </p>
+          <p className="text-gray-700">
+            The plan must be agreed by both you and the council before your support begins.
+          </p>
+        </section>
+
+        {/* What you can include */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you can include</h2>
+          <p className="text-gray-700 mb-4">
+            Your plan is about you and your life. It can include:
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>What is important to you — your routines, priorities, likes and dislikes</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>The people who matter to you</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>Your hopes and goals</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>The kind of support that would make the biggest difference to your daily life</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>How you want your support to be arranged</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            Include things that will genuinely improve your life. Your plan should not contain anything you do not agree with.
+          </p>
+        </section>
+
+        {/* Your personal budget */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Your personal budget</h2>
+          <p className="text-gray-700 mb-4">
+            Everyone whose eligible needs are met by the council receives a personal budget. This is the amount of money needed to meet the cost of your eligible care and support needs. There are different ways your personal budget can be managed:
+          </p>
+          <ul className="space-y-3 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a direct payment</strong>
+                <span className="text-gray-700"> — the money is paid to you so you can arrange your own support</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a council-managed account</strong>
+                <span className="text-gray-700"> — the council arranges support on your behalf</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a mix of both</strong>
+                <span className="text-gray-700"> — you manage some of your support and the council manages the rest</span>
+              </div>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            For more information, see our page on direct payments and personal budgets.
+          </p>
+        </section>
+
+        {/* How your plan is reviewed */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How your plan is reviewed</h2>
+          <p className="text-gray-700 mb-4">
+            Your care and support plan is reviewed regularly to make sure it is still working for you.
+          </p>
+          <ul className="space-y-2 text-gray-700 mb-4">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>You will usually have an initial review shortly after your support starts, to check everything is working</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>After that, your plan will be reviewed at least once a year</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>You can ask for a review at any time if your needs change or your support is not working</span>
+            </li>
+          </ul>
+          <p className="text-gray-700">
+            During a review, we check whether your needs have changed, whether your support is meeting those needs, and whether your personal budget is still right.
+          </p>
+        </section>
+
+        {/* If you are unhappy */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you are unhappy</h2>
+          <p className="text-gray-700">
+            If you disagree with your plan, or if you think your needs are not being met, talk to your social care professional first. If you are still unhappy, you can use the council's complaints process to have your case reviewed independently.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care/direct-payments-and-personal-budgets" className="text-[#bf3688] hover:underline">
+                Direct payments and personal budgets
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care" className="text-[#bf3688] hover:underline">
+                Paying for your care
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/what-happens-during-your-assessment" className="text-[#bf3688] hover:underline">
+                What happens during your assessment
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/how-to-get-support/request-an-assessment" className="text-[#bf3688] hover:underline">
+                Request an assessment
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If your assessment shows you have eligible needs, we will work with you
-      to create a care and support plan. This plan sets out what support you
-      will receive and how it will be arranged.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What is included in your plan</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your care and support plan is a personalised document that includes:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>A summary of your assessed needs and what matters most to you</li>
-      <li>The outcomes you want to achieve</li>
-      <li>The specific services and support that will be provided</li>
-      <li>Your personal budget, which is the amount the council will spend on your care</li>
-      <li>How and when your plan will be reviewed</li>
-      <li>Any contribution you may need to make towards the cost of your care</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You will be fully involved in developing your plan. We use a
-      strengths-based approach, which means we focus on what you can do and
-      what support networks you already have, as well as areas where you need help.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Your personal budget</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your personal budget is the amount of money the council allocates to meet
-      your eligible care needs. You can choose how to use your personal budget
-      in one of the following ways:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Council-managed budget:</strong> The council arranges and pays
-      for your care services directly
-      </li>
-      <li>
-      <strong>Direct payment:</strong> You receive the money and arrange your
-      own care, giving you more choice and control
-      </li>
-      <li>
-      <strong>A combination:</strong> Some services are arranged by the council
-      and some by you using a direct payment
-      </li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      We will explain these options to you and help you decide which approach
-      works best for your situation.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Reviewing your plan</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your care and support plan will be reviewed regularly to make sure it
-      continues to meet your needs. Reviews typically take place:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Within the first 6 to 8 weeks after your plan starts</li>
-      <li>At least once every 12 months after that</li>
-      <li>At any time if your needs change significantly</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can also request a review at any time if you feel your plan is no
-      longer working for you. Contact your social worker or our Adult Social
-      Care team to arrange this.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If you have questions about your care and support plan, get in touch.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

@@ -1,265 +1,194 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, FileText } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+import HelpOnlineForms from '../../components/transport/HelpOnlineForms';
+
+const relatedLinks = [
+  { title: 'Freedom Pass for older people', href: 'https://www.walthamforest.gov.uk/adult-social-care/help-getting-around/freedom-pass-older-people' },
+  { title: 'Freedom Pass for disabled people', href: 'https://www.walthamforest.gov.uk/adult-social-care/help-getting-around/freedom-pass-disabled-people' },
+  { title: 'Apply for a Blue Badge parking permit', href: 'https://www.walthamforest.gov.uk/parking-roads-and-travel/blue-badges-and-disabled-bays/apply-blue-badge-parking-permit' },
+  { title: 'Apply for a Blue Badge for organisations', href: 'https://www.walthamforest.gov.uk/parking-roads-and-travel/blue-badges-and-disabled-bays/apply-blue-badge-organisations' },
+  { title: 'Apply for a disabled parking bay', href: 'https://www.walthamforest.gov.uk/parking-roads-and-travel/blue-badges-and-disabled-bays/apply-disabled-parking-bay' },
+];
 
 export default function TaxicardPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-gray-600">
-          <li>
-          <Link to="/" className="hover:underline text-[#004E3E]">
-          Home
-          </Link>
+    <>
+    <div className="min-h-screen bg-white">
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li>
-          <Link
-          to="/adult-social-care"
-          className="hover:underline text-[#004E3E]"
-          >
-          Adult Social Care
-          </Link>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li>
-          <Link
-          to="/transport"
-          className="hover:underline text-[#004E3E]"
-          >
-          Travel and transport
-          </Link>
+          <a href="#/adult-social-care/travel-and-transport" className="hover:underline">Travel and transport</a>
           <span className="mx-1">&gt;</span>
-          </li>
-          <li className="text-gray-900 font-medium">Taxicard</li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20] mb-6">Taxicard</h1>
-          
-          <p className="text-lg text-gray-700 mb-8">
-          The Taxicard scheme provides subsidised door-to-door taxi and private
-          hire vehicle journeys for London residents with serious mobility
-          impairments or who are severely visually impaired. The scheme is
-          jointly funded by Transport for London and the London Borough of
-          Waltham Forest.
-          </p>
-        </div>
-      </div>
+          <span>Taxicard scheme</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+          {/* H1 */}
+          <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+            Taxicard scheme
+          </h1>
 
-          {/* How it works */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          How the Taxicard scheme works
-          </h2>
-          <p className="text-gray-700 mb-4">
-          With a Taxicard, you pay a fixed contribution towards each journey
-          and the scheme pays the rest. The amount you pay depends on the
-          length of your journey:
+          {/* Standfirst */}
+          <p className="text-gray-700 max-w-4xl mb-2 text-base font-semibold">
+            Reduced taxi fares for people who find it difficult to use public transport.
           </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>
-          You pay a subsidised flat fare for each trip (typically around
-          &pound;2.50 to &pound;3.50 depending on the journey)
-          </li>
-          <li>
-          The scheme covers the remainder of the fare up to a maximum
-          subsidy per trip
-          </li>
-          <li>
-          If the fare exceeds the maximum subsidy, you will need to pay the
-          difference
-          </li>
-          <li>
-          You are allocated a set number of trips per year (typically around
-          104 trips)
-          </li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          You can use your Taxicard with licensed black cabs and participating
-          private hire vehicles. Trips can be booked in advance or hailed on
-          the street (black cabs only).
-          </p>
-          </section>
 
-          {/* Eligibility */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Who is eligible
-          </h2>
-          <p className="text-gray-700 mb-4">
-          You may be eligible for a Taxicard if you are a Waltham Forest
-          resident and:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>
-          You have a permanent disability that means you are unable to use
-          buses, trains or the Tube
-          </li>
-          <li>
-          You receive the higher rate of the mobility component of Disability
-          Living Allowance (DLA)
-          </li>
-          <li>
-          You receive Personal Independence Payment (PIP) and scored 8 points
-          or more in the &ldquo;moving around&rdquo; activity
-          </li>
-          <li>
-          You are registered blind or severely sight impaired
-          </li>
-          <li>
-          You have a severe mobility impairment that is not adequately
-          addressed by other transport services
-          </li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          You do not need to hold a Disabled Persons Freedom Pass or Blue
-          Badge to apply, though having one of these may support your
-          application.
-          </p>
-          </section>
+          <div className="max-w-3xl mt-6 space-y-0">
 
-          {/* How to apply */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          How to apply
-          </h2>
-          <p className="text-gray-700 mb-4">
-          You can apply for a Taxicard online or by post. To apply, you will
-          need:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>
-          Proof of your Waltham Forest address (such as a council tax bill
-          or utility bill)
-          </li>
-          <li>
-          Evidence of your disability or qualifying benefit (such as a DLA
-          or PIP award letter)
-          </li>
-          <li>A recent photograph</li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          The Taxicard itself is free. Applications are usually processed
-          within 4 weeks.
-          </p>
-          <div className="mt-4">
-          <a
-          href="https://www.londoncouncils.gov.uk/services/taxicard"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#004E3E] text-white font-medium px-6 py-3 rounded hover:bg-[#004d47] transition-colors"
-          >
-          Apply on the London Councils website
-          </a>
-          </div>
-          </section>
+            {/* Intro */}
+            <div className="pb-10">
+              <p className="text-gray-700 mb-4 font-medium">
+                Taxicard offers subsidised travel in licensed taxis and private hire vehicles to residents with serious mobility impairments or who are severely sight impaired.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                The scheme helps disabled people who cannot use the bus or Tube get out and about with subsidised taxi trips.
+              </p>
+            </div>
 
-          {/* Booking trips */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Booking trips
-          </h2>
-          <p className="text-gray-700 mb-4">
-          You can book a Taxicard trip by:
-          </p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-          <li>
-          Calling the Taxicard booking line on{" "}
-          <a
-          href="tel:08003601111"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          0800 360 1111
-          </a>
-          </li>
-          <li>Hailing a licensed black cab on the street and showing your Taxicard</li>
-          <li>Booking in advance for a specific date and time</li>
-          </ul>
-          <p className="text-gray-700 mt-4">
-          When you travel, show your Taxicard to the driver at the start of
-          the journey. You will pay your contribution directly to the driver
-          at the end of the trip.
-          </p>
-          </section>
+            <hr className="border-gray-200" />
 
-          {/* Contact */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-[#bf3688] mb-4">
-          Contact
-          </h2>
-          <p className="text-gray-700 mb-2">
-          Taxicard is managed by London Councils. For queries about your
-          Taxicard, contact the London Councils Taxicard team:
-          </p>
-          <p className="text-gray-700 mb-2">
-          Telephone:{" "}
-          <a
-          href="tel:03432221234"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          0343 222 1234
-          </a>
-          </p>
-          <p className="text-gray-700">
-          To book trips, contact ComCab London:{" "}
-          <a
-          href="tel:02079080271"
-          className="text-[#004E3E] font-medium hover:underline"
-          >
-          020 7908 0271
-          </a>
-          </p>
-          </section>
+            {/* Double swiping */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Double swiping</h2>
+              <p className="text-gray-700 mb-3 font-semibold">Waltham Forest allows double swiping for Taxicard holders.</p>
+              <p className="text-gray-700 mb-3">Double swiping allows you to use two trip allocations to cover one longer journey.</p>
+              <p className="text-gray-700 leading-relaxed">
+                If you choose to double swipe, you will be charged double the minimum fare contribution and receive double the maximum subsidy for that journey.
+              </p>
+            </div>
 
-          {/* Related links */}
-          <div className="bg-[#f3f2f1] rounded-lg border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-[#bf3688] mb-4">
-          Related links
-          </h2>
-          <ul className="space-y-2 text-[#004E3E]">
-          <li>
-          <Link
-          to="/transport"
-          className="hover:underline"
-          >
-          Travel and transport
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/freedom-pass-disabled"
-          className="hover:underline"
-          >
-          Freedom Pass for disabled people
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/blue-badge"
-          className="hover:underline"
-          >
-          Blue Badge
-          </Link>
-          </li>
-          <li>
-          <Link
-          to="/transport/transport-mobility"
-          className="hover:underline"
-          >
-          Transport and mobility support
-          </Link>
-          </li>
-          </ul>
+            <hr className="border-gray-200" />
+
+            {/* How to apply */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">How to apply for a Taxicard</h2>
+              <p className="text-gray-700 mb-6 font-semibold">Visit London Councils to apply for a Taxicard.</p>
+              <a
+                href="https://www.londoncouncils.gov.uk/services/taxicard/apply-taxicard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 mb-6 shadow-sm"
+              >
+                Apply for a Taxicard
+                <ArrowRight size={18} />
+              </a>
+              <p className="text-gray-700 mb-2 font-medium">
+                If you meet the automatic criteria you will need to provide proof of your entitlement.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                You will also need proof that you are a permanent resident of the London Borough of Waltham Forest and a passport-size photograph.
+              </p>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Replacing a lost Taxicard */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Replacing a lost Taxicard</h2>
+              <p className="text-gray-700 mb-6">
+                To replace a lost Taxicard, download and complete the replacement form and return it to London Councils.
+              </p>
+              <a
+                href="https://www.walthamforest.gov.uk/sites/default/files/2021-11/lost_taxicard.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 border border-gray-400 bg-white px-5 py-4 hover:bg-gray-50 hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group shadow-sm"
+              >
+                <FileText className="text-[#bf3688] flex-shrink-0" size={24} />
+                <span className="text-gray-900 font-bold text-sm group-hover:text-[#bf3688] transition-colors">
+                  Taxicard replacement form (PDF)
+                </span>
+                <ArrowRight className="text-[#bf3688] ml-8" size={20} />
+              </a>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Contacting the Taxicard service */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Contacting the Taxicard service</h2>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                The Taxicard service is operated by{' '}
+                <a
+                  href="https://www.londoncouncils.gov.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#bf3688] underline hover:no-underline font-bold"
+                >
+                  London Councils
+                </a>{' '}
+                on behalf of all the London boroughs.
+              </p>
+              <div className="space-y-3">
+                <a
+                  href="https://www.londoncouncils.gov.uk/taxicard?postcode=E17+4jf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                >
+                  <ArrowRight size={14} />
+                  Taxicard service — Waltham Forest details
+                </a>
+                <div className="pt-1">
+                  <a
+                    href="https://www.londoncouncils.gov.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-bold"
+                  >
+                    <ArrowRight size={14} />
+                    London Councils website
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Help with online forms */}
+            <HelpOnlineForms />
+
+            <hr className="border-gray-200 mt-10" />
+
+            {/* Related links */}
+            <div className="py-10">
+              <h2 className="text-[#bf3688] font-bold text-2xl mb-6">Related information</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {relatedLinks.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center justify-between gap-4 border border-gray-300 bg-white p-4 hover:shadow-md hover:border-[#bf3688] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] shadow-sm"
+                  >
+                    <span className="text-gray-900 text-sm font-bold group-hover:text-[#bf3688] transition-colors">{link.title}</span>
+                    <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors shadow-sm">
+                      <ArrowRight className="text-white w-4 h-4" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+
           </div>
 
-          <p className="text-sm text-gray-500">Last updated: March 2026</p>
+          {/* Metadata */}
+          <div className="max-w-3xl pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+            <p>Last updated: 27 March 2026</p>
+            <p>Next review: 27 March 2027</p>
+          </div>
         </div>
-      </div>
+
+      </section>
     </div>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

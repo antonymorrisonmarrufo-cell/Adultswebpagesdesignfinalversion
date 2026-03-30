@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Paying for care", to: "/paying-for-care" },
-  { title: "Getting a care and support plan", to: "/how-to-get-support/getting-care-and-support-plan" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Paying for care", to: "/adult-social-care/paying-for-care" },
+  { title: "Getting a care and support plan", to: "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" },
 ];
 
 export default function ChargingFinancialPoliciesPage() {
@@ -23,7 +23,7 @@ export default function ChargingFinancialPoliciesPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+      <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -85,6 +85,59 @@ export default function ChargingFinancialPoliciesPage() {
       your assessed contribution. If your financial circumstances change, you
       can ask for a reassessment at any time.
       </p>
+      <div className="mt-4">
+      <a href="https://www.walthamforest.gov.uk/sites\/default\/files\/2025-11\/Fairer_contributions_policy_25_26%20%28Updated%20Oct25%29_v3.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Fairer Contributions Policy 2025/26 (PDF)
+      </a>
+      </div>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Residential care charging</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      This policy sets out how the council calculates contributions for residential
+      care — that is, care provided in a care home. It covers how the council
+      assesses your income and capital, the treatment of property, and the rules
+      around third-party top-up payments.
+      </p>
+      <div className="mt-4">
+      <a href="https://www.walthamforest.gov.uk/adult-social-care\/paying-care-and-support\/paying-your-care-and-support" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Residential Care Charging Policy [PDF — link to be added]
+      </a>
+      </div>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Deferred payment agreements</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      A deferred payment agreement allows people who own their home to delay paying
+      some of their care home costs. Full information about deferred payment
+      agreements, including eligibility and how to apply, is available on our
+      dedicated page.
+      </p>
+      <div className="mt-4">
+      <Link to="/adult-social-care/paying-for-care/deferred-payment-agreements" className="text-wf-blue underline hover:text-wf-green font-semibold">
+        Deferred payment agreements (under Paying for your care) &rarr;
+      </Link>
+      </div>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Direct payment scheme</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      Direct payments give people more choice and control over how their care and
+      support is arranged. This document explains how the direct payment scheme
+      works, including eligibility, what you can spend it on, and your
+      responsibilities.
+      </p>
+      <div className="mt-4">
+      <a href="https://www.walthamforest.gov.uk/adult-social-care\/paying-care-and-support\/direct-payments-and-personal-budgets" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Direct Payment Scheme [PDF — link to be added]
+      </a>
+      </div>
       </section>
 
       <section>

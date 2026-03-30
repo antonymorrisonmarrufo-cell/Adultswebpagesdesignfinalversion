@@ -1,248 +1,128 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowLeft, ExternalLink } from 'lucide-react';
+import FeedbackBanner from '../../../components/FeedbackBanner';
+import FeedbackSection from '../../../components/FeedbackSection';
 
-const contacts = [
+const externalLinks = [
   {
-    name: "Action Fraud",
-    description:
-      "The UK's national reporting centre for fraud and cybercrime.",
-    phone: "0300 123 2040",
-    website: "https://www.actionfraud.police.uk",
+    label: 'Crimestoppers',
+    description: 'Crime prevention and anonymous reporting',
+    href: 'https://crimestoppers-uk.org/'
   },
   {
-    name: "Citizens Advice",
-    description:
-      "Free, confidential advice on consumer issues, scams and your rights.",
-    phone: "0808 223 1133",
-    website: "https://www.citizensadvice.org.uk",
+    label: 'Metropolitan Police home security advice',
+    description: 'Home security and crime prevention advice',
+    href: 'https://www.met.police.uk/cp/crime-prevention/protect-home-crime/'
   },
   {
-    name: "Age UK Waltham Forest",
-    description:
-      "Support and advice for older people in the borough, including scam awareness.",
-    phone: "020 8558 5512",
-    website: "https://www.ageuk.org.uk/walthamforest",
+    label: 'Victim Support',
+    description: 'Support for people affected by crime',
+    href: 'https://www.victimsupport.org.uk/'
   },
   {
-    name: "London Fire Brigade",
-    description:
-      "Free home fire safety visits and fire prevention advice.",
-    phone: "0800 028 4428",
-    website: "https://www.london-fire.gov.uk",
-  },
-  {
-    name: "Victim Support",
-    description:
-      "Free, confidential support for victims of crime, including fraud.",
-    phone: "0808 168 9111",
-    website: "https://www.victimsupport.org.uk",
-  },
-  {
-    name: "Trading Standards",
-    description:
-      "Report rogue traders, scams and unfair trading practices.",
-    phone: "0808 223 1133",
-    website: "https://www.citizensadvice.org.uk/consumer",
-  },
+    label: 'London Fire Brigade home fire safety',
+    description: 'Fire safety advice and home safety visits',
+    href: 'https://www.london-fire.gov.uk/safety/the-home/'
+  }
 ];
 
 export default function FurtherInfoSafetyPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Further information</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">
-          Further information on staying safe
-          </h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          There are many organisations that can help you stay safe at home and in
-          the community. Below is a list of useful contacts and resources.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="hover:underline">Keeping safe at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Further information about keeping your home safe</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Further information about keeping your home safe
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Get clear home safety advice from Crimestoppers, the Met Police, Victim Support and the London Fire Brigade.
+        </p>
+
+        <div className="max-w-3xl space-y-0">
+
+          {/* Trusted external support */}
+          <div className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Trusted external support</h2>
+            <p className="text-gray-700 mb-6">
+              These organisations have practical advice to help you keep yourself and your home safe:
+            </p>
+            <ul className="space-y-2 mb-8">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                Crimestoppers for crime prevention and anonymous reporting
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                the Metropolitan Police for home security advice
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                Victim Support for people affected by crime
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                the London Fire Brigade for fire safety advice and home safety visits
+              </li>
+            </ul>
+
+            {/* Link cards */}
+            <div className="space-y-4">
+              {externalLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start justify-between gap-4 bg-gray-200 border border-gray-300 px-5 py-4 hover:bg-white hover:border-[#bf3688] transition-colors group"
+                >
+                  <div>
+                    <p className="font-semibold text-[#bf3688] group-hover:underline text-sm mb-1">{link.label}</p>
+                    <p className="text-gray-600 text-sm">{link.description}</p>
+                  </div>
+                  <ExternalLink className="text-[#bf3688] flex-shrink-0 mt-0.5" size={18} />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Previous navigation */}
+          <div className="pt-10 border-t border-gray-200 flex justify-start">
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <ArrowLeft size={18} />
+              <span>Fire safety advice for your home</span>
+            </a>
+          </div>
+
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-          {/* Useful contacts */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Useful contacts</h2>
-          <div className="mt-4 space-y-4">
-          {contacts.map((contact) => (
-          <div
-          key={contact.name}
-          className="rounded-lg border border-gray-200 bg-white p-5 shadow-sm"
-          >
-          <h3 className="text-lg font-bold text-[#231F20]">
-          {contact.name}
-          </h3>
-          <p className="mt-1 text-sm text-wf-gray">
-          {contact.description}
-          </p>
-          <div className="mt-2 flex flex-col gap-1 text-sm sm:flex-row sm:gap-4">
-          <a
-          href={`tel:${contact.phone.replace(/\s/g, "")}`}
-          className="font-semibold text-wf-green"
-          >
-          {contact.phone}
-          </a>
-          <a
-          href={contact.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          {contact.website.replace("https://www.", "")}
-          </a>
-          </div>
-          </div>
-          ))}
-          </div>
-          </section>
-
-          {/* Additional resources */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Additional resources
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          <a
-          href="https://www.met.police.uk/cp/crime-prevention"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Metropolitan Police crime prevention advice
-          </a>
-          </li>
-          <li>
-          <a
-          href="https://www.thinkjessica.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Think Jessica
-          </a>{" "}
-          - protecting vulnerable people from scams
-          </li>
-          <li>
-          <a
-          href="https://www.friendsagainstscams.org.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Friends Against Scams
-          </a>{" "}
-          - free online scam awareness training
-          </li>
-          <li>
-          <a
-          href="https://www.ncsc.gov.uk/cyberaware"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          National Cyber Security Centre
-          </a>{" "}
-          - advice on staying secure online
-          </li>
-          </ul>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">
-          Contact Adult Social Care
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you are worried about your safety or the safety of someone you
-          know, get in touch with our team.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Phone:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
-          Callers to your door
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/online-email-postal-fraud">
-          Online, email and postal fraud
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/fraud-over-the-phone">
-          Fraud over the phone
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/fire-safety">
-          Fire safety at home
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding">Safeguarding</Link>
-          </li>
-          </ul>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
         </div>
-      </div>
-    </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

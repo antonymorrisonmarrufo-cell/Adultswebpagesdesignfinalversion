@@ -1,131 +1,164 @@
-import { Link } from "react-router-dom";
+import CarersHero from '../../../components/carers/CarersHero';
+import Callout from '../../../components/carers/Callout';
+import { Phone, Download } from 'lucide-react';
+
+const emergencyNumbers = [
+  {
+    service: 'Emergency Duty Team (out of hours)',
+    phone: '020 8496 3130',
+    when: 'Evenings, weekends, bank holidays',
+    for: 'Urgent social care help when main services are closed'
+  },
+  {
+    service: 'Adult Social Care (office hours)',
+    phone: '020 8496 3130',
+    when: 'Monday–Friday, 9am–5pm',
+    for: 'Urgent carer assessments, replacement care, safeguarding'
+  },
+  {
+    service: 'NHS 111',
+    phone: '111',
+    when: '24/7',
+    for: 'Urgent medical advice for you or the person you care for'
+  },
+  {
+    service: 'Samaritans',
+    phone: '116 123',
+    when: '24/7',
+    for: 'Confidential emotional support if you\'re struggling to cope'
+  },
+  {
+    service: 'Carers First crisis line',
+    phone: '0300 303 1555',
+    when: 'Monday–Friday, 9am–5pm',
+    for: 'Urgent advice for carers, emotional support, signposting'
+  }
+];
 
 export default function EmergencyHelpPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Getting emergency help</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Getting emergency help as a carer</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          What to do if you have an emergency and cannot provide care, and how to get urgent help.
-          </p>
-        </div>
-      </div>
+    <>
+      <CarersHero 
+        title="Emergency help"
+        description="Get urgent support if you can't care due to illness, injury, or crisis. Available 24/7 for carers who need immediate help."
+        chips={['YC', 'PC', 'AC']}
+      />
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Immediate danger */}
-          <section className="mb-8 rounded-md border-2 border-[#d4351c] bg-[#fcedf3] p-6 shadow-sm">
-          <h2 className="text-xl font-bold text-[#d4351c]">If someone is in immediate danger</h2>
-          <p className="mt-2 text-wf-dark">
-          Call <strong>999</strong> immediately. This includes medical emergencies, fires, or if someone is at risk of harm.
-          </p>
-          </section>
-
-          {/* If you cannot provide care */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">If you suddenly cannot provide care</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If something happens to you and you are unable to care for the person who depends on you, take
-          these steps:
-          </p>
-          <ol className="mt-3 ml-6 list-decimal space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Contact your backup carers</strong> - if you have an emergency plan, contact the people named in it</li>
-          <li><strong>Call Adult Social Care</strong> on <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a> (Monday to Friday, 9am to 5pm)</li>
-          <li><strong>Out of hours</strong> - call the Emergency Duty Team on <strong>020 8496 3000</strong></li>
-          <li><strong>Let emergency services know</strong> - if you are taken to hospital, show your carer emergency card so staff can arrange care</li>
-          </ol>
-          </section>
-
-          {/* Carer emergency card */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Carer emergency card</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A carer emergency card is a small card you can carry in your wallet or purse. It lets people know
-          that you are a carer and that someone depends on you. If you are involved in an accident or become
-          unwell, the card tells emergency services who to contact so backup care can be arranged.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To get a free carer emergency card, contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
-          or ask at the Carers Hub.
-          </p>
-          </section>
-
-          {/* Planning ahead */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Planning ahead for emergencies</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The best way to handle emergencies is to plan for them in advance:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Create a carer emergency plan with key information about the person you care for</li>
-          <li>Identify at least two people who could step in at short notice</li>
-          <li>Make sure backup carers know the daily routine and care needs</li>
-          <li>Keep a list of medications, health conditions, and professional contacts in an accessible place</li>
-          <li>Carry a carer emergency card at all times</li>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <Callout type="urgent" title="If someone is in immediate danger">
+          <p className="mb-2">Call <strong>999</strong> if:</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>You or the person you care for is seriously injured or unwell</li>
+            <li>Someone is at risk of harm right now</li>
+            <li>There's a crime in progress</li>
           </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          <Link to="/carers/support/emergency-plan" className="text-wf-blue underline hover:text-wf-green">
-          Find out more about creating a carer emergency plan
-          </Link>
-          </p>
-          </section>
+        </Callout>
 
-          {/* Key contacts */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+        <section className="my-12">
+          <h2 className="text-[#bf3688] mb-6">24/7 emergency numbers</h2>
+          <div className="space-y-4">
+            {emergencyNumbers.map((item, index) => (
+              <div key={index} className="bg-white border-2 border-gray-200 p-6 rounded-lg hover:border-[#bf3688] transition-colors">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div className="flex-1">
+                    <h3 className="text-gray-900 mb-2">{item.service}</h3>
+                    <p className="text-gray-700 text-sm mb-2">{item.for}</p>
+                    <p className="text-gray-600 text-sm">{item.when}</p>
+                  </div>
+                  <a 
+                    href={`tel:${item.phone.replace(/\s/g, '')}`}
+                    className="flex items-center gap-2 bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors whitespace-nowrap"
+                  >
+                    <Phone className="w-4 h-4" />
+                    {item.phone}
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Key emergency contacts</h2>
-          <ul className="mt-3 space-y-2 text-wf-dark">
-          <li><strong>Emergency services:</strong> 999</li>
-          <li><strong>NHS non-emergency:</strong> 111</li>
-          <li><strong>Adult Social Care:</strong> <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a></li>
-          <li><strong>Out of hours Emergency Duty Team:</strong> 020 8496 3000</li>
-          <li><strong>Samaritans:</strong> 116 123 (free, 24 hours)</li>
-          </ul>
-          </section>
+        </section>
 
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers/support/emergency-plan" className="text-wf-blue underline hover:text-wf-green">
-          Carer emergency plan
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/tasks/breaks-respite" className="text-wf-blue underline hover:text-wf-green">
-          Arranging breaks and respite
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          </ul>
-          </section>
+        <section className="my-12">
+          <h2 className="text-[#bf3688] mb-6">Create your emergency plan</h2>
+          <p className="text-gray-700 mb-6 text-lg">
+            Don't wait for a crisis. Download our template and write down what should happen if you suddenly can't care.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-[#FFF0F7] to-white p-6 rounded-lg">
+              <h3 className="text-gray-900 mb-3">What to include</h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Who to call first (family, friends, professionals)</li>
+                <li>The person's daily routine and medication</li>
+                <li>Emergency contacts for services they use</li>
+                <li>Where important documents are kept</li>
+                <li>Backup care arrangements</li>
+              </ul>
+            </div>
 
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
+            <div className="bg-white border-2 border-[#bf3688] p-6 rounded-lg flex flex-col justify-between">
+              <div>
+                <h3 className="text-gray-900 mb-3">Download templates</h3>
+                <p className="text-gray-700 text-sm mb-4">
+                  Use our step-by-step template to create your plan. Keep copies at home, with family, and give one to your GP.
+                </p>
+              </div>
+              <button className="flex items-center gap-2 bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors w-fit">
+                <Download className="w-4 h-4" />
+                Download emergency plan template
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="my-12">
+          <h2 className="text-[#bf3688] mb-6">What happens in an emergency?</h2>
+          
+          <div className="space-y-4">
+            <div className="bg-white border-2 border-[#bf3688] p-6">
+              <h3 className="text-gray-900 mb-2">If you're suddenly ill or injured</h3>
+              <p className="text-gray-700">
+                Call our Emergency Duty Team. We'll arrange urgent replacement care so the person you care for is safe. 
+                If it's during office hours, call Adult Social Care directly.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-[#bf3688] p-6">
+              <h3 className="text-gray-900 mb-2">If the person you care for is in crisis</h3>
+              <p className="text-gray-700">
+                Call 999 if it's life-threatening. For urgent (but not life-threatening) help, call NHS 111. 
+                If it's a safeguarding concern, contact Adult Social Care or the Emergency Duty Team.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-[#bf3688] p-6">
+              <h3 className="text-gray-900 mb-2">If you're at breaking point emotionally</h3>
+              <p className="text-gray-700">
+                Call Samaritans (116 123) any time for confidential support. During working hours, Carers First can help (0300 303 1555). 
+                You can also request an urgent carer&apos;s assessment.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Callout type="info" title="Financial emergencies">
+          <p>
+            If you can't afford food, heating, or essentials, we have emergency support available. 
+            Contact Adult Social Care or speak to Citizen's Advice Waltham Forest (0808 278 7835) about crisis grants and food bank referrals.
+          </p>
+        </Callout>
+
+        <section className="mt-12 bg-[#FFF0F7] p-8 rounded-lg">
+          <h2 className="text-[#bf3688] mb-4">Register for priority support</h2>
+          <p className="text-gray-700 mb-6">
+            If you or the person you care for rely on electricity for medical equipment, register with your energy supplier for priority support. 
+            You'll get advance warning of power cuts and priority reconnection.
+          </p>
+          <a href="https://www.ofgem.gov.uk/information-for-household-consumers/getting-extra-help/priority-services-register" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+            Find your energy supplier's priority register
+          </a>
+        </section>
       </div>
-    </div>
+    </>
   );
 }

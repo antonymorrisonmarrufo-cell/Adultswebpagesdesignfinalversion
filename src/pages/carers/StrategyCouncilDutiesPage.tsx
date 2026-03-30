@@ -1,129 +1,309 @@
-import { Link } from "react-router-dom";
-
 export default function StrategyCouncilDutiesPage() {
+  const [activeTab, setActiveTab] = React.useState<'overview' | 'information' | 'duties' | 'core-offer' | 'contacts'>('overview');
+
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Carers strategy and council duties</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">All-Age Carers strategy and council duties</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Carers strategy and council duties</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Waltham Forest Council has a clear strategy for supporting carers and legal duties under the
-          Care Act 2014. Find out about our commitments and how we work to improve services for carers.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Local carers strategy */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Local carers strategy</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Waltham Forest Carers Strategy sets out our vision for supporting carers in the borough. The
-          strategy was developed in partnership with carers, carer organisations, health partners, and
-          council services. Our key priorities are:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Identification and recognition</strong> - making it easier for carers to be identified and recognised across health, education, and social care</li>
-          <li><strong>Information and advice</strong> - ensuring carers have access to clear, timely, and relevant information</li>
-          <li><strong>Assessment and support</strong> - providing high-quality carers assessments and personalised support</li>
-          <li><strong>Health and wellbeing</strong> - supporting carers to maintain their physical and mental health</li>
-          <li><strong>Employment and education</strong> - helping carers to balance caring with work and study</li>
-          <li><strong>Young carers and parent carers</strong> - addressing the specific needs of young carers and parent carers</li>
-          <li><strong>Carer voice</strong> - involving carers in the design and review of services</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">All-Age Carers strategy and council duties</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Information about Waltham Forest's approach to supporting carers, our legal duties and strategic framework.
+        </p>
 
-          {/* Legal duties */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Legal duties under the Care Act 2014</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Care Act 2014 places specific duties on local authorities in relation to carers. These include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Duty to assess</strong> - we must carry out a carers assessment where it appears a carer may have needs for support</li>
-          <li><strong>Duty to meet eligible needs</strong> - where a carer has eligible needs, we must prepare a support plan and meet those needs</li>
-          <li><strong>Duty to provide information and advice</strong> - we must provide comprehensive information and advice about care and support</li>
-          <li><strong>Duty to promote wellbeing</strong> - we must promote the wellbeing of carers when carrying out any function under the Act</li>
-          <li><strong>Duty to prevent needs</strong> - we must provide services to prevent or delay the development of care and support needs</li>
-          <li><strong>Duty to involve</strong> - we must involve carers in assessments, care planning, and reviews</li>
-          </ul>
-          </section>
-
-          {/* How we deliver */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How we deliver on our commitments</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          We deliver our carers strategy through:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>The Waltham Forest Carers Hub, providing a dedicated space for carer support</li>
-          <li>Commissioning Carers First to deliver specialist carer support services</li>
-          <li>Training staff across health and social care to identify and support carers</li>
-          <li>Working with GP practices to improve carer identification and support</li>
-          <li>Monitoring and reviewing our services through the annual carers survey</li>
-          <li>The Carers Partnership Board, which brings together carers, council officers, and partners</li>
-          </ul>
-          </section>
-
-          {/* Have your say */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+        {/* Tab Navigation */}
+        <div className="border-b border-gray-200 mb-8">
+          <div className="flex gap-2 flex-wrap">
+            <button
+              onClick={() => setActiveTab('overview')}
+              className={`px-6 py-3 font-semibold border-b-2 transition-colors ${
+                activeTab === 'overview'
+                  ? 'border-[#bf3688] text-[#bf3688]'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Overview
+            </button>
+            <button
+              onClick={() => setActiveTab('information')}
+              className={`px-6 py-3 font-semibold border-b-2 transition-colors ${
+                activeTab === 'information'
+                  ? 'border-[#bf3688] text-[#bf3688]'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Information and support
+            </button>
+            <button
+              onClick={() => setActiveTab('duties')}
+              className={`px-6 py-3 font-semibold border-b-2 transition-colors ${
+                activeTab === 'duties'
+                  ? 'border-[#bf3688] text-[#bf3688]'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Our duties
+            </button>
+            <button
+              onClick={() => setActiveTab('core-offer')}
+              className={`px-6 py-3 font-semibold border-b-2 transition-colors ${
+                activeTab === 'core-offer'
+                  ? 'border-[#bf3688] text-[#bf3688]'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Core offer
+            </button>
+            <button
+              onClick={() => setActiveTab('contacts')}
+              className={`px-6 py-3 font-semibold border-b-2 transition-colors ${
+                activeTab === 'contacts'
+                  ? 'border-[#bf3688] text-[#bf3688]'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Useful contacts
+            </button>
           </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Have your say</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          We welcome feedback from carers about our strategy and services. If you would like to get involved
-          in shaping carer services, contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>{" "}
-          or speak to a member of staff at the Carers Hub.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/assessment-rights" className="text-wf-blue underline hover:text-wf-green">
-          Carers assessment and rights
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/feedback" className="text-wf-blue underline hover:text-wf-green">
-          Carers feedback
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.legislation.gov.uk/ukpga/2014/23/contents/enacted" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care Act 2014
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
+
+        {/* Tab Content */}
+        {activeTab === 'overview' && (
+          <div className="prose max-w-none">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Overview</h2>
+            <p className="text-gray-700 mb-4">
+              Waltham Forest Council is committed to supporting unpaid carers of all ages through an all-age carers approach.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This means we work across council services, with health partners and the voluntary sector to make sure carers can access the right support at the right time.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Our approach is based on:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">early identification of carers</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">person-centered assessments</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">preventative and wellbeing-focused support</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">partnership working with carers and carers organizations</span>
+              </li>
+            </ul>
+            <div className="bg-gray-50 border border-gray-200 p-6 mt-6">
+              <p className="text-gray-900 mb-2">
+                <strong>For resident-facing information and support</strong>
+              </p>
+              <p className="text-gray-700">
+                <a href="#/adult-social-care/being-carer" className="text-[#bf3688] underline hover:no-underline font-bold">Visit the Being a carer section</a>
+              </p>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'information' && (
+          <div className="prose max-w-none">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Information and support for carers</h2>
+            <p className="text-gray-700 mb-4">
+              Carers can access information, advice and support through:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Carers First Waltham Forest</strong> – the main local carer support organization providing advice, peer support, training and wellbeing services</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Carer's assessments</strong> – assessments of carers' own support needs under the Care Act 2014</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Young carers service</strong> – specialist support for children and young people under 18 with caring responsibilities</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700"><strong>Parent carer support</strong> – dedicated support for parents and carers of disabled children</span>
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              Full resident-facing information is available on the Being a carer section of this website.
+            </p>
+          </div>
+        )}
+
+        {activeTab === 'duties' && (
+          <div className="prose max-w-none">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Our duties towards carers</h2>
+            <p className="text-gray-700 mb-4">
+              Waltham Forest Council has legal duties to support carers under:
+            </p>
+            
+            <h3 className="text-2xl font-bold text-[#bf3688] mb-3 mt-6">Care Act 2014</h3>
+            <p className="text-gray-700 mb-4">
+              The Care Act places a duty on local authorities to:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">provide a carer's assessment to any carer who appears to have support needs</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">meet eligible needs identified through the assessment</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">provide information and advice to carers</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">involve carers in assessments and care planning for the people they care for</span>
+              </li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-[#bf3688] mb-3 mt-6">Children and Families Act 2014</h3>
+            <p className="text-gray-700 mb-4">
+              This Act includes duties to:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">assess young carers and parent carers who appear to have support needs</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">ensure young carers are not undertaking inappropriate caring tasks</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">support parent carers through the SEND framework</span>
+              </li>
+            </ul>
+          </div>
+        )}
+
+        {activeTab === 'core-offer' && (
+          <div className="prose max-w-none">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Our core offer to carers</h2>
+            <p className="text-gray-700 mb-4">
+              Waltham Forest's core offer to carers includes:
+            </p>
+            
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Information and advice</h3>
+              <p className="text-gray-700">
+                Clear, accessible information about support available, how to access it, and rights and entitlements.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Carer identification</h3>
+              <p className="text-gray-700">
+                Proactive identification of carers through health services, schools, and community settings.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Assessment and support planning</h3>
+              <p className="text-gray-700">
+                Person-centered assessments that focus on carers' own wellbeing, not just the person they care for.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Practical and emotional support</h3>
+              <p className="text-gray-700">
+                Access to respite, peer support, counseling, training and emergency planning.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Financial support and guidance</h3>
+              <p className="text-gray-700">
+                Help accessing Carer's Allowance, benefits advice, and information about direct payments where eligible.
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Involvement and co-production</h3>
+              <p className="text-gray-700">
+                Opportunities for carers to shape services through forums, user research and feedback mechanisms.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'contacts' && (
+          <div className="prose max-w-none">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Useful contacts for carers</h2>
+            
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Carers First Waltham Forest</h3>
+              <p className="text-gray-700 mb-2">Main local support organization for unpaid carers</p>
+              <p className="text-gray-700">
+                <a href="https://www.carersfirst.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Visit Carers First</a>
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Adult Social Care</h3>
+              <p className="text-gray-700 mb-2">For carer's assessments and adult social care support</p>
+              <p className="text-gray-700">Tel: 020 8496 3130</p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Young Carers Service</h3>
+              <p className="text-gray-700 mb-2">Support for children and young people under 18 with caring responsibilities</p>
+              <p className="text-gray-700">
+                <a href="#/adult-social-care/being-carer/young-carers" className="text-[#bf3688] underline hover:no-underline">Find out more about young carers support</a>
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Parent Carer Forum</h3>
+              <p className="text-gray-700 mb-2">Parent-led group for parents and carers of disabled children</p>
+              <p className="text-gray-700">
+                <a href="#/adult-social-care/being-carer/parent-carers" className="text-[#bf3688] underline hover:no-underline">Find out more about parent carer support</a>
+              </p>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 p-6 mb-4">
+              <h3 className="text-xl font-bold text-[#bf3688] mb-3">Carers UK</h3>
+              <p className="text-gray-700 mb-2">National charity providing information and support</p>
+              <p className="text-gray-700">
+                <a href="https://www.carersuk.org" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Visit Carers UK</a>
+              </p>
+            </div>
+          </div>
+        )}
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );
 }
+
+import React from 'react';

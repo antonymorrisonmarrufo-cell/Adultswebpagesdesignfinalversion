@@ -1,113 +1,155 @@
-import { Link } from "react-router-dom";
+import CarersHero from '../../../components/carers/CarersHero';
+import Callout from '../../../components/carers/Callout';
 
 export default function BreaksRespitePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Arranging breaks and respite</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Arranging breaks and respite</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          How to arrange a break from caring, the types of respite available, and how to access them.
-          </p>
-        </div>
-      </div>
+    <>
+      <CarersHero 
+        title="Breaks and respite"
+        description="Get time away from caring. We can arrange replacement care, direct payments, or connect you with local services so you can rest and recharge."
+        chips={['YC', 'PC', 'AC', 'Get a carer\'s assessment']}
+      />
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Types of breaks */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Types of breaks available</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Breaks from caring can be arranged in different ways depending on your needs:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Day services</strong> - the person you care for attends a day centre while you have time off</li>
-          <li><strong>Sitting service</strong> - someone comes to your home to be with the person you care for</li>
-          <li><strong>Overnight respite</strong> - the person you care for stays in a care home or respite unit</li>
-          <li><strong>Direct payments</strong> - money to arrange your own replacement care in a way that suits you</li>
-          <li><strong>Shared Lives</strong> - the person you care for stays with an approved carer in their home</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="lg:col-span-2">
+            <Callout type="info" title="Why breaks matter">
+              <p>
+                Caring without a break affects your health, relationships, and ability to keep caring. Regular breaks aren't a luxury — they're essential. Taking time for yourself helps you care better in the long run.
+              </p>
+            </Callout>
 
-          {/* How to arrange */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to arrange a break</h2>
-          <ol className="mt-3 ml-6 list-decimal space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Contact us</strong> - call <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a> or visit the Carers Hub</li>
-          <li><strong>Have an assessment</strong> - if you have not had a carers assessment, we will arrange one to understand your needs</li>
-          <li><strong>Discuss options</strong> - we will talk through the types of breaks that would work for you and the person you care for</li>
-          <li><strong>Make a plan</strong> - we will help you set up the break, including any practical arrangements</li>
-          <li><strong>Ongoing breaks</strong> - regular breaks can be built into your support plan</li>
-          </ol>
-          </section>
+            <section className="my-12">
+              <h2 className="text-[#bf3688] mb-6">What types of breaks are available?</h2>
+              
+              <div className="space-y-6">
+                <div className="bg-white border-2 border-[#bf3688] p-6">
+                  <h3 className="text-gray-900 mb-3">Short breaks (a few hours)</h3>
+                  <p className="text-gray-700 mb-3">
+                    Someone comes to your home or takes the person you care for to a local group or activity. 
+                    You get time to yourself — go for a walk, meet friends, rest, or catch up on tasks.
+                  </p>
+                  <p className="text-sm text-gray-600">Examples: Day centres, befriending visits, sitting services</p>
+                </div>
 
-          {/* Paying for breaks */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Paying for breaks</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The cost of respite care depends on your circumstances:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>If you have eligible needs following a carers assessment, the council may fund respite care</li>
-          <li>The person you care for may need a financial assessment to determine any contribution</li>
-          <li>Some breaks, such as Carers Hub activities and support groups, are free</li>
-          <li>Charities such as the Carers Trust may offer small grants towards the cost of a break</li>
-          </ul>
-          </section>
+                <div className="bg-white border-2 border-[#bf3688] p-6">
+                  <h3 className="text-gray-900 mb-3">Overnight or longer breaks</h3>
+                  <p className="text-gray-700 mb-3">
+                    The person you care for stays somewhere safe overnight or for a few days. 
+                    This might be residential respite, staying with another family, or live-in care at home.
+                  </p>
+                  <p className="text-sm text-gray-600">Examples: Residential respite care, host family schemes</p>
+                </div>
 
-          {/* Emergency breaks */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
+                <div className="bg-white border-2 border-[#bf3688] p-6">
+                  <h3 className="text-gray-900 mb-3">Emergency replacement care</h3>
+                  <p className="text-gray-700 mb-3">
+                    If you're suddenly ill, have an accident, or need to attend an urgent appointment, 
+                    we can arrange emergency cover quickly.
+                  </p>
+                  <p className="text-sm text-gray-600">See our <a href="#/carers/emergency-help" className="text-[#bf3688] hover:underline">emergency help page</a></p>
+                </div>
+              </div>
+            </section>
+
+            <section className="my-12">
+              <h2 className="text-[#bf3688] mb-6">How to request a break</h2>
+              
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#bf3688] text-white flex items-center justify-center">1</div>
+                  <div>
+                    <h3 className="text-gray-900 mb-2">Get a carer&apos;s assessment</h3>
+                    <p className="text-gray-700">
+                      If you haven&apos;t had one yet, request a carer&apos;s assessment. We&apos;ll talk about what breaks would help you most.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#bf3688] text-white flex items-center justify-center">2</div>
+                  <div>
+                    <h3 className="text-gray-900 mb-2">We agree a plan</h3>
+                    <p className="text-gray-700">
+                      Based on your needs, we'll arrange services or give you a direct payment so you can book breaks yourself.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#bf3688] text-white flex items-center justify-center">3</div>
+                  <div>
+                    <h3 className="text-gray-900 mb-2">Book and use your breaks</h3>
+                    <p className="text-gray-700">
+                      We'll connect you with local providers or you can choose your own. Take the breaks regularly — don't wait until you're burnt out.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-gradient-to-br from-[#FFF0F7] to-white p-6 rounded-lg">
+                <h3 className="text-gray-900 mb-4">Ready to request respite?</h3>
+                <button className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors">
+                  Request a carer&apos;s assessment
+                </button>
+              </div>
+            </section>
+
+            <section className="my-12">
+              <h2 className="text-[#bf3688] mb-6">What does it cost?</h2>
+              <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
+                <p className="text-gray-700 mb-4">
+                  Costs depend on your financial assessment and the type of service. Some carers pay nothing; 
+                  others pay a contribution. We'll never ask you to pay more than you can afford.
+                </p>
+                <p className="text-gray-700">
+                  <strong>Direct payments:</strong> If we give you money to arrange your own breaks, you control how it's spent 
+                  (as long as it meets the agreed outcomes in your support plan).
+                </p>
+              </div>
+            </section>
+
+            <section className="my-12">
+              <h2 className="text-[#bf3688] mb-6">What if the person I care for refuses?</h2>
+              <p className="text-gray-700 mb-4">
+                Some people resist the idea of respite. It helps to:
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                <li>Start small — try a short visit or activity first</li>
+                <li>Frame it as something they'll enjoy, not "time away from you"</li>
+                <li>Involve them in choosing the service or activity</li>
+                <li>Talk to their social worker or GP about the benefits</li>
+              </ul>
+              <p className="text-gray-700 mt-4">
+                Your wellbeing matters. Even if the person you care for is reluctant, you're still entitled to support. 
+                Speak to us — we can help you work through this sensitively.
+              </p>
+            </section>
           </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Emergency breaks</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you need an urgent break because you are at risk of burnout or your health is suffering,
-          contact us as soon as possible on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          We will try to arrange emergency respite as quickly as we can.
-          </p>
-          </section>
 
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers/support/taking-a-break" className="text-wf-blue underline hover:text-wf-green">
-          Taking a break from caring
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/tasks/assessment" className="text-wf-blue underline hover:text-wf-green">
-          Request a carers assessment
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/financial-support" className="text-wf-blue underline hover:text-wf-green">
-          Financial support for carers
-          </Link>
-          </li>
-          </ul>
-          </section>
+          <aside className="lg:col-span-1">
+            <div className="sticky top-6 space-y-6">
+              <div className="bg-[#FFF0F7] p-6 rounded-lg">
+                <h3 className="text-[#bf3688] mb-4">On this page</h3>
+                <ul className="space-y-3 text-sm">
+                  <li><button onClick={() => { const el = document.getElementById('types'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">Types of breaks</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('request'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">How to request</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('cost'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">What it costs</button></li>
+                  <li><button onClick={() => { const el = document.getElementById('refuses'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} className="text-gray-700 hover:text-[#bf3688] text-left">If they refuse</button></li>
+                </ul>
+              </div>
 
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+              <div className="bg-white border-2 border-[#bf3688] p-6 rounded-lg">
+                <h3 className="text-gray-900 mb-3">Need a break urgently?</h3>
+                <p className="text-gray-700 text-sm mb-4">If you're at crisis point or can't keep caring:</p>
+                <a href="#/carers/emergency-help" className="text-[#bf3688] hover:underline text-sm">
+                  Emergency respite options →
+                </a>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
+    </>
   );
 }

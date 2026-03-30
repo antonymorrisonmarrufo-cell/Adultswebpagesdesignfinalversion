@@ -1,196 +1,239 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+import { ExternalLink } from 'lucide-react';
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function HomesharePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Homeshare</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">Homeshare</h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Homeshare brings together people who have a spare room with people who
-          need affordable accommodation. In return for low-cost housing, the
-          homesharer provides companionship and around 10 hours of support per
-          week.
-          </p>
-        </div>
-      </div>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Homeshare</span>
+        </nav>
 
-          {/* How it works */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">How Homeshare works</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Homeshare is a carefully managed arrangement between two people:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>
-          The <strong>householder</strong> is usually an older person who has a
-          spare room and would benefit from some company and practical help
-          around the home.
-          </li>
-          <li>
-          The <strong>homesharer</strong> is someone who needs affordable
-          accommodation and is happy to provide support in exchange for
-          reduced-cost housing.
-          </li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Homeshare is not a care service. The homesharer does not provide
-          personal care. Instead, they offer help with everyday tasks such as
-          cooking a meal together, help with shopping, light housework or simply
-          being there for company and reassurance.
-          </p>
-          </section>
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Homeshare
+        </h1>
 
-          {/* Benefits */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Benefits of Homeshare
-          </h2>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-lg border border-gray-200 bg-white p-5">
-          <h3 className="text-base font-bold text-[#231F20]">
-          For householders
-          </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Companionship and reduced isolation</li>
-          <li>Help with everyday tasks</li>
-          <li>Someone at home in the evenings for peace of mind</li>
-          <li>A contribution towards household bills</li>
-          <li>Support to remain living independently at home</li>
-          </ul>
-          </div>
-          <div className="rounded-lg border border-gray-200 bg-white p-5">
-          <h3 className="text-base font-bold text-[#231F20]">
-          For homesharers
-          </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Affordable accommodation in exchange for support</li>
-          <li>A safe and comfortable place to live</li>
-          <li>Companionship and a sense of community</li>
-          <li>Valuable experience of supporting an older person</li>
-          <li>A flexible arrangement that works around your schedule</li>
-          </ul>
-          </div>
-          </div>
-          </section>
+        <p className="text-gray-700 max-w-4xl mb-6 text-base">
+          Homeshare matches someone living alone who wants companionship and practical help at home with a person willing to live with them and offer support.
+        </p>
 
-          {/* Matching process */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          The matching process
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          The Homeshare programme is run by a dedicated team who carefully match
-          householders and homesharers. The process includes:
-          </p>
-          <ol className="mt-3 list-decimal space-y-1 pl-5 text-sm text-wf-gray">
-          <li>An initial conversation about your situation and what you are looking for</li>
-          <li>A home visit to meet you and see the accommodation</li>
-          <li>Enhanced DBS checks and references for all homesharers</li>
-          <li>A trial meeting between the householder and potential homesharer</li>
-          <li>A trial period to make sure the arrangement is working well</li>
-          <li>Ongoing support from the Homeshare team for as long as the match continues</li>
-          </ol>
-          </section>
-
-          {/* Becoming a householder or homesharer */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Becoming a householder or homesharer
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you are interested in Homeshare, either as a householder with a
-          spare room or as a homesharer looking for affordable accommodation,
-          contact our team to find out more. There is no obligation, and we are
-          happy to answer any questions.
-          </p>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">
-          Find out more about Homeshare
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          Contact our Adult Social Care team to discuss whether Homeshare could
-          work for you.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Phone:</span>{" "}
+        <div className="mb-10">
           <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
+            href="https://twogenerations.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
           >
-          020 8496 3130
+            Visit Two Generations
+            <ExternalLink size={18} />
           </a>
-          </p>
-          </section>
+        </div>
 
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/help-at-home">Help at home</Link>
-          </li>
-          <li>
-          <Link to="/live-independently/social-prescribing">
-          Social prescribing
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </li>
-          <li>
-          <Link to="/carers">Being a carer</Link>
-          </li>
-          </ul>
+        <div className="mb-12 max-w-2xl">
+          <img
+            src="/Images/placeholder.svg"
+            alt="A young woman pouring tea for an elderly man at home, sharing companionship"
+            className="w-full h-auto rounded"
+          />
+        </div>
+
+        <div className="max-w-3xl space-y-0">
+
+          <div className="bg-gray-200 border border-gray-300 p-6 mb-10">
+            <h2 className="font-bold text-gray-900 mb-4">Contents</h2>
+            <ul className="space-y-2">
+              <li><button onClick={() => scrollTo('how-it-works')} className="text-[#bf3688] underline hover:no-underline text-left">How Homeshare works</button></li>
+              <li><button onClick={() => scrollTo('can-help')} className="text-[#bf3688] underline hover:no-underline text-left">What a homesharer can help with</button></li>
+              <li><button onClick={() => scrollTo('cannot-do')} className="text-[#bf3688] underline hover:no-underline text-left">What a homesharer cannot do</button></li>
+              <li><button onClick={() => scrollTo('who')} className="text-[#bf3688] underline hover:no-underline text-left">Who Homeshare can help</button></li>
+              <li><button onClick={() => scrollTo('costs')} className="text-[#bf3688] underline hover:no-underline text-left">Costs</button></li>
+              <li><button onClick={() => scrollTo('provider')} className="text-[#bf3688] underline hover:no-underline text-left">Who provides the service</button></li>
+              <li><button onClick={() => scrollTo('enquire')} className="text-[#bf3688] underline hover:no-underline text-left">How to enquire</button></li>
+            </ul>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <div id="how-it-works" className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">How Homeshare works</h2>
+            <p className="text-gray-700 mb-4">
+              A Homeshare matches:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a householder, who is looking for companionship and practical support to remain in their own home
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a homesharer, who lives in the home and provides practical help, company and an overnight presence
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              Each match is tailored to the needs of the people involved.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="can-help" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">What a homesharer can help with</h2>
+            <p className="text-gray-700 mb-4">
+              A homesharer can offer practical help such as:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                basic household chores
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                cooking
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                gardening
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                food shopping
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                basic IT help
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                companionship
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                being an overnight presence in the home
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="cannot-do" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">What a homesharer cannot do</h2>
+            <p className="text-gray-700 mb-4">
+              A homesharer is not a carer.
+            </p>
+            <p className="text-gray-700 mb-4">
+              They cannot provide:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                personal care
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                medication support
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                specialist care tasks
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              It is still possible to have a care package and a Homeshare arrangement at the same time.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="who" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Who Homeshare can help</h2>
+            <p className="text-gray-700 mb-4">
+              Homeshare may help:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                older residents
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                people living with physical disabilities
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                people living with mental health problems
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                people who are feeling isolated and want companionship and practical support
+              </li>
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="costs" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Costs</h2>
+            <p className="text-gray-700 mb-4">
+              There is a monthly fee for both the householder and the homesharer, paid to Two Generations. This helps cover the costs of setting up and maintaining the arrangement.
+            </p>
+            <p className="text-gray-700">
+              The amount will be discussed before anything is agreed. Bursaries are available in some cases so that cost does not become a barrier.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="provider" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Who provides the service</h2>
+            <p className="text-gray-700">
+              Waltham Forest Council works in collaboration with Two Generations to provide Homeshare in the borough.
+            </p>
+          </div>
+
+          <hr className="border-gray-200" />
+
+          <div id="enquire" className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">How to enquire</h2>
+            <p className="text-gray-700 mb-6">
+              Visit the Two Generations website to send an enquiry.
+            </p>
+            <p className="text-gray-700 mb-6">
+              You can also call: <a href="tel:03333447738" className="text-[#bf3688] underline hover:no-underline font-semibold">0333 3447 738</a>
+            </p>
+            <a
+              href="https://twogenerations.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-semibold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2"
+            >
+              Visit Two Generations
+              <ExternalLink size={18} />
+            </a>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

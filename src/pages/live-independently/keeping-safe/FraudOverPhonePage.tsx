@@ -1,221 +1,136 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../../../components/FeedbackBanner';
+import FeedbackSection from '../../../components/FeedbackSection';
 
 export default function FraudOverPhonePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Fraud over the phone</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="hover:underline">Keeping safe at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Fraud over the phone</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
           Fraud over the phone
-          </h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Phone scams are one of the most common types of fraud. Criminals call
-          pretending to be from banks, the police, HMRC or other trusted
-          organisations to trick you into giving away money or personal
-          information.
-          </p>
-        </div>
-      </div>
+        </h1>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Stay safe from phone scams by pausing, checking who is calling, and never sharing money or personal information under pressure.
+        </p>
 
-          {/* Phone scams */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Common phone scams
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Bank fraud calls:</strong> a caller claims to be from your
-          bank and says your account has been compromised. They ask you to
-          transfer money to a &quot;safe&quot; account or give them your card
-          details.
-          </li>
-          <li>
-          <strong>HMRC scams:</strong> a recorded message threatens you with
-          arrest unless you pay an outstanding tax bill immediately.
-          </li>
-          <li>
-          <strong>Police impersonation:</strong> a caller claims to be a
-          police officer investigating fraud on your account and asks you to
-          withdraw cash and hand it to a courier.
-          </li>
-          <li>
-          <strong>Tech support scams:</strong> a caller says your computer has
-          a virus and asks you to grant them remote access or pay for
-          unnecessary software.
-          </li>
-          <li>
-          <strong>Pension and investment scams:</strong> unsolicited calls
-          offering high-return investments or early access to your pension.
-          </li>
-          </ul>
-          </section>
+        <div className="max-w-3xl space-y-0">
 
-          {/* Call blocking */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Call blocking and protection
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          There are several ways to reduce the number of nuisance and scam calls
-          you receive:
-          </p>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Telephone Preference Service (TPS):</strong> register your
-          number free of charge at{" "}
-          <a
-          href="https://www.tpsonline.org.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          tpsonline.org.uk
-          </a>{" "}
-          or call 0345 070 0707. This will reduce sales and marketing calls.
-          </li>
-          <li>
-          <strong>Call blocking devices:</strong> devices such as trueCall can
-          be fitted to your phone to screen and block unwanted calls. Some are
-          available free through the council for eligible residents.
-          </li>
-          <li>
-          <strong>Do not engage:</strong> if you receive a suspicious call,
-          hang up immediately. Do not press any buttons or give any
-          information.
-          </li>
-          <li>
-          <strong>Wait before calling back:</strong> scammers can keep the
-          phone line open after you hang up. Wait five minutes or use a
-          different phone before calling your bank or the police.
-          </li>
-          </ul>
-          </section>
-
-          {/* Reporting */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          How to report phone fraud
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you have received a scam phone call or have lost money to phone
-          fraud, report it:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Action Fraud:</strong> call 0300 123 2040 or visit{" "}
-          <a
-          href="https://www.actionfraud.police.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          actionfraud.police.uk
-          </a>
-          </li>
-          <li>
-          <strong>Your bank:</strong> contact your bank immediately if you
-          have shared financial information
-          </li>
-          <li>
-          <strong>Police non-emergency:</strong> call 101
-          </li>
-          <li>
-          <strong>In an emergency:</strong> call 999
-          </li>
-          </ul>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">Need support?</h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you or someone you know has been affected by phone fraud, contact
-          our Adult Social Care team for advice.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Phone:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/keeping-safe/online-email-postal-fraud">
-          Online, email and postal fraud
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
-          Callers to your door
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/further-information">
-          Further information on staying safe
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding">Safeguarding</Link>
-          </li>
-          </ul>
+          {/* How phone fraud works */}
+          <div className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">How phone fraud works</h2>
+            <p className="text-gray-700 mb-4">
+              Fraudsters often call pretending to be from a trusted organisation, such as:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                your bank
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                the police
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a utility company
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a government service
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a delivery company
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              They may try to create urgency so you act without thinking.
+            </p>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <hr className="border-gray-200" />
+
+          {/* How to protect yourself */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">How to protect yourself</h2>
+            <p className="text-gray-700 mb-4">
+              To protect yourself:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                be cautious if a caller asks for personal or financial details
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not feel pressured to act immediately
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                hang up and call the organisation back using a number you trust
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not use a phone number given by the caller
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                never transfer money because of an unexpected phone call
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                talk to someone you trust if you are unsure
+              </li>
+            </ul>
+          </div>
+
+          {/* Previous / Next navigation */}
+          <div className="pt-10 border-t border-gray-200 flex justify-between gap-4">
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <ArrowLeft size={18} />
+              <span>Online, email or postal fraud</span>
+            </a>
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <span>Fire safety advice for your home</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -166,347 +167,222 @@ import ParentCarersPage from "@/pages/carers/ParentCarersPage";
 import WorkEducationPage from "@/pages/carers/WorkEducationPage";
 import SupportAfterCaringPage from "@/pages/carers/SupportAfterCaringPage";
 import StrategyCouncilDutiesPage from "@/pages/carers/StrategyCouncilDutiesPage";
+import CarersHubPage from "@/pages/carers/CarersHubPage";
+import IAFlowPage from "@/pages/carers/IAFlowPage";
+import AdultCarersHub from "@/pages/carers/hubs/AdultCarersHub";
+import ParentCarersHub from "@/pages/carers/hubs/ParentCarersHub";
+import UniversalOfferHub from "@/pages/carers/hubs/UniversalOfferHub";
+import YoungCarersHub from "@/pages/carers/hubs/YoungCarersHub";
+import CarerTaskAssessmentPage from "@/pages/carers/tasks/AssessmentPage";
+import CarerTaskBreaksRespitePage from "@/pages/carers/tasks/BreaksRespitePage";
+import CarerTaskEmergencyHelpPage from "@/pages/carers/tasks/EmergencyHelpPage";
+import CarerTaskMoneyBenefitsPage from "@/pages/carers/tasks/MoneyBenefitsPage";
+
+// How adult social care works - additional pages
+import HowToAskForHelpPage from "@/pages/how-adult-social-care-works/HowToAskForHelpPage";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
-  const [currentPath, setCurrentPath] = useState(
-    window.location.hash.slice(1) || "/adult-social-care",
-  );
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      setCurrentPath(
-        window.location.hash.slice(1) || "/adult-social-care",
-      );
-      window.scrollTo(0, 0);
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-    return () =>
-      window.removeEventListener(
-        "hashchange",
-        handleHashChange,
-      );
-  }, []);
-
-  const renderPage = () => {
-    // Main site routes
-    switch (currentPath) {
-      case "/":
-        return <HomePage />;
-      case "/adult-social-care":
-        return <AdultSocialCarePage />;
-      case "/adult-social-care/specialist-services":
-        return <SpecialistServicesPage />;
-
-      // Dementia
-      case "/adult-social-care/specialist-services/dementia-support":
-        return <DementiaSupportPage />;
-      case "/adult-social-care/specialist-services/dementia/get-help":
-        return <DementiaGetHelpPage />;
-      case "/adult-social-care/specialist-services/dementia/hub":
-        return <DementiaHubPage />;
-      case "/adult-social-care/specialist-services/dementia/memory-service":
-        return <DementiaMemoryServicePage />;
-      case "/adult-social-care/specialist-services/dementia/activities":
-        return <DementiaActivitiesPage />;
-      case "/adult-social-care/specialist-services/dementia/adviser":
-        return <DementiaAdviserPage />;
-      case "/adult-social-care/specialist-services/dementia/idos":
-        return <DementiaIdosPage />;
-      case "/adult-social-care/specialist-services/dementia/carers":
-        return <DementiaCarersPage />;
-      case "/adult-social-care/specialist-services/dementia/planning-ahead":
-        return <DementiaPlanningPage />;
-
-      // Safeguarding
-      case "/adult-social-care/protecting-adults-at-risk":
-        return <ProtectingAdultsPage />;
-      case "/adult-social-care/report-abuse-or-neglect":
-        return <ReportAbusePage />;
-      case "/adult-social-care/professionals-and-providers":
-        return <ProfessionalsPage />;
-      case "/adult-social-care/professional-guidance":
-        return <ProfessionalGuidancePage />;
-      case "/adult-social-care/marac":
-        return <MaracPage />;
-      case "/adult-social-care/abuse-and-neglect":
-        return <AbuseAndNeglectPage />;
-      case "/adult-social-care/what-happens-after-you-report":
-        return <WhatHappensAfterPage />;
-      case "/adult-social-care/safeguarding-adults-board":
-        return <SafeguardingBoardPage />;
-      case "/adult-social-care/resources-to-improve-practice":
-        return <ResourcesImprovePracticePage />;
-      case "/children-and-families/report-concern-about-child":
-        return <ReportChildConcernPage />;
-
-      // Specialist services
-      case "/adult-social-care/specialist-services/learning-disabilities":
-      case "/adult-social-care/learning-disability-support":
-        return <LearningDisabilitySupportPage />;
-      case "/adult-social-care/learning-disability-support/ask-for-support":
-        return <LDAskForSupportPage />;
-      case "/adult-social-care/learning-disability-support/support-for-carers-and-families":
-        return <LDSupportForCarersPage />;
-      case "/adult-social-care/learning-disability-support/preparing-for-adulthood":
-        return <LDPreparingForAdulthoodPage />;
-      case "/adult-social-care/learning-disability-support/easy-read-information-and-resources":
-        return <LDEasyReadResourcesPage />;
-      case "/adult-social-care/learning-disability-support/professional-referral":
-        return <LDProfessionalReferralPage />;
-      case "/adult-social-care/learning-disability-support/request-support":
-        return <LDRequestSupportPage />;
-      case "/adult-social-care/learning-disability-support/housing-and-support-options":
-        return <LDHousingAndSupportOptionsPage />;
-      case "/adult-social-care/learning-disability-support/housing/living-with-family":
-        return <LDHousingLivingWithFamilyPage />;
-      case "/adult-social-care/learning-disability-support/housing/supported-living":
-        return <LDHousingSupportedLivingPage />;
-      case "/adult-social-care/learning-disability-support/housing/residential-care":
-        return <LDHousingResidentialCarePage />;
-      case "/adult-social-care/learning-disability-support/housing/shared-lives":
-        return <LDHousingSharedLivesPage />;
-      case "/adult-social-care/learning-disability-support/housing/independent-living":
-        return <LDHousingIndependentLivingPage />;
-      case "/adult-social-care/specialist-services/autism-support":
-        return <AutismSupportPage />;
-      case "/adult-social-care/specialist-services/visual-and-hearing-impairments":
-        return <VisualHearingPage />;
-      case "/adult-social-care/specialist-services/physical-disabilities":
-        return <PhysicalDisabilitiesPage />;
-      case "/adult-social-care/specialist-services/long-term-conditions":
-        return <LongTermConditionsPage />;
-      case "/adult-social-care/work-and-disability":
-        return <WorkDisabilityPage />;
-      case "/adult-social-care/specialist-services/power-attorney-deputyship-and-appointeeship":
-        return <PowerOfAttorneyPage />;
-
-      // Travel and transport
-      case "/adult-social-care/travel-and-transport":
-        return <TravelTransportPage />;
-      case "/adult-social-care/travel-and-transport/blue-badge":
-        return <BlueBadgePage />;
-      case "/adult-social-care/travel-and-transport/freedom-pass-disabled":
-        return <FreedomPassDisabledPage />;
-      case "/adult-social-care/travel-and-transport/freedom-pass-older":
-        return <FreedomPassOlderPage />;
-      case "/adult-social-care/travel-and-transport/taxicard":
-        return <TaxicardPage />;
-      case "/adult-social-care/travel-and-transport/transport-mobility-support":
-        return <TransportMobilityPage />;
-      case "/adult-social-care/travel-and-transport/blue-badge-organisations":
-        return <BlueBadgeOrgsPage />;
-
-      // Live independently at home
-      case "/adult-social-care/live-independently-at-home":
-        return <LiveIndependentlyPage />;
-      case "/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy":
-        return <HomeAdaptationsPage />;
-      case "/adult-social-care/live-independently-at-home/equipment-and-assistive-technology":
-        return <EquipmentPage />;
-      case "/adult-social-care/live-independently-at-home/help-at-home-and-personal-care":
-        return <HelpAtHomePage />;
-      case "/adult-social-care/live-independently-at-home/falls-prevention-and-reablement":
-        return <FallsPreventionPage />;
-      case "/adult-social-care/live-independently-at-home/telecare-and-community-alarm":
-        return <TelecarePage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home":
-        return <KeepingSafePage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door":
-        return <CallersToYourDoorPage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud":
-        return <OnlineEmailPostalFraudPage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone":
-        return <FraudOverPhonePage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home":
-        return <FireSafetyPage />;
-      case "/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe":
-        return <FurtherInfoSafetyPage />;
-      case "/adult-social-care/live-independently-at-home/homeshare":
-        return <HomesharePage />;
-      case "/adult-social-care/live-independently-at-home/social-prescribing":
-        return <SocialPrescribingPage />;
-      case "/adult-social-care/live-independently-at-home/request-home-independence-assessment":
-        return <RequestHomeAssessmentForm />;
-      case "/adult-social-care/live-independently-at-home/request-telecare-or-community-alarm":
-        return <RequestTelecareForm />;
-      case "/adult-social-care/live-independently-at-home/professional-referral-home-independence":
-        return <ProfessionalReferralForm />;
-
-      // Care homes and supported living
-      case "/adult-social-care/care-homes-and-supported-living":
-        return <CareHomesHubPage />;
-      case "/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes":
-        return <CareHomesNursingHomesPage />;
-      case "/adult-social-care/care-homes-and-supported-living/supported-living":
-        return <CHSupportedLivingPage />;
-      case "/adult-social-care/care-homes-and-supported-living/shared-lives":
-        return <CHSharedLivesPage />;
-      case "/adult-social-care/care-homes-and-supported-living/extra-care-housing":
-        return <ExtraCareHousingPage />;
-      case "/adult-social-care/care-homes-and-supported-living/sheltered-housing":
-        return <ShelteredHousingPage />;
-      case "/adult-social-care/care-homes-and-supported-living/alliston-house":
-        return <AllistonHousePage />;
-      case "/adult-social-care/care-homes-and-supported-living/george-mason-lodge":
-        return <GeorgeMasonLodgePage />;
-      case "/adult-social-care/care-homes-and-supported-living/mapleton-road":
-        return <MapletonRoadPage />;
-      case "/adult-social-care/care-homes-and-supported-living/request-housing-care-support":
-        return <RequestHousingCareSupportPage />;
-
-      // Paying for care
-      case "/adult-social-care/paying-for-care":
-        return <PayingForCareHubPage />;
-      case "/adult-social-care/paying-for-care/how-care-costs-are-worked-out":
-        return <HowCareCostsWorkedOutPage />;
-      case "/adult-social-care/paying-for-care/financial-assessment":
-        return <FinancialAssessmentPage />;
-      case "/adult-social-care/paying-for-care/benefits-and-help-with-costs":
-        return <BenefitsAndHelpPage />;
-      case "/adult-social-care/paying-for-care/direct-payments-and-personal-budgets":
-        return <DirectPaymentsPersonalBudgetsPage />;
-      case "/adult-social-care/paying-for-care/paying-for-a-care-home":
-        return <PayingForCareHomePage />;
-      case "/adult-social-care/paying-for-care/get-financial-advice":
-        return <GetFinancialAdvicePage />;
-      case "/adult-social-care/paying-for-care/deferred-payment-agreements":
-        return <DeferredPaymentAgreementsPage />;
-
-      // How adult social care works
-      case "/adult-social-care/how-adult-social-care-works":
-        return <HowAdultSocialCareWorksHubPage />;
-      case "/adult-social-care/how-adult-social-care-works/what-is-adult-social-care":
-        return <WhatIsAdultSocialCarePage />;
-      case "/adult-social-care/how-adult-social-care-works/who-can-get-help":
-        return <WhoCanGetHelpPage />;
-
-      // How to get support
-      case "/adult-social-care/how-to-get-support":
-        return <HowToGetSupportHubPage />;
-      case "/adult-social-care/how-to-get-support/check-your-situation-online":
-        return <CheckSituationOnlinePage />;
-      case "/adult-social-care/how-to-get-support/contact-us":
-        return <ContactUsPage />;
-      case "/adult-social-care/how-to-get-support/request-an-assessment":
-        return <RequestAssessmentPage />;
-      case "/adult-social-care/how-to-get-support/what-happens-during-your-assessment":
-        return <WhatHappensDuringYourAssessmentPage />;
-      case "/adult-social-care/how-to-get-support/getting-your-care-and-support-plan":
-        return <GettingCareAndSupportPlanPage />;
-
-      // Mental health and wellbeing
-      case "/adult-social-care/mental-health-wellbeing":
-        return <MentalHealthWellbeingHubPage />;
-      case "/adult-social-care/mental-health-wellbeing/urgent-mental-health-support":
-        return <UrgentMentalHealthSupportPage />;
-      case "/adult-social-care/mental-health-wellbeing/looking-after-your-mental-wellbeing":
-        return <LookingAfterMentalWellbeingPage />;
-      case "/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support":
-        return <TalkingTherapiesProfessionalSupportPage />;
-      case "/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health":
-        return <AdultSocialCareMentalHealthPage />;
-      case "/adult-social-care/mental-health-wellbeing/local-mental-health-support-services":
-        return <LocalMentalHealthSupportServicesPage />;
-
-      // Complaints and compliments
-      case "/adult-social-care/complaints-compliments":
-        return <ComplaintsComplimentsHubPage />;
-      case "/adult-social-care/complaints-compliments/make-a-complaint":
-        return <MakeComplaintPage />;
-      case "/adult-social-care/complaints-compliments/send-us-a-compliment":
-        return <SendComplimentPage />;
-      case "/adult-social-care/complaints-compliments/help-shape-our-services":
-        return <HelpShapeServicesPage />;
-      case "/adult-social-care/complaints-compliments/independent-help-and-advocacy":
-        return <IndependentHelpAdvocacyPage />;
-
-      // Our Policies
-      case "/adult-social-care/our-policies":
-        return <OurPoliciesHubPage />;
-      case "/adult-social-care/our-policies/charging-and-financial-policies":
-        return <ChargingFinancialPoliciesPage />;
-      case "/adult-social-care/our-policies/safeguarding-policies-reports":
-        return <SafeguardingPoliciesReportsPage />;
-      case "/adult-social-care/our-policies/market-sustainability-commissioning":
-        return <MarketSustainabilityCommissioningPage />;
-      case "/adult-social-care/our-policies/privacy-and-data":
-        return <PrivacyAndDataPage />;
-      case "/adult-social-care/our-policies/consultations":
-        return <ConsultationsPage />;
-
-      // Understand Your Rights
-      case "/adult-social-care/understand-your-rights":
-        return <UnderstandYourRightsHubPage />;
-      case "/adult-social-care/understand-your-rights/your-rights-under-the-care-act":
-        return <YourRightsUnderCareActPage />;
-      case "/adult-social-care/understand-your-rights/independent-advocacy":
-        return <IndependentAdvocacyPage />;
-      case "/adult-social-care/understand-your-rights/mental-capacity-and-decision-making":
-        return <MentalCapacityDecisionMakingPage />;
-      case "/adult-social-care/understand-your-rights/your-rights-as-a-carer":
-        return <YourRightsAsCarerPage />;
-      case "/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns":
-        return <ChallengingDecisionsRaisingConcernsPage />;
-
-      // Information for Professionals
-      case "/adult-social-care/information-for-professionals":
-        return <InformationForProfessionalsHubPage />;
-      case "/adult-social-care/information-for-professionals/how-to-make-referral":
-        return <HowToMakeReferralPage />;
-      case "/adult-social-care/information-for-professionals/safeguarding-adults":
-        return <SafeguardingAdultsProfessionalsPage />;
-      case "/adult-social-care/information-for-professionals/practice-guidance-resources":
-        return <PracticeGuidanceResourcesPage />;
-      case "/adult-social-care/information-for-professionals/commissioning-provider-information":
-        return <CommissioningProviderInformationPage />;
-      case "/adult-social-care/information-for-professionals/key-teams-contact-details":
-        return <KeyTeamsContactDetailsPage />;
-
-      // Being a Carer
-      case "/adult-social-care/being-carer":
-        return <BeingCarerPage />;
-      case "/adult-social-care/being-carer/carers-assessment-and-rights":
-        return <CarersAssessmentRightsPage />;
-      case "/adult-social-care/being-carer/support-for-carers":
-        return <SupportForCarersPage />;
-      case "/adult-social-care/being-carer/support-for-carers/financial-support":
-        return <FinancialSupportPage />;
-      case "/adult-social-care/being-carer/support-for-carers/taking-a-break":
-      case "/adult-social-care/being-carer/support-for-carers/taking-break":
-        return <TakingBreakPage />;
-      case "/adult-social-care/being-carer/support-for-carers/carer-emergency-plan":
-        return <CarerEmergencyPlanPage />;
-      case "/adult-social-care/being-carer/support-for-carers/health-and-wellbeing":
-        return <HealthWellbeingPage />;
-      case "/adult-social-care/being-carer/support-for-carers/local-groups-and-services":
-        return <LocalGroupsServicesPage />;
-      case "/adult-social-care/being-carer/support-for-carers/training-and-workshops":
-        return <TrainingWorkshopsPage />;
-      case "/adult-social-care/being-carer/support-for-carers/carers-feedback":
-        return <CarersFeedbackPage />;
-      case "/adult-social-care/being-carer/support-for-carers/useful-contacts":
-        return <UsefulContactsPage />;
-      case "/adult-social-care/being-carer/young-carers":
-        return <YoungCarersPage />;
-      case "/adult-social-care/being-carer/parent-carers":
-        return <ParentCarersPage />;
-      case "/adult-social-care/being-carer/work-and-education":
-        return <WorkEducationPage />;
-      case "/adult-social-care/being-carer/support-after-caring":
-        return <SupportAfterCaringPage />;
-      case "/adult-social-care/being-carer/strategy-and-council-duties":
-        return <StrategyCouncilDutiesPage />;
-
-      default:
-        return <AdultSocialCarePage />;
-    }
-  };
-
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <Header />
-      <main className="flex-grow">{renderPage()}</main>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/adult-social-care" element={<AdultSocialCarePage />} />
+          <Route path="/adult-social-care/specialist-services" element={<SpecialistServicesPage />} />
+
+          {/* Dementia */}
+          <Route path="/adult-social-care/specialist-services/dementia-support" element={<DementiaSupportPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/get-help" element={<DementiaGetHelpPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/hub" element={<DementiaHubPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/memory-service" element={<DementiaMemoryServicePage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/activities" element={<DementiaActivitiesPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/adviser" element={<DementiaAdviserPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/idos" element={<DementiaIdosPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/carers" element={<DementiaCarersPage />} />
+          <Route path="/adult-social-care/specialist-services/dementia/planning-ahead" element={<DementiaPlanningPage />} />
+
+          {/* Safeguarding */}
+          <Route path="/adult-social-care/protecting-adults-at-risk" element={<ProtectingAdultsPage />} />
+          <Route path="/adult-social-care/report-abuse-or-neglect" element={<ReportAbusePage />} />
+          <Route path="/adult-social-care/professionals-and-providers" element={<ProfessionalsPage />} />
+          <Route path="/adult-social-care/professional-guidance" element={<ProfessionalGuidancePage />} />
+          <Route path="/adult-social-care/marac" element={<MaracPage />} />
+          <Route path="/adult-social-care/abuse-and-neglect" element={<AbuseAndNeglectPage />} />
+          <Route path="/adult-social-care/what-happens-after-you-report" element={<WhatHappensAfterPage />} />
+          <Route path="/adult-social-care/safeguarding-adults-board" element={<SafeguardingBoardPage />} />
+          <Route path="/adult-social-care/resources-to-improve-practice" element={<ResourcesImprovePracticePage />} />
+          <Route path="/children-and-families/report-concern-about-child" element={<ReportChildConcernPage />} />
+
+          {/* Specialist services */}
+          <Route path="/adult-social-care/specialist-services/learning-disabilities" element={<LearningDisabilitySupportPage />} />
+          <Route path="/adult-social-care/learning-disability-support" element={<LearningDisabilitySupportPage />} />
+          <Route path="/adult-social-care/learning-disability-support/ask-for-support" element={<LDAskForSupportPage />} />
+          <Route path="/adult-social-care/learning-disability-support/support-for-carers-and-families" element={<LDSupportForCarersPage />} />
+          <Route path="/adult-social-care/learning-disability-support/preparing-for-adulthood" element={<LDPreparingForAdulthoodPage />} />
+          <Route path="/adult-social-care/learning-disability-support/easy-read-information-and-resources" element={<LDEasyReadResourcesPage />} />
+          <Route path="/adult-social-care/learning-disability-support/professional-referral" element={<LDProfessionalReferralPage />} />
+          <Route path="/adult-social-care/learning-disability-support/request-support" element={<LDRequestSupportPage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing-and-support-options" element={<LDHousingAndSupportOptionsPage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing/living-with-family" element={<LDHousingLivingWithFamilyPage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing/supported-living" element={<LDHousingSupportedLivingPage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing/residential-care" element={<LDHousingResidentialCarePage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing/shared-lives" element={<LDHousingSharedLivesPage />} />
+          <Route path="/adult-social-care/learning-disability-support/housing/independent-living" element={<LDHousingIndependentLivingPage />} />
+          <Route path="/adult-social-care/specialist-services/autism-support" element={<AutismSupportPage />} />
+          <Route path="/adult-social-care/specialist-services/visual-and-hearing-impairments" element={<VisualHearingPage />} />
+          <Route path="/adult-social-care/specialist-services/physical-disabilities" element={<PhysicalDisabilitiesPage />} />
+          <Route path="/adult-social-care/specialist-services/long-term-conditions" element={<LongTermConditionsPage />} />
+          <Route path="/adult-social-care/work-and-disability" element={<WorkDisabilityPage />} />
+          <Route path="/adult-social-care/specialist-services/power-attorney-deputyship-and-appointeeship" element={<PowerOfAttorneyPage />} />
+
+          {/* Travel and transport */}
+          <Route path="/adult-social-care/travel-and-transport" element={<TravelTransportPage />} />
+          <Route path="/adult-social-care/travel-and-transport/blue-badge" element={<BlueBadgePage />} />
+          <Route path="/adult-social-care/travel-and-transport/freedom-pass-disabled" element={<FreedomPassDisabledPage />} />
+          <Route path="/adult-social-care/travel-and-transport/freedom-pass-older" element={<FreedomPassOlderPage />} />
+          <Route path="/adult-social-care/travel-and-transport/taxicard" element={<TaxicardPage />} />
+          <Route path="/adult-social-care/travel-and-transport/transport-mobility-support" element={<TransportMobilityPage />} />
+          <Route path="/adult-social-care/travel-and-transport/blue-badge-organisations" element={<BlueBadgeOrgsPage />} />
+
+          {/* Live independently at home */}
+          <Route path="/adult-social-care/live-independently-at-home" element={<LiveIndependentlyPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/home-adaptations-and-occupational-therapy" element={<HomeAdaptationsPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/equipment-and-assistive-technology" element={<EquipmentPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/help-at-home-and-personal-care" element={<HelpAtHomePage />} />
+          <Route path="/adult-social-care/live-independently-at-home/falls-prevention-and-reablement" element={<FallsPreventionPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/telecare-and-community-alarm" element={<TelecarePage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home" element={<KeepingSafePage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door" element={<CallersToYourDoorPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home/online-email-or-postal-fraud" element={<OnlineEmailPostalFraudPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone" element={<FraudOverPhonePage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home/fire-safety-advice-for-your-home" element={<FireSafetyPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe" element={<FurtherInfoSafetyPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/homeshare" element={<HomesharePage />} />
+          <Route path="/adult-social-care/live-independently-at-home/social-prescribing" element={<SocialPrescribingPage />} />
+          <Route path="/adult-social-care/live-independently-at-home/request-home-independence-assessment" element={<RequestHomeAssessmentForm />} />
+          <Route path="/adult-social-care/live-independently-at-home/request-telecare-or-community-alarm" element={<RequestTelecareForm />} />
+          <Route path="/adult-social-care/live-independently-at-home/professional-referral-home-independence" element={<ProfessionalReferralForm />} />
+
+          {/* Care homes and supported living */}
+          <Route path="/adult-social-care/care-homes-and-supported-living" element={<CareHomesHubPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" element={<CareHomesNursingHomesPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/supported-living" element={<CHSupportedLivingPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/shared-lives" element={<CHSharedLivesPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/extra-care-housing" element={<ExtraCareHousingPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/sheltered-housing" element={<ShelteredHousingPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/alliston-house" element={<AllistonHousePage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/george-mason-lodge" element={<GeorgeMasonLodgePage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/mapleton-road" element={<MapletonRoadPage />} />
+          <Route path="/adult-social-care/care-homes-and-supported-living/request-housing-care-support" element={<RequestHousingCareSupportPage />} />
+
+          {/* Paying for care */}
+          <Route path="/adult-social-care/paying-for-care" element={<PayingForCareHubPage />} />
+          <Route path="/adult-social-care/paying-for-care/how-care-costs-are-worked-out" element={<HowCareCostsWorkedOutPage />} />
+          <Route path="/adult-social-care/paying-for-care/financial-assessment" element={<FinancialAssessmentPage />} />
+          <Route path="/adult-social-care/paying-for-care/benefits-and-help-with-costs" element={<BenefitsAndHelpPage />} />
+          <Route path="/adult-social-care/paying-for-care/direct-payments-and-personal-budgets" element={<DirectPaymentsPersonalBudgetsPage />} />
+          <Route path="/adult-social-care/paying-for-care/paying-for-a-care-home" element={<PayingForCareHomePage />} />
+          <Route path="/adult-social-care/paying-for-care/get-financial-advice" element={<GetFinancialAdvicePage />} />
+          <Route path="/adult-social-care/paying-for-care/deferred-payment-agreements" element={<DeferredPaymentAgreementsPage />} />
+
+          {/* How adult social care works */}
+          <Route path="/adult-social-care/how-adult-social-care-works" element={<HowAdultSocialCareWorksHubPage />} />
+          <Route path="/adult-social-care/how-adult-social-care-works/what-is-adult-social-care" element={<WhatIsAdultSocialCarePage />} />
+          <Route path="/adult-social-care/how-adult-social-care-works/who-can-get-help" element={<WhoCanGetHelpPage />} />
+
+          {/* How to get support */}
+          <Route path="/adult-social-care/how-to-get-support" element={<HowToGetSupportHubPage />} />
+          <Route path="/adult-social-care/how-to-get-support/check-your-situation-online" element={<CheckSituationOnlinePage />} />
+          <Route path="/adult-social-care/how-to-get-support/contact-us" element={<ContactUsPage />} />
+          <Route path="/adult-social-care/how-to-get-support/request-an-assessment" element={<RequestAssessmentPage />} />
+          <Route path="/adult-social-care/how-to-get-support/what-happens-during-your-assessment" element={<WhatHappensDuringYourAssessmentPage />} />
+          <Route path="/adult-social-care/how-to-get-support/getting-your-care-and-support-plan" element={<GettingCareAndSupportPlanPage />} />
+
+          {/* Mental health and wellbeing */}
+          <Route path="/adult-social-care/mental-health-wellbeing" element={<MentalHealthWellbeingHubPage />} />
+          <Route path="/adult-social-care/mental-health-wellbeing/urgent-mental-health-support" element={<UrgentMentalHealthSupportPage />} />
+          <Route path="/adult-social-care/mental-health-wellbeing/looking-after-your-mental-wellbeing" element={<LookingAfterMentalWellbeingPage />} />
+          <Route path="/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" element={<TalkingTherapiesProfessionalSupportPage />} />
+          <Route path="/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health" element={<AdultSocialCareMentalHealthPage />} />
+          <Route path="/adult-social-care/mental-health-wellbeing/local-mental-health-support-services" element={<LocalMentalHealthSupportServicesPage />} />
+
+          {/* Complaints and compliments */}
+          <Route path="/adult-social-care/complaints-compliments" element={<ComplaintsComplimentsHubPage />} />
+          <Route path="/adult-social-care/complaints-compliments/make-a-complaint" element={<MakeComplaintPage />} />
+          <Route path="/adult-social-care/complaints-compliments/send-us-a-compliment" element={<SendComplimentPage />} />
+          <Route path="/adult-social-care/complaints-compliments/help-shape-our-services" element={<HelpShapeServicesPage />} />
+          <Route path="/adult-social-care/complaints-compliments/independent-help-and-advocacy" element={<IndependentHelpAdvocacyPage />} />
+
+          {/* Our Policies */}
+          <Route path="/adult-social-care/our-policies" element={<OurPoliciesHubPage />} />
+          <Route path="/adult-social-care/our-policies/charging-and-financial-policies" element={<ChargingFinancialPoliciesPage />} />
+          <Route path="/adult-social-care/our-policies/safeguarding-policies-reports" element={<SafeguardingPoliciesReportsPage />} />
+          <Route path="/adult-social-care/our-policies/market-sustainability-commissioning" element={<MarketSustainabilityCommissioningPage />} />
+          <Route path="/adult-social-care/our-policies/privacy-and-data" element={<PrivacyAndDataPage />} />
+          <Route path="/adult-social-care/our-policies/consultations" element={<ConsultationsPage />} />
+
+          {/* Understand Your Rights */}
+          <Route path="/adult-social-care/understand-your-rights" element={<UnderstandYourRightsHubPage />} />
+          <Route path="/adult-social-care/understand-your-rights/your-rights-under-the-care-act" element={<YourRightsUnderCareActPage />} />
+          <Route path="/adult-social-care/understand-your-rights/independent-advocacy" element={<IndependentAdvocacyPage />} />
+          <Route path="/adult-social-care/understand-your-rights/mental-capacity-and-decision-making" element={<MentalCapacityDecisionMakingPage />} />
+          <Route path="/adult-social-care/understand-your-rights/your-rights-as-a-carer" element={<YourRightsAsCarerPage />} />
+          <Route path="/adult-social-care/understand-your-rights/challenging-decisions-raising-concerns" element={<ChallengingDecisionsRaisingConcernsPage />} />
+
+          {/* Information for Professionals */}
+          <Route path="/adult-social-care/information-for-professionals" element={<InformationForProfessionalsHubPage />} />
+          <Route path="/adult-social-care/information-for-professionals/how-to-make-referral" element={<HowToMakeReferralPage />} />
+          <Route path="/adult-social-care/information-for-professionals/safeguarding-adults" element={<SafeguardingAdultsProfessionalsPage />} />
+          <Route path="/adult-social-care/information-for-professionals/practice-guidance-resources" element={<PracticeGuidanceResourcesPage />} />
+          <Route path="/adult-social-care/information-for-professionals/commissioning-provider-information" element={<CommissioningProviderInformationPage />} />
+          <Route path="/adult-social-care/information-for-professionals/key-teams-contact-details" element={<KeyTeamsContactDetailsPage />} />
+
+          {/* Being a Carer */}
+          <Route path="/adult-social-care/being-carer" element={<BeingCarerPage />} />
+          <Route path="/adult-social-care/being-carer/carers-assessment-and-rights" element={<CarersAssessmentRightsPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers" element={<SupportForCarersPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/financial-support" element={<FinancialSupportPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/taking-a-break" element={<TakingBreakPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/taking-break" element={<TakingBreakPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/carer-emergency-plan" element={<CarerEmergencyPlanPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/health-and-wellbeing" element={<HealthWellbeingPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/local-groups-and-services" element={<LocalGroupsServicesPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/training-and-workshops" element={<TrainingWorkshopsPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/carers-feedback" element={<CarersFeedbackPage />} />
+          <Route path="/adult-social-care/being-carer/support-for-carers/useful-contacts" element={<UsefulContactsPage />} />
+          <Route path="/adult-social-care/being-carer/young-carers" element={<YoungCarersPage />} />
+          <Route path="/adult-social-care/being-carer/parent-carers" element={<ParentCarersPage />} />
+          <Route path="/adult-social-care/being-carer/work-and-education" element={<WorkEducationPage />} />
+          <Route path="/adult-social-care/being-carer/support-after-caring" element={<SupportAfterCaringPage />} />
+          <Route path="/adult-social-care/being-carer/strategy-and-council-duties" element={<StrategyCouncilDutiesPage />} />
+          <Route path="/adult-social-care/being-carer/carers-hub" element={<CarersHubPage />} />
+          <Route path="/adult-social-care/being-carer/ia-flow" element={<IAFlowPage />} />
+          <Route path="/adult-social-care/being-carer/hubs/adult-carers" element={<AdultCarersHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/parent-carers" element={<ParentCarersHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/universal-offer" element={<UniversalOfferHub />} />
+          <Route path="/adult-social-care/being-carer/hubs/young-carers" element={<YoungCarersHub />} />
+          <Route path="/adult-social-care/being-carer/tasks/assessment" element={<CarerTaskAssessmentPage />} />
+          <Route path="/adult-social-care/being-carer/tasks/breaks-respite" element={<CarerTaskBreaksRespitePage />} />
+          <Route path="/adult-social-care/being-carer/tasks/emergency-help" element={<CarerTaskEmergencyHelpPage />} />
+          <Route path="/adult-social-care/being-carer/tasks/money-benefits" element={<CarerTaskMoneyBenefitsPage />} />
+
+          {/* How adult social care works - additional */}
+          <Route path="/adult-social-care/how-adult-social-care-works/how-to-ask-for-help" element={<HowToAskForHelpPage />} />
+
+          {/* Default fallback */}
+          <Route path="*" element={<Navigate to="/adult-social-care" replace />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );

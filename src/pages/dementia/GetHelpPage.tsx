@@ -1,181 +1,162 @@
-import { Link } from "react-router-dom";
+import { ArrowRight } from 'lucide-react';
+
+const relatedLinks = [
+  { title: 'Alzheimer\'s Society', href: '#' },
+  { title: 'Dementia UK', href: '#' },
+  { title: 'NHS Dementia Guide', href: '#' },
+  { title: 'Age UK Dementia Support', href: '#' },
+  { title: 'Dementia Friends', href: '#' }
+];
 
 const relatedPages = [
-  { title: "Hornbeam Dementia Hub", to: "/dementia/hub" },
-  { title: "Memory assessment service", to: "/dementia/memory-service" },
-  { title: "Dementia adviser service", to: "/dementia/adviser" },
-  { title: "Support for carers", to: "/dementia/carers" },
+  {
+    title: 'NHS Memory Service',
+    description: 'Specialist assessment via your GP',
+    href: '#/adult-social-care/specialist-services/dementia/memory-service'
+  },
+  {
+    title: 'Waltham Forest Dementia Hub',
+    description: 'Local support and activities',
+    href: '#/adult-social-care/specialist-services/dementia/hub'
+  }
 ];
 
 export default function GetHelpPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/dementia" className="text-wf-blue underline hover:text-wf-green">Dementia support</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Getting help and support</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Getting help and support
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#/adult-social-care" className="hover:underline">Home</a> &gt; 
+          <a href="#/adult-social-care" className="hover:underline"> Adult social care</a> &gt; 
+          <a href="#/adult-social-care/specialist-services" className="hover:underline"> Dementia, disabilities and specialist support</a> &gt; 
+          <a href="#/adult-social-care/specialist-services/dementia-support" className="hover:underline"> Dementia support</a> &gt; 
+          <span> Get help with dementia</span>
+        </nav>
+
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">Get help with dementia</h1>
+        
+        <p className="text-gray-700 mb-12">
+          If you're worried about your memory or someone else's, getting help early can make a big difference.
+        </p>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          {/* Main Content - 2 columns */}
+          <div className="lg:col-span-2">
+            {/* What is dementia section */}
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">What is dementia?</h2>
+            
+            <p className="text-gray-700 mb-4">
+              Dementia is not a single illness but a group of symptoms affecting memory, thinking, and social abilities. It's caused by damage to brain cells that affects their ability to communicate with each other.
+            </p>
+            
+            <p className="text-gray-700 mb-4">
+              The most common types include Alzheimer's disease, vascular dementia, dementia with Lewy bodies, and frontotemporal dementia. While there's no cure, the right support can help people live well with dementia for many years.
+            </p>
+
+            <p className="text-gray-700 mb-8">
+              Early diagnosis means you can access treatments and plan ahead. Services like memory clinics, social care support, and local dementia groups can help people with dementia live independently and confidently.
+            </p>
+
+            <a
+              href="https://www.walthamforest.gov.uk/adult-social-care" target="_blank" rel="noopener noreferrer"
+              className="inline-block bg-[#bf3688] text-white px-6 py-3 hover:bg-[#B01758] transition-colors mb-12 font-bold shadow-sm"
+            >
+              Read our Dementia Strategy
+            </a>
+
+            {/* How to get help section */}
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">How to get help</h2>
+            
+            <div className="space-y-4 mb-8">
+              <div className="bg-white border-2 border-gray-300 p-6 flex gap-4 shadow-sm">
+                <div className="flex-shrink-0 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  1
+                </div>
+                <div>
+                  <p className="text-gray-700 font-semibold">
+                    <a href="https://www.nhs.uk/nhs-services/gps/" target="_blank" rel="noopener noreferrer" className="text-[#0066CC] hover:underline">Book a GP appointment</a> to discuss a referral to the NHS Memory Service
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white border-2 border-gray-300 p-6 flex gap-4 shadow-sm">
+                <div className="flex-shrink-0 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  2
+                </div>
+                <div>
+                  <p className="text-gray-700 font-semibold">
+                    If you have a diagnosis for dementia and need practical support at home or in the community contact Adult Social Care for a <a href="#/adult-social-care/how-to-get-support/request-an-assessment" className="text-[#0066CC] hover:underline">care needs assessment</a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white border-2 border-gray-300 p-6 flex gap-4 shadow-sm">
+                <div className="flex-shrink-0 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center font-bold text-lg">
+                  3
+                </div>
+                <div>
+                  <p className="text-gray-700 font-semibold">
+                    Find local groups to build skills and reduce isolation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sidebar - 1 column */}
+          <div className="lg:col-span-1">
+            <div className="bg-white p-6 mb-8 shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1759215524566-8aea4761a926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW1lbnRpYSUyMGNhcmUlMjBzdXBwb3J0JTIwc3RyYXRlZ3klMjBkb2N1bWVudCUyMGNvbG9yZnVsJTIwaW5mb2dyYXBoaWN8ZW58MXx8fHwxNzc0NjA4ODk5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+                alt="All-Age Dementia Strategy" 
+                className="w-full h-auto border border-gray-200"
+              />
+            </div>
+            
+            <div className="bg-white p-6 shadow-sm">
+              <h2 className="text-[#bf3688] mb-4 font-bold text-xl">Related links:</h2>
+              <ul className="space-y-3">
+                {relatedLinks.map((link, index) => (
+                  <li key={index}>
+                    <a href={link.href} className="text-[#0066CC] font-semibold hover:underline">
+                      &gt; {link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Related Pages section */}
+        <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">Related Pages</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {relatedPages.map((page, index) => (
+            <a
+              key={index}
+              href={page.href}
+              className="bg-[#BF3688] text-white p-6 rounded flex items-start justify-between hover:bg-[#A02E73] transition-colors group shadow-sm"
+            >
+              <div>
+                <h3 className="font-bold mb-2 text-xl">{page.title}</h3>
+                <p className="text-sm opacity-90">{page.description}</p>
+              </div>
+              <div className="ml-4 w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#BF3688] flex-shrink-0">
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </a>
+          ))}
+        </div>
 
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      {/* When to seek help */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">When to seek help</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      It is natural to become a little more forgetful as we age. However, if
-      memory problems are affecting your daily life, or the life of someone you
-      know, it may be time to seek help. Early diagnosis can help you access the
-      right support and plan for the future.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You should consider speaking to your GP if you or someone you care about
-      is experiencing:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Regularly forgetting recent events, names or faces</li>
-      <li>Difficulty following conversations or finding the right words</li>
-      <li>Getting confused about the time or place</li>
-      <li>Problems managing money or paying bills</li>
-      <li>Difficulty completing familiar tasks at home or work</li>
-      <li>Changes in mood, behaviour or personality</li>
-      </ul>
-      </section>
-
-      {/* GP referral */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">GP referral</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your GP is usually the first point of contact. They will carry out an
-      initial assessment, which may include simple memory tests and a physical
-      examination to rule out other causes of memory problems.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If your GP thinks further investigation is needed, they will refer you to
-      the local memory assessment service. You can also ask a family member,
-      friend or carer to accompany you to your appointment.
-      </p>
-      </section>
-
-      {/* Memory assessment */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Memory assessment</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The memory assessment service provides specialist assessment and diagnosis
-      for people with suspected dementia. The team includes consultants, nurses
-      and psychologists who will work with you to understand your symptoms.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      For full details on what to expect, visit our{" "}
-      <Link
-      to="/dementia/memory-service"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      memory assessment service
-      </Link>{" "}
-      page.
-      </p>
-      </section>
-
-      {/* Local support services */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Local support services</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Waltham Forest offers a wide range of support for people living with
-      dementia and their families, including:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Hornbeam Dementia Hub</strong> - a welcoming centre offering
-      information, activities and drop-in support
-      </li>
-      <li>
-      <strong>Dementia adviser service</strong> - personalised one-to-one
-      guidance from a dedicated dementia adviser
-      </li>
-      <li>
-      <strong>Activities and social groups</strong> - Singing for the Brain,
-      art therapy, exercise classes and lunch clubs
-      </li>
-      <li>
-      <strong>Carer support</strong> - respite, support groups and carers
-      assessments
-      </li>
-      <li>
-      <strong>iDOS</strong> - online tools and apps to support daily living
-      </li>
-      </ul>
-      </section>
-
-      {/* Contact */}
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      To find out more about dementia support in Waltham Forest, contact our
-      Adult Social Care team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link
-      to={page.to}
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
+        {/* Green feedback banner */}
+        <div className="bg-[#8DC640] p-4 mb-8 flex items-center justify-between shadow-sm">
+          <p className="text-gray-900 font-semibold">
+            We are improving our website and value your feedback to better meet your needs
+          </p>
+          <button className="text-gray-900 hover:underline text-sm font-bold flex items-center gap-2">
+            ✕ Hide
+          </button>
         </div>
       </div>
     </div>

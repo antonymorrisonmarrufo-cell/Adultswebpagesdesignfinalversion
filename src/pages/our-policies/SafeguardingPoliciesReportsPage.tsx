@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Safeguarding adults", to: "/safeguarding" },
-  { title: "Safeguarding for professionals", to: "/information-for-professionals/safeguarding-adults-professionals" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Safeguarding adults", to: "/adult-social-care/protecting-adults-at-risk" },
+  { title: "Safeguarding for professionals", to: "/adult-social-care/information-for-professionals/safeguarding-adults" },
 ];
 
 export default function SafeguardingPoliciesReportsPage() {
@@ -23,7 +23,7 @@ export default function SafeguardingPoliciesReportsPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+      <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -85,6 +85,31 @@ export default function SafeguardingPoliciesReportsPage() {
       Annual reports are available to download from the Waltham Forest Council
       website.
       </p>
+      <div className="mt-4 space-y-3">
+      <a href="https:\/\/www.walthamforest.gov.uk\/adult-social-care\/protecting-vulnerable-adults\/safeguarding-adults-board-sab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        SAB Annual Report 2024/25 [PDF — link to be added]
+      </a>
+      </div>
+      <p className="mt-3 text-sm text-wf-gray">
+      Previous annual reports are available on request from{" "}
+      <a href="mailto:strategicpartnerships@walthamforest.gov.uk" className="text-wf-blue underline hover:text-wf-green">strategicpartnerships@walthamforest.gov.uk</a>.
+      </p>
+      </section>
+
+      <section>
+      <h2 className="text-2xl font-bold text-wf-pink">Safeguarding partnership arrangements</h2>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      This document provides an overview of how safeguarding is organised across
+      Waltham Forest, covering both adults and children, in line with statutory
+      requirements.
+      </p>
+      <div className="mt-4">
+      <a href="https:\/\/www.walthamforest.gov.uk\/adult-social-care\/protecting-vulnerable-adults\/safeguarding-adults-board-sab" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-4 py-2 text-sm font-semibold text-white hover:bg-[#a02d73] transition-colors">
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Safeguarding Partnership Arrangements [PDF — link to be added]
+      </a>
+      </div>
       </section>
 
       <section>
@@ -101,14 +126,31 @@ export default function SafeguardingPoliciesReportsPage() {
       <li>Making Safeguarding Personal principles</li>
       <li>Information sharing protocols</li>
       </ul>
+      <div className="mt-4">
+      <a href="https://londonadass.org.uk/safeguarding/review-of-the-london-multi-agency-adult-safeguarding-policy-and-procedures/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-wf-blue underline hover:text-wf-green font-semibold">
+        London Multi-Agency Adult Safeguarding Policy and Procedures
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+      <span className="ml-2 text-xs text-wf-gray">(external link)</span>
+      </div>
       </section>
 
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Report a safeguarding concern</h2>
+      <section className="rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-6">
+      <h2 className="text-xl font-bold text-[#d4351c]">Report a safeguarding concern</h2>
       <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      If you are worried that an adult is being abused or neglected, contact our
-      Adult Social Care team immediately.
+      If you are worried that an adult is being abused or neglected, you can
+      report your concern online or by phone.
       </p>
+      <div className="mt-4">
+      <a
+      href="https://safeguardingapp.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block rounded bg-[#bf3688] px-6 py-3 text-sm font-semibold text-white shadow hover:bg-[#a02d73] transition"
+      >
+      Report a concern about a vulnerable adult
+      </a>
+      </div>
       <p className="mt-3 text-sm font-semibold text-wf-dark">
       Telephone:{" "}
       <a href="tel:02084963130" className="text-wf-blue underline">

@@ -1,130 +1,134 @@
-import { Link } from "react-router-dom";
-
 export default function HealthWellbeingPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">Support for carers</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Health and wellbeing</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer/support-for-carers" className="text-[#bf3688] hover:underline">Support for carers</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Your health and wellbeing</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Health and wellbeing for carers</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Looking after your own health is just as important as looking after the person you care for. There are
-          services and programmes in Waltham Forest to support your physical and mental wellbeing.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Free health checks */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Free health checks for carers</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          As a carer, you are entitled to a free annual health check with your GP. This is an opportunity to
-          discuss any health concerns, review medications, and check things like blood pressure, weight, and
-          cholesterol. Let your GP know that you are a carer so they can flag this on your records.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You should also make sure you are registered as a carer with your GP practice. This means they can:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Offer you flexible or priority appointments</li>
-          <li>Send you flu vaccination invitations</li>
-          <li>Keep your carer status in mind when providing treatment</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Your health and wellbeing</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          Looking after your own health matters too. Find support for your mental and physical wellbeing as a carer.
+        </p>
 
-          {/* Mental health */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Mental health support</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Caring can take a toll on your mental health. It is common for carers to experience stress, anxiety,
-          depression, or feelings of isolation. Support is available:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Talking therapies</strong> - free NHS talking therapies are available through self-referral. You do not need a GP referral.</li>
-          <li><strong>Carer counselling</strong> - Carers First offers free counselling sessions specifically for carers</li>
-          <li><strong>Peer support groups</strong> - meeting other carers who understand what you are going through can make a real difference</li>
-          <li><strong>Crisis support</strong> - if you are in crisis, contact the Samaritans on 116 123 (free, 24 hours) or your local mental health crisis line</li>
-          </ul>
-          </section>
-
-          {/* Exercise and activities */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Exercise and activities</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Staying active helps manage stress and improves your physical and mental health. Opportunities in
-          Waltham Forest include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Free or discounted gym sessions and exercise classes for carers</li>
-          <li>Walking groups and outdoor activities in local parks</li>
-          <li>Yoga and mindfulness sessions at the Carers Hub</li>
-          <li>Social activities and day trips organised by local carer groups</li>
-          </ul>
-          </section>
-
-          {/* Looking after yourself */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Tips for looking after yourself</h2>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Try to get enough sleep and eat well</li>
-          <li>Accept help when it is offered</li>
-          <li>Stay connected with friends and family</li>
-          <li>Take regular short breaks, even if just for 15 minutes</li>
-          <li>Do not be afraid to ask for help - contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/taking-a-break" className="text-wf-blue underline hover:text-wf-green">
-          Taking a break from caring
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/local-groups-services" className="text-wf-blue underline hover:text-wf-green">
-          Local groups and services
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.nhs.uk/mental-health/self-help/" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          NHS - mental health self-help
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Find wellbeing support
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Get help from Carers First
+          </a>
         </div>
+
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#mental-health" className="text-[#bf3688] underline hover:no-underline">Mental health support</a></li>
+            <li><a href="#physical-health" className="text-[#bf3688] underline hover:no-underline">Physical health checks</a></li>
+            <li><a href="#flu-jab" className="text-[#bf3688] underline hover:no-underline">Flu jab information</a></li>
+            <li><a href="#local-support" className="text-[#bf3688] underline hover:no-underline">Related local support</a></li>
+          </ul>
+        </div>
+
+        <div className="prose max-w-none">
+          
+          <div id="mental-health" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Mental health support</h2>
+            <p className="text-gray-700 mb-4">
+              Caring can affect your mental health. It is normal to feel stressed, worried, lonely or low at times.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Support is available if you are struggling. You do not need to wait until things feel unmanageable.
+            </p>
+            <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
+              <h3 className="text-[#bf3688] font-bold text-lg mb-3">Get help</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-900">Talk to your GP about how you are feeling</li>
+                <li className="text-gray-900">Contact Carers First for emotional support and counselling</li>
+                <li className="text-gray-900">Call the Samaritans on 116 123 if you need someone to talk to</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="physical-health" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Physical health checks</h2>
+            <p className="text-gray-700 mb-4">
+              Carers sometimes put off their own health appointments or ignore symptoms because they are busy caring.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Try to:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">attend regular health checks and screenings</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">see your GP if you have health concerns</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">ask for support if caring is affecting your physical health</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="flu-jab" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Flu jab information</h2>
+            <p className="text-gray-700 mb-4">
+              If you are a carer, you may be eligible for a free flu jab to help protect you and the person you care for.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Contact your GP surgery to book an appointment.
+            </p>
+          </div>
+
+          <div id="local-support" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Related local support</h2>
+            <ul className="space-y-2">
+              <li>
+                <a href="https://www.carersfirst.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline">Carers First – wellbeing support and counselling</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/being-carer/support-for-carers/local-groups-and-services" className="text-[#bf3688] underline hover:no-underline">Local groups and services</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/being-carer/support-for-carers/taking-a-break" className="text-[#bf3688] underline hover:no-underline">Taking a break from caring</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

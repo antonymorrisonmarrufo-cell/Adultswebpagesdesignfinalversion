@@ -1,231 +1,265 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone, ExternalLink } from 'lucide-react';
 
 export default function CareHomesNursingHomesPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Care homes and nursing homes</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Care homes and nursing homes</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Care homes and nursing homes provide round-the-clock residential care for
-          people who can no longer be supported to live in their own home. Understanding
-          the differences and how to choose the right home is important.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living" className="hover:underline">Care homes and supported living</a>
+          <span className="mx-1">&gt;</span>
+          <span>Care homes and nursing homes</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Differences */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">The difference between care homes and nursing homes</h2>
-          <div className="mt-4 space-y-4">
-          <div className="rounded-md bg-white p-4 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Care homes (residential care)</h3>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          Care homes provide accommodation, meals, and personal care such as help
-          with washing, dressing, eating, and going to the toilet. Staff are trained
-          care workers but are not nurses. Care homes are suitable for people who need
-          help with daily living but do not have complex medical needs.
-          </p>
-          </div>
-          <div className="rounded-md bg-white p-4 shadow-sm">
-          <h3 className="text-lg font-bold text-[#231F20]">Nursing homes</h3>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          Nursing homes provide everything a care home does, plus 24-hour nursing
-          care from registered nurses. Nursing homes are suitable for people who have
-          ongoing medical needs, for example those recovering from a stroke, living
-          with advanced dementia, or managing complex long-term conditions.
-          </p>
-          </div>
-          </div>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Care homes and nursing homes
+        </h1>
 
-          {/* Choosing a home */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Choosing a care home</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Choosing a care home is an important decision. Here are some things to consider:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Location -- is the home close to family and friends?</li>
-          <li>The type of care provided -- does it match your needs?</li>
-          <li>CQC rating -- what does the latest inspection report say?</li>
-          <li>The atmosphere -- does the home feel welcoming and well-run?</li>
-          <li>Staff -- are they friendly, attentive, and well-trained?</li>
-          <li>Activities -- does the home offer social activities and outings?</li>
-          <li>Food -- are meals nutritious and do they cater for dietary needs?</li>
-          <li>Rooms -- are they comfortable, clean, and can you personalise them?</li>
-          <li>Cost -- what is included in the fees and what is extra?</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          We recommend visiting at least two or three homes before making a decision. Ask
-          to have a meal, meet other residents, and speak to staff. Your social worker can
-          help you identify suitable homes.
-          </p>
-          </section>
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          Find out when residential care may be the right option, the difference between residential and nursing homes, and how to choose and pay for a placement.
+        </p>
 
-          {/* CQC ratings */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">CQC ratings and inspections</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          All care homes and nursing homes in England are inspected and rated by the Care
-          Quality Commission (CQC). Ratings range from Outstanding to Inadequate:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Outstanding</strong> -- the service is performing exceptionally well</li>
-          <li><strong>Good</strong> -- the service is performing well and meeting expectations</li>
-          <li><strong>Requires improvement</strong> -- the service is not performing as well as it should</li>
-          <li><strong>Inadequate</strong> -- the service is performing badly and action has been taken</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You can search for care homes and read their latest inspection reports on the{" "}
+        {/* Primary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-8">
           <a
-          href="https://www.cqc.org.uk"
-          className="text-wf-blue underline"
-          target="_blank"
-          rel="noopener noreferrer"
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
           >
-          CQC website
-          </a>.
-          </p>
-          </section>
-
-          {/* Funding */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Funding care home fees</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          How your care home placement is funded depends on your financial situation. The
-          council will carry out a financial assessment to determine what you can afford
-          to pay. There are several possible outcomes:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>
-          <strong>Council-funded:</strong> If your capital (savings, investments, and
-          property) is below the lower capital threshold, the council will pay your care
-          home fees. You will contribute most of your income, keeping a personal
-          expenses allowance.
-          </li>
-          <li>
-          <strong>Partly council-funded:</strong> If your capital is between the lower
-          and upper capital thresholds, you will pay a contribution from your capital
-          (called a tariff income) as well as most of your income.
-          </li>
-          <li>
-          <strong>Self-funded:</strong> If your capital is above the upper capital
-          threshold, you will be responsible for paying your own care home fees. The
-          council can still help you find a suitable placement.
-          </li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you have nursing needs, the NHS may contribute through NHS-funded nursing
-          care (FNC). In some cases, you may qualify for NHS continuing healthcare, which
-          covers the full cost of your care.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          For full details, see our{" "}
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          paying for care
-          </Link>{" "}
-          page.
-          </p>
-          </section>
-
-          {/* Council-run homes */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Council-run care homes in Waltham Forest</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Waltham Forest Council operates several care facilities:
-          </p>
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
-          <Link
-          to="/care-homes/george-mason-lodge"
-          className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
-          >
-          <h3 className="text-lg font-bold text-[#231F20]">George Mason Lodge</h3>
-          <p className="mt-2 text-sm text-wf-gray">Council-run residential care home</p>
-          </Link>
-          <Link
-          to="/care-homes/mapleton-road"
-          className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
-          >
-          <h3 className="text-lg font-bold text-[#231F20]">Mapleton Road</h3>
-          <p className="mt-2 text-sm text-wf-gray">Care facility and services</p>
-          </Link>
-          <Link
-          to="/care-homes/alliston-house"
-          className="block rounded-md border border-wf-gray-light p-4 hover:border-[#004E3E] hover:shadow-md transition-all no-underline"
-          >
-          <h3 className="text-lg font-bold text-[#231F20]">Alliston House</h3>
-          <p className="mt-2 text-sm text-wf-gray">Residential support and services</p>
-          </Link>
-          </div>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Get help choosing a care home</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          Our Adult Social Care team can help you understand your options and find a
-          suitable care home. Contact us:
-          </p>
-          <p className="mt-3 text-wf-dark font-semibold">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">
-          020 8496 3130
+            Get a care assessment
+            <ArrowRight size={18} />
           </a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">
-          Monday to Friday, 9am to 5pm (excluding bank holidays)
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
-          Request housing and care support
-          </Link>
-          </li>
-          <li>
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          Paying for care
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.cqc.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care Quality Commission (CQC)
+          <a
+            href="tel:02084963130"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            <Phone size={18} />
+            Call 020 8496 3130
           </a>
-          </li>
-          <li>
-          <a href="https://www.nhs.uk/conditions/social-care-and-support-guide/care-services-equipment-and-care-homes/care-homes/" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          NHS guide to care homes
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
         </div>
+
+        {/* Hero Image Placeholder */}
+        <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-80 flex items-center justify-center">
+          <p className="text-gray-400 text-center text-lg">
+            IMAGE PLACEHOLDER – CARE HOMES AND NURSING HOMES
+          </p>
+        </div>
+
+        {/* Contents navigation */}
+        <nav className="mb-10 bg-gray-50 p-6 border border-gray-200">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#difference" className="text-[#bf3688] hover:underline">What the difference is</a></li>
+            <li><a href="#when-right" className="text-[#bf3688] hover:underline">When a care home may be the right option</a></li>
+            <li><a href="#finding" className="text-[#bf3688] hover:underline">Finding a care home</a></li>
+            <li><a href="#paying" className="text-[#bf3688] hover:underline">Paying for a care home</a></li>
+            <li><a href="#council-homes" className="text-[#bf3688] hover:underline">Council-run care homes</a></li>
+            <li><a href="#related" className="text-[#bf3688] hover:underline">Related help</a></li>
+          </ul>
+        </nav>
+
+        {/* What the difference is */}
+        <section id="difference" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">What the difference is</h2>
+          <p className="text-gray-700 mb-6">There are two main types of care home.</p>
+          
+          <div className="space-y-6">
+            <div className="bg-gray-50 p-6 border-2 border-[#003078] bg-[#d7f8ff]">
+              <h3 className="font-bold text-gray-900 mb-3 text-lg">Residential homes</h3>
+              <p className="text-gray-700">Provide accommodation with 24-hour personal care support, such as help with dressing, bathing and meals.</p>
+            </div>
+            
+            <div className="bg-gray-50 p-6 border-2 border-[#003078] bg-[#d7f8ff]">
+              <h3 className="font-bold text-gray-900 mb-3 text-lg">Nursing homes</h3>
+              <p className="text-gray-700">Provide the same support as residential homes, but with a registered nurse available at all times.</p>
+            </div>
+          </div>
+          
+          <p className="text-gray-700 mt-6">
+            Both are inspected by the Care Quality Commission (CQC).
+          </p>
+        </section>
+
+        {/* When a care home may be the right option */}
+        <section id="when-right" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">When a care home may be the right option</h2>
+          <p className="text-gray-700 mb-4">A care home may be the right option if:</p>
+          <ul className="space-y-3">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">you need 24-hour support</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">living in your own home is no longer safe or realistic</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">supported living, extra care or sheltered housing would not provide enough support</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">you need nursing care on site</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Finding a care home */}
+        <section id="finding" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Finding a care home</h2>
+          <p className="text-gray-700 mb-6">You can:</p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <div>
+                <span className="text-gray-700">search the NHS website for care homes and nursing homes</span>
+                <br />
+                <a href="https://www.nhs.uk/service-search/find-a-care-home" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline inline-flex items-center gap-2 mt-1">
+                  NHS care home search <ExternalLink size={16} />
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <div>
+                <span className="text-gray-700">check inspection reports on the CQC website</span>
+                <br />
+                <a href="https://www.cqc.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline inline-flex items-center gap-2 mt-1">
+                  Care Quality Commission <ExternalLink size={16} />
+                </a>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <div>
+                <span className="text-gray-700">get independent advice from Age UK or Healthwatch</span>
+                <br />
+                <div className="flex flex-wrap gap-4 mt-1">
+                  <a href="https://www.ageuk.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline inline-flex items-center gap-2">
+                    Age UK <ExternalLink size={16} />
+                  </a>
+                  <a href="https://www.healthwatch.co.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline inline-flex items-center gap-2">
+                    Healthwatch <ExternalLink size={16} />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+              <span className="text-gray-700">ask our staff for advice</span>
+            </li>
+          </ul>
+        </section>
+
+        {/* Paying for a care home */}
+        <section id="paying" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Paying for a care home</h2>
+          <p className="text-gray-700 mb-4">
+            Depending on your finances, you may need to pay for some or all of your care home costs.
+          </p>
+          <p className="text-gray-700 mb-4">
+            If you have assets over the relevant threshold, you will usually pay your own costs.
+          </p>
+          <p className="text-gray-700 mb-6">
+            If you own your home, there may be options such as a deferred payment agreement.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#bf3688] hover:underline font-semibold"
+            >
+              Paying for care and support
+            </a>
+            <a
+              href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support/paying-your-care-and-support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#bf3688] hover:underline font-semibold"
+            >
+              Paying for your care and support
+            </a>
+            <a
+              href="https://www.walthamforest.gov.uk/adult-social-care/get-social-care-help/who-qualifies-social-care-support"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#bf3688] hover:underline font-semibold"
+            >
+              Who qualifies for social care support
+            </a>
+          </div>
+        </section>
+
+        {/* Council-run care homes */}
+        <section id="council-homes" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-6">Council-run care homes</h2>
+          <p className="text-gray-700 mb-6">Waltham Forest currently runs:</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a
+              href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes/george-mason-lodge"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">George Mason Lodge</h3>
+              <p className="text-sm text-gray-700 pr-12">Leytonstone care home for older adults, including dementia care</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            <a
+              href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes/mapleton-road"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Mapleton Road</h3>
+              <p className="text-sm text-gray-700 pr-12">Chingford care home for older adults with dementia</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+
+            <a
+              href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes/alliston-house"
+              className="bg-white border border-gray-200 shadow-sm p-6 pb-20 hover:shadow-md transition-shadow relative"
+            >
+              <h3 className="text-lg font-bold text-[#bf3688] mb-2 pr-12">Alliston House</h3>
+              <p className="text-sm text-gray-700 pr-12">Walthamstow care home for older adults with dementia</p>
+              <div className="absolute right-6 bottom-6 w-10 h-10 rounded-full bg-[#bf3688] flex items-center justify-center">
+                <ArrowRight className="text-white" size={20} />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        {/* Related help */}
+        <section id="related" className="mb-10 scroll-mt-6">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related help</h2>
+          <div className="space-y-3">
+            <a href="#/adult-social-care/care-homes-and-supported-living/supported-living" className="block text-[#bf3688] hover:underline font-semibold">
+              Supported living
+            </a>
+            <a href="#/adult-social-care/care-homes-and-supported-living/shared-lives" className="block text-[#bf3688] hover:underline font-semibold">
+              Shared Lives
+            </a>
+            <a href="#/adult-social-care/care-homes-and-supported-living/extra-care-housing" className="block text-[#bf3688] hover:underline font-semibold">
+              Extra care housing
+            </a>
+          </div>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

@@ -1,176 +1,119 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Mental health and wellbeing", to: "/mental-health" },
-  { title: "Talking therapies and professional support", to: "/mental-health/talking-therapies-professional-support" },
-  { title: "Local mental health support services", to: "/mental-health/local-support-services" },
-];
+import { AlertTriangle } from 'lucide-react';
 
 export default function UrgentMentalHealthSupportPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/mental-health" className="text-wf-blue underline hover:text-wf-green">Mental health and wellbeing</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Urgent mental health support</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Urgent mental health support
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/mental-health-wellbeing" className="hover:underline">Mental health and wellbeing</a>
+          <span className="mx-1">&gt;</span>
+          <span>Urgent mental health support</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Urgent mental health support
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you or someone you know is in a mental health crisis, help is available now. You do not need to wait for a referral or an appointment.
+        </p>
+
+        {/* In an emergency */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">In an emergency</h2>
+          <div className="bg-red-50 border-2 border-red-600 p-6 mb-4">
+            <p className="text-gray-900 font-bold flex items-center gap-2">
+              <AlertTriangle size={20} className="text-red-600" />
+              If you or someone else is in immediate danger, call 999.
+            </p>
+          </div>
+          <p className="text-gray-700">
+            If you are at A&E, tell the staff that you are experiencing a mental health crisis. They will make sure you see someone who can help.
+          </p>
+        </section>
+
+        {/* Mental Health Direct */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Mental Health Direct</h2>
+          <p className="text-gray-700 mb-4">
+            If you are in a crisis and do not know what to do, call <strong>Mental Health Direct on 0800 995 1000</strong>. This is a free, 24/7 helpline provided by NELFT (North East London NHS Foundation Trust) for people living in Waltham Forest. You can call at any time of day or night.
+          </p>
+          <p className="text-gray-700">
+            The team can talk you through what you are experiencing, help you decide what to do next, and connect you to the right service.
+          </p>
+        </section>
+
+        {/* Samaritans */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Samaritans</h2>
+          <p className="text-gray-700 mb-4">
+            If you need to talk to someone, call the Samaritans on <strong>116 123</strong>. The call is free and the service is available 24 hours a day, 7 days a week. You do not have to be suicidal to call — you can talk about anything that is troubling you.
+          </p>
+          <p className="text-gray-700">
+            You can also email <a href="mailto:jo@samaritans.org" className="text-[#bf3688] hover:underline">jo@samaritans.org</a> if you prefer to write.
+          </p>
+        </section>
+
+        {/* Shout */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Shout</h2>
+          <p className="text-gray-700">
+            If you prefer to text, text <strong>SHOUT to 85258</strong>. Shout is a free, confidential, 24/7 text messaging support service for anyone who is struggling to cope. You will be connected to a trained volunteer.
+          </p>
+        </section>
+
+        {/* NHS 111 */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">NHS 111</h2>
+          <p className="text-gray-700">
+            If you need urgent medical advice but it is not an emergency, call <strong>111</strong>. You can also go to <a href="https://111.nhs.uk" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">111.nhs.uk</a>. NHS 111 can help you access mental health crisis services in your area.
+          </p>
+        </section>
+
+        {/* If you are worried about someone else */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">If you are worried about someone else</h2>
+          <p className="text-gray-700">
+            If you are concerned that someone you know is having a mental health crisis, you can call Mental Health Direct on 0800 995 1000 for advice on how to help them. If they are in immediate danger, call 999.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/talking-therapies-and-professional-support" className="text-[#bf3688] hover:underline">
+                Talking therapies and professional support
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/mental-health-wellbeing/adult-social-care-and-mental-health" className="text-[#bf3688] hover:underline">
+                Adult social care and mental health
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/protecting-adults-at-risk" className="text-[#bf3688] hover:underline">
+                Keeping adults safe
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      {/* Emergency callout */}
-      <section className="rounded-lg border-2 border-[#d4351c] bg-[#fcedf3] p-6">
-      <h2 className="text-xl font-bold text-red-700">If you are in immediate danger</h2>
-      <p className="mt-2 text-wf-dark leading-relaxed">
-      Call <strong>999</strong> or go to your nearest Accident and Emergency (A&amp;E)
-      department if you or someone else is in immediate danger or has harmed
-      themselves.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Crisis team</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The NELFT Crisis Resolution and Home Treatment Team provides urgent mental
-      health support for adults in Waltham Forest. The team can help if you are
-      experiencing a mental health crisis and need immediate support to stay safe.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      <strong>Crisis line:</strong>{" "}
-      <a href="tel:08001510023" className="text-wf-blue underline">
-      0800 151 0023
-      </a>{" "}
-      (available 24 hours a day, 7 days a week)
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The crisis team can provide assessment, short-term support and, where
-      appropriate, home treatment as an alternative to hospital admission.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Samaritans</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The Samaritans are available 24 hours a day, 365 days a year for anyone
-      who is struggling to cope. You do not have to be suicidal to call.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      <strong>Telephone:</strong>{" "}
-      <a href="tel:116123" className="text-wf-blue underline">116 123</a>{" "}
-      (free to call from any phone)
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      <strong>Email:</strong>{" "}
-      <a href="mailto:jo@samaritans.org" className="text-wf-blue underline hover:text-wf-green">
-      jo@samaritans.org
-      </a>
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">A&amp;E</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you are in a mental health crisis and feel you cannot keep yourself safe,
-      you can go to your nearest A&amp;E department. Mental health professionals
-      are available at A&amp;E to provide assessment and support. Your nearest
-      A&amp;E departments include:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Whipps Cross University Hospital, Leytonstone, E11 1NR</li>
-      <li>Homerton University Hospital, Hackney, E9 6SR</li>
-      <li>North Middlesex University Hospital, Edmonton, N18 1QX</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Crisis cafes and safe spaces</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Crisis cafes offer a calm, supportive environment where you can talk to
-      trained staff and volunteers when you are feeling distressed. They are an
-      alternative to A&amp;E for people who are in emotional distress but not in
-      immediate physical danger.
-      </p>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Contact the crisis line on{" "}
-      <a href="tel:08001510023" className="text-wf-blue underline">0800 151 0023</a>{" "}
-      for details of crisis cafes currently operating in the area, including
-      opening hours and locations.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Other helplines</h2>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>SHOUT crisis text line:</strong> Text SHOUT to 85258 (free, 24/7)
-      </li>
-      <li>
-      <strong>CALM (Campaign Against Living Miserably):</strong>{" "}
-      <a href="tel:08005858858" className="text-wf-blue underline">0800 58 58 58</a>{" "}
-      (5pm to midnight, daily)
-      </li>
-      <li>
-      <strong>Papyrus (for under 35s):</strong>{" "}
-      <a href="tel:08000684141" className="text-wf-blue underline">0800 068 4141</a>{" "}
-      (9am to midnight, daily)
-      </li>
-      <li>
-      <strong>Childline (for under 19s):</strong>{" "}
-      <a href="tel:08001111" className="text-wf-blue underline">0800 1111</a>{" "}
-      (free, 24/7)
-      </li>
-      </ul>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

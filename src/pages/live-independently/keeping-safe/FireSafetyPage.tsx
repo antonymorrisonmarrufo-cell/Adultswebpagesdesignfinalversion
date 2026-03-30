@@ -1,210 +1,168 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowLeft, ArrowRight, AlertTriangle, ExternalLink } from 'lucide-react';
+import FeedbackBanner from '../../../components/FeedbackBanner';
+import FeedbackSection from '../../../components/FeedbackSection';
 
 export default function FireSafetyPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Fire safety at home</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">
-          Fire safety at home
-          </h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Fires in the home can be devastating, but most are preventable. Find out
-          how to protect yourself and your household with free fire safety visits,
-          smoke alarms and a fire escape plan.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="hover:underline">Keeping safe at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Fire safety advice for your home</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Fire safety advice for your home
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-8 text-base">
+          Stay fire-safe at home with clear advice and a free safety visit from the London Fire Brigade, including a smoke alarm if needed.
+        </p>
+
+        {/* Important alert box */}
+        <div className="max-w-3xl mb-12">
+          <div className="bg-red-50 border-2 border-red-600 px-5 py-4 flex items-start gap-3">
+            <AlertTriangle className="text-red-600 flex-shrink-0 mt-0.5" size={22} />
+            <div>
+              <p className="font-bold text-red-800 text-base">
+                If there is a fire, call 999.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        <div className="max-w-3xl space-y-0">
 
-          {/* Free fire safety visits */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Free fire safety visits
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          The London Fire Brigade offers free home fire safety visits to all
-          Waltham Forest residents. During a visit, a firefighter will:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Check your smoke alarms and fit free ones if needed</li>
-          <li>Identify fire risks in your home</li>
-          <li>Help you create a fire escape plan</li>
-          <li>Give advice on cooking safely and electrical safety</li>
-          <li>
-          Provide specialist advice if you have mobility issues or other
-          needs
-          </li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          To book a free visit, call the London Fire Brigade on{" "}
-          <strong>0800 028 4428</strong> or visit{" "}
-          <a
-          href="https://www.london-fire.gov.uk/safety/the-home"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          london-fire.gov.uk
-          </a>
-          .
-          </p>
-          </section>
-
-          {/* Smoke alarms */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Smoke alarms</h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Working smoke alarms save lives. Make sure you have at least one on
-          every level of your home. Follow these guidelines:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Test your smoke alarms at least once a month by pressing the test button</li>
-          <li>Replace batteries every year, or when the alarm chirps</li>
-          <li>Replace the entire alarm unit every 10 years</li>
-          <li>Never remove batteries or disconnect a smoke alarm because of false alarms from cooking - move it further from the kitchen instead</li>
-          <li>If you are deaf or hard of hearing, ask about specialist alarms with flashing lights or vibrating pads</li>
-          </ul>
-          </section>
-
-          {/* Fire escape plans */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Fire escape plans
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          Having a plan means everyone in your household knows what to do if
-          there is a fire. Your plan should include:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>The best escape route from each room</li>
-          <li>A second route in case the first is blocked</li>
-          <li>Where to keep door and window keys so they are easy to find in the dark</li>
-          <li>A meeting point outside where everyone gathers</li>
-          <li>How to call 999 once you are safely outside</li>
-          </ul>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you have mobility difficulties and cannot escape quickly, close the
-          door of the room you are in, go to the window and call 999. The fire
-          service will prioritise reaching you.
-          </p>
-          </section>
-
-          {/* Prevention tips */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          Fire prevention tips
-          </h2>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>Never leave cooking unattended</li>
-          <li>Keep tea towels, cloths and clothing away from the cooker</li>
-          <li>Do not overload electrical sockets</li>
-          <li>Keep candles, matches and lighters away from children and always extinguish candles before leaving a room</li>
-          <li>Do not smoke in bed</li>
-          <li>Close internal doors at night to slow the spread of fire</li>
-          <li>Keep escape routes clear of clutter</li>
-          </ul>
-          </section>
-
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">
-          Book a free fire safety visit
-          </h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          Call the London Fire Brigade on{" "}
-          <a
-          href="tel:08000284428"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          0800 028 4428
-          </a>{" "}
-          to arrange a free home fire safety visit.
-          </p>
-          <p className="mt-2 text-sm text-wf-dark">
-          <span className="font-semibold">Adult Social Care:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
-          Callers to your door
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/telecare">Telecare</Link>
-          </li>
-          <li>
-          <Link to="/live-independently/home-adaptations">
-          Home adaptations
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/further-information">
-          Further information on staying safe
-          </Link>
-          </li>
-          </ul>
+          {/* Preventing fires at home */}
+          <div className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Preventing fires at home</h2>
+            <p className="text-gray-700 mb-4">
+              Make sure your home is as safe as possible and reduce the risk of fire where you can.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Use the GOV.UK fire safety guidance for practical advice about:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                smoke alarms
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                common causes of house fires
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                escape plans
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                bedtime checks
+              </li>
+            </ul>
+            <a
+              href="https://www.gov.uk/government/publications/fire-safety-in-the-home"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm"
+            >
+              Fire safety in the home (GOV.UK)
+              <ExternalLink size={14} />
+            </a>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <hr className="border-gray-200" />
+
+          {/* Get a free fire safety check */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Get a free fire safety check</h2>
+            <p className="text-gray-700 mb-4">
+              The London Fire Brigade can provide a free home fire safety visit for people and homes where there is a higher risk of fire.
+            </p>
+            <p className="text-gray-700 mb-4">
+              They can:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                give advice about making your home safer
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                fit a free smoke alarm if needed
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                help you think about escape plans and safety routines
+              </li>
+            </ul>
+            <div className="space-y-3">
+              <div>
+                <a
+                  href="https://www.london-fire.gov.uk/safety/the-home/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm"
+                >
+                  London Fire Brigade fire safety advice
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.london-fire.gov.uk/safety/the-home/home-fire-safety/home-fire-safety-checker-hfsc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm"
+                >
+                  Home Fire Safety Checker
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Previous / Next navigation */}
+          <div className="pt-10 border-t border-gray-200 flex justify-between gap-4">
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <ArrowLeft size={18} />
+              <span>Fraud over the phone</span>
+            </a>
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/further-information-about-keeping-your-home-safe"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <span>Further information about keeping your home safe</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

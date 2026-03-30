@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const relatedPages = [
-  { title: "Our policies", to: "/our-policies" },
-  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
+  { title: "Our policies", to: "/adult-social-care/our-policies" },
+  { title: "Help shape our services", to: "/adult-social-care/complaints-compliments/help-shape-our-services" },
+  { title: "Complaints and compliments", to: "/adult-social-care/complaints-compliments" },
 ];
 
 export default function ConsultationsPage() {
@@ -23,7 +23,7 @@ export default function ConsultationsPage() {
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li className="flex items-center gap-1">
-      <Link to="/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
+      <Link to="/adult-social-care/our-policies" className="text-wf-blue underline hover:text-wf-green">Our policies</Link>
       <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
       </li>
       <li>
@@ -54,22 +54,50 @@ export default function ConsultationsPage() {
 
       <section>
       <h2 className="text-2xl font-bold text-wf-pink">Current consultations</h2>
+      <div className="mt-4 rounded-lg bg-white p-6 shadow-sm">
+      <h3 className="text-lg font-bold text-[#231F20]">Adult Social Care Charging Policy Consultation</h3>
       <p className="mt-3 text-wf-dark leading-relaxed">
-      There are currently no open consultations on adult social care. Please
-      check back regularly or sign up to receive notifications when new
-      consultations are published.
+      The council is consulting on a proposal to change the way it calculates how
+      much people pay towards their care and support at home and in the community.
       </p>
       <p className="mt-3 text-wf-dark leading-relaxed">
-      When consultations are open, you will find details here including what the
-      consultation is about, how to respond, and the closing date for responses.
+      The consultation relates to the Minimum Income Guarantee (MIG) top-up — an
+      additional amount above the statutory minimum that residents are currently
+      allowed to keep before being asked to contribute towards care costs. The
+      council is proposing to reduce this top-up over two years, from 25% to 10%
+      and then to 0%, bringing Waltham Forest in line with many other councils.
       </p>
+      <p className="mt-3 text-wf-dark leading-relaxed">
+      This change could affect approximately 2,500 residents who receive community
+      care and support. Of those, around 1,400 currently pay nothing towards their
+      care. If the top-up is reduced, around 350 of those residents may begin
+      contributing a small amount.
+      </p>
+      <div className="mt-5">
+      <a href="https://talk.walthamforest.gov.uk/charging-policy-consultation" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded bg-[#bf3688] px-6 py-3 text-base font-bold text-white hover:bg-[#a02d73] transition-colors">
+        Have your say on the charging policy consultation
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+      </div>
+      </div>
       </section>
 
       <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Past consultations</h2>
+      <h2 className="text-2xl font-bold text-wf-pink">Previous consultations</h2>
       <p className="mt-3 text-wf-dark leading-relaxed">
-      We publish the outcomes of past consultations so you can see how your
-      feedback has been used. Recent past consultations include:
+      When consultations close, the council publishes the outcome and explains
+      what decisions were made. Check the council's main consultations page for
+      a full list of current and previous consultations across all council
+      services.
+      </p>
+      <div className="mt-4">
+      <a href="https://www.walthamforest.gov.uk/consultations" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-wf-blue underline hover:text-wf-green font-semibold">
+        View all council consultations
+        <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </a>
+      </div>
+      <p className="mt-6 text-wf-dark leading-relaxed">
+      Recent past consultations include:
       </p>
       <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
       <li>

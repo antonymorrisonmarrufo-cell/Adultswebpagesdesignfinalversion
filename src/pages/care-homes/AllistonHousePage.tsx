@@ -1,184 +1,118 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, Phone } from 'lucide-react';
 
 export default function AllistonHousePage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/care-homes" className="text-wf-blue underline hover:text-wf-green">Housing and care homes</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Alliston House</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Alliston House</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Alliston House is a care facility in Waltham Forest providing residential
-          support and services for adults who need care and accommodation.
-          </p>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living" className="hover:underline">Care homes and supported living</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="hover:underline">Care homes and nursing homes</a>
+          <span className="mx-1">&gt;</span>
+          <span>Alliston House</span>
+        </nav>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* About */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">About Alliston House</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Alliston House is a residential care facility run by the London Borough of
-          Waltham Forest. It provides care and support for adults who are unable to live
-          independently and need a safe, supportive environment. The team at Alliston
-          House is dedicated to providing person-centred care that respects each
-          resident's individuality, dignity, and choices.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The home promotes a community atmosphere where residents are encouraged to
-          participate in activities, maintain social connections, and live as full a life
-          as possible.
-          </p>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Alliston House
+        </h1>
 
-          {/* Services */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Services provided</h2>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>24-hour care and support from experienced, trained staff</li>
-          <li>Personal care including help with washing, dressing, eating, and mobility</li>
-          <li>Freshly prepared meals catering for a range of dietary and cultural needs</li>
-          <li>Medication management and administration</li>
-          <li>A programme of social, recreational, and therapeutic activities</li>
-          <li>Access to visiting healthcare professionals including GPs, district nurses, and therapists</li>
-          <li>Personalised care plans reviewed regularly with residents and families</li>
-          <li>Laundry and housekeeping services</li>
-          <li>Support to maintain contact with family, friends, and the wider community</li>
-          </ul>
-          </section>
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          A council-run Walthamstow care home for older adults living with dementia.
+        </p>
 
-          {/* Accommodation */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Accommodation</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Alliston House offers comfortable single bedrooms. Residents are encouraged to
-          personalise their rooms with their own belongings, photographs, and furnishings
-          to create a familiar and homely space.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The facility includes communal lounges, a dining area, garden space, and quiet
-          areas for residents to relax or spend time with visitors. The building is
-          accessible throughout for people with mobility needs, including wheelchair
-          users.
-          </p>
-          </section>
-
-          {/* Visiting */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Visiting</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Visitors are welcome at Alliston House. We understand how important it is for
-          residents to maintain relationships with their family and friends. There are
-          comfortable spaces available for visits, and staff are happy to discuss your
-          family member's care and wellbeing with you.
-          </p>
-          </section>
-
-          {/* Referrals */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to be referred</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Placements at Alliston House are arranged through a care and support assessment
-          carried out by Waltham Forest Council. If you think a residential placement
-          might be right for you or someone you care about, contact the Adult Social Care
-          team to request an assessment. Your social worker will work with you to decide
-          if Alliston House is the best option for your needs.
-          </p>
-          </section>
-
-          {/* Fees */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Fees and funding</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The cost of a placement at Alliston House depends on your assessed care needs
-          and your financial situation. The council will carry out a financial assessment
-          to determine your contribution. For full details, see our{" "}
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          paying for care
-          </Link>{" "}
-          page.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Contact Alliston House</h2>
-          <div className="mt-3 space-y-2 text-wf-dark">
-          <p>
-          <strong>Telephone:</strong>{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">
-          020 8496 3130
-          </a>{" "}
-          (Adult Social Care team)
-          </p>
-          <p>
-          <strong>Email:</strong>{" "}
-          <a href="mailto:socialcaredirect@walthamforest.gov.uk" className="text-wf-blue underline">
-          socialcaredirect@walthamforest.gov.uk
+        {/* Primary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-8">
+          <a
+            href="tel:02085204984"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            <Phone size={18} />
+            Call Alliston House: 020 8520 4984
           </a>
-          </p>
-          <p>
-          <strong>Address:</strong> Alliston House, Waltham Forest, London
-          </p>
-          <p className="text-sm text-wf-gray">
-          To arrange a visit or ask about availability, contact the Adult Social Care
-          team.
-          </p>
-          </div>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/care-homes/care-homes-nursing-homes" className="text-wf-blue underline hover:text-wf-green">
-          Care homes and nursing homes
-          </Link>
-          </li>
-          <li>
-          <Link to="/care-homes/george-mason-lodge" className="text-wf-blue underline hover:text-wf-green">
-          George Mason Lodge
-          </Link>
-          </li>
-          <li>
-          <Link to="/care-homes/mapleton-road" className="text-wf-blue underline hover:text-wf-green">
-          Mapleton Road
-          </Link>
-          </li>
-          <li>
-          <Link to="/care-homes/request-housing-care-support" className="text-wf-blue underline hover:text-wf-green">
-          Request housing and care support
-          </Link>
-          </li>
-          <li>
-          <Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">
-          Paying for care
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="#/adult-social-care/care-homes-and-supported-living/request-housing-care-support"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Get a care assessment
+            <ArrowRight size={18} />
+          </a>
         </div>
+
+        {/* Secondary Image Placeholder */}
+        <div className="mb-12 border-2 border-gray-200 bg-gray-50 h-64 flex items-center justify-center">
+          <p className="text-gray-400 text-center text-lg">
+            IMAGE PLACEHOLDER – ALLISTON HOUSE
+          </p>
+        </div>
+
+        {/* About the home */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">About the home</h2>
+          <p className="text-gray-700">
+            Alliston House is a purpose-built three-storey home in Walthamstow that can accommodate 42 residents.
+          </p>
+        </section>
+
+        {/* Who it supports */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Who it supports</h2>
+          <p className="text-gray-700">
+            The home is registered to support people over 65 with dementia.
+          </p>
+        </section>
+
+        {/* Accommodation and facilities */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Accommodation and facilities</h2>
+          <p className="text-gray-700 mb-4">
+            There are five units in the home and all bedrooms are single rooms.
+          </p>
+          <p className="text-gray-700">
+            Residents have access to shared toilets and bathing facilities, lounge areas and private space for visits if needed.
+          </p>
+        </section>
+
+        {/* Garden and activities */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Garden and activities</h2>
+          <p className="text-gray-700 mb-4">
+            The home has a garden and enclosed patio areas with seating, raised flower beds and barbecue space.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Residents can join a programme of activities and trips.
+          </p>
+          <p className="text-gray-700">
+            Hairdressing is available every fortnight for a charge.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related links</h2>
+          <div className="space-y-3">
+            <a href="#/adult-social-care/care-homes-and-supported-living/care-homes-and-nursing-homes" className="block text-[#bf3688] hover:underline font-semibold">
+              Care homes and nursing homes
+            </a>
+            <a href="https://www.walthamforest.gov.uk/adult-social-care/paying-care-and-support" target="_blank" rel="noopener noreferrer" className="block text-[#bf3688] hover:underline font-semibold">
+              Paying for care and support
+            </a>
+          </div>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

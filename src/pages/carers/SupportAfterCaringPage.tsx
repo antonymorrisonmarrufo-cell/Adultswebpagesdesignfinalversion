@@ -1,122 +1,187 @@
-import { Link } from "react-router-dom";
-
 export default function SupportAfterCaringPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Support after caring ends</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Support after caring ends</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Support after caring ends</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          When your caring role comes to an end, whether through bereavement, the person moving into
-          residential care, or another change, it can be a difficult time. Support is available to help
-          you adjust.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Bereavement */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Bereavement support</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Losing the person you cared for is one of the most difficult experiences you may face. On top of
-          grief, you may also feel a loss of purpose or identity. It is important to know that support is
-          available:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Bereavement counselling</strong> - free counselling through your GP or through Cruse Bereavement Care</li>
-          <li><strong>Bereavement support groups</strong> - local groups where you can share your experience with others</li>
-          <li><strong>Practical help</strong> - assistance with registering a death, probate, and managing affairs</li>
-          <li><strong>Continued peer support</strong> - you can continue to attend carer groups if you wish</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Support after caring ends</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          When a caring role ends, you may need emotional and practical support. Help is available.
+        </p>
 
-          {/* Returning to work */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Returning to work</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you gave up work or reduced your hours to care for someone, returning to work can feel daunting.
-          Help is available:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Jobcentre Plus</strong> - can help with job searching, CV writing, and interview skills</li>
-          <li><strong>Waltham Forest Works</strong> - the council's employment support service</li>
-          <li><strong>Retraining</strong> - you may be eligible for free courses to update your skills</li>
-          <li><strong>Volunteering</strong> - a good way to rebuild confidence and gain recent experience</li>
-          <li><strong>Carers UK Back to Work resources</strong> - online tools and guides for former carers</li>
-          </ul>
-          </section>
-
-          {/* Continued support */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Continued support</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Your needs do not disappear when caring ends. You may continue to access support including:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Health and wellbeing services, including mental health support</li>
-          <li>Benefits advice to help you understand changes to your entitlements</li>
-          <li>Social activities and groups to reduce isolation</li>
-          <li>Advice on housing, finances, and other practical matters</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Under the Care Act 2014, former carers can request an assessment of their needs if they feel
-          they still need support after their caring role ends.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">We are here to help</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If your caring role has recently ended and you need support, please contact us on{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          You do not have to go through this alone.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support/health-wellbeing" className="text-wf-blue underline hover:text-wf-green">
-          Health and wellbeing for carers
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.cruse.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Cruse Bereavement Care
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="#/adult-social-care/being-carer/carers-assessment-and-rights"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Find bereavement and practical support
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="https://www.carersfirst.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            Contact Carers First
+          </a>
         </div>
+
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#bereavement" className="text-[#bf3688] underline hover:no-underline">Bereavement support</a></li>
+            <li><a href="#practical" className="text-[#bf3688] underline hover:no-underline">Practical issues after a death</a></li>
+            <li><a href="#returning" className="text-[#bf3688] underline hover:no-underline">Returning to work, study or volunteering</a></li>
+            <li><a href="#ongoing" className="text-[#bf3688] underline hover:no-underline">Ongoing support for former carers</a></li>
+          </ul>
+        </div>
+
+        <div className="prose max-w-none">
+          
+          <p className="text-lg text-gray-700 mb-8">
+            The end of a caring role can be a difficult and emotional time, whether the person you cared for has died, moved into residential care, or no longer needs your help.
+          </p>
+
+          <div id="bereavement" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Bereavement support</h2>
+            <p className="text-gray-700 mb-4">
+              Losing someone you cared for can be overwhelming. As well as grief, you may feel lost, isolated or unsure what to do next.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Bereavement support is available including:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">counselling and emotional support</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">peer support groups for bereaved carers</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">one-to-one support from Carers First or local bereavement services</span>
+              </li>
+            </ul>
+            <div className="bg-[#FFF0F7] border-2 border-[#003078] bg-[#d7f8ff] p-6 mb-4">
+              <h3 className="text-[#bf3688] font-bold text-lg mb-3">If you need someone to talk to</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-900">Call Samaritans on 116 123 (24/7)</li>
+                <li className="text-gray-900">Contact Cruse Bereavement Support on 0808 808 1677</li>
+                <li className="text-gray-900">Speak to your GP about how you are feeling</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="practical" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Practical issues after a death</h2>
+            <p className="text-gray-700 mb-4">
+              After someone dies, there are practical tasks that need to be done. This can feel overwhelming when you are grieving.
+            </p>
+            <p className="text-gray-700 mb-4">
+              You may need help with:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">registering the death</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">arranging a funeral</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">dealing with benefits and finances</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">understanding your financial situation now caring has ended</span>
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              <a href="https://www.gov.uk/when-someone-dies" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] underline hover:no-underline font-bold">Find step-by-step guidance on what to do when someone dies on GOV.UK</a>
+            </p>
+            <p className="text-gray-700">
+              Citizens Advice and Carers First can also help with practical advice and support.
+            </p>
+          </div>
+
+          <div id="returning" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Returning to work, study or volunteering</h2>
+            <p className="text-gray-700 mb-4">
+              If you took time out of work, education or other activities to care, you may want help returning.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Support may include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">advice on returning to work and updating your CV</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">training and skills development</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">confidence-building and rebuilding social connections</span>
+              </li>
+            </ul>
+            <p className="text-gray-700">
+              <a href="#/adult-social-care/being-carer/work-education-and-training" className="text-[#bf3688] underline hover:no-underline font-bold">Find out more about work, education and training support</a>
+            </p>
+          </div>
+
+          <div id="ongoing" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Ongoing support for former carers</h2>
+            <p className="text-gray-700 mb-4">
+              You do not stop being a carer overnight. It can take time to adjust to life after caring.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Carers First and local support services can continue to support you as you rebuild your life and work out what comes next.
+            </p>
+            <p className="text-gray-700 mb-4">
+              This might include:
+            </p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">staying connected to peer support groups</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">help with practical issues like benefits or housing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">emotional support as you adjust</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );

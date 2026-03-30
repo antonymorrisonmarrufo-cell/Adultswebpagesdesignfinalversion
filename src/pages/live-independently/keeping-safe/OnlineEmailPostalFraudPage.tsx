@@ -1,219 +1,162 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import FeedbackBanner from '../../../components/FeedbackBanner';
+import FeedbackSection from '../../../components/FeedbackSection';
 
 export default function OnlineEmailPostalFraudPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <Breadcrumb className="mb-6">
-          <BreadcrumbList>
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/">Home</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/adult-social-care">Adult Social Care</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently">Live independently</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbLink asChild>
-          <Link to="/live-independently/keeping-safe">Keeping safe</Link>
-          </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-          <BreadcrumbPage>Online, email and postal fraud</BreadcrumbPage>
-          </BreadcrumbItem>
-          </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="text-5xl font-bold text-[#231F20]">
-          Online, email and postal fraud
-          </h1>
-          
-          <p className="mt-4 text-lg leading-relaxed text-wf-gray">
-          Scammers use emails, websites, social media and postal mail to trick
-          people into handing over money or personal information. Learn how to
-          recognise scams and protect yourself.
-          </p>
-        </div>
-      </div>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home" className="hover:underline">Live independently at home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home" className="hover:underline">Keeping safe at home</a>
+          <span className="mx-1">&gt;</span>
+          <span>Online, email or postal fraud</span>
+        </nav>
 
-          {/* Common scam types */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">Common scam types</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Phishing emails:</strong> emails that appear to be from
-          banks, HMRC, the NHS or other trusted organisations, asking you to
-          click a link and enter personal details.
-          </li>
-          <li>
-          <strong>Fake websites:</strong> websites designed to look like
-          genuine retailers or service providers to steal your payment details.
-          </li>
-          <li>
-          <strong>Lottery and prize scams:</strong> letters or emails telling
-          you that you have won a prize, but asking you to pay a fee or
-          provide bank details to claim it.
-          </li>
-          <li>
-          <strong>Romance scams:</strong> fraudsters building online
-          relationships and then asking for money.
-          </li>
-          <li>
-          <strong>Investment scams:</strong> offers of high returns on
-          investments that do not exist.
-          </li>
-          <li>
-          <strong>Postal scams:</strong> letters claiming you owe money,
-          offering fake products or asking you to call premium-rate phone
-          numbers.
-          </li>
-          </ul>
-          </section>
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-3 font-bold leading-tight">
+          Online, email or postal fraud
+        </h1>
 
-          {/* Prevention */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          How to protect yourself
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-wf-gray">
-          <li>
-          Never click on links in emails or text messages from unknown
-          senders. If an email claims to be from your bank, go to their
-          website directly by typing the address into your browser.
-          </li>
-          <li>
-          Look for the padlock symbol in your browser&apos;s address bar when
-          shopping online, and check the website address carefully.
-          </li>
-          <li>
-          Never give out personal or financial information by email.
-          </li>
-          <li>
-          Be cautious of offers that seem too good to be true - they usually
-          are.
-          </li>
-          <li>
-          Use strong, unique passwords for each online account and enable
-          two-factor authentication where possible.
-          </li>
-          <li>
-          Keep your computer and phone software up to date to protect against
-          security vulnerabilities.
-          </li>
-          <li>
-          If you receive a suspicious letter, do not respond or call any
-          numbers it contains.
-          </li>
-          </ul>
-          </section>
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-12 text-base">
+          Stay safe from online and mail fraud by spotting fake messages, avoiding unsafe links, and never sharing personal details.
+        </p>
 
-          {/* Reporting */}
-          <section className="mt-8">
-          <h2 className="text-2xl font-bold text-wf-pink">
-          How to report fraud
-          </h2>
-          <p className="mt-3 text-sm leading-relaxed text-wf-gray">
-          If you think you have been a victim of fraud or have received a
-          suspicious email, letter or message, report it:
-          </p>
-          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-wf-gray">
-          <li>
-          <strong>Action Fraud:</strong> call 0300 123 2040 or visit{" "}
-          <a
-          href="https://www.actionfraud.police.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          actionfraud.police.uk
-          </a>
-          </li>
-          <li>
-          <strong>Suspicious emails:</strong> forward to{" "}
-          <a href="mailto:report@phishing.gov.uk">report@phishing.gov.uk</a>
-          </li>
-          <li>
-          <strong>Suspicious text messages:</strong> forward to 7726
-          </li>
-          <li>
-          <strong>Royal Mail scam mail:</strong> send to Freepost SCAM MAIL
-          (PO Box 797, Exeter EX1 9UN)
-          </li>
-          </ul>
-          </section>
+        <div className="max-w-3xl space-y-0">
 
-          {/* CTA block */}
-          <section className="mt-8 rounded-lg bg-[#d7f8ff] p-6">
-          <h2 className="text-xl font-bold text-wf-pink">Need support?</h2>
-          <p className="mt-2 text-sm leading-relaxed text-wf-gray">
-          If you or someone you know has been affected by a scam, contact our
-          Adult Social Care team for advice and support.
-          </p>
-          <p className="mt-3 text-sm text-wf-dark">
-          <span className="font-semibold">Phone:</span>{" "}
-          <a
-          href="tel:02084963130"
-          className="font-bold text-[#231F20] no-underline hover:underline"
-          >
-          020 8496 3130
-          </a>
-          </p>
-          </section>
-
-          {/* Related links */}
-          <div className="mt-10">
-          <h2 className="text-xl font-bold text-wf-pink">Related links</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
-          <li>
-          <Link to="/live-independently/keeping-safe/fraud-over-the-phone">
-          Fraud over the phone
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/callers-to-your-door">
-          Callers to your door
-          </Link>
-          </li>
-          <li>
-          <Link to="/live-independently/keeping-safe/further-information">
-          Further information on staying safe
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding">Safeguarding</Link>
-          </li>
-          </ul>
+          {/* Common scams */}
+          <div className="pb-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Common scams</h2>
+            <p className="text-gray-700 mb-4">
+              Fraudsters often use emails, texts or letters that look as if they come from a real organisation, such as:
+            </p>
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                a bank
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                HMRC
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                PayPal
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                Amazon
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                investment firms
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                delivery companies
+              </li>
+            </ul>
+            <p className="text-gray-700 mb-4">
+              These messages may ask you to:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                click a link
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                open an attachment
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                confirm personal information
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                change security settings
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                move or invest money
+              </li>
+            </ul>
           </div>
 
-          {/* Last updated */}
-          <p className="mt-10 text-xs text-wf-gray">Last updated: March 2026</p>
+          <hr className="border-gray-200" />
+
+          {/* How to protect yourself */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">How to protect yourself</h2>
+            <p className="text-gray-700 mb-4">
+              To protect yourself:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                delete unsolicited emails without opening them
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                do not open attachments you were not expecting
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                never provide personal information in response to an unexpected contact
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                shred or burn personal documents before disposing of them
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                keep anti-virus and anti-spam software up to date
+              </li>
+              <li className="flex items-start gap-2 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-gray-500 mt-2 flex-shrink-0" />
+                remember that a message can include your name and still be fake
+              </li>
+            </ul>
+          </div>
+
+          {/* Previous / Next navigation */}
+          <div className="pt-10 border-t border-gray-200 flex justify-between gap-4">
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/callers-to-your-door"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <ArrowLeft size={18} />
+              <span>Callers to your door</span>
+            </a>
+            <a
+              href="#/adult-social-care/live-independently-at-home/keeping-safe-at-home/fraud-over-the-phone"
+              className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+            >
+              <span>Fraud over the phone</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

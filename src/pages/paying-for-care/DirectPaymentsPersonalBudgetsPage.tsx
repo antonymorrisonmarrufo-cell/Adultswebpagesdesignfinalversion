@@ -1,153 +1,145 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "How care costs are worked out", to: "/paying-for-care/how-care-costs-worked-out" },
-  { title: "Financial assessment", to: "/paying-for-care/financial-assessment" },
-  { title: "Your care and support plan", to: "/how-adult-social-care-works/your-care-and-support-plan" },
-  { title: "Get financial advice", to: "/paying-for-care/get-financial-advice" },
-];
-
 export default function DirectPaymentsPersonalBudgetsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/paying-for-care" className="text-wf-blue underline hover:text-wf-green">Paying for your care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Direct payments and personal budgets</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Direct payments and personal budgets</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          A personal budget gives you more choice and control over how your care and
-          support needs are met. A direct payment lets you manage that budget yourself.
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/paying-for-care" className="hover:underline">Paying for your care</a>
+          <span className="mx-1">&gt;</span>
+          <span>Direct payments and personal budgets</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Direct payments and personal budgets
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you are eligible for care and support, you will receive a personal budget. You can choose how this is managed, including receiving it as a direct payment so you can arrange your own support.
+        </p>
+
+        {/* What is a personal budget? */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What is a personal budget?</h2>
+          <p className="text-gray-700">
+            A personal budget is the amount of money needed to meet the cost of your eligible care and support needs. It includes any amount the council pays and any amount you contribute yourself. Everyone whose eligible needs are met by the council receives a personal budget as part of their care and support plan.
           </p>
+        </section>
+
+        {/* How a personal budget can be managed */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How a personal budget can be managed</h2>
+          <p className="text-gray-700 mb-4">
+            There are three main ways your personal budget can be used:
+          </p>
+          <ul className="space-y-3">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a direct payment</strong>
+                <span className="text-gray-700"> – the money is paid to you (usually onto a prepaid card) so you can arrange and pay for your own support.</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a council-managed account</strong>
+                <span className="text-gray-700"> – the council holds the budget and arranges support on your behalf, in line with your wishes.</span>
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <div>
+                <strong className="text-gray-900">As a third-party managed account</strong>
+                <span className="text-gray-700"> – another organisation holds the budget and arranges support on your behalf.</span>
+              </div>
+            </li>
+          </ul>
+          <p className="text-gray-700 mt-4">
+            You can also choose a mix of these options. For example, you might take a direct payment for some of your support and ask the council to arrange the rest.
+          </p>
+        </section>
+
+        {/* What is a direct payment? */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What is a direct payment?</h2>
+          <p className="text-gray-700 mb-4">
+            A direct payment gives you the money to arrange your own care and support. Some people use direct payments to employ a personal assistant, hire a care agency of their choice, or pay for activities and services that help them stay independent.
+          </p>
+          <p className="text-gray-700">
+            Direct payments can give you more choice and flexibility. You decide who provides your support and when.
+          </p>
+        </section>
+
+        {/* Do I have to pay anything myself? */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Do I have to pay anything myself?</h2>
+          <p className="text-gray-700">
+            If your financial assessment shows that you need to contribute towards the cost of your care, the council will usually subtract your contribution from your personal budget before paying the direct payment to you. This means you receive the council's share of the budget, not the full amount.
+          </p>
+        </section>
+
+        {/* What can I spend it on? */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What can I spend it on?</h2>
+          <p className="text-gray-700">
+            Your personal budget must be spent on meeting the outcomes agreed in your care and support plan. It cannot be used for anything unrelated to your eligible care needs. You will need to keep records of how the money is spent.
+          </p>
+        </section>
+
+        {/* What if I cannot manage it myself? */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What if I cannot manage it myself?</h2>
+          <p className="text-gray-700 mb-4">
+            You do not need to manage a direct payment on your own. A family member, friend, or nominated person can manage it for you. If you lack the capacity to consent to direct payments, an authorised person can request and manage them on your behalf.
+          </p>
+          <p className="text-gray-700">
+            The Direct Payment Support Service at Waltham Forest Citizens Advice Bureau offers free help and advice for people using direct payments.
+          </p>
+        </section>
+
+        {/* What if I do not want a direct payment? */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What if I do not want a direct payment?</h2>
+          <p className="text-gray-700">
+            Direct payments are optional. If you prefer, the council can arrange your care and support directly, or through a managed account. Whatever you choose will be set out in your care and support plan.
+          </p>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/paying-for-care/how-care-costs-are-worked-out" className="text-[#bf3688] hover:underline">
+                How care costs are worked out
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/paying-for-care/financial-assessment" className="text-[#bf3688] hover:underline">
+                Financial assessment
+              </a>
+            </li>
+            <li>
+              <a href="https://www.walthamforest.gov.uk/adult-social-care/get-social-care-help/new-care-and-support" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] hover:underline">
+                New to care and support
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <div className="max-w-3xl space-y-8">
-          {/* What is a personal budget */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is a personal budget?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you are eligible for support from the council, you will be given a
-          personal budget. This is the amount of money the council allocates to meet
-          your assessed care and support needs.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Your personal budget will be set out in your care and support plan. There
-          are three ways it can be managed:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Direct payment:</strong> the money is paid to you so you can arrange your own care</li>
-          <li><strong>Managed budget:</strong> the council arranges and pays for services on your behalf</li>
-          <li><strong>A combination:</strong> some of your budget is paid directly to you and some is managed by the council</li>
-          </ul>
-          </section>
-
-          {/* What is a direct payment */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is a direct payment?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A direct payment is money from the council paid into a dedicated account
-          so you can buy your own care and support. It gives you the freedom to
-          choose who provides your care, when it happens and how.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          With a direct payment you can:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>Employ a personal assistant directly</li>
-          <li>Buy care from an agency of your choice</li>
-          <li>Pay for activities, equipment or services that meet your care needs</li>
-          <li>Combine your direct payment with your own money to buy more or different support</li>
-          </ul>
-          </section>
-
-          {/* How direct payments work */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How direct payments work</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you choose a direct payment:
-          </p>
-          <ol className="mt-3 list-decimal pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>We work out the amount of your personal budget based on your assessed needs</li>
-          <li>Your assessed contribution (if any) is deducted, and the remainder is paid to you</li>
-          <li>Payments are usually made every four weeks into a separate bank account or prepaid card</li>
-          <li>You use the money to arrange and pay for your own care and support</li>
-          <li>You keep records of how you spend the money</li>
-          <li>We review your direct payment regularly to make sure it is meeting your needs</li>
-          </ol>
-          </section>
-
-          {/* Managing your budget */}
-          <section className="rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Managing your budget</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you receive a direct payment, you are responsible for managing the money
-          properly. This means:
-          </p>
-          <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-          <li>Keeping the money in a separate account used only for your care</li>
-          <li>Keeping receipts and records of what you spend</li>
-          <li>Only spending the money on things that meet your assessed care needs</li>
-          <li>Returning any money you do not use</li>
-          <li>If employing a personal assistant, meeting your legal obligations as an employer (including tax, national insurance and holiday pay)</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You do not have to manage a direct payment on your own. A family member,
-          friend or a direct payment support service can help you. Waltham Forest
-          Council can put you in touch with local support organisations.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <div className="rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-xl font-bold text-[#003078]">Find out more about direct payments</h2>
-          <p className="mt-2 text-wf-dark leading-relaxed">
-          If you would like to discuss whether a direct payment is right for you, or
-          need help getting started, contact us.
-          </p>
-          <p className="mt-3 text-sm font-semibold text-wf-dark">
-          Telephone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline">020 8496 3130</a>
-          </p>
-          <p className="mt-1 text-sm text-wf-gray">Monday to Friday, 9am to 5pm (excluding bank holidays)</p>
-          </div>
-          </div>
-
-          {/* Related links */}
-          <div className="max-w-3xl mt-8">
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          {relatedPages.map((page) => (
-          <li key={page.to}>
-          <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-          {page.title}
-          </Link>
-          </li>
-          ))}
-          </ul>
-          </section>
-          </div>
-
-          {/* Last updated */}
-          <p className="mt-8 text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
       </div>
     </div>
   );

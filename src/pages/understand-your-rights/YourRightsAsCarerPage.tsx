@@ -1,168 +1,184 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Understand your rights", to: "/understand-your-rights" },
-  { title: "Support for carers", to: "/carers" },
-  { title: "Challenging decisions and raising concerns", to: "/understand-your-rights/challenging-decisions-raising-concerns" },
-];
+import { Phone, ExternalLink } from 'lucide-react';
 
 export default function YourRightsAsCarerPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/understand-your-rights" className="text-wf-blue underline hover:text-wf-green">Understand your rights</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Your rights as a carer</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Your rights as a carer
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/understand-your-rights" className="hover:underline">Understand your rights</a>
+          <span className="mx-1">&gt;</span>
+          <span>Your rights as a carer</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Your rights as a carer
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If you provide unpaid care for a family member, friend, or neighbour, the law gives you specific rights. You are entitled to support in your own right — not just as an extension of the person you care for.
+        </p>
+
+        {/* What the Care Act says about carers */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What the Care Act says about carers</h2>
+          <p className="text-gray-700">
+            Since April 2015, the Care Act 2014 has given unpaid carers the same rights to assessment and support as the people they care for. This means the council must treat your needs as equally important.
+          </p>
+        </section>
+
+        {/* Your right to a carer's assessment */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Your right to a carer's assessment</h2>
+          <p className="text-gray-700 mb-4">
+            If you provide regular and substantial care for another person, you have the right to ask for a carer's assessment. This is a conversation about how caring affects your life, what you find difficult, and what support would help.
+          </p>
+          <p className="text-gray-700 mb-6">
+            You are entitled to an assessment regardless of the level of care you provide, the financial resources of either you or the person you care for, or whether the person you look after has been assessed by the council.
+          </p>
+          <div className="bg-gray-50 border border-gray-200 p-6">
+            <p className="text-gray-700 mb-3">
+              To request a carer's assessment, contact the Adult Social Care team on <strong>020 8496 3130</strong>, or ask Carers First (who provide carer support services on behalf of the council).
+            </p>
+          </div>
+        </section>
+
+        {/* What the assessment looks at */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What the assessment looks at</h2>
+          <p className="text-gray-700 mb-4">
+            A carer's assessment considers whether your caring role is affecting your ability to:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-4">
+            <li>Carry out day-to-day tasks at home</li>
+            <li>Look after your own physical and mental health</li>
+            <li>Maintain relationships with family and friends</li>
+            <li>Participate in work, education, or training</li>
+            <li>Have time for leisure and social activities</li>
+            <li>Achieve the things that matter to you</li>
+          </ul>
+          <p className="text-gray-700">
+            If your caring role is having a significant impact on your wellbeing in any of these areas, you may be eligible for support.
+          </p>
+        </section>
+
+        {/* Support you may be entitled to */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Support you may be entitled to</h2>
+          <p className="text-gray-700 mb-4">
+            If your assessment shows you have eligible needs, the council must provide support. This might include:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-4">
+            <li>Replacement care (sometimes called respite) so you can take a break</li>
+            <li>Help with tasks around the home</li>
+            <li>A personal budget or direct payment to arrange your own support</li>
+            <li>Referral to community services, peer support groups, or counselling</li>
+            <li>Information about benefits you may be entitled to, including Carer's Allowance</li>
+          </ul>
+          <p className="text-gray-700">
+            Support for carers is provided free of charge. The council does not charge for services provided directly to you as a carer in your own right.
+          </p>
+        </section>
+
+        {/* Other protections for carers */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Other protections for carers</h2>
+          <p className="text-gray-700 mb-4">
+            In addition to the Care Act, other laws protect your rights as a carer:
+          </p>
+          <ul className="list-disc ml-6 text-gray-700 space-y-2">
+            <li><strong>Equality Act 2010</strong> — protects you from discrimination related to your caring role</li>
+            <li><strong>Employment Rights Act 1996</strong> — gives you the right to take time off for emergencies involving a dependant</li>
+            <li><strong>Flexible working regulations</strong> — give you the right to request flexible working arrangements if you are an employee</li>
+          </ul>
+        </section>
+
+        {/* Carers First */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Carers First</h2>
+          <p className="text-gray-700 mb-4">
+            Carers First provides support services for unpaid carers on behalf of the council. They offer practical and emotional support, advice, information, peer support groups, and training.
+          </p>
+          <a 
+            href="https://www.carersfirst.org.uk/waltham-forest"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[#bf3688] hover:underline font-semibold"
+          >
+            Visit carersfirst.org.uk/waltham-forest
+            <ExternalLink size={16} />
+          </a>
+        </section>
+
+        {/* Further information */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Further information</h2>
+          <ul className="space-y-3">
+            <li>
+              <a 
+                href="https://www.carersuk.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+              >
+                Carers UK — information about carers' rights, benefits, and support
+                <ExternalLink size={16} />
+              </a>
+            </li>
+            <li>
+              <a 
+                href="https://www.gov.uk/carers-allowance"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#bf3688] hover:underline"
+              >
+                GOV.UK — Carer's Allowance information and applications
+                <ExternalLink size={16} />
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/how-to-get-support" className="text-[#bf3688] hover:underline">
+                How to get support
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">
+                Being a carer
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/understand-your-rights/your-rights-under-care-act" className="text-[#bf3688] hover:underline">
+                Your rights under the Care Act
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/understand-your-rights/independent-advocacy" className="text-[#bf3688] hover:underline">
+                Independent advocacy
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 29 March 2026</p>
+          <p>Next review: 29 March 2027</p>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If you provide unpaid care for someone, you have important legal rights
-      under the Care Act 2014. The council has a duty to support you in your
-      caring role and to consider your own wellbeing.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Right to an assessment</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      As a carer, you have the right to a carer's assessment, regardless of:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>How much care you provide</li>
-      <li>Your financial situation</li>
-      <li>Whether the person you care for is receiving services</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      The assessment will look at the impact of your caring role on your own
-      wellbeing, your ability to work or study, and your willingness and ability
-      to continue caring. It will also consider what support would help you.
-      </p>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Support plan</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If the assessment shows you have eligible needs, you are entitled to a
-      carer's support plan. This may include:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Respite care or replacement care so you can take a break</li>
-      <li>Training in your caring role</li>
-      <li>Support to maintain your own health and wellbeing</li>
-      <li>Help with transport or equipment</li>
-      <li>A direct payment to arrange your own support</li>
-      <li>Access to carers groups and peer support</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Review of your support</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your carer's support plan will be reviewed regularly. You can also request
-      a review at any time if:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Your caring role has changed</li>
-      <li>Your own health or circumstances have changed</li>
-      <li>The needs of the person you care for have changed</li>
-      <li>You feel the current support is not working</li>
-      </ul>
-      </section>
-
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Challenging decisions</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      If you disagree with a decision about your carer's assessment or support
-      plan, you have the right to:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Ask for an explanation of how the decision was made</li>
-      <li>Request a review of the decision</li>
-      <li>Make a formal complaint</li>
-      <li>Contact the Local Government and Social Care Ombudsman</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      For more information, visit our{" "}
-      <Link
-      to="/understand-your-rights/challenging-decisions-raising-concerns"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      challenging decisions and raising concerns
-      </Link>{" "}
-      page.
-      </p>
-      </section>
-
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      To request a carer's assessment or for support with your caring role,
-      contact our team.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
       </div>
     </div>
   );

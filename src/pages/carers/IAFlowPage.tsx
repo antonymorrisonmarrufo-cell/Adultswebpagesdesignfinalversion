@@ -1,132 +1,141 @@
-import { Link } from "react-router-dom";
-
 export default function IAFlowPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Information and advice flow</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Information and advice flow</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          A step-by-step guide to understanding how to access carer support in Waltham Forest, from first
-          contact through to ongoing help.
-          </p>
+    <div className="max-w-7xl mx-auto px-6 py-12">
+      <h1 className="text-[#bf3688] mb-8">Information Architecture Flow</h1>
+      <p className="text-gray-700 mb-12 text-lg">
+        This page shows how carers navigate through our services — by who they are (Lane A) or what they need to do (Lane B).
+      </p>
+      
+      <div className="bg-white border-2 border-gray-200 p-8 rounded-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Lane A - By Carer Type */}
+          <div>
+            <div className="bg-[#bf3688] text-white p-4 rounded-t-lg">
+              <h2 className="text-white">Lane A: By Carer Type</h2>
+            </div>
+            <div className="border-2 border-[#bf3688] border-t-0 rounded-b-lg p-6 space-y-6">
+              {/* Young Carers */}
+              <div className="bg-[#FFF0F7] p-4 rounded-lg">
+                <h3 className="text-[#bf3688] mb-3">Young Carers (0–18)</h3>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Get a carer&apos;s assessment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Breaks & respite</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Emergency help</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Parent Carers */}
+              <div className="bg-[#FFF0F7] p-4 rounded-lg">
+                <h3 className="text-[#bf3688] mb-3">Parent Carers</h3>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Get a carer&apos;s assessment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Money & benefits</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Breaks & respite</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Adult Carers */}
+              <div className="bg-[#FFF0F7] p-4 rounded-lg">
+                <h3 className="text-[#bf3688] mb-3">Adult Carers (18+)</h3>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Get a carer&apos;s assessment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Work/study & rights</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Health & wellbeing</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Universal Offer */}
+              <div className="bg-[#FFF0F7] p-4 rounded-lg">
+                <h3 className="text-[#bf3688] mb-3">Universal Offer</h3>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>After caring</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Work/study & rights</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-[#bf3688]">→</span>
+                    <span>Useful contacts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Lane B - By Task */}
+          <div>
+            <div className="bg-[#bf3688] text-white p-4 rounded-t-lg">
+              <h2 className="text-white">Lane B: By Task</h2>
+            </div>
+            <div className="border-2 border-[#bf3688] border-t-0 rounded-b-lg p-6">
+              <div className="space-y-3">
+                {[
+                  { task: 'Get a carer\'s assessment', tags: ['YC', 'PC', 'AC'] },
+                  { task: 'Money & benefits', tags: ['PC', 'AC'] },
+                  { task: 'Breaks & respite', tags: ['YC', 'PC', 'AC'] },
+                  { task: 'Health & wellbeing', tags: ['AC', 'UO'] },
+                  { task: 'Work/study & rights', tags: ['AC', 'UO'] },
+                  { task: 'Emergency help', tags: ['YC', 'PC', 'AC'] },
+                  { task: 'Useful contacts', tags: ['YC', 'PC', 'AC', 'UO'] },
+                  { task: 'After caring', tags: ['UO'] }
+                ].map((item, index) => (
+                  <div key={index} className="border border-gray-200 p-3 rounded hover:border-[#bf3688] transition-colors">
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-900">{item.task}</span>
+                      <div className="flex gap-1">
+                        {item.tags.map((tag, idx) => (
+                          <span key={idx} className="inline-block px-2 py-1 text-xs bg-[#FFF0F7] text-[#bf3688] rounded">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Step 1 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 1: Recognise your role</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The first step is recognising that you are a carer. If you regularly help someone who could not
-          manage without your support - whether a partner, parent, child, sibling, or friend - you are a
-          carer. You do not need to live with the person or provide a set number of hours of care.
-          </p>
-          </section>
-
-          {/* Step 2 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 2: Get in touch</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Contact us to let us know about your situation. You can:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Phone Adult Social Care on <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a></li>
-          <li>Visit the Carers Hub for a drop-in conversation</li>
-          <li>Ask your GP, hospital, or other health professional to refer you</li>
-          <li>Contact Carers First on 0300 303 1555</li>
-          </ul>
-          </section>
-
-          {/* Step 3 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 3: Initial conversation</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          When you first contact us, we will have an initial conversation to understand your situation.
-          We will provide you with information and advice, and discuss whether a carers assessment would
-          be helpful. We may also signpost you to universal services that are available without an assessment.
-          </p>
-          </section>
-
-          {/* Step 4 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 4: Carers assessment</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you would like a carers assessment, we will arrange one at a time and place that suits you.
-          The assessment looks at how caring affects your life, your health, and your wellbeing. It
-          identifies what support could help you.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          <Link to="/carers/assessment-rights" className="text-wf-blue underline hover:text-wf-green">
-          Find out more about carers assessments
-          </Link>
-          </p>
-          </section>
-
-          {/* Step 5 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 5: Support plan</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          If you have eligible needs, we will work with you to create a support plan. This sets out what
-          support you will receive and how it will be provided. Your support could include direct payments,
-          respite care, access to groups, or other services tailored to your needs.
-          </p>
-          </section>
-
-          {/* Step 6 */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Step 6: Ongoing support and review</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Your support does not end after the assessment. We will review your support plan regularly to
-          make sure it is still meeting your needs. You can also contact us at any time if your situation
-          changes or you need additional help. Universal services at the Carers Hub remain available to
-          you at all times.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/assessment-rights" className="text-wf-blue underline hover:text-wf-green">
-          Carers assessment and rights
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+        {/* Legend */}
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <h3 className="text-gray-900 mb-4">Tag Legend</h3>
+          <div className="flex flex-wrap gap-4 text-sm">
+            <div><span className="inline-block px-2 py-1 bg-[#FFF0F7] text-[#bf3688] rounded mr-2">YC</span>Young Carers</div>
+            <div><span className="inline-block px-2 py-1 bg-[#FFF0F7] text-[#bf3688] rounded mr-2">PC</span>Parent Carers</div>
+            <div><span className="inline-block px-2 py-1 bg-[#FFF0F7] text-[#bf3688] rounded mr-2">AC</span>Adult Carers</div>
+            <div><span className="inline-block px-2 py-1 bg-[#FFF0F7] text-[#bf3688] rounded mr-2">UO</span>Universal Offer</div>
+          </div>
         </div>
       </div>
     </div>

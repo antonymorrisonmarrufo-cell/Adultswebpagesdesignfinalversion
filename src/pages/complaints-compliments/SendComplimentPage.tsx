@@ -1,159 +1,141 @@
-import { Link } from "react-router-dom";
-
-const relatedPages = [
-  { title: "Complaints and compliments", to: "/complaints-compliments" },
-  { title: "Help shape our services", to: "/complaints-compliments/help-shape-services" },
-  { title: "How to get support", to: "/how-to-get-support" },
-];
+import { ArrowRight, Phone, Mail } from 'lucide-react';
 
 export default function SendComplimentPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link to="/complaints-compliments" className="text-wf-blue underline hover:text-wf-green">Complaints and compliments</Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Send a compliment</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Send a compliment
-      </h1>
+    <div className="min-h-screen bg-white">
+      <div className="max-w-4xl mx-auto px-6 py-8 md:py-12">
+        
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/complaints-compliments" className="hover:underline">Complaints, compliments and help shape our future services</a>
+          <span className="mx-1">&gt;</span>
+          <span>Send us a compliment</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">
+          Send us a compliment
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-lg text-gray-700 mb-8">
+          If someone in adult social care has done a good job, or you have had a positive experience, we would like to hear about it.
+        </p>
+
+        {/* Primary CTA */}
+        <div className="mb-12">
+          <a
+            href="https://www.walthamforest.gov.uk/adult-social-care-self-assessment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#a02d73] transition-colors"
+          >
+            Send us a compliment
+            <ArrowRight size={18} />
+          </a>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
+        {/* Why compliments matter */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Why compliments matter</h2>
+          <p className="text-gray-700">
+            Compliments help us understand what is working well so we can do more of it. When you tell us about a positive experience, we share it with the person or team involved. It makes a real difference to the people who work in adult social care.
+          </p>
+        </section>
 
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="max-w-3xl space-y-10">
-      <section>
-      <p className="text-wf-dark leading-relaxed">
-      If you have had a positive experience with Adult Social Care, we would
-      love to hear about it. Compliments help us recognise good practice and
-      motivate our staff to continue providing excellent support.
-      </p>
-      </section>
+        {/* What you might want to tell us about */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">What you might want to tell us about</h2>
+          <p className="text-gray-700 mb-4">
+            You might want to let us know about:
+          </p>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A social worker, care coordinator, or other professional who went the extra mile for you</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A care provider who delivered an excellent service</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A process that worked well and made things easier for you</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>A member of staff who was kind, helpful, or made you feel listened to</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-[#bf3688] mt-1">•</span>
+              <span>An experience that was better than you expected</span>
+            </li>
+          </ul>
+        </section>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What you can share</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can send a compliment about any aspect of our service, including:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>A member of staff who went above and beyond</li>
-      <li>A service that made a real difference to your life or the life of someone you care about</li>
-      <li>The quality of care you received</li>
-      <li>A team that worked well together to support you</li>
-      <li>A care provider commissioned by the council that delivered excellent care</li>
-      </ul>
-      </section>
+        {/* How to send a compliment */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">How to send a compliment</h2>
+          
+          <div className="space-y-4 mb-6">
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1">Online:</p>
+              <p className="text-gray-700">Use our compliment form — it takes a couple of minutes.</p>
+            </div>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">How to send a compliment</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      You can share positive feedback in the following ways:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>
-      <strong>Online:</strong> Complete the feedback form on the Waltham Forest
-      Council website
-      </li>
-      <li>
-      <strong>By phone:</strong> Call{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>{" "}
-      (Monday to Friday, 9am to 5pm)
-      </li>
-      <li>
-      <strong>By email:</strong>{" "}
-      <a
-      href="mailto:socialcaredirect@walthamforest.gov.uk"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      socialcaredirect@walthamforest.gov.uk
-      </a>
-      </li>
-      <li>
-      <strong>In writing:</strong> Write to Adult Social Care, Waltham Forest
-      Council, Town Hall, Forest Road, Walthamstow, London E17 4JF
-      </li>
-      </ul>
-      </section>
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1 flex items-center gap-2">
+                <Phone size={18} className="text-[#bf3688]" />
+                Phone:
+              </p>
+              <p className="text-gray-700">Call 020 8496 3130 and ask to leave a compliment about adult social care.</p>
+            </div>
 
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">What happens to your compliment</h2>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      When we receive a compliment, we will:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-wf-dark leading-relaxed">
-      <li>Pass your feedback on to the relevant team or individual</li>
-      <li>Record it so we can track positive feedback across our services</li>
-      <li>Use it to identify and share good practice</li>
-      </ul>
-      <p className="mt-3 text-wf-dark leading-relaxed">
-      Your compliments genuinely make a difference to the people who work in
-      adult social care.
-      </p>
-      </section>
+            <div className="border-2 border-[#003078] bg-[#d7f8ff] pl-4">
+              <p className="font-bold text-gray-900 mb-1 flex items-center gap-2">
+                <Mail size={18} className="text-[#bf3688]" />
+                Email:
+              </p>
+              <p className="text-gray-700">
+                <a href="mailto:information.officer@walthamforest.gov.uk" className="text-[#bf3688] hover:underline">
+                  information.officer@walthamforest.gov.uk
+                </a>
+              </p>
+            </div>
+          </div>
 
-      <section className="rounded-lg border-2 border-[#003078] bg-[#d7f8ff] p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Contact us</h2>
-      <p className="mt-2 text-sm text-wf-dark leading-relaxed">
-      Thank you for taking the time to share your feedback.
-      </p>
-      <p className="mt-3 text-sm font-semibold text-wf-dark">
-      Telephone:{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      </p>
-      <p className="mt-1 text-sm text-wf-gray">
-      Monday to Friday, 9am to 5pm (excluding bank holidays)
-      </p>
-      </section>
-      </div>
-      </div>
+          <p className="text-gray-700">
+            You do not need to know the full name of the person you are complimenting. If you can describe who they are and what they did, we will make sure the right person hears about it.
+          </p>
+        </section>
 
-      {/* Related pages */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="pt-8">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      {relatedPages.map((page) => (
-      <li key={page.to}>
-      <Link to={page.to} className="text-wf-blue underline hover:text-wf-green">
-      {page.title}
-      </Link>
-      </li>
-      ))}
-      </ul>
-      </div>
-      </div>
+        {/* Related links */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-[#bf3688] mb-4">Related pages</h2>
+          <ul className="space-y-2">
+            <li>
+              <a href="#/adult-social-care/complaints-compliments/make-a-complaint" className="text-[#bf3688] hover:underline">
+                Make a complaint about adult social care
+              </a>
+            </li>
+            <li>
+              <a href="#/adult-social-care/complaints-compliments/help-shape-our-services" className="text-[#bf3688] hover:underline">
+                Help shape our services
+              </a>
+            </li>
+          </ul>
+        </section>
 
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
+        {/* Last updated */}
+        <div className="text-sm text-gray-600 border-t border-gray-200 pt-6">
+          <p>Last updated: 28 March 2026</p>
+          <p>Next review: 28 March 2027</p>
         </div>
+
       </div>
     </div>
   );

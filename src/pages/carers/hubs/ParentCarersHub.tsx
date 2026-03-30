@@ -1,115 +1,81 @@
-import { Link } from "react-router-dom";
+import CarersHero from '../../../components/carers/CarersHero';
+import Callout from '../../../components/carers/Callout';
+import { ArrowRight } from 'lucide-react';
+
+const quickLinks = [
+  { title: 'Short breaks for your child', href: '#/carers/breaks-respite' },
+  { title: 'Money and benefits', href: '#/carers/money-benefits' },
+  { title: 'Emergency and crisis planning', href: '#/carers/emergency-help' },
+  { title: 'Health and wellbeing support', href: '#/carers/health-wellbeing' },
+  { title: 'SEND support at school', href: '#' },
+  { title: 'Connect with other parent carers', href: '#/carers/contacts' }
+];
 
 export default function ParentCarersHub() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">Carers Hub</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Parent carers hub</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Parent carers hub</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          Dedicated support and resources for parents and guardians of children and young people with
-          disabilities or additional needs.
-          </p>
+    <>
+      <CarersHero 
+        title="Parent Carers"
+        description="Caring for a disabled child or young person brings unique challenges. Get assessment, support, and connections with other parent carers who understand."
+        chips={['PC', 'Get a parent carer\'s assessment', 'Professional referral']}
+        urgentLink={{ text: 'Crisis help', href: '#/carers/emergency-help' }}
+      />
+
+      <section className="bg-gray-200 py-12">
+        <div className="max-w-7xl mx-auto px-6">
+          <Callout type="info" title="What is a parent carer's assessment?">
+            <p>
+              It&apos;s a conversation about your needs as a carer — your health, work, sleep, and the support you need to care well. 
+              It&apos;s separate from your child&apos;s assessment and focuses on <strong>you</strong>.
+            </p>
+          </Callout>
+
+          <section className="my-12">
+            <h2 className="text-[#bf3688] mb-6 font-bold text-3xl">Who can help</h2>
+            <p className="text-gray-700 mb-8 max-w-4xl text-lg">
+              Request a parent carer&apos;s assessment from Adult Social Care. If your child has complex needs, you may also work with 
+              Children&apos;s Services, health teams, and the SEND team. We&apos;ll coordinate everything together.
+            </p>
+            
+            <div className="bg-white border-2 border-[#bf3688] p-8 rounded-lg mb-8 shadow-sm">
+              <h3 className="text-gray-900 mb-4 font-bold text-2xl">Ready to get started?</h3>
+              <div className="flex flex-wrap gap-4">
+                <a href="#/carers/assessment" className="bg-[#bf3688] text-white px-6 py-3 rounded-lg hover:bg-[#bf3688] transition-colors font-bold">
+                  Request a parent carer&apos;s assessment
+                </a>
+                <a href="#/carers/assessment" className="bg-white border-2 border-[#bf3688] text-[#bf3688] px-6 py-3 rounded-lg hover:bg-[#FFF0F7] transition-colors font-bold">
+                  Professional referral form
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className="my-12">
+            <h2 className="text-[#bf3688] mb-6 font-bold text-2xl">Quick links for parent carers</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {quickLinks.map((link, index) => (
+                <a 
+                  key={index}
+                  href={link.href}
+                  className="bg-white border border-gray-200 p-4 rounded-lg hover:shadow-md transition-shadow flex items-center justify-between group shadow-sm"
+                >
+                  <span className="text-gray-900 font-semibold">{link.title}</span>
+                  <ArrowRight className="w-5 h-5 text-[#bf3688] group-hover:translate-x-1 transition-transform" />
+                </a>
+              ))}
+            </div>
+          </section>
+
+          <Callout type="urgent" title="Crisis support available 24/7">
+            <p className="mb-2">If you&apos;re at breaking point or your child is in crisis:</p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Call our emergency duty team: <a href="tel:02084963130" className="text-[#bf3688] font-bold hover:underline">020 8496 3130</a> (out of hours)</li>
+              <li>Contact <a href="tel:999" className="text-[#bf3688] font-bold hover:underline">999</a> if there&apos;s immediate danger</li>
+              <li>See our <a href="#/carers/emergency-help" className="text-[#bf3688] font-bold hover:underline">full crisis plan guidance</a></li>
+            </ul>
+          </Callout>
         </div>
-      </div>
-
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* What we offer */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What the parent carers hub offers</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The parent carers hub provides a welcoming space specifically for parents and guardians who care
-          for a child or young person with additional needs. Services include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Information and advice</strong> - on SEND, EHC plans, benefits, short breaks, and services</li>
-          <li><strong>Peer support</strong> - connect with other parent carers who understand your experiences</li>
-          <li><strong>Workshops</strong> - on topics such as managing behaviour, sleep, and sensory needs</li>
-          <li><strong>Benefits support</strong> - help with Disability Living Allowance, Personal Independence Payment, and Carer's Allowance claims</li>
-          <li><strong>Emotional support</strong> - counselling and wellbeing sessions for parent carers</li>
-          <li><strong>Family activities</strong> - inclusive activities for the whole family</li>
-          </ul>
-          </section>
-
-          {/* Parent carer groups */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Parent carer groups</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Regular groups are held at the Hub for parent carers:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li><strong>Parent carer drop-in</strong> - a weekly session to meet other parents, share experiences, and get advice</li>
-          <li><strong>Autism parent group</strong> - for parents of children with autism spectrum conditions</li>
-          <li><strong>SEND coffee morning</strong> - an informal session with guest speakers on SEND topics</li>
-          <li><strong>Transition planning group</strong> - for parents of young people approaching adulthood</li>
-          </ul>
-          </section>
-
-          {/* Short breaks info */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Short breaks and activities</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Hub can help you find and access short breaks for your child, including after-school clubs,
-          holiday schemes, and weekend activities. We can also help you apply for direct payments to arrange
-          your own short break care. Speak to a member of staff at the Hub for more information.
-          </p>
-          </section>
-
-          {/* Contact */}
-          <section className="mb-8 rounded-md border-2 border-[#003078] bg-[#d7f8ff] p-6">
-          <div className="mb-3">
-            <svg className="w-6 h-6 text-[#003078]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path strokeLinecap="round" strokeWidth="2" d="M12 16v-4m0-4h.01"/></svg>
-          </div>
-          <h2 className="text-2xl font-bold text-[#003078]">Get in touch</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The parent carers hub is open Monday to Friday, 9am to 5pm. Phone:{" "}
-          <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a>.
-          You are welcome to drop in at any time.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers/carers-hub" className="text-wf-blue underline hover:text-wf-green">
-          Carers Hub
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/parent-carers" className="text-wf-blue underline hover:text-wf-green">
-          Parent carers
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.contact.org.uk" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Contact - for families with disabled children
-          </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }

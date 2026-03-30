@@ -1,185 +1,249 @@
-import { Link } from "react-router-dom";
+import { Phone } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+function scrollTo(id: string) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 export default function SupportForCarersPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-      <nav aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-      <li className="flex items-center gap-1">
-      <Link to="/" className="text-wf-blue underline hover:text-wf-green">
-      Home
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/adult-social-care"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Adult Social Care
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li className="flex items-center gap-1">
-      <Link
-      to="/learning-disability-support"
-      className="text-wf-blue underline hover:text-wf-green"
-      >
-      Learning disability support
-      </Link>
-      <span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span>
-      </li>
-      <li>
-      <span className="font-medium text-wf-dark">Support for carers</span>
-      </li>
-      </ol>
-      </nav>
-      <h1 className="text-5xl font-bold text-[#231F20] leading-tight">
-      Support for carers
-      </h1>
-      <p className="mt-4 max-w-3xl text-lg text-wf-gray leading-relaxed">
-      If you care for someone with a learning disability, you are entitled to support
-      in your own right. Waltham Forest Council offers a range of services to help
-      carers look after their own health and wellbeing.
-      </p>
-        </div>
+    <>
+      <div className="min-h-screen bg-white">
+        <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-6" aria-label="Breadcrumb">
+            <a href="#/adult-social-care" className="hover:underline">Home</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/specialist-services" className="hover:underline">Dementia, disabilities and specialist support</a>
+            <span className="mx-1">&gt;</span>
+            <a href="#/adult-social-care/learning-disability-support" className="hover:underline">Learning disability support</a>
+            <span className="mx-1">&gt;</span>
+            <span>Support for carers and families</span>
+          </nav>
+
+          <div className="bg-white border border-gray-300 p-8 md:p-12 shadow-sm max-w-4xl">
+            {/* H1 */}
+            <h1 className="text-[44px] text-[#231F20] mb-3 font-bold leading-tight">
+              Support for carers and families
+            </h1>
+
+            {/* Standfirst */}
+            <p className="text-gray-700 max-w-4xl mb-6 text-lg font-semibold">
+              If you care for an adult with a learning disability, you may be able to get support in your own right.
+            </p>
+
+            {/* Primary CTAs */}
+            <div className="mb-10 flex flex-wrap gap-4">
+              <a
+                href="https://www.walthamforest.gov.uk/adult-social-care/being-carer/adult-carers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 font-bold hover:bg-[#a02d73] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 shadow-sm"
+              >
+                Find out about a carers assessment
+              </a>
+              <a
+                href="tel:02089288300"
+                className="inline-flex items-center gap-3 bg-white border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 font-bold hover:bg-gray-100 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] focus-visible:ring-offset-2 shadow-sm"
+              >
+                <Phone size={18} />
+                Call 020 8928 8300
+              </a>
+            </div>
+
+            {/* Hero image */}
+            <div className="mb-12 max-w-2xl">
+              <img
+                src="/Images/placeholder.svg"
+                alt="A parent or unpaid carer and an adult with a learning disability spending time together at home"
+                className="w-full h-auto rounded border border-gray-200"
+              />
+            </div>
+
+            <div className="max-w-3xl space-y-0">
+              {/* Contents */}
+              <div className="bg-gray-100 border border-gray-300 p-6 mb-10 shadow-inner">
+                <h2 className="font-bold text-gray-900 mb-4 text-xl">Contents</h2>
+                <ul className="space-y-2">
+                  <li><button onClick={() => scrollTo('what-support')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">What support carers can get</button></li>
+                  <li><button onClick={() => scrollTo('carers-assessments')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Carers assessments</button></li>
+                  <li><button onClick={() => scrollTo('practical-emotional')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Practical and emotional support</button></li>
+                  <li><button onClick={() => scrollTo('carers-first')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Carers First</button></li>
+                  <li><button onClick={() => scrollTo('young-carers')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Young carers</button></li>
+                  <li><button onClick={() => scrollTo('related')} className="text-[#bf3688] font-bold underline hover:no-underline text-left">Related help</button></li>
+                </ul>
+              </div>
+
+              {/* What support carers can get */}
+              <div id="what-support" className="pb-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">What support carers can get</h2>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  If you regularly support an adult with a learning disability, you may be an unpaid carer and have the right to support yourself.
+                </p>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  This could include:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    advice and information
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    emotional support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    help to take a break
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    practical support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    access to groups and training
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    a carers assessment
+                  </li>
+                </ul>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Carers assessments */}
+              <div id="carers-assessments" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Carers assessments</h2>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Under the Care Act, carers have rights to an assessment and support in their own right.
+                </p>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  You can ask for a carers assessment even if the person you care for does not already have services in place.
+                </p>
+                <a
+                  href="https://www.walthamforest.gov.uk/adult-social-care/being-carer/adult-carers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#bf3688] font-bold underline hover:no-underline"
+                >
+                  Adult carers
+                </a>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Practical and emotional support */}
+              <div id="practical-emotional" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Practical and emotional support</h2>
+                <p className="text-gray-700 mb-4 font-semibold">
+                  Carers may be able to get support with:
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    managing the impact of caring
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    emotional wellbeing
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    training and information
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    peer support
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    practical help
+                  </li>
+                  <li className="flex items-start gap-2 text-gray-700">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                    finding time for themselves
+                  </li>
+                </ul>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Carers First */}
+              <div id="carers-first" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Carers First</h2>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Carers First provides practical and emotional support, advice, information and peer support for unpaid carers in Waltham Forest.
+                </p>
+                <a
+                  href="https://www.walthamforest.gov.uk/adult-social-care/being-carer/adult-carers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#bf3688] font-bold underline hover:no-underline"
+                >
+                  Adult carers
+                </a>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Young carers */}
+              <div id="young-carers" className="py-10">
+                <h2 className="text-[#bf3688] font-bold text-2xl mb-4">Young carers</h2>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  If a child or young person is helping to care for someone, there are separate young carers services and support available.
+                </p>
+                <a
+                  href="https://www.walthamforest.gov.uk/adult-social-care/being-carer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#bf3688] font-bold underline hover:no-underline"
+                >
+                  Being a carer
+                </a>
+              </div>
+
+              <hr className="border-gray-200" />
+
+              {/* Related help */}
+              <div id="related" className="pt-10">
+                <h2 className="text-gray-900 font-bold text-2xl mb-4">Related help</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <a href="https://www.walthamforest.gov.uk/adult-social-care/being-carer/adult-carers" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Adult carers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.walthamforest.gov.uk/adult-social-care/being-carer" target="_blank" rel="noopener noreferrer" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Being a carer
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#/adult-social-care/learning-disability-support/ask-for-support" className="text-[#bf3688] font-bold underline hover:no-underline">
+                      Ask for learning disability support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Metadata */}
+            <div className="max-w-3xl mt-14 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+              <p>Last updated: 27 March 2026</p>
+              <p>Next review: 27 March 2027</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-
-      {/* Content */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="space-y-10">
-      {/* Carers assessment */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Carers assessment</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      A carers assessment looks at how caring affects your life and what support
-      you need to continue in your caring role. You are entitled to an assessment
-      regardless of the amount of care you provide or your financial situation.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      During the assessment, we will talk to you about:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>Your physical and emotional wellbeing</li>
-      <li>Whether you are able or willing to continue caring</li>
-      <li>The impact of caring on your work, education and social life</li>
-      <li>What support would help you in your caring role</li>
-      <li>Any emergency or future planning needs</li>
-      </ul>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      To request a carers assessment, call us on{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>{" "}
-      or ask the social worker involved with the person you care for.
-      </p>
-      </section>
-
-      {/* Respite care */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Respite care</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Respite care gives you a break from caring, while the person you look after
-      is supported by someone else. This can be for a few hours, a day or longer.
-      </p>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Types of respite care available include:
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>A support worker visiting the person you care for at home</li>
-      <li>Day services or activities that the person you care for can attend</li>
-      <li>Short stays in a residential care home or with a Shared Lives carer</li>
-      <li>Emergency respite if you become unwell or have a crisis</li>
-      </ul>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Respite care can be arranged as part of the support plan for the person
-      you care for, or through your own carers assessment.
-      </p>
-      </section>
-
-      {/* Support groups */}
-      <section>
-      <h2 className="text-2xl font-bold text-wf-pink">Support groups</h2>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      Meeting other carers who understand your situation can be a valuable source
-      of support. There are several groups in Waltham Forest for carers of people
-      with learning disabilities.
-      </p>
-      <ul className="mt-3 list-disc pl-6 space-y-2 text-sm text-wf-dark leading-relaxed">
-      <li>
-      <strong>Waltham Forest Carers Network</strong> - regular meetings,
-      information sessions and social events for carers
-      </li>
-      <li>
-      <strong>Parent carers forum</strong> - for parents of children and young
-      adults with learning disabilities
-      </li>
-      <li>
-      <strong>Sibling support group</strong> - for brothers and sisters of
-      people with learning disabilities
-      </li>
-      <li>
-      <strong>Online support groups</strong> - virtual meetings for carers who
-      cannot attend in person
-      </li>
-      </ul>
-      <p className="mt-3 text-sm text-wf-dark leading-relaxed">
-      For details of meeting times and locations, contact us on{" "}
-      <a href="tel:02084963130" className="text-wf-blue underline">
-      020 8496 3130
-      </a>
-      .
-      </p>
-      </section>
-      </div>
-      </div>
-
-      {/* Related links */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <div className="rounded-lg border border-gray-200 bg-white p-6">
-      <h2 className="text-xl font-bold text-wf-pink">Related pages</h2>
-      <ul className="mt-4 space-y-2">
-      <li>
-      <Link
-      to="/learning-disability-support/ask-for-support"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Ask for support
-      </Link>
-      </li>
-      <li>
-      <Link
-      to="/learning-disability-support/easy-read-resources"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Easy read resources
-      </Link>
-      </li>
-      <li>
-      <Link
-      to="/learning-disability-support/housing-options"
-      className="text-sm text-wf-blue underline hover:text-wf-green"
-      >
-      Housing options
-      </Link>
-      </li>
-      </ul>
-      </div>
-      </div>
-
-      {/* Last updated */}
-      <div className="mx-auto max-w-5xl px-4 pb-12">
-      <p className="text-xs text-wf-gray">Last updated: March 2026</p>
-      </div>
-        </div>
-      </div>
-    </div>
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

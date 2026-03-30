@@ -1,188 +1,219 @@
-import { Link } from "react-router-dom";
+import { ArrowRight, FileText, Mail } from 'lucide-react';
+import FeedbackBanner from '../../components/FeedbackBanner';
+import FeedbackSection from '../../components/FeedbackSection';
+
+const branchLinks = [
+  {
+    title: 'What to do if you are worried about a vulnerable adult',
+    href: 'https://www.walthamforest.gov.uk/adult-social-care/protecting-vulnerable-adults/what-do-if-you-are-worried-about-vulnerable-adult',
+    external: true,
+    isPdf: false,
+  },
+  {
+    title: 'Procedures for managing allegations related to adults working with adults with care and support needs',
+    href: 'https://www.proceduresonline.com/trixcms/media/2135/alado-procedure-final.pdf',
+    external: true,
+    isPdf: true,
+  },
+  {
+    title: 'London multi-agency adult safeguarding policy and procedures',
+    href: 'https://www.walthamforest.gov.uk/sites/default/files/2025-01/London-Multi-Agency-Adult-Safeguarding-Policy-Procedures-April-2019.pdf',
+    external: true,
+    isPdf: true,
+  },
+  {
+    title: 'Escalation and professional challenge guidance',
+    href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/multi-agency-escalation-and-professional-challenge-guidance',
+    external: true,
+    isPdf: false,
+  },
+  {
+    title: 'Statutory reviews and One Panel',
+    href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/statutory-reviews-and-one-panel',
+    external: true,
+    isPdf: false,
+  },
+  {
+    title: 'Resources to improve practice',
+    href: '#/adult-social-care/resources-to-improve-practice',
+    external: false,
+    isPdf: false,
+  },
+  {
+    title: 'Annual reports',
+    href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/strategic-partnership-boards-annual-reports',
+    external: true,
+    isPdf: false,
+  },
+  {
+    title: 'Strategic Partnerships contacts',
+    href: 'https://www.walthamforest.gov.uk/families-young-people-and-children/child-protection/strategic-partnership-boards/strategic-partnership-boards-contacts',
+    external: true,
+    isPdf: false,
+  },
+];
+
+const docs = [
+  {
+    label: 'Quick guide to Adult Safeguarding (PDF)',
+    href: 'https://www.walthamforest.gov.uk/media/10188',
+  },
+  {
+    label: 'Safeguarding Partnership Arrangements (PDF)',
+    href: 'https://www.walthamforest.gov.uk/sites/default/files/2024-12/Waltham%20Forest%20Safeguarding%20Partnership%20arrangements_Dec%2024.pdf',
+  },
+];
+
+const sabRequirements = [
+  'include the local authority, the NHS, and the police, who should meet regularly to discuss and act upon local safeguarding issues',
+  'develop shared plans for safeguarding, working with local people to decide how best to protect adults in vulnerable situations',
+  'publish this safeguarding plan and report to the public annually on its progress, so that different organisations can make sure they are working together in the best way',
+];
 
 export default function SafeguardingBoardPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">Safeguarding adults</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Safeguarding Adults Board</span></li>
-          </ol>
-          </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Waltham Forest Safeguarding Adults Board</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          The Safeguarding Adults Board (SAB) brings together key organisations to ensure that local
-          safeguarding arrangements work effectively to protect adults at risk.
-          </p>
+    <>
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+
+        {/* Breadcrumb */}
+        <nav className="text-sm text-gray-600 mb-6">
+          <a href="#/adult-social-care" className="hover:underline">Home</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care" className="hover:underline">Adult social care</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/protecting-adults-at-risk" className="hover:underline">Protecting adults at risk of abuse</a>
+          <span className="mx-1">&gt;</span>
+          <a href="#/adult-social-care/professionals-and-providers" className="hover:underline">Professionals and providers</a>
+          <span className="mx-1">&gt;</span>
+          <span>Safeguarding Adults Board</span>
+        </nav>
+
+        {/* H1 */}
+        <h1 className="text-5xl text-[#231F20] mb-4 font-bold leading-tight">
+          Safeguarding Adults Board (SAB)
+        </h1>
+
+        {/* Standfirst */}
+        <p className="text-gray-700 max-w-4xl mb-4 text-base">
+          The SAB brings organisations together to protect people who need help and support.
+        </p>
+
+        {/* Live page link */}
+        <div className="mb-8">
+          <a
+            href="https://www.walthamforest.gov.uk/adult-social-care/protecting-vulnerable-adults/safeguarding-adults-board-sab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-[#bf3688] underline hover:no-underline text-sm font-semibold"
+          >
+            View the SAB page on the Waltham Forest website
+            <ArrowRight size={14} />
+          </a>
         </div>
-      </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Role of the SAB */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Role of the Safeguarding Adults Board</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Under the Care Act 2014, every local authority must establish a Safeguarding Adults Board. The
-          Waltham Forest SAB has three core duties:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>
-          <strong>Publish a strategic plan</strong> - setting out its strategy for achieving its
-          objectives and how members will contribute to delivering the plan
-          </li>
-          <li>
-          <strong>Publish an annual report</strong> - detailing the work of the Board and its members
-          to implement the strategic plan, and what each member has done to carry out the strategy
-          </li>
-          <li>
-          <strong>Conduct Safeguarding Adults Reviews (SARs)</strong> - when an adult in its area dies
-          or has experienced serious abuse or neglect and there is concern that partner agencies could
-          have worked more effectively to protect the adult
-          </li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          The Board also provides strategic leadership and oversight for safeguarding activity across
-          Waltham Forest, promotes multi-agency working, and seeks assurance that safeguarding practice
-          is person-centred and outcome-focused.
-          </p>
-          </section>
+        <div className="max-w-4xl space-y-0">
 
-          {/* Membership */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Membership</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The SAB is chaired by an independent chair and includes statutory partners and other key
-          organisations. The three statutory partners are:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>London Borough of Waltham Forest</li>
-          <li>NHS North East London Integrated Care Board</li>
-          <li>Metropolitan Police Service</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          Other members include representatives from:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Barts Health NHS Trust</li>
-          <li>North East London NHS Foundation Trust (NELFT)</li>
-          <li>London Fire Brigade</li>
-          <li>National Probation Service</li>
-          <li>Healthwatch Waltham Forest</li>
-          <li>Voluntary and community sector organisations</li>
-          <li>Housing providers</li>
-          </ul>
-          </section>
+          {/* Intro */}
+          <div className="py-6">
+            <p className="text-gray-700">
+              Safeguarding is everyone&#39;s business, and it is important that organisations work together to protect people who need help and support.
+            </p>
+          </div>
 
-          {/* Strategic plan */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Strategic plan</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The SAB's strategic plan sets out the Board's priorities for safeguarding adults in Waltham
-          Forest. The current strategic priorities include:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Making Safeguarding Personal - ensuring that safeguarding is person-led and outcome-focused</li>
-          <li>Prevention - developing strategies to prevent abuse and neglect from occurring</li>
-          <li>Learning and development - ensuring the workforce has the right skills and knowledge</li>
-          <li>Quality assurance - monitoring the effectiveness of safeguarding practice across partners</li>
-          <li>Community engagement - raising awareness among residents about safeguarding</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          The strategic plan is reviewed and updated regularly to reflect emerging priorities and learning
-          from safeguarding activity.
-          </p>
-          </section>
+          {/* Key documents */}
+          <div className="py-6 space-y-3">
+            {docs.map((doc, i) => (
+              <a
+                key={i}
+                href={doc.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 border border-gray-300 bg-gray-200 px-5 py-4 hover:bg-gray-300 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688] group"
+              >
+                <FileText className="text-[#bf3688] flex-shrink-0" size={20} />
+                <span className="text-gray-900 font-semibold text-sm group-hover:text-[#bf3688] transition-colors flex-1">
+                  {doc.label}
+                </span>
+                <ArrowRight className="text-[#bf3688] flex-shrink-0" size={16} />
+              </a>
+            ))}
+          </div>
 
-          {/* Annual reports */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Annual reports</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The SAB publishes an annual report that provides an overview of safeguarding activity and
-          performance in Waltham Forest. The report includes:
-          </p>
-          <ul className="mt-4 space-y-2 list-disc pl-6 text-wf-dark">
-          <li>Data on safeguarding concerns and enquiries received during the year</li>
-          <li>Progress against the strategic plan priorities</li>
-          <li>Summary of Safeguarding Adults Reviews conducted</li>
-          <li>Details of training and awareness-raising activity</li>
-          <li>Partner contributions to safeguarding</li>
-          </ul>
-          <p className="mt-4 text-wf-dark leading-relaxed">
-          Annual reports are available on the Waltham Forest Council website. If you would like a copy
-          of a previous annual report, please contact the SAB business unit.
-          </p>
-          </section>
+          <hr className="border-gray-200" />
 
-          {/* Safeguarding Adults Reviews */}
-          <section className="mb-8 mb-0">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Safeguarding Adults Reviews</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A Safeguarding Adults Review (SAR) is carried out when an adult with care and support needs has
-          died or experienced serious harm as a result of abuse or neglect, and there is concern that
-          partner agencies could have worked more effectively to protect the adult.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The purpose of a SAR is not to apportion blame, but to learn lessons about how agencies can
-          improve their practice and work together more effectively. Published SARs and their findings
-          are available from the SAB.
-          </p>
-          </section>
+          {/* Why the SAB exists */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Why the SAB exists</h2>
+            <p className="text-gray-700 mb-4">
+              The Care Act 2014 requires local authorities to set up a Safeguarding Adults Board (SAB). The Act says that the SAB must:
+            </p>
+            <ul className="space-y-3">
+              {sabRequirements.map((req, i) => (
+                <li key={i} className="flex items-start gap-3 text-gray-700">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0" />
+                  {req}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <hr className="border-gray-200" />
 
           {/* Contact */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Contact the SAB</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          For enquiries about the Safeguarding Adults Board, including its work, publications, or how to
-          get involved, please contact the SAB business unit:
-          </p>
-          <p className="mt-3 text-wf-dark">
-          <strong>Email:</strong>{" "}
-          <a href="mailto:sab@walthamforest.gov.uk" className="text-wf-blue underline hover:text-wf-green">
-          sab@walthamforest.gov.uk
-          </a>
-          </p>
-          <p className="mt-2 text-wf-dark">
-          <strong>Phone:</strong>{" "}
-          <a href="tel:02084963130" className="font-bold text-[#231F20] no-underline">020 8496 3130</a>
-          </p>
-          </section>
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-4">Contact the SAB</h2>
+            <p className="text-gray-700 mb-4">For more information about the Safeguarding Adults Board, contact:</p>
+            <div className="flex items-center gap-3 text-gray-700 text-sm">
+              <Mail className="text-[#bf3688] flex-shrink-0" size={18} />
+              <a
+                href="mailto:Strategicpartnerships@walthamforest.gov.uk"
+                className="text-[#bf3688] underline hover:no-underline font-semibold"
+              >
+                Strategicpartnerships@walthamforest.gov.uk
+              </a>
+            </div>
+          </div>
 
-          {/* Related links */}
-          <section className="mb-8">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/safeguarding" className="text-wf-blue underline hover:text-wf-green">
-          Safeguarding adults overview
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding/resources-improve-practice" className="text-wf-blue underline hover:text-wf-green">
-          Resources to improve practice
-          </Link>
-          </li>
-          <li>
-          <Link to="/safeguarding/professionals" className="text-wf-blue underline hover:text-wf-green">
-          Information for professionals
-          </Link>
-          </li>
-          </ul>
-          </section>
+          <hr className="border-gray-200" />
 
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          {/* Branch links */}
+          <div className="py-10">
+            <h2 className="text-[#bf3688] font-bold text-xl mb-6">SAB resources and guidance</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {branchLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
+                  className="group flex items-center justify-between gap-4 border border-gray-200 bg-white p-5 hover:shadow-md transition-shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#bf3688]"
+                >
+                  <div className="flex items-start gap-3 flex-1">
+                    {link.isPdf && <FileText className="text-[#bf3688] flex-shrink-0 mt-0.5" size={16} />}
+                    <span className="text-gray-900 text-sm font-semibold leading-snug group-hover:text-[#bf3688] transition-colors">
+                      {link.title}
+                    </span>
+                  </div>
+                  <div className="w-8 h-8 rounded-full bg-[#bf3688] flex items-center justify-center flex-shrink-0 group-hover:bg-[#a02d73] transition-colors">
+                    <ArrowRight className="text-white w-4 h-4" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
         </div>
-      </div>
-    </div>
+
+        {/* Metadata */}
+        <div className="max-w-4xl mt-6 pt-6 border-t border-gray-200 text-sm text-gray-500 space-y-1">
+          <p>Last updated: 27 March 2026</p>
+          <p>Next review: 27 March 2027</p>
+        </div>
+
+      </section>
+
+      <FeedbackBanner />
+      <FeedbackSection />
+    </>
   );
 }

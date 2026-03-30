@@ -1,138 +1,181 @@
-import { Link } from "react-router-dom";
+import { Phone } from 'lucide-react';
 
 export default function CarersAssessmentRightsPage() {
   return (
-    <div className="min-h-screen">
-      {/* White section: breadcrumbs + H1 + description */}
-      <div className="bg-white">
-        <div className="max-w-5xl mx-auto px-4 pt-6 pb-8">
-          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3">
-          <ol className="flex flex-wrap items-center gap-1 text-sm text-wf-gray">
-          <li><Link to="/" className="text-wf-blue underline hover:text-wf-green">Home</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/adult-social-care" className="text-wf-blue underline hover:text-wf-green">Adult Social Care</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><Link to="/carers" className="text-wf-blue underline hover:text-wf-green">Being a carer</Link></li>
-          <li><span aria-hidden="true" className="mx-1 text-wf-gray/50">/</span></li>
-          <li><span className="font-medium text-wf-dark">Carers assessment and rights</span></li>
-          </ol>
+    <div className="min-h-screen bg-white">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <nav className="text-sm">
+            <a href="#/" className="text-[#bf3688] hover:underline">Home</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care" className="text-[#bf3688] hover:underline">Adult social care</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <a href="#/adult-social-care/being-carer" className="text-[#bf3688] hover:underline">Being a carer</a>
+            <span className="mx-2 text-gray-400">&gt;</span>
+            <span className="text-gray-700">Carer's assessment and your rights</span>
           </nav>
-          <h1 className="text-5xl font-bold text-[#231F20]">Carers assessment and rights</h1>
-          <p className="mt-4 text-lg text-wf-gray max-w-3xl">
-          As a carer, you have legal rights under the Care Act 2014. You are entitled to a carers assessment
-          to look at how caring affects your life and what support you may need.
-          </p>
         </div>
       </div>
 
-      {/* Gray section: all content below */}
-      <div className="bg-[#f3f2f1]">
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* Your rights */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Your rights under the Care Act 2014</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          The Care Act 2014 gives carers important legal rights. For the first time, carers were given the same
-          recognition in law as the people they care for. Your key rights include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>The right to a carers assessment, regardless of the amount or type of care you provide</li>
-          <li>The right to have your eligible needs met by the local authority</li>
-          <li>The right to receive information and advice about caring and support available</li>
-          <li>The right to be involved in decisions about the care and support of the person you look after</li>
-          <li>The right to request a review of your support plan at any time</li>
-          </ul>
-          </section>
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        
+        {/* Page Title and Standfirst */}
+        <h1 className="text-5xl font-bold text-[#231F20] mb-4">Carer's assessment and your rights</h1>
+        <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          A carer's assessment is a conversation about the impact caring has on your life and what support could help you.
+        </p>
 
-          {/* What is a carers assessment */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What is a carers assessment?</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          A carers assessment is a conversation between you and a trained professional. It looks at how your
-          caring role affects your daily life, your health, your work, and your relationships. It is not a
-          test and there are no wrong answers. The assessment is about understanding your needs as a carer.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          During the assessment, you will be asked about:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>The care you provide and how it affects your physical and mental health</li>
-          <li>Whether you are able or willing to continue caring</li>
-          <li>Your feelings about caring and what you would like to achieve in your own life</li>
-          <li>Whether caring affects your work, education, or training</li>
-          <li>Your social life, hobbies, and leisure activities</li>
-          <li>Any emergency or contingency plans you may need</li>
-          </ul>
-          </section>
-
-          {/* How to request */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">How to request a carers assessment</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          You can request a carers assessment at any time, even if the person you care for does not receive
-          any services or has not had their own assessment. You do not need to be registered as a carer.
-          </p>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          To request an assessment, you can:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>Phone our Adult Social Care team on <a href="tel:02084963130" className="text-wf-blue underline hover:text-wf-green">020 8496 3130</a></li>
-          <li>Visit the Carers Hub for a drop-in conversation</li>
-          <li>Ask your GP or another health professional to refer you</li>
-          <li>Ask a social worker involved with the person you care for</li>
-          </ul>
-          </section>
-
-          {/* What happens after */}
-          <section className="mb-8 rounded-md bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-bold text-[#bf3688]">What happens after the assessment</h2>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          After your assessment, we will determine whether you have eligible needs. If you do, we will work
-          with you to create a support plan that sets out how your needs will be met. This could include:
-          </p>
-          <ul className="mt-3 ml-6 list-disc space-y-2 text-wf-dark leading-relaxed">
-          <li>A direct payment so you can arrange your own support</li>
-          <li>Respite or replacement care so you can take a break</li>
-          <li>Support with your health and wellbeing</li>
-          <li>Help with transport or equipment</li>
-          <li>Referral to local carer support groups and services</li>
-          </ul>
-          <p className="mt-3 text-wf-dark leading-relaxed">
-          Even if you do not have eligible needs, we will provide you with information and advice about other
-          sources of support available to you.
-          </p>
-          </section>
-
-          {/* Related links */}
-          <section className="mb-8 p-6">
-          <h2 className="text-2xl font-bold text-[#bf3688]">Related links</h2>
-          <ul className="mt-4 space-y-3">
-          <li>
-          <Link to="/carers" className="text-wf-blue underline hover:text-wf-green">
-          Being a carer
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/support" className="text-wf-blue underline hover:text-wf-green">
-          Support for carers
-          </Link>
-          </li>
-          <li>
-          <Link to="/carers/tasks/assessment" className="text-wf-blue underline hover:text-wf-green">
-          Request a carers assessment
-          </Link>
-          </li>
-          <li>
-          <a href="https://www.legislation.gov.uk/ukpga/2014/23/contents/enacted" className="text-wf-blue underline hover:text-wf-green" target="_blank" rel="noopener noreferrer">
-          Care Act 2014
+        {/* Primary and Secondary CTAs */}
+        <div className="flex flex-wrap gap-4 mb-12">
+          <a
+            href="https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-[#bf3688] text-white px-8 py-3 text-sm font-semibold hover:bg-[#b51858] transition-colors"
+          >
+            Request a carer's assessment
           </a>
-          </li>
-          </ul>
-          </section>
-
-          {/* Last updated */}
-          <p className="text-sm text-wf-gray">Last updated: March 2026</p>
+          <a
+            href="tel:02084963130"
+            className="inline-flex items-center gap-3 border-2 border-[#bf3688] text-[#bf3688] px-8 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"
+          >
+            <Phone size={18} />
+            Call Adult Social Care: 020 8496 3130
+          </a>
         </div>
+
+        {/* Contents Block */}
+        <div className="bg-gray-50 border border-gray-200 p-6 mb-8">
+          <h2 className="font-bold text-gray-900 mb-3">Contents</h2>
+          <ul className="space-y-2">
+            <li><a href="#what-is" className="text-[#bf3688] underline hover:no-underline">What a carer's assessment is</a></li>
+            <li><a href="#who-can-get" className="text-[#bf3688] underline hover:no-underline">Who can get one</a></li>
+            <li><a href="#what-happens" className="text-[#bf3688] underline hover:no-underline">What happens in the assessment</a></li>
+            <li><a href="#after-assessment" className="text-[#bf3688] underline hover:no-underline">What happens after the assessment</a></li>
+            <li><a href="#your-rights" className="text-[#bf3688] underline hover:no-underline">Your rights as a carer</a></li>
+            <li><a href="#related-help" className="text-[#bf3688] underline hover:no-underline">Related help</a></li>
+          </ul>
+        </div>
+
+        {/* Main Content */}
+        <div className="prose max-w-none">
+          
+          {/* What a carer's assessment is */}
+          <div id="what-is" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">What a carer's assessment is</h2>
+            <p className="text-gray-700 mb-4">
+              A carer's assessment is not a test of how well you care for someone.
+            </p>
+            <p className="text-gray-700">
+              It is a chance to talk about your own needs, your wellbeing, and what support could make caring easier.
+            </p>
+          </div>
+
+          {/* Who can get one */}
+          <div id="who-can-get" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Who can get one</h2>
+            <p className="text-gray-700 mb-4">
+              You can ask for a carer's assessment if you are 18 or over and help care for another adult.
+            </p>
+            <p className="text-gray-700">
+              The person you care for does not need to be receiving council support for you to ask for an assessment.
+            </p>
+          </div>
+
+          {/* What happens in the assessment */}
+          <div id="what-happens" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">What happens in the assessment</h2>
+            <p className="text-gray-700 mb-4">We talk to you about:</p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">how caring affects your health and wellbeing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">what matters to you day to day</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">whether you are able to work, study or have time for yourself</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">what support would help</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* What happens after the assessment */}
+          <div id="after-assessment" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">What happens after the assessment</h2>
+            <p className="text-gray-700 mb-4">
+              If you have eligible needs, we will agree a support plan with you.
+            </p>
+            <p className="text-gray-700 mb-4">This may include:</p>
+            <ul className="space-y-2 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">help to take a break from caring</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">practical support</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">emotional support</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">direct payments or a personal budget where appropriate</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#bf3688] mt-2 flex-shrink-0"></span>
+                <span className="text-gray-700">signposting to other services</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Your rights as a carer */}
+          <div id="your-rights" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Your rights as a carer</h2>
+            <p className="text-gray-700 mb-4">
+              As a carer, you may have rights under the Care Act and employment law.
+            </p>
+            <p className="text-gray-700">
+              This includes the right to ask for an assessment and, in some cases, the right to request flexible working.
+            </p>
+          </div>
+
+          {/* Related help */}
+          <div id="related-help" className="mb-10">
+            <h2 className="text-3xl font-bold text-[#bf3688] mb-4">Related help</h2>
+            <ul className="space-y-2">
+              <li>
+                <a href="#/adult-social-care/being-carer/support-for-carers" className="text-[#bf3688] underline hover:no-underline">Support for carers</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/being-carer/support-for-carers/financial-support" className="text-[#bf3688] underline hover:no-underline">Financial support</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/being-carer/support-for-carers/taking-a-break" className="text-[#bf3688] underline hover:no-underline">Taking a break from caring</a>
+              </li>
+              <li>
+                <a href="#/adult-social-care/being-carer/work-education-and-training" className="text-[#bf3688] underline hover:no-underline">Work, education and training</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Last Updated */}
+        <div className="text-sm text-gray-600 mt-12 pt-6 border-t border-gray-200">
+          <p><strong>Last updated:</strong> 28 March 2026</p>
+          <p><strong>Next review:</strong> 28 March 2027</p>
+        </div>
+
       </div>
     </div>
   );
