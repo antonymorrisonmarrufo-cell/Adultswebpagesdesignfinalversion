@@ -1,7 +1,6 @@
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
 import { ExternalLink } from 'lucide-react';
-import homeshareHeroImage from 'figma:asset/0bd88841be4c96ad8b00797177a2d11e2f24d462.png';
 
 function scrollTo(id: string) {
   const el = document.getElementById(id);
@@ -46,7 +45,7 @@ export default function HomesharePage() {
 
         <div className="mb-12 max-w-2xl">
           <img
-            src={homeshareHeroImage}
+            src="/Images/placeholder.svg"
             alt="A young woman pouring tea for an elderly man at home, sharing companionship"
             className="w-full h-auto rounded"
           />

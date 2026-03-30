@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react';
-import reportAbuseImage from 'figma:asset/4258ba682f411121549af99eff4bae78ccbef865.png';
 
 export default function AdultSocialCarePage() {
   return (
@@ -35,7 +34,7 @@ export default function AdultSocialCarePage() {
               className="relative group cursor-pointer overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-4 border-gray-300"
             >
               <img 
-                src={reportAbuseImage}
+                src="/Images/placeholder.svg"
                 alt="Report abuse or neglect of an adult"
                 className="w-full h-80 object-cover"
               />

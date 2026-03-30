@@ -2,7 +2,6 @@ import { ArrowRight, Phone, FileText, ExternalLink } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
 import HelpOnlineFormsBlock from '../../components/live-independently/HelpOnlineFormsBlock';
-import homeAdaptationsHeroImage from 'figma:asset/32e7d90e69a6d77c1a840b20b51044bdb9f15e66.png';
 
 function scrollTo(id: string) {
   const el = document.getElementById(id);
@@ -70,7 +69,7 @@ export default function HomeAdaptationsPage() {
         {/* Hero image */}
         <div className="mb-12 max-w-2xl">
           <img
-            src={homeAdaptationsHeroImage}
+            src="/Images/placeholder.svg"
             alt="A care worker supporting an older person at home with daily tasks"
             className="w-full h-auto rounded"
           />

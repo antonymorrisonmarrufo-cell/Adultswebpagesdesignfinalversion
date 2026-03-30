@@ -1,7 +1,6 @@
 import { Phone } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
-import carerFamilyImage from 'figma:asset/81b2baa269ccbf66715db01242fff35b9662b65d.png';
 
 function scrollTo(id: string) {
   const el = document.getElementById(id);
@@ -59,7 +58,7 @@ export default function SupportForCarersPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src={carerFamilyImage}
+                src="/Images/placeholder.svg"
                 alt="A parent or unpaid carer and an adult with a learning disability spending time together at home"
                 className="w-full h-auto rounded border border-gray-200"
               />

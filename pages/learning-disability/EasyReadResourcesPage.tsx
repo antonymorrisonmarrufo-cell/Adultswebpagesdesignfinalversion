@@ -1,7 +1,6 @@
 import { FileText, ExternalLink } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
-import easyReadHeroImage from 'figma:asset/d9ed4722de96deeaff8a7c268105154d58439cf7.png';
 
 export default function EasyReadResourcesPage() {
   return (
@@ -47,7 +46,7 @@ export default function EasyReadResourcesPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src={easyReadHeroImage}
+                src="/Images/placeholder.svg"
                 alt="An adult with a learning disability and support worker looking at easy-read information together in a library setting"
                 className="w-full h-auto rounded border border-gray-200"
               />

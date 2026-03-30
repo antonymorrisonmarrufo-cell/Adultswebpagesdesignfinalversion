@@ -1,8 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
-import heroImage from 'figma:asset/ed92dd3ad67751017b6f021b42285d6636090ac2.png';
-import homeshareImage from 'figma:asset/9fea525c37d6fc7c17b1a8b3db1edefc0aaa94f4.png';
 
 const primaryCards = [
   {
@@ -90,7 +88,7 @@ export default function LiveIndependentlyPage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src={heroImage}
+              src="/Images/placeholder.svg"
               alt="Active Black senior woman exercising on a bike at home, staying independent and healthy"
               className="w-full h-auto rounded"
             />
@@ -142,7 +140,7 @@ export default function LiveIndependentlyPage() {
               </div>
               <div className="w-64 flex-shrink-0 hidden sm:block">
                 <img
-                  src={homeshareImage}
+                  src="/Images/placeholder.svg"
                   alt="A younger woman smiling with an elderly woman at home, sharing companionship over a cup of tea"
                   className="w-full h-full object-cover"
                 />

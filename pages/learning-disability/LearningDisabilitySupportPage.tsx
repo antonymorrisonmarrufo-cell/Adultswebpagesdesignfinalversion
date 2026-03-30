@@ -1,7 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
-import learningDisabilityHeroImage from 'figma:asset/4f799ee8333c4db3b3f63b07a750e52c337da0ef.png';
 
 export default function LearningDisabilitySupportPage() {
   return (
@@ -72,7 +71,7 @@ export default function LearningDisabilitySupportPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-2xl">
               <img
-                src={learningDisabilityHeroImage}
+                src="/Images/placeholder.svg"
                 alt="An adult with a learning disability in a bright community setting, sitting at a table with a support worker, engaged in conversation about support options"
                 className="w-full h-auto rounded border border-gray-200"
               />

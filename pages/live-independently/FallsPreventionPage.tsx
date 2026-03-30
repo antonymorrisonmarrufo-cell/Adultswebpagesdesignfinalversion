@@ -1,5 +1,5 @@
 import { ArrowRight, FileText, ExternalLink } from 'lucide-react';
-import fallsPreventionHeroImg from "figma:asset/cfce99aeb8be3dd19816a4cf54605a492e2a14c2.png";
+// Image placeholder - source from Figma;
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
 
@@ -59,7 +59,7 @@ export default function FallsPreventionPage() {
           {/* Hero image */}
           <div className="mb-12 max-w-2xl">
             <img
-              src={fallsPreventionHeroImg}
+              src="/Images/placeholder.svg"
               alt="A group of diverse older adults taking part in a balance and stability class in a community hall"
               className="w-full h-auto rounded border border-gray-200"
             />

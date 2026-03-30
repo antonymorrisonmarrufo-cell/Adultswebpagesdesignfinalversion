@@ -1,7 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react';
 import FeedbackBanner from '../../components/FeedbackBanner';
 import FeedbackSection from '../../components/FeedbackSection';
-import askForSupportImage from 'figma:asset/79047c658d86d2d256ba1f90496a97b1215a9a31.png';
 
 function scrollTo(id: string) {
   const el = document.getElementById(id);
@@ -58,7 +57,7 @@ export default function AskForSupportPage() {
             {/* Hero image */}
             <div className="mb-12 max-w-xl">
               <img
-                src={askForSupportImage}
+                src="/Images/placeholder.svg"
                 alt="An adult with a learning disability and a family member sitting together at a kitchen table at home, reviewing simple paperwork"
                 className="w-full h-auto rounded border border-gray-200"
               />
