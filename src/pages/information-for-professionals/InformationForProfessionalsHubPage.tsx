@@ -36,7 +36,7 @@ export default function InformationForProfessionalsHubPage() {
               <ArrowRight size={18} />
             </a>
             <a 
-              href="https://action-spider-46698300.figma.site"
+              href="https://safeguardingapp.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#bf3688] text-white py-4 px-6 text-center hover:bg-[#a02d73] transition-colors flex items-center justify-center gap-2"
