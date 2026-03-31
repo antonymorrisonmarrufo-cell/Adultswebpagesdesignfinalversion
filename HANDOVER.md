@@ -6,11 +6,22 @@
 
 > **IMPORTANT: Content Reference**
 >
-> The **Vercel prototype** (adultswebpagesdesignfinalversion.vercel.app) now contains the **full Figma Make source code** with all detailed page content, layouts, and CTAs.
+> The **Vercel prototype** (adultswebpagesdesignfinalversion.vercel.app) contains the **full Figma Make source code** with all detailed page content, layouts, CTAs, and images.
 >
-> **Images:** Some pages reference images that were stored inside Figma Make's asset system. These show as broken images on the Vercel site. The images need to be exported from the Figma Make file and added to the `public/` folder. The **Figma Make preview** (spend-chew-46422648.figma.site) shows the complete design with all images for reference.
+> **Images:** All 21 images have been sourced and are working on the Vercel site in `public/Images/`.
 >
-> **Action for the digital team:** Export images from the Figma Make file and add them to the codebase. The 3 hero images on the landing page (care-assessment.jpg, report-abuse.jpg, blue-badge.jpg) are already sourced.
+> **Documentation:** The following documents are included in the repository:
+>
+> | Document | Description |
+> |----------|-------------|
+> | `HANDOVER.md` | This document — full technical and strategic handover |
+> | `STAKEHOLDER-BRIEFING.md` | Design rationale, research findings, and next steps for stakeholders |
+> | `IA-TREE.md` | Full hierarchical site tree from landing page to every leaf page |
+> | `IA-CONTENT-AUDIT.md` | All 150 pages audited with status flags (OK/thin/missing/duplicate) |
+> | `IA-OLD-TO-NEW-MAPPING.md` | Every current live WF URL mapped to its new equivalent |
+> | `RELATED-PAGES-AUDIT.md` | Cross-reference of related page links vs original specs |
+> | `page-content/` | 150 individual markdown documents, one per page, with full content and links |
+> | `Imports/pasted_text/` | Original content specifications used to build each section |
 
 ---
 
@@ -210,14 +221,37 @@ A well-designed digital front door can **deflect 15-25% of assessment requests**
 
 ## 8. Image Requirements
 
-| Image | Status | Action |
-|-------|--------|--------|
-| `care-assessment.jpg` | Deployed | Sourced — elderly couple in care setting |
-| `report-abuse.jpg` | Deployed | Sourced — professional on phone |
-| `blue-badge.jpg` | Deployed | Sourced — Blue Badge sign |
-| Favicon | Placeholder (WF initials) | Replace with council logo |
-| Section hero images | Not present | Consider adding to section landing pages |
-| Waltham Forest tree logo | SVG placeholder | Replace with official council logo SVG |
+All 21 images are sourced and deployed in `public/Images/`:
+
+| Image | Page | Status |
+|-------|------|--------|
+| `care-assessment.jpg` | Landing page hero | Deployed |
+| `report-abuse.jpg` | Landing page hero | Deployed |
+| `blue-badge.jpg` | Landing page hero | Deployed |
+| `hero-independent.jpg` | Live independently hub | Deployed |
+| `home-adaptations.jpg` | Home adaptations | Deployed |
+| `equipment.jpg` | Equipment page | Deployed |
+| `help-at-home.jpg` | Help at home | Deployed |
+| `falls-prevention.jpg` | Falls prevention | Deployed |
+| `telecare.jpg` | Telecare | Deployed |
+| `homeshare.jpg` | Homeshare | Deployed |
+| `social-prescribing.jpg` | Social prescribing | Deployed |
+| `community-activity.jpg` | Live independently / Dementia | Deployed |
+| `care-homes-hub.jpg` | Care homes hub | Deployed |
+| `learning-disability.jpg` | LD hub | Deployed |
+| `ask-support.jpg` | LD ask for support | Deployed |
+| `carers-support.jpg` | LD carers support | Deployed |
+| `easy-read.jpg` | LD easy read | Deployed |
+| `preparing-adulthood.jpg` | LD preparing for adulthood | Deployed |
+| `dementia-help.jpg` | Dementia get help | Deployed |
+| `autism.jpg` | Autism support | Deployed |
+| `balance-class.jpg` | Available for use | Deployed |
+
+**Still needed:**
+| Item | Action |
+|------|--------|
+| Favicon | Replace placeholder with official WF council logo |
+| Waltham Forest tree logo | Replace SVG placeholder with official council logo SVG |
 
 ---
 
@@ -246,13 +280,49 @@ A well-designed digital front door can **deflect 15-25% of assessment requests**
 **Priority follow-up actions:**
 1. **[Financial Assessment team number — TBC]** — Finance Lead to confirm
 2. **[Debt Recovery team number — TBC]** — Finance Lead to confirm
-3. **Information for professionals** — all team contacts need verification
-4. **Our policies** — links to actual policy PDFs need adding
+3. **Residential Care Charging Policy PDF** — needs uploading to WF site and linking
+4. **Direct Payment Scheme PDF** — needs uploading to WF site and linking
 5. **Learning disability** — easy read documents need creating/sourcing
+6. **Practice guidance PDFs** — 3 remaining links to council-internal documents on Resources to Improve Practice page
+7. **Favicon and logo** — replace placeholders with official WF council assets
+8. **ImageWithFallback placeholder** — some Figma Make pages use ImageWithFallback component which shows placeholder on error; source any remaining images
+
+---
+
+## 9a. Professional Referral Routes
+
+**All professional referrals are online only. No phone or email referrals accepted.**
+
+| Referral type | Online form | Used for |
+|---|---|---|
+| **Care needs** (OT, equipment, home adaptations, LD, housing, telecare, reablement) | [portal.walthamforest.gov.uk/AchieveForms/...](https://portal.walthamforest.gov.uk/AchieveForms/?mode=fill&consentMessage=yes&form_uri=sandbox-publish://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b/AF-Stage-70f67879-d714-4b05-a4c4-d52bf6b8c088/definition.json&process=1&process_uri=sandbox-processes://AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b&process_id=AF-Process-12f67700-270d-4318-8ad6-199501fc5b1b) | All care referrals |
+| **Safeguarding** (abuse, neglect of a vulnerable adult) | [safeguardingapp.vercel.app](https://safeguardingapp.vercel.app/) | Safeguarding concerns only |
+| **Mental health** | NELFT (not council) | 0300 300 1570 (option 4) for 18+; 0300 555 1270 for 65+ |
+
+Phone is **emergency only** for professionals — phone agents will direct them to the online form.
+
+## 9b. Carers Contact Model
+
+The site implements a **dual-route model** for carers:
+
+| Route | Contact | Used for |
+|---|---|---|
+| **Carers First** | 0300 303 1555 | Practical advice, emotional support, groups, training, wellbeing, early help for unpaid carers |
+| **Adult Social Care** | 020 8496 3130 | Carer's Assessments, care needs assessments for the person cared for, care packages, statutory support, urgent intervention |
+| **Young carers** | Separate route (020 8509 3030) | Young carers under 18 |
+| **Parent carers** | SEND route | Parent carers of disabled children |
+
+Carers First is the commissioned support partner, NOT the gateway for statutory assessment. Both contacts appear on all carers pages so users can self-route.
+
+## 9c. Commissioning Contact
+
+All commissioning enquiries go to **contract.management@walthamforest.gov.uk** — no phone number. This is the only accepted contact method for commissioning and provider information.
 
 ---
 
 ## 10. As-Is to To-Be Page Mapping
+
+> **Full URL mapping document:** See `IA-OLD-TO-NEW-MAPPING.md` for the complete old-to-new URL mapping with redirect recommendations.
 
 | New Section | Source from live site | Content Origin |
 |-------------|---------------------|----------------|
@@ -364,4 +434,14 @@ All old `/adult-social-care/*` URLs should 301 redirect to the corresponding new
 
 ---
 
-*This document accompanies the STAKEHOLDER-BRIEFING.md and should be read together. Both are available in the GitHub repository.*
+*This document accompanies the following documents, all available in the GitHub repository:*
+
+| Document | Purpose |
+|----------|---------|
+| `STAKEHOLDER-BRIEFING.md` | Design rationale and next steps for stakeholders |
+| `IA-TREE.md` | Full site tree from landing page to every leaf |
+| `IA-CONTENT-AUDIT.md` | All 150 pages audited with status flags |
+| `IA-OLD-TO-NEW-MAPPING.md` | Current live WF URLs → new Vercel URLs with redirects |
+| `RELATED-PAGES-AUDIT.md` | Cross-reference of related page links vs specs |
+| `page-content/` (150 files) | Individual content document per page with breadcrumbs, text, and links |
+| `Imports/pasted_text/` | Original content specifications |
